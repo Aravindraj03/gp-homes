@@ -1,0 +1,58 @@
+html,body {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #565656;
+  scroll-behavior: smooth;
+  overflow-x: hidden;   
+  font-family: 'Barlow', sans-serif;
+  /* font-family: "lavish"; */
+}
+
+/* Font Theme */
+@font-face {
+  font-family: "Themify";
+  src: url("./fonts/themify.ttf");
+}
+ @font-face {
+  font-family: 'Barlow', sans-serif;
+  src: url("./fonts/BarlowCondensed-Black.ttf");
+}  
+/*@font-face {
+  font-family: "einer-grotesk-bold";
+  src: url("./fonts/EinerGrotesk-Bold.ttf");
+} 
+@font-face {
+  font-family: "luxury-font";
+  src: url("./fonts/TOPLUXURY.TTF");
+} 
+
+@font-face {
+  font-family: "lavish";
+  src: url("./fonts/Lavish.otf");
+}  */
+
+.themify {
+  font-family: "Themify";
+  src: url("./fonts/themify.ttf");
+}
+
+ .BarlowCondensed {
+  font-family: 'Barlow', sans-serif;
+  src: url("./fonts/BarlowCondensed-Black.ttf");
+}
+
+/*.einer-grotesk-bold {
+  font-family: "einer-grotesk-bold";
+  src: url("./fonts/EinerGrotesk-Bold.ttf");
+}
+ 
+.luxury-font {
+  font-family: "luxury-font";
+  src: url("./fonts/TOPLUXURY.TTF");  
+}
+ 
+.lavish-font {
+  font-family: "lavish";
+  src: url("./fonts/Lavish.otf");
+} */
