@@ -815,6 +815,7 @@ color: #aa8453;
     position: relative;
     margin-bottom: 20px;
     line-height: 1.25em;
+    color: #f26522;
 }
 .section-title span {
     color: #fff;
@@ -3710,10 +3711,12 @@ button.mfp-arrow {
 }
 .btn-form1-submit:hover {
     background: #222;
+    color: #f26522;
 }
 .btn-form1-submit:focus {
     outline: none;
     background: #222;
+    color: #f26522;
 }
 .btn-form1-submit:after {
     content: '';
@@ -5417,7 +5420,7 @@ select {
         background-attachment: scroll !important;
     }
     .header {
-        background-attachment: local !important;
+        /* background-attachment: local !important; */
         background-position: center !important;
         background-size: cover;
         height: 300px;
