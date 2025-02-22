@@ -86,9 +86,11 @@ function Footer() {
                 <div className="footer-column footer-contact">
                   <h3 className="footer-title">Contact</h3>
                   <p className="footer-contact-text">
-                    1616 Broadway NY, New York 10001
+                    W-820, 9th St, Syndicate Colony,
                     <br />
-                    United States of America
+                    D-Sector, Anna Nagar West Extension,
+                    <br />
+                    Chennai, Tamil Nadu 600101
                   </p>
                   <div className="footer-contact-info">
                     <p className="footer-contact-phone">
