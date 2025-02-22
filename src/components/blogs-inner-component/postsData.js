@@ -1,11 +1,11 @@
 import bgimage from "../../assets/img/slider/1.jpg";
 
-import blogimg1 from "../../assets/img/restaurant/2.jpg";
+import blogimg1 from "../../assets/img/restaurant/01.jpg";
 import blogimg2 from "../../assets/img/spa/3.jpg";
 import blogimg3 from "../../assets/img/slider/7.jpg";
 
-import PostImg1 from "../../assets/img/restaurant/1.jpg";
-import PostImg2 from "../../assets/img/restaurant/3.jpg";
+import PostImg1 from "../../assets/img/restaurant/Smart Investment.jpg";
+import PostImg2 from "../../assets/img/restaurant/Quality Assurance.jpg";
 
 const postsData = [
   {
