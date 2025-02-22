@@ -1,8 +1,14 @@
 import { useState } from "react";
 
-import blogimg1 from "../../assets/img/restaurant/2.jpg";
-import blogimg2 from "../../assets/img/spa/3.jpg";
-import blogimg3 from "../../assets/img/slider/7.jpg";
+import blogimg1 from "../../assets/img/restaurant/01.jpg";
+import blogimg2 from "../../assets/img/restaurant/Gold.jpg";
+import blogimg3 from "../../assets/img/restaurant/Home Loan.jpg";
+import blogimg4 from "../../assets/img/restaurant/E-Stamping.jpg";
+import blogimg5 from "../../assets/img/restaurant/High Resale Value.jpg";
+import blogimg6 from "../../assets/img/restaurant/entilation & Natural Light.jpg";
+import blogimg7 from "../../assets/img/restaurant/Quality Assurance.jpg";
+
+
 import { Link } from "react-router-dom";
 
 const BlogSection = () => {
@@ -25,7 +31,7 @@ const BlogSection = () => {
       month: "Dec",
       tag: "Spa Center",
       title: "Gold vs. Land: Which is the Best Long-Term Investment?",
-      desc: "When it comes to long-term investments, two options often stand out: gold and land. Both have been considered reliable forms of wealth storage for centuries, but each offers distinct benefits and risks. So, which is the better investment? Let’s explore the advantages of investing in land and why choosing a plot with GP Homes could be your smartest move for the future.",
+      desc: "When it comes to long-term investments, two options often stand out: Gold and land. Both have been considered reliable forms of wealth storage for centuries, but each offers distinct benefits and risks. So, which is the better investment? Let’s explore the advantages of investing in land and why choosing a plot with GP Homes could be your smartest move for the future.",
       slug: "gold-vs-land-which-is-the-best-long-term-investment",
     },
     {
@@ -38,7 +44,7 @@ const BlogSection = () => {
       slug: "how-to-get-a-home-loan-with-the-best-interest-rates",
     },
     {
-      img: blogimg1,
+      img: blogimg4,
       date: "06",
       month: "Dec",
       tag: "Hotel Design",
@@ -48,7 +54,7 @@ const BlogSection = () => {
       slug: "stamp-duty-registration-charges-in-chennai-what-you-need-to-know",
     },
     {
-      img: blogimg2,
+      img: blogimg7,
       date: "06",
       month: "Dec",
       tag: "Hotel Design",
@@ -57,7 +63,7 @@ const BlogSection = () => {
       slug: "5-mistakes-to-avoid-when-buying-property-in-chennai",
     },
     {
-      img: blogimg3,
+      img: blogimg6,
       date: "06",
       month: "Dec",
       tag: "Hotel Design",
