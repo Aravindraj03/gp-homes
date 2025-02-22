@@ -55,6 +55,7 @@ const ProjectsList = ({ project }) => {
                         to={`/project-details/${project.slug}`}
                         className="link-btn"
                         tabIndex="0"
+                        style={{fontWeight:"800"}}
                       >
                         Details <i className="ti-arrow-right"></i>
                       </Link>

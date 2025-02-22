@@ -471,7 +471,7 @@ const ProjectDetailSection = ({ project }) => {
         </>
 
         <section
-          className="video-wrapper video section-padding bg-img bg-fixed mt-30 mb-30"
+          className="video-wrapper video section-padding bg-img bg-fixed mt-30 mb-30 d-flex align-items-center"
           data-overlay-dark="3"
           style={{ backgroundImage: `url(${slideImg2})` }}
         >
