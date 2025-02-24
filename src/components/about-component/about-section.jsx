@@ -67,13 +67,13 @@ const AboutSection = () => {
             className="col col-md-3 animate-box"
             data-animate-effect="fadeInUp"
           >
-            <img src={roomImage1} alt="Room 1" className="mt-90 mb-30" />
+            <img src={roomImage1} alt="Room 1" className="mt-90 mb-30 img-fluid" />
           </div>
           <div
             className="col col-md-3 animate-box"
             data-animate-effect="fadeInUp"
           >
-            <img src={roomImage2} alt="Room 2" />
+            <img src={roomImage2} alt="Room 2" className="img-fluid"/>
           </div>
         </div>
       </div>

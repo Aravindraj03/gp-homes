@@ -1,8 +1,43 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
 function Header() {
+
+  const location = useLocation();
+  const [navScroll, setNavScroll] = useState(false);
+  // const [logoSrc, setLogoSrc] = useState(logoLight);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+
+      // Apply nav-scroll if scrolled past 100px or if on specific routes
+      if (
+        scrollTop > 100 ||
+        location.pathname.startsWith("/project/") ||
+        location.pathname.startsWith("/project-details/")
+      ) {
+        setNavScroll(true);
+        // setLogoSrc(logoDark);
+      } else {
+        setNavScroll(false);
+        
+        // setLogoSrc(logoLight);
+      }
+    };
+
+    // Attach scroll listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Trigger on mount (in case user lands on a specific page)
+    handleScroll();
+
+    // Cleanup on unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [location]);
+
+
   return (
     <Fragment>
       {/* Preloader */}
@@ -28,7 +63,7 @@ function Header() {
       </div> */}
 
       {/* Navbar */}
-      <Navbar expand="lg">
+      <Navbar expand="lg" className={navScroll ? "nav-scroll" : ""}>
         <Container>
           {/* Logo */}
           <Navbar.Brand as={Link} to="/">
@@ -41,7 +76,7 @@ function Header() {
           {/* Menu */}
           <Navbar.Collapse id="navbar">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/home">
+              <Nav.Link as={Link} to="/home" >
                 Home
               </Nav.Link>
               {/* <Nav.Link as={Link} to="/home#apartments">

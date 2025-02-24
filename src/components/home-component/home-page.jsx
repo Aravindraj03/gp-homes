@@ -13,12 +13,15 @@ import HomeServices from "./home-services";
 // import NewsSection from "./home-news";
 import HomeReservation from "./home-reservation";
 import HomeClients from "./home-clients";
+import HomeTimeTicker from "./time-ticker";
+
 
 function HomePage() {
   return (
     <Fragment>
       <Header />
       <BannerSlider />
+      <HomeTimeTicker endDate="2025-02-28T23:59:59" />
       {/* <BookingSearch /> */}
       {/* <HomeAbout /> */}
       <HomeProjects />
