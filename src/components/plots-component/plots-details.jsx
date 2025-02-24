@@ -184,7 +184,7 @@ const ApartmentDetails = () => {
               onClick={() => handleFilter("Plots-Ongoing")}
               className="btn-form1-submit mb-30"
             >
-              Ongoing 
+              Ongoing
             </button>
           </div>
           <div className="col-md-4">
@@ -289,13 +289,16 @@ const ApartmentDetails = () => {
                           Details
                         </Link>
                       </div> */}
-                      <button className="btn-form1-submit">
-                        <Link to={
-                            room.category === "Plots-Ongoing"
-                              ? `/project-details/${room.slug}`
-                              : `/project/${room.slug}`
-                          }>Details</Link>
-                      </button>
+                      <Link
+                        className="btn-form1-submit text-center"
+                        to={
+                          room.category === "Plots-Ongoing"
+                            ? `/project-details/${room.slug}`
+                            : `/project/${room.slug}`
+                        }
+                      >
+                        Details
+                      </Link>
                     </div>
                   </div>
                 </div>
