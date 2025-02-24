@@ -92,7 +92,7 @@ const ProjectDetailBanner = ({ project }) => {
         {slides.map((slide) => (
           <div
             key={slide.id}
-            className="text-center item bg-img"
+            className=" item bg-img"
             // data-overlay-dark={slide.overlay}
             style={{ backgroundImage: `url(${slide.image})` }}
           ></div>
