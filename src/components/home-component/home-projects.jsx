@@ -281,13 +281,12 @@ const HomeProjects = () => {
                           Details
                         </Link>
                       </div> */}
-                      <button className="btn-form1-submit">
-                        <Link to={
+                      <Link className="btn-form1-submit text-center"
+                      to={
                             room.category === "Plots"
                               ? `/project-details/${room.slug}`
                               : `/project/${room.slug}`
                           }>Details</Link>
-                      </button>
                     </div>
                   </div>
                 </div>

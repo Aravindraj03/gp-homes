@@ -5072,7 +5072,7 @@ button.mfp-arrow {
 }
 .footer-explore-list li a:hover {
   padding-left: 15px;
-  color: #aa8453);
+  color: #aa8453;
 }
 .footer-explore-list li a:before {
   position: absolute;
@@ -5440,7 +5440,7 @@ select {
         position: absolute;
         top: 57px;
         left: 0;
-        /* height: 100%; */
+        height: 100%;
         width: 100%;
         background-size: contain;
     }
@@ -5525,6 +5525,7 @@ select {
 /* .flex-center {
     align-items: center;
 } */
+
 .timeticker {
     display: flex;
     align-items: center;
