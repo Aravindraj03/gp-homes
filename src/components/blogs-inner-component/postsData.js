@@ -1,11 +1,23 @@
 import bgimage from "../../assets/img/slider/1.jpg";
 
 import blogimg1 from "../../assets/img/restaurant/01.jpg";
-import blogimg2 from "../../assets/img/spa/3.jpg";
-import blogimg3 from "../../assets/img/slider/7.jpg";
+import blogimg2 from "../../assets/img/restaurant/Gold.jpg";
+import blogimg3 from "../../assets/img/restaurant/Home Loan.jpg";
+import blogimg4 from "../../assets/img/restaurant/E-Stamping.jpg";
+import blogimg5 from "../../assets/img/restaurant/Transperent Documentaion.jpg"
 
 import PostImg1 from "../../assets/img/restaurant/Smart Investment.jpg";
 import PostImg2 from "../../assets/img/restaurant/Quality Assurance.jpg";
+import PostImg3 from "../../assets/img/restaurant/Image 1.png";
+import PostImg4 from "../../assets/img/restaurant/Image 2.jpg";
+import PostImg5 from "../../assets/img/restaurant/Image 3.jpg";
+import PostImg6 from "../../assets/img/restaurant/Image 4.jpg";
+import PostImg7 from "../../assets/img/restaurant/Image 5.jpg";
+import PostImg8 from "../../assets/img/restaurant/Image 6.jpg";
+import PostImg9 from "../../assets/img/restaurant/Image 7.jpg";
+import PostImg10 from "../../assets/img/restaurant/Image 8.jpg";
+import PostImg11 from "../../assets/img/restaurant/Image 9.jpg";
+
 
 const postsData = [
   {
@@ -52,8 +64,8 @@ const postsData = [
       
     ],
     banner_image: bgimage,
-    blog_image: blogimg1,
-    images:[PostImg1, PostImg2],
+    blog_image: blogimg2,
+    images:[PostImg3, PostImg4],
     conclusion_title:"Conclusion: Land is a Smart Investment for the Future",
     conclusion_desc:[
       "<p>While gold has its place in a diversified portfolio, land offers unparalleled growth potential. The value of land continues to rise over time, especially in areas of development. By investing in plots with GP Homes, you’re not just purchasing land—you're securing a tangible asset that will appreciate and provide long-term financial security for you and your family.</p>",
@@ -108,8 +120,8 @@ const postsData = [
       "<ul><li>Premium residential projects in Kolathur, Mogappair, Menambedu, and Ayanambakkam</li><li>Transparent documentation process</li><li>Trusted by over 1500 happy families</li><li>Hassle-free property registration assistance</li></ul>",
     ],
     banner_image: bgimage,
-    blog_image: blogimg1,
-    images:[PostImg1, PostImg2],
+    blog_image: blogimg3,
+    images:[PostImg5, PostImg6],
     conclusion_title:"Final Thoughts",
     conclusion_desc:[
       "<p>Securing a home loan at the best interest rate requires planning, research, and financial discipline. By following these steps, you can minimize your loan burden and take a confident step toward homeownership.</p>",
@@ -167,8 +179,8 @@ const postsData = [
       "<ul><li>RERA-Approved Projects in Kolathur, Mogappair, Ayanambakkam & Menambedu</li><li>Transparent Pricing with no hidden charges</li><li>Complete Home Loan & Registration Assistance</li><li>Trusted by 1500+ Families in Chennai</li></ul>",           
     ],
     banner_image: bgimage,
-    blog_image: blogimg1,
-    images:[PostImg1, PostImg2],
+    blog_image: blogimg4,
+    images:[PostImg7, PostImg8],
     conclusion_title:"Looking to buy a home or plot in Chennai?",
     conclusion_desc:[
       "<p>Call us today for expert real estate advice and hassle-free property transactions!</p>",      
@@ -218,8 +230,8 @@ const postsData = [
             
     ],
     banner_image: bgimage,
-    blog_image: blogimg1,
-    images:[PostImg1, PostImg2],
+    blog_image: blogimg5,
+    images:[PostImg9, PostImg10],
     conclusion_title:"Looking to buy a home or plot in Chennai?",
     conclusion_desc:[
       "<p>Make a smart property decision today! Explore our premium projects and secure your dream home with GP Homes.</p>",
@@ -265,7 +277,7 @@ const postsData = [
     ],
     banner_image: bgimage,
     blog_image: blogimg1,
-    images:[PostImg1, PostImg2],
+    images:[PostImg11, PostImg2],
     conclusion_title:"Why Choose GP Homes for Your Vastu-Compliant Dream Home?",
     conclusion_desc:[
       "<p>At GP Homes, we integrate Vastu principles into our thoughtfully designed residential projects, ensuring:</p>", 

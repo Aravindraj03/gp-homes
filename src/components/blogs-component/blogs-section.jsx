@@ -4,7 +4,7 @@ import blogimg1 from "../../assets/img/restaurant/01.jpg";
 import blogimg2 from "../../assets/img/restaurant/Gold.jpg";
 import blogimg3 from "../../assets/img/restaurant/Home Loan.jpg";
 import blogimg4 from "../../assets/img/restaurant/E-Stamping.jpg";
-import blogimg5 from "../../assets/img/restaurant/High Resale Value.jpg";
+import blogimg5 from "../../assets/img/restaurant/Transperent Documentaion.jpg";
 import blogimg6 from "../../assets/img/restaurant/entilation & Natural Light.jpg";
 import blogimg7 from "../../assets/img/restaurant/Quality Assurance.jpg";
 
@@ -54,7 +54,7 @@ const BlogSection = () => {
       slug: "stamp-duty-registration-charges-in-chennai-what-you-need-to-know",
     },
     {
-      img: blogimg7,
+      img: blogimg5,
       date: "06",
       month: "Dec",
       tag: "Hotel Design",

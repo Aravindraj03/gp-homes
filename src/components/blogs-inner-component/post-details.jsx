@@ -47,7 +47,7 @@ const Post = ({ post }) => {
           <div className="col-md-4">
             <div className="news2-sidebar row">
               <div className="col-md-12">
-                <div className="widget search">
+                {/* <div className="widget search">
                   <form>
                     <input
                       type="text"
@@ -58,7 +58,7 @@ const Post = ({ post }) => {
                       <i className="ti-search" aria-hidden="true"></i>
                     </button>
                   </form>
-                </div>
+                </div> */}
               </div>
               <div className="col-md-12">
                 <div className="widget">

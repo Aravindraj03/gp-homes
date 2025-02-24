@@ -7,9 +7,9 @@ import room3 from "../../assets/img/rooms/elenza.jpg";
 import room4 from "../../assets/img/rooms/valencia-emarald.jpg";
 import room5 from "../../assets/img/rooms/valencia-ruby.jpg";
 
-import room7 from "../../assets/img/rooms/gp-garden-bay2.jpg";
-import room8 from "../../assets/img/rooms/ethulia.jpg";
-import room9 from "../../assets/img/rooms/nammannai.jpg";
+import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
+import room8 from "../../assets/img/rooms/Ethuliya.jpg";
+import room9 from "../../assets/img/rooms/Namanai.jpg";
 
 const roomsData = [
   {

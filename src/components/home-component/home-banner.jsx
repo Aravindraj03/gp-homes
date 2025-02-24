@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import slideImg1 from "../../assets/img/slider/banner-1.jpg";
+import slideImg1 from "../../assets/img/slider/sunset-view-from-balcony-01.jpg";
 import slideImg2 from "../../assets/img/slider/banner-2.jpg";
 import slideImg3 from "../../assets/img/slider/3.jpg";
 
