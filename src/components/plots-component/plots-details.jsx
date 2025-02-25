@@ -144,10 +144,25 @@ const roomsData = [
     ],
     slug: "gp-vijayalakshmi",
   },
+  {
+    id: 11,
+    category: "Plots-Ongoing",
+    location: "Thiruvallur",
+    title: "GP Vijayalakshmi",
+    image: room9,
+    description:
+      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+    project_status: "Ongoing Project",
+    features: [
+      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
+    ],
+    slug: "gp-vijayalakshmi",
+  },
 ];
 
 const ApartmentDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+      const [selectedFilter, setSelectedFilter] = useState("Plots-Ongoing"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
   const [visibleRooms, setVisibleRooms] = useState(
     roomsData.filter((room) => room.category === "Plots-Ongoing")
@@ -155,6 +170,7 @@ const ApartmentDetails = () => {
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
+    setSelectedFilter(category);
     const filteredRooms =
       category === "All"
         ? roomsData
@@ -182,25 +198,36 @@ const ApartmentDetails = () => {
           <div className="col-md-4">
             <button
               onClick={() => handleFilter("Plots-Ongoing")}
-              className="btn-form1-submit mb-30"
+              // className="btn-form1-submit mb-30"
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Plots-Ongoing" ? "btn-form1-submit-active" : ""
+              }`}
             >
               Ongoing
             </button>
           </div>
-          <div className="col-md-4">
-            <button
-              onClick={() => handleFilter("Plots-Completed")}
-              className="btn-form1-submit mb-30"
-            >
-              Completed
-            </button>
-          </div>
+          
           <div className="col-md-4">
             <button
               onClick={() => handleFilter("Plots-Upcoming")}
-              className="btn-form1-submit mb-30"
+              // className="btn-form1-submit mb-30"
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Plots-Upcoming" ? "btn-form1-submit-active" : ""
+              }`}
             >
               UP Coming
+            </button>
+          </div>
+
+          <div className="col-md-4">
+            <button
+              onClick={() => handleFilter("Plots-Completed")}
+              // className="btn-form1-submit mb-30"
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Plots-Completed" ? "btn-form1-submit-active" : ""
+              }`}
+            >
+              Completed
             </button>
           </div>
         </div>

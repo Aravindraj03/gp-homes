@@ -105,7 +105,11 @@ const ProjectDetailSection = ({ project }) => {
                     data-animate-effect="fadeInLeft"
                   >
                     <div className="img left">
-                      <img src={project.locations.location_highlights_image} alt="" className="img-fluid" />
+                      <img
+                        src={project.locations.location_highlights_image}
+                        alt=""
+                        className="img-fluid"
+                      />
                     </div>
                   </div>
                   <div
@@ -252,12 +256,12 @@ const ProjectDetailSection = ({ project }) => {
                     className="col-md-6 p-0 order1 animate-box"
                     data-animate-effect="fadeInRight"
                   >
-                    <div className="img">                     
-                        <img
-                          src={project.locations.it_parks_image}
-                          alt="Health Club & Pool"
-                          className="img-fluid"
-                        />                     
+                    <div className="img">
+                      <img
+                        src={project.locations.it_parks_image}
+                        alt="Health Club & Pool"
+                        className="img-fluid"
+                      />
                     </div>
                   </div>
                 </div>
@@ -418,11 +422,17 @@ const ProjectDetailSection = ({ project }) => {
               <div className="row">
                 <div className="col-md-12">
                   <div className="mt-15 mb-30 text-center">
-                    <h6>Gallery</h6>
+                    <h6>Floor Plan </h6>
                   </div>
                 </div>
               </div>
-              <div className="row">
+              <div
+                className="row"
+                style={{
+                  backgroundColor: "#f7f5f0",
+                  paddingBottom: "22px",
+                }}
+              >
                 {project.images.map((image, index) => (
                   <div className="col-md-4 mt-4" key={index}>
                     <img
@@ -495,12 +505,9 @@ const ProjectDetailSection = ({ project }) => {
           </div>
         </section>
 
-        <div className="row">
+        {/* <div className="row">
           <div className="col-md-12">
             <div className="butn-dark mt-15 mb-30 text-center">
-              {/* <Link href="/">
-                <span>Check Now</span>
-              </Link> */}
               <ScrollLink
                 to="reservation-sec"
                 smooth={true}
@@ -511,7 +518,7 @@ const ProjectDetailSection = ({ project }) => {
               </ScrollLink>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

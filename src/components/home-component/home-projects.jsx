@@ -144,10 +144,37 @@ const roomsData = [
     ],
     slug: "gp-vijayalakshmi",
   },
+  {
+    id: 11,
+    category: "Apartments",
+    location: "Ayanambakkam",
+    title: "GP Valencia Ruby",
+    image: room5,
+    description:
+      "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
+    project_status: "Ongoing Project",
+    features: ["Units 35, BHK 2 & 3, Sq. ft. 912 – 1580, Floors Stilt + 5"],
+    slug: "gp-valencia-ruby",
+  },
+  {
+    id: 12,
+    category: "Plots",
+    location: "Thiruvallur",
+    title: "GP Vijayalakshmi",
+    image: room9,
+    description:
+      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+    project_status: "Ongoing Project",
+    features: [
+      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
+    ],
+    slug: "gp-vijayalakshmi",
+  },
 ];
 
 const HomeProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedFilter, setSelectedFilter] = useState("Apartments"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
   const [visibleRooms, setVisibleRooms] = useState(
     roomsData.filter((room) => room.category === "Apartments")
@@ -155,12 +182,14 @@ const HomeProjects = () => {
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
+    setSelectedFilter(category);
     const filteredRooms =
       category === "All"
         ? roomsData
         : roomsData.filter((room) => room.category === category);
     setVisibleRooms(filteredRooms.slice(0, 12)); // Limit to 9 items
   };
+
 
   return (
     <section
@@ -182,7 +211,10 @@ const HomeProjects = () => {
           <div className="col-md-6">
             <button
               onClick={() => handleFilter("Apartments")}
-              className="btn-form1-submit mb-30"
+              // className="btn-form1-submit mb-30"
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Apartments" ? "btn-form1-submit-active" : ""
+              }`}
             >
               Apartments
             </button>
@@ -190,7 +222,10 @@ const HomeProjects = () => {
           <div className="col-md-6">
             <button
               onClick={() => handleFilter("Plots")}
-              className="btn-form1-submit mb-30"
+              // className="btn-form1-submit mb-30"
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Plots" ? "btn-form1-submit-active" : ""
+              }`}
             >
               Plots
             </button>
