@@ -99,7 +99,7 @@ const BannerSlider = () => {
       </div>
 
       {/* Slider Reservation */}
-      <div className="reservation">
+      {/* <div className="reservation">
         <a href="tel:8551004444">
           <div className="icon d-flex justify-content-center align-items-center">
             <i className="flaticon-call"></i>
@@ -110,7 +110,7 @@ const BannerSlider = () => {
             Reservation
           </div>
         </a>
-      </div>
+      </div> */}
     </header>
   );
 };
