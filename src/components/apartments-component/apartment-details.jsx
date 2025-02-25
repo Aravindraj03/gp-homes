@@ -72,6 +72,18 @@ const roomsData = [
     features: ["Units 35, BHK 2 & 3, Sq. ft. 912 – 1580, Floors Stilt + 5"],
     slug: "gp-valencia-ruby",
   },
+  {
+    id: 11,
+    category: "Apartments-Ongoing",
+    location: "Ayanambakkam",
+    title: "GP Valencia Ruby",
+    image: room5,
+    description:
+      "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
+    project_status: "Ongoing Project",
+    features: ["Units 35, BHK 2 & 3, Sq. ft. 912 – 1580, Floors Stilt + 5"],
+    slug: "gp-valencia-ruby",
+  },
 
   {
     id: 6,
@@ -148,6 +160,7 @@ const roomsData = [
 
 const ApartmentDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+    const [selectedFilter, setSelectedFilter] = useState("Apartments-Ongoing"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
   const [visibleRooms, setVisibleRooms] = useState(
     roomsData.filter((room) => room.category === "Apartments-Ongoing")
@@ -155,6 +168,7 @@ const ApartmentDetails = () => {
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
+    setSelectedFilter(category)
     const filteredRooms =
       category === "All"
         ? roomsData
@@ -182,25 +196,36 @@ const ApartmentDetails = () => {
           <div className="col-md-4">
             <button
               onClick={() => handleFilter("Apartments-Ongoing")}
-              className="btn-form1-submit mb-30"
+              // className="btn-form1-submit mb-30"
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Apartments-Ongoing" ? "btn-form1-submit-active" : ""
+              }`}
             >
               Ongoing
             </button>
           </div>
-          <div className="col-md-4">
-            <button
-              onClick={() => handleFilter("Apartments-Completed")}
-              className="btn-form1-submit mb-30"
-            >
-              Completed
-            </button>
-          </div>
+          
           <div className="col-md-4">
             <button
               onClick={() => handleFilter("Apartments-Upcoming")}
-              className="btn-form1-submit mb-30"
+              // className="btn-form1-submit mb-30"
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Apartments-Upcoming" ? "btn-form1-submit-active" : ""
+              }`}
             >
               UP Coming
+            </button>
+          </div>
+
+          <div className="col-md-4">
+            <button
+              onClick={() => handleFilter("Apartments-Completed")}
+              // className="btn-form1-submit mb-30"
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Apartments-Completed" ? "btn-form1-submit-active" : ""
+              }`}
+            >
+              Completed
             </button>
           </div>
         </div>
