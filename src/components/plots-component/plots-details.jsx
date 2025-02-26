@@ -296,7 +296,7 @@ const ApartmentDetails = () => {
                       {room.features[0] && room.features[0].trim() !== "" && (
                         <div className="row room-facilities mb-30">
                           {room.features[0].split(",").map((feature, index) => (
-                            <div className="col-md-6" key={index}>
+                            <div className="col-6" key={index}>
                               <ul>
                                 <li>{feature.trim()}</li>
                               </ul>

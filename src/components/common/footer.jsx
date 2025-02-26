@@ -36,50 +36,54 @@ function Footer() {
               <Col md={3} className="offset-md-1">
                 <div className="footer-column footer-explore clearfix">
                   <h3 className="footer-title">Explore</h3>
-                  <ul className="footer-explore-list list-unstyled">
-                    <li>
-                      <Link to="/home">Home</Link>
-                    </li>
-                    <li>
-                      <Link to="/about-us">About Us</Link>
-                    </li>
-                    <li>
-                      <Link as={Link} to="/home#apartments">
-                        Apartments
-                      </Link>
-                    </li>
-                    {/* <li><Link to="/">Villas</Link></li> */}
-                    <li>
-                      <Link as={Link} to="/home#apartments">
-                        Plots
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/joint-ventures">Joint Ventures</Link>
-                    </li>
+                  <div className="d-md-flex  gap-5">
+                    <ul className="footer-explore-list list-unstyled mb-1">
+                      <li>
+                        <Link to="/home">Home</Link>
+                      </li>
+                      <li>
+                        <Link to="/about-us">About Us</Link>
+                      </li>
+                      <li>
+                        <Link as={Link} to="/home#apartments">
+                          Apartments
+                        </Link>
+                      </li>
+                      {/* <li><Link to="/">Villas</Link></li> */}
+                      <li>
+                        <Link as={Link} to="/home#apartments">
+                          Plots
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/joint-ventures">Joint Ventures</Link>
+                      </li>
 
-                    <li>
-                      <Link to="/gallery">Gallery</Link>
-                    </li>
-                    <li>
-                      <Link to="/tools">Tools</Link>
-                    </li>
-                    <li>
-                      <Link to="/careers">Careers</Link>
-                    </li>
-                    <li>
-                      <Link to="/blogs">Blogs</Link>
-                    </li>
-                    <li>
-                      <Link to="/testimonials">Testimonials</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact-us">Contact</Link>
-                    </li>
-                    <li>
-                      <Link to="/privacy-policy">Privacy Policy</Link>
-                    </li>
-                  </ul>
+                      <li>
+                        <Link to="/gallery">Gallery</Link>
+                      </li>
+                    </ul>
+                    <ul className="footer-explore-list list-unstyled">
+                      <li>
+                        <Link to="/tools">Tools</Link>
+                      </li>
+                      <li>
+                        <Link to="/careers">Careers</Link>
+                      </li>
+                      <li>
+                        <Link to="/blogs">Blogs</Link>
+                      </li>
+                      <li>
+                        <Link to="/testimonials">Testimonials</Link>
+                      </li>
+                      <li>
+                        <Link to="/contact-us">Contact</Link>
+                      </li>
+                      <li>
+                        <Link to="/privacy-policy">Privacy Policy</Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </Col>
               <Col md={4}>

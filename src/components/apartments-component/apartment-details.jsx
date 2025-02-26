@@ -10,6 +10,7 @@ import room5 from "../../assets/img/rooms/valencia-ruby.jpg";
 import room7 from "../../assets/img/rooms/gp-garden-bay2.jpg";
 import room8 from "../../assets/img/rooms/ethulia.jpg";
 import room9 from "../../assets/img/rooms/nammannai.jpg";
+import room11 from "../../assets/img/rooms/lakebreeze.jpg";
 
 const roomsData = [
   {
@@ -76,12 +77,12 @@ const roomsData = [
     id: 11,
     category: "Apartments-Ongoing",
     location: "Ayanambakkam",
-    title: "GP Valencia Ruby",
-    image: room5,
+    title: "Lake Breeze",
+    image: room11,
     description:
-      "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
+      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
     project_status: "Ongoing Project",
-    features: ["Units 35, BHK 2 & 3, Sq. ft. 912 – 1580, Floors Stilt + 5"],
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
 
@@ -294,7 +295,7 @@ const ApartmentDetails = () => {
                       {room.features[0] && room.features[0].trim() !== "" && (
                         <div className="row room-facilities mb-30">
                           {room.features[0].split(",").map((feature, index) => (
-                            <div className="col-md-6" key={index}>
+                            <div className="col-6" key={index}>
                               <ul>
                                 <li>{feature.trim()}</li>
                               </ul>

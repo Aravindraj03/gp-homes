@@ -2860,6 +2860,9 @@ hr.border-2 {
     .section-padding {
         padding: 50px 0;
     }
+    .rooms3 .square-container2 {
+        padding: 20px;
+    }
 }
 
 
@@ -5477,8 +5480,8 @@ select {
 }
 @media screen and (max-width: 767px) {
     .header .caption h1 {
-        font-size: 30px;
-        margin-bottom: 15px;
+        font-size: 20px;
+        margin-bottom: 0px;
         letter-spacing: 10px;
         line-height: 1.35em;
     }

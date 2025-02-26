@@ -26,8 +26,8 @@ const BannerSlider = () => {
                     <i className="star-rating"></i>
                     <i className="star-rating"></i>
                   </span> */}
-                  <h4>GP Homes</h4>
-                  <h1>The Home That Keeps Giving!</h1>
+                  <h4></h4>
+                  <h1 className="m-0">The Home That Keeps Giving!</h1>
                   <div className="butn-light mt-30 mb-30">
                     {/* <Link to={"/#apartments"} data-scroll-nav="1">
                       <span>View Project</span>
@@ -55,7 +55,7 @@ const BannerSlider = () => {
                     <i className="star-rating"></i>
                     <i className="star-rating"></i>
                   </span> */}
-                  <h4>GP Homes</h4>
+                  <h4></h4>
                   <h1>Unlock a New Standard of Living!</h1>
                   <div className="butn-light mt-30 mb-30">
                     {/* <Link to={"/#apartments"} data-scroll-nav="1">
