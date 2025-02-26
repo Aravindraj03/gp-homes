@@ -5,7 +5,7 @@ import AparmentBanner from "./plots-banner";
 import ApartmentDetails from "./plots-details";
 // import ContactBanner from "./contact-banner";
 // import ContactForm from "./contact-form";
-// import HomeReservation from "../home-component/home-reservation";
+import HomeReservation from "../home-component/home-reservation";
 
 function PlotsPage() {
   return (
@@ -14,8 +14,8 @@ function PlotsPage() {
       <AparmentBanner/>
       <ApartmentDetails />
       {/* <ContactBanner />
-      <ContactForm />
-      <HomeReservation /> */}
+      <ContactForm /> */}
+      <HomeReservation />
       <Footer />
     </Fragment>
   );

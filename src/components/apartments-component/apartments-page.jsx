@@ -5,7 +5,7 @@ import AparmentBanner from "./apartment-banner";
 import ApartmentDetails from "./apartment-details";
 // import ContactBanner from "./contact-banner";
 // import ContactForm from "./contact-form";
-// import HomeReservation from "../home-component/home-reservation";
+import HomeReservation from "../home-component/home-reservation";
 
 function ApartmentPage() {
   return (
@@ -14,8 +14,8 @@ function ApartmentPage() {
       <AparmentBanner/>
       <ApartmentDetails />
       {/* <ContactBanner />
-      <ContactForm />
-      <HomeReservation /> */}
+      <ContactForm />*/}
+      <HomeReservation /> 
       <Footer />
     </Fragment>
   );

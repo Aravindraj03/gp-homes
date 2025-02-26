@@ -5552,3 +5552,16 @@ select {
     background: #fff;
     font-weight: bold;
 }
+
+.marquee-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px; 
+}
+
+.marquee-item img {
+    width: 150px; 
+    max-width: 100%;
+    height: auto;
+}

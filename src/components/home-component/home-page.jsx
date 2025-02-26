@@ -13,7 +13,7 @@ import HomeServices from "./home-services";
 // import NewsSection from "./home-news";
 import HomeReservation from "./home-reservation";
 import HomeClients from "./home-clients";
-import HomeTimeTicker from "./time-ticker";
+import HomeLogoMarquee from "./time-ticker";
 
 
 function HomePage() {
@@ -21,7 +21,7 @@ function HomePage() {
     <Fragment>
       <Header />
       <BannerSlider />
-      <HomeTimeTicker endDate="2025-02-28T23:59:59" />
+      <HomeLogoMarquee />
       {/* <BookingSearch /> */}
       {/* <HomeAbout /> */}
       <HomeProjects />
