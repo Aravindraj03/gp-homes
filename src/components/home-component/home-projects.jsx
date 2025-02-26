@@ -191,7 +191,6 @@ const HomeProjects = () => {
     setVisibleRooms(filteredRooms.slice(0, 12)); // Limit to 9 items
   };
 
-
   return (
     <section
       className="rooms1 section-padding bg-cream"
@@ -317,12 +316,23 @@ const HomeProjects = () => {
                           Details
                         </Link>
                       </div> */}
-                      <Link className="btn-form1-submit text-center"
-                      to={
+
+                      {room.id != "11" ? (
+                        <Link
+                          className="btn-form1-submit text-center"
+                          to={
                             room.category === "Plots"
                               ? `/project-details/${room.slug}`
                               : `/project/${room.slug}`
-                          }>Details</Link>
+                          }
+                        >
+                          Details
+                        </Link>
+                      ) : (
+                        <div className="btn-form1-submit text-center">
+                          Details
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

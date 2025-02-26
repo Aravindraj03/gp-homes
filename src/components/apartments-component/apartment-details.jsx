@@ -161,7 +161,7 @@ const roomsData = [
 
 const ApartmentDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-    const [selectedFilter, setSelectedFilter] = useState("Apartments-Ongoing"); // Default focus
+  const [selectedFilter, setSelectedFilter] = useState("Apartments-Ongoing"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
   const [visibleRooms, setVisibleRooms] = useState(
     roomsData.filter((room) => room.category === "Apartments-Ongoing")
@@ -169,7 +169,7 @@ const ApartmentDetails = () => {
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
-    setSelectedFilter(category)
+    setSelectedFilter(category);
     const filteredRooms =
       category === "All"
         ? roomsData
@@ -199,19 +199,23 @@ const ApartmentDetails = () => {
               onClick={() => handleFilter("Apartments-Ongoing")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Apartments-Ongoing" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Apartments-Ongoing"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               Ongoing
             </button>
           </div>
-          
+
           <div className="col-md-4">
             <button
               onClick={() => handleFilter("Apartments-Upcoming")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Apartments-Upcoming" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Apartments-Upcoming"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               UP Coming
@@ -223,7 +227,9 @@ const ApartmentDetails = () => {
               onClick={() => handleFilter("Apartments-Completed")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Apartments-Completed" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Apartments-Completed"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               Completed
@@ -315,16 +321,22 @@ const ApartmentDetails = () => {
                           Details
                         </Link>
                       </div> */}
-                      <Link
-                        className="btn-form1-submit text-center"
-                        to={
-                          room.category === "Plots"
-                            ? `/project-details/${room.slug}`
-                            : `/project/${room.slug}`
-                        }
-                      >
-                        Details
-                      </Link>
+                      {room.id != "11" ? (
+                        <Link
+                          className="btn-form1-submit text-center"
+                          to={
+                            room.category === "Plots"
+                              ? `/project-details/${room.slug}`
+                              : `/project/${room.slug}`
+                          }
+                        >
+                          Details
+                        </Link>
+                      ) : (
+                        <div className="btn-form1-submit text-center">
+                          Details
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
