@@ -800,7 +800,8 @@ color: #aa8453;
     font-size: 15px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
-    color: #666;
+    /* color: #666; */
+    color: black;
     text-transform: uppercase;
     position: relative;
     letter-spacing: 6px;
@@ -838,6 +839,10 @@ color: #aa8453;
     padding-bottom: 0;
     height: 100px;
 }
+.navbar .container{
+    padding-top: 50px;
+}
+
 .navbar-toggler-icon {
     background-image: none;
 }
@@ -875,6 +880,9 @@ color: #aa8453;
 }
 .navbar .navbar-nav .active i {
     color: #aa8453;
+}
+.nav-scroll .container{
+    padding-top: 0px;
 }
 .nav-scroll, .nav-scroll-1 {
     background: #fff;
@@ -2951,6 +2959,7 @@ hr.border-2 {
     margin-bottom: 30px;
     line-height: 1;
     border: 1px solid #f1eeeb;
+    min-height: 270px;
 }
 .facilties .single-facility h5 {
     font-size: 24px;
@@ -2979,7 +2988,8 @@ hr.border-2 {
 }
 .facilties .single-facility p {
     margin: 0;
-    color: #666;
+    /* color: #666; */
+    color: black;
 }
 .facilties .single-facility .facility-shape {
     position: absolute;
