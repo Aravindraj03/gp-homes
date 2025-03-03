@@ -40,10 +40,10 @@ function ProjectInnerPage() {
                 Home
               </Nav.Link>
 
-              <Nav.Link as={Link} to="/apartments">
+              <Nav.Link as={Link} to="/apartments-chennai">
                 Apartments
               </Nav.Link>
-              <Nav.Link as={Link} to="/plots">
+              <Nav.Link as={Link} to="/plots-chennai">
                 Plots
               </Nav.Link>
 

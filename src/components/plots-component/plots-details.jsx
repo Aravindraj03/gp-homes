@@ -320,8 +320,8 @@ const ApartmentDetails = () => {
                         className="btn-form1-submit text-center"
                         to={
                           room.category === "Plots-Ongoing"
-                            ? `/project-details/${room.slug}`
-                            : `/project/${room.slug}`
+                            ? `/plots-chennai/${room.slug}`
+                            : `/apartments-chennai/${room.slug}`
                         }
                       >
                         Details

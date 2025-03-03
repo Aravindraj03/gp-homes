@@ -15,8 +15,8 @@ function Header() {
       // Apply nav-scroll if scrolled past 100px or if on specific routes
       if (
         scrollTop > 100 ||
-        location.pathname.startsWith("/project/") ||
-        location.pathname.startsWith("/project-details/")
+        location.pathname.startsWith("/apartments-chennai/") ||
+        location.pathname.startsWith("/plots-chennai/")
       ) {
         setNavScroll(true);
         // setLogoSrc(logoDark);
@@ -89,10 +89,10 @@ function Header() {
                 Plots
               </Nav.Link> */}
 
-              <Nav.Link as={Link} to="/apartments">
+              <Nav.Link as={Link} to="/apartments-chennai">
                 Apartments
               </Nav.Link>
-              <Nav.Link as={Link} to="/plots">
+              <Nav.Link as={Link} to="/plots-chennai">
                 Plots
               </Nav.Link>
 

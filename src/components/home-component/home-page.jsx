@@ -14,11 +14,21 @@ import HomeServices from "./home-services";
 import HomeReservation from "./home-reservation";
 import HomeClients from "./home-clients";
 import HomeLogoMarquee from "./time-ticker";
+import { Helmet } from "react-helmet-async";
 
 
 function HomePage() {
   return (
     <Fragment>
+
+      <Helmet>
+        <title>Top Real Estate Developers, Builders in Chennai</title>
+        <meta
+          name="description"
+          content="GP Homes is one of the best real estate developers in Chennai, offering premium apartments, CMDA-approved plots, and affordable luxury homes. Build your dream home with us today!"
+        />
+      </Helmet>
+
       <Header />
       <BannerSlider />
       <HomeLogoMarquee />
