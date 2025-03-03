@@ -20,7 +20,7 @@ const HomeFacilities = () => {
               className="single-facility animate-box"
               data-animate-effect="fadeInUp"
             >
-              <span className="flaticon-world"></span>
+              <span className="flaticon-"></span>
               <h5>Quality</h5>
               <p>
                 From day one, we've ensured that only the finest construction

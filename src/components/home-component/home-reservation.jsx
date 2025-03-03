@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import slideImg2 from "../../assets/img/slider/2.jpg";
+import slideImg2 from "../../assets/img/projects/BG-1.jpg";
 
 const HomeReservation = ({ project }) => {
   const [checkIn, setCheckIn] = useState("");
@@ -23,7 +23,7 @@ const HomeReservation = ({ project }) => {
       <div
         className="background bg-img bg-fixed section-padding pb-0"
         style={{ backgroundImage: `url(${slideImg2})` }}
-        data-overlay-dark="2"
+        data-overlay-dark="3"
       >
         <div className="container">
           <div className="row">
