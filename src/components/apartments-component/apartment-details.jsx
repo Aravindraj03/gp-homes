@@ -11,6 +11,13 @@ import room7 from "../../assets/img/rooms/gp-garden-bay2.jpg";
 import room8 from "../../assets/img/rooms/ethulia.jpg";
 import room9 from "../../assets/img/rooms/nammannai.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
+import apartCompleted1 from "../../assets/img/apartments/Blossom-icf-colony.jpg";
+import apartCompleted2 from "../../assets/img/apartments/Blue-Bell.jpg";
+import apartCompleted3 from "../../assets/img/apartments/Blue-Bell-PhaseII.jpg";
+import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";
+import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom1.jpg";
+import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom2.jpg";
+
 
 const roomsData = [
   {
@@ -74,7 +81,7 @@ const roomsData = [
     slug: "gp-valencia-ruby",
   },
   {
-    id: 11,
+    id: 6,
     category: "Apartments-Ongoing",
     location: "Ayanambakkam",
     title: "Lake Breeze",
@@ -85,78 +92,78 @@ const roomsData = [
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
-
-  {
-    id: 6,
-    category: "Plots",
-    location: "Athipet",
-    title: "GP Midway Avenue",
-    image: room5,
-    description:
-      "Midway Avenue in Athipet 2.0, an oasis where modern living blends seamlessly with the tranquility of nature. Imagine beginning each day with the soothing sight of lush, green landscapes right outside your doorstep.",
-    project_status: "Ongoing Project",
-    features: [
-      "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
-    ],
-    slug: "gp-midway-avenue",
-  },
   {
     id: 7,
-    category: "Plots",
-    location: "Kolathur",
-    title: "GP Garden Bay",
-    image: room7,
+    category: "Apartments-Completed",
+    location: "CHENNAI",
+    title: "Blossom icf colony",
+    image: apartCompleted1,
     description:
-      "Garden Bay is the epitome of serene living in the heart of Chennai. Located in the thriving area of near Anna Nagar, these residential plots provide the perfect foundation for your dream home.",
+      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
     project_status: "Ongoing Project",
-    features: [
-      "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
-    ],
-    slug: "gp-garden-bay",
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+    slug: "gp-valencia-ruby",
   },
-
   {
     id: 8,
-    category: "Plots",
-    location: "Mogappair",
-    title: "GP Ethulia",
-    image: room8,
+    category: "Apartments-Completed",
+    location: "AYANAMBAKKAM",
+    title: "Blue Bell",
+    image: apartCompleted2,
     description:
-      "Ethulia stands as an exemplary plot-based project by GP Homes in the highly sought-after Mogappair area, it presents 55 ready-to-build villa plots spanning 2.46 acres. This premier plotted development promises a prime location for value appreciation.",
+      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
     project_status: "Ongoing Project",
-    features: [
-      "Branded Solar Street Lights, Well Laid Blacktop Roads, Grand Entrance Arch, EB Provided",
-    ],
-    slug: "gp-ethulia",
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+    slug: "gp-valencia-ruby",
   },
   {
     id: 9,
-    category: "Plots",
-    location: "Redhills",
-    title: "GP Nanmanai",
-    image: room9,
+    category: "Apartments-Completed",
+    location: "AYANAMBAKKAM",
+    title: "Blue Bell Phase II",
+    image: apartCompleted3,
     description:
-      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
+      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
     project_status: "Ongoing Project",
-    features: [
-      "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
-    ],
-    slug: "gp-nanmanai",
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+    slug: "gp-valencia-ruby",
   },
   {
     id: 10,
-    category: "Plots",
-    location: "Thiruvallur",
-    title: "GP Vijayalakshmi",
-    image: room9,
+    category: "Apartments-Completed",
+    location: "KORATTUR",
+    title: "Caspia (Mohan Gardens)",
+    image: apartCompleted4,
     description:
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
     project_status: "Ongoing Project",
-    features: [
-      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
-    ],
-    slug: "gp-vijayalakshmi",
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+    slug: "gp-valencia-ruby",
   },
+  {
+    id: 11,
+    category: "Apartments-Completed",
+    location: "AYANAMBAKKAM",
+    title: "Cherry Blossom I",
+    image: apartCompleted5,
+    description:
+      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+    project_status: "Ongoing Project",
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+    slug: "gp-valencia-ruby",
+  },
+  {
+    id: 12,
+    category: "Apartments-Completed",
+    location: "Ayanambakkam",
+    title: "Cherry Blossom II – Lavender",
+    image: apartCompleted6,
+    description:
+      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+    project_status: "Ongoing Project",
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+    slug: "gp-valencia-ruby",
+  }
 ];
 
 const ApartmentDetails = () => {
@@ -275,29 +282,6 @@ const ApartmentDetails = () => {
                       <h4>{room.title}</h4>
                       <p>{room.description}</p>
 
-                      {/* <div className="row room-facilities mb-30">
-                        <div className="col-md-6">
-                          <ul>
-                            <li>
-                              <i className="flaticon-group"></i> 1-2 Persons
-                            </li>
-                            <li>
-                              <i className="flaticon-wifi"></i> Free Wifi
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li>
-                              <i className="flaticon-bed"></i> Twin Bed
-                            </li>
-                            <li>
-                              <i className="flaticon-breakfast"></i> Breakfast
-                            </li>
-                          </ul>
-                        </div>
-                      </div> */}
-
                       {room.features[0] && room.features[0].trim() !== "" && (
                         <div className="row room-facilities mb-30">
                           {room.features[0].split(",").map((feature, index) => (
@@ -309,19 +293,7 @@ const ApartmentDetails = () => {
                           ))}
                         </div>
                       )}
-
-                      {/* <div className="btn-line">
-                        <Link
-                          to={
-                            room.category === "Plots"
-                              ? `/project-details/${room.slug}`
-                              : `/project/${room.slug}`
-                          }
-                        >
-                          Details
-                        </Link>
-                      </div> */}
-                      {room.id != "11" ? (
+                      {room.id != "6" ? (
                         <Link
                           className="btn-form1-submit text-center"
                           to={

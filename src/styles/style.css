@@ -884,6 +884,9 @@ color: #aa8453;
 .nav-scroll .container{
     padding-top: 0px;
 }
+.nav-scroll-1 .container{
+    padding-top: 0px;
+}
 .nav-scroll, .nav-scroll-1 {
     background: #fff;
     padding: 0 0 0 0;
