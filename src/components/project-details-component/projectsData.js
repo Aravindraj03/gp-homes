@@ -1397,7 +1397,7 @@ const projectsData = [
         "Veera Ragavar Perumal Temple",
         "Sai Baba Temple",
         "Panchamugha Anjaneyar Temple",
-        "Masjid. E.Akbar (Mosque)",
+        "Masjid. E.Akbar",
       ],
       entertainment_zone: [
         "Rakki Cinemas",
