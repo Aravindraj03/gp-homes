@@ -161,7 +161,7 @@ const roomsData = [
     id: 12,
     category: "Plots",
     location: "Thiruvallur",
-    title: "GP Vijayalakshmi",
+    title: "GP Pon Bhoomi",
     image: room9,
     description:
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",

@@ -58,8 +58,8 @@ const AboutSection = () => {
                 <span className="flaticon-call"></span>
               </div>
               <div className="text">
-                <p>Reservation</p>
-                <a href="tel:855-100-4444">855 100 4444</a>
+                <p>Contact Us</p>
+                <a href="tel:855-100-4444">934 448 1444</a>
               </div>
             </div>
           </div>

@@ -14,9 +14,9 @@ function AboutPage() {
       <Header />
       <AboutBanner />
       <AboutSection />
-      <AboutPricing />
-      <AboutFacilities />
+      {/* <AboutPricing /> */}
       <AboutTeam />
+      <AboutFacilities />
       <AboutTestimonials />
       <Footer />
     </Fragment>

@@ -11,7 +11,7 @@ import gardenBayLogo from "../../assets/img/projects/garden-bay.png";
 import rubyLogo from "../../assets/img/projects/ruby-logo.png";
 
 const logos = [
-  blazingStarLogo,
+  blazingStarLogo,  
   breezeBayLogo,
   buildingTrustLogo,
   elanzaLogo,

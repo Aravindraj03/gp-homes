@@ -29,40 +29,40 @@ const HomeReservation = ({ project }) => {
           <div className="row">
             {/* Reservation */}
             <div className="col-md-5 mb-30 mt-30">
-              <p>
+              {/* <p>
                 <i className="star-rating"></i>
                 <i className="star-rating"></i>
                 <i className="star-rating"></i>
                 <i className="star-rating"></i>
                 <i className="star-rating"></i>
-              </p>
-              <h5>
-                Each of our guest rooms feature a private bath, wi-fi, cable
-                television and include full breakfast.
-              </h5>
+              </p> */}
+              <h3>ENQUIRE NOW</h3><br></br>
+              <h6>
+              Interested in learning more? Our property experts are here to help! Reach out to us, and we’ll get back to you with all the details soon.
+              </h6>
               <div className="reservations mb-30">
                 <div className="icon color-1">
                   <span className="flaticon-call"></span>
                 </div>
                 <div className="text">
-                  <p className="color-1">Reservation</p>
+                  <p className="color-1">Contact Us</p>
                   <a className="color-1" href="tel:855-100-4444">
-                    855 100 4444
+                    9344481444
                   </a>
                 </div>
               </div>
-              <p>
-                <i className="ti-check"></i>
-                <small>Call us, it's toll-free.</small>
-              </p>
+                {/* <p>
+                  <i className="ti-check"></i>
+                  <small>Call us, it's toll-free.</small>
+                </p> */}
             </div>
 
             {/* Booking Form */}
             <div className="col-md-5 offset-md-2">
               <div className="booking-box">
                 <div className="head-box">
-                  <h6>GP Homes</h6>
-                  <h4>Booking Form</h4>
+                  <h6>Booking Form </h6>
+                  <h4>Drop in a line with your details.</h4>
                 </div>
                 <div className="booking-inner clearfix">
                   <form onSubmit={handleSubmit} className="form1 clearfix">

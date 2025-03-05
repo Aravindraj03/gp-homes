@@ -11,6 +11,7 @@ import '../styles/style.css';
 import 'bootstrap-4-react';
 import 'react-bootstrap';
 import 'react-icons/fa';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Import AOS Animation
 import AOS from 'aos';
