@@ -10,11 +10,11 @@ function TestimonialsPage() {
     <Fragment>
       <Helmet>
         <title>
-        GP Homes Reviews – Trusted Builder in Chennai
+        Testimonials - GP Homes
         </title>
         <meta
           name="description"
-          content="Hear from happy homeowners who chose GP Homes for quality construction, timely delivery, and transparent real estate services. Read our customer testimonials now!"
+          content="Read what our happy homeowners say about GP Homes. Discover real experiences and testimonials from satisfied customers who found their dream homes with us."
         />
       </Helmet>
       <Header />

@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "bootstrap-4-react": "^0.0.59",
+    "bootstrap-icons": "^1.11.3",
     "html-react-parser": "^5.1.18",
     "jquery": "^3.7.1",
     "owl.carousel": "^2.3.4",

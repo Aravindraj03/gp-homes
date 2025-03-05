@@ -68,7 +68,7 @@ const ProjectsList = ({ project }) => {
                         to="reservation-sec"
                         smooth={true}
                         duration={500}
-                        offset={-70} // Adjust if you have a fixed header
+                        offset={-70}
                       >
                         <span>Book Now</span>
                       </ScrollLink>

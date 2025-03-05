@@ -5,17 +5,19 @@ import JointVenturesBanner from "./joint-ventures-banner";
 import JointVenturesForm from "./joint-ventures-form";
 import HomeReservation from "../home-component/home-reservation";
 import { Helmet } from "react-helmet-async";
-function JointVenturesPage() { 
+function JointVenturesPage() {
   return (
     <Fragment>
       <Helmet>
-              <title>Joint Venture Real Estate Development in Chennai – GP Homes</title>
-              <meta
-                name="description"
-                content="Partner with GP Homes for joint venture collaborations in Chennai. We bring expertise, resources, and innovation to create profitable real estate developments together."
-              />
-            </Helmet>
-      <Header />
+        <title>
+        Join Ventures - GP Homes
+        </title>
+        <meta
+          name="description"
+          content="Partner with GP Homes through exciting joint ventures. Collaborate with leading real estate developers in Chennai for innovative and successful projects."
+        />
+      </Helmet>
+      <Header />z
       <JointVenturesBanner />
       <JointVenturesForm />
       <HomeReservation />

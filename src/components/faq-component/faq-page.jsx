@@ -10,11 +10,11 @@ function FAQPage() {
     <Fragment>
       <Helmet>
         <title>
-        Real Estate FAQs – GP Homes Chennai
+        FAQ’s - GP Homes
         </title>
         <meta
           name="description"
-          content="Have questions about buying a home or investing in real estate? Browse our FAQs for answers on GP Homes projects, CMDA approvals, pricing, and more."
+          content="Find answers to common questions about GP Homes, our projects, buying process, and more. Explore our FAQs for detailed information and expert guidance."
         />
       </Helmet>
       <Header />

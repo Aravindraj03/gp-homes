@@ -10,11 +10,11 @@ function ContactPage() {
     <Fragment>
       <Helmet>
         <title>
-        Contact GP Homes – Chennai’s Top Real Estate Developers
+        Contact us - GP Homes
         </title>
         <meta
           name="description"
-          content="Get in touch with GP Homes for inquiries about apartments, plots, and joint ventures. Call us or visit our office for expert real estate assistance."
+          content="Get in touch with GP Homes for inquiries about our projects, bookings, and more. Contact us today for expert assistance in finding your dream home in Chennai."
         />
       </Helmet>
       <Header />

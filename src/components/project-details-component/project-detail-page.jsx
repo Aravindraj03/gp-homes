@@ -11,6 +11,7 @@ import projectsData from "./projectsData";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
+import PlotTable from "./plots-data";
 function ProjectDetailPage() {
   const { slug } = useParams(); // Get slug from URL
   const project = projectsData.find((p) => p.slug === slug); // Find project by slug
@@ -85,6 +86,7 @@ function ProjectDetailPage() {
         </Container>
       </Navbar>
       <ProjectDetailBanner project={project} />
+      <PlotTable />
       <ProjectDetailSection project={project} />
       <HomeReservation project={project} />
       <Footer />

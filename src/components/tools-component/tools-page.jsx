@@ -10,11 +10,11 @@ function ToolsPage() {
     <Fragment>
       <Helmet>
         <title>
-        Real Estate Tools & Resources – GP Homes Chennai
+        Tools - GP Homes
         </title>
         <meta
           name="description"
-          content="Access helpful tools and resources for homebuyers and investors. GP Homes provides expert insights, property guides, and real estate calculators."
+          content="Explore essential real estate tools at GP Homes to simplify your home-buying journey. Get insights on property trends, pricing, and more for smart investments in Chennai."
         />
       </Helmet>
       <Header />

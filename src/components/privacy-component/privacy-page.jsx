@@ -12,11 +12,11 @@ function PrivacyPage() {
     <Fragment>
       <Helmet>
         <title>
-        Privacy Policy – GP Homes Real Estate Chennai
+        Privacy Policy - GP Homes
         </title>
         <meta
           name="description"
-          content="Learn how GP Homes handles your personal data and ensures your privacy when you visit our website or inquire about our real estate services."
+          content="Read GP Homes' Privacy Policy to understand how we collect, use, and protect your personal data. Your privacy and security are our top priorities."
         />
       </Helmet>
       <Header />

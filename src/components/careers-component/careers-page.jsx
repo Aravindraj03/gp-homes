@@ -12,11 +12,11 @@ function CareersPage() {
     <Fragment>
       <Helmet>
         <title>
-        Careers at GP Homes – Join Chennai’s Leading Real Estate Developer
+        Careers - GP Homes
         </title>
         <meta
           name="description"
-          content="Looking for a career in real estate? GP Homes offers exciting job opportunities in Chennai for professionals passionate about building dream homes."
+          content="Explore exciting career opportunities at GP Homes. Join our team of professionals and build a successful future in the real estate industry. Apply now!"
         />
       </Helmet>
       <Header />

@@ -105,7 +105,7 @@ const HomeFacilities = () => {
             </div>
           </div>
           {/* Facility 6 */}
-          {/* <div className="col-md-4">
+          <div className="col-md-4">
             <div
               className="single-facility animate-box"
               data-animate-effect="fadeInUp"
@@ -120,7 +120,7 @@ const HomeFacilities = () => {
                 <span className="flaticon-breakfast"></span>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

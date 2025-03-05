@@ -156,7 +156,7 @@ const roomsData = [
     features: [
       "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
     ],
-    slug: "gp-vijayalakshmi",
+    slug: "gp-ponBhoomi",
   },
 ];
 

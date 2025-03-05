@@ -14,10 +14,10 @@ function AboutPage() {
     <Fragment>
 
       <Helmet>
-        <title>About GP Homes – Leading Real Estate Developers in Chennai</title>
+        <title>About us - GP Homes</title>
         <meta
           name="description"
-          content="Discover GP Homes, a trusted real estate builder in Chennai with over 20 years of expertise. We specialize in crafting quality homes with transparency and on-time delivery."
+          content="Learn about GP Homes, leading real estate developers and builders in Chennai. We offer quality apartments, flats, and residential projects designed for modern living."
         />
       </Helmet>
 

@@ -10,12 +10,10 @@ function BlogsPage() {
   return (
     <Fragment>
       <Helmet>
-        <title>
-        Real Estate Blog – Property Insights & Home Buying Tips by GP Homes
-        </title>
+        <title>Blogs - GP Homes Latest News & Updates</title>
         <meta
           name="description"
-          content="Stay updated with the latest real estate trends, investment tips, and home-buying guides. Read expert blogs by GP Homes, Chennai’s top real estate developer."
+          content="Stay updated with the latest news, trends, and insights on real estate. Read GP Homes' blogs for expert advice, market updates, and home-buying tips."
         />
       </Helmet>
       <Header />

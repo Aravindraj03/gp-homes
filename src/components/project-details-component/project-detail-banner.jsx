@@ -99,11 +99,11 @@ const ProjectDetailBanner = ({ project }) => {
         ))}
       </div>
       {/* Arrow Down */}
-      <div className="arrow bounce text-center">
+      {/* <div className="arrow bounce text-center">
         <Link to="#projectDetailsSection" onClick={handleScroll} className="text-white">
           <i className="ti-arrow-down"></i>
         </Link>
-      </div>
+      </div> */}
     </header>
   );
 };

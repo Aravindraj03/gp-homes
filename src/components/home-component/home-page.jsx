@@ -22,10 +22,10 @@ function HomePage() {
     <Fragment>
 
       <Helmet>
-        <title>Top Real Estate Developers, Builders in Chennai</title>
+        <title>GP Homes: Top Real Estate Developers, Builders in Chennai</title>
         <meta
           name="description"
-          content="GP Homes is one of the best real estate developers in Chennai, offering premium apartments, CMDA-approved plots, and affordable luxury homes. Build your dream home with us today!"
+          content="GP Homes – Leading real estate developers & builders in Chennai, delivering premium homes with quality, innovation & trust. Find your dream home today!"
         />
       </Helmet>
 

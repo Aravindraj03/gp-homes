@@ -35,6 +35,8 @@ import ApartmentPage from "./apartments-component/apartments-page";
 import PlotsPage from "./plots-component/plots-page";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import NotFound from "./not-found";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 function App() {
   useEffect(() => {

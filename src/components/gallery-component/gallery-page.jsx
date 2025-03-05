@@ -12,11 +12,11 @@ function GalleryPage() {
     <Fragment>
       <Helmet>
         <title>
-        GP Homes Project Gallery – Luxury Apartments & Plots in Chennai
+        Gallery -  GP Homes
         </title>
         <meta
           name="description"
-          content="Explore the GP Homes gallery featuring our premium residential projects, modern apartments, and CMDA-approved plots in Chennai’s top locations."
+          content="Explore the GP Homes gallery showcasing our beautifully designed apartments, flats, and residential projects in Chennai. Discover your dream home with us today!"
         />
       </Helmet>
       <Header />
