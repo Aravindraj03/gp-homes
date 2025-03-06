@@ -75,6 +75,21 @@ const roomsData = [
   },
 
   {
+    id: 12,
+    category: "Plots",
+    location: "Thiruvallur",
+    title: "GP Pon Bhoomi",
+    image: room9,
+    description:
+      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+    project_status: "Ongoing Project",
+    features: [
+      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
+    ],
+    slug: "gp-ponBhoomi",
+  },
+
+  {
     id: 6,
     category: "Plots",
     location: "Athipet",
@@ -157,20 +172,7 @@ const roomsData = [
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
-  {
-    id: 12,
-    category: "Plots",
-    location: "Thiruvallur",
-    title: "GP Pon Bhoomi",
-    image: room9,
-    description:
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
-    project_status: "Ongoing Project",
-    features: [
-      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
-    ],
-    slug: "gp-vijayalakshmi",
-  },
+  
 ];
 
 const HomeProjects = () => {
@@ -322,8 +324,8 @@ const HomeProjects = () => {
                           className="btn-form1-submit text-center"
                           to={
                             room.category === "Plots"
-                              ? `/project-details/${room.slug}`
-                              : `/project/${room.slug}`
+                              ? `/plots-chennai/${room.slug}`
+                              : `/apartments-chennai/${room.slug}`
                           }
                         >
                           Details

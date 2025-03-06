@@ -1310,10 +1310,11 @@ const projectsData = [
   {
     id: 15,
     location: "Plots in Thiruvallur, Chennai",
-    name: "GP Vijayalakshmi",
+    name: "GP PonBhoomi",
     description: [
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
-      "Experience the perfect blend of space and convenience with 50 plots in various sizes, ranging from 579 sq. ft. to 1700 sq. ft., catering to diverse needs and preferences. Strategically situated, the project provides easy access to Thiruvallur Main Road and is close to proMinsent shopping malls, cinemas, schools, and hospitals, making it an ideal choice for those seeking a convenient and comfortable lifestyle.",
+      "PonBhoomi isn’t just a name—it’s a promise of growth and prosperity. Investing in land is a better option than gold, as property values continue to appreciate over time. Now is the perfect time to build your dream home and settle in this serene paradise.",
+      "Strategically located on the Chennai-Tiruvallur Highway (near Avadi), PonBhoomi offers 207 premium villa plots ranging from 450 to 3,758 sq. ft. This well-connected residential community provides seamless access to key locations in Avadi, ensuring convenience and modern living. With shopping malls, movie theatres, schools, and hospitals nearby, PonBhoomi is an ideal choice for homeowners and investors alike.",
+      "Invest in PonBhoomi by GP Homes today—where value meets opportunity!",
     ],
     banner_images: [GPVijayaLakshmiBanner],
     image: listimg4,
@@ -1341,9 +1342,9 @@ const projectsData = [
       ["EB Provided", "flaticon-car"],
       ["Fully Compounded Wall", "flaticon-wifi"],
       ["Entrance Gate", "flaticon-car"],
-      ["Ready to Construct", "flaticon-car"],
-      ["Portable Ground water", "flaticon-car"],
-      ["Street Light", "flaticon-car"],
+      // ["Ready to Construct", "flaticon-car"],
+      // ["Portable Ground water", "flaticon-car"],
+      // ["Street Light", "flaticon-car"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1402,7 +1403,7 @@ const projectsData = [
       entertainment_zone_image: entertainmentZone3,
     },
     project_status: "Ongoing Project",
-    slug: "gp-vijayalakshmi",
+    slug: "gp-ponBhoomi",
   },
 ];
 

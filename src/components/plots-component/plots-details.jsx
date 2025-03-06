@@ -156,7 +156,7 @@ const roomsData = [
     features: [
       "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
     ],
-    slug: "gp-vijayalakshmi",
+    slug: "gp-ponBhoomi",
   },
 ];
 
@@ -320,8 +320,8 @@ const ApartmentDetails = () => {
                         className="btn-form1-submit text-center"
                         to={
                           room.category === "Plots-Ongoing"
-                            ? `/project-details/${room.slug}`
-                            : `/project/${room.slug}`
+                            ? `/plots-chennai/${room.slug}`
+                            : `/apartments-chennai/${room.slug}`
                         }
                       >
                         Details

@@ -32,7 +32,7 @@ const ProjectsList = ({ project }) => {
                   <h3>{project.type}</h3>
                   <h4>
                     {/* <a href="room-details.html">{project.name}</a> */}
-                    <Link to={`/project-details/${project.slug}`}>
+                    <Link to={`/plots-chennai/${project.slug}`}>
                       {project.name}
                     </Link>
                   </h4>
@@ -52,7 +52,7 @@ const ProjectsList = ({ project }) => {
                   <div className="info-wrapper">
                     <div className="more">
                       <Link
-                        to={`/project-details/${project.slug}`}
+                        to={`/plots-chennai/${project.slug}`}
                         className="link-btn"
                         tabIndex="0"
                         style={{fontWeight:"800"}}
@@ -68,7 +68,7 @@ const ProjectsList = ({ project }) => {
                         to="reservation-sec"
                         smooth={true}
                         duration={500}
-                        offset={-70} // Adjust if you have a fixed header
+                        offset={-70}
                       >
                         <span>Book Now</span>
                       </ScrollLink>

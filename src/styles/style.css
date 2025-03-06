@@ -857,6 +857,9 @@ color: #aa8453;
 .navbar.navbar-light.nav-scroll .navbar-nav .nav-link , .navbar.navbar-light.nav-scroll-1 .navbar-nav .nav-link {
     color: rgba(0,0,0,.5);
 }
+.navbar.navbar-light.nav-scroll .navbar-nav .nav-link:focus , .navbar.navbar-light.nav-scroll-1 .navbar-nav .nav-link:focus {
+    color: #e16e38
+}
 .navbar .navbar-nav .nav-link {
     /* font-family: 'Barlow Condensed', sans-serif; */
     font-size: 15px;
@@ -873,7 +876,7 @@ color: #aa8453;
 .navbar .navbar-nav .nav-link.nav-color {
     color: #fff;
 }
-.navbar .navbar-nav .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover , .navbar .navbar-nav .nav-link:focus {
     color: #e16e38 !important;
 }
 .navbar .navbar-nav .active {
@@ -1010,7 +1013,7 @@ color: #aa8453;
     /* font-family: 'Barlow', sans-serif; */
     font-size: 15px;
     font-weight: 400;
-    color: #e26512;
+    color: #000000;
     position: relative;
     -webkit-transition: all .4s;
     transition: all .4s;
@@ -4698,7 +4701,7 @@ button.mfp-arrow {
     bottom: 0;
     left: 100%;
     z-index: 1;
-    background: #222;
+    background: #f26522;
     color: #fff;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -5467,12 +5470,19 @@ select {
         position: relative;
     }
     .slider .item {
-        position: absolute;
+        /* position: absolute;
         top: 57px;
         left: 0;
         height: 100%;
         width: 100%;
-        background-size: contain;
+        background-size: contain; */
+        /* top: 57px; */
+        /* left: 0; */
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .slider-fade .owl-item {
@@ -5586,5 +5596,13 @@ select {
 .facilities-icon {
     font-size: 50px;
     color: #e16e38;
+    
+}
+
+@media screen and (max-width:767px) {
+    .facilities-title{
+
+        font-size: 25px;
+    }
     
 }

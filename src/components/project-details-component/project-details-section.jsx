@@ -17,7 +17,7 @@ const ProjectDetailSection = ({ project }) => {
 
   return (
     <section
-      className="rooms-page section-padding"
+      className="rooms-page pt-5"
       data-scroll-index="1"
       id="projectDetailsSection"
     >
@@ -30,7 +30,7 @@ const ProjectDetailSection = ({ project }) => {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-6">
             {Array.isArray(project.description) ? (
               project.description.map((desc, index) => (
                 <p key={index} className="mb-30">
@@ -68,8 +68,8 @@ const ProjectDetailSection = ({ project }) => {
               )}
             </div>
           </div>
-          <div className="col-md-3 offset-md-1">
-            <h6>{project.amenities_title}</h6>
+          <div className="col-md-5 offset-md-1">
+            <h3>{project.amenities_title}</h3>
             <p>{project.amenities_desc}</p>
 
             <ul className="list-unstyled page-list mb-30">
@@ -89,7 +89,7 @@ const ProjectDetailSection = ({ project }) => {
 
         <div className="row">
           <div className="col-md-12 mt-4">
-            <h6>{project.location_map_title}</h6>
+            <h4>{project.location_map_title}</h4>
             <p>{project.location_map_desc}</p>
           </div>
         </div>
