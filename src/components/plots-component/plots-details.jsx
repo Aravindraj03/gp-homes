@@ -74,6 +74,21 @@ const roomsData = [
   },
 
   {
+    id: 11,
+    category: "Plots-Ongoing",
+    location: "Thiruvallur",
+    title: "GP Pon Bhoomi",
+    image: room9,
+    description:
+      "PonBhoomi isn’t just a name—it’s a promise of growth and prosperity. Investing in land is a better option than gold, as property values continue to appreciate over time. Now is the perfect time to build your dream home and settle in this serene paradise.",
+    project_status: "Ongoing Project",
+    features: [
+      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
+    ],
+    slug: "gp-ponBhoomi",
+  },
+
+  {
     id: 6,
     category: "Plots-Ongoing",
     location: "Athipet",
@@ -140,24 +155,11 @@ const roomsData = [
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
     features: [
-      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
+      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
     ],
     slug: "gp-vijayalakshmi",
   },
-  {
-    id: 11,
-    category: "Plots-Ongoing",
-    location: "Thiruvallur",
-    title: "GP Vijayalakshmi",
-    image: room9,
-    description:
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
-    project_status: "Ongoing Project",
-    features: [
-      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
-    ],
-    slug: "gp-ponBhoomi",
-  },
+
 ];
 
 const ApartmentDetails = () => {
@@ -257,7 +259,7 @@ const ApartmentDetails = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title">
+                      <div className="box-title w-100 p-2" style={{backgroundColor:"#393434af"}}>
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>

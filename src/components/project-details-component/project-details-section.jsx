@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import slideImg2 from "../../assets/img/slider/2.jpg";
+import slideImg2 from "../../assets/img/projects/BG-1.jpg";
+
 
 import image1 from "../../assets/img/restaurant/1.jpg";
 import image2 from "../../assets/img/spa/3.jpg";

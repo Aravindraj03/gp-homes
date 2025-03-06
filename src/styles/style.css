@@ -1309,6 +1309,7 @@ color: #aa8453;
 .header .caption .butn-dark {
     -webkit-animation-delay: .8s;
     animation-delay: .8s;
+    color: #ffff !important;
 }
 .header .social a {
     color: #eee;
@@ -2808,7 +2809,7 @@ hr.border-2 {
     transform-style: preserve-3d;
 }
 .rooms3 .square-container {
-    padding: 40px;
+    /* padding: 40px; */
     text-align: right;
     height: 450px;
     position: relative;
@@ -4680,6 +4681,8 @@ button.mfp-arrow {
 .butn-dark {
     position: relative;
     line-height: 1.2em;
+    color: #ffff;
+    cursor: pointer;
 }
 .butn-dark a {
     font-weight: 400;
