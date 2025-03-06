@@ -16,6 +16,7 @@ function ProjectDetailPage() {
   const { slug } = useParams(); // Get slug from URL
   const project = projectsData.find((p) => p.slug === slug); // Find project by slug
 
+
   if (!project) {
     return <h2>Project not found</h2>;
   }
@@ -86,7 +87,7 @@ function ProjectDetailPage() {
         </Container>
       </Navbar>
       <ProjectDetailBanner project={project} />
-      <PlotTable />
+      {slug === "gp-ponBhoomi" && <PlotTable />}
       <ProjectDetailSection project={project} />
       <HomeReservation project={project} />
       <Footer />
