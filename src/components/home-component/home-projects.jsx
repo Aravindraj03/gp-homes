@@ -84,7 +84,7 @@ const roomsData = [
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
     features: [
-      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
+      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
     ],
     slug: "gp-ponBhoomi",
   },
@@ -156,7 +156,7 @@ const roomsData = [
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
     features: [
-      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
+      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
     ],
     slug: "gp-vijayalakshmi",
   },

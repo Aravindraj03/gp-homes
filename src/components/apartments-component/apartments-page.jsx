@@ -26,7 +26,7 @@ const apartmentsData = {
     title: " GP Valencia Emarald- Buy 2BHK, 3BHK Apartments, Flats in Ayanambakkam",
     description: "GP Valencia Emerald offers premium 2BHK & 3BHK apartments in Ayanambakkam. Experience luxury living with modern amenities in a prime location. Explore now!"
   },
-  "gp-valencia-rub": {
+  "gp-valencia-ruby": {
     title: "GP Homes Valencia Ruby- Buy 2BHK, 3BHK Apartments, Flats in Ayanambakkam",
     description: "GP Homes Valencia Ruby offers luxurious 2BHK & 3BHK apartments in Ayanambakkam. Find your dream home with modern amenities in a prime location. Enquire now!"
   }
