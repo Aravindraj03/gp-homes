@@ -18,7 +18,7 @@ import GPGardenBayBanner from "../../assets/img/projects/GPGardenBayBanner.jpg";
 import GPEthuliaBanner from "../../assets/img/projects/GPEthuliaBanner.jpg";
 import GPNanmanaiBanner from "../../assets/img/projects/GPNanmanaiBanner.jpg";
 import GPVijayaLakshmiBanner from "../../assets/img/projects/GPVijayaLakshmiBanner.jpg";
-import GPPonBhoomi from "../../assets/img/projects/GP-Ponbhoomi.jpg";
+import GPPonBhoomi from "../../assets/img/projects/GPPonbhoomi-Banner.jpg";
 
 
 import BlazingStarFloorplan1 from "../../assets/img/floorplans/blazing-star-floorplan-1.jpg";
