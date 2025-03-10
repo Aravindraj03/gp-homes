@@ -1453,6 +1453,7 @@ const PlotTable = () => {
     },
   ];
 
+  const soldOutPlots = [1, 5, 34, 35, 92, 93, 156, 207]; // Define sold-out plot numbers
   const [filters, setFilters] = useState({
     plotNo: "",
     areaSqFt: "",
@@ -1486,38 +1487,24 @@ const PlotTable = () => {
     setCurrentPage(1); // Reset to first page after filtering
   };
 
-  // const filteredPlots = allPlots.filter((plot) => {
-  //   return (
-  //     (appliedFilters.plotNo === "" ||
-  //       plot.PlotNo.includes(appliedFilters.plotNo)) &&
-  //     (appliedFilters.areaSqFt === "" ||
-  //       plot.areaSqFt.toString().includes(appliedFilters.areaSqFt)) &&
-  //     (appliedFilters.totalCost === "" ||
-  //       plot.totalCost.toString().includes(appliedFilters.totalCost)) &&
-  //     (appliedFilters.facing === "" || plot.facing === appliedFilters.facing)
-  //   );
-  // });
-  // const filteredPlots = allPlots.filter((plot) => {
-  //   const isPlotNoMatch =
-  //     appliedFilters.plotNo === "" ||
-  //     plot.plotNo.toString().includes(appliedFilters.plotNo);
+  // Generate available total cost options based on selected Sq.Ft range & facing
+  const costOptions = allPlots
+    .filter((plot) => {
+      if (!filters.areaSqFt || !filters.facing) return true; // Show all if no filter is applied
 
-  //   const isAreaMatch =
-  //     appliedFilters.areaSqFt === "" ||
-  //     (() => {
-  //       const [min, max] = appliedFilters.areaSqFt.split("~").map(Number);
-  //       return plot.areaSqFt >= min && plot.areaSqFt <= max;
-  //     })();
+      const [min, max] = filters.areaSqFt.split("~").map(Number);
+      return (
+        plot.areaSqFt >= min &&
+        plot.areaSqFt <= max &&
+        plot.facing === filters.facing
+        // &&
+        // typeof plot.totalCost === "number" // Exclude "Premium Villa"
+      );
+    })
+    .map((plot) => plot.totalCost)
+    .filter((value, index, self) => self.indexOf(value) === index) // Remove duplicates
+    .sort((a, b) => a - b); // Sort prices in ascending order
 
-  //   const isTotalCostMatch =
-  //     appliedFilters.totalCost === "" ||
-  //     plot.totalCost.toString().includes(appliedFilters.totalCost);
-
-  //   const isFacingMatch =
-  //     appliedFilters.facing === "" || plot.facing === appliedFilters.facing;
-
-  //   return isPlotNoMatch && isAreaMatch && isTotalCostMatch && isFacingMatch;
-  // });
   const filteredPlots = allPlots
     .filter((plot) => {
       const isPlotNoMatch =
@@ -1592,25 +1579,10 @@ const PlotTable = () => {
                   </select>
                 </div>
               </div>
-              {/* <div className="col1 c2">
-                <div className="input1_wrapper">
-                  <label>Sq.Ft</label>
-                  <div className="input1_inner">
-                    <input
-                      type="text"
-                      name="areaSqFt"
-                      value={filters.areaSqFt}
-                      onChange={handleFilterChange}
-                      className="form-control input"
-                      placeholder="366~3190 Sq.Ft"
-                    />
-                  </div>
-                </div>
-              </div> */}
               <div className="col1 c2">
                 <div className="input1_wrapper">
                   <label>Sq.Ft</label>
-                  <div className="input1_inner">
+                  <div className="select1_inner">
                     <select
                       name="areaSqFt"
                       value={filters.areaSqFt}
@@ -1628,21 +1600,29 @@ const PlotTable = () => {
                 </div>
               </div>
 
-              <div className="col1 c2">
-                <div className="input1_wrapper">
+              <div className="col1 c3">
+                <div className="select1_inner">
                   <label>Price Amount</label>
                   <div className="input1_inner">
-                    <input
-                      type="text"
-                      name="totalCost" // Correct key
+                    <select
+                      name="totalCost"
                       value={filters.totalCost}
                       onChange={handleFilterChange}
                       className="form-control input"
-                      placeholder="Enter Price Amount"
-                    />
+                      disabled={!filters.areaSqFt || !filters.facing} // Disable if no Sq.Ft or facing selected
+                      style={{ height: "62px" }}
+                    >
+                      <option value="">Select Price</option>
+                      {costOptions.map((cost, index) => (
+                        <option key={index} value={cost}>
+                          {cost}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                 </div>
               </div>
+
               <div className="col3 c6">
                 <button type="submit" className="btn-form1-submit">
                   Check Now
@@ -1666,7 +1646,6 @@ const PlotTable = () => {
               </button>
             </span>
           </h3>
-
           {/* Table */}
           <div className="w-full max-w-4xl mt-6 table-scroll">
             <table
@@ -1677,17 +1656,14 @@ const PlotTable = () => {
                 <tr className="bg-orange-100 text-gray-800">
                   {[
                     "Plot No",
-                    // "BHK",
-                    // "BUILT-UP AREA",
-                    // "PRICE PER SQ. FT.",
                     "Area in Sq.ft",
                     "Total Cost",
-                    "status",
+                    "Status",
                     "Facing",
                   ].map((header, index) => (
                     <th
                       key={index}
-                      className=" font-semibold text-center table-heading "
+                      className="font-semibold text-center table-heading"
                       style={{ border: "1px solid #f26522", minWidth: "100px" }}
                     >
                       {header}
@@ -1697,40 +1673,52 @@ const PlotTable = () => {
               </thead>
               <tbody>
                 {paginatedPlots.length > 0 ? (
-                  paginatedPlots.map((plot, index) => (
-                    <tr key={index} className="text-gray-700">
-                      <td
-                        className=" text-center table-data"
-                        style={{ border: "1px solid #f26522" }}
+                  paginatedPlots.map((plot, index) => {
+                    const isSoldOut = soldOutPlots.includes(plot.plotNo); // Check if the plot is sold out
+                    return (
+                      <tr
+                        key={index}
+                        className={`text-gray-700 ${
+                          isSoldOut ? "bg-gray-300 text-red-600 font-bold" : ""
+                        }`} // Apply styles if sold out
                       >
-                        {plot.plotNo}
-                      </td>
-                      <td
-                        className=" text-center table-data"
-                        style={{ border: "1px solid #f26522" }}
-                      >
-                        {plot.areaSqFt}
-                      </td>
-                      <td
-                        className=" text-center table-data"
-                        style={{ border: "1px solid #f26522" }}
-                      >
-                        {plot.totalCost}
-                      </td>
-                      <td
-                        className=" text-center table-data"
-                        style={{ border: "1px solid #f26522" }}
-                      >
-                        {plot.status}
-                      </td>
-                      <td
-                        className=" text-center table-data"
-                        style={{ border: "1px solid #f26522" }}
-                      >
-                        {plot.facing}
-                      </td>
-                    </tr>
-                  ))
+                        <td
+                          className="text-center table-data"
+                          style={{ border: "1px solid #f26522" }}
+                        >
+                          {plot.plotNo}
+                        </td>
+                        <td
+                          className="text-center table-data"
+                          style={{ border: "1px solid #f26522" }}
+                        >
+                          {plot.areaSqFt}
+                        </td>
+                        <td
+                          className="text-center table-data"
+                          style={{ border: "1px solid #f26522" }}
+                        >
+                          {plot.totalCost}
+                        </td>
+                        <td
+                          className="text-center table-data"
+                          style={{
+                            border: "1px solid #f26522",
+                            fontWeight: isSoldOut ? "bold" : "normal",
+                            color: isSoldOut ? "red" : "black",
+                          }}
+                        >
+                          {isSoldOut ? "Sold Out" : plot.status}
+                        </td>
+                        <td
+                          className="text-center table-data"
+                          style={{ border: "1px solid #f26522" }}
+                        >
+                          {plot.facing}
+                        </td>
+                      </tr>
+                    );
+                  })
                 ) : (
                   <tr>
                     <td colSpan={6} className="text-center py-4 text-red-500">
@@ -1740,8 +1728,11 @@ const PlotTable = () => {
                 )}
               </tbody>
             </table>
+            <span className="text-success" style={{fontSize:"12px"}}>
+              Development Charges | Basic Cost | Registration &
+              Documentation | Maintenance (1 Yr) | GST*
+            </span>
           </div>
-
           {/* Pagination Controls */}
           <div className="flex justify-center mt-4">
             <button
@@ -1764,8 +1755,8 @@ const PlotTable = () => {
           </div>
         </div>
         {/* Facing data */}
-        <div className="col-12 col-lg-4 mt-4 mt-lg-0 d-flex justify-content-center align-items-center">
-          <div className="row g-2 w-100">
+        <div className="col-12 col-lg-4 mt-4 mt-lg-0 d-flex justify-content-center align-items-center hide-mobile">
+          <div className="row g-2 w-100 ">
             {[
               "North & West",
               "North",
@@ -1801,6 +1792,18 @@ const PlotTable = () => {
                 </button>
               )
             )}
+            <div>
+              <h4>Sold Out Plot No</h4>
+              {soldOutPlots.map((soldOut, index) => (
+                <button
+                  key={index}
+                  className="button bg-danger text-white"
+                  style={{ border: "1px solid grey", padding: "10px" }}
+                >
+                  {soldOut}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>

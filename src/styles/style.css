@@ -5615,6 +5615,9 @@ select {
     .dataTable .table-scroll{
         overflow-x: scroll;
     }
+    .dataTable .hide-mobile{
+        display: none !important;
+    }
     
 }
 /* .custom-btn:focus {
