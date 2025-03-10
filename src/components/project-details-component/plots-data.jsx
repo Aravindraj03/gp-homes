@@ -1497,27 +1497,55 @@ const PlotTable = () => {
   //     (appliedFilters.facing === "" || plot.facing === appliedFilters.facing)
   //   );
   // });
-  const filteredPlots = allPlots.filter((plot) => {
-    const isPlotNoMatch =
-      appliedFilters.plotNo === "" ||
-      plot.plotNo.toString().includes(appliedFilters.plotNo);
+  // const filteredPlots = allPlots.filter((plot) => {
+  //   const isPlotNoMatch =
+  //     appliedFilters.plotNo === "" ||
+  //     plot.plotNo.toString().includes(appliedFilters.plotNo);
 
-    const isAreaMatch =
-      appliedFilters.areaSqFt === "" ||
-      (() => {
-        const [min, max] = appliedFilters.areaSqFt.split("~").map(Number);
-        return plot.areaSqFt >= min && plot.areaSqFt <= max;
-      })();
+  //   const isAreaMatch =
+  //     appliedFilters.areaSqFt === "" ||
+  //     (() => {
+  //       const [min, max] = appliedFilters.areaSqFt.split("~").map(Number);
+  //       return plot.areaSqFt >= min && plot.areaSqFt <= max;
+  //     })();
 
-    const isTotalCostMatch =
-      appliedFilters.totalCost === "" ||
-      plot.totalCost.toString().includes(appliedFilters.totalCost);
+  //   const isTotalCostMatch =
+  //     appliedFilters.totalCost === "" ||
+  //     plot.totalCost.toString().includes(appliedFilters.totalCost);
 
-    const isFacingMatch =
-      appliedFilters.facing === "" || plot.facing === appliedFilters.facing;
+  //   const isFacingMatch =
+  //     appliedFilters.facing === "" || plot.facing === appliedFilters.facing;
 
-    return isPlotNoMatch && isAreaMatch && isTotalCostMatch && isFacingMatch;
-  });
+  //   return isPlotNoMatch && isAreaMatch && isTotalCostMatch && isFacingMatch;
+  // });
+  const filteredPlots = allPlots
+    .filter((plot) => {
+      const isPlotNoMatch =
+        appliedFilters.plotNo === "" ||
+        plot.plotNo.toString().includes(appliedFilters.plotNo);
+
+      const isAreaMatch =
+        appliedFilters.areaSqFt === "" ||
+        (() => {
+          const [min, max] = appliedFilters.areaSqFt.split("~").map(Number);
+          return plot.areaSqFt >= min && plot.areaSqFt <= max;
+        })();
+
+      const isTotalCostMatch =
+        appliedFilters.totalCost === "" ||
+        plot.totalCost.toString().includes(appliedFilters.totalCost);
+
+      const isFacingMatch =
+        appliedFilters.facing === "" || plot.facing === appliedFilters.facing;
+
+      return isPlotNoMatch && isAreaMatch && isTotalCostMatch && isFacingMatch;
+    })
+    .sort((a, b) => {
+      // If areaSqFt filter is applied, sort by areaSqFt; otherwise, sort by plotNo
+      return appliedFilters.areaSqFt
+        ? a.areaSqFt - b.areaSqFt
+        : a.plotNo - b.plotNo;
+    });
 
   const totalPages = Math.max(
     1,
@@ -1591,12 +1619,10 @@ const PlotTable = () => {
                       style={{ height: "62px" }}
                     >
                       <option value="">Select Sq.Ft</option>
-                      <option value="366~500">366~500 Sq.Ft</option>
-                      <option value="501~800">501~800 Sq.Ft</option>
-                      <option value="801~1000">801~1000 Sq.Ft</option>
-                      <option value="1001~1500">1001~1500 Sq.Ft</option>
-                      <option value="1501~2000">1501~2000 Sq.Ft</option>
-                      <option value="2001~3190">2000~3190 Sq.Ft</option>
+                      <option value="366~798">366~798 Sq.Ft</option>
+                      <option value="800~999">800~999 Sq.Ft</option>
+                      <option value="1000~1288">1000~1288 Sq.Ft</option>
+                      <option value="1303~3190">1303~3190 Sq.Ft</option>
                     </select>
                   </div>
                 </div>
@@ -1635,10 +1661,8 @@ const PlotTable = () => {
                 Total Plots: {allPlots.length}
               </button>
               <button className="btn btn-success">
-                <button className="btn btn-success">
-                  Matching:{" "}
-                  {filteredPlots.length === 207 ? 0 : filteredPlots.length}
-                </button>
+                Matching:{" "}
+                {filteredPlots.length === 207 ? 0 : filteredPlots.length}
               </button>
             </span>
           </h3>

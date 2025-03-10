@@ -16,13 +16,7 @@ const JointVenturesForm = () => {
         <div className="row mb-90">
           {/* Contact Information */}
           <div className="col-md-6 mb-60">
-            <h3>The Cappa Luxury Hotel</h3>
-            <p>
-              Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue
-              the aucan ligula. Orci varius natoque penatibus et magnis dis
-              parturient monte nascete ridiculus mus nellentesque habitant
-              morbine.
-            </p>
+           
             <h3>Features</h3>
             <p>
               At GP Homes, we envision growing more quickly, driving innovation
@@ -38,10 +32,10 @@ const JointVenturesForm = () => {
               </div>
               <div className="text">
                 <p>Reservation</p>
-                <a href="tel:855-100-4444">855 100 4444</a>
+                <a href="tel:855-100-4444">934 448 1444</a>
               </div>
             </div>
-            <div className="reservations mb-30">
+            {/* <div className="reservations mb-30">
               <div className="icon">
                 <span className="flaticon-envelope"></span>
               </div>
@@ -49,16 +43,18 @@ const JointVenturesForm = () => {
                 <p>Email Info</p>
                 <a href="mailto:info@luxuryhotel.com">info@luxuryhotel.com</a>
               </div>
-            </div>
+            </div> */}
             <div className="reservations">
               <div className="icon">
                 <span className="flaticon-location-pin"></span>
               </div>
               <div className="text">
                 <p>Address</p>
-                1616 Broadway NY, New York 10001
-                <br />
-                United States of America
+                W-820, 9th St, Syndicate Colony,
+                    <br />
+                    D-Sector, Anna Nagar West Extension,
+                    <br />
+                    Chennai, Tamil Nadu 600101
               </div>
             </div>
           </div>

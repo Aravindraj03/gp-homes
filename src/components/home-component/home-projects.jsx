@@ -84,7 +84,7 @@ const roomsData = [
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
     features: [
-      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
+      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
     ],
     slug: "gp-ponBhoomi",
   },
@@ -99,7 +99,7 @@ const roomsData = [
       "Midway Avenue in Athipet 2.0, an oasis where modern living blends seamlessly with the tranquility of nature. Imagine beginning each day with the soothing sight of lush, green landscapes right outside your doorstep.",
     project_status: "Ongoing Project",
     features: [
-      "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
+      "Black-Top Roads, 24/7 Security, Ready To Construct, EB Provided",
     ],
     slug: "gp-midway-avenue",
   },
@@ -128,7 +128,7 @@ const roomsData = [
       "Ethulia stands as an exemplary plot-based project by GP Homes in the highly sought-after Mogappair area, it presents 55 ready-to-build villa plots spanning 2.46 acres. This premier plotted development promises a prime location for value appreciation.",
     project_status: "Ongoing Project",
     features: [
-      "Branded Solar Street Lights, Well Laid Blacktop Roads, Grand Entrance Arch, EB Provided",
+      "Solar Lights, Black-top Roads, Grand Entrance Arch, EB Provided",
     ],
     slug: "gp-ethulia",
   },
@@ -142,7 +142,7 @@ const roomsData = [
       "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
     project_status: "Ongoing Project",
     features: [
-      "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
+      "Black-Top Roads, 24/7 Security, Fully Fenced, EB Provided",
     ],
     slug: "gp-nanmanai",
   },
@@ -156,7 +156,7 @@ const roomsData = [
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
     features: [
-      "Well Laid Black Top Roads, Surveillance Camera, EB Provided, Fully Compounded Wall",
+      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
     ],
     slug: "gp-vijayalakshmi",
   },
