@@ -14,20 +14,11 @@ import HomeServices from "./home-services";
 import HomeReservation from "./home-reservation";
 import HomeClients from "./home-clients";
 import HomeLogoMarquee from "./time-ticker";
-import { Helmet } from "react-helmet-async";
 
 
 function HomePage() {
   return (
     <Fragment>
-
-      <Helmet>
-        <title>GP Homes: Top Real Estate Developers, Builders in Chennai</title>
-        <meta
-          name="description"
-          content="GP Homes – Leading real estate developers & builders in Chennai, delivering premium homes with quality, innovation & trust. Find your dream home today!"
-        />
-      </Helmet>
 
       <Header />
       <BannerSlider />
