@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import slideImg2 from "../../assets/img/projects/BG-1.jpg";
 
-
 import image1 from "../../assets/img/restaurant/1.jpg";
 import image2 from "../../assets/img/spa/3.jpg";
 import image3 from "../../assets/img/spa/2.jpg";
@@ -23,15 +22,11 @@ const ProjectDetailSection = ({ project }) => {
       id="projectDetailsSection"
     >
       <div className="container">
-        {/* Project Content */}
-        <div className="row">
-          <div className="col-md-12">
-            <div className="section-subtitle">{project.location}</div>
-            <div className="section-title">{project.name}</div>
-          </div>
-        </div>
         <div className="row">
           <div className="col-md-6">
+            {/* Project Content */}
+            <div className="section-subtitle">{project.location}</div>
+            <div className="section-title">{project.name}</div>
             {Array.isArray(project.description) ? (
               project.description.map((desc, index) => (
                 <p key={index} className="mb-30">
