@@ -1729,7 +1729,7 @@ const PlotTable = () => {
               </tbody>
             </table>
             <span className="text-success" style={{fontSize:"12px"}}>
-              Development Charges | Basic Cost | Registration &
+              Include Development Charges | Basic Cost | Registration &
               Documentation | Maintenance (1 Yr) | GST*
             </span>
           </div>
