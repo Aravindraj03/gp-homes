@@ -5604,8 +5604,21 @@ select {
 
 @media screen and (max-width:767px) {
     .facilities-title{
-
         font-size: 25px;
+    }
+    .dataTable .table-heading{
+        font-size: 14px;
+    }
+    .dataTable .table-data{
+        font-size: 13px;
+    }
+    .dataTable .table-scroll{
+        overflow-x: scroll;
     }
     
 }
+/* .custom-btn:focus {
+    background-color: green !important;
+    color: white !important;
+    border-color: green !important;
+  } */

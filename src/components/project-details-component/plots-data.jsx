@@ -1,1266 +1,1483 @@
 import React, { useState } from "react";
-
+import FacingLogo from "../../assets/img/Compass.png";
 const PlotTable = () => {
-
   const allPlots = [
     {
-      PlotNo: "1",
-      pricePerSqFt: "₹ 4999 / Sqft",
-      priceRange: "₹ 18,66,234",
-      availability: "Available",
-      direction: "West",
+      plotNo: 1,
+      areaSqFt: 366,
+      totalCost: 1945036,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "2",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 54,03,762",
-      availability: "Available",
-      direction: "West",
+      plotNo: 2,
+      areaSqFt: 1638,
+      totalCost: 5669548,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "3",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 59,31,602",
-      availability: "Available",
-      direction: "West",
+      plotNo: 3,
+      areaSqFt: 1798,
+      totalCost: 6220908,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "4",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 64,23,153",
-      availability: "Available",
-      direction: "West",
+      plotNo: 4,
+      areaSqFt: 1947,
+      totalCost: 6734362,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "5",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 48,62,726",
-      availability: "Available",
-      direction: "West",
+      plotNo: 5,
+      areaSqFt: 1474,
+      totalCost: 5104404,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "6",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 48,66,025",
-      availability: "Available",
-      direction: "West",
+      plotNo: 6,
+      areaSqFt: 1475,
+      totalCost: 5107850,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "7",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 48,66,025",
-      availability: "Available",
-      direction: "West",
+      plotNo: 7,
+      areaSqFt: 1475,
+      totalCost: 5107850,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "8",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 48,69,324",
-      availability: "Available",
-      direction: "West",
+      plotNo: 8,
+      areaSqFt: 1476,
+      totalCost: 5111296,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "9",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 48,72,623",
-      availability: "Available",
-      direction: "West",
+      plotNo: 9,
+      areaSqFt: 1477,
+      totalCost: 5114742,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "10",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 48,75,922",
-      availability: "Available",
-      direction: "West",
+      plotNo: 10,
+      areaSqFt: 1478,
+      totalCost: 5118188,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "11",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 48,75,922",
-      availability: "Available",
-      direction: "West",
+      plotNo: 11,
+      areaSqFt: 1478,
+      totalCost: 5118188,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "12",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 48,75,922",
-      availability: "Available",
-      direction: "West & Noth",
+      plotNo: 12,
+      areaSqFt: 1521,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & West",
     },
     {
-      PlotNo: "13",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 20,85,627",
-      availability: "Available",
-      direction: "South",
+      plotNo: 13,
+      areaSqFt: 673,
+      totalCost: 2209558,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "14",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 16,79,658",
-      availability: "Available",
-      direction: "South",
+      plotNo: 14,
+      areaSqFt: 542,
+      totalCost: 1784332,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "15",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 18,50,103",
-      availability: "Available",
-      direction: "South",
+      plotNo: 15,
+      areaSqFt: 597,
+      totalCost: 1962862,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "16",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 18,50,103",
-      availability: "Available",
-      direction: "South",
+      plotNo: 16,
+      areaSqFt: 597,
+      totalCost: 1962862,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "19",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 18,50,103",
-      availability: "Available",
-      direction: "North",
+      plotNo: 17,
+      areaSqFt: 1311,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & West",
     },
     {
-      PlotNo: "20",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 18,50,103",
-      availability: "Available",
-      direction: "North",
+      plotNo: 18,
+      areaSqFt: 1311,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & West",
     },
     {
-      PlotNo: "21",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 16,79,658",
-      availability: "Available",
-      direction: "North",
+      plotNo: 19,
+      areaSqFt: 597,
+      totalCost: 1962862,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "22",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 18,43,905",
-      availability: "Available",
-      direction: "North",
+      plotNo: 20,
+      areaSqFt: 597,
+      totalCost: 1962862,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "23",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 26,43,447",
-      availability: "Available",
-      direction: "South",
+      plotNo: 21,
+      areaSqFt: 542,
+      totalCost: 1784332,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "24",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 20,94,924",
-      availability: "Available",
-      direction: "South",
+      plotNo: 22,
+      areaSqFt: 595,
+      totalCost: 1956370,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "25",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 20,94,924",
-      availability: "Available",
-      direction: "South",
+      plotNo: 23,
+      areaSqFt: 853,
+      totalCost: 2793838,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "28",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 27,28,747",
-      availability: "Available",
-      direction: "North",
+      plotNo: 24,
+      areaSqFt: 676,
+      totalCost: 2219296,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "29",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 27,28,747",
-      availability: "Available",
-      direction: "North",
+      plotNo: 25,
+      areaSqFt: 676,
+      totalCost: 2219296,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "30",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 31,15,826",
-      availability: "Available",
-      direction: "North",
+      plotNo: 26,
+      areaSqFt: 1161,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & West",
     },
     {
-      PlotNo: "31",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 50,60,818",
-      availability: "Available",
-      direction: "South",
+      plotNo: 27,
+      areaSqFt: 1468,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & West",
     },
     {
-      PlotNo: "32",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 37,23,636",
-      availability: "Available",
-      direction: "South",
+      plotNo: 28,
+      areaSqFt: 853,
+      totalCost: 2879138,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "35",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 31,83,005",
-      availability: "Available",
-      direction: "South",
+      plotNo: 29,
+      areaSqFt: 853,
+      totalCost: 2879138,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "36",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 31,83,005",
-      availability: "Available",
-      direction: "South",
+      plotNo: 30,
+      areaSqFt: 974,
+      totalCost: 3284004,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "37",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 31,83,005",
-      availability: "Available",
-      direction: "South",
+      plotNo: 31,
+      areaSqFt: 1582,
+      totalCost: 5318372,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "38",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 31,95,801",
-      availability: "Available",
-      direction: "South",
+      plotNo: 32,
+      areaSqFt: 1164,
+      totalCost: 3919744,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "39",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 35,79,681",
-      availability: "Available",
-      direction: "South",
+      plotNo: 33,
+      areaSqFt: 1135,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & West",
     },
     {
-      PlotNo: "41",
-      pricePerSqFt: "₹ 2899 / Sqft",
-      priceRange: "₹ 31,90,936",
-      availability: "Available",
-      direction: "West",
+      plotNo: 34,
+      areaSqFt: 1288,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & East",
     },
     {
-      PlotNo: "42",
-      pricePerSqFt: "₹ 2899 / Sqft",
-      priceRange: "₹ 29,96,001",
-      availability: "Available",
-      direction: "West",
+      plotNo: 35,
+      areaSqFt: 995,
+      totalCost: 3354270,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "43",
-      pricePerSqFt: "₹ 2899 / Sqft",
-      priceRange: "₹ 28,04,065",
-      availability: "Available",
-      direction: "West",
+      plotNo: 36,
+      areaSqFt: 995,
+      totalCost: 3354270,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "44",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 22,33,423",
-      availability: "Available",
-      direction: "South East",
+      plotNo: 37,
+      areaSqFt: 995,
+      totalCost: 3354270,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "45",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 12,59,550",
-      availability: "Available",
-      direction: "South",
+      plotNo: 38,
+      areaSqFt: 999,
+      totalCost: 3367654,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "46",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 12,81,942",
-      availability: "Available",
-      direction: "South",
+      plotNo: 39,
+      areaSqFt: 1119,
+      totalCost: 3769174,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "47",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 13,07,133",
-      availability: "Available",
-      direction: "South",
+      plotNo: 40,
+      areaSqFt: 1140,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & West",
     },
     {
-      PlotNo: "48",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 13,29,525",
-      availability: "Available",
-      direction: "South",
+      plotNo: 41,
+      areaSqFt: 1064,
+      totalCost: 3372344,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "49",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 13,54,716",
-      availability: "Available",
-      direction: "South",
+      plotNo: 42,
+      areaSqFt: 999,
+      totalCost: 3167854,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "50",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 13,77,108",
-      availability: "Available",
-      direction: "South",
+      plotNo: 43,
+      areaSqFt: 935,
+      totalCost: 2966510,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "51",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 13,99,500",
-      availability: "Available",
-      direction: "South",
+      plotNo: 44,
+      areaSqFt: 677,
+      totalCost: 2357942,
+      status: "Available",
+      facing: "South & East",
     },
     {
-      PlotNo: "52",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 14,24,691",
-      availability: "Available",
-      direction: "South",
+      plotNo: 45,
+      areaSqFt: 450,
+      totalCost: 1350700,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "53",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 14,47,083",
-      availability: "Available",
-      direction: "South",
+      plotNo: 46,
+      areaSqFt: 458,
+      totalCost: 1374268,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "54",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 14,72,274",
-      availability: "Available",
-      direction: "South",
+      plotNo: 47,
+      areaSqFt: 467,
+      totalCost: 1400782,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "55",
-      pricePerSqFt: "₹ 2699 / Sqft",
-      priceRange: "₹ 14,80,671",
-      availability: "Available",
-      direction: "South",
+      plotNo: 48,
+      areaSqFt: 475,
+      totalCost: 1424350,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "56",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 34,63,950",
-      availability: "Available",
-      direction: "South West",
+      plotNo: 49,
+      areaSqFt: 484,
+      totalCost: 1450864,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "58",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 50,
+      areaSqFt: 492,
+      totalCost: 1474432,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "59",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 51,
+      areaSqFt: 500,
+      totalCost: 1498000,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "60",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 52,
+      areaSqFt: 509,
+      totalCost: 1524514,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "61",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 53,
+      areaSqFt: 517,
+      totalCost: 1548082,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "62",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 54,
+      areaSqFt: 526,
+      totalCost: 1574596,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "63",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 55,
+      areaSqFt: 529,
+      totalCost: 1583434,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "64",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 56,
+      areaSqFt: 1050,
+      totalCost: 3643300,
+      status: "Available",
+      facing: "South & West",
     },
     {
-      PlotNo: "65",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 57,
+      areaSqFt: 1189,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & West",
     },
     {
-      PlotNo: "66",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 58,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "67",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 59,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "68",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 17,39,400",
-      availability: "Available",
-      direction: "North",
+      plotNo: 60,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "71",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 61,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "72",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 62,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "73",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 63,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "74",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 64,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "75",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 65,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "76",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 66,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "77",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 67,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "78",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 68,
+      areaSqFt: 600,
+      totalCost: 1852600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "79",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 69,
+      areaSqFt: 985,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & East",
     },
     {
-      PlotNo: "80",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 70,
+      areaSqFt: 1318,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & East",
     },
     {
-      PlotNo: "81",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 24,79,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 71,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "84",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 72,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "85",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 73,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "86",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 74,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "87",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 75,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "88",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 76,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "89",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 77,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "90",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 78,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "91",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 79,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "92",
-      pricePerSqFt: "₹ 2800 / Sqft",
-      priceRange: "₹ 27,36,000",
-      availability: "Available",
-      direction: "North",
+      plotNo: 80,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "93",
-      pricePerSqFt: "₹ 2800 / Sqft",
-      priceRange: "₹ 27,36,000",
-      availability: "Available",
-      direction: "North",
+      plotNo: 81,
+      areaSqFt: 800,
+      totalCost: 2621800,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "94",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 82,
+      areaSqFt: 1589,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & West",
     },
     {
-      PlotNo: "95",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 83,
+      areaSqFt: 1024,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & West",
     },
     {
-      PlotNo: "96",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 84,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "98",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 31,99,000",
-      availability: "Available",
-      direction: "East",
+      plotNo: 85,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "100",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 86,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "101",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 87,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "102",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 88,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "103",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 89,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "104",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 90,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "105",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 91,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "106",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 92,
+      areaSqFt: 960,
+      totalCost: 2890600,
+      status: "BOOKED",
+      facing: "North",
     },
     {
-      PlotNo: "107",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 93,
+      areaSqFt: 960,
+      totalCost: 2890600,
+      status: "BOOKED",
+      facing: "North",
     },
     {
-      PlotNo: "108",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 94,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "109",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 95,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "110",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 96,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "111",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 97,
+      areaSqFt: 988,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & East",
     },
     {
-      PlotNo: "112",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 98,
+      areaSqFt: 1000,
+      totalCost: 3371000,
+      status: "Available",
+      facing: "East",
     },
     {
-      PlotNo: "113",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 32,13,663",
-      availability: "Available",
-      direction: "West",
+      plotNo: 99,
+      areaSqFt: 988,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & East",
     },
     {
-      PlotNo: "116",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 36,06,356",
-      availability: "Available",
-      direction: "North",
+      plotNo: 100,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "117",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 35,39,679",
-      availability: "Available",
-      direction: "North",
+      plotNo: 101,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "118",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 102,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "119",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 103,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "120",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 104,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "121",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 105,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "122",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 106,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "123",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 107,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "124",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 108,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "125",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 109,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "126",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 110,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "127",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 111,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "128",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 28,87,404",
-      availability: "Available",
-      direction: "North",
+      plotNo: 112,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "130",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 31,19,025",
-      availability: "Available",
-      direction: "East",
+      plotNo: 113,
+      areaSqFt: 1037,
+      totalCost: 3391102,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "132",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 114,
+      areaSqFt: 1025,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & West",
     },
     {
-      PlotNo: "133",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 115,
+      areaSqFt: 1232,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & West",
     },
     {
-      PlotNo: "134",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 116,
+      areaSqFt: 1244,
+      totalCost: 3814224,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "135",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 117,
+      areaSqFt: 1221,
+      totalCost: 3744166,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "136",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 118,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "137",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 119,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "138",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 120,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "139",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 121,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "140",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 122,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "141",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 123,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "142",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,35,160",
-      availability: "Available",
-      direction: "South",
+      plotNo: 124,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "143",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 40,41,206",
-      availability: "Available",
-      direction: "South",
+      plotNo: 125,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "145",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 45,94,915",
-      availability: "Available",
-      direction: "North",
+      plotNo: 126,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "146",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 34,75,901",
-      availability: "Available",
-      direction: "North",
+      plotNo: 127,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "147",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 31,88,900",
-      availability: "Available",
-      direction: "North",
+      plotNo: 128,
+      areaSqFt: 996,
+      totalCost: 3058816,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "148",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 31,33,819",
-      availability: "Available",
-      direction: "North",
+      plotNo: 129,
+      areaSqFt: 1030,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & East",
     },
     {
-      PlotNo: "149",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 31,04,829",
-      availability: "Available",
-      direction: "North",
+      plotNo: 130,
+      areaSqFt: 975,
+      totalCost: 3287350,
+      status: "Available",
+      facing: "East",
     },
     {
-      PlotNo: "150",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 23,13,402",
-      availability: "Available",
-      direction: "North",
+      plotNo: 131,
+      areaSqFt: 1030,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & East",
     },
     {
-      PlotNo: "151",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 22,98,907",
-      availability: "Available",
-      direction: "North",
+      plotNo: 132,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "152",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 25,27,928",
-      availability: "Available",
-      direction: "North",
+      plotNo: 133,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "153",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 25,10,534",
-      availability: "Available",
-      direction: "North",
+      plotNo: 134,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "154",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,90,241",
-      availability: "Available",
-      direction: "North",
+      plotNo: 135,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "155",
-      pricePerSqFt: "₹ 2799 / Sqft",
-      priceRange: "₹ 24,69,948",
-      availability: "Available",
-      direction: "North",
+      plotNo: 136,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "158",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 23,89,653",
-      availability: "Available",
-      direction: "East",
+      plotNo: 137,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "159",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 24,08,847",
-      availability: "Available",
-      direction: "East",
+      plotNo: 138,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "160",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 24,31,240",
-      availability: "Available",
-      direction: "East",
+      plotNo: 139,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "163",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 140,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "164",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 141,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "165",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 142,
+      areaSqFt: 840,
+      totalCost: 2583640,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "166",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 143,
+      areaSqFt: 1394,
+      totalCost: 4271124,
+      status: "Available",
+      facing: "South",
     },
     {
-      PlotNo: "167",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 144,
+      areaSqFt: 1685,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "168",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 145,
+      areaSqFt: 1585,
+      totalCost: 4852910,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "169",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 146,
+      areaSqFt: 1199,
+      totalCost: 3677154,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "170",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 147,
+      areaSqFt: 1100,
+      totalCost: 3375600,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "171",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 148,
+      areaSqFt: 1081,
+      totalCost: 3317726,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "172",
-      pricePerSqFt: "₹ 2999 / Sqft",
-      priceRange: "₹ 29,75,040",
-      availability: "Available",
-      direction: "West",
+      plotNo: 149,
+      areaSqFt: 1071,
+      totalCost: 3287266,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "174",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 43,84,371",
-      availability: "Available",
-      direction: "North",
+      plotNo: 150,
+      areaSqFt: 798,
+      totalCost: 2455708,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "176",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 151,
+      areaSqFt: 793,
+      totalCost: 2440478,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "177",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 152,
+      areaSqFt: 872,
+      totalCost: 2681112,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "178",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 153,
+      areaSqFt: 866,
+      totalCost: 2662836,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "179",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 154,
+      areaSqFt: 859,
+      totalCost: 2641514,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "180",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 155,
+      areaSqFt: 852,
+      totalCost: 2620192,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "181",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 156,
+      areaSqFt: 843,
+      totalCost: 2592778,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "182",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 157,
+      areaSqFt: 732,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & East",
     },
     {
-      PlotNo: "183",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 158,
+      areaSqFt: 747,
+      totalCost: 2524462,
+      status: "Available",
+      facing: "East",
     },
     {
-      PlotNo: "184",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 42,98,597",
-      availability: "Available",
-      direction: "East",
+      plotNo: 159,
+      areaSqFt: 753,
+      totalCost: 2544538,
+      status: "Available",
+      facing: "East",
     },
     {
-      PlotNo: "187",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 31,67,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 160,
+      areaSqFt: 760,
+      totalCost: 2567960,
+      status: "Available",
+      facing: "East",
     },
     {
-      PlotNo: "188",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 31,67,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 161,
+      areaSqFt: 689,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & East",
     },
     {
-      PlotNo: "189",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 31,67,040",
-      availability: "Available",
-      direction: "North",
+      plotNo: 162,
+      areaSqFt: 1474,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & West",
     },
     {
-      PlotNo: "190",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 26,39,200",
-      availability: "Available",
-      direction: "North",
+      plotNo: 163,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "191",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 25,99,612",
-      availability: "Available",
-      direction: "North",
+      plotNo: 164,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "192",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 25,59,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 165,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "193",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 25,59,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 166,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "194",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "South",
+      plotNo: 167,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "195",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "South",
+      plotNo: 168,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "196",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 30,71,040",
-      availability: "Available",
-      direction: "South",
+      plotNo: 169,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "197",
-      pricePerSqFt: "₹ 3199 / Sqft",
-      priceRange: "₹ 34,37,558",
-      availability: "Available",
-      direction: "East",
+      plotNo: 170,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "200",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 35,06,104",
-      availability: "Available",
-      direction: "North",
+      plotNo: 171,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "201",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 35,06,104",
-      availability: "Available",
-      direction: "North",
+      plotNo: 172,
+      areaSqFt: 960,
+      totalCost: 3141160,
+      status: "Available",
+      facing: "West",
     },
     {
-      PlotNo: "202",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 35,06,104",
-      availability: "Available",
-      direction: "North",
+      plotNo: 173,
+      areaSqFt: 1317,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & West",
     },
     {
-      PlotNo: "203",
-      pricePerSqFt: "₹ 3099 / Sqft",
-      priceRange: "₹ 39,31,571",
-      availability: "Available",
-      direction: "North",
+      plotNo: 174,
+      areaSqFt: 1329,
+      totalCost: 4604734,
+      status: "Available",
+      facing: "North",
     },
     {
-      PlotNo: "204",
-      pricePerSqFt: "₹ 4999 / Sqft",
-      priceRange: "₹ 1,62,25,018",
-      availability: "Available",
-      direction: "South",
+      plotNo: 175,
+      areaSqFt: 1317,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & East",
     },
     {
-      PlotNo: "205",
-      pricePerSqFt: "₹ 4999 / Sqft",
-      priceRange: "₹ 1,42,77,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 176,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
     },
     {
-      PlotNo: "206",
-      pricePerSqFt: "₹ 4999 / Sqft",
-      priceRange: "₹ 1,42,77,200",
-      availability: "Available",
-      direction: "South",
+      plotNo: 177,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 178,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 179,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 180,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 181,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 182,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 183,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 184,
+      areaSqFt: 1303,
+      totalCost: 4515138,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 185,
+      areaSqFt: 2131,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & East",
+    },
+    {
+      plotNo: 186,
+      areaSqFt: 1068,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & East",
+    },
+    {
+      plotNo: 187,
+      areaSqFt: 960,
+      totalCost: 3333160,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 188,
+      areaSqFt: 960,
+      totalCost: 3333160,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 189,
+      areaSqFt: 960,
+      totalCost: 3333160,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 190,
+      areaSqFt: 800,
+      totalCost: 2781800,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 191,
+      areaSqFt: 788,
+      totalCost: 2740448,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 192,
+      areaSqFt: 800,
+      totalCost: 2701800,
+      status: "Available",
+      facing: "South",
+    },
+    {
+      plotNo: 193,
+      areaSqFt: 800,
+      totalCost: 2701800,
+      status: "Available",
+      facing: "South",
+    },
+    {
+      plotNo: 194,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "South",
+    },
+    {
+      plotNo: 195,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "South",
+    },
+    {
+      plotNo: 196,
+      areaSqFt: 960,
+      totalCost: 3237160,
+      status: "Available",
+      facing: "South",
+    },
+    {
+      plotNo: 197,
+      areaSqFt: 1042,
+      totalCost: 3615732,
+      status: "Available",
+      facing: "East",
+    },
+    {
+      plotNo: 198,
+      areaSqFt: 1068,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & East",
+    },
+    {
+      plotNo: 199,
+      areaSqFt: 1646,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "North & East",
+    },
+    {
+      plotNo: 200,
+      areaSqFt: 1096,
+      totalCost: 3692216,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 201,
+      areaSqFt: 1096,
+      totalCost: 3692216,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 202,
+      areaSqFt: 1096,
+      totalCost: 3692216,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 203,
+      areaSqFt: 1229,
+      totalCost: 4137234,
+      status: "Available",
+      facing: "North",
+    },
+    {
+      plotNo: 204,
+      areaSqFt: 3182,
+      totalCost: 16717772,
+      status: "Available",
+      facing: "South",
+    },
+    {
+      plotNo: 205,
+      areaSqFt: 2800,
+      totalCost: 14713800,
+      status: "Available",
+      facing: "South",
+    },
+    {
+      plotNo: 206,
+      areaSqFt: 2800,
+      totalCost: 14713800,
+      status: "Available",
+      facing: "South",
+    },
+    {
+      plotNo: 207,
+      areaSqFt: 3190,
+      totalCost: "Premium Villa",
+      status: "Available",
+      facing: "South & East",
     },
   ];
 
   const [filters, setFilters] = useState({
     plotNo: "",
-    pricePerSqFt: "",
-    priceRange: "",
-    direction: "",
+    areaSqFt: "",
+    totalCost: "",
+    facing: "",
   });
 
   const [appliedFilters, setAppliedFilters] = useState(filters);
   const [currentPage, setCurrentPage] = useState(1);
   const plotsPerPage = 10; // Change this to adjust the number of plots per page
 
+  const handleFilterFacing = (value) => {
+    setFilters((prevFilters) => ({ ...prevFilters, facing: value }));
+    setAppliedFilters((prevFilters) => ({ ...prevFilters, facing: value }));
+    setCurrentPage(1);
+  };
+
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
-    setFilters((prevFilters) => ({
-      ...prevFilters,
-      [name]: value,
-    }));
+    setFilters((prevFilters) => {
+      const newFilters = { ...prevFilters, [name]: value };
+      setAppliedFilters(newFilters); // This updates appliedFilters too soon
+      setCurrentPage(1);
+      return newFilters;
+    });
   };
 
   const applyFilters = (event) => {
@@ -1269,33 +1486,82 @@ const PlotTable = () => {
     setCurrentPage(1); // Reset to first page after filtering
   };
 
-  const filteredPlots = allPlots.filter((plot) => {
-    return (
-      (appliedFilters.plotNo === "" ||
-        plot.PlotNo.includes(appliedFilters.plotNo)) &&
-      (appliedFilters.pricePerSqFt === "" ||
-        plot.pricePerSqFt.toString().includes(appliedFilters.pricePerSqFt)) &&
-      (appliedFilters.priceRange === "" ||
-        plot.priceRange.includes(appliedFilters.priceRange)) &&
-      (appliedFilters.direction === "" ||
-        plot.direction === appliedFilters.direction)
-    );
-  });
+  // const filteredPlots = allPlots.filter((plot) => {
+  //   return (
+  //     (appliedFilters.plotNo === "" ||
+  //       plot.PlotNo.includes(appliedFilters.plotNo)) &&
+  //     (appliedFilters.areaSqFt === "" ||
+  //       plot.areaSqFt.toString().includes(appliedFilters.areaSqFt)) &&
+  //     (appliedFilters.totalCost === "" ||
+  //       plot.totalCost.toString().includes(appliedFilters.totalCost)) &&
+  //     (appliedFilters.facing === "" || plot.facing === appliedFilters.facing)
+  //   );
+  // });
+  // const filteredPlots = allPlots.filter((plot) => {
+  //   const isPlotNoMatch =
+  //     appliedFilters.plotNo === "" ||
+  //     plot.plotNo.toString().includes(appliedFilters.plotNo);
 
-  // Pagination logic
-  const totalPages = Math.ceil(filteredPlots.length / plotsPerPage);
+  //   const isAreaMatch =
+  //     appliedFilters.areaSqFt === "" ||
+  //     (() => {
+  //       const [min, max] = appliedFilters.areaSqFt.split("~").map(Number);
+  //       return plot.areaSqFt >= min && plot.areaSqFt <= max;
+  //     })();
+
+  //   const isTotalCostMatch =
+  //     appliedFilters.totalCost === "" ||
+  //     plot.totalCost.toString().includes(appliedFilters.totalCost);
+
+  //   const isFacingMatch =
+  //     appliedFilters.facing === "" || plot.facing === appliedFilters.facing;
+
+  //   return isPlotNoMatch && isAreaMatch && isTotalCostMatch && isFacingMatch;
+  // });
+  const filteredPlots = allPlots
+    .filter((plot) => {
+      const isPlotNoMatch =
+        appliedFilters.plotNo === "" ||
+        plot.plotNo.toString().includes(appliedFilters.plotNo);
+
+      const isAreaMatch =
+        appliedFilters.areaSqFt === "" ||
+        (() => {
+          const [min, max] = appliedFilters.areaSqFt.split("~").map(Number);
+          return plot.areaSqFt >= min && plot.areaSqFt <= max;
+        })();
+
+      const isTotalCostMatch =
+        appliedFilters.totalCost === "" ||
+        plot.totalCost.toString().includes(appliedFilters.totalCost);
+
+      const isFacingMatch =
+        appliedFilters.facing === "" || plot.facing === appliedFilters.facing;
+
+      return isPlotNoMatch && isAreaMatch && isTotalCostMatch && isFacingMatch;
+    })
+    .sort((a, b) => {
+      // If areaSqFt filter is applied, sort by areaSqFt; otherwise, sort by plotNo
+      return appliedFilters.areaSqFt
+        ? a.areaSqFt - b.areaSqFt
+        : a.plotNo - b.plotNo;
+    });
+
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filteredPlots.length / plotsPerPage)
+  );
+
   const startIndex = (currentPage - 1) * plotsPerPage;
   const paginatedPlots = filteredPlots.slice(
     startIndex,
     startIndex + plotsPerPage
   );
 
-  return (
-    <div className="w-full flex flex-col items-center p-6 container">
-      <h3 className="text-3xl font-semibold text-gray-900 mt-5 mb-4">
-        CONFIGURATION
-      </h3>
+  console.log(paginatedPlots, "paginatedPlots--------------------");
 
+  return (
+    <div className="w-full flex flex-col items-center p-6 container dataTable">
       {/* Filters */}
       <div className="booking-wrapper">
         <div className="container">
@@ -1308,8 +1574,8 @@ const PlotTable = () => {
                 <label>Facing</label>
                 <div className="select1_inner">
                   <select
-                    name="direction"
-                    value={filters.direction}
+                    name="facing" // Fix here (was "direction")
+                    value={filters.facing}
                     onChange={handleFilterChange}
                     className="border w-100 border-orange-500 text-dark p-3 rounded-md bg-white"
                     style={{ height: "62px" }}
@@ -1319,59 +1585,64 @@ const PlotTable = () => {
                     <option value="South">South</option>
                     <option value="East">East</option>
                     <option value="West">West</option>
+                    <option value="North & West">North & West</option>
+                    <option value="North & East">North & East</option>
+                    <option value="South & West">South & West</option>
+                    <option value="South & East">South & East</option>
                   </select>
                 </div>
               </div>
-              <div className="col1 c2">
+              {/* <div className="col1 c2">
                 <div className="input1_wrapper">
                   <label>Sq.Ft</label>
                   <div className="input1_inner">
                     <input
-                      className="form-control input"
                       type="text"
-                      name="pricePerSqFt"
-                      value={filters.pricePerSqFt}
+                      name="areaSqFt"
+                      value={filters.areaSqFt}
                       onChange={handleFilterChange}
-                      placeholder="Search Sq.Ft"
+                      className="form-control input"
+                      placeholder="366~3190 Sq.Ft"
                     />
                   </div>
                 </div>
+              </div> */}
+              <div className="col1 c2">
+                <div className="input1_wrapper">
+                  <label>Sq.Ft</label>
+                  <div className="input1_inner">
+                    <select
+                      name="areaSqFt"
+                      value={filters.areaSqFt}
+                      onChange={handleFilterChange}
+                      className="form-control input"
+                      style={{ height: "62px" }}
+                    >
+                      <option value="">Select Sq.Ft</option>
+                      <option value="366~798">366~798 Sq.Ft</option>
+                      <option value="800~999">800~999 Sq.Ft</option>
+                      <option value="1000~1288">1000~1288 Sq.Ft</option>
+                      <option value="1303~3190">1303~3190 Sq.Ft</option>
+                    </select>
+                  </div>
+                </div>
               </div>
+
               <div className="col1 c2">
                 <div className="input1_wrapper">
                   <label>Price Amount</label>
                   <div className="input1_inner">
                     <input
-                      className="form-control input"
                       type="text"
-                      name="priceRange"
-                      value={filters.priceRange}
+                      name="totalCost" // Correct key
+                      value={filters.totalCost}
                       onChange={handleFilterChange}
+                      className="form-control input"
                       placeholder="Enter Price Amount"
                     />
                   </div>
                 </div>
               </div>
-              {/* <div className="col2 c3">
-                <div className="select1_wrapper">
-                  <label>Facing</label>
-                  <div className="select1_inner">
-                    <select
-                      name="direction"
-                      value={filters.direction}
-                      onChange={handleFilterChange}
-                      className="border w-100 border-orange-500 p-3 rounded-md bg-white"
-                      style={{height:"62px"}}
-                    >
-                      <option value="">Facing</option>
-                      <option value="North">North</option>
-                      <option value="South">South</option>
-                      <option value="East">East</option>
-                      <option value="West">West</option>
-                    </select>
-                  </div>
-                </div>
-              </div> */}
               <div className="col3 c6">
                 <button type="submit" className="btn-form1-submit">
                   Check Now
@@ -1381,113 +1652,157 @@ const PlotTable = () => {
           </div>
         </div>
       </div>
+      <div className="row mt-5">
+        <div className="col-12 col-lg-8 ">
+          <h3 className="text-3xl fw-semibold text-dark  mb-4 d-flex flex-column flex-md-row justify-content-between w-100">
+            CONFIGURATION
+            <span className="text-xl fw-medium text-secondary d-flex flex-column flex-md-row gap-3 mt-3 mt-md-0">
+              <button className="btn btn-primary">
+                Total Plots: {allPlots.length}
+              </button>
+              <button className="btn btn-success">
+                Matching:{" "}
+                {filteredPlots.length === 207 ? 0 : filteredPlots.length}
+              </button>
+            </span>
+          </h3>
 
-      {/* Table */}
-      <div className="w-full max-w-4xl mt-6" style={{ overflowX: "scroll" }}>
-        <table
-          className="w-100 border-collapse text-left"
-          style={{ border: "1px solid #f26522" }}
-        >
-          <thead>
-            <tr className="bg-orange-100 text-gray-800">
-              {[
-                "Plot No",
-                // "BHK",
-                // "BUILT-UP AREA",
-                // "PRICE PER SQ. FT.",
-                "Rate (per sqft)",
-                "Total Price",
-                "Status",
-                "Direction",
-              ].map((header, index) => (
-                <th
-                  key={index}
-                  className=" font-semibold text-center"
-                  style={{ border: "1px solid #f26522",minWidth:"130px" }}
-                >
-                  {header}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {paginatedPlots.length > 0 ? (
-              paginatedPlots.map((plot, index) => (
-                <tr key={index} className="text-gray-700">
-                  <td
-                    className=" text-center"
-                    style={{ border: "1px solid #f26522" }}
-                  >
-                    {plot.PlotNo}
-                  </td>
-                  {/* <td
-                    className=" text-center"
-                    style={{ border: "1px solid #f26522" }}
-                  >
-                    {plot.bhk}
-                  </td> */}
-                  {/* <td
-                    className=" text-center"
-                    style={{ border: "1px solid #f26522" }}
-                  >
-                    {plot.pricePerSqFt} Sq.ft
-                  </td> */}
-                  <td
-                    className=" text-center"
-                    style={{ border: "1px solid #f26522" }}
-                  >
-                    {plot.pricePerSqFt}
-                  </td>
-                  <td
-                    className=" text-center"
-                    style={{ border: "1px solid #f26522" }}
-                  >
-                    {plot.priceRange}
-                  </td>
-                  <td
-                    className=" text-center"
-                    style={{ border: "1px solid #f26522" }}
-                  >
-                    {plot.availability}
-                  </td>
-                  <td
-                    className=" text-center"
-                    style={{ border: "1px solid #f26522" }}
-                  >
-                    {plot.direction}
-                  </td>
+          {/* Table */}
+          <div className="w-full max-w-4xl mt-6 table-scroll">
+            <table
+              className="w-100 border-collapse text-left"
+              style={{ border: "1px solid #f26522" }}
+            >
+              <thead>
+                <tr className="bg-orange-100 text-gray-800">
+                  {[
+                    "Plot No",
+                    // "BHK",
+                    // "BUILT-UP AREA",
+                    // "PRICE PER SQ. FT.",
+                    "Area in Sq.ft",
+                    "Total Cost",
+                    "status",
+                    "Facing",
+                  ].map((header, index) => (
+                    <th
+                      key={index}
+                      className=" font-semibold text-center table-heading "
+                      style={{ border: "1px solid #f26522", minWidth: "100px" }}
+                    >
+                      {header}
+                    </th>
+                  ))}
                 </tr>
-              ))
-            ) : (
-              <tr>
-                <td colSpan={6} className="text-center py-4 text-red-500">
-                  No plots found
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
+              </thead>
+              <tbody>
+                {paginatedPlots.length > 0 ? (
+                  paginatedPlots.map((plot, index) => (
+                    <tr key={index} className="text-gray-700">
+                      <td
+                        className=" text-center table-data"
+                        style={{ border: "1px solid #f26522" }}
+                      >
+                        {plot.plotNo}
+                      </td>
+                      <td
+                        className=" text-center table-data"
+                        style={{ border: "1px solid #f26522" }}
+                      >
+                        {plot.areaSqFt}
+                      </td>
+                      <td
+                        className=" text-center table-data"
+                        style={{ border: "1px solid #f26522" }}
+                      >
+                        {plot.totalCost}
+                      </td>
+                      <td
+                        className=" text-center table-data"
+                        style={{ border: "1px solid #f26522" }}
+                      >
+                        {plot.status}
+                      </td>
+                      <td
+                        className=" text-center table-data"
+                        style={{ border: "1px solid #f26522" }}
+                      >
+                        {plot.facing}
+                      </td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={6} className="text-center py-4 text-red-500">
+                      No plots found
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
 
-      {/* Pagination Controls */}
-      <div className="flex justify-center mt-4">
-        <button
-          disabled={currentPage === 1}
-          onClick={() => setCurrentPage(currentPage - 1)}
-          className="px-4 py-2 mx-2 bg-gray-300 rounded disabled:opacity-50"
-        >
-          Previous
-        </button>
-        <span className="px-4 py-2">
-          Page {currentPage} of {totalPages}
-        </span>
-        <button
-          disabled={currentPage === totalPages}
-          onClick={() => setCurrentPage(currentPage + 1)}
-          className="px-4 py-2 mx-2 bg-gray-300 rounded disabled:opacity-50"
-        >
-          Next
-        </button>
+          {/* Pagination Controls */}
+          <div className="flex justify-center mt-4">
+            <button
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage(currentPage - 1)}
+              className="px-4 py-2 mx-2 btn-warning text-white rounded disabled:opacity-50"
+            >
+              Previous
+            </button>
+            <span className=" py-2">
+              Page {currentPage} of {totalPages}
+            </span>
+            <button
+              disabled={currentPage === totalPages}
+              onClick={() => setCurrentPage(currentPage + 1)}
+              className="px-4 py-2 mx-2 bg-info text-white rounded disabled:opacity-50"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+        {/* Facing data */}
+        <div className="col-12 col-lg-4 mt-4 mt-lg-0 d-flex justify-content-center align-items-center">
+          <div className="row g-2 w-100">
+            {[
+              "North & West",
+              "North",
+              "North & East",
+              "West",
+              "logo",
+              "East",
+              "South & West",
+              "South",
+              "South & East",
+            ].map((direction, index) =>
+              direction === "logo" ? (
+                <button
+                  key={index}
+                  className="col-4 btn btn-inline-dark p-1 text-center d-flex align-items-center justify-content-center"
+                  style={{ height: "100px" }} // Set uniform height
+                >
+                  <img
+                    key={index}
+                    src={FacingLogo}
+                    alt="Logo"
+                    className="w-100 h-100"
+                  />
+                </button>
+              ) : (
+                <button
+                  key={index}
+                  className="col-4 btn btn-outline-dark text-center d-flex align-items-center justify-content-center"
+                  style={{ height: "100px" }} // Set uniform height
+                  onClick={() => handleFilterFacing(direction)} // ✅ Now it's a function reference
+                >
+                  {direction}
+                </button>
+              )
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
