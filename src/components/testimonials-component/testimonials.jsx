@@ -28,11 +28,16 @@ const Testimonials = () => {
                   {/* Testimonial 1 */}
                   <div className="item">
                     <span className="quote"><img src={quot} alt="quote" /></span>
-                    <p>Hotel dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante otel inilla duiman at finibus viverra neca the sene on satien the miss drana inc fermen norttito sit space, mus nellentesque habitan.</p>
+                    <p>It is our pleasure to accolade our experience with GP
+                      Homes when we bought our apartment from them. GP Homes had
+                      dedicated quality of work all through the time during the
+                      construction. They gracefully explained us the status and
+                      progress of the works, whenever we visited the site or
+                      inquired through phone.</p>
                     <div className="info">
-                      <div className="author-img">
+                      {/* <div className="author-img">
                         <img src={testimonialsimg1} alt="Emily Brown" />
-                      </div>
+                      </div> */}
                       <div className="cont">
                         <span>
                           <i className="star-rating"></i>
@@ -41,8 +46,8 @@ const Testimonials = () => {
                           <i className="star-rating"></i>
                           <i className="star-rating"></i>
                         </span>
-                        <h6>Emily Brown</h6>
-                        <span>Guest review</span>
+                        <h6>Lincy Marry Luke</h6>
+                        <span>GP Caspia</span>
                       </div>
                     </div>
                   </div>
@@ -50,11 +55,15 @@ const Testimonials = () => {
                   {/* Testimonial 2 */}
                   <div className="item">
                     <span className="quote"><img src={quot} alt="quote" /></span>
-                    <p>Hotel dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante otel inilla duiman at finibus viverra neca the sene on satien the miss drana inc fermen norttito sit space, mus nellentesque habitan.</p>
+                    <p>We take this opportunity to thank GP Homes for making our
+                      dream of an own abode true. GP Homes took care in every
+                      detail and workmanship of the project right from the time
+                      when we booked our flat till they handed over the keys to
+                      us.</p>
                     <div className="info">
-                      <div className="author-img">
+                      {/* <div className="author-img">
                         <img src={testimonialsimg2} alt="Nolan White" />
-                      </div>
+                      </div> */}
                       <div className="cont">
                         <span>
                           <i className="star-rating"></i>
@@ -63,8 +72,8 @@ const Testimonials = () => {
                           <i className="star-rating"></i>
                           <i className="star-rating"></i>
                         </span>
-                        <h6>Nolan White</h6>
-                        <span>Guest review</span>
+                        <h6>MR. Shankar</h6>
+                        <span>GP Freesia</span>
                       </div>
                     </div>
                   </div>
@@ -72,11 +81,15 @@ const Testimonials = () => {
                   {/* Testimonial 3 */}
                   <div className="item">
                     <span className="quote"><img src={quot} alt="quote" /></span>
-                    <p>Hotel dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante otel inilla duiman at finibus viverra neca the sene on satien the miss drana inc fermen norttito sit space, mus nellentesque habitan.</p>
+                    <p>My first investment in property was a home of GP Homes
+                      which opened me to a new beginning. I was very much
+                      contented and felt myself comfortable with them always
+                      during the processes. I would openly recommend anyone to
+                      buy home at GP Homes.</p>
                     <div className="info">
-                      <div className="author-img">
+                      {/* <div className="author-img">
                         <img src={testimonialsimg3} alt="Olivia Martin" />
-                      </div>
+                      </div> */}
                       <div className="cont">
                         <span>
                           <i className="star-rating"></i>
@@ -85,8 +98,8 @@ const Testimonials = () => {
                           <i className="star-rating"></i>
                           <i className="star-rating"></i>
                         </span>
-                        <h6>Olivia Martin</h6>
-                        <span>Guest review</span>
+                        <h6>Mohana Krishnan</h6>
+                        <span>GP Magnolia</span>
                       </div>
                     </div>
                   </div>

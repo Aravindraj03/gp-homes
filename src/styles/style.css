@@ -2656,7 +2656,7 @@ hr.border-2 {
 }
 .rooms3 .square-flip {
     min-height: 450px;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
 }
 .rooms3 .square,
 .rooms3 .square2 {
@@ -2874,7 +2874,7 @@ hr.border-2 {
         padding-bottom: 10px;
     }
     .section-padding {
-        padding: 50px 0;
+        padding: 20px 0;
     }
     .rooms3 .square-container2 {
         padding: 20px;
@@ -3511,8 +3511,8 @@ button.mfp-arrow {
 .testimonials-box {
     position: relative;
     background: transparent;
-    padding: 30px;
-    margin-bottom: 90px;
+        /* padding: 30px;
+        margin-bottom: 90px; */
 }
 .testimonials-box .head-box h6 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -3726,7 +3726,7 @@ button.mfp-arrow {
     background: #aa8453;
     color: #fff;
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     text-decoration: none;
     line-height: 62px;
     position: relative;
@@ -3943,6 +3943,13 @@ button.mfp-arrow {
     .btn-form1-submit:after {
         background: none;
     }
+    .btn-form1-submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 16px;
+    }
     
 }
 /* booking form */
@@ -3979,7 +3986,7 @@ button.mfp-arrow {
 }
 @media screen and (max-width: 991px) {
     .booking-box {
-        margin-bottom: 90px;
+        /* margin-bottom: 90px; */
         padding: 35px 20px;
     }
 }
@@ -5545,11 +5552,14 @@ select {
     .video-fullscreen-wrap .caption {
         text-align: center;
     }
+    .footer-top {
+        padding: 90px 0 0px 0;
+      }
 }
 
-.padding-bottom {
+/* .padding-bottom {
     padding-bottom: 3rem;
-}
+} */
 .rooms3 .btn-line a:hover{
     text-decoration: none!important;
     color: inherit;

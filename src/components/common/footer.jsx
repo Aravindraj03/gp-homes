@@ -36,7 +36,7 @@ function Footer() {
               <Col md={3} className="offset-md-1">
                 <div className="footer-column footer-explore clearfix">
                   <h3 className="footer-title">Explore</h3>
-                  <div className="d-md-flex  gap-5">
+                  <div className="d-flex  gap-5">
                     <ul className="footer-explore-list list-unstyled mb-1">
                       <li>
                         <Link to="/home">Home</Link>

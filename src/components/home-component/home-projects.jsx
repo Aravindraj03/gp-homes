@@ -10,6 +10,7 @@ import room5 from "../../assets/img/rooms/valencia-ruby.jpg";
 import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
 import room8 from "../../assets/img/rooms/Ethuliya.jpg";
 import room9 from "../../assets/img/rooms/Namanai.jpg";
+import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
 
 const roomsData = [
@@ -79,7 +80,7 @@ const roomsData = [
     category: "Plots",
     location: "Thiruvallur",
     title: "GP Pon Bhoomi",
-    image: room9,
+    image: room10,
     description:
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
@@ -214,7 +215,7 @@ const HomeProjects = () => {
             <button
               onClick={() => handleFilter("Apartments")}
               // className="btn-form1-submit mb-30"
-              className={`btn-form1-submit mb-30 fs-5  ${
+              className={`btn-form1-submit mb-30  ${
                 selectedFilter === "Apartments" ? "btn-form1-submit-active" : ""
               }`}
             >
@@ -225,7 +226,7 @@ const HomeProjects = () => {
             <button
               onClick={() => handleFilter("Plots")}
               // className="btn-form1-submit mb-30"
-              className={`btn-form1-submit mb-30 fs-5 ${
+              className={`btn-form1-submit mb-30 ${
                 selectedFilter === "Plots" ? "btn-form1-submit-active" : ""
               }`}
             >
@@ -259,7 +260,7 @@ const HomeProjects = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#393434af"}}>
+                      <div className="box-title w-100 p-2" style={{backgroundColor:"#222222d6"}}>
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>
