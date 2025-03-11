@@ -5,6 +5,8 @@ import logo from "../../assets/img/gp-logo.png";
 function Header() {
 
   const location = useLocation();
+
+  console.log(location.pathname,"locationPathname")
   const [navScroll, setNavScroll] = useState(false);
   // const [logoSrc, setLogoSrc] = useState(logoLight);
 
