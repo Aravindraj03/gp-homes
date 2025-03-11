@@ -7,10 +7,10 @@ import room3 from "../../assets/img/rooms/elenza.jpg";
 import room4 from "../../assets/img/rooms/valencia-emarald.jpg";
 import room5 from "../../assets/img/rooms/valencia-ruby.jpg";
 
-import room7 from "../../assets/img/rooms/gp-garden-bay2.jpg";
+import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
 import room8 from "../../assets/img/rooms/Ethuliya.jpg";
 import room9 from "../../assets/img/rooms/Namanai.jpg";
-
+import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 const roomsData = [
   {
     id: 1,
@@ -78,7 +78,7 @@ const roomsData = [
     category: "Plots-Ongoing",
     location: "Thiruvallur",
     title: "GP Pon Bhoomi",
-    image: room9,
+    image: room10,
     description:
       "PonBhoomi isn’t just a name—it’s a promise of growth and prosperity. Investing in land is a better option than gold, as property values continue to appreciate over time. Now is the perfect time to build your dream home and settle in this serene paradise.",
     project_status: "Ongoing Project",
@@ -259,7 +259,7 @@ const ApartmentDetails = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#393434af"}}>
+                      <div className="box-title w-100 p-2" style={{backgroundColor:"#222222d6"}}>
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>

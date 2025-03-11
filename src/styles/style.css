@@ -2670,8 +2670,8 @@ hr.border-2 {
   background-position: center center;
 }
 .rooms3 .square-flip {
-  min-height: 450px;
-  margin-bottom: 30px;
+    min-height: 450px;
+    margin-bottom: 30px !important;
 }
 .rooms3 .square,
 .rooms3 .square2 {
@@ -2888,21 +2888,21 @@ hr.border-2 {
   opacity: 0.2;
 }
 @media screen and (max-width: 991px) {
-  .rooms3 .square-flip {
-    margin-bottom: 60px;
-  }
-  .rooms3 .square2 {
-    overflow: visible;
-  }
-  .rooms3 {
-    padding-bottom: 10px;
-  }
-  .section-padding {
-    padding: 50px 0;
-  }
-  .rooms3 .square-container2 {
-    padding: 20px;
-  }
+    .rooms3 .square-flip {
+        margin-bottom: 60px;
+    }
+    .rooms3 .square2 {
+        overflow: visible;
+    }
+    .rooms3 {
+        padding-bottom: 10px;
+    }
+    .section-padding {
+        padding: 20px 0;
+    }
+    .rooms3 .square-container2 {
+        padding: 20px;
+    }
 }
 
 /* ======= Rooms Page style ======= */
@@ -3524,10 +3524,10 @@ button.mfp-arrow {
 }
 /* testimonials style */
 .testimonials-box {
-  position: relative;
-  background: transparent;
-  padding: 30px;
-  margin-bottom: 90px;
+    position: relative;
+    background: transparent;
+        /* padding: 30px;
+        margin-bottom: 90px; */
 }
 .testimonials-box .head-box h6 {
   font-family: "Barlow Condensed", sans-serif;
@@ -3732,22 +3732,22 @@ button.mfp-arrow {
   border: 1px solid transparent;
 }
 .btn-form1-submit {
-  display: block;
-  padding: 0;
-  border: none;
-  margin: 0;
-  width: 100%;
-  background: #aa8453;
-  color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 15px;
-  text-decoration: none;
-  line-height: 62px;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+    display: block;
+    padding: 0;
+    border: none;
+    margin: 0;
+    width: 100%;
+    background: #aa8453;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 62px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 .btn-form1-submit:hover {
   /* background: #222;
@@ -3943,23 +3943,31 @@ button.mfp-arrow {
   }
 }
 @media (max-width: 767.98px) {
-  .form1 .col1 {
-    width: 100%;
-    border-right: 0;
-    border-bottom: 1px solid #ececec;
-  }
-  .form1 .col2 {
-    width: 100%;
-    border-right: 0;
-    border-bottom: 1px solid #ececec;
-  }
-  .form1 .col3 {
-    width: 100%;
-    border-right: 0;
-  }
-  .btn-form1-submit:after {
-    background: none;
-  }
+    .form1 .col1 {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #ececec;
+    }
+    .form1 .col2 {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #ececec;
+    }
+    .form1 .col3 {
+        width: 100%;
+        border-right: 0;
+    }
+    .btn-form1-submit:after {
+        background: none;
+    }
+    .btn-form1-submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 16px;
+    }
+    
 }
 /* booking form */
 .booking-box {
@@ -3994,10 +4002,10 @@ button.mfp-arrow {
   color: #222;
 }
 @media screen and (max-width: 991px) {
-  .booking-box {
-    margin-bottom: 90px;
-    padding: 35px 20px;
-  }
+    .booking-box {
+        /* margin-bottom: 90px; */
+        padding: 35px 20px;
+    }
 }
 
 /* ======= Pricing style ======= */
@@ -5531,19 +5539,22 @@ select {
   }
   .banner-header .caption {
     text-align: center;
-  }
-  .video-fullscreen-wrap .caption.textleft,
-  .video-fullscreen-wrap .caption {
-    text-align: center;
-  }
+    }
+    .video-fullscreen-wrap .caption.textleft,
+    .video-fullscreen-wrap .caption {
+        text-align: center;
+    }
+    .footer-top {
+        padding: 90px 0 0px 0;
+      }
 }
 
-.padding-bottom {
-  padding-bottom: 3rem;
-}
-.rooms3 .btn-line a:hover {
-  text-decoration: none !important;
-  color: inherit;
+/* .padding-bottom {
+    padding-bottom: 3rem;
+} */
+.rooms3 .btn-line a:hover{
+    text-decoration: none!important;
+    color: inherit;
 }
 .info-wrapper a.link-btn {
   color: inherit !important;

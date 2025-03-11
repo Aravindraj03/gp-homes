@@ -18,7 +18,9 @@ import GPGardenBayBanner from "../../assets/img/projects/GPGardenBayBanner.jpg";
 import GPEthuliaBanner from "../../assets/img/projects/GPEthuliaBanner.jpg";
 import GPNanmanaiBanner from "../../assets/img/projects/GPNanmanaiBanner.jpg";
 import GPVijayaLakshmiBanner from "../../assets/img/projects/GPVijayaLakshmiBanner.jpg";
-import GPPonBhoomi from "../../assets/img/projects/GPPonbhoomi-Banner.jpg";
+import GPPonBhoomi from "../../assets/img/projects/Ponbhoomi-Banner.jpg";
+import GPValenciaEmerald from "../../assets/img/projects/GPValencia-Emerlad.jpg";
+import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
 
 
 import BlazingStarFloorplan1 from "../../assets/img/floorplans/blazing-star-floorplan-1.jpg";
@@ -74,6 +76,18 @@ import itPark3 from "../../assets/img/locations/it-park-2.jpg";
 import entertainmentZone1 from "../../assets/img/locations/entertainment.jpg";
 import entertainmentZone2 from "../../assets/img/locations/entertainment-1.jpg";
 import entertainmentZone3 from "../../assets/img/locations/entertainment-2.jpg";
+
+import RMBlazingStar from "../../assets/img/Highlights/Blazing Star - Route Map.jpg";
+import RMBreezway from "../../assets/img/Highlights/Breezw Way - Route Map.jpg";
+import RMElenza from "../../assets/img/Highlights/Elenza- Route Map.jpg";
+import RMEthulyia from "../../assets/img/Highlights/Ethulyia- Route Map.jpg";
+import RMMidway from "../../assets/img/Highlights/Midway- Route Map.jpg";
+import RMNanmanai from "../../assets/img/Highlights/Namamnai- Route Map.jpg";
+import RMPonBhoomi from "../../assets/img/Highlights/Ponmani i- Route Map.jpg";
+import RMValenciaRuby from "../../assets/img/Highlights/Valencia - Route Map.jpg";
+import RMValenciaEmerald from "../../assets/img/Highlights/Valencia Emerald- Route Map.jpg";
+import RMVijayalakshmi from "../../assets/img/Highlights/Vijayalakshmi- Route Map.jpg";
+
 
 const projectsData = [
   {
@@ -153,7 +167,7 @@ const projectsData = [
         "Nexus Forum Vijay Mall – 10kms/20mins drive",
         "Saravana Store – 3kms/7mins drive",
       ],
-      location_highlights_image:locationHighlights1,
+      location_highlights_image:RMBlazingStar,
       hospitals_image: hospitals1,
       educational_institutions_image: educationalInstitutions1,
       it_parks_image: itPark1,
@@ -240,7 +254,7 @@ const projectsData = [
           "Nexus Forum Vijay Mall – 10kms/20mins drive",
           "Saravana Store – 3kms/7mins drive",
         ],
-        location_highlights_image:locationHighlights2,
+        location_highlights_image:RMBlazingStar,
         hospitals_image: hospitals2,
         educational_institutions_image: educationalInstitutions3,
         it_parks_image: itPark2,
@@ -323,7 +337,7 @@ const projectsData = [
         "Padi Saravana Stores – 30mins drive",
         "VR Mall – 49mins drive",
       ],
-      location_highlights_image:locationHighlights1,
+      location_highlights_image:RMBreezway,
       hospitals_image: hospitals3,
       educational_institutions_image: educationalInstitutions3,
       it_parks_image: itPark3,
@@ -408,7 +422,7 @@ const projectsData = [
         "Padi Saravana Stores – 30mins drive",
         "VR Mall – 49mins drive",
       ],
-      location_highlights_image:locationHighlights2,
+      location_highlights_image:RMBreezway,
       hospitals_image: hospitals4,
       educational_institutions_image: educationalInstitutions4,
       it_parks_image: itPark1,
@@ -495,7 +509,7 @@ const projectsData = [
         "Form Vijaya Mall – 9.2 kme",
         "Phoenix Market City – 13 km",
       ],
-      location_highlights_image:locationHighlights1,
+      location_highlights_image:RMElenza,
       hospitals_image: hospitals1,
       educational_institutions_image: educationalInstitutions1,
       it_parks_image: itPark2,
@@ -584,7 +598,7 @@ const projectsData = [
         "Form Vijaya Mall – 9.2 kme",
         "Phoenix Market City – 13 km",
       ],
-      location_highlights_image:locationHighlights2,
+      location_highlights_image:RMElenza,
       hospitals_image: hospitals2,
       educational_institutions_image: educationalInstitutions3,
       it_parks_image: itPark3,
@@ -600,7 +614,7 @@ const projectsData = [
     description: [
       "Welcome to GP Valencia Emerald – a landmark project that sets a new standard in modern living. A proud milestone in the journey of GP Homes, this development offers spacious 2 BHK apartments starting from 857 sq. ft., designed to accommodate your dreams and aspirations.",
     ],
-    banner_images: [""],
+    banner_images: [GPValenciaEmerald],
     images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3],
     facilities: [
       ["Parking", "flaticon-car"],
@@ -674,7 +688,7 @@ const projectsData = [
         "AGS Cinemas",
         "Decathlon Sports",
       ],
-      location_highlights_image:locationHighlights1,
+      location_highlights_image:RMValenciaEmerald,
       hospitals_image: hospitals3,
       educational_institutions_image: educationalInstitutions3,
       it_parks_image: itPark1,
@@ -692,7 +706,7 @@ const projectsData = [
       "Located in the prime neighborhood of Ayanambakkam, GP Valencia Emerald offers unmatched convenience with top educational institutions and major IT hubs just around the corner. More than just a home, it’s a lifestyle upgrade. Come, experience it for yourself!",
       "GP Valencia Emerald ensures seamless connectivity to top educational institutions and major IT hubs, making it an ideal choice for modern homeowners. More than just a home, it’s a space where your aspirations thrive.",
     ],
-    banner_images: [""],
+    banner_images: [GPValenciaEmerald],
     images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3],
     facilities: [
       ["Parking", "flaticon-car"],
@@ -767,7 +781,7 @@ const projectsData = [
         "AGS Cinemas",
         "Decathlon Sports",
       ],
-      location_highlights_image:locationHighlights2,
+      location_highlights_image:RMValenciaEmerald,
       hospitals_image: hospitals4,
       educational_institutions_image: educationalInstitutions4,
       it_parks_image: itPark2,
@@ -783,7 +797,7 @@ const projectsData = [
     description: [
       "Presenting GP Valencia Ruby – a shining milestone in the journey of GP Homes, designed to elevate your lifestyle. Nestled in the prime locality of Ayanambakkam, this exceptional project offers beautifully crafted 2 BHK apartments that blend elegance with functionality.",
     ],
-    banner_images: [""],
+    banner_images: [GPValenciaRuby],
     images: [ValenciaRubyFloorplan1, ValenciaRubyFloorplan2, ValenciaRubyFloorplan3],
     facilities: [
       ["Parking", "flaticon-car"],
@@ -856,7 +870,7 @@ const projectsData = [
         "AGS Cinemas",
         "Decathlon Sports",
       ],
-      location_highlights_image:locationHighlights1,
+      location_highlights_image:RMValenciaRuby,
       hospitals_image: hospitals1,
       educational_institutions_image: educationalInstitutions1,
       it_parks_image: itPark3,
@@ -872,7 +886,7 @@ const projectsData = [
     description: [
       "Presenting GP Valencia Ruby – a shining milestone in the journey of GP Homes, designed to elevate your lifestyle. Nestled in the prime locality of Ayanambakkam, this exceptional project offers beautifully crafted 3 BHK apartments that blend elegance with functionality.",
     ],
-    banner_images: [""],
+    banner_images: [GPValenciaRuby],
     images: [ValenciaRubyFloorplan1, ValenciaRubyFloorplan2, ValenciaRubyFloorplan3],
     facilities: [
       ["Parking", "flaticon-car"],
@@ -945,7 +959,7 @@ const projectsData = [
         "AGS Cinemas",
         "Decathlon Sports",
       ],
-      location_highlights_image:locationHighlights2,
+      location_highlights_image:RMValenciaRuby,
       hospitals_image: hospitals2,
       educational_institutions_image: educationalInstitutions3,
       it_parks_image: itPark1,
@@ -1038,7 +1052,7 @@ const projectsData = [
         "AGS Cinemas",
         "Decathlon Sports",
       ],
-      location_highlights_image:locationHighlights1,
+      location_highlights_image:RMMidway,
       hospitals_image: hospitals3,
       educational_institutions_image: educationalInstitutions3,
       it_parks_image: itPark2,
@@ -1120,7 +1134,7 @@ const projectsData = [
         "S2 Cinemas - 10 Minutes",
         "VR Mahal - 16 Minutes",
       ],
-      location_highlights_image:locationHighlights2,
+      location_highlights_image:RMMidway,
       hospitals_image: hospitals4,
       educational_institutions_image: educationalInstitutions4,
       it_parks_image: itPark3,
@@ -1221,7 +1235,7 @@ const projectsData = [
         "VR Mall - 8.5 Km",
         "Nexus Vijaya Mall - 11.4 Km",
       ],
-      location_highlights_image:locationHighlights1,
+      location_highlights_image:RMEthulyia,
       hospitals_image: hospitals1,
       educational_institutions_image: educationalInstitutions1,
       it_parks_image: itPark1,
@@ -1300,7 +1314,7 @@ const projectsData = [
       ],
       it_parks: ["AMBIT IT Park", "DLF IT Park"],
       entertainment_zone: ["PVR SKLS Mall", "Galaxy Mall"],
-      location_highlights_image:locationHighlights2,
+      location_highlights_image:RMNanmanai,
       hospitals_image: hospitals2,
       educational_institutions_image: educationalInstitutions3,
       it_parks_image: itPark2,
@@ -1317,7 +1331,7 @@ const projectsData = [
       "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
       "With 34 exclusive plots, Nanmanai is a smart investment for a future of faster appreciation along with the luxury lifestyle. Offering the opportunity to build your dream home, Nanmanai is a community that promises serenity, growth and a brighter tomorrow.",
     ],
-    banner_images: [GPNanmanaiBanner],
+    banner_images: [GPVijayaLakshmiBanner],
     image: listimg4,
     facilities: [
       // ["Parking", "flaticon-car"],
@@ -1379,7 +1393,7 @@ const projectsData = [
       ],
       it_parks: ["AMBIT IT Park", "DLF IT Park"],
       entertainment_zone: ["PVR SKLS Mall", "Galaxy Mall"],
-      location_highlights_image:locationHighlights2,
+      location_highlights_image:RMVijayalakshmi,
       hospitals_image: hospitals2,
       educational_institutions_image: educationalInstitutions3,
       it_parks_image: itPark2,
@@ -1477,7 +1491,7 @@ const projectsData = [
         "Thulasi Theatre",
         "Venkateshwara Theatre",
       ],
-      location_highlights_image:locationHighlights1,
+      location_highlights_image:RMPonBhoomi,
       hospitals_image: hospitals3,
       educational_institutions_image: educationalInstitutions3,
       it_parks_image: itPark3,

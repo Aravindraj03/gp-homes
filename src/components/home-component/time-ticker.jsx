@@ -23,7 +23,7 @@ const logos = [
 
 const HomeLogoMarquee = () => {
   return (
-    <section className="logo-marquee py-3 py-md-5 bg-light">
+    <section className="logo-marquee bg-white py-md-5 bg-light">
       <Marquee speed={50} gradient={false}>
         <div style={{ display: "flex", gap: "70px" }}>
           {logos.map((logo, index) => (

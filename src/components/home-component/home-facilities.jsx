@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const FacilitiesDetails = [
   {
     icon: "bi bi-patch-check",
-    title: "Quality 1",
+    title: "Quality",
     description:
       "From day one, we've ensured that only the finest construction materials are used to create homes designed to be a lasting legacy.",
   },

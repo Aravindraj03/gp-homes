@@ -13,6 +13,9 @@ import GpHomesElanzaBanner from "../../assets/img/projects/GpHomesElanzaBanner.j
 import GpHomesElanzaBanner1 from "../../assets/img/projects/GpHomesElanzaBanner-1.jpg";
 import GpHomesElanzaBanner2 from "../../assets/img/projects/GpHomesElanzaBanner-2.jpg";
 
+import GPValenciaEmerald from "../../assets/img/projects/GPValencia-Emerlad.jpg";
+import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
+
 // import GpHomesElanza2bhk from "../../assets/img/projects/elanza-2bhk-1.jpg";
 // import GpHomesElanza3bhk from "../../assets/img/projects/elanza-3bhk-1.jpg";
 
@@ -438,7 +441,7 @@ const projectsData = [
       "2 & 3 BHK apartments ranging from 857 to 1305 sq.ft.",
       "Rera No: TN/29/Building/0093/2022",
     ],
-    banner_image: [""],
+    banner_image: GPValenciaEmerald,
     image: listimg4,
     facilities: [
       ["Parking", "flaticon-car"],
@@ -578,7 +581,7 @@ const projectsData = [
       "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
       "Welcome to GP Valencia Ruby, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes. GP Valencia Ruby features homes spacious enough to accommodate your dreams and aspirations. Located in prime Ayanambakkam, there are lots of leading educational institutions and IT parks in the vicinity. A home like no other. Come, Check it out!",
     ],
-    banner_image: [""],
+    banner_image: GPValenciaRuby,
     image: listimg4,
     facilities: [
       ["Parking", "flaticon-car"],

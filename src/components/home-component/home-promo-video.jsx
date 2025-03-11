@@ -4,7 +4,7 @@ import slideImg2 from '../../assets/img/projects/BG-1.jpg';
 const HomePromoVideo = () => {
   return (
     <section 
-      className="video-wrapper video section-padding bg-img bg-fixed" 
+      className="video-wrapper video d-flex align-items-center section-padding bg-img bg-fixed" 
       data-overlay-dark="2" 
       style={{ backgroundImage: `url(${slideImg2})` }}
           >
