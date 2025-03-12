@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FacingLogo from "../../assets/img/Compass.png";
 import { Link } from "react-router-dom";
-const PlotTable = () => {
+const PlotTable = ({ onSelectPlot }) => {
   const allPlots = [
     {
       plotNo: 1,
@@ -1668,7 +1668,7 @@ const PlotTable = () => {
                     "Total Cost",
                     "Status",
                     "Facing",
-                    // "Order Now"
+                    "Order Now"
                   ].map((header, index) => (
                     <th
                       key={index}
@@ -1725,11 +1725,17 @@ const PlotTable = () => {
                         >
                           {plot.facing}
                         </td>
-                        {/* <td
+                        <td
                           className="text-center table-data"
-                          style={{ border: "1px solid #f26522",backgroundColor:"#cb31b3",color:"white",cursor:"pointer"}}
+                          style={{ border: "1px solid #f26522",backgroundColor:"#ffdab3",cursor:"pointer"}}
+                          onClick={() => onSelectPlot(plot)}
                         >Book Now
-                        </td> */}
+                        </td>
+                        {/* <td
+                          className="text-center table-data shadow p-3 mb-5 rounded"
+                          style={{ border: "1px solid #f26522",color:"black",cursor:"pointer", backgroundColor:"#ffdab3" }}
+                        >Book Now
+                        </td> */}
                       </tr>
                     );
                   })

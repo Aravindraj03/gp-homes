@@ -9,7 +9,7 @@ const FacilitiesDetails = [
       "From day one, we've ensured that only the finest construction materials are used to create homes designed to be a lasting legacy.",
   },
 
-  {
+  { 
     icon: "bi bi-headset",
     title: "Customer Service",
     description:
