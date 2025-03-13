@@ -82,9 +82,7 @@ const roomsData = [
     description:
       "PonBhoomi isn’t just a name—it’s a promise of growth and prosperity. Investing in land is a better option than gold, as property values continue to appreciate over time. Now is the perfect time to build your dream home and settle in this serene paradise.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
-    ],
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-ponBhoomi",
   },
 
@@ -154,17 +152,14 @@ const roomsData = [
     description:
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
-    ],
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-vijayalakshmi",
   },
-
 ];
 
 const ApartmentDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-      const [selectedFilter, setSelectedFilter] = useState("Plots-Ongoing"); // Default focus
+  const [selectedFilter, setSelectedFilter] = useState("Plots-Ongoing"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
   const [visibleRooms, setVisibleRooms] = useState(
     roomsData.filter((room) => room.category === "Plots-Ongoing")
@@ -182,10 +177,25 @@ const ApartmentDetails = () => {
 
   return (
     <section
-      className="rooms1 section-padding bg-cream"
+      className="rooms1 section-padding bg-cream plots-page"
       data-scroll-index="1"
       id="plots"
     >
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            {/* <div className="section-title">Our Projects</div> */}
+            <h1 className="section-title m-0 p-0 mb-2">
+            Plots For Sale in Chennai
+            </h1>
+            <h2 className="mb-3">Residential Land For Sale in Chennai</h2>
+            <p>
+            GP Homes offers CMDA-approved residential plots for sale in Chennai, providing secure and premium real estate opportunities. As leading real estate developers in Chennai, we ensure well-planned plots in prime locations, perfect for building your dream home. Invest in a trusted name for a brighter future!
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="container padding-bottom">
         <div className="row">
           {/* <div className="col-md-4">
@@ -202,19 +212,23 @@ const ApartmentDetails = () => {
               onClick={() => handleFilter("Plots-Ongoing")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Plots-Ongoing" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Ongoing"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               Ongoing
             </button>
           </div>
-          
+
           <div className="col-md-4">
             <button
               onClick={() => handleFilter("Plots-Upcoming")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Plots-Upcoming" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Upcoming"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               UP Coming
@@ -226,7 +240,9 @@ const ApartmentDetails = () => {
               onClick={() => handleFilter("Plots-Completed")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Plots-Completed" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Completed"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               Completed
@@ -235,14 +251,14 @@ const ApartmentDetails = () => {
         </div>
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           <div className="col-md-12">
             <div className="section-subtitle">GP Homes</div>
             <div className="section-title">Our Projects</div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="rooms3">
         <div className="container">

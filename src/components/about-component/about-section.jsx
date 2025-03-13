@@ -4,7 +4,7 @@ import roomImage2 from "../../assets/img/rooms/2.jpg";
 
 const AboutSection = () => {
   return (
-    <section className="about section-padding">
+    <section className="about section-padding ">
       <div className="container">
         <div className="row">
           <div
@@ -18,14 +18,18 @@ const AboutSection = () => {
               <i className="star-rating"></i>
               <i className="star-rating"></i>
             </span> */}
-            <div className="section-subtitle">GP Homes</div>
-            <div className="section-title">Enjoy a Luxury Experience</div>
+            {/* <div className="section-subtitle">GP Homes</div> */}
+            {/* <div className="section-title">Enjoy a Luxury Experience</div> */}
+            <h1 className="section-title">Real Estate Developers in Chennai</h1>
+            <h2>Top Builders in Chennai </h2>
+
             <p>
-              At GP Homes, our legacy is built on trust, quality, and timely
-              delivery. With over 2000 happy families residing in 200+
-              thoughtfully crafted homes, we have consistently upheld our
-              promise of on-time handovers, solidifying our reputation as one of
-              Chennai’s leading real estate developers.
+              GP Homes, Land For Sale in Chennai, Flat For Sale in Chennai At GP
+              Homes, our legacy is built on trust, quality, and timely delivery.
+              With over 2000 happy families residing in 200+ thoughtfully
+              crafted homes, we have consistently upheld our promise of on-time
+              handovers, solidifying our reputation as one of Chennai’s leading
+              real estate developers.
             </p>
             <p>
               In an industry where delays have become common, GP Homes has
@@ -67,13 +71,17 @@ const AboutSection = () => {
             className="col col-md-3 animate-box"
             data-animate-effect="fadeInUp"
           >
-            <img src={roomImage1} alt="Room 1" className="mt-90 mb-30 img-fluid" />
+            <img
+              src={roomImage1}
+              alt="Room 1"
+              className="mt-90 mb-30 img-fluid"
+            />
           </div>
           <div
             className="col col-md-3 animate-box"
             data-animate-effect="fadeInUp"
           >
-            <img src={roomImage2} alt="Room 2" className="img-fluid"/>
+            <img src={roomImage2} alt="Room 2" className="img-fluid" />
           </div>
         </div>
       </div>

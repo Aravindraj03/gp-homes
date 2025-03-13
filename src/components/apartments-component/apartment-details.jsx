@@ -18,7 +18,6 @@ import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";
 import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom1.jpg";
 import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom2.jpg";
 
-
 const roomsData = [
   {
     id: 1,
@@ -163,7 +162,7 @@ const roomsData = [
     project_status: "Ongoing Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
-  }
+  },
 ];
 
 const ApartmentDetails = () => {
@@ -186,10 +185,24 @@ const ApartmentDetails = () => {
 
   return (
     <section
-      className="rooms1 section-padding bg-cream"
+      className="rooms1 section-padding bg-cream apartments-page"
       data-scroll-index="1"
       id="apartments"
     >
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            {/* <div className="section-title">Our Projects</div> */}
+            <h1 className="section-title m-0 p-0 mb-2">
+              Apartments For Sale in Chennai
+            </h1>
+            <h2 className="mb-3">Flat For Sale in Chennai</h2>
+            {/* <p>GP Homes, 1BHK, 2BHK, 3BHK, Apartment for Sale, Best Builders in Chennai</p> */}
+            <p>GP Homes offers 1BHK, 2BHK, and 3BHK apartments for sale in Chennai, designed for modern living. As one of the best builders in Chennai, we provide high-quality, affordable homes in prime locations. Find your dream home with GP Homes today!</p>
+          </div>
+        </div>
+      </div>
+
       <div className="container padding-bottom">
         <div className="row">
           {/* <div className="col-md-4">
@@ -241,15 +254,6 @@ const ApartmentDetails = () => {
             >
               Completed
             </button>
-          </div>
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="section-subtitle">GP Homes</div>
-            <div className="section-title">Our Projects</div>
           </div>
         </div>
       </div>

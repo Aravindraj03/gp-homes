@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FacingLogo from "../../assets/img/Compass.png";
-const PlotTable = () => {
+import { Link } from "react-router-dom";
+const PlotTable = ({ onSelectPlot }) => {
   const allPlots = [
     {
       plotNo: 1,
@@ -1487,23 +1488,27 @@ const PlotTable = () => {
     setCurrentPage(1); // Reset to first page after filtering
   };
 
-  // Generate available total cost options based on selected Sq.Ft range & facing
-  const costOptions = allPlots
-    .filter((plot) => {
-      if (!filters.areaSqFt || !filters.facing) return true; // Show all if no filter is applied
+  const totalCostRanges = [
+    { label: "10,00,000 - 20,00,000", value: "1000000~2000000" },
+    { label: "20,00,000 - 30,00,000", value: "2000000~3000000" },
+    { label: "30,00,000 - 40,00,000", value: "3000000~4000000" },
+    { label: "40,00,000 - 50,00,000", value: "4000000~5000000" },
+    { label: "60,00,000 - 70,00,000", value: "6000000~7000000" },
+    { label: "1,00,00,000 - 2,00,00,000", value: "10000000~20000000" },
+  ];
 
-      const [min, max] = filters.areaSqFt.split("~").map(Number);
-      return (
-        plot.areaSqFt >= min &&
-        plot.areaSqFt <= max &&
-        plot.facing === filters.facing
-        // &&
-        // typeof plot.totalCost === "number" // Exclude "Premium Villa"
-      );
-    })
-    .map((plot) => plot.totalCost)
-    .filter((value, index, self) => self.indexOf(value) === index) // Remove duplicates
-    .sort((a, b) => a - b); // Sort prices in ascending order
+  // Filter totalCost options based on selected area and facing
+  const filteredTotalCostRanges = totalCostRanges.filter(({ value }) => {
+    const [min, max] = value.split("~").map(Number);
+
+    return allPlots.some(
+      (plot) =>
+        (!filters.areaSqFt || (plot.areaSqFt >= min && plot.areaSqFt <= max)) &&
+        (!filters.facing || plot.facing === filters.facing) &&
+        plot.totalCost >= min &&
+        plot.totalCost <= max
+    );
+  });
 
   const filteredPlots = allPlots
     .filter((plot) => {
@@ -1520,7 +1525,10 @@ const PlotTable = () => {
 
       const isTotalCostMatch =
         appliedFilters.totalCost === "" ||
-        plot.totalCost.toString().includes(appliedFilters.totalCost);
+        (() => {
+          const [min, max] = appliedFilters.totalCost.split("~").map(Number);
+          return plot.totalCost >= min && plot.totalCost <= max;
+        })();
 
       const isFacingMatch =
         appliedFilters.facing === "" || plot.facing === appliedFilters.facing;
@@ -1528,10 +1536,13 @@ const PlotTable = () => {
       return isPlotNoMatch && isAreaMatch && isTotalCostMatch && isFacingMatch;
     })
     .sort((a, b) => {
-      // If areaSqFt filter is applied, sort by areaSqFt; otherwise, sort by plotNo
-      return appliedFilters.areaSqFt
-        ? a.areaSqFt - b.areaSqFt
-        : a.plotNo - b.plotNo;
+      if (appliedFilters.totalCost) {
+        return a.totalCost - b.totalCost; // Sort by totalCost if filter is applied
+      }
+      if (appliedFilters.areaSqFt) {
+        return a.areaSqFt - b.areaSqFt; // Otherwise, sort by areaSqFt
+      }
+      return a.plotNo - b.plotNo; // Default sort by plotNo
     });
 
   const totalPages = Math.max(
@@ -1544,8 +1555,6 @@ const PlotTable = () => {
     startIndex,
     startIndex + plotsPerPage
   );
-
-  console.log(paginatedPlots, "paginatedPlots--------------------");
 
   return (
     <div className="w-full flex flex-col items-center p-6 container dataTable">
@@ -1591,10 +1600,10 @@ const PlotTable = () => {
                       style={{ height: "62px" }}
                     >
                       <option value="">Select Sq.Ft</option>
-                      <option value="366~798">366~798 Sq.Ft</option>
-                      <option value="800~999">800~999 Sq.Ft</option>
-                      <option value="1000~1288">1000~1288 Sq.Ft</option>
-                      <option value="1303~3190">1303~3190 Sq.Ft</option>
+                      <option value="366~798">366-798 Sq.Ft</option>
+                      <option value="800~999">800-999 Sq.Ft</option>
+                      <option value="1000~1288">1000-1288 Sq.Ft</option>
+                      <option value="1303~3190">1303-3190 Sq.Ft</option>
                     </select>
                   </div>
                 </div>
@@ -1609,13 +1618,12 @@ const PlotTable = () => {
                       value={filters.totalCost}
                       onChange={handleFilterChange}
                       className="form-control input"
-                      disabled={!filters.areaSqFt || !filters.facing} // Disable if no Sq.Ft or facing selected
                       style={{ height: "62px" }}
                     >
                       <option value="">Select Price</option>
-                      {costOptions.map((cost, index) => (
-                        <option key={index} value={cost}>
-                          {cost}
+                      {totalCostRanges.map(({ label, value }) => (
+                        <option key={value} value={value}>
+                          {label}
                         </option>
                       ))}
                     </select>
@@ -1660,6 +1668,7 @@ const PlotTable = () => {
                     "Total Cost",
                     "Status",
                     "Facing",
+                    "Order Now"
                   ].map((header, index) => (
                     <th
                       key={index}
@@ -1716,6 +1725,17 @@ const PlotTable = () => {
                         >
                           {plot.facing}
                         </td>
+                        <td
+                          className="text-center table-data"
+                          style={{ border: "1px solid #f26522",backgroundColor:"#ffdab3",cursor:"pointer"}}
+                          onClick={() => onSelectPlot(plot)}
+                        >Book Now
+                        </td>
+                        {/* <td
+                          className="text-center table-data shadow p-3 mb-5 rounded"
+                          style={{ border: "1px solid #f26522",color:"black",cursor:"pointer", backgroundColor:"#ffdab3" }}
+                        >Book Now
+                        </td> */}
                       </tr>
                     );
                   })
@@ -1728,7 +1748,7 @@ const PlotTable = () => {
                 )}
               </tbody>
             </table>
-            <span className="text-success" style={{fontSize:"12px"}}>
+            <span className="text-success" style={{ fontSize: "12px" }}>
               Include Development Charges | Basic Cost | Registration &
               Documentation | Maintenance (1 Yr) | GST*
             </span>

@@ -77,16 +77,16 @@ import entertainmentZone1 from "../../assets/img/locations/entertainment.jpg";
 import entertainmentZone2 from "../../assets/img/locations/entertainment-1.jpg";
 import entertainmentZone3 from "../../assets/img/locations/entertainment-2.jpg";
 
-import RMBlazingStar from "../../assets/img/Highlights/Blazing Star - Route Map.jpg";
-import RMBreezway from "../../assets/img/Highlights/Breezw Way - Route Map.jpg";
-import RMElenza from "../../assets/img/Highlights/Elenza- Route Map.jpg";
-import RMEthulyia from "../../assets/img/Highlights/Ethulyia- Route Map.jpg";
-import RMMidway from "../../assets/img/Highlights/Midway- Route Map.jpg";
-import RMNanmanai from "../../assets/img/Highlights/Namamnai- Route Map.jpg";
-import RMPonBhoomi from "../../assets/img/Highlights/Ponmani i- Route Map.jpg";
-import RMValenciaRuby from "../../assets/img/Highlights/Valencia - Route Map.jpg";
-import RMValenciaEmerald from "../../assets/img/Highlights/Valencia Emerald- Route Map.jpg";
-import RMVijayalakshmi from "../../assets/img/Highlights/Vijayalakshmi- Route Map.jpg";
+import RMBlazingStar from "../../assets/img/Highlights/BlazingStar-RouteMap.jpg";
+import RMBreezway from "../../assets/img/Highlights/BreezwWay-RouteMap.jpg";
+import RMElenza from "../../assets/img/Highlights/Elenza-RouteMap.jpg";
+import RMEthulyia from "../../assets/img/Highlights/Ethulyia-RouteMap.jpg";
+import RMMidway from "../../assets/img/Highlights/Midway-RouteMap.jpg";
+import RMNanmanai from "../../assets/img/Highlights/Namamnai-RouteMap.jpg";
+import RMPonBhoomi from "../../assets/img/Highlights/Ponmani-RouteMap.jpg";
+import RMValenciaRuby from "../../assets/img/Highlights/Valencia-RouteMap.jpg";
+import RMValenciaEmerald from "../../assets/img/Highlights/ValenciaEmerald-RouteMap.jpg";
+import RMVijayalakshmi from "../../assets/img/Highlights/Vijayalakshmi-RouteMap.jpg";
 
 
 const projectsData = [

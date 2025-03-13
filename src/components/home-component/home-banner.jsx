@@ -12,7 +12,7 @@ const BannerSlider = () => {
         {/* First Slide */}
         <div
           className="text-center item bg-img"
-          style={{ backgroundImage: `url(${slideImg1})` }}
+          style={{ backgroundImage: `url(${slideImg1})`,cursor:"pointer"}}
           data-overlay-dark="2"
           onClick={() => (window.location.href = "/plots-chennai/gp-ponBhoomi")}
         >

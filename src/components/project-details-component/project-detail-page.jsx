@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../common/header";
 import Footer from "../common/footer";
@@ -12,10 +12,19 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
 import PlotTable from "./plots-data";
+
 function ProjectDetailPage() {
   const { slug } = useParams(); // Get slug from URL
   const project = projectsData.find((p) => p.slug === slug); // Find project by slug
 
+    // ✅ Move hooks outside the conditional check
+    const [selectedPlot, setSelectedPlot] = useState(null);
+    const homeReservationRef = useRef(null);
+  
+    const handleSelectPlot = (plot) => {
+      setSelectedPlot(plot); 
+      homeReservationRef.current?.scrollIntoView({ behavior: "smooth" }); 
+    };
 
   if (!project) {
     return <h2>Project not found</h2>;
@@ -87,9 +96,12 @@ function ProjectDetailPage() {
         </Container>
       </Navbar>
       <ProjectDetailBanner project={project} />
-      {slug === "gp-ponBhoomi" && <PlotTable />}
+      {slug === "gp-ponBhoomi" && <PlotTable onSelectPlot={handleSelectPlot} />}
       <ProjectDetailSection project={project} />
-      <HomeReservation project={project} />
+      {/* Attach ref to HomeReservation */}
+      <div ref={homeReservationRef}>
+        <HomeReservation project={project} selectedPlotData={selectedPlot} />
+      </div>
       <Footer />
     </Fragment>
   );
