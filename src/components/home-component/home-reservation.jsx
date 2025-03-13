@@ -1,7 +1,9 @@
+
 import React, { useState } from "react";
 import slideImg2 from "../../assets/img/projects/BG-1.jpg";
 
 const HomeReservation = ({ project }) => {
+  
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [adults, setAdults] = useState(0);

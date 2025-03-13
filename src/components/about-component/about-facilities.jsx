@@ -6,7 +6,7 @@ const AboutFacilities = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="section-title">20 Years Of experience</div>
+            <div className="section-title">25 Years Of experience</div>
             <div className="section-subtitle mb-30">
               We continue our legacy of success, shaping the future and
               redefining Chennai’s skyline.
@@ -14,6 +14,7 @@ const AboutFacilities = () => {
           </div>
         </div>
         <div className="row">
+          
           {/* Facility 1 */}
           <div className="col-md-4">
             <div
@@ -32,6 +33,7 @@ const AboutFacilities = () => {
               </div>
             </div>
           </div>
+          
           {/* Facility 2 */}
           <div className="col-md-4">
             <div
@@ -49,6 +51,7 @@ const AboutFacilities = () => {
               </div>
             </div>
           </div>
+          
           {/* Facility 3 */}
           <div className="col-md-4">
             <div
@@ -67,6 +70,7 @@ const AboutFacilities = () => {
               </div>
             </div>
           </div>
+          
           {/* Facility 4 */}
           <div className="col-md-4">
             <div
@@ -86,6 +90,7 @@ const AboutFacilities = () => {
               </div>
             </div>
           </div>
+
           {/* Facility 5 */}
           <div className="col-md-4">
             <div
@@ -104,6 +109,7 @@ const AboutFacilities = () => {
               </div>
             </div>
           </div>
+          
           {/* Facility 6 */}
           {/* <div className="col-md-4">
             <div

@@ -21,6 +21,7 @@ import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
 
 import GpHomesElanza2bhk from "../../assets/img/projects/GpHomesElanzaBanner-2.jpg";
 import GpHomesElanza3bhk from "../../assets/img/projects/GpHomesElanzaBanner-1.jpg";
+import { Alt } from "react-bootstrap-icons";
 
 
 const projectsData = [
@@ -413,6 +414,7 @@ const projectsData = [
         description:
           "Discover the perfect blend of luxury and convenience at GP Elanza, where every apartment is a masterpiece. With its prime location in Madhanadhapuram, just a short 2-5 minute drive to everything you need—from hospitals and schools to shopping malls—this project redefines modern living.",
         image: GpHomesElanza3bhk,
+        Alt: "3BHK Flats For Sale in Chennai",
         facilities: [
           ["Parking", "flaticon-car"],
           ["Painting", "flaticon-wifi"],
