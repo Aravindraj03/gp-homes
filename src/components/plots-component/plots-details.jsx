@@ -11,6 +11,37 @@ import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
 import room8 from "../../assets/img/rooms/Ethuliya.jpg";
 import room9 from "../../assets/img/rooms/Namanai.jpg";
 import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
+
+const featureIcons = {
+  Well: "bi bi-signpost-split",
+  Black: "bi bi-signpost-split",
+  "24/7": "bi bi-shield-shaded",
+  Ready: "bi bi-building-fill-check",
+  EB: "bi bi-lamp-fill",
+  CCTV: "bi bi-camera-video-fill",
+  Fenced: "bi bi-bricks",
+  Potable: "bi bi-droplet-half",
+  Fully: "bi bi-bricks",
+  Branded: "bi bi-sun-fill",
+  Grand: "bi bi-rainbow"
+};
+
+const getFeatureWithIcons = (feature) => {
+  return feature
+    .split(",") // Split features into an array
+    .map((item) => {
+      const trimmedItem = item.trim();
+      const matchedKey = Object.keys(featureIcons).find((key) =>
+        trimmedItem.includes(key)
+      );
+
+      return {
+        text: trimmedItem,
+        iconClass: matchedKey ? featureIcons[matchedKey] : "bi bi-check-circle",
+      };
+    });
+};
+
 const roomsData = [
   {
     id: 1,
@@ -80,7 +111,7 @@ const roomsData = [
     title: "GP Pon Bhoomi",
     image: room10,
     description:
-      "PonBhoomi isn’t just a name—it’s a promise of growth and prosperity. Investing in land is a better option than gold, as property values continue to appreciate over time. Now is the perfect time to build your dream home and settle in this serene paradise.",
+      "PonBhoomi symbolizes growth and prosperity. Investing in land is wiser than gold, as property values appreciate over time. Now is the ideal time to build your dream home in this serene paradise.",
     project_status: "Ongoing Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-ponBhoomi",
@@ -93,7 +124,7 @@ const roomsData = [
     title: "GP Midway Avenue",
     image: room5,
     description:
-      "Midway Avenue in Athipet 2.0, an oasis where modern living blends seamlessly with the tranquility of nature. Imagine beginning each day with the soothing sight of lush, green landscapes right outside your doorstep.",
+      "Midway Avenue in Athipet 2.0 offers modern living amidst nature's tranquility, with lush green landscapes at your doorstep.",
     project_status: "Ongoing Project",
     features: [
       "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
@@ -107,7 +138,7 @@ const roomsData = [
     title: "GP Garden Bay",
     image: room7,
     description:
-      "Garden Bay is the epitome of serene living in the heart of Chennai. Located in the thriving area of near Anna Nagar, these residential plots provide the perfect foundation for your dream home.",
+      "Garden Bay offers serene living near Anna Nagar, Chennai, with residential plots ideal for your dream home.",
     project_status: "Ongoing Project",
     features: [
       "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
@@ -122,7 +153,7 @@ const roomsData = [
     title: "GP Ethulia",
     image: room8,
     description:
-      "Ethulia stands as an exemplary plot-based project by GP Homes in the highly sought-after Mogappair area, it presents 55 ready-to-build villa plots spanning 2.46 acres. This premier plotted development promises a prime location for value appreciation.",
+      "Ethulia by GP Homes in Mogappair offers 55 ready-to-build villa plots across 2.46 acres, ensuring prime location and value appreciation.",
     project_status: "Ongoing Project",
     features: [
       "Branded Solar Street Lights, Well Laid Blacktop Roads, Grand Entrance Arch, EB Provided",
@@ -136,7 +167,7 @@ const roomsData = [
     title: "GP Nanmanai",
     image: room9,
     description:
-      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
+      "Nanmanai by GP Homes offers premium villa plots in a 1.5-acre sanctuary at Redhills, providing a peaceful retreat amidst lush greenery.",
     project_status: "Ongoing Project",
     features: [
       "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
@@ -150,7 +181,7 @@ const roomsData = [
     title: "GP Vijayalakshmi",
     image: room9,
     description:
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+      "GP Homes presents VL Nagar in Thiruvallur near Ikkadu, offering prime residential plots ideal for building your dream home.",
     project_status: "Ongoing Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-vijayalakshmi",
@@ -186,11 +217,15 @@ const ApartmentDetails = () => {
           <div className="col-md-12">
             {/* <div className="section-title">Our Projects</div> */}
             <h1 className="section-title m-0 p-0 mb-2">
-            Plots For Sale in Chennai
+              Plots For Sale in Chennai
             </h1>
             <h2 className="mb-3">Residential Land For Sale in Chennai</h2>
             <p>
-            GP Homes offers CMDA-approved residential plots for sale in Chennai, providing secure and premium real estate opportunities. As leading real estate developers in Chennai, we ensure well-planned plots in prime locations, perfect for building your dream home. Invest in a trusted name for a brighter future!
+              GP Homes offers CMDA-approved residential plots for sale in
+              Chennai, providing secure and premium real estate opportunities.
+              As leading real estate developers in Chennai, we ensure
+              well-planned plots in prime locations, perfect for building your
+              dream home. Invest in a trusted name for a brighter future!
             </p>
           </div>
         </div>
@@ -277,7 +312,7 @@ const ApartmentDetails = () => {
                     <div className="square-container d-flex align-items-end justify-content-end">
                       <div
                         className="box-title w-100 p-2"
-                        style={{ backgroundColor: "#222222d6" }}
+                        style={{ backgroundColor: "#c08737cc" }}
                       >
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
@@ -314,15 +349,25 @@ const ApartmentDetails = () => {
                         </div>
                       </div> */}
 
-                      {room.features[0] && room.features[0].trim() !== "" && (
+                      {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
-                          {room.features[0].split(",").map((feature, index) => (
-                            <div className="col-6" key={index}>
-                              <ul>
-                                <li>{feature.trim()}</li>
-                              </ul>
-                            </div>
-                          ))}
+                          {room.features.map((feature, index) => {
+                            const featureItems = getFeatureWithIcons(feature);
+
+                            return featureItems.map((item, subIndex) => (
+                              <div
+                                className="col-6"
+                                key={`${index}-${subIndex}`}
+                              >
+                                <ul>
+                                  <li className="fs-6">
+                                    <i className={`${item.iconClass} me-2`}></i>{" "}
+                                    {item.text}
+                                  </li>
+                                </ul>
+                              </div>
+                            ));
+                          })}
                         </div>
                       )}
 

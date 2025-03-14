@@ -1159,7 +1159,7 @@ const projectsData = [
       "Feel the comfort of Ethulia and imagine your ideal home on our expansive plots. Choose from various floor plans to find your ideal space. Explore our amenities and tour our layout today to start building your dream life.",
     amenities: [
       ["Well laid Tar Roads", "bi bi-signpost-split"],
-      ["24/7 Security", "bi bi-shield-shaded  "],
+      ["24/7 Security", "bi bi-shield-shaded"],
       ["Ready To Construct", "bi bi-building-fill-check"],
       ["EB Provided", "bi bi-lamp-fill"],
       ["Fully Compounded Wall", "bi bi-bricks"],
