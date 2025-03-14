@@ -1668,7 +1668,7 @@ const PlotTable = ({ onSelectPlot }) => {
                     "Total Cost",
                     "Status",
                     "Facing",
-                    "Order Now"
+                    "Order Now",
                   ].map((header, index) => (
                     <th
                       key={index}
@@ -1727,9 +1727,14 @@ const PlotTable = ({ onSelectPlot }) => {
                         </td>
                         <td
                           className="text-center table-data"
-                          style={{ border: "1px solid #f26522",backgroundColor:"#ffdab3",cursor:"pointer"}}
+                          style={{
+                            border: "1px solid #f26522",
+                            backgroundColor: "#ffdab3",
+                            cursor: "pointer",
+                          }}
                           onClick={() => onSelectPlot(plot)}
-                        >Book Now
+                        >
+                          Book Now
                         </td>
                         {/* <td
                           className="text-center table-data shadow p-3 mb-5 rounded"

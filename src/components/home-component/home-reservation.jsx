@@ -11,15 +11,15 @@ const HomeReservation = ({ project, selectedPlotData }) => {
 
   const [selectedApartment, setSelectedApartment] = useState("");
   const [selectedPlot, setSelectedPlot] = useState("");
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log({
-  //     checkIn,
-  //     checkOut,
-  //     adults,
-  //     children,
-  //   });
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({
+      checkIn,
+      checkOut,
+      adults,
+      children,
+    });
+  };
 
   const { slug } = useParams(); // Get slug from URL
   const project1 = projectsData.find((p) => p.slug === slug); // Find project by slug
@@ -53,9 +53,18 @@ const HomeReservation = ({ project, selectedPlotData }) => {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmitPlotsForm = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
+    setFormData({
+      name: "",
+      phoneNumber: "",
+      plotNo: "",
+      areaSqFt: "",
+      totalCost: "",
+      facing: "",
+    });
+    alert("Booking Form Submitted Successfully!!")
   };
 
   return (
@@ -117,7 +126,7 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                     <h4>Drop in a line with your details.</h4>
                   </div>
                   <div className="booking-inner clearfix">
-                    <form onSubmit={handleSubmit} className="form1 clearfix">
+                    <form onSubmit={handleSubmitPlotsForm} className="form1 clearfix">
                       <div className="row">
                         <div className="col-md-12">
                           <div className="input1_wrapper">

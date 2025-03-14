@@ -143,6 +143,12 @@ const SEOHandler = () => {
       description:
         "GP Homes offers CMDA-approved residential plots and land for sale in Chennai. Invest in prime locations with top amenities. Secure your dream property today!",
     },
+    "/plots-chennai/gp-ponBhoomi": {
+      title:
+        " PonBhoomi- Buy Residential Plots, Land for Sale in Thiruvallur",
+      description:
+        "GP Homes PonBhoomi offers premium residential plots and CMDA-approved land for sale in Thiruvallur. Invest in your dream property with GP Homes today!",
+    },
     "/plots-chennai/gp-midway-avenue": {
       title:
         "GP Midway Avenue- Buy Residential Plots, Land for Sale in Athipet",
@@ -222,15 +228,13 @@ const SEOHandler = () => {
     },
   };
 
-  const { title, description } = seoData[location.pathname] || {
-    title: "GP Homes: Top Real Estate Developers, Builders in Chennai",
-    description: "GP Homes – Leading real estate developers & builders in Chennai, delivering premium homes with quality, innovation & trust. Find your dream home today!",
-  };
+  const { title, description } = seoData[location.pathname] || seoData["/"];
   // console.log(seoData["/about-us"],"about data")
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={`http://gph.atwias.in${location.pathname}`} />
     </Helmet>
   );
 };
