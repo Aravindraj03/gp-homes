@@ -1406,7 +1406,7 @@ const projectsData = [
     specifications_desc: "",
     amenities_title: "Amenities",
     amenities_desc:
-      "Experience the ultimate comfort and tranquillity of Vijaya Lakshmi Nagar, where you can bring your dream home to life on our spacious plots. Explore our world-class amenities and expertly designed layout today, and discover your perfect lifestyle.",
+      "Experience the ultimate comfort and tranquillity of GP Homes Pon Bhoomi, where you can bring your dream home to life on our spacious plots. Explore our world-class amenities and expertly designed layout today, and discover your perfect lifestyle. ",
     amenities: [
       ["Well laid Tar Roads", "bi bi-signpost-split"],
       ["24/7 Security", "bi bi-shield-shaded  "],
