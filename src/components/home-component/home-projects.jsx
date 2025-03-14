@@ -13,6 +13,13 @@ import room9 from "../../assets/img/rooms/Namanai.jpg";
 import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
 
+const featureIcons = {
+  Units: "bi bi-building-add",
+  BHK: "bi bi-123",
+  "Sq. ft.": "bi bi-rulers",
+  Floors: "bi bi-code-square",
+};
+
 const roomsData = [
   {
     id: 1,
@@ -84,9 +91,7 @@ const roomsData = [
     description:
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
-    ],
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-ponBhoomi",
   },
 
@@ -142,9 +147,7 @@ const roomsData = [
     description:
       "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, 24/7 Security, Fully Fenced, EB Provided",
-    ],
+    features: ["Black-Top Roads, 24/7 Security, Fully Fenced, EB Provided"],
     slug: "gp-nanmanai",
   },
   {
@@ -156,9 +159,7 @@ const roomsData = [
     description:
       "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
-    ],
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-vijayalakshmi",
   },
   {
@@ -173,7 +174,6 @@ const roomsData = [
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
-  
 ];
 
 const HomeProjects = () => {
@@ -192,6 +192,24 @@ const HomeProjects = () => {
         ? roomsData
         : roomsData.filter((room) => room.category === category);
     setVisibleRooms(filteredRooms.slice(0, 12)); // Limit to 9 items
+  };
+
+  const getFeatureWithIcons = (feature) => {
+    return feature
+      .split(",") // Split features into an array
+      .map((item) => {
+        const trimmedItem = item.trim();
+        const matchedKey = Object.keys(featureIcons).find((key) =>
+          trimmedItem.includes(key)
+        );
+
+        return {
+          text: trimmedItem,
+          iconClass: matchedKey
+            ? featureIcons[matchedKey]
+            : "bi bi-check-circle",
+        };
+      });
   };
 
   return (
@@ -260,7 +278,10 @@ const HomeProjects = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#222222d6"}}>
+                      <div
+                        className="box-title w-100 p-2"
+                        style={{ backgroundColor: "#222222d6" }}
+                      >
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>
@@ -296,15 +317,25 @@ const HomeProjects = () => {
                         </div>
                       </div> */}
 
-                      {room.features[0] && room.features[0].trim() !== "" && (
+                      {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
-                          {room.features[0].split(",").map((feature, index) => (
-                            <div className="col-6" key={index}>
-                              <ul>
-                                <li className="fs-6">{feature.trim()}</li>
-                              </ul>
-                            </div>
-                          ))}
+                          {room.features.map((feature, index) => {
+                            const featureItems = getFeatureWithIcons(feature);
+
+                            return featureItems.map((item, subIndex) => (
+                              <div
+                                className="col-6"
+                                key={`${index}-${subIndex}`}
+                              >
+                                <ul>
+                                  <li className="fs-6">
+                                    <i className={`${item.iconClass} me-2`}></i>{" "}
+                                    {item.text}
+                                  </li>
+                                </ul>
+                              </div>
+                            ));
+                          })}
                         </div>
                       )}
 
