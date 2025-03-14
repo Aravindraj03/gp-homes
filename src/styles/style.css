@@ -2614,8 +2614,10 @@ hr.border-2 {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1px;
-  background-color: #aa8453;
+  /* height: 1px;
+  background-color: #aa8453; */
+  height: 2px;
+  background-color: #f26522;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
 }
