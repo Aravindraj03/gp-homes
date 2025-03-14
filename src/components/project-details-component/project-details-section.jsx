@@ -476,7 +476,7 @@ const ProjectDetailSection = ({ project }) => {
           )}
         </>
 
-        <section
+        {/* <section
           className="video-wrapper video section-padding bg-img bg-fixed mt-30 mb-30 d-flex align-items-center"
           data-overlay-dark="3"
           style={{ backgroundImage: `url(${slideImg2})` }}
@@ -499,7 +499,7 @@ const ProjectDetailSection = ({ project }) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <div className="row">
           <div className="col-md-12">
