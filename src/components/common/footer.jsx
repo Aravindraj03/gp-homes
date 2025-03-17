@@ -64,12 +64,12 @@ function Footer() {
                       </li>
                     </ul>
                     <ul className="footer-explore-list list-unstyled">
-                      <li>
+                      {/* <li>
                         <Link to="/tools">Tools</Link>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <Link to="/careers">Careers</Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link to="/blogs">Blogs</Link>
                       </li>

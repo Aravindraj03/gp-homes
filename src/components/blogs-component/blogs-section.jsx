@@ -161,7 +161,7 @@ const BlogSection = () => {
           </div>
           <div className="col-md-4">
             <div className="news2-sidebar row">
-              <div className="col-md-12">
+              {/* <div className="col-md-12">
                 <div className="widget search">
                   <form>
                     <input
@@ -174,7 +174,7 @@ const BlogSection = () => {
                     </button>
                   </form>
                 </div>
-              </div>
+              </div> */}
               <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
@@ -197,7 +197,7 @@ const BlogSection = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-12">
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Archives</h6>
@@ -212,8 +212,8 @@ const BlogSection = () => {
                     )}
                   </ul>
                 </div>
-              </div>
-              <div className="col-md-12">
+              </div> */}
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Categories</h6>
@@ -231,8 +231,8 @@ const BlogSection = () => {
                     )}
                   </ul>
                 </div>
-              </div>
-              <div className="col-md-12">
+              </div> */}
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Tags</h6>
@@ -251,7 +251,7 @@ const BlogSection = () => {
                     ))}
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

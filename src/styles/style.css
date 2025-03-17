@@ -4696,10 +4696,10 @@ button.mfp-arrow {
   font-size: 24px;
   color: #222;
 }
-.map {
+/* .map {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
+} */
 
 /* ======= Buttons style ======= */
 /* dark */
