@@ -45,13 +45,13 @@ function Footer() {
                         <Link to="/about-us">About Us</Link>
                       </li>
                       <li>
-                        <Link as={Link} to="/home#apartments">
+                        <Link as={Link} to="/apartments-chennai">
                           Apartments
                         </Link>
                       </li>
                       {/* <li><Link to="/">Villas</Link></li> */}
                       <li>
-                        <Link as={Link} to="/home#apartments">
+                        <Link as={Link} to="/plots-chennai">
                           Plots
                         </Link>
                       </li>
@@ -103,16 +103,16 @@ function Footer() {
                     {/* <p className="footer-contact-mail">info@luxuryhotel.com</p> */}
                   </div>
                   <div className="footer-about-social-list">
-                    <a href="#">
+                    <a href="https://www.instagram.com/gphomes_?igsh=andzdTc2dGVibml6">
                       <i className="ti-instagram"></i>
                     </a>
                     <a href="#">
                       <i className="ti-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://youtube.com/@gphomes3239?si=AYLrq-oybgtyyovL">
                       <i className="ti-youtube"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com/share/1DMpX1Dzj8/">
                       <i className="ti-facebook"></i>
                     </a>
                     <a href="#">
