@@ -51,7 +51,7 @@ const roomsData = [
     title: "GP Blazing Star",
     image: room1,
     description:
-      "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai. The project offers 2 & 3 BHK flats for sale with a stilt + 5 floors structure, providing a perfect blend of contemporary design and functionality.",
+      "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai.",
     project_status: "Ongoing Project",
     features: ["Units 25, BHK 2 & 3, Sq. ft. 845 – 1405, Floors Stilt + 5"],
     slug: "gp-blazing-star",
@@ -63,7 +63,7 @@ const roomsData = [
     title: "GP Breeze Way",
     image: room2,
     description:
-      "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai. The project offers 2 & 3 BHK flats for sale with a stilt + 5 floors structure, providing a perfect blend of modern design and functionality.",
+      "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai.",
     project_status: "Ongoing Project",
     features: ["Units 29, BHK2 & 3, Sq. ft.817 – 1240, Floors Stilt + 5"],
     slug: "gp-breeze-way",

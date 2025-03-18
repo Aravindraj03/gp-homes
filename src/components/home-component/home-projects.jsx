@@ -165,8 +165,8 @@ const roomsData = [
   {
     id: 11,
     category: "Apartments",
-    location: "Ayanambakkam",
-    title: "Lake Breeze",
+    location: "Korattur",
+    title: "GP Lake Breeze",
     image: room11,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",

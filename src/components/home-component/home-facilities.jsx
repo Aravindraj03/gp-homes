@@ -47,7 +47,7 @@ const HomeFacilities = () => {
         <div className="row">
           <div className="col-md-12">
             <h1 className="section-title text-uppercase facilities-title">
-              25 Years Of experience{""}
+              25 Years Of excellence{""}
             </h1>
             <h2 className="section-subtitle mb-30 text-uppercase">
               We continue our legacy of success, shaping the future and

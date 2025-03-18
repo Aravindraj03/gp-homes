@@ -122,7 +122,7 @@ const HomeReservation = ({ project, selectedPlotData }) => {
               <div className="col-md-5 offset-md-2">
                 <div className="booking-box">
                   <div className="head-box">
-                    <h6>Booking Form</h6>
+                    <h6>Enquire Now</h6>
                     <h4>Drop in a line with your details.</h4>
                   </div>
                   <div className="booking-inner clearfix">
@@ -237,7 +237,7 @@ const HomeReservation = ({ project, selectedPlotData }) => {
               <div className="col-md-5 offset-md-2">
                 <div className="booking-box">
                   <div className="head-box">
-                    <h6>Booking Form </h6>
+                    <h6>Enquire Now</h6>
                     <h4>Drop in a line with your details.</h4>
                   </div>
                   <div className="booking-inner clearfix">
