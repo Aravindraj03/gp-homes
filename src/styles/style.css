@@ -849,7 +849,7 @@ blockquote cite:before {
 }
 .navbar.navbar-light.nav-scroll .navbar-nav .nav-link,
 .navbar.navbar-light.nav-scroll-1 .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 .navbar.navbar-light.nav-scroll .navbar-nav .nav-link:focus,
 .navbar.navbar-light.nav-scroll-1 .navbar-nav .nav-link:focus {
@@ -2857,6 +2857,7 @@ hr.border-2 {
 }
 .rooms3 .square-container .box-title {
   /*	width: 100%;*/
+  text-align: center;
 }
 .rooms3 .square-flip:hover .square-container {
   -webkit-transform: translateX(-650px) scale(0.88);
