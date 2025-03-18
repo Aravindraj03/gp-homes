@@ -2513,7 +2513,7 @@ hr {
 }
 .rooms2 .caption h6 {
   display: inline-block;
-  color: #666;
+  color: #000000;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 10px;
@@ -2807,7 +2807,7 @@ hr.border-2 {
 }
 .rooms3 .square2 p {
   font-size: 15px;
-  color: #666;
+  color: #000000;
 }
 .rooms3 .square2 .icon img {
   width: 60px;
@@ -3060,7 +3060,7 @@ hr {
   list-style: none;
 }
 .room-facilities ul li {
-  color: #666;
+  color: #000000;
   font-size: 15px;
   padding-bottom: 10px;
 }
@@ -5503,7 +5503,7 @@ select {
   }
   .slider-fade .item {
     position: relative;
-    height: 300px;
+    height: 500px;
   }
   .header .caption h1 {
     font-size: 40px;

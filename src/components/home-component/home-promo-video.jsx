@@ -18,7 +18,7 @@ const HomePromoVideo = () => {
               <i className="star-rating"></i>
               <i className="star-rating"></i>
             </span> */}
-            <div className="section-subtitle"><span></span></div>
+            <div className="section-subtitle"><span>Chennai Finest Realestate Developer</span></div>
             <div className="section-title"><span>GP Homes</span></div>
           </div>
         </div>

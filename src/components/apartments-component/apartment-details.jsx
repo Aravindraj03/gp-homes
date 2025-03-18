@@ -298,7 +298,7 @@ const ApartmentDetails = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#c08737cc"}}>
+                      <div className="box-title w-100 p-2" style={{backgroundColor:"#f26522"}}>
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>

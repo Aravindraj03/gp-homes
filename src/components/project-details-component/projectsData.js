@@ -1287,6 +1287,7 @@ const projectsData = [
         "Velammal Global School",
         "Elite Matriculation Higher Secondary School",
         "The Principal National Lotus Matric Hr Sec School",
+        "RB Gothi Jain College for Women"
       ],
       it_parks: ["AMBIT IT Park", "DLF IT Park"],
       entertainment_zone: ["PVR SKLS Mall", "Galaxy Mall"],
@@ -1355,7 +1356,7 @@ const projectsData = [
         "Redhills Bus Terminus",
       ],
       hospitals: [
-        "Rims Mult speciality Hospital",
+        "Rims Multi speciality Hospital",
         "Venkateswara Hospital",
         "GMC Trust Hospital",
       ],
@@ -1366,6 +1367,7 @@ const projectsData = [
         "Velammal Global School",
         "Elite Matriculation Higher Secondary School",
         "The Principal National Lotus Matric Hr Sec School",
+        "RB Gothi Jain College for Women"
       ],
       it_parks: ["AMBIT IT Park", "DLF IT Park"],
       entertainment_zone: ["PVR SKLS Mall", "Galaxy Mall"],
