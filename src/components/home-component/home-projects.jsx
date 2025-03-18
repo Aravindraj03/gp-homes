@@ -341,6 +341,7 @@ const HomeProjects = () => {
                           to={
                             room.category === "Plots"
                               ? `/project-details/${room.slug}`
+
                               : `/project/${room.slug}`
                           }
                         >
