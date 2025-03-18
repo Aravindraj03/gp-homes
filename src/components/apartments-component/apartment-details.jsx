@@ -18,6 +18,31 @@ import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";
 import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom1.jpg";
 import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom2.jpg";
 
+const featureIcons = {
+  Units: "bi bi-building-add",
+  BHK: "bi bi-123",
+  "Sq. ft.": "bi bi-rulers",
+  Floors: "bi bi-code-square",
+};
+
+const getFeatureWithIcons = (feature) => {
+  return feature
+    .split(",") // Split features into an array
+    .map((item) => {
+      const trimmedItem = item.trim();
+      const matchedKey = Object.keys(featureIcons).find((key) =>
+        trimmedItem.includes(key)
+      );
+
+      return {
+        text: trimmedItem,
+        iconClass: matchedKey
+          ? featureIcons[matchedKey]
+          : "bi bi-check-circle",
+      };
+    });
+};
+
 const roomsData = [
   {
     id: 1,
@@ -286,15 +311,25 @@ const ApartmentDetails = () => {
                       <h4>{room.title}</h4>
                       <p>{room.description}</p>
 
-                      {room.features[0] && room.features[0].trim() !== "" && (
+                      {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
-                          {room.features[0].split(",").map((feature, index) => (
-                            <div className="col-6" key={index}>
-                              <ul>
-                                <li>{feature.trim()}</li>
-                              </ul>
-                            </div>
-                          ))}
+                          {room.features.map((feature, index) => {
+                            const featureItems = getFeatureWithIcons(feature);
+
+                            return featureItems.map((item, subIndex) => (
+                              <div
+                                className="col-6"
+                                key={`${index}-${subIndex}`}
+                              >
+                                <ul>
+                                  <li className="fs-6">
+                                    <i className={`${item.iconClass} me-2`}></i>{" "}
+                                    {item.text}
+                                  </li>
+                                </ul>
+                              </div>
+                            ));
+                          })}
                         </div>
                       )}
                       {room.id != "6" ? (
