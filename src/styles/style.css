@@ -5113,7 +5113,7 @@ button.mfp-arrow {
 }
 .footer-about-social-list a:hover {
   background-color: transparent;
-  color: #aa8453;
+  color: #f26522;
 }
 .footer-explore-list li + li {
   margin-top: 3px;
@@ -5612,16 +5612,22 @@ select {
   font-size: 50px;
   color: #e16e38;
 }
+.marquee-div{
+  display: flex;
+  gap: 70px;
+}
 
 @media screen and (max-width: 767px) {
   .facilities-title {
     font-size: 25px;
   }
   .dataTable .table-heading {
-    font-size: 14px;
+    font-size: 11px;
+    padding: 5px;
   }
   .dataTable .table-data {
-    font-size: 13px;
+    font-size: 11px;
+    padding: 5px;
   }
   .dataTable .table-scroll {
     overflow-x: scroll;
@@ -5629,6 +5635,7 @@ select {
   .dataTable .hide-mobile {
     display: none !important;
   }
+
 }
 @media screen and (max-width: 567px) {
     .slider .item {
@@ -5637,4 +5644,26 @@ select {
       background-size: contain;
       background-repeat: no-repeat;
     }
+    .marquee-item {
+      margin: 0 20px;
+    }
+    
+    .marquee-item img {
+      width: 100px !important;
+    }
+    .marquee-div{
+      display: flex;
+      gap: 40px;
+    }
+}
+
+.my-box {
+  border: 1px solid #f26522;
+  min-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .my-box {
+    min-width: 60px;
+  }
 }

@@ -1672,8 +1672,10 @@ const PlotTable = ({ onSelectPlot }) => {
                   ].map((header, index) => (
                     <th
                       key={index}
-                      className="font-semibold text-center table-heading"
-                      style={{ border: "1px solid #f26522", minWidth: "100px" }}
+                      className={`font-semibold text-center table-heading my-box ${
+                        header === "Total Cost" ? "d-none d-md-table-cell" : ""
+                      }`}
+                      style={{ border: "1px solid #f26522" }}
                     >
                       {header}
                     </th>
@@ -1704,7 +1706,7 @@ const PlotTable = ({ onSelectPlot }) => {
                           {plot.areaSqFt}
                         </td>
                         <td
-                          className="text-center table-data"
+                          className="text-center table-data d-none d-md-block"
                           style={{ border: "1px solid #f26522" }}
                         >
                           {plot.totalCost}

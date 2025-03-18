@@ -104,19 +104,19 @@ function Footer() {
                   </div>
                   <div className="footer-about-social-list">
                     <a href="https://www.instagram.com/gphomes_?igsh=andzdTc2dGVibml6">
-                      <i className="ti-instagram"></i>
+                      <i className="ti-instagram fs-4"></i>
                     </a>
                     <a href="#">
-                      <i className="ti-twitter"></i>
+                      <i className="ti-twitter fs-4"></i>
                     </a>
                     <a href="https://youtube.com/@gphomes3239?si=AYLrq-oybgtyyovL">
-                      <i className="ti-youtube"></i>
+                      <i className="ti-youtube fs-4"></i>
                     </a>
                     <a href="https://www.facebook.com/share/1DMpX1Dzj8/">
-                      <i className="ti-facebook"></i>
+                      <i className="ti-facebook fs-4"></i>
                     </a>
                     <a href="#">
-                      <i className="ti-pinterest"></i>
+                      <i className="ti-pinterest fs-4"></i>
                     </a>
                   </div>
                 </div>

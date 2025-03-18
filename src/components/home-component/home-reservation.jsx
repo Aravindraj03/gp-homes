@@ -254,6 +254,7 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                                 // value={}
                                 name="name"
                                 id="name"
+                                required
                                 // onChange={(e) => setCheckIn(e.target.value)}
                               />
                             </div>
@@ -279,6 +280,7 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                                 placeholder="Phone Number"
                                 id="phoneNumber"
                                 name="phoneNumber"
+                                required
                               />
                             </div>
                           </div>
@@ -359,7 +361,7 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                                 <label>Apartments</label>
                                 <div className="select1_inner">
                                   <select
-                                    className="select2 select"
+                                    className="select2 select text-dark"
                                     style={{ width: "100%" }}
                                     value={selectedApartment}
                                     onChange={(e) =>
@@ -398,7 +400,7 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                                 <label>Plots</label>
                                 <div className="select1_inner">
                                   <select
-                                    className="select2 select"
+                                    className="select2 select text-dark"
                                     style={{ width: "100%" }}
                                     value={selectedPlot}
                                     onChange={(e) =>
@@ -437,7 +439,7 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                             <label>Variations</label>
                             <div className="select1_inner">
                               <select
-                                className="select2 select"
+                                className="select2 select text-dark"
                                 style={{ width: "100%" }}
                                 value={children}
                                 onChange={(e) => setChildren(e.target.value)}

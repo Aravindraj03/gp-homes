@@ -23,15 +23,17 @@ const logos = [
 
 const HomeLogoMarquee = () => {
   return (
-    <section className="logo-marquee bg-white py-md-5 bg-light">
+    <section className="logo-marquee bg-white pb-3 pb-md-0 py-md-5 bg-light">
       <Marquee speed={50} gradient={false}>
-        <div style={{ display: "flex", gap: "70px" }}>
+     
+        <div className="marquee-div">
           {logos.map((logo, index) => (
-            <div key={index} className="marquee-item">
+            <div key={index} className="marquee-item d-flex justify-content-center align-items-center">
               <img src={logo} alt={`Logo ${index}`} />
             </div>
           ))}
         </div>
+        <div style={{ width: "50px" }} />
       </Marquee>
     </section>
   );
