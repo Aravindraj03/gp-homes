@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 import slideImg1 from "../../assets/img/slider/sunset-view-from-balcony-01.jpg";
 import slideImg2 from "../../assets/img/slider/banner-2.jpg";
 import slideImg3 from "../../assets/img/slider/3.jpg";
+import MobileBanner2 from "../../assets/img/slider/Mobile-Banner-2.jpg";
 
 const BannerSlider = () => {
   return (
-    <header className="header slider-fade">
+    <header className="header slider-fade ">
       <div className="owl-carousel owl-theme">
         {/* First Slide */}
         <div
           className="text-center item bg-img"
-          style={{ backgroundImage: `url(${slideImg1})`,cursor:"pointer"}}
+          style={{ backgroundImage: `url(${MobileBanner2})`,cursor:"pointer"}}
           data-overlay-dark="2"
           onClick={() => (window.location.href = "/plots-chennai/gp-ponBhoomi")}
         >

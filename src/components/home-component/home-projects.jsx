@@ -89,7 +89,7 @@ const roomsData = [
     title: "GP Pon Bhoomi",
     image: room10,
     description:
-      "PonBhoomi isn’t just a name—it’s a promise of growth and prosperity. Investing in land is a better option than gold, as property values continue to appreciate over time. Now is the perfect time to build your dream home and settle in this serene paradise.",
+      "PonBhoomi promises growth and prosperity, making land a better investment than gold due to its appreciating value. Now is the ideal time to build your dream home in this serene paradise.",
     project_status: "Ongoing Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-ponBhoomi",
@@ -102,7 +102,7 @@ const roomsData = [
     title: "GP Midway Avenue",
     image: room5,
     description:
-      "Midway Avenue in Athipet 2.0, an oasis where modern living blends seamlessly with the tranquility of nature. Imagine beginning each day with the soothing sight of lush, green landscapes right outside your doorstep.",
+      "Midway Avenue in Athipet 2.0 offers a perfect blend of modern living and natural tranquility, with lush green landscapes enhancing everyday life.",
     project_status: "Ongoing Project",
     features: [
       "Black-Top Roads, 24/7 Security, Ready To Construct, EB Provided",
@@ -116,7 +116,7 @@ const roomsData = [
     title: "GP Garden Bay",
     image: room7,
     description:
-      "Garden Bay is the epitome of serene living in the heart of Chennai. Located in the thriving area of near Anna Nagar, these residential plots provide the perfect foundation for your dream home.",
+      "Garden Bay offers serene living in Chennai near Anna Nagar, providing ideal residential plots for your dream home.",
     project_status: "Ongoing Project",
     features: [
       "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
@@ -131,7 +131,7 @@ const roomsData = [
     title: "GP Ethulia",
     image: room8,
     description:
-      "Ethulia stands as an exemplary plot-based project by GP Homes in the highly sought-after Mogappair area, it presents 55 ready-to-build villa plots spanning 2.46 acres. This premier plotted development promises a prime location for value appreciation.",
+      "Ethulia by GP Homes in Mogappair offers 55 ready-to-build villa plots across 2.46 acres, ensuring a prime location with great value appreciation.",
     project_status: "Ongoing Project",
     features: [
       "Solar Lights, Black-top Roads, Grand Entrance Arch, EB Provided",
@@ -145,7 +145,7 @@ const roomsData = [
     title: "GP Nanmanai",
     image: room9,
     description:
-      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
+      "Nanmanai by GP Homes offers a 1.5-acre sanctuary in Redhills with premium villa plots (535 to 3130 sq. ft.), providing a peaceful retreat for happy and healthy family living.",
     project_status: "Ongoing Project",
     features: ["Black-Top Roads, 24/7 Security, Fully Fenced, EB Provided"],
     slug: "gp-nanmanai",
@@ -157,7 +157,7 @@ const roomsData = [
     title: "GP Vijayalakshmi",
     image: room9,
     description:
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
     project_status: "Ongoing Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-vijayalakshmi",
@@ -165,8 +165,8 @@ const roomsData = [
   {
     id: 11,
     category: "Apartments",
-    location: "Ayanambakkam",
-    title: "Lake Breeze",
+    location: "Korattur",
+    title: "GP Lake Breeze",
     image: room11,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
@@ -278,7 +278,7 @@ const HomeProjects = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#e16e38"}}>
+                      <div className="box-title w-100 p-2" style={{backgroundColor:"#f26522"}}>
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>

@@ -18,6 +18,31 @@ import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";
 import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom1.jpg";
 import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom2.jpg";
 
+const featureIcons = {
+  Units: "bi bi-building-add",
+  BHK: "bi bi-123",
+  "Sq. ft.": "bi bi-rulers",
+  Floors: "bi bi-code-square",
+};
+
+const getFeatureWithIcons = (feature) => {
+  return feature
+    .split(",") // Split features into an array
+    .map((item) => {
+      const trimmedItem = item.trim();
+      const matchedKey = Object.keys(featureIcons).find((key) =>
+        trimmedItem.includes(key)
+      );
+
+      return {
+        text: trimmedItem,
+        iconClass: matchedKey
+          ? featureIcons[matchedKey]
+          : "bi bi-check-circle",
+      };
+    });
+};
+
 const roomsData = [
   {
     id: 1,
@@ -26,7 +51,7 @@ const roomsData = [
     title: "GP Blazing Star",
     image: room1,
     description:
-      "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai. The project offers 2 & 3 BHK flats for sale with a stilt + 5 floors structure, providing a perfect blend of contemporary design and functionality.",
+      "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai.",
     project_status: "Ongoing Project",
     features: ["Units 25, BHK 2 & 3, Sq. ft. 845 – 1405, Floors Stilt + 5"],
     slug: "gp-blazing-star",
@@ -38,7 +63,7 @@ const roomsData = [
     title: "GP Breeze Way",
     image: room2,
     description:
-      "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai. The project offers 2 & 3 BHK flats for sale with a stilt + 5 floors structure, providing a perfect blend of modern design and functionality.",
+      "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai.",
     project_status: "Ongoing Project",
     features: ["Units 29, BHK2 & 3, Sq. ft.817 – 1240, Floors Stilt + 5"],
     slug: "gp-breeze-way",
@@ -273,7 +298,7 @@ const ApartmentDetails = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#c08737cc"}}>
+                      <div className="box-title w-100 p-2" style={{backgroundColor:"#f26522"}}>
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>
@@ -286,15 +311,25 @@ const ApartmentDetails = () => {
                       <h4>{room.title}</h4>
                       <p>{room.description}</p>
 
-                      {room.features[0] && room.features[0].trim() !== "" && (
+                      {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
-                          {room.features[0].split(",").map((feature, index) => (
-                            <div className="col-6" key={index}>
-                              <ul>
-                                <li>{feature.trim()}</li>
-                              </ul>
-                            </div>
-                          ))}
+                          {room.features.map((feature, index) => {
+                            const featureItems = getFeatureWithIcons(feature);
+
+                            return featureItems.map((item, subIndex) => (
+                              <div
+                                className="col-6"
+                                key={`${index}-${subIndex}`}
+                              >
+                                <ul>
+                                  <li className="fs-6">
+                                    <i className={`${item.iconClass} me-2`}></i>{" "}
+                                    {item.text}
+                                  </li>
+                                </ul>
+                              </div>
+                            ));
+                          })}
                         </div>
                       )}
                       {room.id != "6" ? (
