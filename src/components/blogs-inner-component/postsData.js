@@ -22,7 +22,7 @@ import PostImg11 from "../../assets/img/restaurant/Image 9.jpg";
 const postsData = [
   {
     id: 1,
-    date: "30 Dec 2024",
+    // date: "30 Dec 2024",
     name: "Why Invest in a Plot with GP Homes?",
     description: [
       "<p>When it comes to real estate investments, buying a plot is often overlooked in favor of ready-to-move-in homes. However, investing in land offers unique advantages that can benefit both short- and long-term goals. Here’s why you should consider investing in a plot with GP Homes.</p>",

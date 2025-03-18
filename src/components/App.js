@@ -76,9 +76,9 @@ function App() {
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/careers" element={<CareersPage />} />
+            {/* <Route path="/careers" element={<CareersPage />} /> */}
             <Route path="/privacy-policy" element={<PrivacyPage />} />
-            <Route path="/tools" element={<ToolsPage />} />
+            {/* <Route path="/tools" element={<ToolsPage />} /> */}
             <Route path="/joint-ventures" element={<JointVentures />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/blogs" element={<BlogsPage />} />
