@@ -4815,7 +4815,7 @@ button.mfp-arrow {
   bottom: 0;
   left: 100%;
   z-index: 1;
-  background: #222;
+  background: #f26522;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -5503,7 +5503,8 @@ select {
   }
   .slider-fade .item {
     position: relative;
-    height: 500px;
+    /* height: 500px; */
+    height: 100vh;
   }
   .header .caption h1 {
     font-size: 40px;

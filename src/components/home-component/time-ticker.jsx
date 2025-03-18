@@ -23,7 +23,7 @@ const logos = [
 
 const HomeLogoMarquee = () => {
   return (
-    <section className="logo-marquee bg-white pb-3 pb-md-0 py-md-5 bg-light">
+    <section className="logo-marquee bg-white py-3 py-md-5 bg-light">
       <Marquee speed={50} gradient={false}>
      
         <div className="marquee-div">
