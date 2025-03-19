@@ -113,6 +113,22 @@ b {
   color: #aa8453;
 }
 
+/* custom class */
+.dis-flex-1{
+  display: flex;
+  justify-content: start;
+}
+
+.dis-flex-2{
+  display: flex;
+  text-align: end;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* text field */
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -2733,7 +2749,7 @@ hr.border-2 {
   color: #fff;
 }
 .rooms3 .square h4 {
-  color: #fff;
+  color: #eeeeee;
   font-size: 27px;
   text-align: left;
   margin-bottom: 0;
@@ -5475,6 +5491,16 @@ select {
   .bg-fixed {
     background-attachment: scroll !important;
   }
+
+  .hero-apartment{
+    background-position: center !important;
+    min-height: 320px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin-top: 47px; */
+  }
+
   .header {
     /* background-attachment: local !important; */
     background-position: center !important;
@@ -5492,7 +5518,7 @@ select {
     /* left: 0; */
     height: 100%;
     width: 100%;
-    background-size: center;
+    background-size: end;
     /* background-position: center; */
     background-repeat: no-repeat;
   }

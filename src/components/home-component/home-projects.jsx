@@ -13,11 +13,20 @@ import room9 from "../../assets/img/rooms/Namanai.jpg";
 import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
 
+import bhkIcon from "../../assets/img/icons/BHK.png";
+import aptIcon from "../../assets/img/icons/Apartment.png";
+import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
+import plotIcon from "../../assets/img/icons/Plot-White.png";
+import sqft from "../../assets/img/icons/Sq.Fi.png";
+import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
+
+
 const featureIcons = {
-  Units: "bi bi-building-add",
-  BHK: "bi bi-123",
-  "Sq. ft.": "bi bi-rulers",
-  Floors: "bi bi-code-square",
+  Units: aptIcon,
+  BHK: bhkIcon,
+  "Sq. ft.": sqft,
+  Floors: stiltFloor,
+  Blocks: stiltFloor
 };
 
 const roomsData = [
@@ -237,6 +246,11 @@ const HomeProjects = () => {
                 selectedFilter === "Apartments" ? "btn-form1-submit-active" : ""
               }`}
             >
+              <img
+                src={aptIconWhite}
+                alt="Apartment"
+                style={{ width: "40px", marginRight: "1rem" }}
+              />
               Apartments
             </button>
           </div>
@@ -248,6 +262,11 @@ const HomeProjects = () => {
                 selectedFilter === "Plots" ? "btn-form1-submit-active" : ""
               }`}
             >
+              <img
+                src={plotIcon}
+                alt="Apartment"
+                style={{ width: "40px", marginRight: "1rem" }}
+              />
               Plots
             </button>
           </div>
@@ -278,7 +297,10 @@ const HomeProjects = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#f26522"}}>
+                      <div
+                        className="box-title w-100 p-2"
+                        style={{ backgroundColor: "#f26522" }}
+                      >
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>
@@ -325,8 +347,24 @@ const HomeProjects = () => {
                                 key={`${index}-${subIndex}`}
                               >
                                 <ul>
-                                  <li className="fs-6">
-                                    <i className={`${item.iconClass} me-2`}></i>{" "}
+                                  <li
+                                    style={{
+                                      fontSize: "14px",
+                                      display: "flex",
+                                      alignItems: "center",
+                                      gap: "10px",
+                                    }}
+                                  >
+                                    {/* <i className={`${item.iconClass} me-2`}></i>{" "} */}
+                                    <img
+                                      src={item.iconClass}
+                                      alt="icons"
+                                      style={{
+                                        width: "25px",
+                                        marginRight: "8px",
+                                      }}
+                                    ></img>
+
                                     {item.text}
                                   </li>
                                 </ul>
