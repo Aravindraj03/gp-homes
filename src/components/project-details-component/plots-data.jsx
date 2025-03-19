@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import FacingLogo from "../../assets/img/Compass.png";
 import { Link } from "react-router-dom";
+import FloorPlans from "../../assets/img/projects/Pon-Bhoomi-Sight-Plan.jpg";
+
 const PlotTable = ({ onSelectPlot }) => {
   const allPlots = [
     {
@@ -1557,284 +1559,309 @@ const PlotTable = ({ onSelectPlot }) => {
   );
 
   return (
-    <div className="w-full flex flex-col items-center p-6 container dataTable">
-      {/* Filters */}
-      <div className="booking-wrapper">
-        <div className="container">
-          <div className="booking-inner clearfix">
-            <form
-              onSubmit={applyFilters}
-              className="form1 clearfix d-flex justify-content-center flex-column flex-lg-row align-items-center align-items-lg-start"
-            >
-              <div className="col1 c1">
-                <label>Facing</label>
-                <div className="select1_inner">
-                  <select
-                    name="facing" // Fix here (was "direction")
-                    value={filters.facing}
-                    onChange={handleFilterChange}
-                    className="border w-100 border-orange-500 text-dark p-3 rounded-md bg-white"
-                    style={{ height: "62px" }}
-                  >
-                    <option value="">Facing</option>
-                    <option value="North">North</option>
-                    <option value="South">South</option>
-                    <option value="East">East</option>
-                    <option value="West">West</option>
-                    <option value="North & West">North & West</option>
-                    <option value="North & East">North & East</option>
-                    <option value="South & West">South & West</option>
-                    <option value="South & East">South & East</option>
-                  </select>
-                </div>
-              </div>
-              <div className="col1 c2">
-                <div className="input1_wrapper">
-                  <label>Sq.Ft</label>
+    <>
+      <div className="w-full flex flex-col items-center p-6 container dataTable">
+        {/* Filters */}
+        <div className="booking-wrapper">
+          <div className="container">
+            <div className="booking-inner clearfix">
+              <form
+                onSubmit={applyFilters}
+                className="form1 clearfix d-flex justify-content-center flex-column flex-lg-row align-items-center align-items-lg-start"
+              >
+                <div className="col1 c1">
+                  <label>Facing</label>
                   <div className="select1_inner">
                     <select
-                      name="areaSqFt"
-                      value={filters.areaSqFt}
+                      name="facing" // Fix here (was "direction")
+                      value={filters.facing}
                       onChange={handleFilterChange}
-                      className="form-control input"
+                      className="border w-100 border-orange-500 text-dark p-3 rounded-md bg-white"
                       style={{ height: "62px" }}
                     >
-                      <option value="">Select Sq.Ft</option>
-                      <option value="366~798">366-798 Sq.Ft</option>
-                      <option value="800~999">800-999 Sq.Ft</option>
-                      <option value="1000~1288">1000-1288 Sq.Ft</option>
-                      <option value="1303~3190">1303-3190 Sq.Ft</option>
+                      <option value="">Facing</option>
+                      <option value="North">North</option>
+                      <option value="South">South</option>
+                      <option value="East">East</option>
+                      <option value="West">West</option>
+                      <option value="North & West">North & West</option>
+                      <option value="North & East">North & East</option>
+                      <option value="South & West">South & West</option>
+                      <option value="South & East">South & East</option>
                     </select>
                   </div>
                 </div>
-              </div>
-
-              <div className="col1 c3">
-                <div className="select1_inner">
-                  <label>Price Amount</label>
-                  <div className="input1_inner">
-                    <select
-                      name="totalCost"
-                      value={filters.totalCost}
-                      onChange={handleFilterChange}
-                      className="form-control input"
-                      style={{ height: "62px" }}
-                    >
-                      <option value="">Select Price</option>
-                      {totalCostRanges.map(({ label, value }) => (
-                        <option key={value} value={value}>
-                          {label}
-                        </option>
-                      ))}
-                    </select>
+                <div className="col1 c2">
+                  <div className="input1_wrapper">
+                    <label>Sq.Ft</label>
+                    <div className="select1_inner">
+                      <select
+                        name="areaSqFt"
+                        value={filters.areaSqFt}
+                        onChange={handleFilterChange}
+                        className="form-control input"
+                        style={{ height: "62px" }}
+                      >
+                        <option value="">Select Sq.Ft</option>
+                        <option value="366~798">366-798 Sq.Ft</option>
+                        <option value="800~999">800-999 Sq.Ft</option>
+                        <option value="1000~1288">1000-1288 Sq.Ft</option>
+                        <option value="1303~3190">1303-3190 Sq.Ft</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="col3 c6">
-                <button type="submit" className="btn-form1-submit">
-                  Check Now
-                </button>
-              </div>
-            </form>
+                <div className="col1 c3">
+                  <div className="select1_inner">
+                    <label>Price Amount</label>
+                    <div className="input1_inner">
+                      <select
+                        name="totalCost"
+                        value={filters.totalCost}
+                        onChange={handleFilterChange}
+                        className="form-control input"
+                        style={{ height: "62px" }}
+                      >
+                        <option value="">Select Price</option>
+                        {totalCostRanges.map(({ label, value }) => (
+                          <option key={value} value={value}>
+                            {label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col3 c6">
+                  <button type="submit" className="btn-form1-submit" style={{backgroundColor:"#f26522"}}>
+                    Check Now
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="row mt-5">
-        <div className="col-12 col-lg-8 ">
-          <h3 className="text-3xl fw-semibold text-dark  mb-4 d-flex flex-column flex-md-row justify-content-between w-100">
-            CONFIGURATION
-            <span className="text-xl fw-medium text-secondary d-flex flex-column flex-md-row gap-3 mt-3 mt-md-0">
-              <button className="btn btn-primary">
-                Total Plots: {allPlots.length}
-              </button>
-              <button className="btn btn-success">
-                Matching:{" "}
-                {filteredPlots.length === 207 ? 0 : filteredPlots.length}
-              </button>
-            </span>
-          </h3>
-          {/* Table */}
-          <div className="w-full max-w-4xl mt-6 table-scroll">
-            <table
-              className="w-100 border-collapse text-left"
-              style={{ border: "1px solid #f26522" }}
-            >
-              <thead>
-                <tr className="bg-orange-100 text-gray-800">
-                  {[
-                    "Plot No",
-                    "Area in Sq.ft",
-                    "Total Cost",
-                    "Status",
-                    "Facing",
-                    "Order Now",
-                  ].map((header, index) => (
-                    <th
-                      key={index}
-                      className={`font-semibold text-center table-heading my-box ${
-                        header === "Total Cost" ? "d-none d-md-table-cell" : ""
-                      }`}
-                      style={{ border: "1px solid #f26522" }}
-                    >
-                      {header}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {paginatedPlots.length > 0 ? (
-                  paginatedPlots.map((plot, index) => {
-                    const isSoldOut = soldOutPlots.includes(plot.plotNo); // Check if the plot is sold out
-                    return (
-                      <tr
+        <div className="row mt-5">
+          <div className="col-12 col-lg-8 ">
+            <h3 className="text-3xl fw-semibold text-dark  mb-4 d-flex flex-column flex-md-row justify-content-between w-100">
+              CONFIGURATION
+              <span className="text-xl fw-medium text-secondary d-flex flex-column flex-md-row gap-3 mt-3 mt-md-0">
+                <button className="btn btn-primary">
+                  Total Plots: {allPlots.length}
+                </button>
+                <button className="btn btn-success">
+                  Matching:{" "}
+                  {filteredPlots.length === 207 ? 0 : filteredPlots.length}
+                </button>
+              </span>
+            </h3>
+            {/* Table */}
+            <div className="w-full max-w-4xl mt-6 table-scroll">
+              <table
+                className="w-100 border-collapse text-left"
+                style={{ border: "1px solid #f26522" }}
+              >
+                <thead>
+                  <tr className="bg-orange-100 text-gray-800">
+                    {[
+                      "Plot No",
+                      "Area in Sq.ft",
+                      "Total Cost",
+                      "Status",
+                      "Facing",
+                      "Order Now",
+                    ].map((header, index) => (
+                      <th
                         key={index}
-                        className={`text-gray-700 ${
-                          isSoldOut ? "bg-gray-300 text-red-600 font-bold" : ""
-                        }`} // Apply styles if sold out
+                        // className={`font-semibold text-center table-heading my-box
+                        //   ${header === "Total Cost" ? "d-none d-md-table-cell" : ""}`}
+                        className="font-semibold text-center table-heading my-box"
+                        style={{ border: "1px solid #f26522" }}
                       >
-                        <td
-                          className="text-center table-data"
-                          style={{ border: "1px solid #f26522" }}
+                        {header}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {paginatedPlots.length > 0 ? (
+                    paginatedPlots.map((plot, index) => {
+                      const isSoldOut = soldOutPlots.includes(plot.plotNo); // Check if the plot is sold out
+                      return (
+                        <tr
+                          key={index}
+                          className={`text-gray-700 ${
+                            isSoldOut
+                              ? "bg-gray-300 text-red-600 font-bold"
+                              : ""
+                          }`} // Apply styles if sold out
                         >
-                          {plot.plotNo}
-                        </td>
-                        <td
-                          className="text-center table-data"
-                          style={{ border: "1px solid #f26522" }}
-                        >
-                          {plot.areaSqFt}
-                        </td>
-                        <td
-                          className="text-center table-data d-none d-md-block"
-                          style={{ border: "1px solid #f26522" }}
-                        >
-                          {plot.totalCost}
-                        </td>
-                        <td
-                          className="text-center table-data"
-                          style={{
-                            border: "1px solid #f26522",
-                            fontWeight: isSoldOut ? "bold" : "normal",
-                            color: isSoldOut ? "red" : "black",
-                          }}
-                        >
-                          {isSoldOut ? "Sold Out" : plot.status}
-                        </td>
-                        <td
-                          className="text-center table-data"
-                          style={{ border: "1px solid #f26522" }}
-                        >
-                          {plot.facing}
-                        </td>
-                        <td
-                          className="text-center table-data"
-                          style={{
-                            border: "1px solid #f26522",
-                            backgroundColor: "#ffdab3",
-                            cursor: "pointer",
-                          }}
-                          onClick={() => onSelectPlot(plot)}
-                        >
-                          Book Now
-                        </td>
-                        {/* <td
+                          <td
+                            className="text-center table-data"
+                            style={{ border: "1px solid #f26522" }}
+                          >
+                            {plot.plotNo}
+                          </td>
+                          <td
+                            className="text-center table-data"
+                            style={{ border: "1px solid #f26522" }}
+                          >
+                            {plot.areaSqFt}
+                          </td>
+                          <td
+                            className="text-center table-data"
+                            style={{ border: "1px solid #f26522" }}
+                          >
+                            {plot.totalCost}
+                          </td>
+                          <td
+                            className="text-center table-data"
+                            style={{
+                              border: "1px solid #f26522",
+                              fontWeight: isSoldOut ? "bold" : "normal",
+                              color: isSoldOut ? "red" : "black",
+                            }}
+                          >
+                            {isSoldOut ? "Sold Out" : plot.status}
+                          </td>
+                          <td
+                            className="text-center table-data"
+                            style={{ border: "1px solid #f26522" }}
+                          >
+                            {plot.facing}
+                          </td>
+                          <td
+                            className="text-center table-data p-1 p-md-0"
+                            style={{
+                              border: "1px solid #f26522",
+                              // backgroundColor: "#ffdab3",
+                              cursor: "pointer",
+                            }}
+                          >
+                            <button
+                              onClick={() => onSelectPlot(plot)}
+                              className="book-now"
+                            >
+                              Book Now
+                            </button>
+                          </td>
+                          {/* <td
                           className="text-center table-data shadow p-3 mb-5 rounded"
                           style={{ border: "1px solid #f26522",color:"black",cursor:"pointer", backgroundColor:"#ffdab3" }}
                         >Book Now
                         </td> */}
-                      </tr>
-                    );
-                  })
-                ) : (
-                  <tr>
-                    <td colSpan={6} className="text-center py-4 text-red-500">
-                      No plots found
-                    </td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-            <span className="text-success" style={{ fontSize: "12px" }}>
-              Include Development Charges | Basic Cost | Registration &
-              Documentation | Maintenance (1 Yr) | GST*
-            </span>
+                        </tr>
+                      );
+                    })
+                  ) : (
+                    <tr>
+                      <td colSpan={6} className="text-center py-4 text-red-500">
+                        No plots found
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+              <span className="text-success" style={{ fontSize: "12px" }}>
+                Include Development Charges | Basic Cost | Registration &
+                Documentation | Maintenance (1 Yr) | GST*
+              </span>
+            </div>
+            {/* Pagination Controls */}
+            <div className="flex justify-center mt-4">
+              <button
+                disabled={currentPage === 1}
+                onClick={() => setCurrentPage(currentPage - 1)}
+                className="px-4 py-2 mx-2 btn-warning text-white rounded disabled:opacity-50"
+              >
+                Previous
+              </button>
+              <span className=" py-2">
+                Page {currentPage} of {totalPages}
+              </span>
+              <button
+                disabled={currentPage === totalPages}
+                onClick={() => setCurrentPage(currentPage + 1)}
+                className="px-4 py-2 mx-2 bg-info text-white rounded disabled:opacity-50"
+              >
+                Next
+              </button>
+            </div>
           </div>
-          {/* Pagination Controls */}
-          <div className="flex justify-center mt-4">
-            <button
-              disabled={currentPage === 1}
-              onClick={() => setCurrentPage(currentPage - 1)}
-              className="px-4 py-2 mx-2 btn-warning text-white rounded disabled:opacity-50"
-            >
-              Previous
-            </button>
-            <span className=" py-2">
-              Page {currentPage} of {totalPages}
-            </span>
-            <button
-              disabled={currentPage === totalPages}
-              onClick={() => setCurrentPage(currentPage + 1)}
-              className="px-4 py-2 mx-2 bg-info text-white rounded disabled:opacity-50"
-            >
-              Next
-            </button>
-          </div>
-        </div>
-        {/* Facing data */}
-        <div className="col-12 col-lg-4 mt-4 mt-lg-0 d-flex justify-content-center align-items-center hide-mobile">
-          <div className="row g-2 w-100 ">
-            {[
-              "North & West",
-              "North",
-              "North & East",
-              "West",
-              "logo",
-              "East",
-              "South & West",
-              "South",
-              "South & East",
-            ].map((direction, index) =>
-              direction === "logo" ? (
-                <button
-                  key={index}
-                  className="col-4 btn btn-inline-dark p-1 text-center d-flex align-items-center justify-content-center"
-                  style={{ height: "100px" }} // Set uniform height
-                >
-                  <img
+          {/* Facing data */}
+          <div className="col-12 col-lg-4 mt-4 mt-lg-0 d-flex justify-content-center align-items-center hide-mobile">
+            <div className="row g-2 w-100 ">
+              {[
+                "North & West",
+                "North",
+                "North & East",
+                "West",
+                "logo",
+                "East",
+                "South & West",
+                "South",
+                "South & East",
+              ].map((direction, index) =>
+                direction === "logo" ? (
+                  <button
                     key={index}
-                    src={FacingLogo}
-                    alt="Logo"
-                    className="w-100 h-100"
-                  />
-                </button>
-              ) : (
-                <button
-                  key={index}
-                  className="col-4 btn btn-outline-dark text-center d-flex align-items-center justify-content-center"
-                  style={{ height: "100px" }} // Set uniform height
-                  onClick={() => handleFilterFacing(direction)} // ✅ Now it's a function reference
-                >
-                  {direction}
-                </button>
-              )
-            )}
-            <div>
-              <h4>Sold Out Plot No</h4>
-              {soldOutPlots.map((soldOut, index) => (
-                <button
-                  key={index}
-                  className="button bg-danger text-white"
-                  style={{ border: "1px solid grey", padding: "10px" }}
-                >
-                  {soldOut}
-                </button>
-              ))}
+                    className="col-4 btn btn-inline-dark p-1 text-center d-flex align-items-center justify-content-center"
+                    style={{ height: "100px" }} // Set uniform height
+                  >
+                    <img
+                      key={index}
+                      src={FacingLogo}
+                      alt="Logo"
+                      className="w-100 h-100"
+                    />
+                  </button>
+                ) : (
+                  <button
+                    key={index}
+                    className="col-4 btn btn-outline-dark text-center d-flex align-items-center justify-content-center"
+                    style={{ height: "100px" }} // Set uniform height
+                    onClick={() => handleFilterFacing(direction)} // ✅ Now it's a function reference
+                  >
+                    {direction}
+                  </button>
+                )
+              )}
+              <div>
+                <h4>Sold Out Plot No</h4>
+                {soldOutPlots.map((soldOut, index) => (
+                  <button
+                    key={index}
+                    className="button bg-danger text-white"
+                    style={{ border: "1px solid grey", padding: "10px" }}
+                  >
+                    {soldOut}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div
+      className="container mt-4"
+        style={{
+          width: "100%",
+          // height: "100vh",
+          overflow: "hidden",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <img
+          src={FloorPlans}
+          alt="Floor Plans"
+          style={{ width: "100%" }}
+        />
+      </div>
+    </>
   );
 };
 

@@ -94,13 +94,13 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                 <i className="star-rating"></i>
               </p> */}
               <h3>ENQUIRE NOW</h3>
-              <br></br>
-              <h6>
+              <br className="d-none d-md-block"></br>
+              <h6 className="d-none d-md-block">
                 Interested in learning more? Our property experts are here to
                 help! Reach out to us, and we’ll get back to you with all the
                 details soon.
               </h6>
-              <div className="reservations mb-30">
+              <div className="reservations mb-30 d-none d-md-block">
                 <div className="icon color-1">
                   <span className="flaticon-call"></span>
                 </div>
