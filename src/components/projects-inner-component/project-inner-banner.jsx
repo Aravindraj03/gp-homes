@@ -10,7 +10,7 @@ const ProjectInnerPageBanner = ({ project }) => {
 
   return (
     <div
-      className="header section-padding valign bg-img text-center item bg-img" 
+      className="hero-apartment section-padding valign bg-img text-center item bg-img" 
       style={{
         backgroundImage: `url(${bannerImage})`,
         // backgroundBlendMode: 'overlay',

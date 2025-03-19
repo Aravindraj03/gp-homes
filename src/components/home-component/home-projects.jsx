@@ -13,9 +13,11 @@ import room9 from "../../assets/img/rooms/Namanai.jpg";
 import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
 
+import bhkIcon from "../../assets/img/icons/BHK.png";
+
 const featureIcons = {
   Units: "bi bi-building-add",
-  BHK: "bi bi-123",
+  BHK: bhkIcon,
   "Sq. ft.": "bi bi-rulers",
   Floors: "bi bi-code-square",
 };
@@ -326,7 +328,8 @@ const HomeProjects = () => {
                               >
                                 <ul>
                                   <li className="fs-6">
-                                    <i className={`${item.iconClass} me-2`}></i>{" "}
+                                    {/* <i className={`${item.iconClass} me-2`}></i>{" "} */}
+                                    <img src={item.iconClass} className="w-25"></img>
                                     {item.text}
                                   </li>
                                 </ul>
