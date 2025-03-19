@@ -113,6 +113,22 @@ b {
   color: #aa8453;
 }
 
+/* custom class */
+.dis-flex-1{
+  display: flex;
+  justify-content: start;
+}
+
+.dis-flex-2{
+  display: flex;
+  text-align: end;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* text field */
 input[type="password"]:focus,
 input[type="email"]:focus,
