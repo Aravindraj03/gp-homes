@@ -91,6 +91,26 @@ import RMValenciaRuby from "../../assets/img/Highlights/Valencia-RouteMap.jpg";
 import RMValenciaEmerald from "../../assets/img/Highlights/ValenciaEmerald-RouteMap.jpg";
 import RMVijayalakshmi from "../../assets/img/Highlights/Vijayalakshmi-RouteMap.jpg";
 
+import parkingIcon from "../../assets/img/icons/Parking.png";
+import paintingIcon from "../../assets/img/icons/Painting.png";
+import toiletIcon from "../../assets/img/icons/Toilet.png";
+import aptIcon from "../../assets/img/icons/Apartment.png";
+import joineries from "../../assets/img/icons/joineries.png";
+import plastering from "../../assets/img/icons/Plastering.png";
+import electrical from "../../assets/img/icons/Electrical.png";
+import plumbing from "../../assets/img/icons/Plumbing.png";
+import waterIcon from "../../assets/img/icons/Water-Supply.png";
+import roadIcon from "../../assets/img/icons/Road.png";
+import cctvIcon from "../../assets/img/icons/CCTV.png";
+import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
+import ebIcon from "../../assets/img/icons/EB-Connection.png";
+import compound from "../../assets/img/icons/compund-wall.png"
+import groundWater from "../../assets/img/icons/Ground-water.png";
+
+import powerBank from "../../assets/img/icons/POwer-bank.png";
+import liftIcon from "../../assets/img/icons/Lift.png";
+import coveredParking from "../../assets/img/icons/covered-car-parking.png";
+
 
 const projectsData = [
   {
@@ -104,15 +124,15 @@ const projectsData = [
     banner_images: [GPBlazingStarBanner],
     images: [BlazingStarFloorplan1, BlazingStarFloorplan2, BlazingStarFloorplan3],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -189,15 +209,15 @@ const projectsData = [
     banner_images: [GPBlazingStarBanner],
     images: [BlazingStarFloorplan1, BlazingStarFloorplan2, BlazingStarFloorplan3],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -206,10 +226,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -272,15 +292,15 @@ const projectsData = [
     banner_images: [GPBreezeWayBanner],
     images: [BreezwayFloorPlan1, BreezwayFloorPlan2, BreezwayFloorPlan3],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -289,10 +309,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents.They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -355,15 +375,15 @@ const projectsData = [
     banner_images: [GPBreezeWayBanner],
     images: [BreezwayFloorPlan1, BreezwayFloorPlan2, BreezwayFloorPlan3],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -372,10 +392,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents.They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -436,15 +456,15 @@ const projectsData = [
     banner_images: [GpHomesElanzaBanner],
     images: [Elanza2bhk1, Elanza2bhk2, Elanza2bhk3, Elanza2bhk4, Elanza2bhk5, Elanza3bhk1, Elanza3bhk2, ElanzaFloorplan1, ElanzaFloorplan2],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -453,10 +473,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -523,15 +543,15 @@ const projectsData = [
     banner_images: [GpHomesElanzaBanner],
     images: [Elanza2bhk1, Elanza2bhk2, Elanza2bhk3, Elanza2bhk4, Elanza2bhk5, Elanza3bhk1, Elanza3bhk2, ElanzaFloorplan1, ElanzaFloorplan2],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -540,10 +560,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -608,15 +628,15 @@ const projectsData = [
     banner_images: [GPValenciaEmerald],
     images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -625,10 +645,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -696,15 +716,15 @@ const projectsData = [
     banner_images: [GPValenciaEmerald],
     images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -713,10 +733,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -783,15 +803,15 @@ const projectsData = [
     banner_images: [GPValenciaRuby],
     images: [ValenciaRubyFloorplan1, ValenciaRubyFloorplan2, ValenciaRubyFloorplan3],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -800,10 +820,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -870,15 +890,15 @@ const projectsData = [
     banner_images: [GPValenciaRuby],
     images: [ValenciaRubyFloorplan1, ValenciaRubyFloorplan2, ValenciaRubyFloorplan3],
     facilities: [
-      ["Parking", "bi bi-car-front-fill"],
-          ["Painting", "bi bi-palette-fill"],
-          ["Toilet", "bi bi-calendar3-event-fill"],
-          ["Structure", "bi bi-buildings"],
-          ["Joineries", "bi bi-align-bottom"],
-          ["Plastering", "bi bi-ticket-perforated-fill"],
-          ["Electricals", "bi bi-lightbulb-fill"],
-          ["Plumbing", "bi bi-bezier2"],
-          ["Water Supply", "bi bi-droplet-fill"],
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -887,10 +907,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", "bi bi-lightning-charge"],
-      ["Automatic lift", "bi bi-box-arrow-in-up"],
-      ["Covered car parking", "bi bi-car-front"],
-      ["CCTV", "bi bi-camera-video-fill"],
+      ["Koel Power bank", powerBank],
+      ["Automatic lift", liftIcon],
+      ["Covered car parking", coveredParking],
+      ["CCTV", cctvIcon],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -978,12 +998,12 @@ const projectsData = [
     amenities_desc:
       "Discover the modern comforts of Midway Avenue and find the perfect plot for your dream home. Our spacious plots and diverse floor plans make it easy for you to imagine your ideal living space. Explore what Midway Avenue has to offer!",
     amenities: [
-      ["Well laid Tar Roads", "bi bi-signpost-split"],
+      ["Well laid Tar Roads", roadIcon],
       ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", "bi bi-building-fill-check"],
-      ["EB Provided", "bi bi-lamp-fill"],
-      ["Fully Compounded Wall", "bi bi-bricks"],
-      ["Potable Ground Water", "bi bi-moisture"],
+      ["Ready To Construct", readyToConstruct],
+      ["EB Provided", ebIcon],
+      ["Fully Compounded Wall", compound ],
+      ["Potable Ground Water", groundWater],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1069,12 +1089,12 @@ const projectsData = [
     amenities_desc:
       "Garden Bay plots feature well-maintained blacktop roads, electricity supply, and are ready for construction, etc. With plenty of space and an excellent location, they’re perfect for building your dream home.",
     amenities: [
-      ["Well laid Tar Roads", "bi bi-signpost-split"],
+      ["Well laid Tar Roads", roadIcon],
       ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", "bi bi-building-fill-check"],
-      ["EB Provided", "bi bi-lamp-fill"],
-      ["Fully Compounded Wall", "bi bi-bricks"],
-      ["Potable Ground Water", "bi bi-moisture"],
+      ["Ready To Construct", readyToConstruct],
+      ["EB Provided", ebIcon],
+      ["Fully Compounded Wall", compound ],
+      ["Potable Ground Water", groundWater],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1161,12 +1181,12 @@ const projectsData = [
     amenities_desc:
       "Feel the comfort of Ethulia and imagine your ideal home on our expansive plots. Choose from various floor plans to find your ideal space. Explore our amenities and tour our layout today to start building your dream life.",
     amenities: [
-      ["Well laid Tar Roads", "bi bi-signpost-split"],
-      ["24/7 Security", "bi bi-shield-shaded"],
-      ["Ready To Construct", "bi bi-building-fill-check"],
-      ["EB Provided", "bi bi-lamp-fill"],
-      ["Fully Compounded Wall", "bi bi-bricks"],
-      ["Potable Ground Water", "bi bi-moisture"],
+      ["Well laid Tar Roads", roadIcon],
+      ["24/7 Security", "bi bi-shield-shaded  "],
+      ["Ready To Construct", readyToConstruct],
+      ["EB Provided", ebIcon],
+      ["Fully Compounded Wall", compound ],
+      ["Potable Ground Water", groundWater],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1249,12 +1269,12 @@ const projectsData = [
     amenities_desc:
       "Discover the modern comforts of Nanmanai and find the perfect plot for your dream home. Our spacious plots and diverse floor plans make it easy for you to imagine your ideal living space. Explore what Nanmanai has to offer!",
     amenities: [
-      ["Well laid Tar Roads", "bi bi-signpost-split"],
+      ["Well laid Tar Roads", roadIcon],
       ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", "bi bi-building-fill-check"],
-      ["EB Provided", "bi bi-lamp-fill"],
-      ["Fully Compounded Wall", "bi bi-bricks"],
-      ["Potable Ground Water", "bi bi-moisture"],
+      ["Ready To Construct", readyToConstruct],
+      ["EB Provided", ebIcon],
+      ["Fully Compounded Wall", compound ],
+      ["Potable Ground Water", groundWater],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1329,12 +1349,12 @@ const projectsData = [
     amenities_desc:
       "Discover the modern comforts of Nanmanai and find the perfect plot for your dream home. Our spacious plots and diverse floor plans make it easy for you to imagine your ideal living space. Explore what Nanmanai has to offer!",
     amenities: [
-      ["Well laid Tar Roads", "bi bi-signpost-split"],
+      ["Well laid Tar Roads", roadIcon],
       ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", "bi bi-building-fill-check"],
-      ["EB Provided", "bi bi-lamp-fill"],
-      ["Fully Compounded Wall", "bi bi-bricks"],
-      ["Potable Ground Water", "bi bi-moisture"],
+      ["Ready To Construct", readyToConstruct],
+      ["EB Provided", ebIcon],
+      ["Fully Compounded Wall", compound ],
+      ["Potable Ground Water", groundWater],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1410,12 +1430,12 @@ const projectsData = [
     amenities_desc:
       "Experience the ultimate comfort and tranquillity of GP Homes Pon Bhoomi, where you can bring your dream home to life on our spacious plots. Explore our world-class amenities and expertly designed layout today, and discover your perfect lifestyle. ",
     amenities: [
-      ["Well laid Tar Roads", "bi bi-signpost-split"],
+      ["Well laid Tar Roads", roadIcon],
       ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", "bi bi-building-fill-check"],
-      ["EB Provided", "bi bi-lamp-fill"],
-      ["Fully Compounded Wall", "bi bi-bricks"],
-      ["Potable Ground Water", "bi bi-moisture"],
+      ["Ready To Construct", readyToConstruct],
+      ["EB Provided", ebIcon],
+      ["Fully Compounded Wall", compound ],
+      ["Potable Ground Water", groundWater],
       // ["Ready to Construct", "flaticon-car"],
       // ["Portable Ground water", "flaticon-car"],
       // ["Street Light", "flaticon-car"],

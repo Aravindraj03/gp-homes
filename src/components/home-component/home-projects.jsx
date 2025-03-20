@@ -5,13 +5,14 @@ import room1 from "../../assets/img/rooms/blazingstar.jpg";
 import room2 from "../../assets/img/rooms/breezeway.jpg";
 import room3 from "../../assets/img/rooms/elenza.jpg";
 import room4 from "../../assets/img/rooms/valencia-emarald.jpg";
-import room5 from "../../assets/img/rooms/valencia-ruby.jpg";
+import room5 from "../../assets/img/rooms/Mid-way.jpg";
 
 import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
 import room8 from "../../assets/img/rooms/Ethuliya.jpg";
 import room9 from "../../assets/img/rooms/Namanai.jpg";
 import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
+import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg"
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -19,6 +20,11 @@ import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
 import plotIcon from "../../assets/img/icons/Plot-White.png";
 import sqft from "../../assets/img/icons/Sq.Fi.png";
 import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
+import roadIcon from "../../assets/img/icons/Road.png";
+import cctvIcon from "../../assets/img/icons/CCTV.png";
+import ebIcon from "../../assets/img/icons/EB-Connection.png"
+import wallIcon from "../../assets/img/icons/compund-wall.png";
+import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
 
 
 const featureIcons = {
@@ -26,7 +32,12 @@ const featureIcons = {
   BHK: bhkIcon,
   "Sq. ft.": sqft,
   Floors: stiltFloor,
-  Blocks: stiltFloor
+  Blocks: stiltFloor,
+  Black: roadIcon,
+  CCTV: cctvIcon,
+  EB: ebIcon,
+  Fenced: wallIcon,
+  Ready: readyToConstruct
 };
 
 const roomsData = [
@@ -164,7 +175,7 @@ const roomsData = [
     category: "Plots",
     location: "Thiruvallur",
     title: "GP Vijayalakshmi",
-    image: room9,
+    image: room12,
     description:
       "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
     project_status: "Ongoing Project",
