@@ -68,10 +68,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -199,10 +199,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -458,10 +458,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -590,10 +590,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:

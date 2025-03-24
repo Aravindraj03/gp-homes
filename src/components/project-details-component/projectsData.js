@@ -242,10 +242,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -326,10 +326,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents.They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -489,10 +489,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -575,10 +575,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -661,10 +661,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -749,10 +749,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -837,10 +837,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -925,10 +925,10 @@ const projectsData = [
     amenities_desc:
       "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
     amenities: [
-      ["Koel Power bank", powerBank],
-      ["Automatic lift", liftIcon],
-      ["Covered car parking", coveredParking],
-      ["CCTV", cctvIcon],
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1016,12 +1016,15 @@ const projectsData = [
     amenities_desc:
       "Discover the modern comforts of Midway Avenue and find the perfect plot for your dream home. Our spacious plots and diverse floor plans make it easy for you to imagine your ideal living space. Explore what Midway Avenue has to offer!",
     amenities: [
-      ["Well laid Tar Roads", roadIcon],
-      ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", readyToConstruct],
-      ["EB Provided", ebIcon],
-      ["Fully Compounded Wall", compound ],
-      ["Potable Ground Water", groundWater],
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Elegant Grand Entrance arch","bi bi-rainbow"],
+      ["Solar Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1107,12 +1110,15 @@ const projectsData = [
     amenities_desc:
       "Garden Bay plots feature well-maintained blacktop roads, electricity supply, and are ready for construction, etc. With plenty of space and an excellent location, they’re perfect for building your dream home.",
     amenities: [
-      ["Well laid Street Roads", roadIcon],
-      ["Entrance Gate",],
-      ["Ready To Construct", readyToConstruct],
-      ["EB Provided", ebIcon],
-      ["Fully Compounded Wall", compound ],
-      ["Potable Ground Water", groundWater],
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Elegant Grand Entrance arch","bi bi-rainbow"],
+      ["Solar Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1196,12 +1202,15 @@ const projectsData = [
     amenities_desc:
       "Feel the comfort of Ethulia and imagine your ideal home on our expansive plots. Choose from various floor plans to find your ideal space. Explore our amenities and tour our layout today to start building your dream life.",
     amenities: [
-      ["Well laid Tar Roads", roadIcon],
-      ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", readyToConstruct],
-      ["EB Provided", ebIcon],
-      ["Fully Compounded Wall", compound ],
-      ["Potable Ground Water", groundWater],
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Elegant Grand Entrance arch","bi bi-rainbow"],
+      ["Solar Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1284,12 +1293,15 @@ const projectsData = [
     amenities_desc:
       "Discover the modern comforts of Nanmanai and find the perfect plot for your dream home. Our spacious plots and diverse floor plans make it easy for you to imagine your ideal living space. Explore what Nanmanai has to offer!",
     amenities: [
-      ["Well laid Tar Roads", roadIcon],
-      ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", readyToConstruct],
-      ["EB Provided", ebIcon],
-      ["Fully Compounded Wall", compound ],
-      ["Potable Ground Water", groundWater],
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Elegant Grand Entrance arch","bi bi-rainbow"],
+      ["Solar Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1364,12 +1376,15 @@ const projectsData = [
     amenities_desc:
       "Discover the modern comforts of Nanmanai and find the perfect plot for your dream home. Our spacious plots and diverse floor plans make it easy for you to imagine your ideal living space. Explore what Nanmanai has to offer!",
     amenities: [
-      ["Well laid Tar Roads", roadIcon],
-      ["24/7 Security", "bi bi-shield-shaded  "],
-      ["Ready To Construct", readyToConstruct],
-      ["EB Provided", ebIcon],
-      ["Fully Compounded Wall", compound ],
-      ["Potable Ground Water", groundWater],
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Elegant Grand Entrance arch","bi bi-rainbow"],
+      ["Solar Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1447,17 +1462,16 @@ const projectsData = [
     amenities_desc:
       "Experience the ultimate comfort and tranquillity of GP Homes Pon Bhoomi, where you can bring your dream home to life on our spacious plots. Explore our world-class amenities and expertly designed layout today, and discover your perfect lifestyle. ",
     amenities: [
-      ["Well-Developed Black Top Roads", roadIcon],
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
-      ["Ready To Construct", readyToConstruct],
-      ["EB Provided", ebIcon],
-      ["Fully Compounded Wall", compound ],
-      ["Portable Ground Water", groundWater],
-      ["Elegant Grand Entrance arch",],
-      ["Solar Street Lights",],
-      ["Avenue Trees",],
-      ["Children's Play Area"],
-      ["Senior Citizen Park",],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Elegant Grand Entrance arch","bi bi-rainbow"],
+      ["Solar Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
+      
      
       // ["Ready to Construct", "flaticon-car"],
       // ["Portable Ground water", "flaticon-car"],
