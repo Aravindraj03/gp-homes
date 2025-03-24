@@ -11,6 +11,8 @@ import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
 import room8 from "../../assets/img/rooms/Ethuliya.jpg";
 import room9 from "../../assets/img/rooms/Namanai.jpg";
 import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
+import room11 from "../../assets/img/rooms/Mid-way.jpg";
+import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg";
 
 const featureIcons = {
   Well: "bi bi-signpost-split",
@@ -122,7 +124,7 @@ const roomsData = [
     category: "Plots-Ongoing",
     location: "Athipet",
     title: "GP Midway Avenue",
-    image: room5,
+    image: room11,
     description:
       "Midway Avenue in Athipet 2.0 offers modern living amidst nature's tranquility, with lush green landscapes at your doorstep.",
     project_status: "Ongoing Project",
@@ -179,7 +181,7 @@ const roomsData = [
     category: "Plots-Ongoing",
     location: "Thiruvallur",
     title: "GP Vijayalakshmi",
-    image: room9,
+    image: room12,
     description:
       "GP Homes presents VL Nagar in Thiruvallur near Ikkadu, offering prime residential plots ideal for building your dream home.",
     project_status: "Ongoing Project",

@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee";
 
 import blazingStarLogo from "../../assets/img/projects/blazing-star.png";
 import breezeBayLogo from "../../assets/img/projects/breeze-logo.png";
-import buildingTrustLogo from "../../assets/img/projects/building-trust.png";
 import elanzaLogo from "../../assets/img/projects/elanza.png";
 import elloraCastleLogo from "../../assets/img/projects/ellora-castle.png";
 import ethuliaLogo from "../../assets/img/projects/ethulia-logo.png";
@@ -13,7 +12,6 @@ import rubyLogo from "../../assets/img/projects/ruby-logo.png";
 const logos = [
   blazingStarLogo,  
   breezeBayLogo,
-  buildingTrustLogo,
   elanzaLogo,
   elloraCastleLogo,
   ethuliaLogo,
