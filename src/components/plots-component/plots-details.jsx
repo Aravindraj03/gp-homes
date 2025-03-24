@@ -14,18 +14,41 @@ import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/Mid-way.jpg";
 import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg";
 
+import bhkIcon from "../../assets/img/icons/BHK.png";
+import aptIcon from "../../assets/img/icons/Apartment.png";
+import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
+import plotIcon from "../../assets/img/icons/Plot-White.png";
+import sqft from "../../assets/img/icons/Sq.Fi.png";
+import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
+import roadIcon from "../../assets/img/icons/Road.png";
+import cctvIcon from "../../assets/img/icons/CCTV.png";
+import ebIcon from "../../assets/img/icons/EB-Connection.png"
+import wallIcon from "../../assets/img/icons/compund-wall.png";
+import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
+import security from "../../assets/img/icons/24-7-securiry.png";
+import groundwater from "../../assets/img/icons/Ground-water.png";
+import roadICon from "../../assets/img/icons/Road.png";
+import compoundWall from "../../assets/img/icons/compund-wall.png";
+import solarLight from "../../assets/img/icons/Solar-lights.png";
+import archIcon from "../../assets/img/icons/Arch.png";
+
 const featureIcons = {
-  Well: "bi bi-signpost-split",
-  Black: "bi bi-signpost-split",
-  "24/7": "bi bi-shield-shaded",
-  Ready: "bi bi-building-fill-check",
-  EB: "bi bi-lamp-fill",
-  CCTV: "bi bi-camera-video-fill",
-  Fenced: "bi bi-bricks",
-  Potable: "bi bi-droplet-half",
-  Fully: "bi bi-bricks",
-  Branded: "bi bi-sun-fill",
-  Grand: "bi bi-rainbow"
+  Units: aptIcon,
+  BHK: bhkIcon,
+  "Sq. ft.": sqft,
+  Floors: stiltFloor,
+  Blocks: stiltFloor,
+  Black: roadIcon,
+  CCTV: cctvIcon,
+  EB: ebIcon,
+  Fenced: wallIcon,
+  Ready: readyToConstruct,
+  "24/7": security,
+  Potable: groundwater,
+  Well: roadICon,
+  Fully: compoundWall,
+  Solar: solarLight,
+  Grand: archIcon
 };
 
 const getFeatureWithIcons = (feature) => {
@@ -363,7 +386,14 @@ const ApartmentDetails = () => {
                               >
                                 <ul>
                                   <li className="fs-6">
-                                    <i className={`${item.iconClass} me-2`}></i>{" "}
+                                  <img
+                                      src={item.iconClass}
+                                      alt="icons"
+                                      style={{
+                                        width: "25px",
+                                        marginRight: "8px",
+                                      }}
+                                    ></img>
                                     {item.text}
                                   </li>
                                 </ul>

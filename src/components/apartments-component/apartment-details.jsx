@@ -18,11 +18,41 @@ import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";
 import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom1.jpg";
 import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom2.jpg";
 
+import bhkIcon from "../../assets/img/icons/BHK.png";
+import aptIcon from "../../assets/img/icons/Apartment.png";
+import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
+import plotIcon from "../../assets/img/icons/Plot-White.png";
+import sqft from "../../assets/img/icons/Sq.Fi.png";
+import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
+import roadIcon from "../../assets/img/icons/Road.png";
+import cctvIcon from "../../assets/img/icons/CCTV.png";
+import ebIcon from "../../assets/img/icons/EB-Connection.png"
+import wallIcon from "../../assets/img/icons/compund-wall.png";
+import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
+import security from "../../assets/img/icons/24-7-securiry.png";
+import groundwater from "../../assets/img/icons/Ground-water.png";
+import roadICon from "../../assets/img/icons/Road.png";
+import compoundWall from "../../assets/img/icons/compund-wall.png";
+import solarLight from "../../assets/img/icons/Solar-lights.png";
+import archIcon from "../../assets/img/icons/Arch.png";
+
 const featureIcons = {
-  Units: "bi bi-building-add",
-  BHK: "bi bi-123",
-  "Sq. ft.": "bi bi-rulers",
-  Floors: "bi bi-code-square",
+  Units: aptIcon,
+  BHK: bhkIcon,
+  "Sq. ft.": sqft,
+  Floors: stiltFloor,
+  Blocks: stiltFloor,
+  Black: roadIcon,
+  CCTV: cctvIcon,
+  EB: ebIcon,
+  Fenced: wallIcon,
+  Ready: readyToConstruct,
+  "24/7": security,
+  Potable: groundwater,
+  Well: roadICon,
+  Fully: compoundWall,
+  Solar: solarLight,
+  Grand: archIcon
 };
 
 const getFeatureWithIcons = (feature) => {
@@ -323,7 +353,14 @@ const ApartmentDetails = () => {
                               >
                                 <ul>
                                   <li className="fs-6">
-                                    <i className={`${item.iconClass} me-2`}></i>{" "}
+                                  <img
+                                      src={item.iconClass}
+                                      alt="icons"
+                                      style={{
+                                        width: "25px",
+                                        marginRight: "8px",
+                                      }}
+                                    ></img>
                                     {item.text}
                                   </li>
                                 </ul>
