@@ -31,6 +31,10 @@ import BreezwayFloorPlan1 from "../../assets/img/floorplans/Breezway-Floor-Plan-
 import BreezwayFloorPlan2 from "../../assets/img/floorplans/Breezway-Floor-Plan-2.jpg";
 import BreezwayFloorPlan3 from "../../assets/img/floorplans/Breezway-Floor-Plan-3.jpg";
 
+import midwayAvenueFloorplan from "../../assets/img/floorplans/Midway- Sight Plan.jpg";
+
+import gardenbayMap from "../../assets/img/floorplans/gardenbay-map.jpg";
+
 import Elanza2bhk1 from "../../assets/img/floorplans/elanza-2bhk-1.jpg";
 import Elanza2bhk2 from "../../assets/img/floorplans/elanza-2bhk-2.jpg";
 import Elanza2bhk3 from "../../assets/img/floorplans/elanza-2bhk-3.jpg";
@@ -44,6 +48,19 @@ import ElanzaFloorplan2 from "../../assets/img/floorplans/elanza-floorplan-2.jpg
 import EmeraldFloorplan1 from "../../assets/img/floorplans/emerald-floorplan-1.jpg";
 import EmeraldFloorplan2 from "../../assets/img/floorplans/emerald-floorplan-2.jpg";
 import EmeraldFloorplan3 from "../../assets/img/floorplans/emerald-floorplan-3.jpg";
+import Emerald2bhk1 from "../../assets/img/floorplans/emerald-2bhk-1.jpg";
+import Emeral2bhk2 from "../../assets/img/floorplans/emerald-2bhk-2.jpg";
+import Emeral2bhk3 from "../../assets/img/floorplans/emerald-2bhk-3.jpg";
+import Emeral2bhk4 from "../../assets/img/floorplans/emerald-2bhk-4.jpg";
+import Emeral2bhk5 from "../../assets/img/floorplans/emerald-2bhk-5.jpg";
+import Emerald2bhk6 from "../../assets/img/floorplans/emerald-2bhk-6.jpg";
+import Emerald2bhk7 from "../../assets/img/floorplans/emerald-2bhk-7.jpg";
+import Emerald2bhk8 from "../../assets/img/floorplans/emerald-2bhk-8.jpg";
+import Emerald2bhk9 from "../../assets/img/floorplans/emerald-2bhk9.jpg";
+import Emerald2bhk10 from "../../assets/img/floorplans/emerald-2bhk10.jpg";
+import Emerald2bhk11 from "../../assets/img/floorplans/emerald-2bhk11.jpg";
+import Emerald2bhk12 from "../../assets/img/floorplans/emerald-2bhk12.jpg";
+import Emerald2bhk13 from "../../assets/img/floorplans/emerald-2bhk13.jpg";
 
 import ValenciaRubyFloorplan1 from "../../assets/img/floorplans/valencia-ruby-floorplan-1.png";
 import ValenciaRubyFloorplan2 from "../../assets/img/floorplans/valencia-ruby-floorplan-2.png";
@@ -118,7 +135,7 @@ const projectsData = [
     location: "2BHK Flats for Sale in PORUR",
     name: "GP Blazing Star",
     description: [
-      "Introducing Blazing Star by GP Homes, a vibrant residential project situated in the fast-growing suburb of Porur, Chennai. This development features 2 BHK flats in a stilt + 5-floor structure, combining sleek, contemporary design with practicality. Blazing Star by GP Homes is meticulously crafted to cater to the needs of modern living, offering a variety of amenities that enhance the lifestyle of its residents.",
+      "Introducing Blazing Star by GP Homes, a vibrant residential project situated in the fast-growing suburb of Porur, Chennai. This development features 2 BHK flats in a stilt + 5-floor structure, combining sleek, contemporary design with practicality. Blazing Star by GP Homes is meticulously crafted to cater to the needs of modern living, offering a variety of amenities that enhance the lifestyle of its residents.The apartments are spacious, well-ventilated, and flooded with natural light, creating an inviting atmosphere. With cutting-edge infrastructure and facilities, Blazing Star provides ample space for relaxation and unwinding.",
 
     ],
     banner_images: [GPBlazingStarBanner],
@@ -204,7 +221,6 @@ const projectsData = [
     description: [
       "Introducing Blazing Star by GP Homes – a premium residential project located in the rapidly growing suburb of Porur, Chennai. This development features 3 BHK flats in a stilt + 5-floor structure, offering a perfect combination of modern design and practical living.",
       "Blazing Star by GP Homes is meticulously planned to meet the needs of contemporary lifestyles, with spacious, well-ventilated apartments that ensure a flow of natural light and fresh air. The project also offers a range of top-notch amenities, making it the ideal place to relax and unwind in comfort.",
-      "Blazing star project features 3 BHK flats for sale in a stilt + 5-floor structure, blending contemporary design with functionality. Blazing Star by GP Homes is thoughtfully crafted to offer an array of modern amenities, catering to the needs of today’s lifestyle.",
     ],
     banner_images: [GPBlazingStarBanner],
     images: [BlazingStarFloorplan1, BlazingStarFloorplan2, BlazingStarFloorplan3],
@@ -287,7 +303,8 @@ const projectsData = [
     location: "2BHK Flats for Sale in Menambedu",
     name: "GP Breeze Way",
     description: [
-      "Breeze Way offers spacious, well-ventilated apartments equipped with contemporary amenities, ensuring a superior living experience. With its prime location, top-notch facilities, and thoughtfully designed homes, this project is the perfect balance of quality, comfort, and affordability.",
+      "Breeze Way offers spacious, well-ventilated apartments equipped with contemporary amenities, ensuring a superior living experience. With its prime location, top-notch facilities, and thoughtfully designed homes, this project is the perfect balance of quality, comfort, and affordability.This stilt + 5 floors project features elegantly designed 2 BHK flats that seamlessly blend style and functionality.",
+      "Crafted for comfort and convenience, Breeze Way offers spacious, well-ventilated apartments equipped with contemporary amenities, ensuring a superior living experience. With its prime location, top-notch facilities, and thoughtfully designed homes, this project is the perfect balance of quality, comfort, and affordability."
     ],
     banner_images: [GPBreezeWayBanner],
     images: [BreezwayFloorPlan1, BreezwayFloorPlan2, BreezwayFloorPlan3],
@@ -370,7 +387,6 @@ const projectsData = [
     description: [
       "Welcome to Breeze Way by GP Homes – a premium residential enclave in Menambedu, one of Chennai’s fastest-growing neighborhoods. Offering beautifully designed 3 BHK flats in a stilt + 5 floors structure, this project seamlessly blends modern aesthetics with practical functionality.",
       "Designed for a lifestyle of comfort and convenience, Breeze Way features spacious, well-ventilated apartments equipped with contemporary amenities. With its prime location, high-quality construction, and perfect balance of luxury and affordability, this is the home you’ve been looking for!",
-      "Breeze Way by GP Homes, a premium residential project in Menambedu, one of Chennai’s rapidly growing neighborhoods. Designed with a perfect blend of modern aesthetics and functionality, this stilt + 5 floors development offers spacious 3 BHK flats for sale.",
     ],
     banner_images: [GPBreezeWayBanner],
     images: [BreezwayFloorPlan1, BreezwayFloorPlan2, BreezwayFloorPlan3],
@@ -451,10 +467,10 @@ const projectsData = [
     location: "2BHK Flats for Sale in Madhanadhapuram",
     name: "GP Homes Elanza",
     description: [
-      "Discover the elegance of GP Elanza – a stunning collection of apartments in Madhanadhapuram, where modern design meets luxurious living. These spacious flats boast cutting-edge interiors, exuding sophistication and grandeur. Imagine having everything you need just a short 2-5 minute drive away – from top-tier hospitals and schools to shopping malls and more.",
+      "Discover the elegance of GP Elanza – a stunning collection of apartments in Madhanadhapuram, where modern design meets luxurious living. These spacious flats boast cutting-edge interiors, exuding sophistication and grandeur. Imagine having everything you need just a short 2-5 minute drive away – from top-tier hospitals and schools to shopping malls and more. GP Elanza offers it all, with premium amenities like reserved parking, power backup, CCTV surveillance, and sleek, automatic lifts. Why settle for less when you can live in style, at an unbeatable price?",
     ],
     banner_images: [GpHomesElanzaBanner],
-    images: [Elanza2bhk1, Elanza2bhk2, Elanza2bhk3, Elanza2bhk4, Elanza2bhk5, Elanza3bhk1, Elanza3bhk2, ElanzaFloorplan1, ElanzaFloorplan2],
+    images: [Elanza2bhk1, Elanza2bhk2, Elanza2bhk3, Elanza2bhk4, Elanza2bhk5, ElanzaFloorplan1, ElanzaFloorplan2],
     facilities: [
       ["Parking", parkingIcon],
           ["Painting", paintingIcon],
@@ -538,10 +554,9 @@ const projectsData = [
     description: [
       "Discover the perfect blend of luxury and convenience at GP Elanza, where every apartment is a masterpiece. With its prime location in Madhanadhapuram, just a short 2-5 minute drive to everything you need—from hospitals and schools to shopping malls—this project redefines modern living.",
       "Equipped with state-of-the-art amenities, including reserved and visitor parking, 24/7 power backup, CCTV surveillance, and branded lifts with automatic doors, GP Elanza promises a lifestyle of comfort and security. And the best part? These exquisite, fully-featured apartments come at an unbelievably affordable price!",
-      "GP Elanza promises a lifestyle of comfort and security.. With its prime location in Madhanadhapuram, just a short 2-5 minute drive to everything you need—from hospitals and schools to shopping malls—this project redefines modern living.",
     ],
     banner_images: [GpHomesElanzaBanner],
-    images: [Elanza2bhk1, Elanza2bhk2, Elanza2bhk3, Elanza2bhk4, Elanza2bhk5, Elanza3bhk1, Elanza3bhk2, ElanzaFloorplan1, ElanzaFloorplan2],
+    images: [Elanza3bhk1, Elanza3bhk2, ElanzaFloorplan1, ElanzaFloorplan2],
     facilities: [
       ["Parking", parkingIcon],
           ["Painting", paintingIcon],
@@ -621,12 +636,13 @@ const projectsData = [
   {
     id: 7,
     location: "2BHK Flats for Sale in Ayanambakkam",
-    name: "GP Valencia Emarald",
+    name: "GP Valencia Emerald",
     description: [
       "Welcome to GP Valencia Emerald – a landmark project that sets a new standard in modern living. A proud milestone in the journey of GP Homes, this development offers spacious 2 BHK apartments starting from 857 sq. ft., designed to accommodate your dreams and aspirations.",
+      "Nestled in the prime location of Ayanambakkam, GP Valencia Emerald provides easy access to top educational institutions and IT hubs, ensuring a perfect balance of convenience and connectivity. A home like no other awaits you—come, experience it today!"
     ],
     banner_images: [GPValenciaEmerald],
-    images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3],
+    images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3, Emerald2bhk1, Emeral2bhk2, Emeral2bhk3, Emeral2bhk4, Emeral2bhk5, Emerald2bhk6, Emerald2bhk7],
     facilities: [
       ["Parking", parkingIcon],
           ["Painting", paintingIcon],
@@ -662,11 +678,11 @@ const projectsData = [
         "Entertainment Zone",
       ],
       location_highlights: [
-        "Porur Metro Station – 1.5kms/5mins drive",
-        "Valasaravakkam – 4kms/15mins drive",
-        "Iyyappanthangal – 2.5kms/7mins drive",
-        "Ramapuram – 5.5kms/15mins drive",
-        "Manapakkam – 5.5kms/15mins drive",
+        "Vanagaram - 10mins drive",
+        "Mel ayanambakam - 3mins drive",
+        "200 bypass road - 15mins drive",
+        "Koyambedu junction - 20mins drive",
+        "Wavin junction - 10mins drive",
       ],
       hospitals: [
         "Apollo Hospital",
@@ -685,9 +701,10 @@ const projectsData = [
         "Spartan Matriculation School",
       ],
       it_parks: [
-        "RMZ Software Park – 3.5kms//8mins drive",
-        "DLF IT Park – 4.5kms/12mins drive",
-        "AMBIT IT Park – 6.5kms/10mins",
+        "Ambit IT Park",
+        "India land IT Park",
+        "Kochar info Park",
+        "Prince Info Park"
       ],
       entertainment_zone: [
         "VR Mall",
@@ -707,14 +724,13 @@ const projectsData = [
   {
     id: 8,
     location: "3BHK Flats for Sale in Ayanambakkam",
-    name: "GP Valencia Emarald",
+    name: "GP Valencia Emerald",
     description: [
       "GP Valencia Emerald – a landmark project by GP Homes that takes modern living to the next level. These spacious 3 BHK apartments, starting from 1305 sq. ft., are thoughtfully designed to accommodate your dreams and aspirations.",
       "Located in the prime neighborhood of Ayanambakkam, GP Valencia Emerald offers unmatched convenience with top educational institutions and major IT hubs just around the corner. More than just a home, it’s a lifestyle upgrade. Come, experience it for yourself!",
-      "GP Valencia Emerald ensures seamless connectivity to top educational institutions and major IT hubs, making it an ideal choice for modern homeowners. More than just a home, it’s a space where your aspirations thrive.",
     ],
     banner_images: [GPValenciaEmerald],
-    images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3],
+    images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3, Emerald2bhk8, Emerald2bhk9, Emerald2bhk10, Emerald2bhk11, Emerald2bhk12,Emerald2bhk13],
     facilities: [
       ["Parking", parkingIcon],
           ["Painting", paintingIcon],
@@ -750,12 +766,11 @@ const projectsData = [
         "Entertainment Zone",
       ],
       location_highlights: [
-        "Porur Metro Station – 1.5kms/5mins drive",
-        "Valasaravakkam – 4kms/15mins drive",
-        "Iyyappanthangal – 2.5kms/7mins drive",
-        "Ramapuram – 5.5kms/15mins drive",
-        "Manapakkam – 5.5kms/15mins drive",
-        "Mogappair – 6kms/10mins drive",
+        "Vanagaram - 10mins drive",
+        "Mel ayanambakam - 3mins drive",
+        "200 bypass road - 15mins drive",
+        "Koyambedu junction - 20mins drive",
+        "Wavin junction - 10mins drive",
       ],
       hospitals: [
         "Apollo Hospital",
@@ -774,9 +789,10 @@ const projectsData = [
         "Spartan Matriculation School",
       ],
       it_parks: [
-        "RMZ Software Park – 3.5kms//8mins drive",
-        "DLF IT Park – 4.5kms/12mins drive",
-        "AMBIT IT Park – 6.5kms/10mins",
+        "Ambit IT Park",
+        "India land IT Park",
+        "Kochar info Park",
+        "Prince Info Park"
       ],
       entertainment_zone: [
         "VR Mall",
@@ -799,6 +815,7 @@ const projectsData = [
     name: "GP Homes Valencia Ruby",
     description: [
       "Presenting GP Valencia Ruby – a shining milestone in the journey of GP Homes, designed to elevate your lifestyle. Nestled in the prime locality of Ayanambakkam, this exceptional project offers beautifully crafted 2 BHK apartments that blend elegance with functionality.",
+      "With top educational institutions and major IT hubs just a stone’s throw away, GP Valencia Ruby ensures seamless connectivity and convenience. Spacious, thoughtfully designed, and packed with modern comforts, these homes are where dreams take shape. Your perfect home awaits – come, experience it today!"
     ],
     banner_images: [GPValenciaRuby],
     images: [ValenciaRubyFloorplan1, ValenciaRubyFloorplan2, ValenciaRubyFloorplan3],
@@ -837,12 +854,11 @@ const projectsData = [
         "Entertainment Zone",
       ],
       location_highlights: [
-        "Porur Metro Station – 1.5kms/5mins drive",
-        "Valasaravakkam – 4kms/15mins drive",
-        "Iyyappanthangal – 2.5kms/7mins drive",
-        "Ramapuram – 5.5kms/15mins drive",
-        "Manapakkam – 5.5kms/15mins drive",
-        "Mogappair – 6kms/10mins drive",
+        "Vanagaram - 10mins drive",
+        "Mel ayanambakam - 3mins drive",
+        "200 bypass road - 15mins drive",
+        "Koyambedu junction - 20mins drive",
+        "Wavin junction - 10mins drive",
       ],
       hospitals: [
         "Apollo Hospital",
@@ -861,9 +877,10 @@ const projectsData = [
         "Spartan Matriculation School",
       ],
       it_parks: [
-        "RMZ Software Park – 3.5kms//8mins drive",
-        "DLF IT Park – 4.5kms/12mins drive",
-        "AMBIT IT Park – 6.5kms/10mins",
+        "Ambit IT Park",
+        "India land IT Park",
+        "Kochar info Park",
+        "Prince Info Park"
       ],
       entertainment_zone: [
         "VR Mall",
@@ -885,7 +902,8 @@ const projectsData = [
     location: "3BHK Flats for Sale in Ayanambakkam",
     name: "GP Homes Valencia Ruby",
     description: [
-      "Presenting GP Valencia Ruby – a shining milestone in the journey of GP Homes, designed to elevate your lifestyle. Nestled in the prime locality of Ayanambakkam, this exceptional project offers beautifully crafted 3 BHK apartments that blend elegance with functionality.",
+      "Step into the future of luxury living with GP Valencia Ruby – the latest masterpiece from GP Homes. This exceptional project offers beautifully designed 3 BHK apartments that are spacious enough to accommodate all your dreams and aspirations.",
+      "Located in the vibrant heart of Ayanambakkam, surrounded by top educational institutions and major IT hubs, GP Valencia Ruby ensures your home is at the center of convenience and opportunity. It’s more than just a home; it’s the perfect place where your future unfolds. Come, discover the exceptional lifestyle waiting for you!"
     ],
     banner_images: [GPValenciaRuby],
     images: [ValenciaRubyFloorplan1, ValenciaRubyFloorplan2, ValenciaRubyFloorplan3],
@@ -924,12 +942,11 @@ const projectsData = [
         "Entertainment Zone",
       ],
       location_highlights: [
-        "Porur Metro Station – 1.5kms/5mins drive",
-        "Valasaravakkam – 4kms/15mins drive",
-        "Iyyappanthangal – 2.5kms/7mins drive",
-        "Ramapuram – 5.5kms/15mins drive",
-        "Manapakkam – 5.5kms/15mins drive",
-        "Mogappair – 6kms/10mins drive",
+        "Vanagaram - 10mins drive",
+        "Mel ayanambakam - 3mins drive",
+        "200 bypass road - 15mins drive",
+        "Koyambedu junction - 20mins drive",
+        "Wavin junction - 10mins drive",
       ],
       hospitals: [
         "Apollo Hospital",
@@ -948,9 +965,10 @@ const projectsData = [
         "Spartan Matriculation School",
       ],
       it_parks: [
-        "RMZ Software Park – 3.5kms//8mins drive",
-        "DLF IT Park – 4.5kms/12mins drive",
-        "AMBIT IT Park – 6.5kms/10mins",
+        "Ambit IT Park",
+        "India land IT Park",
+        "Kochar info Park",
+        "Prince Info Park"
       ],
       entertainment_zone: [
         "VR Mall",
@@ -978,7 +996,7 @@ const projectsData = [
       "At GP Homes, our team of seasoned professionals, backed by decades of experience, is committed to bringing a fresh perspective to villa construction. We focus on delivering innovative designs, superior quality, and ultimate client satisfaction.",
     ],
     banner_images: [GPMidwayAvenueBanner],
-    image: listimg4,
+    images: [midwayAvenueFloorplan],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
@@ -1069,7 +1087,7 @@ const projectsData = [
       "Nestled near Anna Nagar, these 19 affordable residential plots, ranging from 625 sq. ft. to 1380 sq. ft., provide the perfect foundation for your dream home. The prime location ensures seamless connectivity to major city areas, with a metro station nearby for added convenience. Enjoy a peaceful, comfortable lifestyle with excellent amenities and lush surroundings, just minutes away from Anna Nagar.Nestled near Anna Nagar, these 19 affordable residential plots, ranging from 625 sq. ft. to 1380 sq. ft., provide the perfect foundation for your dream home. The prime location ensures seamless connectivity to major city areas, with a metro station nearby for added convenience. Enjoy a peaceful, comfortable lifestyle with excellent amenities and lush surroundings, just minutes away from Anna Nagar.",
     ],
     banner_images: [GPGardenBayBanner],
-    image: listimg4,
+    images: [Ethuliagallery3],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
@@ -1089,8 +1107,8 @@ const projectsData = [
     amenities_desc:
       "Garden Bay plots feature well-maintained blacktop roads, electricity supply, and are ready for construction, etc. With plenty of space and an excellent location, they’re perfect for building your dream home.",
     amenities: [
-      ["Well laid Tar Roads", roadIcon],
-      ["24/7 Security", "bi bi-shield-shaded  "],
+      ["Well laid Street Roads", roadIcon],
+      ["Entrance Gate",],
       ["Ready To Construct", readyToConstruct],
       ["EB Provided", ebIcon],
       ["Fully Compounded Wall", compound ],
@@ -1123,17 +1141,14 @@ const projectsData = [
         "Kendriya Vidyalaya Anna Nagar, Chennai - 16 Minutes",
       ],
       it_parks: [
-        "DLF IT Park",
-        "Kosmo One",
-        "Ambit IT Park",
-        "Ambattur industrial Estate",
+        "ICF",
       ],
       entertainment_zone: [
         "Ganga Cinemas - 5 Minutes",
         "S2 Cinemas - 10 Minutes",
         "VR Mahal - 16 Minutes",
       ],
-      location_highlights_image: RMMidway,
+      location_highlights_image: gardenbayMap,
       hospitals_image: hospitals4,
       educational_institutions_image: educationalInstitutions4,
       it_parks_image: itPark3,
@@ -1161,7 +1176,7 @@ const projectsData = [
       "Plot Loan from Leading Banks",
     ],
     banner_images: [GPEthuliaBanner],
-    images: [Ethuliagallery1, Ethuliagallery2, Ethuliagallery3, Ethuliagallery4],
+    images: [Ethuliagallery1, Ethuliagallery2, Ethuliagallery4],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
@@ -1243,7 +1258,7 @@ const projectsData = [
   {
     id: 14,
     location: "Plots in Redhills Chennai",
-    name: "gp-vijayalakshmi",
+    name: "Nanmanai",
     description: [
       "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
       "With 34 exclusive plots, Nanmanai is a smart investment for a future of faster appreciation along with the luxury lifestyle. Offering the opportunity to build your dream home, Nanmanai is a community that promises serenity, growth and a brighter tomorrow.",
@@ -1309,7 +1324,7 @@ const projectsData = [
         "The Principal National Lotus Matric Hr Sec School",
         "RB Gothi Jain College for Women"
       ],
-      it_parks: ["AMBIT IT Park", "DLF IT Park"],
+      it_parks: ["Ambattur IT Park"],
       entertainment_zone: ["PVR SKLS Mall", "Galaxy Mall"],
       location_highlights_image: RMNanmanai,
       hospitals_image: hospitals2,
@@ -1322,11 +1337,11 @@ const projectsData = [
   },
   {
     id: 15,
-    location: "Plots in Redhills Chennai",
+    location: "Plots in Thiruvallur Chennai",
     name: "Gp Vijayalakshmi",
     description: [
-      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
-      "With 34 exclusive plots, Nanmanai is a smart investment for a future of faster appreciation along with the luxury lifestyle. Offering the opportunity to build your dream home, Nanmanai is a community that promises serenity, growth and a brighter tomorrow.",
+      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+      "Experience the perfect blend of space and convenience with 50 plots in various sizes, ranging from 579 sq. ft. to 1700 sq. ft., catering to diverse needs and preferences. Strategically situated, the project provides easy access to Thiruvallur Main Road and is close to proMinsent shopping malls, cinemas, schools, and hospitals, making it an ideal choice for those seeking a convenient and comfortable lifestyle.",
     ],
     banner_images: [GPVijayaLakshmiBanner],
     image: listimg4,
@@ -1368,29 +1383,31 @@ const projectsData = [
         "Entertainment Zone",
       ],
       location_highlights: [
-        "Redhills Bus Terminal",
-        "Madhavaram Andra Bus Terminal",
-        "Siruvapuri Murugan temple",
-        "Puzhal",
-        "Koyambedu Bus Terminal",
-        "Redhills Bus Terminus",
+        "Thiruvallur Bus depot",
+        "Thiruvallur - Redhills Road",
+        "Veeraraghava Perumal temple",
+        "Ikadu",
+        "Outer Ring Road",
       ],
       hospitals: [
-        "Rims Multi speciality Hospital",
-        "Venkateswara Hospital",
-        "GMC Trust Hospital",
+        "Saviour Hospital",
+        "Government Hospital Thiruvallur",
+        "JVP Multispeciality Clinic",
+        "D.R. Sarojani Hospital 24/7",
+        "Dr. Agarwal Eye Hospital",
+        "ESI Hospital",
       ],
       educational_institutions: [
-        "Donbosco School",
-        "Eurokids Preschool",
-        "Alpha Matric. Hr. Sec. School",
-        "Velammal Global School",
-        "Elite Matriculation Higher Secondary School",
-        "The Principal National Lotus Matric Hr Sec School",
-        "RB Gothi Jain College for Women"
+        "Sri Denova Vidyalaya Primary School",
+        "CSI Goudie Higher Secondary School",
+        "ABS Global Smart School",
+        "Sri Venkateswara Matriculation School",
+        "Sri Venkateswara College of Engineering",
+        "Thirumurugan Arts and Science College",
+        "Indira Nursing and Engineering College"
       ],
-      it_parks: ["AMBIT IT Park", "DLF IT Park"],
-      entertainment_zone: ["PVR SKLS Mall", "Galaxy Mall"],
+      it_parks: ["Pattabiram Tidle Park"],
+      entertainment_zone: ["Rakki Cinemas", "Meera Theatre", "Fun Land", "Bulbul Park", "Thulasi Theatre", "Venkateshwara Theatre"],
       location_highlights_image: RMVijayalakshmi,
       hospitals_image: hospitals2,
       educational_institutions_image: educationalInstitutions3,
@@ -1430,12 +1447,18 @@ const projectsData = [
     amenities_desc:
       "Experience the ultimate comfort and tranquillity of GP Homes Pon Bhoomi, where you can bring your dream home to life on our spacious plots. Explore our world-class amenities and expertly designed layout today, and discover your perfect lifestyle. ",
     amenities: [
-      ["Well laid Tar Roads", roadIcon],
-      ["24/7 Security", "bi bi-shield-shaded  "],
+      ["Well-Developed Black Top Roads", roadIcon],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", readyToConstruct],
       ["EB Provided", ebIcon],
       ["Fully Compounded Wall", compound ],
-      ["Potable Ground Water", groundWater],
+      ["Portable Ground Water", groundWater],
+      ["Elegant Grand Entrance arch",],
+      ["Solar Street Lights",],
+      ["Avenue Trees",],
+      ["Children's Play Area"],
+      ["Senior Citizen Park",],
+     
       // ["Ready to Construct", "flaticon-car"],
       // ["Portable Ground water", "flaticon-car"],
       // ["Street Light", "flaticon-car"],

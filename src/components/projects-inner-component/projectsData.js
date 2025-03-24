@@ -132,7 +132,7 @@ const projectsData = [
         type: "2BHK Flats for Sale in PORUR",
         name: "GP Blazing Star",
         description:
-          "Introducing Blazing Star by GP Homes, a vibrant residential project situated in the fast-growing suburb of Porur, Chennai. This development features 2 BHK flats in a stilt + 5-floor structure, combining sleek, contemporary design with practicality.",
+          "Blazing Star by GP Homes is meticulously crafted to cater to the needs of modern living, offering a variety of amenities that enhance the lifestyle of its residents. The apartments are spacious, well-ventilated, and flooded with natural light, creating an inviting atmosphere.",
         image: GpHomesElanza2bhk,
         facilities: [
           ["Parking", parkingIcon],
@@ -153,7 +153,7 @@ const projectsData = [
         type: "3BHK Flats for Sale in PORUR",
         name: "GP Blazing star",
         description:
-          "Introducing Blazing Star by GP Homes – a premium residential project located in the rapidly growing suburb of Porur, Chennai. This development features 3 BHK flats in a stilt + 5-floor structure, offering a perfect combination of modern design and practical living.",
+          "Blazing star project features 3 BHK flats for sale in a stilt + 5-floor structure, blending contemporary design with functionality. Blazing Star by GP Homes is thoughtfully crafted to offer an array of modern amenities, catering to the needs of today’s lifestyle.",
         image: GpHomesElanza3bhk,
         facilities: [
           ["Parking", parkingIcon],
@@ -257,8 +257,7 @@ const projectsData = [
         id: 1,
         type: "2BHK Flats for Sale in Menambedu",
         name: "GP Breeze Way",
-        description:
-          "Welcome to Breeze Way by GP Homes – a modern residential retreat in Menambedu, one of Chennai’s fastest-growing neighbourhoods. This stilt + 5 floors project features elegantly designed 2 BHK flats that seamlessly blend style and functionality.",
+        description:"Breeze Way offers spacious, well-ventilated apartments equipped with contemporary amenities, ensuring a superior living experience. With its prime location, top-notch facilities, and thoughtfully designed homes, this project is the perfect balance of quality, comfort, and affordability.",
         image: GpHomesElanza2bhk,
         facilities: [
           ["Parking", parkingIcon],
@@ -278,8 +277,7 @@ const projectsData = [
         id: 2,
         type: "3BHK Flats for Sale in Menambedu",
         name: "GP Breeze Way",
-        description:
-          "Welcome to Breeze Way by GP Homes – a premium residential enclave in Menambedu, one of Chennai’s fastest-growing neighbourhoods. Offering beautifully designed 3 BHK flats in a stilt + 5 floors structure, this project seamlessly blends modern aesthetics with practical functionality.",
+        description:"Breeze Way by GP Homes, a premium residential project in Menambedu, one of Chennai’s rapidly growing neighborhoods. Designed with a perfect blend of modern aesthetics and functionality, this stilt + 5 floors development offers spacious 3 BHK flats for sale.",
         image: GpHomesElanza3bhk,
         facilities: [
           ["Parking", parkingIcon],
@@ -390,7 +388,7 @@ const projectsData = [
         type: "2BHK Flats for Sale in Madhanadhapuram",
         name: "GP Elanza",
         description:
-          "Discover the elegance of GP Elanza – a stunning collection of apartments in Madhanadhapuram, where modern design meets luxurious living. These spacious flats boast cutting-edge interiors, exuding sophistication and grandeur.",
+          "Discover the elegance of GP Elanza – a stunning collection of apartments in Madhanadhapuram, where modern design meets luxurious living. Imagine having everything you need just a short 2-5 minute drive away – from top-tier hospitals and schools to shopping malls and more.",
         image: GpHomesElanza2bhk,
         facilities: [
           ["Parking", parkingIcon],
@@ -411,7 +409,7 @@ const projectsData = [
         type: "3BHK Flats for Sale in Madhanadhapuram",
         name: "GP Elanza",
         description:
-          "Discover the perfect blend of luxury and convenience at GP Elanza, where every apartment is a masterpiece. With its prime location in Madhanadhapuram, just a short 2-5 minute drive to everything you need—from hospitals and schools to shopping malls—this project redefines modern living.",
+          "GP Elanza promises a lifestyle of comfort and security.. With its prime location in Madhanadhapuram, just a short 2-5 minute drive to everything you need—from hospitals and schools to shopping malls—this project redefines modern living.",
         image: GpHomesElanza3bhk,
         Alt: "3BHK Flats For Sale in Chennai",
         facilities: [
@@ -433,7 +431,7 @@ const projectsData = [
   {
     id: 4,
     location: "Ayanambakkam",
-    name: "GP Valencia Emarald",
+    name: "GP Valencia Emerald",
     description: [
       "Welcome to GP Valencia Emerald, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes.",
       "GP Valencia Emerald features homes spacious enough to accommodate your dreams and aspirations. Located in prime Ayanambakkam, there are lots of leading educational institutions and IT parks in the vicinity. A home like no other. Come, Check it out!",
@@ -523,9 +521,9 @@ const projectsData = [
       {
         id: 1,
         type: "2BHK Flats for Sale in Ayanambakkam",
-        name: "GP Valencia Emarald",
+        name: "GP Valencia Emerald",
         description:
-          "Welcome to GP Valencia Emerald – a landmark project that sets a new standard in modern living. A proud milestone in the journey of GP Homes, this development offers spacious 2 BHK apartments starting from 857 sq. ft., designed to accommodate your dreams and aspirations.",
+          "GP Valencia Emerald – a milestone project by GP Homes that redefines modern living. Designed to elevate your lifestyle, these 2 BHK apartments, ranging from 857 sq. ft., offer the perfect blend of space, comfort, and sophistication.",
         image: GpHomesElanza2bhk,
         facilities: [
           ["Parking", parkingIcon],
@@ -544,9 +542,9 @@ const projectsData = [
       {
         id: 2,
         type: "3BHK Flats for Sale in Ayanambakkam",
-        name: "Gp Valencia Emarald",
+        name: "Gp Valencia Emerald",
         description:
-          "GP Valencia Emerald – a landmark project by GP Homes that takes modern living to the next level. These spacious 3 BHK apartments, starting from 1305 sq. ft., are thoughtfully designed to accommodate your dreams and aspirations.",
+          "GP Valencia Emerald ensures seamless connectivity to top educational institutions and major IT hubs, making it an ideal choice for modern homeowners. More than just a home, it’s a space where your aspirations thrive.",
         image: GpHomesElanza3bhk,
         facilities: [
           ["Parking", parkingIcon],
@@ -656,8 +654,7 @@ const projectsData = [
         id: 1,
         type: "2BHK Flats for Sale in Ayanambakkam",
         name: "GP Homes Valencia Ruby",
-        description:
-          "Presenting GP Valencia Ruby – a shining milestone in the journey of GP Homes, designed to elevate your lifestyle. Nestled in the prime locality of Ayanambakkam, this exceptional project offers beautifully crafted 2 BHK apartments that blend elegance with functionality.",
+        description: "GP Valencia Ruby – the latest milestone in the GP Homes legacy, where luxury meets practicality. This stunning new project offers beautifully designed 2 BHK apartments that are spacious enough to bring your dreams to life.",
         image: GpHomesElanza2bhk,
         facilities: [
           ["Parking", parkingIcon],
@@ -678,7 +675,7 @@ const projectsData = [
         type: "3BHK Flats for Sale in Ayanambakkam",
         name: "GP Homes Valencia Ruby",
         description:
-          "Step into the future of luxury living with GP Valencia Ruby – the latest masterpiece from GP Homes. This exceptional project offers beautifully designed 3 BHK apartments that are spacious enough to accommodate all your dreams and aspirations.",
+          "GP Valencia Ruby offers easy access to top educational institutions and major IT parks, ensuring both convenience and connectivity. This is more than just a home – it’s the perfect space to grow and thrive. Come, experience a new era of living!",
         image: GpHomesElanza3bhk,
         facilities: [
           ["Parking", parkingIcon],

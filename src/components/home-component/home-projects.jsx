@@ -13,6 +13,7 @@ import room9 from "../../assets/img/rooms/Namanai.jpg";
 import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
 import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg"
+import room13 from "../../assets/img/rooms/valencia-ruby.jpg"
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -25,7 +26,12 @@ import cctvIcon from "../../assets/img/icons/CCTV.png";
 import ebIcon from "../../assets/img/icons/EB-Connection.png"
 import wallIcon from "../../assets/img/icons/compund-wall.png";
 import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
-
+import security from "../../assets/img/icons/24-7-securiry.png";
+import groundwater from "../../assets/img/icons/Ground-water.png";
+import roadICon from "../../assets/img/icons/Road.png";
+import compoundWall from "../../assets/img/icons/compund-wall.png";
+import solarLight from "../../assets/img/icons/Solar-lights.png";
+import archIcon from "../../assets/img/icons/Arch.png";
 
 const featureIcons = {
   Units: aptIcon,
@@ -37,7 +43,13 @@ const featureIcons = {
   CCTV: cctvIcon,
   EB: ebIcon,
   Fenced: wallIcon,
-  Ready: readyToConstruct
+  Ready: readyToConstruct,
+  "24/7": security,
+  Potable: groundwater,
+  Well: roadICon,
+  Fully: compoundWall,
+  Solar: solarLight,
+  Grand: archIcon
 };
 
 const roomsData = [
@@ -81,7 +93,7 @@ const roomsData = [
     id: 4,
     category: "Apartments",
     location: "Ayanambakkam",
-    title: "GP Valencia Emarald",
+    title: "GP Valencia Emerald",
     image: room4,
     description:
       "Welcome to GP Valencia Emerald, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes",
@@ -94,7 +106,7 @@ const roomsData = [
     category: "Apartments",
     location: "Ayanambakkam",
     title: "GP Valencia Ruby",
-    image: room5,
+    image: room13,
     description:
       "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
     project_status: "Ongoing Project",
