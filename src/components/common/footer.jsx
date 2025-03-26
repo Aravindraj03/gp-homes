@@ -100,6 +100,8 @@ function Footer() {
                     <p className="footer-contact-phone">
                       <span className="flaticon-call"></span> 934 448 1444
                     </p>
+                    <p className="footer-contact-phone">
+                    <span className="flaticon-call"></span> 6384003003</p>
                     {/* <p className="footer-contact-mail">info@luxuryhotel.com</p> */}
                   </div>
                   <div className="footer-about-social-list">

@@ -357,6 +357,7 @@ blockquote cite:before {
 .bg-img {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .bg-fixed {
   background-attachment: fixed;
@@ -1966,7 +1967,7 @@ hr {
 
 /* ======= Page Banner Header style ======= */
 .banner-header {
-  height: 60vh;
+  height: 80vh;
 }
 
 .banner-header.full-height {

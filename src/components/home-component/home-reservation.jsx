@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import slideImg2 from "../../assets/img/projects/BG-1.jpg";
+import slideImg2 from "../../assets/img/projects/videobg.jpg";
 import projectsData from "../project-details-component/projectsData";
 import { useParams } from "react-router-dom";
 
@@ -100,15 +100,23 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                 help! Reach out to us, and we’ll get back to you with all the
                 details soon.
               </h6>
-              <div className="reservations mb-30 d-none d-md-block">
-                <div className="icon color-1">
-                  <span className="flaticon-call"></span>
-                </div>
+              <div className="col-md-12 reservations mb-30 d-none d-md-block">
                 <div className="text">
-                  <p className="color-1">Contact Us</p>
-                  <a className="color-1" href="tel:855-100-4444">
-                    9344481444
-                  </a>
+                  <div className="d-flex">
+                    <div className="icon color-1 me-2">
+                      <span className="flaticon-call fs-5"></span>
+                    </div>
+                    <p className="color-1">Contact Us</p>
+                  </div>
+                  
+                    <a className="color-1 fs-5" href="tel:855-100-4444">
+                      9344481444
+                    </a>
+                    <br></br>
+                    <a className="color-1 fs-5" href="tel:855-100-4444">
+                      6384003003
+                    </a>
+                  
                 </div>
               </div>
               {/* <p>
@@ -126,7 +134,10 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                     <h4>Drop in a line with your details.</h4>
                   </div>
                   <div className="booking-inner clearfix">
-                    <form onSubmit={handleSubmitPlotsForm} className="form1 clearfix">
+                    <form
+                      onSubmit={handleSubmitPlotsForm}
+                      className="form1 clearfix"
+                    >
                       <div className="row">
                         <div className="col-md-12">
                           <div className="input1_wrapper">

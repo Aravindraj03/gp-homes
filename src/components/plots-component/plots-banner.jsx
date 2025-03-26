@@ -1,10 +1,10 @@
 import React from 'react';
-import bgimage from '../../assets/img/slider/1.jpg';
+import bgimage from '../../assets/img/slider/plotBanner.jpg';
 
 const AparmentBanner = () => {
   return (
     <div
-      className="banner-header section-padding valign bg-img bg-fixed"
+      className="banner-header section-padding valign bg-img"
       style={{
         backgroundImage: `url(${bgimage})`,
         backgroundBlendMode: 'overlay',

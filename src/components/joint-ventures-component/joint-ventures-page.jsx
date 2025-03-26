@@ -7,7 +7,7 @@ import HomeReservation from "../home-component/home-reservation";
 function JointVenturesPage() {
   return (
     <Fragment>
-      <Header />z
+      <Header />
       <JointVenturesBanner />
       <JointVenturesForm />
       <HomeReservation />
