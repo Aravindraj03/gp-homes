@@ -4,7 +4,7 @@ import bgimage from '../../assets/img/slider/testimonialBanner.jpg';
 const TestimonialsBanner = () => {
   return (
     <div
-      className="banner-header section-padding valign bg-img bg-fixed"
+      className="banner-header section-padding valign bg-img"
       style={{
         backgroundImage: `url(${bgimage})`,
         backgroundBlendMode: 'overlay',

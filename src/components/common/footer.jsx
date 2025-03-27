@@ -101,24 +101,19 @@ function Footer() {
                       <span className="flaticon-call"></span> 934 448 1444
                     </p>
                     <p className="footer-contact-phone">
-                    <span className="flaticon-call"></span> 6384003003</p>
+                    <span className="flaticon-call"></span> 638 400 
+                    3003</p>
                     {/* <p className="footer-contact-mail">info@luxuryhotel.com</p> */}
                   </div>
                   <div className="footer-about-social-list">
                     <a href="https://www.instagram.com/gphomes_?igsh=andzdTc2dGVibml6">
                       <i className="ti-instagram fs-4"></i>
                     </a>
-                    <a href="#">
-                      <i className="ti-twitter fs-4"></i>
-                    </a>
                     <a href="https://youtube.com/@gphomes3239?si=AYLrq-oybgtyyovL">
                       <i className="ti-youtube fs-4"></i>
                     </a>
                     <a href="https://www.facebook.com/share/1DMpX1Dzj8/">
                       <i className="ti-facebook fs-4"></i>
-                    </a>
-                    <a href="#">
-                      <i className="ti-pinterest fs-4"></i>
                     </a>
                   </div>
                 </div>
