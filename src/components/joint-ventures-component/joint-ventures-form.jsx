@@ -31,8 +31,17 @@ const JointVenturesForm = () => {
                 <span className="flaticon-call"></span>
               </div>
               <div className="text">
-                <p>Reservation</p>
+                <p>Contact Us for Apartment Details</p>
                 <a href="tel:855-100-4444">934 448 1444</a>
+              </div>
+            </div>
+            <div className="reservations mb-30">
+              <div className="icon">
+                <span className="flaticon-call"></span>
+              </div>
+              <div className="text">
+                <p>Contact Us for Plot Details</p>
+                <a href="tel:855-100-4444">638 400 3003</a>
               </div>
             </div>
             {/* <div className="reservations mb-30">
