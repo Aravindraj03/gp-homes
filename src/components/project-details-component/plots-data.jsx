@@ -1845,7 +1845,7 @@ const PlotTable = ({ onSelectPlot }) => {
         </div>
       </div>
       <div
-      className="container mt-4"
+      className="container-fuild mt-4"
         style={{
           width: "100%",
           // height: "100vh",
