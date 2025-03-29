@@ -358,6 +358,7 @@ blockquote cite:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background: round;
 }
 .bg-fixed {
   background-attachment: fixed;
@@ -1371,6 +1372,7 @@ hr {
   width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .slider-fade .item .caption {
   z-index: 9;
@@ -1516,9 +1518,10 @@ hr {
     background-size: cover;
     background-position: center; */
   position: absolute;
-  top: 90px;
+  top: 40px;
   left: 0;
   height: 100%;
+  /* margin-top: 3rem; */
   /* min-height: 750px; */
   width: 100%;
   background-size: cover;
@@ -1968,6 +1971,23 @@ hr {
 /* ======= Page Banner Header style ======= */
 .banner-header {
   height: 80vh;
+}
+
+@media screen and (max-width: 767px) {
+  .banner-header {
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+  
+  /* height: 100%;
+  width: 100%;
+  background-size: contain;
+        background-repeat: no-repeat;
+        top: 90px; */
+  
+}
 }
 
 .banner-header.full-height {
@@ -5083,7 +5103,7 @@ button.mfp-arrow {
   position: relative;
   display: block;
   background-color: #222;
-  padding: 90px 0 60px 0;
+  padding: 90px 0 0px 0;
   z-index: 1;
 }
 .footer-top .footer-column {
@@ -5284,6 +5304,46 @@ select {
 .footer-bottom-copy-right a:hover {
   color: #aa8453;
 }
+
+.footer-projects-container {
+  background: #222; /* Same as footer */
+  padding: 30px 0;
+}
+
+.footer-projects-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+/* List styling like Explore */
+.footer-projects-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-projects-list li {
+  font-size: 14px;
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  text-align: left;
+  padding: 5px 0;
+}
+
+/* Link Styling */
+.footer-projects-list li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* Hover Effect */
+.footer-projects-list li a:hover {
+  color: #ffcc00;
+  transform: translateX(5px);
+}
+
 
 /* ======= toTop Button style ======= */
 .progress-wrap {
@@ -5515,11 +5575,10 @@ select {
     position: relative;
   }
   .slider .item {
-    /* top: 57px; */
     /* left: 0; */
     height: 100%;
     width: 100%;
-    background-size: end;
+    background-size: contain;
     /* background-position: center; */
     background-repeat: no-repeat;
   }
@@ -5671,6 +5730,7 @@ select {
       width: 100%;
       background-size: contain;
       background-repeat: no-repeat;
+      top: 90px;
     }
     .marquee-item {
       margin: 0 20px;
@@ -5716,6 +5776,10 @@ select {
     padding: 3px 5px !important;
     font-size: 10px;
   }
+}
+
+.aboutImage {
+  background-color: #f8f5f0;
 }
 
 

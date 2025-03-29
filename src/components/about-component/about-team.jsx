@@ -54,43 +54,43 @@ const AboutTeam = () => {
     },
   ];
 
-  // return (
-  //   <section className="team section-padding bg-cream">
-  //     <div className="container">
-  //       <div className="row">
-  //         <div className="col-md-12">
-  //           <div className="section-subtitle">Professionals</div>
-  //           <div className="section-title">Meet The Team</div>
-  //         </div>
-  //       </div>
-  //       <div className="row">
-  //         <div className="col-md-12 owl-carousel owl-theme">
-  //           {teamMembers.map((member, index) => (
-  //             <div className="item" key={index}>
-  //               <div className="img">
-  //                 <img src={member.img} alt={member.name} />
-  //               </div>
-  //               <div className="info">
-  //                 <h6>{member.name}</h6>
-  //                 <p>{member.role}</p>
-  //                 <div className="social valign">
-  //                   <div className="full-width">
-  //                     {member.socials.map((social, idx) => (
-  //                       <a href="#" key={idx}>
-  //                         <i className={`ti-${social}`}></i>
-  //                       </a>
-  //                     ))}
-  //                     <p>{member.email}</p>
-  //                   </div>
-  //                 </div>
-  //               </div>
-  //             </div>
-  //           ))}
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </section>
-  // );
+  return (
+    <section className="team section-padding bg-cream">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="section-subtitle">Professionals</div>
+            <div className="section-title">Meet The Team</div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-12 owl-carousel owl-theme">
+            {teamMembers.map((member, index) => (
+              <div className="item" key={index}>
+                <div className="img">
+                  <img src={member.img} alt={member.name} />
+                </div>
+                <div className="info">
+                  <h6>{member.name}</h6>
+                  <p>{member.role}</p>
+                  <div className="social valign">
+                    <div className="full-width">
+                      {member.socials.map((social, idx) => (
+                        <a href="#" key={idx}>
+                          <i className={`ti-${social}`}></i>
+                        </a>
+                      ))}
+                      <p>{member.email}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default AboutTeam;
