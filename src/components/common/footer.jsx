@@ -116,29 +116,29 @@ function Footer() {
         <Row>
           <Col md={4} sm={6} xs={12}>
             <ul className="footer-projects-list">
-              <li><Link to="/gp-crown-imperial">GP CROWN IMPERIAL</Link></li>
-              <li><Link to="/gp-fern-breeze">GP FERN BREEZE</Link></li>
-              <li><Link to="/gp-flora-diamond">GP FLORA DIAMOND</Link></li>
-              <li><Link to="/gp-fedora-oaks">GP FEDORA OAKS</Link></li>
-              <li><Link to="/gp-imperial">GP IMPERIAL</Link></li>
+              <li><Link to="/apartments-chennai">GP CROWN IMPERIAL</Link></li>
+              <li><Link to="/apartments-chennai">GP FERN BREEZE</Link></li>
+              <li><Link to="/apartments-chennai">GP FLORA DIAMOND</Link></li>
+              <li><Link to="/apartments-chennai">GP FEDORA OAKS</Link></li>
+              <li><Link to="/apartments-chennai">GP IMPERIAL</Link></li>
             </ul>
           </Col>
           <Col md={4} sm={6} xs={12}>
             <ul className="footer-projects-list">
-              <li><Link to="/gp-ellora-castle">GP ELLORA CASTLE</Link></li>
-              <li><Link to="/gp-peach-blossom">GP PEACH BLOSSOM</Link></li>
-              <li><Link to="/gp-pearl-iris">GP PEARL IRIS</Link></li>
-              <li><Link to="/gp-magnolia">GP MAGNOLIA</Link></li>
-              <li><Link to="/gp-freesia">GP FREESIA</Link></li>
+              <li><Link to="/apartments-chennai">GP ELLORA CASTLE</Link></li>
+              <li><Link to="/apartments-chennai">GP PEACH BLOSSOM</Link></li>
+              <li><Link to="/apartments-chennai">GP PEARL IRIS</Link></li>
+              <li><Link to="/apartments-chennai">GP MAGNOLIA</Link></li>
+              <li><Link to="/apartments-chennai">GP FREESIA</Link></li>
             </ul>
           </Col>
           <Col md={4} sm={6} xs={12}>
             <ul className="footer-projects-list">
-              <li><Link to="/gp-blue-bell-phase-ii">GP BLUE BELL PHASE II</Link></li>
-              <li><Link to="/gp-blue-bell">GP BLUE BELL</Link></li>
-              <li><Link to="/gp-cherry-blossom-ii-saffron">GP CHERRY BLOSSOM II SAFFRON</Link></li>
-              <li><Link to="/gp-cherry-blossom-ii-lavender">GP CHERRY BLOSSOM II LAVENDER</Link></li>
-              <li><Link to="/gp-east-wind">GP EAST WIND</Link></li>
+              <li><Link to="/apartments-chennai">GP BLUE BELL PHASE II</Link></li>
+              <li><Link to="/apartments-chennai">GP BLUE BELL</Link></li>
+              <li><Link to="/apartments-chennai">GP CHERRY BLOSSOM II SAFFRON</Link></li>
+              <li><Link to="/apartments-chennai">GP CHERRY BLOSSOM II LAVENDER</Link></li>
+              <li><Link to="/apartments-chennai">GP EAST WIND</Link></li>
             </ul>
           </Col>
           <Col md={4} sm={6} xs={12}>
@@ -152,20 +152,20 @@ function Footer() {
           </Col>
           <Col md={4} sm={6} xs={12}>
             <ul className="footer-projects-list">
-              <li><Link to="/gp-cherry-blossom-i">GP CHERRY BLOSSOM I</Link></li>
-              <li><Link to="/gp-orange-blossom">GP ORANGE BLOSSOM</Link></li>
-              <li><Link to="/gp-caspia">GP CASPIA</Link></li>
-              <li><Link to="/gp-lake-spirea">GP LAKE SPIREA</Link></li>
-              <li><Link to="/gp-erica">GP ERICA</Link></li>
+              <li><Link to="/apartments-chennai">GP CHERRY BLOSSOM I</Link></li>
+              <li><Link to="/apartments-chennai">GP ORANGE BLOSSOM</Link></li>
+              <li><Link to="/apartments-chennai">GP CASPIA</Link></li>
+              <li><Link to="/apartments-chennai">GP LAKE SPIREA</Link></li>
+              <li><Link to="/apartments-chennai">GP ERICA</Link></li>
             </ul>
           </Col>
           <Col md={4} sm={6} xs={12}>
             <ul className="footer-projects-list">
-              <li><Link to="/gp-new-springs">GP NEW SPRINGS</Link></li>
-              <li><Link to="/gp-egp-enclave">GP EGP ENCLAVE</Link></li>
-              <li><Link to="/gp-blossom">GP BLOSSOM</Link></li>
-              <li><Link to="/gp-yellow-orchid">GP YELLOW ORCHID</Link></li>
-              <li><Link to="/gp-cherry-blossom-villa">GP CHERRY BLOSSOM VILLA</Link></li>
+              <li><Link to="/apartments-chennai">GP NEW SPRINGS</Link></li>
+              <li><Link to="/apartments-chennai">GP EGP ENCLAVE</Link></li>
+              <li><Link to="/apartments-chennai">GP BLOSSOM</Link></li>
+              <li><Link to="/apartments-chennai">GP YELLOW ORCHID</Link></li>
+              <li><Link to="/apartments-chennai">GP CHERRY BLOSSOM VILLA</Link></li>
             </ul>
           </Col>
         </Row>
