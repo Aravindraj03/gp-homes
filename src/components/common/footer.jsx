@@ -29,7 +29,7 @@ function Footer() {
                 <div className="footer-column footer-explore clearfix">
                   <h3 className="footer-title">Explore</h3>
                   <div className="d-flex  gap-5">
-                    <ul className="footer-explore-list list-unstyled mb-1">
+                    <ul className="footer-explore-list list-unstyled mb-1 p-0">
                       <li>
                         <Link to="/home">Home</Link>
                       </li>
