@@ -1,6 +1,6 @@
 import React from "react";
-import roomImage1 from "../../assets/img/rooms/8.jpg";
-import roomImage2 from "../../assets/img/rooms/2.jpg";
+import roomImage1 from "../../assets/img/rooms/aboutus-gphomeslogo.jpg";
+import roomImage2 from "../../assets/img/rooms/aboutus-gphomes2.jpg";
 
 const AboutSection = () => {
   return (
@@ -58,17 +58,25 @@ const AboutSection = () => {
             </p>
             {/* Call Reservation */}
             <div className="reservations">
-              <div className="icon">
+              <div className="icon px-4">
                 <span className="flaticon-call"></span>
               </div>
               <div className="text">
-                <p>Contact Us</p>
+                <p>For Apartment Details</p>
                 <a href="tel:855-100-4444">934 448 1444</a>
+              </div>
+              <div className="icon px-4">
+                <span className="flaticon-call"></span>
+              </div>
+              <div className="text">
+                <p>For Plot Details</p>
+                <a href="tel:855-100-4444">638 400 3003</a>
               </div>
             </div>
           </div>
+        
           <div
-            className="col col-md-3 animate-box"
+            className="aboutImage col col-md-3 animate-box"
             data-animate-effect="fadeInUp"
           >
             <img
@@ -78,11 +86,12 @@ const AboutSection = () => {
             />
           </div>
           <div
-            className="col col-md-3 animate-box"
+            className="aboutImage col col-md-3 animate-box"
             data-animate-effect="fadeInUp"
           >
             <img src={roomImage2} alt="Room 2" className="img-fluid" />
           </div>
+        
         </div>
       </div>
     </section>

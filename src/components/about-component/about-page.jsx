@@ -17,7 +17,7 @@ function AboutPage() {
       <AboutBanner />
       <AboutSection />
       {/* <AboutPricing /> */}
-      <AboutTeam />
+      {/* <AboutTeam /> */}
       <AboutFacilities />
       <AboutTestimonials />
       <Footer />

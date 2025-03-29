@@ -1,5 +1,5 @@
 import React from 'react';
-import bgimage from '../../assets/img/slider/plotBanner.jpg';
+import bgimage from '../../assets/img/slider/plotsBanner.jpg';
 
 const AparmentBanner = () => {
   return (
