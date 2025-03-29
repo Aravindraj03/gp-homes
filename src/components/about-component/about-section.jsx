@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="container">
         <div className="row">
           <div
-            className="col-md-6 mb-30 animate-box"
+            className="col-md-12 mb-30 animate-box"
             data-animate-effect="fadeInUp"
           >
             {/* <span>
@@ -62,21 +62,20 @@ const AboutSection = () => {
                 <span className="flaticon-call"></span>
               </div>
               <div className="text">
-                <p>For Apartment Details</p>
+                <p>Contact For Apartments Details</p>
                 <a href="tel:855-100-4444">934 448 1444</a>
               </div>
               <div className="icon px-4">
                 <span className="flaticon-call"></span>
               </div>
               <div className="text">
-                <p>For Plot Details</p>
+                <p>Contact For Plots Details</p>
                 <a href="tel:855-100-4444">638 400 3003</a>
               </div>
             </div>
           </div>
-        
           <div
-            className="aboutImage col col-md-3 animate-box"
+            className="col col-md-3 animate-box d-md-none"
             data-animate-effect="fadeInUp"
           >
             <img
@@ -86,12 +85,52 @@ const AboutSection = () => {
             />
           </div>
           <div
-            className="aboutImage col col-md-3 animate-box"
+            className="col col-md-3 animate-box d-md-none"
             data-animate-effect="fadeInUp"
           >
             <img src={roomImage2} alt="Room 2" className="img-fluid" />
           </div>
-        
+        </div>
+      </div>
+      <div
+        className=" animate-box pt-4 px-4 d-none d-md-block"
+        style={{ backgroundColor: "rgb(177 169 169 / 12%)" }}
+      >
+        <div className="container">
+          <div className="row">
+            <div
+              className="col col-md-3 animate-box"
+              data-animate-effect="fadeInUp"
+            >
+              <img
+                src={roomImage1}
+                alt="Room 1"
+                className="mt-90 mb-30 img-fluid"
+              />
+            </div>
+            <div
+              className="col col-md-3 animate-box"
+              data-animate-effect="fadeInUp"
+            >
+              <img src={roomImage2} alt="Room 2" className="img-fluid" />
+            </div>
+            <div
+              className="col col-md-3 animate-box"
+              data-animate-effect="fadeInUp"
+            >
+              <img
+                src={roomImage1}
+                alt="Room 1"
+                className="mt-90 mb-30 img-fluid"
+              />
+            </div>
+            <div
+              className="col col-md-3 animate-box"
+              data-animate-effect="fadeInUp"
+            >
+              <img src={roomImage2} alt="Room 2" className="img-fluid" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
