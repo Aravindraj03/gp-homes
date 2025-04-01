@@ -234,7 +234,7 @@ const SEOHandler = () => {
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={`http://gph.atwias.in${location.pathname}`} />
+      <link rel="canonical" href={`https://www.gphomes.in/${location.pathname}`} />
     </Helmet>
   );
 };

@@ -1,0 +1,15 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^gphomes\.in [NC]
+RewriteRule ^(.*)$ https://www.gphomes.in/$1 [L,R=301]
+
+# Redirect /home to root
+RewriteCond %{THE_REQUEST} /home [NC]
+RewriteRule ^home$ / [L,R=301]
+
+# Ensure React handles routing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
