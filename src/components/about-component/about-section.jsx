@@ -1,6 +1,8 @@
 import React from "react";
-import roomImage1 from "../../assets/img/rooms/aboutus-gphomeslogo.jpg";
-import roomImage2 from "../../assets/img/rooms/aboutus-gphomes2.jpg";
+import roomImage1 from "../../assets/img/rooms/aboutus-gplogo.jpeg";
+import roomImage2 from "../../assets/img/rooms/aboutus-gpexcel.jpeg";
+import roomImage3 from "../../assets/img/rooms/aboutus-gpproject.jpeg";
+import roomImage4 from "../../assets/img/rooms/aboutus-gpcustomer.jpeg";
 
 const AboutSection = () => {
   return (
@@ -79,7 +81,7 @@ const AboutSection = () => {
             data-animate-effect="fadeInUp"
           >
             <img
-              src={roomImage1}
+              src={roomImage3}
               alt="Room 1"
               className="mt-90 mb-30 img-fluid"
             />
@@ -88,7 +90,7 @@ const AboutSection = () => {
             className="col col-md-3 animate-box d-md-none"
             data-animate-effect="fadeInUp"
           >
-            <img src={roomImage2} alt="Room 2" className="img-fluid" />
+            <img src={roomImage1} alt="Room 2" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -119,7 +121,7 @@ const AboutSection = () => {
               data-animate-effect="fadeInUp"
             >
               <img
-                src={roomImage1}
+                src={roomImage3}
                 alt="Room 1"
                 className="mt-90 mb-30 img-fluid"
               />
@@ -128,7 +130,7 @@ const AboutSection = () => {
               className="col col-md-3 animate-box"
               data-animate-effect="fadeInUp"
             >
-              <img src={roomImage2} alt="Room 2" className="img-fluid" />
+              <img src={roomImage4} alt="Room 2" className="img-fluid" />
             </div>
           </div>
         </div>
