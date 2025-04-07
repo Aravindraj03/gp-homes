@@ -1970,7 +1970,7 @@ hr {
 
 /* ======= Page Banner Header style ======= */
 .banner-header {
-  height: 80vh;
+  height: 100vh;
 }
 
 @media screen and (max-width: 767px) {
