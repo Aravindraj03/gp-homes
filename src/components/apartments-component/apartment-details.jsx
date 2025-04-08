@@ -11,7 +11,7 @@ import room7 from "../../assets/img/rooms/gp-garden-bay2.jpg";
 import room8 from "../../assets/img/rooms/ethulia.jpg";
 import room9 from "../../assets/img/rooms/nammannai.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
-import apartCompleted1 from "../../assets/img/apartments/Blossom-icf-colony.jpg";
+import apartCompleted1 from "../../assets/img/apartments/blossom-icf.jpg";
 import apartCompleted2 from "../../assets/img/apartments/Blue-Bell.jpg";
 import apartCompleted3 from "../../assets/img/apartments/Blue-Bell-PhaseII.jpg";
 import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";

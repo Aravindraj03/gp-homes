@@ -3852,9 +3852,9 @@ button.mfp-arrow {
   color: #222;
   padding: 19.5px 40px 20px 19.5px;
   background: #fff;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important; 
 }
 .input1_inner input::placeholder {
   font-size: 15px;
