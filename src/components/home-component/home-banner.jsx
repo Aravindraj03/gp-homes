@@ -46,8 +46,9 @@ const BannerSlider = () => {
         {/* Second Slide */}
         <div
           className="text-center item bg-img"
-          style={{ backgroundImage: `url(${slideImg2})` }}
+          style={{ backgroundImage: `url(${slideImg2})`,cursor:"pointer" }}
           data-overlay-dark="2"
+          onClick={() => (window.location.href = "/plots-chennai/gp-ponBhoomi")}
         >
           <div className="v-middle caption">
             <div className="container">
@@ -123,8 +124,9 @@ const BannerSlider = () => {
        {/* Second Slide */}
        <div
          className="text-center item bg-img"
-         style={{ backgroundImage: `url(${MobileBanner2})` }}
+         style={{ backgroundImage: `url(${MobileBanner2})`,cursor:"pointer" }}
          data-overlay-dark="2"
+         onClick={() => (window.location.href = "/plots-chennai/gp-ponBhoomi")}
        >
          <div className="v-middle caption">
            <div className="container">
