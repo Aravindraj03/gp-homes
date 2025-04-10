@@ -84,11 +84,11 @@ function Footer() {
                   </p>
                   <div className="footer-contact-info">
                     <p className="footer-contact-phone">
-                      <span className="flaticon-call"></span> 934 448 1444
+                      <span className="flaticon-call"></span> <a  href="tel:9344481444">9344481444</a>
                     </p>
                     <p className="footer-contact-phone">
-                    <span className="flaticon-call"></span> 638 400 
-                    3003</p>
+                      <span className="flaticon-call"></span> <a  href="tel:6384003003">6384003003</a>
+                    </p>
                     {/* <p className="footer-contact-mail">info@luxuryhotel.com</p> */}
                   </div>
                   <div className="footer-about-social-list">

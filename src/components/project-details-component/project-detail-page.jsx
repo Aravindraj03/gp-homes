@@ -2,6 +2,7 @@ import React, { Fragment, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../common/header";
 import Footer from "../common/footer";
+import PlotsVideo from "./plots-video";
 import ProjectDetailBanner from "./project-detail-banner";
 import ProjectDetailSection from "./project-details-section";
 
@@ -96,8 +97,21 @@ function ProjectDetailPage() {
         </Container>
       </Navbar>
       <ProjectDetailBanner project={project} />
-      {slug === "gp-ponBhoomi" && <PlotTable onSelectPlot={handleSelectPlot} />}
+
+      {slug === "gp-ponBhoomi" && (
+        <>
+          
+          <PlotTable onSelectPlot={handleSelectPlot} />
+        </>
+      )}
+
       <ProjectDetailSection project={project} />
+      {/* {slug === "gp-ponBhoomi" && (
+        <>
+          <PlotsVideo />
+        </>
+      )} */}
+      
       {/* Attach ref to HomeReservation */}
       <div ref={homeReservationRef}>
         <HomeReservation project={project} selectedPlotData={selectedPlot} />

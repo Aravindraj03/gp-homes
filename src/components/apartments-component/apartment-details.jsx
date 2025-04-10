@@ -13,10 +13,10 @@ import room9 from "../../assets/img/rooms/nammannai.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
 import apartCompleted1 from "../../assets/img/apartments/blossom-icf.jpg";
 import apartCompleted2 from "../../assets/img/apartments/Blue-Bell.jpg";
-import apartCompleted3 from "../../assets/img/apartments/Blue-Bell-PhaseII.jpg";
+import apartCompleted3 from "../../assets/img/apartments/Blue-Bell-Phase-2.jpg";
 import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";
-import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom1.jpg";
-import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom2.jpg";
+import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom-1.jpg";
+import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom-2.jpg";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
