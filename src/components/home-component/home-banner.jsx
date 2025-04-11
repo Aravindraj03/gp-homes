@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import slideImg1 from "../../assets/img/slider/hero-banner-2.jpg";
@@ -6,9 +6,28 @@ import slideImg2 from "../../assets/img/slider/banner-2.jpg";
 import slideImg3 from "../../assets/img/slider/3.jpg";
 import MobileBanner2 from "../../assets/img/slider/Mobile-Banner-2.jpg";
 import MobileBanner1 from "../../assets/img/slider/Mobile-Banner-1.jpg";
+import { ServiceWrapper } from "../../service/ApiService";
 
 
 const BannerSlider = () => {
+  const service = new ServiceWrapper();
+
+  useEffect(() => {
+    // setLoading(true); 
+    service.callGet( 'list-of-banners')
+      .then((response) => {
+        // setImages(response.data.galleries);
+        // setVideos(response.data.videos);
+        console.log(response,"response-----------------------");
+        // console.log(response.data,"response.data-----------------------")
+      })
+      .catch((error) => {
+        // toast.error("Something went wrong, Please try again.")
+      })
+      .finally(() => {
+        // setLoading(false); // Set loading to false whether the API call succeeds or fails
+      });
+  }, []);
   return (
     <>
     <header className="header slider-fade d-none d-md-block">
