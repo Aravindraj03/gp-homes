@@ -246,11 +246,7 @@ const ApartmentDetails = () => {
             </h1>
             <h2 className="mb-3">Residential Land For Sale in Chennai</h2>
             <p>
-              GP Homes offers CMDA-approved residential plots for sale in
-              Chennai, providing secure and premium real estate opportunities.
-              As leading real estate developers in Chennai, we ensure
-              well-planned plots in prime locations, perfect for building your
-              dream home. Invest in a trusted name for a brighter future!
+            GP Homes, Residential Plots For Sale, CMDA Approved Plots, Real Estate Developers in Chennai
             </p>
           </div>
         </div>

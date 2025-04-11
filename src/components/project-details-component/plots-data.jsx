@@ -1456,7 +1456,7 @@ const PlotTable = ({ onSelectPlot }) => {
     },
   ];
 
-  const soldOutPlots = [1, 5,28, 34, 35, 92, 93,99, 156,158,165,198, 207]; // Define sold-out plot numbers
+  const soldOutPlots = [1, 4, 5, 10, 11, 12, 19, 20, 27, 92, 93, 99, 178, 179, 180, 181, 182, 183, 184, 185, 197, 198, 200,]; // Define sold-out plot numbers
   const [filters, setFilters] = useState({
     plotNo: "",
     areaSqFt: "",
@@ -1834,7 +1834,7 @@ const PlotTable = ({ onSelectPlot }) => {
                   <button
                     key={index}
                     className="button bg-danger text-white"
-                    style={{ border: "1px solid grey", padding: "10px" }}
+                    style={{ border: "1px solid grey", padding: "10px", minWidth: "50px" }}
                   >
                     {soldOut}
                   </button>

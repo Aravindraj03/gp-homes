@@ -36,7 +36,8 @@ const HomePromoVideo = () => {
           <div className="row">
             <div className="text-center col-md-12">
               <div className="section-subtitle">
-                <span>Chennai's Finest Real Estate Developer</span>
+                <span>Top Builders in Chennai 
+                </span>
               </div>
               <div className="section-title">
                 <span>GP Homes</span>

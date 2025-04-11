@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
+import logo2 from "../../assets/img/gp-logo-2.png";
 function Header() {
 
   const location = useLocation();
@@ -69,7 +70,7 @@ function Header() {
         <Container>
           {/* Logo */}
           <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="Logo" className="logo-img" />
+            <img src={logo2} alt="Logo" className="logo-img" />
           </Navbar.Brand>
 
           {/* Toggler */}

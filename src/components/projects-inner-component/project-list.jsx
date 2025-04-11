@@ -24,7 +24,7 @@ const ProjectsList = ({ project }) => {
                 } animate-box`}
                 data-animate-effect="fadeInUp"
               >
-                <figure>
+                <figure className="col-md-6">
                   <img src={project.image} alt="" className="img-fluid" />{" "}
                 </figure>
 
