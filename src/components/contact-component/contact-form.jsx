@@ -19,7 +19,7 @@ const ContactForm = () => {
               </div>
               <div className="text">
                 <p>Contact Us for Apartment Details</p>
-                <a href="tel:855-100-4444">934 448 1444</a>
+                <a href="tel:934 448 1444">934 448 1444</a>
               </div>
             </div>
             <div className="reservations mb-30">
@@ -28,7 +28,7 @@ const ContactForm = () => {
               </div>
               <div className="text">
                 <p>Contact Us for Plot Details</p>
-                <a href="tel:855-100-4444">638 400 3003</a>
+                <a href="tel:638 400 3003">638 400 3003</a>
               </div>
             </div>
             {/* <div className="reservations mb-30">

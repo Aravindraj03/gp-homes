@@ -65,14 +65,14 @@ const AboutSection = () => {
               </div>
               <div className="text">
                 <p>Contact For Apartments Details</p>
-                <a href="tel:855-100-4444">934 448 1444</a>
+                <a href="tel:934 448 1444">934 448 1444</a>
               </div>
               <div className="icon px-4">
                 <span className="flaticon-call"></span>
               </div>
               <div className="text">
                 <p>Contact For Plots Details</p>
-                <a href="tel:855-100-4444">638 400 3003</a>
+                <a href="tel:638 400 3003">638 400 3003</a>
               </div>
             </div>
           </div>

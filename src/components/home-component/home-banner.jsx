@@ -13,6 +13,7 @@ const BannerSlider = () => {
     <>
       <header className="header slider-fade d-none d-md-block">
         <div className="owl-carousel owl-theme">
+          
           {/* First Slide */}
           <div
             className="text-center item bg-img"
@@ -128,6 +129,19 @@ const BannerSlider = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-md-10 offset-md-1">
+                  <button
+                      className="button-77"
+                      onClick={(e) => {
+                        e.stopPropagation(); // prevents parent div click
+                        window.open(
+                          "https://ponbhoomi.gphomes.in/inventory",
+                          "_blank"
+                        );
+                      }}
+                    >
+                      Know More
+                      
+                    </button>
                     {/* <span>
                    <i className="star-rating"></i>
                    <i className="star-rating"></i>

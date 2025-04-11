@@ -253,7 +253,7 @@ const ApartmentDetails = () => {
             </h1>
             <h2 className="mb-3">Flat For Sale in Chennai</h2>
             {/* <p>GP Homes, 1BHK, 2BHK, 3BHK, Apartment for Sale, Best Builders in Chennai</p> */}
-            <p>GP Homes offers 2BHK, and 3BHK apartments for sale in Chennai, designed for modern living. As one of the best builders in Chennai, we provide high-quality, affordable homes in prime locations. Find your dream home with GP Homes today!</p>
+            <p>GP Homes, 1BHK, 2BHK, 3BHK, Apartment for Sale, Best Builders in Chennai</p>
           </div>
         </div>
       </div>
