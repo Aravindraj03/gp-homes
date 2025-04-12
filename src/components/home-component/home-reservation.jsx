@@ -2,20 +2,99 @@ import React, { useState } from "react";
 import slideImg2 from "../../assets/img/projects/BG-1.jpg";
 
 const HomeReservation = ({ project }) => {
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
-  const [adults, setAdults] = useState(0);
-  const [children, setChildren] = useState(0);
+  const [formData, setFormData] = useState({
+    name: "",
+    mobile: "",
+    plot: project?.name || "",
+    bhk: project?.location?.split(" ")[0] || "",
+  });
+  
 
-  const handleSubmit = (e) => {
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: "" })); 
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    // validateField(name, value);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log({
-      checkIn,
-      checkOut,
-      adults,
-      children,
+
+    // Manual validation
+    const newErrors = {};
+    Object.entries(formData).forEach(([key, value]) => {
+      let message = "";
+
+      switch (key) {
+        case "name":
+          if (!value.trim()) message = "Please enter your Name";
+          else if (value.trim().length < 2)
+            message = "Name must be at least 2 characters.";
+          break;
+
+        case "mobile":
+          if (!value.trim()) message = "Please enter your Phone Number";
+          else if (!/^[0-9]{10}$/.test(value))
+            message = "Enter a valid 10-digit Phone number.";
+          break;
+
+        case "plot":
+          if (!value) message = "Please select a project.";
+          break;
+
+        case "bhk":
+          if (!value) message = "Please select a BHK variation.";
+          break;
+      }
+
+      if (message) newErrors[key] = message;
     });
+
+    // If there are validation errors, show them and stop
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }   
+
+    const payload = {
+      name: formData.name,
+      mobile: formData.mobile,
+      plot: formData.plot || project?.name || "N/A",
+      bhk: formData.bhk || project?.location?.split(" ")[0] || "N/A",
+      apartment: "Ponboomi",
+    };
+
+    try {
+      const response = await fetch("https://cms.gphomes.in/api/enquiry-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+      console.log("Response:", data);
+      alert("Form submitted Successfully:");
+      setSubmitted(true);
+      setFormData({
+        name: "",
+        mobile: "",
+        plot: "",
+        bhk: "",
+      });
+      setErrors({});
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
@@ -27,18 +106,13 @@ const HomeReservation = ({ project }) => {
       >
         <div className="container">
           <div className="row">
-            {/* Reservation */}
             <div className="col-md-5 mb-30 mt-30">
-              {/* <p>
-                <i className="star-rating"></i>
-                <i className="star-rating"></i>
-                <i className="star-rating"></i>
-                <i className="star-rating"></i>
-                <i className="star-rating"></i>
-              </p> */}
-              <h3>ENQUIRE NOW</h3><br></br>
+              <h3>ENQUIRE NOW</h3>
+              <br />
               <h6>
-              Interested in learning more? Our property experts are here to help! Reach out to us, and we’ll get back to you with all the details soon.
+                Interested in learning more? Our property experts are here to
+                help! Reach out to us, and we’ll get back to you with all the
+                details soon.
               </h6>
               <div className="reservations mb-30">
                 <div className="icon color-1">
@@ -51,21 +125,25 @@ const HomeReservation = ({ project }) => {
                   </a>
                 </div>
               </div>
-                {/* <p>
-                  <i className="ti-check"></i>
-                  <small>Call us, it's toll-free.</small>
-                </p> */}
             </div>
 
-            {/* Booking Form */}
             <div className="col-md-5 offset-md-2">
               <div className="booking-box">
                 <div className="head-box">
-                  <h6>Booking Form </h6>
+                  <h6>Booking Form</h6>
                   <h4>Drop in a line with your details.</h4>
                 </div>
                 <div className="booking-inner clearfix">
                   <form onSubmit={handleSubmit} className="form1 clearfix">
+                    {submitted && (
+                      <div
+                        className="alert alert-success contact__msg"
+                        role="alert"
+                      >
+                        Your message was sent successfully.
+                      </div>
+                    )}
+
                     <div className="row">
                       <div className="col-md-12">
                         <div className="input1_wrapper">
@@ -75,84 +153,64 @@ const HomeReservation = ({ project }) => {
                               type="text"
                               className="form-control"
                               placeholder="Name"
-                              // value={}
                               name="name"
                               id="name"
-                              // onChange={(e) => setCheckIn(e.target.value)}
+                              value={formData.name}
+                              onChange={handleChange}
+                              onBlur={handleBlur}
                             />
+                            {errors.name && (
+                              <small className="text-danger">
+                                {errors.name}
+                              </small>
+                            )}
                           </div>
-
-                          {/* <div className="input1_inner">
-                            <input 
-                              type="text" 
-                              className="form-control input datepicker" 
-                              placeholder="Check in" 
-                              value={checkIn}
-                              onChange={(e) => setCheckIn(e.target.value)}
-                            />
-                          </div> */}
                         </div>
                       </div>
+
                       <div className="col-md-12">
                         <div className="input1_wrapper">
                           <label>Phone Number</label>
                           <div className="input1_inner">
                             <input
                               type="text"
-                              className="form-control input"
+                              className="form-control"
                               placeholder="Phone Number"
-                              id="phoneNumber"
-                              name="phoneNumber"                             
+                              name="mobile"
+                              id="mobile"
+                              value={formData.mobile}
+                              onChange={handleChange}
+                              onBlur={handleBlur}
                             />
+                            {errors.mobile && (
+                              <small className="text-danger">
+                                {errors.mobile}
+                              </small>
+                            )}
                           </div>
                         </div>
                       </div>
-                      {/* <div className="col-md-12">
-                        <div className="input1_wrapper">
-                          <label>Email</label>
-                          <div className="input1_inner">
-                            <input
-                              type="text"
-                              className="form-control input"
-                              placeholder="Email"
-                              id="email"
-                              name="email"                              
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-12">
-                        <div className="input1_wrapper">
-                          <label>Address</label>
-                          <div className="input1_inner">
-                            <input
-                              type="text"
-                              className="form-control input"
-                              placeholder="Address"
-                              id="address"                              
-                              name="address"                             
-                            />
-                          </div>
-                        </div>
-                      </div> */}
+
                       <div className="col-md-12">
                         <div className="select1_wrapper">
                           <label>Project</label>
                           <div className="select1_inner">
                             <select
                               className="select2 select"
-                              style={{ width: "100%" }}
-                              value={adults}
-                              onChange={(e) => setAdults(e.target.value)}
+                              name="plot"
+                              id="plot"
+                              value={formData.plot}
+                              onChange={handleChange}
+                              required
                             >
+                              <option value="">Select a Project</option>
                               {project?.name ? (
                                 <option value={project.name}>
                                   {project.name}
                                 </option>
                               ) : (
                                 <>
-                                  <optgroup>
-                                    <option disabled><b>Apartments</b></option>
+                                  <optgroup label="Apartments">
                                     <option value="GP Blazing Star">
                                       GP Blazing Star
                                     </option>
@@ -169,9 +227,7 @@ const HomeReservation = ({ project }) => {
                                       GP Valencia Ruby
                                     </option>
                                   </optgroup>
-
-                                  <optgroup>
-                                    <option disabled><b>Plots</b></option>
+                                  <optgroup label="Plots">
                                     <option value="GP Midway Avenue">
                                       GP Midway Avenue
                                     </option>
@@ -194,18 +250,22 @@ const HomeReservation = ({ project }) => {
                           </div>
                         </div>
                       </div>
+
                       <div className="col-md-12">
                         <div className="select1_wrapper">
                           <label>Variations</label>
                           <div className="select1_inner">
                             <select
                               className="select2 select"
-                              style={{ width: "100%" }}
-                              value={children}
-                              onChange={(e) => setChildren(e.target.value)}
+                              name="bhk"
+                              id="bhk"
+                              value={formData.bhk}
+                              onChange={handleChange}
+                              required
                             >
+                              <option value="">Select a BHK</option>
                               {project?.location ? (
-                                <option value={project.location}>
+                                <option value={project.location.split(" ")[0]}>
                                   {project.location.split(" ")[0]}
                                 </option>
                               ) : (
@@ -218,6 +278,7 @@ const HomeReservation = ({ project }) => {
                           </div>
                         </div>
                       </div>
+
                       <div className="col-md-12">
                         <button
                           type="submit"
