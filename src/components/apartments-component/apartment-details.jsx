@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import room1 from "../../assets/img/rooms/blazingstar.jpg";
@@ -26,7 +26,7 @@ import sqft from "../../assets/img/icons/Sq.Fi.png";
 import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
 import roadIcon from "../../assets/img/icons/Road.png";
 import cctvIcon from "../../assets/img/icons/CCTV.png";
-import ebIcon from "../../assets/img/icons/EB-Connection.png"
+import ebIcon from "../../assets/img/icons/EB-Connection.png";
 import wallIcon from "../../assets/img/icons/compund-wall.png";
 import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
 import security from "../../assets/img/icons/24-7-securiry.png";
@@ -35,6 +35,7 @@ import roadICon from "../../assets/img/icons/Road.png";
 import compoundWall from "../../assets/img/icons/compund-wall.png";
 import solarLight from "../../assets/img/icons/Solar-lights.png";
 import archIcon from "../../assets/img/icons/Arch.png";
+import { ServiceWrapper } from "../../service/ApiService";
 
 const featureIcons = {
   Units: aptIcon,
@@ -52,7 +53,7 @@ const featureIcons = {
   Well: roadICon,
   Fully: compoundWall,
   Solar: solarLight,
-  Grand: archIcon
+  Grand: archIcon,
 };
 
 const getFeatureWithIcons = (feature) => {
@@ -66,9 +67,7 @@ const getFeatureWithIcons = (feature) => {
 
       return {
         text: trimmedItem,
-        iconClass: matchedKey
-          ? featureIcons[matchedKey]
-          : "bi bi-check-circle",
+        iconClass: matchedKey ? featureIcons[matchedKey] : "bi bi-check-circle",
       };
     });
 };
@@ -227,6 +226,7 @@ const ApartmentDetails = () => {
   const [visibleRooms, setVisibleRooms] = useState(
     roomsData.filter((room) => room.category === "Apartments-Ongoing")
   );
+  const [dataDetails, setDataDetails] = useState([]);
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
@@ -238,6 +238,18 @@ const ApartmentDetails = () => {
     setVisibleRooms(filteredRooms.slice(0, 12)); // Limit to 9 items
   };
 
+  const service = new ServiceWrapper();
+  useEffect(() => {
+    service
+      .callGet("list-of-apartments")
+      .then((response) => {
+        setDataDetails(response.data.Results);
+      })
+      .catch((error) => {
+        console.error("Banner fetch error", error);
+      });
+  }, []);
+  // console.log(dataDetails, "dataDetails-------------------");
   return (
     <section
       className="rooms1 section-padding bg-cream apartments-page"
@@ -253,7 +265,10 @@ const ApartmentDetails = () => {
             </h1>
             <h2 className="mb-3">Flat For Sale in Chennai</h2>
             {/* <p>GP Homes, 1BHK, 2BHK, 3BHK, Apartment for Sale, Best Builders in Chennai</p> */}
-            <p>GP Homes, 1BHK, 2BHK, 3BHK, Apartment for Sale, Best Builders in Chennai</p>
+            <p>
+              GP Homes, 1BHK, 2BHK, 3BHK, Apartment for Sale, Best Builders in
+              Chennai
+            </p>
           </div>
         </div>
       </div>
@@ -316,21 +331,26 @@ const ApartmentDetails = () => {
       <div className="rooms3">
         <div className="container">
           <div className="row">
-            {visibleRooms.map((room) => (
+            {dataDetails.map((room) => (
               <div className="col-md-4" key={room.id}>
                 <div className="square-flip">
                   <div
                     className="square bg-img"
-                    style={{ backgroundImage: `url(${room.image})` }}
+                    style={{
+                      backgroundImage: `url(https://cms.gphomes.in//storage/${room.banner_image})`,
+                    }}
                   >
                     {/* <span className="category">
                       <Link to="/">Book</Link>
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#f26522"}}>
+                      <div
+                        className="box-title w-100 p-2"
+                        style={{ backgroundColor: "#f26522" }}
+                      >
                         <h6>{room.location}</h6>
-                        <h4>{room.title}</h4>
+                        <h4>{room.name}</h4>
                       </div>
                     </div>
                     <div className="flip-overlay"></div>
@@ -338,10 +358,57 @@ const ApartmentDetails = () => {
                   <div className="square2">
                     <div className="square-container2">
                       <h6>{room.location}</h6>
-                      <h4>{room.title}</h4>
+                      <h4>{room.name}</h4>
                       <p>{room.description}</p>
-
-                      {room.features && room.features.length > 0 && (
+                      <div className="row room-facilities">
+                          <ul className="row">
+                            <li className="fs-6 col-6">
+                              <img
+                                src={aptIcon}
+                                alt="icons"
+                                style={{
+                                  width: "25px",
+                                  marginRight: "8px",
+                                }}
+                              ></img>
+                              Units {room.total_units}
+                            </li>
+                            <li className="fs-6 col-6">
+                              <img
+                                src={bhkIcon}
+                                alt="icons"
+                                style={{
+                                  width: "25px",
+                                  marginRight: "8px",
+                                }}
+                              ></img>
+                              BHK {room.bhk}
+                            </li>
+                            <li className="fs-6 col-6">
+                              <img
+                                src={sqft}
+                                alt="icons"
+                                style={{
+                                  width: "25px",
+                                  marginRight: "8px",
+                                }}
+                              ></img>
+                              Sq. ft.{room.sq_ft}
+                            </li>
+                            <li className="fs-6 col-6">
+                              <img
+                                src={stiltFloor}
+                                alt="icons"
+                                style={{
+                                  width: "25px",
+                                  marginRight: "8px",
+                                }}
+                              ></img>
+                              Floors Stilt +{room.no_of_blocks_or_floors}
+                            </li>
+                          </ul>
+                      </div>
+                      {/* {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
                           {room.features.map((feature, index) => {
                             const featureItems = getFeatureWithIcons(feature);
@@ -353,7 +420,7 @@ const ApartmentDetails = () => {
                               >
                                 <ul>
                                   <li className="fs-6">
-                                  <img
+                                    <img
                                       src={item.iconClass}
                                       alt="icons"
                                       style={{
@@ -368,8 +435,14 @@ const ApartmentDetails = () => {
                             ));
                           })}
                         </div>
-                      )}
-                      {room.id != "6" ? (
+                      )} */}
+                      <Link
+                        className="btn-form1-submit text-center"
+                        to={`/apartments-chennai/${room.slug}`}
+                      >
+                        Details
+                      </Link>
+                      {/* {room.id != "6" ? (
                         <Link
                           className="btn-form1-submit text-center"
                           to={
@@ -384,7 +457,7 @@ const ApartmentDetails = () => {
                         <div className="btn-form1-submit text-center">
                           Details
                         </div>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>
