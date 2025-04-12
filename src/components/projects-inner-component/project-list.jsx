@@ -24,7 +24,7 @@ const ProjectsList = ({ project }) => {
                 } animate-box`}
                 data-animate-effect="fadeInUp"
               >
-                <figure>
+                <figure className="col-md-6">
                   <img src={project.image} alt="" className="img-fluid" />{" "}
                 </figure>
 
@@ -42,7 +42,7 @@ const ProjectsList = ({ project }) => {
                       <div className="col-md-4" key={facilityIndex}>
                         <ul>
                           <li>
-                            <i className={facility[1]}></i> {facility[0]}
+                          <img src={facility[1]} alt={facility[0]} style={{width:"35px", marginRight:"5px"}} /> {facility[0]}
                           </li>
                         </ul>
                       </div>

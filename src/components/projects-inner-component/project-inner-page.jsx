@@ -67,15 +67,15 @@ function ProjectInnerPage() {
                 <NavDropdown.Item as={Link} to="/blogs">
                   Blogs
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/tools">
+                {/* <NavDropdown.Item as={Link} to="/tools">
                   Tools
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item as={Link} to="/testimonials">
                   Testimonials
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/careers">
+                {/* <NavDropdown.Item as={Link} to="/careers">
                   Careers
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item as={Link} to="/faq">
                   F.A.Qs
                 </NavDropdown.Item>

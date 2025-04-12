@@ -78,9 +78,9 @@ function App() {
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/careers" element={<CareersPage />} />
+            {/* <Route path="/careers" element={<CareersPage />} /> */}
             <Route path="/privacy-policy" element={<PrivacyPage />} />
-            <Route path="/tools" element={<ToolsPage />} />
+            {/* <Route path="/tools" element={<ToolsPage />} /> */}
             <Route path="/joint-ventures" element={<JointVentures />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/blogs" element={<BlogsPage />} />
@@ -144,6 +144,12 @@ const SEOHandler = () => {
       title: "Buy Residential Plots, CMDA Approved Land for Sale in Chennai",
       description:
         "GP Homes offers CMDA-approved residential plots and land for sale in Chennai. Invest in prime locations with top amenities. Secure your dream property today!",
+    },
+    "/plots-chennai/gp-ponBhoomi": {
+      title:
+        " PonBhoomi- Buy Residential Plots, Land for Sale in Thiruvallur",
+      description:
+        "GP Homes PonBhoomi offers premium residential plots and CMDA-approved land for sale in Thiruvallur. Invest in your dream property with GP Homes today!",
     },
     "/plots-chennai/gp-midway-avenue": {
       title:
@@ -224,15 +230,13 @@ const SEOHandler = () => {
     },
   };
 
-  const { title, description } = seoData[location.pathname] || {
-    title: "GP Homes: Top Real Estate Developers, Builders in Chennai",
-    description: "GP Homes – Leading real estate developers & builders in Chennai, delivering premium homes with quality, innovation & trust. Find your dream home today!",
-  };
+  const { title, description } = seoData[location.pathname] || seoData["/"];
   // console.log(seoData["/about-us"],"about data")
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={`https://www.gphomes.in/${location.pathname}`} />
     </Helmet>
   );
 };

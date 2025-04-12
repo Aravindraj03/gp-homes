@@ -12,7 +12,7 @@ function GalleryPage() {
       <Header />
       <GalleryBanner />
       <ImageGallery />
-      <VideoGallery />
+      {/* <VideoGallery /> */}
       <HomeReservation />
       <Footer />
     </Fragment>

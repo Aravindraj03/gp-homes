@@ -1,14 +1,16 @@
 import React from "react";
-import roomImage1 from "../../assets/img/rooms/8.jpg";
-import roomImage2 from "../../assets/img/rooms/2.jpg";
+import roomImage1 from "../../assets/img/rooms/aboutus-gplogo.jpeg";
+import roomImage2 from "../../assets/img/rooms/aboutus-gpexcel.jpeg";
+import roomImage3 from "../../assets/img/rooms/aboutus-gpproject.jpeg";
+import roomImage4 from "../../assets/img/rooms/aboutus-gpcustomer.jpeg";
 
 const AboutSection = () => {
   return (
-    <section className="about section-padding">
+    <section className="about section-padding ">
       <div className="container">
         <div className="row">
           <div
-            className="col-md-6 mb-30 animate-box"
+            className="col-md-12 mb-30 animate-box"
             data-animate-effect="fadeInUp"
           >
             {/* <span>
@@ -18,14 +20,18 @@ const AboutSection = () => {
               <i className="star-rating"></i>
               <i className="star-rating"></i>
             </span> */}
-            <div className="section-subtitle">GP Homes</div>
-            <div className="section-title">Enjoy a Luxury Experience</div>
+            {/* <div className="section-subtitle">GP Homes</div> */}
+            {/* <div className="section-title">Enjoy a Luxury Experience</div> */}
+            <h1 className="section-title">Real Estate Developers in Chennai</h1>
+            <h2>Top Builders in Chennai </h2>
+
             <p>
-              At GP Homes, our legacy is built on trust, quality, and timely
-              delivery. With over 2000 happy families residing in 200+
-              thoughtfully crafted homes, we have consistently upheld our
-              promise of on-time handovers, solidifying our reputation as one of
-              Chennai’s leading real estate developers.
+              GP Homes, Land For Sale in Chennai, Flat For Sale in Chennai At GP
+              Homes, our legacy is built on trust, quality, and timely delivery.
+              With over 2000 happy families residing in 200+ thoughtfully
+              crafted homes, we have consistently upheld our promise of on-time
+              handovers, solidifying our reputation as one of Chennai’s leading
+              real estate developers.
             </p>
             <p>
               In an industry where delays have become common, GP Homes has
@@ -54,26 +60,78 @@ const AboutSection = () => {
             </p>
             {/* Call Reservation */}
             <div className="reservations">
-              <div className="icon">
+              <div className="icon px-4">
                 <span className="flaticon-call"></span>
               </div>
               <div className="text">
-                <p>Contact Us</p>
-                <a href="tel:855-100-4444">934 448 1444</a>
+                <p>Contact For Apartments Details</p>
+                <a href="tel:934 448 1444">934 448 1444</a>
+              </div>
+              <div className="icon px-4">
+                <span className="flaticon-call"></span>
+              </div>
+              <div className="text">
+                <p>Contact For Plots Details</p>
+                <a href="tel:638 400 3003">638 400 3003</a>
               </div>
             </div>
           </div>
           <div
-            className="col col-md-3 animate-box"
+            className="col col-md-3 animate-box d-md-none"
             data-animate-effect="fadeInUp"
           >
-            <img src={roomImage1} alt="Room 1" className="mt-90 mb-30 img-fluid" />
+            <img
+              src={roomImage3}
+              alt="Room 1"
+              className="mt-90 mb-30 img-fluid"
+            />
           </div>
           <div
-            className="col col-md-3 animate-box"
+            className="col col-md-3 animate-box d-md-none"
             data-animate-effect="fadeInUp"
           >
-            <img src={roomImage2} alt="Room 2" className="img-fluid"/>
+            <img src={roomImage1} alt="Room 2" className="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div
+        className=" animate-box pt-4 px-4 d-none d-md-block"
+        style={{ backgroundColor: "rgb(177 169 169 / 12%)" }}
+      >
+        <div className="container">
+          <div className="row">
+            <div
+              className="col col-md-3 animate-box"
+              data-animate-effect="fadeInUp"
+            >
+              <img
+                src={roomImage1}
+                alt="Room 1"
+                className="mt-90 mb-30 img-fluid"
+              />
+            </div>
+            <div
+              className="col col-md-3 animate-box"
+              data-animate-effect="fadeInUp"
+            >
+              <img src={roomImage2} alt="Room 2" className="img-fluid" />
+            </div>
+            <div
+              className="col col-md-3 animate-box"
+              data-animate-effect="fadeInUp"
+            >
+              <img
+                src={roomImage3}
+                alt="Room 1"
+                className="mt-90 mb-30 img-fluid"
+              />
+            </div>
+            <div
+              className="col col-md-3 animate-box"
+              data-animate-effect="fadeInUp"
+            >
+              <img src={roomImage4} alt="Room 2" className="img-fluid" />
+            </div>
           </div>
         </div>
       </div>

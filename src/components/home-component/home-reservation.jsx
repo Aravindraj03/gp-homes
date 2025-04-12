@@ -263,7 +263,7 @@ const HomeReservation = ({ project }) => {
                               onChange={handleChange}
                               required
                             >
-                              <option value="">Select a BHK</option>
+                              <option value="">Select a BHK </option>
                               {project?.location ? (
                                 <option value={project.location.split(" ")[0]}>
                                   {project.location.split(" ")[0]}

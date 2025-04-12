@@ -1,7 +1,8 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../common/header";
 import Footer from "../common/footer";
+import PlotsVideo from "./plots-video";
 import ProjectDetailBanner from "./project-detail-banner";
 import ProjectDetailSection from "./project-details-section";
 
@@ -12,10 +13,19 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
 import PlotTable from "./plots-data";
+
 function ProjectDetailPage() {
   const { slug } = useParams(); // Get slug from URL
   const project = projectsData.find((p) => p.slug === slug); // Find project by slug
 
+    // ✅ Move hooks outside the conditional check
+    const [selectedPlot, setSelectedPlot] = useState(null);
+    const homeReservationRef = useRef(null);
+  
+    const handleSelectPlot = (plot) => {
+      setSelectedPlot(plot); 
+      homeReservationRef.current?.scrollIntoView({ behavior: "smooth" }); 
+    };
 
   if (!project) {
     return <h2>Project not found</h2>;
@@ -65,15 +75,15 @@ function ProjectDetailPage() {
                 <NavDropdown.Item as={Link} to="/blogs">
                   Blogs
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/tools">
+                {/* <NavDropdown.Item as={Link} to="/tools">
                   Tools
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item as={Link} to="/testimonials">
                   Testimonials
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/careers">
+                {/* <NavDropdown.Item as={Link} to="/careers">
                   Careers
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item as={Link} to="/faq">
                   F.A.Qs
                 </NavDropdown.Item>
@@ -87,9 +97,25 @@ function ProjectDetailPage() {
         </Container>
       </Navbar>
       <ProjectDetailBanner project={project} />
-      {slug === "gp-ponBhoomi" && <PlotTable />}
+
+      {slug === "gp-ponBhoomi" && (
+        <>
+          
+          <PlotTable onSelectPlot={handleSelectPlot} />
+        </>
+      )}
+
       <ProjectDetailSection project={project} />
-      <HomeReservation project={project} />
+      {/* {slug === "gp-ponBhoomi" && (
+        <>
+          <PlotsVideo />
+        </>
+      )} */}
+      
+      {/* Attach ref to HomeReservation */}
+      <div ref={homeReservationRef}>
+        <HomeReservation project={project} selectedPlotData={selectedPlot} />
+      </div>
       <Footer />
     </Fragment>
   );

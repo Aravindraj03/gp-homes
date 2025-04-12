@@ -5,6 +5,7 @@ import blogimg2 from "../../assets/img/restaurant/Gold.jpg";
 import blogimg3 from "../../assets/img/restaurant/Home Loan.jpg";
 import blogimg4 from "../../assets/img/restaurant/E-Stamping.jpg";
 import blogimg5 from "../../assets/img/restaurant/Transperent Documentaion.jpg"
+import blogimg6 from "../../assets/img/restaurant/entilation & Natural Light.jpg";
 
 import PostImg1 from "../../assets/img/restaurant/Smart Investment.jpg";
 import PostImg2 from "../../assets/img/restaurant/Quality Assurance.jpg";
@@ -22,7 +23,7 @@ import PostImg11 from "../../assets/img/restaurant/Image 9.jpg";
 const postsData = [
   {
     id: 1,
-    date: "30 Dec 2024",
+    // date: "30 Dec 2024",
     name: "Why Invest in a Plot with GP Homes?",
     description: [
       "<p>When it comes to real estate investments, buying a plot is often overlooked in favor of ready-to-move-in homes. However, investing in land offers unique advantages that can benefit both short- and long-term goals. Here’s why you should consider investing in a plot with GP Homes.</p>",
@@ -190,7 +191,7 @@ const postsData = [
   {
     id: 5,
     date: "30 Jan 2025",
-    name: "Stamp Duty & Registration Charges in Chennai: What You Need to Know?",
+    name: "5 Mistakes to Avoid When Buying Property in Chennai",
     description: [
       "<p>Buying property is a significant milestone, whether for personal use or investment. Chennai, a rapidly growing metropolitan city, offers a variety of real estate options—from residential plots to luxury apartments. However, a lack of due diligence can lead to costly mistakes. To ensure a smooth and hassle-free property purchase, avoid these five common mistakes when buying property in Chennai.</p>",
       
@@ -242,7 +243,7 @@ const postsData = [
   {
     id: 6,
     date: "30 Jan 2025",
-    name: "Stamp Duty & Registration Charges in Chennai: What You Need to Know?",
+    name: "Why Vastu Shastra Matters in Real Estate & Home Buying",
     description: [
       "<p>Buying a home is one of the most significant decisions in life. While factors like location, budget, and amenities play a crucial role, many homebuyers in India also consider Vastu Shastra, an ancient architectural science that promotes harmony and well-being. But why does Vastu matter in real estate, and how can it influence your home’s energy, prosperity, and overall happiness? Let’s explore.</p>",
       
@@ -276,7 +277,7 @@ const postsData = [
 
     ],
     banner_image: bgimage,
-    blog_image: blogimg1,
+    blog_image: blogimg6,
     images:[PostImg11, PostImg2],
     conclusion_title:"Why Choose GP Homes for Your Vastu-Compliant Dream Home?",
     conclusion_desc:[

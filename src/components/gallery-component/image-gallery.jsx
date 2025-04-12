@@ -1,13 +1,13 @@
 import React from "react";
 
-import galleryimg1 from "../../assets/img/slider/7.jpg";
-import galleryimg2 from "../../assets/img/slider/5.jpg";
-import galleryimg3 from "../../assets/img/slider/4.jpg";
-import galleryimg4 from "../../assets/img/slider/2.jpg";
-import galleryimg5 from "../../assets/img/slider/1.jpg";
-import galleryimg6 from "../../assets/img/rooms/8.jpg";
-import galleryimg7 from "../../assets/img/rooms/5.jpg";
-import galleryimg8 from "../../assets/img/rooms/10.jpg";
+import galleryimg1 from "../../assets/img/gallery/gallery-Ethulyia.jpg";
+import galleryimg2 from "../../assets/img/gallery/gallery-Nanmani.jpg";
+import galleryimg3 from "../../assets/img/gallery/gallery-Ponbhoomi 1.jpg";
+import galleryimg4 from "../../assets/img/gallery/gallery-Ponbhoomi.jpg";
+import galleryimg5 from "../../assets/img/gallery/gallery-gardenbay.jpg";
+import galleryimg6 from "../../assets/img/gallery/gallery-blazingstar.jpg";
+import galleryimg7 from "../../assets/img/gallery/gallery-Elanza.jpg";
+import galleryimg8 from "../../assets/img/gallery/gallery-Ruby.jpg";
 
 const ImageGallery = () => {
   const images = [

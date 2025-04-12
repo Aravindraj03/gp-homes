@@ -5,12 +5,52 @@ import room1 from "../../assets/img/rooms/blazingstar.jpg";
 import room2 from "../../assets/img/rooms/breezeway.jpg";
 import room3 from "../../assets/img/rooms/elenza.jpg";
 import room4 from "../../assets/img/rooms/valencia-emarald.jpg";
-import room5 from "../../assets/img/rooms/valencia-ruby.jpg";
+import room5 from "../../assets/img/rooms/Mid-way.jpg";
 
 import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
 import room8 from "../../assets/img/rooms/Ethuliya.jpg";
 import room9 from "../../assets/img/rooms/Namanai.jpg";
+import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
+import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg"
+import room13 from "../../assets/img/rooms/valencia-ruby.jpg"
+
+import bhkIcon from "../../assets/img/icons/BHK.png";
+import aptIcon from "../../assets/img/icons/Apartment.png";
+import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
+import plotIcon from "../../assets/img/icons/Plot-White.png";
+import sqft from "../../assets/img/icons/Sq.Fi.png";
+import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
+import roadIcon from "../../assets/img/icons/Road.png";
+import cctvIcon from "../../assets/img/icons/CCTV.png";
+import ebIcon from "../../assets/img/icons/EB-Connection.png"
+import wallIcon from "../../assets/img/icons/compund-wall.png";
+import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
+import security from "../../assets/img/icons/24-7-securiry.png";
+import groundwater from "../../assets/img/icons/Ground-water.png";
+import roadICon from "../../assets/img/icons/Road.png";
+import compoundWall from "../../assets/img/icons/compund-wall.png";
+import solarLight from "../../assets/img/icons/Solar-lights.png";
+import archIcon from "../../assets/img/icons/Arch.png";
+
+const featureIcons = {
+  Units: aptIcon,
+  BHK: bhkIcon,
+  "Sq. ft.": sqft,
+  Floors: stiltFloor,
+  Blocks: stiltFloor,
+  Black: roadIcon,
+  CCTV: cctvIcon,
+  EB: ebIcon,
+  Fenced: wallIcon,
+  Ready: readyToConstruct,
+  "24/7": security,
+  Potable: groundwater,
+  Well: roadICon,
+  Fully: compoundWall,
+  Solar: solarLight,
+  Grand: archIcon
+};
 
 const roomsData = [
   {
@@ -20,7 +60,7 @@ const roomsData = [
     title: "GP Blazing Star",
     image: room1,
     description:
-      "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai. The project offers 2 & 3 BHK flats for sale with a stilt + 5 floors structure, providing a perfect blend of contemporary design and functionality.",
+      "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai.",
     project_status: "Ongoing Project",
     features: ["Units 25, BHK 2 & 3, Sq. ft. 845 – 1405, Floors Stilt + 5"],
     slug: "gp-blazing-star",
@@ -32,7 +72,7 @@ const roomsData = [
     title: "GP Breeze Way",
     image: room2,
     description:
-      "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai. The project offers 2 & 3 BHK flats for sale with a stilt + 5 floors structure, providing a perfect blend of modern design and functionality.",
+      "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai.",
     project_status: "Ongoing Project",
     features: ["Units 29, BHK2 & 3, Sq. ft.817 – 1240, Floors Stilt + 5"],
     slug: "gp-breeze-way",
@@ -53,7 +93,7 @@ const roomsData = [
     id: 4,
     category: "Apartments",
     location: "Ayanambakkam",
-    title: "GP Valencia Emarald",
+    title: "GP Valencia Emerald",
     image: room4,
     description:
       "Welcome to GP Valencia Emerald, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes",
@@ -66,7 +106,7 @@ const roomsData = [
     category: "Apartments",
     location: "Ayanambakkam",
     title: "GP Valencia Ruby",
-    image: room5,
+    image: room13,
     description:
       "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
     project_status: "Ongoing Project",
@@ -79,13 +119,11 @@ const roomsData = [
     category: "Plots",
     location: "Thiruvallur",
     title: "GP Pon Bhoomi",
-    image: room9,
+    image: room10,
     description:
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+      "PonBhoomi promises growth and prosperity, making land a better investment than gold due to its appreciating value. Now is the ideal time to build your dream home in this serene paradise.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
-    ],
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-ponBhoomi",
   },
 
@@ -96,7 +134,7 @@ const roomsData = [
     title: "GP Midway Avenue",
     image: room5,
     description:
-      "Midway Avenue in Athipet 2.0, an oasis where modern living blends seamlessly with the tranquility of nature. Imagine beginning each day with the soothing sight of lush, green landscapes right outside your doorstep.",
+      "Midway Avenue in Athipet 2.0 offers a perfect blend of modern living and natural tranquility, with lush green landscapes enhancing everyday life.",
     project_status: "Ongoing Project",
     features: [
       "Black-Top Roads, 24/7 Security, Ready To Construct, EB Provided",
@@ -110,7 +148,7 @@ const roomsData = [
     title: "GP Garden Bay",
     image: room7,
     description:
-      "Garden Bay is the epitome of serene living in the heart of Chennai. Located in the thriving area of near Anna Nagar, these residential plots provide the perfect foundation for your dream home.",
+      "Garden Bay offers serene living in Chennai near Anna Nagar, providing ideal residential plots for your dream home.",
     project_status: "Ongoing Project",
     features: [
       "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
@@ -125,7 +163,7 @@ const roomsData = [
     title: "GP Ethulia",
     image: room8,
     description:
-      "Ethulia stands as an exemplary plot-based project by GP Homes in the highly sought-after Mogappair area, it presents 55 ready-to-build villa plots spanning 2.46 acres. This premier plotted development promises a prime location for value appreciation.",
+      "Ethulia by GP Homes in Mogappair offers 55 ready-to-build villa plots across 2.46 acres, ensuring a prime location with great value appreciation.",
     project_status: "Ongoing Project",
     features: [
       "Solar Lights, Black-top Roads, Grand Entrance Arch, EB Provided",
@@ -139,11 +177,9 @@ const roomsData = [
     title: "GP Nanmanai",
     image: room9,
     description:
-      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
+      "Nanmanai by GP Homes offers a 1.5-acre sanctuary in Redhills with premium villa plots (535 to 3130 sq. ft.), providing a peaceful retreat for happy and healthy family living.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, 24/7 Security, Fully Fenced, EB Provided",
-    ],
+    features: ["Black-Top Roads, 24/7 Security, Fully Fenced, EB Provided"],
     slug: "gp-nanmanai",
   },
   {
@@ -151,20 +187,18 @@ const roomsData = [
     category: "Plots",
     location: "Thiruvallur",
     title: "GP Vijayalakshmi",
-    image: room9,
+    image: room12,
     description:
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
-    ],
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-vijayalakshmi",
   },
   {
     id: 11,
     category: "Apartments",
-    location: "Ayanambakkam",
-    title: "Lake Breeze",
+    location: "Korattur",
+    title: "GP Lake Breeze",
     image: room11,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
@@ -172,7 +206,6 @@ const roomsData = [
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
-  
 ];
 
 const HomeProjects = () => {
@@ -191,6 +224,24 @@ const HomeProjects = () => {
         ? roomsData
         : roomsData.filter((room) => room.category === category);
     setVisibleRooms(filteredRooms.slice(0, 12)); // Limit to 9 items
+  };
+
+  const getFeatureWithIcons = (feature) => {
+    return feature
+      .split(",") // Split features into an array
+      .map((item) => {
+        const trimmedItem = item.trim();
+        const matchedKey = Object.keys(featureIcons).find((key) =>
+          trimmedItem.includes(key)
+        );
+
+        return {
+          text: trimmedItem,
+          iconClass: matchedKey
+            ? featureIcons[matchedKey]
+            : "bi bi-check-circle",
+        };
+      });
   };
 
   return (
@@ -214,10 +265,15 @@ const HomeProjects = () => {
             <button
               onClick={() => handleFilter("Apartments")}
               // className="btn-form1-submit mb-30"
-              className={`btn-form1-submit mb-30 fs-5  ${
+              className={`btn-form1-submit mb-30  ${
                 selectedFilter === "Apartments" ? "btn-form1-submit-active" : ""
               }`}
             >
+              <img
+                src={aptIconWhite}
+                alt="Apartment"
+                style={{ width: "40px", marginRight: "1rem" }}
+              />
               Apartments
             </button>
           </div>
@@ -225,10 +281,15 @@ const HomeProjects = () => {
             <button
               onClick={() => handleFilter("Plots")}
               // className="btn-form1-submit mb-30"
-              className={`btn-form1-submit mb-30 fs-5 ${
+              className={`btn-form1-submit mb-30 ${
                 selectedFilter === "Plots" ? "btn-form1-submit-active" : ""
               }`}
             >
+              <img
+                src={plotIcon}
+                alt="Apartment"
+                style={{ width: "40px", marginRight: "1rem" }}
+              />
               Plots
             </button>
           </div>
@@ -239,7 +300,7 @@ const HomeProjects = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="section-subtitle">GP Homes</div>
-            <div className="section-title">Our Projects</div>
+            <div className="section-title">Real Estate Developers in Chennai</div>
           </div>
         </div>
       </div>
@@ -259,7 +320,10 @@ const HomeProjects = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#393434af"}}>
+                      <div
+                        className="box-title w-100 p-2"
+                        style={{ backgroundColor: "#f26522" }}
+                      >
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>
@@ -295,15 +359,41 @@ const HomeProjects = () => {
                         </div>
                       </div> */}
 
-                      {room.features[0] && room.features[0].trim() !== "" && (
+                      {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
-                          {room.features[0].split(",").map((feature, index) => (
-                            <div className="col-6" key={index}>
-                              <ul>
-                                <li className="fs-6">{feature.trim()}</li>
-                              </ul>
-                            </div>
-                          ))}
+                          {room.features.map((feature, index) => {
+                            const featureItems = getFeatureWithIcons(feature);
+
+                            return featureItems.map((item, subIndex) => (
+                              <div
+                                className="col-6"
+                                key={`${index}-${subIndex}`}
+                              >
+                                <ul>
+                                  <li
+                                    style={{
+                                      fontSize: "14px",
+                                      display: "flex",
+                                      alignItems: "center",
+                                      gap: "10px",
+                                    }}
+                                  >
+                                    {/* <i className={`${item.iconClass} me-2`}></i>{" "} */}
+                                    <img
+                                      src={item.iconClass}
+                                      alt="icons"
+                                      style={{
+                                        width: "25px",
+                                        marginRight: "8px",
+                                      }}
+                                    ></img>
+
+                                    {item.text}
+                                  </li>
+                                </ul>
+                              </div>
+                            ));
+                          })}
                         </div>
                       )}
 
@@ -312,6 +402,7 @@ const HomeProjects = () => {
                           to={
                             room.category === "Plots"
                               ? `/project-details/${room.slug}`
+
                               : `/project/${room.slug}`
                           }
                         >

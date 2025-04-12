@@ -2,9 +2,12 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
+import logo2 from "../../assets/img/gp-logo-2.png";
 function Header() {
 
   const location = useLocation();
+
+  console.log(location.pathname,"locationPathname")
   const [navScroll, setNavScroll] = useState(false);
   // const [logoSrc, setLogoSrc] = useState(logoLight);
 
@@ -67,7 +70,7 @@ function Header() {
         <Container>
           {/* Logo */}
           <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="Logo" className="logo-img" />
+            <img src={logo2} alt="Logo" className="logo-img" />
           </Navbar.Brand>
 
           {/* Toggler */}
@@ -107,15 +110,15 @@ function Header() {
                 <NavDropdown.Item as={Link} to="/blogs">
                   Blogs
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/tools">
+                {/* <NavDropdown.Item as={Link} to="/tools">
                   Tools
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item as={Link} to="/testimonials">
                   Testimonials
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/careers">
+                {/* <NavDropdown.Item as={Link} to="/careers">
                   Careers
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
                 <NavDropdown.Item as={Link} to="/faq">
                   F.A.Qs
                 </NavDropdown.Item>

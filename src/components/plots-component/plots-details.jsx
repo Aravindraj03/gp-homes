@@ -7,9 +7,65 @@ import room3 from "../../assets/img/rooms/elenza.jpg";
 import room4 from "../../assets/img/rooms/valencia-emarald.jpg";
 import room5 from "../../assets/img/rooms/valencia-ruby.jpg";
 
-import room7 from "../../assets/img/rooms/gp-garden-bay2.jpg";
+import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
 import room8 from "../../assets/img/rooms/Ethuliya.jpg";
 import room9 from "../../assets/img/rooms/Namanai.jpg";
+import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
+import room11 from "../../assets/img/rooms/Mid-way.jpg";
+import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg";
+
+import bhkIcon from "../../assets/img/icons/BHK.png";
+import aptIcon from "../../assets/img/icons/Apartment.png";
+import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
+import plotIcon from "../../assets/img/icons/Plot-White.png";
+import sqft from "../../assets/img/icons/Sq.Fi.png";
+import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
+import roadIcon from "../../assets/img/icons/Road.png";
+import cctvIcon from "../../assets/img/icons/CCTV.png";
+import ebIcon from "../../assets/img/icons/EB-Connection.png"
+import wallIcon from "../../assets/img/icons/compund-wall.png";
+import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
+import security from "../../assets/img/icons/24-7-securiry.png";
+import groundwater from "../../assets/img/icons/Ground-water.png";
+import roadICon from "../../assets/img/icons/Road.png";
+import compoundWall from "../../assets/img/icons/compund-wall.png";
+import solarLight from "../../assets/img/icons/Solar-lights.png";
+import archIcon from "../../assets/img/icons/Arch.png";
+
+const featureIcons = {
+  Units: aptIcon,
+  BHK: bhkIcon,
+  "Sq. ft.": sqft,
+  Floors: stiltFloor,
+  Blocks: stiltFloor,
+  Black: roadIcon,
+  CCTV: cctvIcon,
+  EB: ebIcon,
+  Fenced: wallIcon,
+  Ready: readyToConstruct,
+  "24/7": security,
+  Potable: groundwater,
+  Well: roadICon,
+  Fully: compoundWall,
+  Solar: solarLight,
+  Grand: archIcon
+};
+
+const getFeatureWithIcons = (feature) => {
+  return feature
+    .split(",") // Split features into an array
+    .map((item) => {
+      const trimmedItem = item.trim();
+      const matchedKey = Object.keys(featureIcons).find((key) =>
+        trimmedItem.includes(key)
+      );
+
+      return {
+        text: trimmedItem,
+        iconClass: matchedKey ? featureIcons[matchedKey] : "bi bi-check-circle",
+      };
+    });
+};
 
 const roomsData = [
   {
@@ -78,13 +134,11 @@ const roomsData = [
     category: "Plots-Ongoing",
     location: "Thiruvallur",
     title: "GP Pon Bhoomi",
-    image: room9,
+    image: room10,
     description:
-      "PonBhoomi isn’t just a name—it’s a promise of growth and prosperity. Investing in land is a better option than gold, as property values continue to appreciate over time. Now is the perfect time to build your dream home and settle in this serene paradise.",
+      "PonBhoomi symbolizes growth and prosperity. Investing in land is wiser than gold, as property values appreciate over time. Now is the ideal time to build your dream home in this serene paradise.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
-    ],
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-ponBhoomi",
   },
 
@@ -93,9 +147,9 @@ const roomsData = [
     category: "Plots-Ongoing",
     location: "Athipet",
     title: "GP Midway Avenue",
-    image: room5,
+    image: room11,
     description:
-      "Midway Avenue in Athipet 2.0, an oasis where modern living blends seamlessly with the tranquility of nature. Imagine beginning each day with the soothing sight of lush, green landscapes right outside your doorstep.",
+      "Midway Avenue in Athipet 2.0 offers modern living amidst nature's tranquility, with lush green landscapes at your doorstep.",
     project_status: "Ongoing Project",
     features: [
       "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
@@ -109,7 +163,7 @@ const roomsData = [
     title: "GP Garden Bay",
     image: room7,
     description:
-      "Garden Bay is the epitome of serene living in the heart of Chennai. Located in the thriving area of near Anna Nagar, these residential plots provide the perfect foundation for your dream home.",
+      "Garden Bay offers serene living near Anna Nagar, Chennai, with residential plots ideal for your dream home.",
     project_status: "Ongoing Project",
     features: [
       "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
@@ -124,7 +178,7 @@ const roomsData = [
     title: "GP Ethulia",
     image: room8,
     description:
-      "Ethulia stands as an exemplary plot-based project by GP Homes in the highly sought-after Mogappair area, it presents 55 ready-to-build villa plots spanning 2.46 acres. This premier plotted development promises a prime location for value appreciation.",
+      "Ethulia by GP Homes in Mogappair offers 55 ready-to-build villa plots across 2.46 acres, ensuring prime location and value appreciation.",
     project_status: "Ongoing Project",
     features: [
       "Branded Solar Street Lights, Well Laid Blacktop Roads, Grand Entrance Arch, EB Provided",
@@ -138,7 +192,7 @@ const roomsData = [
     title: "GP Nanmanai",
     image: room9,
     description:
-      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
+      "Nanmanai by GP Homes offers premium villa plots in a 1.5-acre sanctuary at Redhills, providing a peaceful retreat amidst lush greenery.",
     project_status: "Ongoing Project",
     features: [
       "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
@@ -150,21 +204,18 @@ const roomsData = [
     category: "Plots-Ongoing",
     location: "Thiruvallur",
     title: "GP Vijayalakshmi",
-    image: room9,
+    image: room12,
     description:
-      "GP Homes is proud to introduce VL Nagar (Vijaya Lakshmi Nagar), a prestigious residential project located in Thiruvallur, near Ikkadu. This exceptional development offers a unique opportunity to own a piece of land in a prime location, perfect for building your dream home.",
+      "GP Homes presents VL Nagar in Thiruvallur near Ikkadu, offering prime residential plots ideal for building your dream home.",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, CCTV, EB Provided, Fenced Wall",
-    ],
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-vijayalakshmi",
   },
-
 ];
 
 const ApartmentDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-      const [selectedFilter, setSelectedFilter] = useState("Plots-Ongoing"); // Default focus
+  const [selectedFilter, setSelectedFilter] = useState("Plots-Ongoing"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
   const [visibleRooms, setVisibleRooms] = useState(
     roomsData.filter((room) => room.category === "Plots-Ongoing")
@@ -182,10 +233,25 @@ const ApartmentDetails = () => {
 
   return (
     <section
-      className="rooms1 section-padding bg-cream"
+      className="rooms1 section-padding bg-cream plots-page"
       data-scroll-index="1"
       id="plots"
     >
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            {/* <div className="section-title">Our Projects</div> */}
+            <h1 className="section-title m-0 p-0 mb-2">
+              Plots For Sale in Chennai
+            </h1>
+            <h2 className="mb-3">Residential Land For Sale in Chennai</h2>
+            <p>
+            GP Homes, Residential Plots For Sale, CMDA Approved Plots, Real Estate Developers in Chennai
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="container padding-bottom">
         <div className="row">
           {/* <div className="col-md-4">
@@ -202,19 +268,23 @@ const ApartmentDetails = () => {
               onClick={() => handleFilter("Plots-Ongoing")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Plots-Ongoing" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Ongoing"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               Ongoing
             </button>
           </div>
-          
+
           <div className="col-md-4">
             <button
               onClick={() => handleFilter("Plots-Upcoming")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Plots-Upcoming" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Upcoming"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               UP Coming
@@ -226,7 +296,9 @@ const ApartmentDetails = () => {
               onClick={() => handleFilter("Plots-Completed")}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Plots-Completed" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Completed"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               Completed
@@ -235,14 +307,14 @@ const ApartmentDetails = () => {
         </div>
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           <div className="col-md-12">
             <div className="section-subtitle">GP Homes</div>
             <div className="section-title">Our Projects</div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="rooms3">
         <div className="container">
@@ -259,7 +331,10 @@ const ApartmentDetails = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#393434af"}}>
+                      <div
+                        className="box-title w-100 p-2"
+                        style={{ backgroundColor: "#f26522" }}
+                      >
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>
@@ -295,15 +370,32 @@ const ApartmentDetails = () => {
                         </div>
                       </div> */}
 
-                      {room.features[0] && room.features[0].trim() !== "" && (
+                      {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
-                          {room.features[0].split(",").map((feature, index) => (
-                            <div className="col-6" key={index}>
-                              <ul>
-                                <li>{feature.trim()}</li>
-                              </ul>
-                            </div>
-                          ))}
+                          {room.features.map((feature, index) => {
+                            const featureItems = getFeatureWithIcons(feature);
+
+                            return featureItems.map((item, subIndex) => (
+                              <div
+                                className="col-6"
+                                key={`${index}-${subIndex}`}
+                              >
+                                <ul>
+                                  <li className="fs-6">
+                                  <img
+                                      src={item.iconClass}
+                                      alt="icons"
+                                      style={{
+                                        width: "25px",
+                                        marginRight: "8px",
+                                      }}
+                                    ></img>
+                                    {item.text}
+                                  </li>
+                                </ul>
+                              </div>
+                            ));
+                          })}
                         </div>
                       )}
 

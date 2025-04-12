@@ -4,7 +4,7 @@ import PostImg1 from "../../assets/img/restaurant/1.jpg";
 import PostImg2 from "../../assets/img/restaurant/3.jpg";
 import AuthorIcon from "../../assets/img/team/3.jpg";
 
-import thumb1 from "../../assets/img/restaurant/2.jpg";
+import thumb1 from "../../assets/img/restaurant/Gold.jpg";
 import thumb2 from "../../assets/img/spa/3.jpg";
 import thumb3 from "../../assets/img/slider/7.jpg";
 
@@ -71,14 +71,14 @@ const Post = ({ post }) => {
                         {" "}
                         <img src={thumb1} alt="" className="img-fluid" />{" "}
                       </div>{" "}
-                      <a href="">Historic restaurant renovated</a>
+                      <a href="../post/gold-vs-land-which-is-the-best-long-term-investment">Gold vs Land: Which is the Best Long-Term Investment?</a>
                     </li>
                     <li>
                       <div className="thum">
                         {" "}
                         <img src={thumb2} alt="" className="img-fluid" />{" "}
                       </div>{" "}
-                      <a href="">Benefits of Spa Treatments</a>
+                      <a href="">How to Get a Home Loan with the Best Interest Rates?</a>
                     </li>
                     <li>
                       <div className="thum">
@@ -86,13 +86,13 @@ const Post = ({ post }) => {
                         <img src={thumb3} alt="" className="img-fluid" />{" "}
                       </div>{" "}
                       <a href="">
-                        Retro Lighting Design in The Hotels
+                      Stamp Duty & Registration Charges in Chennai: What You Need to Know?
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-md-12">
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Archives</h6>
@@ -109,8 +109,8 @@ const Post = ({ post }) => {
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div className="col-md-12">
+              </div> */}
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Categories</h6>
@@ -133,8 +133,8 @@ const Post = ({ post }) => {
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div className="col-md-12">
+              </div> */}
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Tags</h6>
@@ -157,7 +157,7 @@ const Post = ({ post }) => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

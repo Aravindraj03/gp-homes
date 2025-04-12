@@ -20,7 +20,6 @@ const BlogSection = () => {
       img: blogimg1,
       date: "02",
       month: "Dec",
-      tag: "Restaurant",
       title: "Why Invest in a Plot with GP Homes?",
       desc: "When it comes to real estate investments, buying a plot is often overlooked in favor of ready-to-move-in homes. However, investing in land offers unique advantages that can benefit both short- and long-term goals. Here’s why you should consider investing in a plot with GP Homes.",
       slug: "why-invest-in-a-plot-with-gp-homes",
@@ -29,7 +28,6 @@ const BlogSection = () => {
       img: blogimg2,
       date: "04",
       month: "Dec",
-      tag: "Spa Center",
       title: "Gold vs. Land: Which is the Best Long-Term Investment?",
       desc: "When it comes to long-term investments, two options often stand out: Gold and land. Both have been considered reliable forms of wealth storage for centuries, but each offers distinct benefits and risks. So, which is the better investment? Let’s explore the advantages of investing in land and why choosing a plot with GP Homes could be your smartest move for the future.",
       slug: "gold-vs-land-which-is-the-best-long-term-investment",
@@ -38,7 +36,6 @@ const BlogSection = () => {
       img: blogimg3,
       date: "06",
       month: "Dec",
-      tag: "Hotel Design",
       title: "How to Get a Home Loan with the Best Interest Rates?",
       desc: "Buying a home is a dream for many, and securing a home loan is often the first step in making that dream a reality. However, getting the best interest rate on your home loan can significantly impact your financial planning. A lower interest rate means lower EMIs (Equated Monthly Instalments) and less burden on your finances in the long run.",
       slug: "how-to-get-a-home-loan-with-the-best-interest-rates",
@@ -47,7 +44,6 @@ const BlogSection = () => {
       img: blogimg4,
       date: "06",
       month: "Dec",
-      tag: "Hotel Design",
       title:
         "Stamp Duty & Registration Charges in Chennai: What You Need to Know?",
       desc: "Buying a home or a plot is a significant milestone, but beyond the property price, there are additional costs you need to consider—Stamp Duty and Registration Charges. These charges are mandatory for legally registering your property under your name and ensuring a hassle-free ownership experience.",
@@ -57,7 +53,6 @@ const BlogSection = () => {
       img: blogimg5,
       date: "06",
       month: "Dec",
-      tag: "Hotel Design",
       title: "5 Mistakes to Avoid When Buying Property in Chennai",
       desc: "Buying property is a significant milestone, whether for personal use or investment. Chennai, a rapidly growing metropolitan city, offers a variety of real estate options—from residential plots to luxury apartments. However, a lack of due diligence can lead to costly mistakes. To ensure a smooth and hassle-free property purchase, avoid these five common mistakes when buying property in Chennai.",
       slug: "5-mistakes-to-avoid-when-buying-property-in-chennai",
@@ -66,7 +61,6 @@ const BlogSection = () => {
       img: blogimg6,
       date: "06",
       month: "Dec",
-      tag: "Hotel Design",
       title: "Why Vastu Shastra Matters in Real Estate & Home Buying",
       desc: "Buying a home is one of the most significant decisions in life. While factors like location, budget, and amenities play a crucial role, many homebuyers in India also consider Vastu Shastra, an ancient architectural science that promotes harmony and well-being. But why does Vastu matter in real estate, and how can it influence your home’s energy, prosperity, and overall happiness? Let’s explore.",
       slug: "why-vastu-shastra-matters-in-real-estate-home-buying",
@@ -161,7 +155,7 @@ const BlogSection = () => {
           </div>
           <div className="col-md-4">
             <div className="news2-sidebar row">
-              <div className="col-md-12">
+              {/* <div className="col-md-12">
                 <div className="widget search">
                   <form>
                     <input
@@ -174,7 +168,7 @@ const BlogSection = () => {
                     </button>
                   </form>
                 </div>
-              </div>
+              </div> */}
               <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
@@ -197,7 +191,7 @@ const BlogSection = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-12">
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Archives</h6>
@@ -212,8 +206,8 @@ const BlogSection = () => {
                     )}
                   </ul>
                 </div>
-              </div>
-              <div className="col-md-12">
+              </div> */}
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Categories</h6>
@@ -231,8 +225,8 @@ const BlogSection = () => {
                     )}
                   </ul>
                 </div>
-              </div>
-              <div className="col-md-12">
+              </div> */}
+              {/* <div className="col-md-12">
                 <div className="widget">
                   <div className="widget-title">
                     <h6>Tags</h6>
@@ -251,7 +245,7 @@ const BlogSection = () => {
                     ))}
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

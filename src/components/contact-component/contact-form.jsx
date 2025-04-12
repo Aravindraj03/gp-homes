@@ -110,11 +110,20 @@ const ContactForm = () => {
                 <span className="flaticon-call"></span>
               </div>
               <div className="text">
-                <p>Reservation</p>
-                <a href="tel:855-100-4444">855 100 4444</a>
+                <p>Contact Us for Apartment Details</p>
+                <a href="tel:934 448 1444">934 448 1444</a>
               </div>
             </div>
             <div className="reservations mb-30">
+              <div className="icon">
+                <span className="flaticon-call"></span>
+              </div>
+              <div className="text">
+                <p>Contact Us for Plot Details</p>
+                <a href="tel:638 400 3003">638 400 3003</a>
+              </div>
+            </div>
+            {/* <div className="reservations mb-30">
               <div className="icon">
                 <span className="flaticon-envelope"></span>
               </div>
@@ -122,7 +131,7 @@ const ContactForm = () => {
                 <p>Email Info</p>
                 <a href="mailto:info@luxuryhotel.com">info@luxuryhotel.com</a>
               </div>
-            </div>
+            </div> */}
             <div className="reservations">
               <div className="icon">
                 <span className="flaticon-location-pin"></span>
