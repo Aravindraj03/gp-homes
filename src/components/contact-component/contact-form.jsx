@@ -1,6 +1,98 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    location: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+
+  const validateField = (name, value) => {
+    let error = "";
+
+    switch (name) {
+      case "name":
+        if (!value.trim()) error = "Please enter your Name";
+        break;
+      case "email":
+        if (!value.trim()) error = "Please enter your Email ID";
+        else if (!/^\S+@\S+\.\S+$/.test(value)) error = "Invalid email.";
+        break;
+      case "mobile":
+        if (!value.trim()) error = "Please enter your Mobile number";
+        else if (!/^\d{10}$/.test(value)) error = "Enter 10-digit number.";
+        break;
+      case "location":
+        if (!value.trim()) error = "Please enter your Location";
+        break;
+      case "message":
+        if (!value.trim()) error = "Please Leave your Message";
+        break;
+      default:
+        break;
+    }
+
+    setErrors((prev) => ({ ...prev, [name]: error }));
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    validateField(name, value);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let formIsValid = true;
+    Object.entries(formData).forEach(([key, value]) => {
+      validateField(key, value);
+      if (!value.trim()) formIsValid = false;
+    });
+
+    if (!formIsValid) return;
+
+    try {
+      const response = await fetch("https://cms.gphomes.in/api/contact-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          mobile: formData.mobile,
+          location: formData.location,
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+      alert("Form submitted Successfully:");
+      setSubmitted(true);
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+        location: "",
+        message: "",
+      });
+      setErrors({});
+    } catch (error) {
+      console.error("Form submission failed:", error);
+    }
+  };
+
   return (
     <section className="contact section-padding">
       <div className="container">
@@ -57,19 +149,14 @@ const ContactForm = () => {
           {/* Contact Form */}
           <div className="col-md-5 mb-30 offset-md-1">
             <h3>Get in touch</h3>
-            <form method="post" className="contact__form" action="">
+            <form onSubmit={handleSubmit} className="contact__form">
               {/* Form Message */}
-              <div className="row">
-                <div className="col-12">
-                  <div
-                    className="alert alert-success contact__msg"
-                    style={{ display: "none" }}
-                    role="alert"
-                  >
-                    Your message was sent successfully.
-                  </div>
+              {submitted && (
+                <div className="alert alert-success contact__msg" role="alert">
+                  Your message was sent successfully.
                 </div>
-              </div>
+              )}
+
               {/* Form Elements */}
               <div className="row">
                 <div className="col-md-6 form-group">
@@ -77,42 +164,68 @@ const ContactForm = () => {
                     name="name"
                     type="text"
                     placeholder="Your Name *"
-                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
                   />
+                  {errors.name && (
+                    <small className="text-danger">{errors.name}</small>
+                  )}
                 </div>
                 <div className="col-md-6 form-group">
                   <input
                     name="email"
                     type="email"
                     placeholder="Your Email *"
-                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
                   />
+                  {errors.email && (
+                    <small className="text-danger">{errors.email}</small>
+                  )}
                 </div>
                 <div className="col-md-6 form-group">
                   <input
-                    name="phone"
+                    name="mobile"
                     type="text"
                     placeholder="Your Number *"
-                    required
+                    value={formData.mobile}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
                   />
+                  {errors.mobile && (
+                    <small className="text-danger">{errors.mobile}</small>
+                  )}
                 </div>
                 <div className="col-md-6 form-group">
                   <input
                     name="location"
                     type="text"
                     placeholder="Location *"
-                    required
+                    value={formData.location}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
                   />
+                  {errors.location && (
+                    <small className="text-danger">{errors.location}</small>
+                  )}
                 </div>
                 <div className="col-md-12 form-group">
-                  <textarea
+                <textarea
                     name="message"
-                    id="message"
-                    cols="30"
                     rows="4"
                     placeholder="Message *"
-                    required
+                    value={formData.message}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
                   ></textarea>
+                  {errors.message && <small className="text-danger">{errors.message}</small>}
                 </div>
                 <div className="col-md-12">
                   <button type="submit" className="butn-dark2">

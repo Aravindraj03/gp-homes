@@ -3,20 +3,103 @@ import React, { useState } from "react";
 const JointVenturesForm = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
 
-  const handleCheckboxChange = (option) => {
-    setSelectedOptions((prev) =>
-      prev.includes(option)
-        ? prev.filter((item) => item !== option)
-        : [...prev, option]
-    );
+  // const handleCheckboxChange = (option) => {
+  //   setSelectedOptions((prev) =>
+  //     prev.includes(option)
+  //       ? prev.filter((item) => item !== option)
+  //       : [...prev, option]
+  //   );
+  // };
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    subject: "",
+    message: "",
+    property_type: "",
+    property_address: "",
+    property_city: "",
+    property_road_width: "",
+    property_area: "",
+    property_road_facing_direction: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
+
+  const handleCheckboxChange = (option) => {
+    setFormData((prev) => ({
+      ...prev,
+      property_type: prev.property_type === option ? "" : option,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      mobile: formData.mobile,
+      subject: formData.subject,
+      message: formData.message,
+      property_type: formData.property_type,
+      property_address: formData.property_address,
+      property_city: formData.property_city,
+      property_road_width: formData.property_road_width,
+      property_area: formData.property_area,
+      property_road_facing_direction: formData.property_road_facing_direction,
+    };
+
+    try {
+      const res = await fetch("https://cms.gphomes.in/api/joint-venture-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await res.json();
+      console.log("Response:", result);
+
+      if (res.ok) {
+        alert("Form submitted successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          mobile: "",
+          subject: "",
+          message: "",
+          property_type: "",
+          property_address: "",
+          property_city: "",
+          property_road_width: "",
+          property_area: "",
+          property_road_facing_direction: "",
+        });
+      } else {
+        alert("Something went wrong. Try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Submission failed.");
+    }
+  };
+
   return (
     <section className="contact section-padding">
       <div className="container">
         <div className="row mb-90">
           {/* Contact Information */}
           <div className="col-md-6 mb-60">
-           
             <h3>Features</h3>
             <p>
               At GP Homes, we envision growing more quickly, driving innovation
@@ -60,17 +143,17 @@ const JointVenturesForm = () => {
               <div className="text">
                 <p>Address</p>
                 W-820, 9th St, Syndicate Colony,
-                    <br />
-                    D-Sector, Anna Nagar West Extension,
-                    <br />
-                    Chennai, Tamil Nadu 600101
+                <br />
+                D-Sector, Anna Nagar West Extension,
+                <br />
+                Chennai, Tamil Nadu 600101
               </div>
             </div>
           </div>
           {/* Contact Form */}
           <div className="col-md-5 mb-30 offset-md-1">
             <h3>Get in touch</h3>
-            <form method="post" className="contact__form" action="">
+            <form className="contact__form" onSubmit={handleSubmit}>
               {/* Form Message */}
               <div className="row">
                 <div className="col-12">
@@ -89,6 +172,8 @@ const JointVenturesForm = () => {
                   <input
                     name="name"
                     type="text"
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder="Your Name *"
                     required
                   />
@@ -96,15 +181,19 @@ const JointVenturesForm = () => {
                 <div className="col-md-6 form-group">
                   <input
                     name="email"
-                    type="email"
+                    type="text"
+                    value={formData.email} 
+                    onChange={handleChange}
                     placeholder="Your Email *"
                     required
                   />
                 </div>
                 <div className="col-md-6 form-group">
                   <input
-                    name="phone"
+                    name="mobile"
                     type="text"
+                    value={formData.mobile} 
+                    onChange={handleChange}
                     placeholder="Your Number *"
                     required
                   />
@@ -113,6 +202,8 @@ const JointVenturesForm = () => {
                   <input
                     name="subject"
                     type="text"
+                    value={formData.subject} 
+                    onChange={handleChange}
                     placeholder="Subject *"
                     required
                   />
@@ -123,6 +214,8 @@ const JointVenturesForm = () => {
                     id="message"
                     cols="30"
                     rows="4"
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder="Message *"
                     required
                   ></textarea>
@@ -144,7 +237,7 @@ const JointVenturesForm = () => {
                     <input
                       type="checkbox"
                       value="Owner"
-                      checked={selectedOptions.includes("Owner")}
+                      checked={formData.property_type === "Owner"}                     
                       onChange={() => handleCheckboxChange("Owner")}
                       className="w-4 h-4 me-1"
                     />
@@ -155,7 +248,7 @@ const JointVenturesForm = () => {
                     <input
                       type="checkbox"
                       value="Agent"
-                      checked={selectedOptions.includes("Agent")}
+                      checked={formData.property_type === "Agent"}
                       onChange={() => handleCheckboxChange("Agent")}
                       className="w-4 h-4 me-1"
                     />
@@ -164,15 +257,19 @@ const JointVenturesForm = () => {
                 </div>
                 <div className="col-md-6 form-group">
                   <input
-                    name="address"
+                    name="property_address"
                     type="text"
+                    value={formData.property_address} 
+                    onChange={handleChange}
                     placeholder="Enter Your Property Address"
                     required
                   />
                 </div>
                 <div className="col-md-6 form-group">
                   <input
-                    name="city"
+                    name="property_city" 
+                    value={formData.property_city}
+                    onChange={handleChange}
                     type="text"
                     placeholder="Enter Your City *"
                     required
@@ -180,7 +277,9 @@ const JointVenturesForm = () => {
                 </div>
                 <div className="col-md-6 form-group">
                   <input
-                    name="roadWidth"
+                    name="property_road_width" 
+                    value={formData.property_road_width} 
+                    onChange={handleChange}
                     type="text"
                     placeholder="Enter Your Road Width *"
                     required
@@ -188,7 +287,9 @@ const JointVenturesForm = () => {
                 </div>
                 <div className="col-md-6 form-group">
                   <input
-                    name="area"
+                    name="property_area"
+                    value={formData.property_area}
+                    onChange={handleChange}
                     type="text"
                     placeholder="Enter Your Area (Extent)*"
                     required
@@ -196,7 +297,9 @@ const JointVenturesForm = () => {
                 </div>
                 <div className="col-md-6 form-group">
                   <input
-                    name="direction"
+                    name="property_road_facing_direction"
+                    value={formData.property_road_facing_direction}
+                    onChange={handleChange}
                     type="text"
                     placeholder="Road Facing Direction*"
                     required

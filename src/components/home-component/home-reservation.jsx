@@ -1,70 +1,100 @@
-import React, { useEffect, useState } from "react";
-import slideImg2 from "../../assets/img/projects/videobg.jpg";
-import projectsData from "../project-details-component/projectsData";
-import { useParams } from "react-router-dom";
+import React, { useState } from "react";
+import slideImg2 from "../../assets/img/projects/BG-1.jpg";
 
-const HomeReservation = ({ project, selectedPlotData }) => {
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
-  const [adults, setAdults] = useState(0);
-  const [children, setChildren] = useState(0);
-
-  const [selectedApartment, setSelectedApartment] = useState("");
-  const [selectedPlot, setSelectedPlot] = useState("");
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log({
-      checkIn,
-      checkOut,
-      adults,
-      children,
-    });
-  };
-
-  const { slug } = useParams(); // Get slug from URL
-  const project1 = projectsData.find((p) => p.slug === slug); // Find project by slug
-
+const HomeReservation = ({ project }) => {
   const [formData, setFormData] = useState({
     name: "",
-    phoneNumber: "",
-    plotNo: "",
-    areaSqFt: "",
-    totalCost: "",
-    facing: "",
+    mobile: "",
+    plot: project?.name || "",
+    bhk: project?.location?.split(" ")[0] || "",
   });
+  
 
-  // Update formData when selectedPlotData changes
-  useEffect(() => {
-    if (selectedPlotData) {
-      setFormData({
-        name: "",
-        phoneNumber: "",
-        plotNo: `Plot No : ${selectedPlotData.plotNo || ""}`,
-        areaSqFt: `AreaSqFt : ${selectedPlotData.areaSqFt || ""}`,
-        totalCost: `Total Cost : ${selectedPlotData.totalCost || ""}`,
-        facing: `Facing : ${selectedPlotData.facing || ""}`,
-      });
-    }
-  }, [selectedPlotData]); // Runs when selectedPlotData changes
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
 
-  // Handle input change
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: "" })); 
   };
 
-  // Handle form submission
-  const handleSubmitPlotsForm = (e) => {
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    // validateField(name, value);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    setFormData({
-      name: "",
-      phoneNumber: "",
-      plotNo: "",
-      areaSqFt: "",
-      totalCost: "",
-      facing: "",
+
+    // Manual validation
+    const newErrors = {};
+    Object.entries(formData).forEach(([key, value]) => {
+      let message = "";
+
+      switch (key) {
+        case "name":
+          if (!value.trim()) message = "Please enter your Name";
+          else if (value.trim().length < 2)
+            message = "Name must be at least 2 characters.";
+          break;
+
+        case "mobile":
+          if (!value.trim()) message = "Please enter your Phone Number";
+          else if (!/^[0-9]{10}$/.test(value))
+            message = "Enter a valid 10-digit Phone number.";
+          break;
+
+        case "plot":
+          if (!value) message = "Please select a project.";
+          break;
+
+        case "bhk":
+          if (!value) message = "Please select a BHK variation.";
+          break;
+      }
+
+      if (message) newErrors[key] = message;
     });
-    alert("Booking Form Submitted Successfully!!")
+
+    // If there are validation errors, show them and stop
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }   
+
+    const payload = {
+      name: formData.name,
+      mobile: formData.mobile,
+      plot: formData.plot || project?.name || "N/A",
+      bhk: formData.bhk || project?.location?.split(" ")[0] || "N/A",
+      apartment: "Ponboomi",
+    };
+
+    try {
+      const response = await fetch("https://cms.gphomes.in/api/enquiry-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+      console.log("Response:", data);
+      alert("Form submitted Successfully:");
+      setSubmitted(true);
+      setFormData({
+        name: "",
+        mobile: "",
+        plot: "",
+        bhk: "",
+      });
+      setErrors({});
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
@@ -74,314 +104,113 @@ const HomeReservation = ({ project, selectedPlotData }) => {
         style={{ backgroundImage: `url(${slideImg2})` }}
         data-overlay-dark="3"
       >
-        {/* <div>
-      <h2>Home Reservation</h2>
-      {selectedPlot ? (
-        <p>Selected Plot: {selectedPlot.totalCost}</p>
-      ) : (
-        <p>No plot selected</p>
-      )}
-    </div> */}
         <div className="container">
           <div className="row">
-            {/* Reservation */}
             <div className="col-md-5 mb-30 mt-30">
-              {/* <p>
-                <i className="star-rating"></i>
-                <i className="star-rating"></i>
-                <i className="star-rating"></i>
-                <i className="star-rating"></i>
-                <i className="star-rating"></i>
-              </p> */}
               <h3>ENQUIRE NOW</h3>
-              <br className="d-none d-md-block"></br>
-              <h6 className="d-none d-md-block">
+              <br />
+              <h6>
                 Interested in learning more? Our property experts are here to
                 help! Reach out to us, and we’ll get back to you with all the
                 details soon.
               </h6>
-              <div className="col-md-12 reservations mb-30 d-none d-md-block">
+              <div className="reservations mb-30">
+                <div className="icon color-1">
+                  <span className="flaticon-call"></span>
+                </div>
                 <div className="text">
-                  <div className="d-flex">
-                    <div className="icon color-1 me-2">
-                      <span className="flaticon-call fs-5"></span>
-                    </div>
-                    <p className="color-1">Contact Us</p>
-                  </div>
-                  
-                    <a className="color-1 fs-5" href="tel:9344481444">
-                      9344481444
-                    </a>
-                    <br></br>
-                    <a className="color-1 fs-5" href="tel:6384003003">
-                      6384003003
-                    </a>
-                  
+                  <p className="color-1">Contact Us</p>
+                  <a className="color-1" href="tel:855-100-4444">
+                    9344481444
+                  </a>
                 </div>
               </div>
-              {/* <p>
-                  <i className="ti-check"></i>
-                  <small>Call us, it's toll-free.</small>
-                </p> */}
             </div>
 
-            {/* Booking Form */}
-            {slug === "gp-ponBhoomi" ? (
-              <div className="col-md-5 offset-md-2">
-                <div className="booking-box">
-                  <div className="head-box">
-                    <h6>Enquire Now</h6>
-                    <h4>Drop in a line with your details.</h4>
-                  </div>
-                  <div className="booking-inner clearfix">
-                    <form
-                      onSubmit={handleSubmitPlotsForm}
-                      className="form1 clearfix"
-                    >
-                      <div className="row">
-                        <div className="col-md-12">
-                          <div className="input1_wrapper">
-                            <label>Name</label>
-                            <div className="input1_inner">
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Name *"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleChange}
-                                required
-                              />
-                            </div>
+            <div className="col-md-5 offset-md-2">
+              <div className="booking-box">
+                <div className="head-box">
+                  <h6>Booking Form</h6>
+                  <h4>Drop in a line with your details.</h4>
+                </div>
+                <div className="booking-inner clearfix">
+                  <form onSubmit={handleSubmit} className="form1 clearfix">
+                    {submitted && (
+                      <div
+                        className="alert alert-success contact__msg"
+                        role="alert"
+                      >
+                        Your message was sent successfully.
+                      </div>
+                    )}
+
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div className="input1_wrapper">
+                          <label>Name</label>
+                          <div className="input1_inner">
+                            <input
+                              type="text"
+                              className="form-control"
+                              placeholder="Name"
+                              name="name"
+                              id="name"
+                              value={formData.name}
+                              onChange={handleChange}
+                              onBlur={handleBlur}
+                            />
+                            {errors.name && (
+                              <small className="text-danger">
+                                {errors.name}
+                              </small>
+                            )}
                           </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="input1_wrapper">
-                            <label>Phone Number</label>
-                            <div className="input1_inner">
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Phone Number *"
-                                name="phoneNumber"
-                                value={formData.phoneNumber}
-                                onChange={handleChange}
-                                required
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="input1_wrapper">
-                            <label>Plot No</label>
-                            <div className="input1_inner">
-                              <input
-                                type="text"
-                                className="form-control"
-                                name="plotNo"
-                                value={formData.plotNo}
-                                onChange={handleChange}
-                                placeholder="Enter Plot No"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="input1_wrapper">
-                            <label>Area SqFt</label>
-                            <div className="input1_inner">
-                              <input
-                                type="text"
-                                className="form-control"
-                                name="areaSqFt"
-                                value={formData.areaSqFt}
-                                onChange={handleChange}
-                                placeholder="Enter Area SqFt"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="input1_wrapper">
-                            <label>Total Cost</label>
-                            <div className="input1_inner">
-                              <input
-                                type="text"
-                                className="form-control"
-                                name="totalCost"
-                                value={formData.totalCost}
-                                onChange={handleChange}
-                                placeholder="Enter Total Cost"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div className="input1_wrapper">
-                            <label>Facing</label>
-                            <div className="input1_inner">
-                              <input
-                                type="text"
-                                className="form-control"
-                                name="facing"
-                                value={formData.facing}
-                                onChange={handleChange}
-                                placeholder="Enter Facing"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <button
-                            type="submit"
-                            className="btn-form1-submit mt-15"
-                          >
-                            SUBMIT
-                          </button>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className="col-md-5 offset-md-2">
-                <div className="booking-box">
-                  <div className="head-box">
-                    <h6>Enquire Now</h6>
-                    <h4>Drop in a line with your details.</h4>
-                  </div>
-                  <div className="booking-inner clearfix">
-                    <form onSubmit={handleSubmit} className="form1 clearfix">
-                      <div className="row">
-                        <div className="col-md-12">
-                          <div className="input1_wrapper">
-                            <label>Name</label>
-                            <div className="input1_inner">
-                              <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Name"
-                                // value={}
-                                name="name"
-                                id="name"
-                                required
-                                // onChange={(e) => setCheckIn(e.target.value)}
-                              />
-                            </div>
 
-                            {/* <div className="input1_inner">
-                                      <input 
-                                        type="text" 
-                                        className="form-control input datepicker" 
-                                        placeholder="Check in" 
-                                        value={checkIn}
-                                        onChange={(e) => setCheckIn(e.target.value)}
-                                      />
-                                    </div> */}
+                      <div className="col-md-12">
+                        <div className="input1_wrapper">
+                          <label>Phone Number</label>
+                          <div className="input1_inner">
+                            <input
+                              type="text"
+                              className="form-control"
+                              placeholder="Phone Number"
+                              name="mobile"
+                              id="mobile"
+                              value={formData.mobile}
+                              onChange={handleChange}
+                              onBlur={handleBlur}
+                            />
+                            {errors.mobile && (
+                              <small className="text-danger">
+                                {errors.mobile}
+                              </small>
+                            )}
                           </div>
                         </div>
-                        <div className="col-md-12">
-                          <div className="input1_wrapper">
-                            <label>Phone Number</label>
-                            <div className="input1_inner">
-                              <input
-                                type="text"
-                                className="form-control input"
-                                placeholder="Phone Number"
-                                id="phoneNumber"
-                                name="phoneNumber"
-                                required
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        {/* <div className="col-md-12">
-                                  <div className="input1_wrapper">
-                                    <label>Email</label>
-                                    <div className="input1_inner">
-                                      <input
-                                        type="text"
-                                        className="form-control input"
-                                        placeholder="Email"
-                                        id="email"
-                                        name="email"                              
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="col-md-12">
-                                  <div className="input1_wrapper">
-                                    <label>Address</label>
-                                    <div className="input1_inner">
-                                      <input
-                                        type="text"
-                                        className="form-control input"
-                                        placeholder="Address"
-                                        id="address"                              
-                                        name="address"                             
-                                      />
-                                    </div>
-                                  </div>
-                                </div> */}
-                        {project?.name ? (
-                          <div className="col-md-12">
-                            <div className="select1_wrapper">
-                              <label>Project</label>
-                              <div className="select1_inner">
-                                <select
-                                  className="select2 select"
-                                  style={{ width: "100%" }}
-                                  value={adults}
-                                  onChange={(e) => setAdults(e.target.value)}
-                                >
-                                  <option value={project.name}>
-                                    {project.name}
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        ) : (
-                          <>
-                            {/* <div className="col-md-12">
-                                      <div className="select1_wrapper">
-                                        <label>Category</label>
-                                        <div className="select1_inner">
-                                          <select
-                                            className="select2 select"
-                                            style={{ width: "100%" }}
-                                            value={selectedApartment}
-                                            onChange={(e) =>
-                                              setSelectedApartment(e.target.value)
-                                            }
-                                          >
-                                            <option value="" disabled>
-                                              Select Property Type
-                                            </option>
-                                            <option value="Apartment">Apartment</option>
-                                            <option value="Plot">Plot</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </div> */}
+                      </div>
 
-                            <div className="col-md-12">
-                              {/* Apartments Dropdown */}
-                              <div className="select1_wrapper">
-                                <label>Apartments</label>
-                                <div className="select1_inner">
-                                  <select
-                                    className="select2 select text-dark"
-                                    style={{ width: "100%" }}
-                                    value={selectedApartment}
-                                    onChange={(e) =>
-                                      setSelectedApartment(e.target.value)
-                                    }
-                                  >
-                                    <option value="" disabled>
-                                      Select an Apartment
-                                    </option>
+                      <div className="col-md-12">
+                        <div className="select1_wrapper">
+                          <label>Project</label>
+                          <div className="select1_inner">
+                            <select
+                              className="select2 select"
+                              name="plot"
+                              id="plot"
+                              value={formData.plot}
+                              onChange={handleChange}
+                              required
+                            >
+                              <option value="">Select a Project</option>
+                              {project?.name ? (
+                                <option value={project.name}>
+                                  {project.name}
+                                </option>
+                              ) : (
+                                <>
+                                  <optgroup label="Apartments">
                                     <option value="GP Blazing Star">
                                       GP Blazing Star
                                     </option>
@@ -397,33 +226,8 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                                     <option value="GP Valencia Ruby">
                                       GP Valencia Ruby
                                     </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div className="col-md-12">
-                              {/* Plots Dropdown */}
-                              <div
-                                className="select1_wrapper"
-                                style={{ marginTop: "15px" }}
-                              >
-                                <label>Plots</label>
-                                <div className="select1_inner">
-                                  <select
-                                    className="select2 select text-dark"
-                                    style={{ width: "100%" }}
-                                    value={selectedPlot}
-                                    onChange={(e) =>
-                                      setSelectedPlot(e.target.value)
-                                    }
-                                  >
-                                    <option value="" disabled>
-                                      Select a Plot
-                                    </option>
-                                    <option value="GP Pon Bhoomi">
-                                      GP Pon Bhoomi
-                                    </option>
+                                  </optgroup>
+                                  <optgroup label="Plots">
                                     <option value="GP Midway Avenue">
                                       GP Midway Avenue
                                     </option>
@@ -439,50 +243,55 @@ const HomeReservation = ({ project, selectedPlotData }) => {
                                     <option value="GP Vijayalakshmi">
                                       GP Vijayalakshmi
                                     </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                          </>
-                        )}
-                        <div className="col-md-12">
-                          <div className="select1_wrapper">
-                            <label>Variations</label>
-                            <div className="select1_inner">
-                              <select
-                                className="select2 select text-dark"
-                                style={{ width: "100%" }}
-                                value={children}
-                                onChange={(e) => setChildren(e.target.value)}
-                              >
-                                {project?.location ? (
-                                  <option value={project.location}>
-                                    {project.location.split(" ")[0]}
-                                  </option>
-                                ) : (
-                                  <>
-                                    <option value="2BHK">2BHK</option>
-                                    <option value="3BHK">3BHK</option>
-                                  </>
-                                )}
-                              </select>
-                            </div>
+                                  </optgroup>
+                                </>
+                              )}
+                            </select>
                           </div>
                         </div>
-                        <div className="col-md-12">
-                          <button
-                            type="submit"
-                            className="btn-form1-submit mt-15"
-                          >
-                            Check Availability
-                          </button>
+                      </div>
+
+                      <div className="col-md-12">
+                        <div className="select1_wrapper">
+                          <label>Variations</label>
+                          <div className="select1_inner">
+                            <select
+                              className="select2 select"
+                              name="bhk"
+                              id="bhk"
+                              value={formData.bhk}
+                              onChange={handleChange}
+                              required
+                            >
+                              <option value="">Select a BHK </option>
+                              {project?.location ? (
+                                <option value={project.location.split(" ")[0]}>
+                                  {project.location.split(" ")[0]}
+                                </option>
+                              ) : (
+                                <>
+                                  <option value="2BHK">2BHK</option>
+                                  <option value="3BHK">3BHK</option>
+                                </>
+                              )}
+                            </select>
+                          </div>
                         </div>
                       </div>
-                    </form>
-                  </div>
+
+                      <div className="col-md-12">
+                        <button
+                          type="submit"
+                          className="btn-form1-submit mt-15"
+                        >
+                          Check Availability
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-            )}
+            </div>
           </div>
         </div>
       </div>
