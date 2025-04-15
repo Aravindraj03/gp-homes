@@ -1,23 +1,18 @@
 import React from 'react';
 import bgimage from '../../assets/img/slider/1.jpg';
 
-const ProjectInnerPageBanner = ({ project,projectDetails }) => {
+const ProjectInnerPageBanner = ({ project }) => {
   
   const bannerImage =
     project?.banner_image && typeof project.banner_image === 'string'
     ? project.banner_image
     : bgimage;
-    
-    const CMSBannerImage =
-    projectDetails?.banner_image
-      ? `https://cms.gphomes.in//storage/${projectDetails.banner_image}`
-      : "";
     return (
     <>
     <div
     className="header section-padding valign bg-img text-center item bg-img d-none d-md-block" 
     style={{
-      backgroundImage: `url(${CMSBannerImage})`
+      backgroundImage: `url(${bannerImage})`
       // backgroundBlendMode: 'overlay',
       // backgroundColor: 'rgba(0, 0, 0, 0.4)',
     }}

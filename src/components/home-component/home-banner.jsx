@@ -40,7 +40,7 @@ const BannerSlider = () => {
               className="text-center item bg-img"
 
               style={{
-                backgroundImage: `url(${slideImg1})`,
+                backgroundImage: `url(${slideImg2})`,
                 cursor: "pointer",
               }}
               onClick={() =>
@@ -60,7 +60,7 @@ const BannerSlider = () => {
           {/* ))} */}
 
           {/* Second Slide */}
-          {/* <div
+          <div
             className="text-center item bg-img"
             style={{ backgroundImage: `url(${slideImg1})` }}
             onClick={() =>
@@ -89,7 +89,7 @@ const BannerSlider = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
         {/* Slider Reservation */}

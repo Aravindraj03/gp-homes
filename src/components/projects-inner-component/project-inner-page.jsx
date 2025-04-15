@@ -103,7 +103,7 @@ function ProjectInnerPage() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <ProjectInnerPageBanner project={project} projectDetails={projectDetails}/> 
+      <ProjectInnerPageBanner project={project}/> 
       <ProjectsList project={project} projectDetails={projectDetails}/>
       <HomeReservation project={project}/>
       <Footer />
