@@ -18,7 +18,7 @@ const BannerSlider = () => {
     service
       .callGet("list-of-banners")
       .then((response) => {
-        setImages(response.data.Results); // ✅ fix here
+        setImages(response); // ✅ fix here
         setImageBaseLink(response.data.img_base_url);
       })
       .catch((error) => {

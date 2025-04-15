@@ -8,8 +8,12 @@ import listimg3 from "../../assets/img/slider/3.jpg";
 import listimg4 from "../../assets/img/slider/3.jpg";
 import listimg5 from "../../assets/img/slider/2.jpg";
 
-const ProjectsList = ({ project }) => {
+
+
+const ProjectsList = ({ project,projectDetails }) => {
   const projects = project.projects_types;
+  // const projectDetails = projectDetail;
+  console.log(projectDetails, "projects12345----------------------");
 
   return (
     <section className="section-padding">
