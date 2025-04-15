@@ -92,7 +92,7 @@ const ApartmentDetails = () => {
   const service = new ServiceWrapper();
   useEffect(() => {
     service
-      .callGet("list-of-apartments")
+      .callGet("list-of-apartments",)
       .then((response) => {
         const data = response.data.Results;
         setDataDetails(data);

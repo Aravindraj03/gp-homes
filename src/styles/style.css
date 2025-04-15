@@ -5657,6 +5657,7 @@ select {
 @media screen and (max-width: 991px) {
   .bg-fixed {
     background-attachment: scroll !important;
+    
   }
 
   .hero-apartment{

@@ -33,12 +33,14 @@ const BannerSlider = () => {
     <>
       <header className="header slider-fade d-none d-md-block">
         <div className="owl-carousel owl-theme">
-          {/* {images?.map((banner) => ( */}
+          {/* {images && images?.map((banner) => ( */} 
+          
             <div
               // key={banner.id}
               className="text-center item bg-img"
+
               style={{
-                backgroundImage: `url(${slideImg2})`,
+                backgroundImage: `url(${slideImg1})`,
                 cursor: "pointer",
               }}
               onClick={() =>
@@ -58,7 +60,7 @@ const BannerSlider = () => {
           {/* ))} */}
 
           {/* Second Slide */}
-          <div
+          {/* <div
             className="text-center item bg-img"
             style={{ backgroundImage: `url(${slideImg1})` }}
             onClick={() =>
@@ -87,7 +89,7 @@ const BannerSlider = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Slider Reservation */}
