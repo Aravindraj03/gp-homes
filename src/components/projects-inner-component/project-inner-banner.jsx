@@ -10,7 +10,7 @@ const ProjectInnerPageBanner = ({ project,projectDetails }) => {
     
     const CMSBannerImage =
     projectDetails?.banner_image
-      ? `https://cms.gphomes.in//storage/${projectDetails.banner_image}`
+      ? `https://cms.gphomes.in//storage/${projectDetails.cover_image}`
       : "";
     return (
     <>
