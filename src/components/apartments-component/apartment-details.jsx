@@ -72,170 +72,21 @@ const getFeatureWithIcons = (feature) => {
     });
 };
 
-const roomsData = [
-  {
-    id: 1,
-    category: "Apartments-Ongoing",
-    location: "Porur",
-    title: "GP Blazing Star",
-    image: room1,
-    description:
-      "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai.",
-    project_status: "Ongoing Project",
-    features: ["Units 25, BHK 2 & 3, Sq. ft. 845 – 1405, Floors Stilt + 5"],
-    slug: "gp-blazing-star",
-  },
-  {
-    id: 2,
-    category: "Apartments-Ongoing",
-    location: "Menambedu",
-    title: "GP Breeze Way",
-    image: room2,
-    description:
-      "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai.",
-    project_status: "Ongoing Project",
-    features: ["Units 29, BHK2 & 3, Sq. ft.817 – 1240, Floors Stilt + 5"],
-    slug: "gp-breeze-way",
-  },
-  {
-    id: 3,
-    category: "Apartments-Ongoing",
-    location: "Madhanadhapuram",
-    title: "GP Homes Elanza",
-    image: room3,
-    description:
-      "GP homes is proud to announce yet another project, GP Elanza, which has a range of beautifully designed apartments in Madhanadhapuram.",
-    project_status: "Ongoing Project",
-    features: ["Units 35, BHK 2 & 3, Sq. ft. 835 – 1326, Blocks 1"],
-    slug: "gp-homes-elanza",
-  },
-  {
-    id: 4,
-    category: "Apartments-Ongoing",
-    location: "Ayanambakkam",
-    title: "GP Valencia Emarald",
-    image: room4,
-    description:
-      "Welcome to GP Valencia Emerald, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes",
-    project_status: "Ongoing Project",
-    features: ["Units 29, BHK 2 & 3, Sq. ft. 857 to 1305, Blocks Stilt + 4"],
-    slug: "gp-valencia-emarald",
-  },
-  {
-    id: 5,
-    category: "Apartments-Ongoing",
-    location: "Ayanambakkam",
-    title: "GP Valencia Ruby",
-    image: room5,
-    description:
-      "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 35, BHK 2 & 3, Sq. ft. 912 – 1580, Floors Stilt + 5"],
-    slug: "gp-valencia-ruby",
-  },
-  {
-    id: 6,
-    category: "Apartments-Ongoing",
-    location: "Ayanambakkam",
-    title: "Lake Breeze",
-    image: room11,
-    description:
-      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
-    slug: "gp-valencia-ruby",
-  },
-  {
-    id: 7,
-    category: "Apartments-Completed",
-    location: "CHENNAI",
-    title: "Blossom icf colony",
-    image: apartCompleted1,
-    description:
-      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
-    slug: "gp-valencia-ruby",
-  },
-  {
-    id: 8,
-    category: "Apartments-Completed",
-    location: "AYANAMBAKKAM",
-    title: "Blue Bell",
-    image: apartCompleted2,
-    description:
-      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
-    slug: "gp-valencia-ruby",
-  },
-  {
-    id: 9,
-    category: "Apartments-Completed",
-    location: "AYANAMBAKKAM",
-    title: "Blue Bell Phase II",
-    image: apartCompleted3,
-    description:
-      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
-    slug: "gp-valencia-ruby",
-  },
-  {
-    id: 10,
-    category: "Apartments-Completed",
-    location: "KORATTUR",
-    title: "Caspia (Mohan Gardens)",
-    image: apartCompleted4,
-    description:
-      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
-    slug: "gp-valencia-ruby",
-  },
-  {
-    id: 11,
-    category: "Apartments-Completed",
-    location: "AYANAMBAKKAM",
-    title: "Cherry Blossom I",
-    image: apartCompleted5,
-    description:
-      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
-    slug: "gp-valencia-ruby",
-  },
-  {
-    id: 12,
-    category: "Apartments-Completed",
-    location: "Ayanambakkam",
-    title: "Cherry Blossom II – Lavender",
-    image: apartCompleted6,
-    description:
-      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
-    slug: "gp-valencia-ruby",
-  },
-];
+
 
 const ApartmentDetails = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedFilter, setSelectedFilter] = useState("Apartments-Ongoing"); // Default focus
+  const [selectedCategory, setSelectedCategory] = useState();
+  const [selectedFilter, setSelectedFilter] = useState("On-going"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
-  const [visibleRooms, setVisibleRooms] = useState(
-    roomsData.filter((room) => room.category === "Apartments-Ongoing")
-  );
+  const [visibleRooms, setVisibleRooms] = useState([]);
   const [dataDetails, setDataDetails] = useState([]);
 
   const handleFilter = (category) => {
-    setSelectedCategory(category);
     setSelectedFilter(category);
-    const filteredRooms =
-      category === "All"
-        ? roomsData
-        : roomsData.filter((room) => room.category === category);
-    setVisibleRooms(filteredRooms.slice(0, 12)); // Limit to 9 items
+    const filteredRooms = dataDetails.filter(
+      (room) => room.status === category
+    );
+    setVisibleRooms(filteredRooms);
   };
 
   const service = new ServiceWrapper();
@@ -243,13 +94,18 @@ const ApartmentDetails = () => {
     service
       .callGet("list-of-apartments")
       .then((response) => {
-        setDataDetails(response.data.Results);
+        const data = response.data.Results;
+        setDataDetails(data);
+  
+        // Initially filter "On-going"
+        const initialFiltered = data.filter(room => room.status === "On-going");
+        setVisibleRooms(initialFiltered);
       })
       .catch((error) => {
         console.error("Banner fetch error", error);
       });
   }, []);
-  // console.log(dataDetails, "dataDetails-------------------");
+  console.log(dataDetails, "dataDetails-------------------");
   return (
     <section
       className="rooms1 section-padding bg-cream apartments-page"
@@ -285,43 +141,34 @@ const ApartmentDetails = () => {
           </div> */}
 
           <div className="col-md-4">
-            <button
-              onClick={() => handleFilter("Apartments-Ongoing")}
-              // className="btn-form1-submit mb-30"
-              className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Apartments-Ongoing"
-                  ? "btn-form1-submit-active"
-                  : ""
-              }`}
-            >
+          <button
+            onClick={() => handleFilter("On-going")}
+            className={`btn-form1-submit mb-30 fs-5 ${
+              selectedFilter === "On-going" ? "btn-form1-submit-active" : ""
+            }`}
+          >
               Ongoing
             </button>
           </div>
 
           <div className="col-md-4">
-            <button
-              onClick={() => handleFilter("Apartments-Upcoming")}
-              // className="btn-form1-submit mb-30"
-              className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Apartments-Upcoming"
-                  ? "btn-form1-submit-active"
-                  : ""
-              }`}
-            >
+          <button
+            onClick={() => handleFilter("Up-coming")}
+            className={`btn-form1-submit mb-30 fs-5 ${
+              selectedFilter === "Up-coming" ? "btn-form1-submit-active" : ""
+            }`}
+          >
               UP Coming
             </button>
           </div>
 
           <div className="col-md-4">
-            <button
-              onClick={() => handleFilter("Apartments-Completed")}
-              // className="btn-form1-submit mb-30"
-              className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Apartments-Completed"
-                  ? "btn-form1-submit-active"
-                  : ""
-              }`}
-            >
+          <button
+            onClick={() => handleFilter("Completed")}
+            className={`btn-form1-submit mb-30 fs-5 ${
+              selectedFilter === "Completed" ? "btn-form1-submit-active" : ""
+            }`}
+          >
               Completed
             </button>
           </div>
@@ -331,7 +178,7 @@ const ApartmentDetails = () => {
       <div className="rooms3">
         <div className="container">
           <div className="row">
-            {dataDetails.map((room) => (
+            {visibleRooms.map((room) => (
               <div className="col-md-4" key={room.id}>
                 <div className="square-flip">
                   <div
