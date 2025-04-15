@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../common/header";
 import Footer from "../common/footer";
@@ -12,13 +12,28 @@ import projectsData from "./projectsData";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
+import { ServiceWrapper } from "../../service/ApiService";
 
 function ProjectInnerPage() {
-  const { slug } = useParams(); // Get slug from URL
+  const { slug } = useParams(); // ✅ Get slug from URL
+  const [projectDetails, setProjectDetails] = useState(null);
+  const service = new ServiceWrapper();
   const project = projectsData.find((p) => p.slug === slug); 
 
-  // console.log(project);
+  useEffect(() => {
+    service
+      .callGet("list-of-apartments")
+      .then((response) => {
+        const found = response.data.Results.find((p) => p.slug === slug);
+        setProjectDetails(found);
+      })
+      .catch((error) => {
+        console.error("Banner fetch error", error);
+      });
+  }, [slug]); // ✅ Add `slug` to dependency array just in case route changes
 
+  console.log(project, "project123----------------------");
+    
   if (!project) {
     return <h2>Project not found</h2>;
   }
@@ -81,14 +96,14 @@ function ProjectInnerPage() {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link as={Link} to="/contact-us">
+              <Nav.Link as={Link} to="/contact-us"> 
                 Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <ProjectInnerPageBanner project={project}/> 
+      <ProjectInnerPageBanner project={project} projectDetails={projectDetails}/> 
       <ProjectsList project={project}/>
       <HomeReservation project={project}/>
       <Footer />

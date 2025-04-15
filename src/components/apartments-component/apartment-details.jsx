@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import room1 from "../../assets/img/rooms/blazingstar.jpg";
 import room2 from "../../assets/img/rooms/breezeway.jpg";
@@ -249,7 +249,31 @@ const ApartmentDetails = () => {
         console.error("Banner fetch error", error);
       });
   }, []);
-  // console.log(dataDetails, "dataDetails-------------------");
+  console.log(dataDetails, "dataDetails-------------------");
+
+  const navigate = useNavigate();
+
+  const handleDetailsClick = async (slugLink) => {
+    try {
+      const response = await fetch("https://cms.gphomes.in/api/apartment-details", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+        },
+        body: JSON.stringify({ slug: slugLink }),
+      });
+
+      const data = await response.json();
+      console.log("Response:", data);
+
+      navigate(`/apartments-chennai/${slugLink}`);
+    } catch (error) {
+      console.error("API call failed", error);
+    }
+  };
+  
+  
   return (
     <section
       className="rooms1 section-padding bg-cream apartments-page"
@@ -361,53 +385,60 @@ const ApartmentDetails = () => {
                       <h4>{room.name}</h4>
                       <p>{room.description}</p>
                       <div className="row room-facilities">
-                          <ul className="row">
-                            <li className="fs-6 col-6">
-                              <img
-                                src={aptIcon}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Units {room.total_units}
-                            </li>
-                            <li className="fs-6 col-6">
-                              <img
-                                src={bhkIcon}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              BHK {room.bhk}
-                            </li>
-                            <li className="fs-6 col-6">
-                              <img
-                                src={sqft}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Sq. ft.{room.sq_ft}
-                            </li>
-                            <li className="fs-6 col-6">
-                              <img
-                                src={stiltFloor}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Floors Stilt +{room.no_of_blocks_or_floors}
-                            </li>
-                          </ul>
+                        <ul className="row">
+                          <li className="fs-6 col-6">
+                            <img
+                              src={aptIcon}
+                              alt="icons"
+                              style={{
+                                width: "25px",
+                                marginRight: "8px",
+                              }}
+                            ></img>
+                            Units {room.total_units}
+                          </li>
+                          <li className="fs-6 col-6">
+                            <img
+                              src={bhkIcon}
+                              alt="icons"
+                              style={{
+                                width: "25px",
+                                marginRight: "8px",
+                              }}
+                            ></img>
+                            BHK {room.bhk}
+                          </li>
+                          <li className="fs-6 col-6">
+                            <img
+                              src={sqft}
+                              alt="icons"
+                              style={{
+                                width: "25px",
+                                marginRight: "8px",
+                              }}
+                            ></img>
+                            Sq. ft.{room.sq_ft}
+                          </li>
+                          <li className="fs-6 col-6">
+                            <img
+                              src={stiltFloor}
+                              alt="icons"
+                              style={{
+                                width: "25px",
+                                marginRight: "8px",
+                              }}
+                            ></img>
+                            Floors Stilt +{room.no_of_blocks_or_floors}
+                          </li>
+                        </ul>
                       </div>
+                      <button
+                        className="btn-form1-submit text-center"
+                        onClick={() => handleDetailsClick(room.slug)}
+                      >
+                        Details
+                      </button>
+
                       {/* {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
                           {room.features.map((feature, index) => {
@@ -436,12 +467,13 @@ const ApartmentDetails = () => {
                           })}
                         </div>
                       )} */}
-                      <Link
+                      {/* <Link
                         className="btn-form1-submit text-center"
                         to={`/apartments-chennai/${room.slug}`}
                       >
                         Details
-                      </Link>
+                      </Link> */}
+
                       {/* {room.id != "6" ? (
                         <Link
                           className="btn-form1-submit text-center"

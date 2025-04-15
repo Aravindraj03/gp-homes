@@ -19,7 +19,7 @@ export class ServiceWrapper {
       params,
       headers: {
         'Content-Type': 'application/json',   // Optional: Set the content type
-        'dynamickey': dynamicKey              // Include the dynamic key in headers
+        "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",              // Include the dynamic key in headers
       }
     });
   }; 
@@ -29,7 +29,7 @@ export class ServiceWrapper {
     return await axios.post(apiUrl+url, body, {
       headers: {
         'Content-Type': 'application/json',   // Optional: Set the content type (if needed)
-        'dynamickey': dynamicKey
+        "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",     
       }
     });
   };
