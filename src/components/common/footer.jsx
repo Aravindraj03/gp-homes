@@ -30,7 +30,7 @@ function Footer() {
                   <div className="d-flex  gap-5">
                     <ul className="footer-explore-list list-unstyled mb-1 p-0">
                       <li>
-                        <Link to="/home">Home</Link>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
                         <Link to="/about-us">About Us</Link>

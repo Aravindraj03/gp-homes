@@ -63,7 +63,7 @@ function App() {
         <Fragment>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/home" element={<HomePage />} />
+            {/* <Route path="/home" element={<HomePage />} /> */}
             <Route
               path="/apartments-chennai/:slug"
               element={<ProjectInnerPage />}

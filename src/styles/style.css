@@ -3892,16 +3892,17 @@ button.mfp-arrow {
     text-decoration: none;
     line-height: 62px;
     position: relative;
-    cursor: pointer;
     transition: all 0.3s ease-out;
     letter-spacing: 3px;
     text-transform: uppercase;
+    cursor: pointer !important;
 }
 .btn-form1-submit:hover {
   /* background: #222;
     color: #f26522; */
   background: #f26522;
   color: #fff;
+  cursor: pointer;
 }
 .btn-form1-submit:focus {
   outline: none;

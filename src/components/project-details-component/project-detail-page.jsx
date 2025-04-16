@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useState } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../common/header";
 import Footer from "../common/footer";
@@ -21,15 +21,43 @@ function ProjectDetailPage() {
     // ✅ Move hooks outside the conditional check
     const [selectedPlot, setSelectedPlot] = useState(null);
     const homeReservationRef = useRef(null);
+    const [projectDetails, setProjectDetails] = useState(null);
   
     const handleSelectPlot = (plot) => {
       setSelectedPlot(plot); 
       homeReservationRef.current?.scrollIntoView({ behavior: "smooth" }); 
     };
 
-  if (!project) {
-    return <h2>Project not found</h2>;
-  }
+    useEffect(() => {
+      const fetchApartmentDetails = async () => {
+        try {
+          if (!slug) return;
+    
+          const response = await fetch("https://cms.gphomes.in/api/plot-details", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+            },
+            body: JSON.stringify({ slug }),
+          });
+    
+          const data = await response.json();
+          console.log("API Response plot-details:", data);
+    
+          setProjectDetails(data.Results); // Set state if response is successful
+        } catch (error) {
+          console.error("API call failed", error);
+        }
+      };
+    
+      fetchApartmentDetails();
+    }, [slug]);
+    console.log(projectDetails,"projectDetails plot-details-----------------------------")
+
+    if (!project) {
+      return <h2>Project not found</h2>;
+    }
 
   return (
     <Fragment>
@@ -44,7 +72,7 @@ function ProjectDetailPage() {
 
           <Navbar.Collapse id="navbar">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/home">
+              <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
 

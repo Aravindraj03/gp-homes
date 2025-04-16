@@ -431,14 +431,14 @@ const ApartmentDetails = () => {
                           </ul>
                         </div>
 
-                        {room.status === "On-going" && (
+                        {/* {room.status === "On-going" && (
                           <button
                             className="btn-form1-submit text-center"
                             onClick={() => handleDetailsClick(room.slug)}
                           >
                             Details
                           </button>
-                        )}
+                        )} */}
 
                         {/* {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
@@ -468,12 +468,12 @@ const ApartmentDetails = () => {
                           })}
                         </div>
                       )} */}
-                        {/* <Link
+                        <Link
                         className="btn-form1-submit text-center"
                         to={`/apartments-chennai/${room.slug}`}
                       >
                         Details
-                      </Link> */}
+                      </Link>
 
                         {/* {room.id != "6" ? (
                         <Link

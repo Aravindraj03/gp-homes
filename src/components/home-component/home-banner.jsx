@@ -33,13 +33,13 @@ const BannerSlider = () => {
     <>
       <header className="header slider-fade d-none d-md-block">
         <div className="owl-carousel owl-theme">
-          {images &&
-            images?.map((banner) => (
+          {/* {images &&
+            images?.map((banner) => ( */}
               <div
                 // key={banner.id}
                 className="text-center item bg-img"
                 style={{
-                  backgroundImage: `url(https://cms.gphomes.in//storage/${banner.image})`,
+                  backgroundImage: `url(${slideImg2})`,
                   cursor: "pointer",
                 }}
                 onClick={() =>
@@ -56,10 +56,10 @@ const BannerSlider = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            {/* ))} */}
 
           {/* Second Slide */}
-          {/* <div
+          <div
             className="text-center item bg-img"
             style={{ backgroundImage: `url(${slideImg1})` }}
             onClick={() =>
@@ -88,7 +88,7 @@ const BannerSlider = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
         {/* Slider Reservation */}

@@ -15,24 +15,37 @@ import logo from "../../assets/img/gp-logo.png";
 import { ServiceWrapper } from "../../service/ApiService";
 
 function ProjectInnerPage() {
-  const { slug } = useParams(); // ✅ Get slug from URL
+  const { slug } = useParams(); // ✅ correct
   const [projectDetails, setProjectDetails] = useState(null);
   const service = new ServiceWrapper();
   const project = projectsData.find((p) => p.slug === slug); 
 
   useEffect(() => {
-    service
-      .callGet("list-of-apartments")
-      .then((response) => {
-        const found = response.data.Results.find((p) => p.slug === slug);
-        setProjectDetails(found);
-      })
-      .catch((error) => {
-        console.error("Banner fetch error", error);
-      });
-  }, [slug]); // ✅ Add `slug` to dependency array just in case route changes
-
-  console.log(project, "project123----------------------");
+    const fetchApartmentDetails = async () => {
+      try {
+        if (!slug) return;
+  
+        const response = await fetch("https://cms.gphomes.in/api/apartment-details", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+          },
+          body: JSON.stringify({ slug }),
+        });
+  
+        const data = await response.json();
+        console.log("API Response apartment-details:", data);
+  
+        setProjectDetails(data.Results); // Set state if response is successful
+      } catch (error) {
+        console.error("API call failed", error);
+      }
+    };
+  
+    fetchApartmentDetails();
+  }, [slug]);
+  console.log(projectDetails,"projectDetails apartment-details-----------------------------")
     
   if (!project) {
     return <h2>Project not found</h2>;
@@ -51,7 +64,7 @@ function ProjectInnerPage() {
 
           <Navbar.Collapse id="navbar">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/home">
+              <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
 
@@ -104,7 +117,7 @@ function ProjectInnerPage() {
         </Container>
       </Navbar>
       <ProjectInnerPageBanner project={project} projectDetails={projectDetails}/> 
-      <ProjectsList project={project}/>
+      <ProjectsList project={project} />
       <HomeReservation project={project}/>
       <Footer />
     </Fragment>
