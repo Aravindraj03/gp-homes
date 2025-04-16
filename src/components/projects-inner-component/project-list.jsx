@@ -10,10 +10,8 @@ import listimg5 from "../../assets/img/slider/2.jpg";
 
 
 
-const ProjectsList = ({ project,projectDetails }) => {
+const ProjectsList = ({ project }) => {
   const projects = project.projects_types;
-  // const projectDetails = projectDetail;
-  console.log(projectDetails, "projects12345----------------------");
 
   return (
     <section className="section-padding">

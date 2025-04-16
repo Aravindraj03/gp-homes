@@ -56,21 +56,23 @@ const featureIcons = {
   Grand: archIcon,
 };
 
-const getFeatureWithIcons = (feature) => {
-  return feature
-    .split(",") // Split features into an array
-    .map((item) => {
-      const trimmedItem = item.trim();
-      const matchedKey = Object.keys(featureIcons).find((key) =>
-        trimmedItem.includes(key)
-      );
+// const getFeatureWithIcons = (feature) => {
+//   return feature
+//     .split(",") // Split features into an array
+//     .map((item) => {
+//       const trimmedItem = item.trim();
+//       const matchedKey = Object.keys(featureIcons).find((key) =>
+//         trimmedItem.includes(key)
+//       );
 
-      return {
-        text: trimmedItem,
-        iconClass: matchedKey ? featureIcons[matchedKey] : "bi bi-check-circle",
-      };
-    });
-};
+//       return {
+//         text: trimmedItem,
+//         iconClass: matchedKey ? featureIcons[matchedKey] : "bi bi-check-circle",
+//       };
+//     });
+// };
+
+
 
 
 
@@ -128,6 +130,153 @@ const ApartmentDetails = () => {
       console.error("API call failed", error);
     }
   };
+
+  const roomsData = [
+    {
+      id: 1,
+      category: "Apartments-Ongoing",
+      location: "Porur",
+      title: "GP Blazing Star",
+      image: room1,
+      description:
+        "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai.",
+      project_status: "Ongoing Project",
+      features: ["Units 25, BHK 2 & 3, Sq. ft. 845 – 1405, Floors Stilt + 5"],
+      slug: "gp-blazing-star",
+    },
+    {
+      id: 2,
+      category: "Apartments-Ongoing",
+      location: "Menambedu",
+      title: "GP Breeze Way",
+      image: room2,
+      description:
+        "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai.",
+      project_status: "Ongoing Project",
+      features: ["Units 29, BHK2 & 3, Sq. ft.817 – 1240, Floors Stilt + 5"],
+      slug: "gp-breeze-way",
+    },
+    {
+      id: 3,
+      category: "Apartments-Ongoing",
+      location: "Madhanadhapuram",
+      title: "GP Homes Elanza",
+      image: room3,
+      description:
+        "GP homes is proud to announce yet another project, GP Elanza, which has a range of beautifully designed apartments in Madhanadhapuram.",
+      project_status: "Ongoing Project",
+      features: ["Units 35, BHK 2 & 3, Sq. ft. 835 – 1326, Blocks 1"],
+      slug: "gp-homes-elanza",
+    },
+    {
+      id: 4,
+      category: "Apartments-Ongoing",
+      location: "Ayanambakkam",
+      title: "GP Valencia Emarald",
+      image: room4,
+      description:
+        "Welcome to GP Valencia Emerald, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes",
+      project_status: "Ongoing Project",
+      features: ["Units 29, BHK 2 & 3, Sq. ft. 857 to 1305, Blocks Stilt + 4"],
+      slug: "gp-valencia-emarald",
+    },
+    {
+      id: 5,
+      category: "Apartments-Ongoing",
+      location: "Ayanambakkam",
+      title: "GP Valencia Ruby",
+      image: room5,
+      description:
+        "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
+      project_status: "Ongoing Project",
+      features: ["Units 35, BHK 2 & 3, Sq. ft. 912 – 1580, Floors Stilt + 5"],
+      slug: "gp-valencia-ruby",
+    },
+    {
+      id: 6,
+      category: "Apartments-Ongoing",
+      location: "Ayanambakkam",
+      title: "Lake Breeze",
+      image: room11,
+      description:
+        "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+      project_status: "Ongoing Project",
+      features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+      slug: "gp-valencia-ruby",
+    },
+    {
+      id: 7,
+      category: "Apartments-Completed",
+      location: "CHENNAI",
+      title: "Blossom icf colony",
+      image: apartCompleted1,
+      description:
+        "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+      project_status: "Ongoing Project",
+      features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+      slug: "gp-valencia-ruby",
+    },
+    {
+      id: 8,
+      category: "Apartments-Completed",
+      location: "AYANAMBAKKAM",
+      title: "Blue Bell",
+      image: apartCompleted2,
+      description:
+        "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+      project_status: "Ongoing Project",
+      features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+      slug: "gp-valencia-ruby",
+    },
+    {
+      id: 9,
+      category: "Apartments-Completed",
+      location: "AYANAMBAKKAM",
+      title: "Blue Bell Phase II",
+      image: apartCompleted3,
+      description:
+        "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+      project_status: "Ongoing Project",
+      features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+      slug: "gp-valencia-ruby",
+    },
+    {
+      id: 10,
+      category: "Apartments-Completed",
+      location: "KORATTUR",
+      title: "Caspia (Mohan Gardens)",
+      image: apartCompleted4,
+      description:
+        "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+      project_status: "Ongoing Project",
+      features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+      slug: "gp-valencia-ruby",
+    },
+    {
+      id: 11,
+      category: "Apartments-Completed",
+      location: "AYANAMBAKKAM",
+      title: "Cherry Blossom I",
+      image: apartCompleted5,
+      description:
+        "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+      project_status: "Ongoing Project",
+      features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+      slug: "gp-valencia-ruby",
+    },
+    {
+      id: 12,
+      category: "Apartments-Completed",
+      location: "Ayanambakkam",
+      title: "Cherry Blossom II – Lavender",
+      image: apartCompleted6,
+      description:
+        "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+      project_status: "Ongoing Project",
+      features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+      slug: "gp-valencia-ruby",
+    },
+  ];
   
   
   return (
@@ -165,34 +314,34 @@ const ApartmentDetails = () => {
           </div> */}
 
           <div className="col-md-4">
-          <button
-            onClick={() => handleFilter("On-going")}
-            className={`btn-form1-submit mb-30 fs-5 ${
-              selectedFilter === "On-going" ? "btn-form1-submit-active" : ""
-            }`}
-          >
+            <button
+              onClick={() => handleFilter("On-going")}
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "On-going" ? "btn-form1-submit-active" : ""
+              }`}
+            >
               Ongoing
             </button>
           </div>
 
           <div className="col-md-4">
-          <button
-            onClick={() => handleFilter("Up-coming")}
-            className={`btn-form1-submit mb-30 fs-5 ${
-              selectedFilter === "Up-coming" ? "btn-form1-submit-active" : ""
-            }`}
-          >
+            <button
+              onClick={() => handleFilter("Up-coming")}
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Up-coming" ? "btn-form1-submit-active" : ""
+              }`}
+            >
               UP Coming
             </button>
           </div>
 
           <div className="col-md-4">
-          <button
-            onClick={() => handleFilter("Completed")}
-            className={`btn-form1-submit mb-30 fs-5 ${
-              selectedFilter === "Completed" ? "btn-form1-submit-active" : ""
-            }`}
-          >
+            <button
+              onClick={() => handleFilter("Completed")}
+              className={`btn-form1-submit mb-30 fs-5 ${
+                selectedFilter === "Completed" ? "btn-form1-submit-active" : ""
+              }`}
+            >
               Completed
             </button>
           </div>
@@ -202,91 +351,96 @@ const ApartmentDetails = () => {
       <div className="rooms3">
         <div className="container">
           <div className="row">
-            {visibleRooms.map((room) => (
-              <div className="col-md-4" key={room.id}>
-                <div className="square-flip">
-                  <div
-                    className="square bg-img"
-                    style={{
-                      backgroundImage: `url(https://cms.gphomes.in//storage/${room.banner_image})`,
-                    }}
-                  >
-                    {/* <span className="category">
+            {visibleRooms
+              .filter((room) => room.project_type === "1")
+              .map((room) => (
+                <div className="col-md-4" key={room.id}>
+                  <div className="square-flip">
+                    <div
+                      className="square bg-img"
+                      style={{
+                        backgroundImage: `url(https://cms.gphomes.in//storage/${room.banner_image})`,
+                      }}
+                    >
+                      {/* <span className="category">
                       <Link to="/">Book</Link>
                     </span> */}
 
-                    <div className="square-container d-flex align-items-end justify-content-end">
-                      <div
-                        className="box-title w-100 p-2"
-                        style={{ backgroundColor: "#f26522" }}
-                      >
+                      <div className="square-container d-flex align-items-end justify-content-end">
+                        <div
+                          className="box-title w-100 p-2"
+                          style={{ backgroundColor: "#f26522" }}
+                        >
+                          <h6>{room.location}</h6>
+                          <h4>{room.name}</h4>
+                        </div>
+                      </div>
+                      <div className="flip-overlay"></div>
+                    </div>
+                    <div className="square2">
+                      <div className="square-container2">
                         <h6>{room.location}</h6>
                         <h4>{room.name}</h4>
-                      </div>
-                    </div>
-                    <div className="flip-overlay"></div>
-                  </div>
-                  <div className="square2">
-                    <div className="square-container2">
-                      <h6>{room.location}</h6>
-                      <h4>{room.name}</h4>
-                      <p>{room.description}</p>
-                      <div className="row room-facilities">
-                        <ul className="row">
-                          <li className="fs-6 col-6">
-                            <img
-                              src={aptIcon}
-                              alt="icons"
-                              style={{
-                                width: "25px",
-                                marginRight: "8px",
-                              }}
-                            ></img>
-                            Units {room.total_units}
-                          </li>
-                          <li className="fs-6 col-6">
-                            <img
-                              src={bhkIcon}
-                              alt="icons"
-                              style={{
-                                width: "25px",
-                                marginRight: "8px",
-                              }}
-                            ></img>
-                            BHK {room.bhk}
-                          </li>
-                          <li className="fs-6 col-6">
-                            <img
-                              src={sqft}
-                              alt="icons"
-                              style={{
-                                width: "25px",
-                                marginRight: "8px",
-                              }}
-                            ></img>
-                            Sq. ft.{room.sq_ft}
-                          </li>
-                          <li className="fs-6 col-6">
-                            <img
-                              src={stiltFloor}
-                              alt="icons"
-                              style={{
-                                width: "25px",
-                                marginRight: "8px",
-                              }}
-                            ></img>
-                            Floors Stilt +{room.no_of_blocks_or_floors}
-                          </li>
-                        </ul>
-                      </div>
-                      <button
-                        className="btn-form1-submit text-center"
-                        onClick={() => handleDetailsClick(room.slug)}
-                      >
-                        Details
-                      </button>
+                        <p>{room.description}</p>
+                        <div className="row room-facilities">
+                          <ul className="row">
+                            <li className="fs-6 col-6">
+                              <img
+                                src={aptIcon}
+                                alt="icons"
+                                style={{
+                                  width: "25px",
+                                  marginRight: "8px",
+                                }}
+                              ></img>
+                              Units {room.total_units}
+                            </li>
+                            <li className="fs-6 col-6">
+                              <img
+                                src={bhkIcon}
+                                alt="icons"
+                                style={{
+                                  width: "25px",
+                                  marginRight: "8px",
+                                }}
+                              ></img>
+                              BHK {room.bhk}
+                            </li>
+                            <li className="fs-6 col-6">
+                              <img
+                                src={sqft}
+                                alt="icons"
+                                style={{
+                                  width: "25px",
+                                  marginRight: "8px",
+                                }}
+                              ></img>
+                              Sq. ft.{room.sq_ft}
+                            </li>
+                            <li className="fs-6 col-6">
+                              <img
+                                src={stiltFloor}
+                                alt="icons"
+                                style={{
+                                  width: "25px",
+                                  marginRight: "8px",
+                                }}
+                              ></img>
+                              Floors Stilt +{room.no_of_blocks_or_floors}
+                            </li>
+                          </ul>
+                        </div>
 
-                      {/* {room.features && room.features.length > 0 && (
+                        {room.status === "On-going" && (
+                          <button
+                            className="btn-form1-submit text-center"
+                            onClick={() => handleDetailsClick(room.slug)}
+                          >
+                            Details
+                          </button>
+                        )}
+
+                        {/* {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
                           {room.features.map((feature, index) => {
                             const featureItems = getFeatureWithIcons(feature);
@@ -314,14 +468,14 @@ const ApartmentDetails = () => {
                           })}
                         </div>
                       )} */}
-                      {/* <Link
+                        {/* <Link
                         className="btn-form1-submit text-center"
                         to={`/apartments-chennai/${room.slug}`}
                       >
                         Details
                       </Link> */}
 
-                      {/* {room.id != "6" ? (
+                        {/* {room.id != "6" ? (
                         <Link
                           className="btn-form1-submit text-center"
                           to={
@@ -337,11 +491,11 @@ const ApartmentDetails = () => {
                           Details
                         </div>
                       )} */}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>
