@@ -104,7 +104,7 @@ function ProjectInnerPage() {
         </Container>
       </Navbar>
       <ProjectInnerPageBanner project={project} projectDetails={projectDetails}/> 
-      <ProjectsList project={project} projectDetails={projectDetails}/>
+      <ProjectsList project={project}/>
       <HomeReservation project={project}/>
       <Footer />
     </Fragment>
