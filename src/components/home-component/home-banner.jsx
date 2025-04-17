@@ -9,7 +9,7 @@ import MobileBanner1 from "../../assets/img/slider/Mobile-Banner-1.jpg";
 import { ServiceWrapper } from "../../service/ApiService";
 
 const BannerSlider = () => {
- const service = new ServiceWrapper();
+  const service = new ServiceWrapper();
   const [images, setImages] = useState([]); // Initialize as empty array
   const [imageBaseLink, setImageBaseLink] = useState("");
   const [loading, setLoading] = useState(true); // Add loading state
@@ -18,7 +18,7 @@ const BannerSlider = () => {
     service
       .callGet("list-of-banners")
       .then((response) => {
-        setImages(response); // ✅ fix here
+        setImages(response.data.Results); // ✅ fix here
         setImageBaseLink(response.data.img_base_url);
       })
       .catch((error) => {
@@ -33,34 +33,33 @@ const BannerSlider = () => {
     <>
       <header className="header slider-fade d-none d-md-block">
         <div className="owl-carousel owl-theme">
-          {/* {images && images?.map((banner) => ( */} 
-          
-            <div
-              // key={banner.id}
-              className="text-center item bg-img"
+          {/* {images && images?.map((banner) => ( */}
 
-              style={{
-                backgroundImage: `url(${slideImg1})`,
-                cursor: "pointer",
-              }}
-              onClick={() =>
-                (window.location.href = "/plots-chennai/gp-ponBhoomi")
-              }
-            >
-              <div className="v-middle caption">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-10 offset-md-1">
-                      <div className="butn-light mt-30 mb-30"></div>
-                    </div>
+          <div
+            // key={banner.id}
+            className="text-center item bg-img"
+            style={{
+              backgroundImage: `url(${slideImg2})`,
+              cursor: "pointer",
+            }}
+            onClick={() =>
+              (window.location.href = "/plots-chennai/gp-ponBhoomi")
+            }
+          >
+            <div className="v-middle caption">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-10 offset-md-1">
+                    <div className="butn-light mt-30 mb-30"></div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
           {/* ))} */}
 
           {/* Second Slide */}
-          {/* <div
+          <div
             className="text-center item bg-img"
             style={{ backgroundImage: `url(${slideImg1})` }}
             onClick={() =>
@@ -82,14 +81,13 @@ const BannerSlider = () => {
                       }}
                     >
                       Know More
-                      
                     </button>
                     <div className="butn-light mt-30 mb-30"></div>
                   </div>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
         {/* Slider Reservation */}

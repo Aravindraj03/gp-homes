@@ -17,7 +17,7 @@ const ProjectInnerPageBanner = ({ project,projectDetails }) => {
     <div
     className="header section-padding valign bg-img text-center item bg-img d-none d-md-block" 
     style={{
-      backgroundImage: `url(${CMSBannerImage})`
+      backgroundImage: `url(${bannerImage})`
       // backgroundBlendMode: 'overlay',
       // backgroundColor: 'rgba(0, 0, 0, 0.4)',
     }}

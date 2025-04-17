@@ -1131,8 +1131,8 @@ blockquote cite:before {
   }
   .nav-scroll .logo-img,
   .nav-scroll-1 .logo-img {
-    /* width: 25%; */
-    width: 40%;
+    width: 25%;
+    /* width: 40%; */
   }
   .navbar .logo {
     text-align: left;
@@ -1244,6 +1244,13 @@ blockquote cite:before {
     background: #fff;
     text-align: left;
     padding: 20px;
+  }
+}
+
+@media (max-width:567px){
+  .nav-scroll-1 .logo-img {
+    /* width: 25%; */
+    width: 40%;
   }
 }
 
@@ -3892,16 +3899,17 @@ button.mfp-arrow {
     text-decoration: none;
     line-height: 62px;
     position: relative;
-    cursor: pointer;
     transition: all 0.3s ease-out;
     letter-spacing: 3px;
     text-transform: uppercase;
+    cursor: pointer !important;
 }
 .btn-form1-submit:hover {
   /* background: #222;
     color: #f26522; */
   background: #f26522;
   color: #fff;
+  cursor: pointer;
 }
 .btn-form1-submit:focus {
   outline: none;
@@ -5837,7 +5845,7 @@ select {
       background-size: contain;
       background-repeat: no-repeat;
       top: 90px;
-    }   
+    }
     .marquee-item {
       margin: 0 20px;
     }
@@ -5887,11 +5895,5 @@ select {
 .aboutImage {
   background-color: #f8f5f0;
 }
-
-
-
-
-
-
 
 

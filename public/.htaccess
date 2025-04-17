@@ -1,15 +1,22 @@
-# Enable Rewrite Engine
+# Enable mod_rewrite
 RewriteEngine On
 
-# Redirect non-www to www
-RewriteCond %{HTTP_HOST} ^gphomes\.in [NC]
+# ----------------------------------------------------
+# 1. Redirect non-www to www (e.g. gphomes.in → www.gphomes.in)
+RewriteCond %{HTTP_HOST} ^gphomes\.in$ [NC]
 RewriteRule ^(.*)$ https://www.gphomes.in/$1 [L,R=301]
 
-# Redirect /home to root
-RewriteCond %{THE_REQUEST} /home [NC]
+# ----------------------------------------------------
+# 2. Redirect /home to /
+# Works for:
+#   - https://gphomes.in/home
+#   - https://www.gphomes.in/home
+RewriteCond %{THE_REQUEST} \s/home[\s?] [NC]
 RewriteRule ^home$ / [L,R=301]
 
-# Ensure React handles routing
+# ----------------------------------------------------
+# 3. React.js routing fallback for non-existent files/folders
+# This makes React handle all internal routes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule ^ index.html [L]

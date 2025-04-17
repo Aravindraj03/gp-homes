@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import slideImg2 from "../../assets/img/projects/BG-1.jpg";
+import slideImg2 from "../../assets/img/projects/videobg.jpg";
 
-const HomeReservation = ({ project }) => {
+const HomeReservation = ({ project, selectedPlotData }) => {
+  console.log(selectedPlotData, "selectedPlotData------------------");
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
     plot: project?.name || "",
     bhk: project?.location?.split(" ")[0] || "",
   });
-  
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
@@ -16,7 +16,7 @@ const HomeReservation = ({ project }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({ ...prev, [name]: "" })); 
+    setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
   const handleBlur = (e) => {
@@ -61,7 +61,7 @@ const HomeReservation = ({ project }) => {
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       return;
-    }   
+    }
 
     const payload = {
       name: formData.name,
@@ -114,16 +114,24 @@ const HomeReservation = ({ project }) => {
                 help! Reach out to us, and we’ll get back to you with all the
                 details soon.
               </h6>
-              <div className="reservations mb-30">
-                <div className="icon color-1">
-                  <span className="flaticon-call"></span>
-                </div>
+              <div className="col-md-12 reservations mb-30 d-none d-md-block">
                 <div className="text">
-                  <p className="color-1">Contact Us</p>
-                  <a className="color-1" href="tel:855-100-4444">
+                  <div className="d-flex">
+                    <div className="icon color-1 me-2">
+                      <span className="flaticon-call fs-5"></span>
+                    </div>
+                    <p className="color-1">Contact Us</p>
+                  </div>
+
+                  <a className="color-1 fs-5" href="tel:9344481444">
                     9344481444
                   </a>
+                  <br></br>
+                  <a className="color-1 fs-5" href="tel:6384003003">
+                    6384003003
+                  </a>
                 </div>
+                         
               </div>
             </div>
 
