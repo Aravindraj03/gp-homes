@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import slideImg2 from "../../assets/img/projects/BG-1.jpg";
 
-const HomeReservation = ({ project }) => {
+const HomeReservation = ({ project,selectedPlotData }) => {
+
+  console.log(selectedPlotData,"selectedPlotData------------------")
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",

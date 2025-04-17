@@ -13,19 +13,20 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
 import PlotTable from "./plots-data";
+import PonBhoomiReservation from "./ponbhoomi-reservation";
 
 function ProjectDetailPage() {
   const { slug } = useParams(); // Get slug from URL
   const project = projectsData.find((p) => p.slug === slug); // Find project by slug
 
-    // ✅ Move hooks outside the conditional check
-    const [selectedPlot, setSelectedPlot] = useState(null);
-    const homeReservationRef = useRef(null);
-  
-    const handleSelectPlot = (plot) => {
-      setSelectedPlot(plot); 
-      homeReservationRef.current?.scrollIntoView({ behavior: "smooth" }); 
-    };
+  // ✅ Move hooks outside the conditional check
+  const [selectedPlot, setSelectedPlot] = useState(null);
+  const homeReservationRef = useRef(null);
+
+  const handleSelectPlot = (plot) => {
+    setSelectedPlot(plot);
+    homeReservationRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   if (!project) {
     return <h2>Project not found</h2>;
@@ -100,7 +101,6 @@ function ProjectDetailPage() {
 
       {slug === "gp-ponBhoomi" && (
         <>
-          
           <PlotTable onSelectPlot={handleSelectPlot} />
         </>
       )}
@@ -111,10 +111,14 @@ function ProjectDetailPage() {
           <PlotsVideo />
         </>
       )} */}
-      
+
       {/* Attach ref to HomeReservation */}
       <div ref={homeReservationRef}>
-        <HomeReservation project={project} selectedPlotData={selectedPlot} />
+        {slug === "gp-ponBhoomi" ? (
+          <PonBhoomiReservation selectedPlotData={selectedPlot} />
+        ) : (
+          <HomeReservation project={project} selectedPlotData={selectedPlot} />
+        )}
       </div>
       <Footer />
     </Fragment>
