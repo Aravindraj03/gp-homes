@@ -376,7 +376,7 @@ const projectsData = [
       entertainment_zone: [
         "Chennai Trade Centre – 6 km",
         "Shri Kamachi Amman Temple(Mangadu) – 6.3 km",
-        "Form Vijaya Mall – 9.2 kme",
+        "Form Vijaya Mall – 9.2 km",
         "Phoenix Market City – 13 km",
       ],
     },
