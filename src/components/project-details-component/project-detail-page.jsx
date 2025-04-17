@@ -13,6 +13,7 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
 import PlotTable from "./plots-data";
+import PonBhoomiReservation from "./ponbhoomi-reservation";
 
 function ProjectDetailPage() {
   const { slug } = useParams(); // Get slug from URL
@@ -128,7 +129,6 @@ function ProjectDetailPage() {
 
       {slug === "gp-ponBhoomi" && (
         <>
-          
           <PlotTable onSelectPlot={handleSelectPlot} />
         </>
       )}
@@ -139,10 +139,14 @@ function ProjectDetailPage() {
           <PlotsVideo />
         </>
       )} */}
-      
+
       {/* Attach ref to HomeReservation */}
       <div ref={homeReservationRef}>
-        <HomeReservation project={project} selectedPlotData={selectedPlot} />
+        {slug === "gp-ponBhoomi" ? (
+          <PonBhoomiReservation selectedPlotData={selectedPlot} />
+        ) : (
+          <HomeReservation project={project} selectedPlotData={selectedPlot} />
+        )}
       </div>
       <Footer />
     </Fragment>

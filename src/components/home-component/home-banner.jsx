@@ -33,30 +33,30 @@ const BannerSlider = () => {
     <>
       <header className="header slider-fade d-none d-md-block">
         <div className="owl-carousel owl-theme">
-          {/* {images &&
-            images?.map((banner) => ( */}
-              <div
-                // key={banner.id}
-                className="text-center item bg-img"
-                style={{
-                  backgroundImage: `url(${slideImg2})`,
-                  cursor: "pointer",
-                }}
-                onClick={() =>
-                  (window.location.href = "/plots-chennai/gp-ponBhoomi")
-                }
-              >
-                <div className="v-middle caption">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-md-10 offset-md-1">
-                        <div className="butn-light mt-30 mb-30"></div>
-                      </div>
-                    </div>
+          {/* {images && images?.map((banner) => ( */}
+
+          <div
+            // key={banner.id}
+            className="text-center item bg-img"
+            style={{
+              backgroundImage: `url(${slideImg2})`,
+              cursor: "pointer",
+            }}
+            onClick={() =>
+              (window.location.href = "/plots-chennai/gp-ponBhoomi")
+            }
+          >
+            <div className="v-middle caption">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-10 offset-md-1">
+                    <div className="butn-light mt-30 mb-30"></div>
                   </div>
                 </div>
               </div>
-            {/* ))} */}
+            </div>
+          </div>
+          {/* ))} */}
 
           {/* Second Slide */}
           <div
@@ -81,7 +81,6 @@ const BannerSlider = () => {
                       }}
                     >
                       Know More
-                      
                     </button>
                     <div className="butn-light mt-30 mb-30"></div>
                   </div>
