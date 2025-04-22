@@ -11,7 +11,7 @@ const ImagePopup = ({ pageType = "home" }) => {
 
 //   console.log(location.pathname,"location------------")
   const [formData, setFormData] = useState({
-    firstName: "",
+    name: "",
     mobile: "",
     email: "",
   });
@@ -50,12 +50,41 @@ const ImagePopup = ({ pageType = "home" }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     console.log("Form submitted:", formData);
+//     setShowPopup(false);
+//     setPopupTimer(120000); // 2 minutes
+//     // Optional: Add API integration here
+//   };
+const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setShowPopup(false);
-    setPopupTimer(120000); // 2 minutes
-    // Optional: Add API integration here
+    try {
+      const response = await fetch("https://cms.gphomes.in/api/contact-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          mobile: formData.mobile,
+          location: "Popup Enquiry",
+          message: "Popup Enquiry",
+        }),
+      });
+
+      const data = await response.json();
+      alert("Form submitted Successfully:");
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+      });
+    } catch (error) {
+      console.error("Form submission failed:", error);
+    }
   };
 
   return (
@@ -155,7 +184,7 @@ const PopupForm = ({
     className="position-absolute bottom-0 start-50 translate-middle-x p-2 text-center"
     style={{ width: isMobile ? "80%" : "60%" }}
   >
-    {["firstName", "mobile", "email"].map((field, index) => (
+    {["name", "mobile", "email"].map((field, index) => (
       <div className="mb-1" key={field}>
         <input
           type={
@@ -164,8 +193,8 @@ const PopupForm = ({
           className="form-control p-1 px-3 m-0"
           name={field}
           placeholder={
-            field === "firstName"
-              ? "First Name"
+            field === "name"
+              ? "Name"
               : field === "mobile"
               ? "Mobile Number"
               : "Email"
