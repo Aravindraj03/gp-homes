@@ -190,7 +190,7 @@ const PopupForm = ({
           type={
             field === "email" ? "email" : field === "mobile" ? "tel" : "text"
           }
-          className="form-control p-1 px-3 m-0"
+          className="form-control p-1 p-md-2 px-3 m-0"
           name={field}
           placeholder={
             field === "name"
