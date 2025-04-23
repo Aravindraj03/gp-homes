@@ -4,12 +4,13 @@ import MobilePopup from "../../assets/img/popup/mobile-form.jpg";
 import { useLocation, useParams } from "react-router-dom";
 
 const ImagePopup = ({ pageType = "home" }) => {
-
   const [showPopup, setShowPopup] = useState(false);
+  const [showSuccessTicker, setShowSuccessTicker] = useState(false);
+  const [loading, setLoading] = useState(false);
   const intervalRef = useRef(null);
   const location = useLocation();
 
-//   console.log(location.pathname,"location------------")
+  //   console.log(location.pathname,"location------------")
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -27,18 +28,6 @@ const ImagePopup = ({ pageType = "home" }) => {
     }, delay);
   };
 
-  // useEffect(() => {
-  //   let initialDelay = 0;
-  //   if (location.pathname === "/" || location.pathname === "/home") {
-  //     initialDelay = 7000;
-  //   } else {
-  //     initialDelay = 15000;
-  //   }    
-  //   setPopupTimer(initialDelay);
-  //   return () => clearPopupTimers();
-    
-  // }, [location.pathname]);
-
   const handleClose = () => {
     setShowPopup(false);
     setPopupTimer(120000); // 2 minutes
@@ -54,9 +43,11 @@ const ImagePopup = ({ pageType = "home" }) => {
     const twelveHours = 12 * 60 * 60 * 1000;
     return Date.now() - parseInt(lastSubmitted, 10) > twelveHours;
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Start loading
+
     try {
       const response = await fetch("https://cms.gphomes.in/api/contact-form", {
         method: "POST",
@@ -72,37 +63,35 @@ const ImagePopup = ({ pageType = "home" }) => {
           message: "Popup Enquiry",
         }),
       });
-  
-      const data = await response.json();
-      alert("Form submitted Successfully:");
+
       setFormData({ name: "", mobile: "" });
-  
-      // ✅ Store timestamp in localStorage
       localStorage.setItem("popupSubmittedAt", Date.now().toString());
-  
-      // ✅ Close popup
+
       setShowPopup(false);
-  
+      setShowSuccessTicker(true);
+
+      setTimeout(() => setShowSuccessTicker(false), 3000);
     } catch (error) {
       console.error("Form submission failed:", error);
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
-  
 
   useEffect(() => {
     if (!shouldShowPopup()) return;
-  
+
     let initialDelay = 0;
     if (location.pathname === "/" || location.pathname === "/home") {
       initialDelay = 7000;
     } else {
       initialDelay = 15000;
     }
-  
+
     setPopupTimer(initialDelay);
     return () => clearPopupTimers();
   }, [location.pathname]);
-  
+
   return (
     <>
       {showPopup && (
@@ -139,6 +128,7 @@ const ImagePopup = ({ pageType = "home" }) => {
                     formData={formData}
                     handleChange={handleChange}
                     handleSubmit={handleSubmit}
+                    loading={loading} // <-- Add this line
                   />
                 </div>
               </div>
@@ -178,12 +168,27 @@ const ImagePopup = ({ pageType = "home" }) => {
                     handleChange={handleChange}
                     handleSubmit={handleSubmit}
                     isMobile
+                    loading={loading}
                   />
                 </div>
               </div>
             </div>
           </div>
         </>
+      )}
+      {showSuccessTicker && (
+        <div
+          className="position-fixed mt-3 top-0 left-0 start-50 translate-middle-x bg-success text-white px-4 py-2 rounded shadow"
+          style={{
+            zIndex: 9999,
+            zIndex: "9999",
+            padding: "7px !important",
+            textAlign: "center",
+            minWidth: "285px",
+          }}
+        >
+          ✅ Form submitted successfully!
+        </div>
       )}
     </>
   );
@@ -194,6 +199,7 @@ const PopupForm = ({
   handleChange,
   handleSubmit,
   isMobile = false,
+  loading
 }) => (
   <form
     onSubmit={handleSubmit}
@@ -211,9 +217,9 @@ const PopupForm = ({
           placeholder={
             field === "name"
               ? "Name"
-              // : field === "mobile"
-              : "Mobile Number"
-              // : "Email"
+              : // : field === "mobile"
+                "Mobile Number"
+            // : "Email"
           }
           value={formData[field]}
           onChange={handleChange}
@@ -238,9 +244,12 @@ const PopupForm = ({
         backgroundColor: "#ff671f",
         borderRadius: "10px",
         fontWeight: isMobile ? "500" : "700",
+        opacity: loading ? 0.6 : 1,
+        pointerEvents: loading ? "none" : "auto",
       }}
+      disabled={loading}
     >
-      SUBMIT
+      {loading ? "Submitting..." : "SUBMIT"}
     </button>
   </form>
 );
