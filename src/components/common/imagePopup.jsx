@@ -13,7 +13,7 @@ const ImagePopup = ({ pageType = "home" }) => {
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
-    email: "",
+    // email: "",
   });
 
   const clearPopupTimers = () => {
@@ -27,19 +27,17 @@ const ImagePopup = ({ pageType = "home" }) => {
     }, delay);
   };
 
-  useEffect(() => {
-    // Set initial popup time
-    // const initialDelay = pageType === "home" ? 7000 : 15000;
-    let initialDelay = 0;
-    if (location.pathname === "/" || location.pathname === "/home") {
-      initialDelay = 7000;
-    } else {
-      initialDelay = 15000;
-    }    
-    setPopupTimer(initialDelay);
-    return () => clearPopupTimers();
+  // useEffect(() => {
+  //   let initialDelay = 0;
+  //   if (location.pathname === "/" || location.pathname === "/home") {
+  //     initialDelay = 7000;
+  //   } else {
+  //     initialDelay = 15000;
+  //   }    
+  //   setPopupTimer(initialDelay);
+  //   return () => clearPopupTimers();
     
-  }, [location.pathname]);
+  // }, [location.pathname]);
 
   const handleClose = () => {
     setShowPopup(false);
@@ -50,14 +48,14 @@ const ImagePopup = ({ pageType = "home" }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log("Form submitted:", formData);
-//     setShowPopup(false);
-//     setPopupTimer(120000); // 2 minutes
-//     // Optional: Add API integration here
-//   };
-const handleSubmit = async (e) => {
+  const shouldShowPopup = () => {
+    const lastSubmitted = localStorage.getItem("popupSubmittedAt");
+    if (!lastSubmitted) return true;
+    const twelveHours = 12 * 60 * 60 * 1000;
+    return Date.now() - parseInt(lastSubmitted, 10) > twelveHours;
+  };
+  
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch("https://cms.gphomes.in/api/contact-form", {
@@ -68,25 +66,43 @@ const handleSubmit = async (e) => {
         },
         body: JSON.stringify({
           name: formData.name,
-          email: formData.email,
+          email: "Mail",
           mobile: formData.mobile,
           location: "Popup Enquiry",
           message: "Popup Enquiry",
         }),
       });
-
+  
       const data = await response.json();
       alert("Form submitted Successfully:");
-      setFormData({
-        name: "",
-        email: "",
-        mobile: "",
-      });
+      setFormData({ name: "", mobile: "" });
+  
+      // ✅ Store timestamp in localStorage
+      localStorage.setItem("popupSubmittedAt", Date.now().toString());
+  
+      // ✅ Close popup
+      setShowPopup(false);
+  
     } catch (error) {
       console.error("Form submission failed:", error);
     }
   };
+  
 
+  useEffect(() => {
+    if (!shouldShowPopup()) return;
+  
+    let initialDelay = 0;
+    if (location.pathname === "/" || location.pathname === "/home") {
+      initialDelay = 7000;
+    } else {
+      initialDelay = 15000;
+    }
+  
+    setPopupTimer(initialDelay);
+    return () => clearPopupTimers();
+  }, [location.pathname]);
+  
   return (
     <>
       {showPopup && (
@@ -104,7 +120,7 @@ const handleSubmit = async (e) => {
             >
               <div
                 className="modal-content position-relative p-0 border-0 w-100"
-                style={{ maxWidth: "640px", margin: "0 auto" }}
+                style={{ maxWidth: "700px", margin: "0 auto" }}
               >
                 <div className="modal-body p-0 position-relative w-100">
                   <img
@@ -181,23 +197,23 @@ const PopupForm = ({
 }) => (
   <form
     onSubmit={handleSubmit}
-    className="position-absolute bottom-0 start-50 translate-middle-x p-2 text-center"
-    style={{ width: isMobile ? "80%" : "60%" }}
+    className="position-absolute bottom-0 start-50 translate-middle-x p-2 p-md-3 text-center"
+    style={{ width: isMobile ? "80%" : "70%" }}
   >
-    {["name", "mobile", "email"].map((field, index) => (
-      <div className="mb-1" key={field}>
+    {["name", "mobile"].map((field, index) => (
+      <div className="mb-2" key={field}>
         <input
           type={
             field === "email" ? "email" : field === "mobile" ? "tel" : "text"
           }
-          className="form-control p-1 p-md-2 px-3 m-0"
+          className="form-control p-2 py-md-2 px-3 m-0"
           name={field}
           placeholder={
             field === "name"
               ? "Name"
-              : field === "mobile"
-              ? "Mobile Number"
-              : "Email"
+              // : field === "mobile"
+              : "Mobile Number"
+              // : "Email"
           }
           value={formData[field]}
           onChange={handleChange}
@@ -210,14 +226,14 @@ const PopupForm = ({
             fontWeight: "700",
             color: "grey",
             borderRadius: "10px",
-            height: field === "email" && isMobile ? "30.5px" : undefined,
+            // height: field === "email" && isMobile ? "30.5px" : undefined,
           }}
         />
       </div>
     ))}
     <button
       type="submit"
-      className={`p-1 w-50 text-white fs-5`}
+      className={`p-2 w-50 text-white fs-5`}
       style={{
         backgroundColor: "#ff671f",
         borderRadius: "10px",
