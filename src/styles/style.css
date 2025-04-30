@@ -1252,6 +1252,11 @@ blockquote cite:before {
     /* width: 25%; */
     width: 40%;
   }
+  .nav-scroll .logo-img,
+  .nav-scroll-1 .logo-img {
+    /* width: 25%; */
+    width: 40%;
+  }
 }
 
 /* ======= Header style ======= */

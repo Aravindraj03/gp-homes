@@ -51,7 +51,7 @@ function ProjectInnerPage() {
 
           <Navbar.Collapse id="navbar">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/home">
+              <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
 

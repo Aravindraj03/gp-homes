@@ -45,6 +45,7 @@ import ApartmentPage from "./apartments-component/apartments-page";
 import PlotsPage from "./plots-component/plots-page";
 import NotFound from "./not-found";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import ImagePopup from "./common/imagePopup";
 
 function App() {
   useEffect(() => {
@@ -60,10 +61,11 @@ function App() {
         <SEOHandler />
         <LoadScripts />
         <ScrollToTop />
+        <ImagePopup/>
         <Fragment>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/home" element={<HomePage />} />
+            {/* <Route path="/home" element={<HomePage />} /> */}
             <Route
               path="/apartments-chennai/:slug"
               element={<ProjectInnerPage />}
