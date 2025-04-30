@@ -39,31 +39,43 @@ const featureIcons = {
   "Sq. ft.": sqft,
   Floors: stiltFloor,
   Blocks: stiltFloor,
-  Black: roadIcon,
+  "Black-Top Roads": roadIcon,
+  Roads: roadIcon,
+  "Well laid Tar Roads": roadIcon,
+  "Well Laid Blacktop Roads": roadIcon,
+  "EB Provided": ebIcon,
   CCTV: cctvIcon,
-  EB: ebIcon,
-  Fenced: wallIcon,
+  "EB": ebIcon,
+  Electricity: ebIcon,
+  "Fenced Wall": wallIcon,
+  Compound: wallIcon,
+  Wall: wallIcon,
+  "Ready To Construct": readyToConstruct,
+  "Ready for Construction": readyToConstruct,
   Ready: readyToConstruct,
-  "24/7": security,
-  Potable: groundwater,
-  Well: roadICon,
-  Fully: compoundWall,
+  "24/7 Security": security,
+  Security: security,
+  "Potable Water": groundwater,
+  Water: groundwater,
+  "Fully Compounded": compoundWall,
+  "Fully Compound": compoundWall,
+  "Branded Solar Street Lights": solarLight,
   Solar: solarLight,
-  Grand: archIcon
+  Lights: solarLight,
+  "Grand Entrance Arch": archIcon,
+  Arch: archIcon,
 };
 
 const getFeatureWithIcons = (feature) => {
   return feature
-    .split(",") // Split features into an array
+    .split(",")
     .map((item) => {
       const trimmedItem = item.trim();
-      const matchedKey = Object.keys(featureIcons).find((key) =>
-        trimmedItem.includes(key)
-      );
+      const iconImage = featureIcons[trimmedItem];
 
       return {
         text: trimmedItem,
-        iconClass: matchedKey ? featureIcons[matchedKey] : "bi bi-check-circle",
+        icon: iconImage,
       };
     });
 };
@@ -302,7 +314,7 @@ const ApartmentDetails = () => {
             </button>
           </div> */}
 
-<div className="col-md-4">
+          <div className="col-md-4">
             <button
               onClick={() => handleFilter("On-going")}
               className={`btn-form1-submit mb-30 fs-5 ${
@@ -351,11 +363,11 @@ const ApartmentDetails = () => {
                         backgroundImage: `url(https://cms.gphomes.in//storage/${room.banner_image})`,
                       }}
                     >
-                    {/* <span className="category">
+                      {/* <span className="category">
                       <Link to="/">Book</Link>
                     </span> */}
 
-<div className="square-container d-flex align-items-end justify-content-end">
+                      <div className="square-container d-flex align-items-end justify-content-end">
                         <div
                           className="box-title w-100 p-2"
                           style={{ backgroundColor: "#f26522" }}
@@ -373,50 +385,26 @@ const ApartmentDetails = () => {
                         <p>{room.description}</p>
                         <div className="row room-facilities">
                           <ul className="row">
-                            <li className="fs-6 col-6">
-                              <img
-                                src={aptIcon}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Units {room.total_units}
-                            </li>
-                            {/* <li className="fs-6 col-6">
-                              <img
-                                src={bhkIcon}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              BHK {room.bhk}
-                            </li> */}
-                            <li className="fs-6 col-6">
-                              <img
-                                src={sqft}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Sq. ft.{room.sq_ft}
-                            </li>
-                            {/* <li className="fs-6 col-6">
-                              <img
-                                src={stiltFloor}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Floors Stilt +{room.no_of_blocks_or_floors}
-                            </li> */}
+                            {getFeatureWithIcons(room.features).map(
+                              (feat, index) => (
+                                <li
+                                  className="fs-6 col-6 d-flex align-items-center mb-2"
+                                  key={index}
+                                >
+                                  <img
+                                    src={feat.icon}
+                                    alt={feat.text}
+                                    style={{
+                                      width: "25px",
+                                      height: "25px",
+                                      objectFit: "contain",
+                                      marginRight: "8px",
+                                    }}
+                                  />
+                                  <span>{feat.text}</span>
+                                </li>
+                              )
+                            )}
                           </ul>
                         </div>
 
@@ -428,12 +416,11 @@ const ApartmentDetails = () => {
                             Details
                           </button>
                         )}
-
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>

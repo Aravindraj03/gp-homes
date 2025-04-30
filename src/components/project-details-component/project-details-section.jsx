@@ -11,9 +11,10 @@ import image4 from "../../assets/img/spa/1.jpg";
 import "react-image-lightbox/style.css";
 import Lightbox from "react-image-lightbox";
 
-const ProjectDetailSection = ({ project }) => {
+const ProjectDetailSection = ({ project,projectDetails}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
+  console.log("Project Details section", projectDetails);
 
   return (
     <section
@@ -35,6 +36,7 @@ const ProjectDetailSection = ({ project }) => {
               ))
             ) : (
               <p className="mb-30">{project.description}</p>
+              
             )}
             <div className="row">
               {(project.specifications_title ||
@@ -48,6 +50,9 @@ const ProjectDetailSection = ({ project }) => {
                     <p>{project.specifications_desc}</p>
                   )}
                   {project.facilities?.length > 0 && (
+                    
+                    
+                    
                     <div className="row room-facilities">
                       {project.facilities.map((facility, facilityIndex) => (
                         <div className="col-md-4" key={facilityIndex}>
@@ -518,6 +523,7 @@ const ProjectDetailSection = ({ project }) => {
         </div> */}
       </div>
     </section>
+    
   );
 };
 

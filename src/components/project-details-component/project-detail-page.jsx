@@ -54,7 +54,7 @@ function ProjectDetailPage() {
     
       fetchApartmentDetails();
     }, [slug]);
-    console.log(projectDetails,"projectDetails plot-details-----------------------------")
+    console.log(projectDetails,"projectDetails plot-detailstititititit")
 
     if (!project) {
       return <h2>Project not found</h2>;
@@ -133,7 +133,7 @@ function ProjectDetailPage() {
         </>
       )}
 
-      <ProjectDetailSection project={project} />
+      <ProjectDetailSection project={project} projectDetails={projectDetails} />
       {/* {slug === "gp-ponBhoomi" && (
         <>
           <PlotsVideo />

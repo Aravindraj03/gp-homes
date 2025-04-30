@@ -48,7 +48,7 @@ function ProjectInnerPage() {
   console.log(projectDetails,"projectDetails apartment-details-----------------------------")
     
   if (!project) {
-    return <h2>Project not found</h2>;
+    return <h2>Project not found</h2>; 
   }
 
   return (
@@ -117,7 +117,7 @@ function ProjectInnerPage() {
         </Container>
       </Navbar>
       <ProjectInnerPageBanner project={project} projectDetails={projectDetails}/> 
-      <ProjectsList project={project} />
+      <ProjectsList project={project} projectDetails={projectDetails}/>
       <HomeReservation project={project}/>
       <Footer />
     </Fragment>

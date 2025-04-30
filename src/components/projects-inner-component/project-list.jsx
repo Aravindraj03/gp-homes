@@ -10,35 +10,35 @@ import listimg5 from "../../assets/img/slider/2.jpg";
 
 
 
-const ProjectsList = ({ project }) => {
-  const projects = project.projects_types;
+const ProjectsList = ({ project, projectDetails }) => {
+  const projects = projectDetails?.projects[0].flats || [];
+  const projectFacilities = projectDetails?.project_amenity || [];
 
   return (
     <section className="section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
-            {projects.map((project, index) => (
+          <div className="col-md-12
+          ">
+            {projects.map((flat, index) => (
               <div
-                key={project.id}
+                key={flat.id}
                 className={`rooms2 mb-90 ${
                   index % 2 !== 0 ? "left" : ""
-                } animate-box`}
+                } `}
                 data-animate-effect="fadeInUp"
               >
                 <figure className="col-md-6">
-                  <img src={project.image} alt="" className="img-fluid" />{" "}
+                  <img
+                    src={`https://cms.gphomes.in/storage/${flat.flat_image}`}
+                    alt={flat.name}
+                    className="img-fluid"
+                  />
                 </figure>
 
                 <div className="caption">
-                  <h3>{project.type}</h3>
-                  <h4>
-                    {/* <a href="room-details.html">{project.name}</a> */}
-                    <Link to={`/plots-chennai/${project.slug}`}>
-                      {project.name}
-                    </Link>
-                  </h4>
-                  <p>{project.description}</p>
+                  <h3>{flat.name}</h3>
+                  <p>{flat.short_description}</p>
                   <div className="row room-facilities">
                     {project.facilities.map((facility, facilityIndex) => (
                       <div className="col-md-4" key={facilityIndex}>
@@ -54,18 +54,15 @@ const ProjectsList = ({ project }) => {
                   <div className="info-wrapper">
                     <div className="more">
                       <Link
-                        to={`/plots-chennai/${project.slug}`}
+                        to={`/plots-chennai/${flat.id}`}
                         className="link-btn"
                         tabIndex="0"
-                        style={{fontWeight:"800"}}
+                        style={{ fontWeight: "800" }}
                       >
                         Details <i className="ti-arrow-right"></i>
                       </Link>
                     </div>
                     <div className="butn-dark">
-                      {/* <Link to="#reservation-sec" data-scroll-nav="1">
-                        <span>Book Now</span>
-                      </Link> */}
                       <ScrollLink
                         to="reservation-sec"
                         smooth={true}
@@ -86,4 +83,4 @@ const ProjectsList = ({ project }) => {
   );
 };
 
-export default ProjectsList;
+export default ProjectsList
