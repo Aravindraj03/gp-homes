@@ -1456,7 +1456,10 @@ const PlotTable = ({ onSelectPlot }) => {
     },
   ];
 
-  const soldOutPlots = [1, 4, 5, 10, 11, 12, 19, 20, 27, 92, 93, 99, 178, 179, 180, 181, 182, 183, 184, 185, 197, 198, 200,]; // Define sold-out plot numbers
+  const soldOutPlots = [
+    1, 4, 5, 10, 11, 12, 19, 20, 27, 92, 93, 99, 178, 179, 180, 181, 182, 183,
+    184, 185, 197, 198, 200,
+  ]; // Define sold-out plot numbers
   const [filters, setFilters] = useState({
     plotNo: "",
     areaSqFt: "",
@@ -1635,7 +1638,11 @@ const PlotTable = ({ onSelectPlot }) => {
                 </div>
 
                 <div className="col3 c6">
-                  <button type="submit" className="btn-form1-submit" style={{backgroundColor:"#f26522"}}>
+                  <button
+                    type="submit"
+                    className="btn-form1-submit"
+                    style={{ backgroundColor: "#f26522" }}
+                  >
                     Check Now
                   </button>
                 </div>
@@ -1834,7 +1841,11 @@ const PlotTable = ({ onSelectPlot }) => {
                   <button
                     key={index}
                     className="button bg-danger text-white"
-                    style={{ border: "1px solid grey", padding: "10px", minWidth: "50px" }}
+                    style={{
+                      border: "1px solid grey",
+                      padding: "10px",
+                      minWidth: "50px",
+                    }}
                   >
                     {soldOut}
                   </button>
@@ -1845,7 +1856,7 @@ const PlotTable = ({ onSelectPlot }) => {
         </div>
       </div>
       <div
-      className="container-fuild mt-4"
+        className="container mt-4"
         style={{
           width: "100%",
           // height: "100vh",
@@ -1855,11 +1866,7 @@ const PlotTable = ({ onSelectPlot }) => {
           alignItems: "center",
         }}
       >
-        <img
-          src={FloorPlans}
-          alt="Floor Plans"
-          style={{ width: "100%" }}
-        />
+        <img src={FloorPlans} alt="Floor Plans" style={{ width: "100%" }} />
       </div>
     </>
   );

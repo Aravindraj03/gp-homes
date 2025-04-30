@@ -1131,7 +1131,7 @@ blockquote cite:before {
   }
   .nav-scroll .logo-img,
   .nav-scroll-1 .logo-img {
-    width: 25%;
+    width: 40%;
     /* width: 40%; */
   }
   .navbar .logo {
@@ -1247,12 +1247,10 @@ blockquote cite:before {
   }
 }
 
-@media (max-width:567px){
   .nav-scroll-1 .logo-img {
-    /* width: 25%; */
-    width: 40%;
+    width: 25%;
+    /* width: 40%; */
   }
-}
 
 /* ======= Header style ======= */
 .header {
