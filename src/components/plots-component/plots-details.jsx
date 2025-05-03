@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import room1 from "../../assets/img/rooms/blazingstar.jpg";
 import room2 from "../../assets/img/rooms/breezeway.jpg";
@@ -31,7 +31,6 @@ import roadICon from "../../assets/img/icons/Road.png";
 import compoundWall from "../../assets/img/icons/compund-wall.png";
 import solarLight from "../../assets/img/icons/Solar-lights.png";
 import archIcon from "../../assets/img/icons/Arch.png";
-import { ServiceWrapper } from "../../service/ApiService";
 
 const featureIcons = {
   Units: aptIcon,
@@ -215,60 +214,23 @@ const roomsData = [
 ];
 
 const ApartmentDetails = () => {
-  const [selectedCategory, setSelectedCategory] = useState();
-    const [selectedFilter, setSelectedFilter] = useState("On-going"); // Default focus
-    // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
-    const [visibleRooms, setVisibleRooms] = useState([]);
-    const [dataDetails, setDataDetails] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedFilter, setSelectedFilter] = useState("Plots-Ongoing"); // Default focus
+  // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
+  const [visibleRooms, setVisibleRooms] = useState(
+    roomsData.filter((room) => room.category === "Plots-Ongoing")
+  );
 
-    const handleFilter = (category) => {
-      setSelectedFilter(category);
-      const filteredRooms = dataDetails.filter(
-        (room) => room.status === category
-      );
-      setVisibleRooms(filteredRooms);
-    };
+  const handleFilter = (category) => {
+    setSelectedCategory(category);
+    setSelectedFilter(category);
+    const filteredRooms =
+      category === "All"
+        ? roomsData
+        : roomsData.filter((room) => room.category === category);
+    setVisibleRooms(filteredRooms.slice(0, 12)); // Limit to 9 items
+  };
 
-    const service = new ServiceWrapper();
-      useEffect(() => {
-        service
-          .callGet("list-of-apartments",)
-          .then((response) => {
-            const data = response.data.Results;
-            setDataDetails(data);
-      
-            // Initially filter "On-going"
-            const initialFiltered = data.filter(room => room.status === "On-going");
-            setVisibleRooms(initialFiltered);
-          })
-          .catch((error) => {
-            console.error("Banner fetch error", error);
-          });
-      }, []);
-      console.log(dataDetails, "dataDetails-------------------");
-    
-      const navigate = useNavigate();
-    
-      const handleDetailsClick = async (slugLink) => {
-        try {
-          const response = await fetch("https://cms.gphomes.in/api/apartment-details", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
-            },
-            body: JSON.stringify({ slug: slugLink }),
-          });
-    
-          const data = await response.json();
-          console.log("Response:", data);
-
-    
-          navigate(`/apartments-chennai/${slugLink}`);
-        } catch (error) {
-          console.error("API call failed", error);
-        }
-      };
   return (
     <section
       className="rooms1 section-padding bg-cream plots-page"
@@ -284,8 +246,7 @@ const ApartmentDetails = () => {
             </h1>
             <h2 className="mb-3">Residential Land For Sale in Chennai</h2>
             <p>
-              GP Homes, Residential Plots For Sale, CMDA Approved Plots, Real
-              Estate Developers in Chennai
+            GP Homes, Residential Plots For Sale, CMDA Approved Plots, Real Estate Developers in Chennai
             </p>
           </div>
         </div>
@@ -302,11 +263,14 @@ const ApartmentDetails = () => {
             </button>
           </div> */}
 
-<div className="col-md-4">
+          <div className="col-md-4">
             <button
-              onClick={() => handleFilter("On-going")}
+              onClick={() => handleFilter("Plots-Ongoing")}
+              // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "On-going" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Ongoing"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               Ongoing
@@ -315,9 +279,12 @@ const ApartmentDetails = () => {
 
           <div className="col-md-4">
             <button
-              onClick={() => handleFilter("Up-coming")}
+              onClick={() => handleFilter("Plots-Upcoming")}
+              // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Up-coming" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Upcoming"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               UP Coming
@@ -326,9 +293,12 @@ const ApartmentDetails = () => {
 
           <div className="col-md-4">
             <button
-              onClick={() => handleFilter("Completed")}
+              onClick={() => handleFilter("Plots-Completed")}
+              // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Completed" ? "btn-form1-submit-active" : ""
+                selectedFilter === "Plots-Completed"
+                  ? "btn-form1-submit-active"
+                  : ""
               }`}
             >
               Completed
@@ -337,98 +307,119 @@ const ApartmentDetails = () => {
         </div>
       </div>
 
+      {/* <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="section-subtitle">GP Homes</div>
+            <div className="section-title">Our Projects</div>
+          </div>
+        </div>
+      </div> */}
+
       <div className="rooms3">
         <div className="container">
           <div className="row">
-            {visibleRooms
-              .filter((room) => room.project_type === "3")
-              .map((room) => (
-                <div className="col-md-4" key={room.id}>
-                  <div className="square-flip">
-                    <div
-                      className="square bg-img"
-                      style={{
-                        backgroundImage: `url(https://cms.gphomes.in//storage/${room.banner_image})`,
-                      }}
-                    >
+            {visibleRooms.map((room) => (
+              <div className="col-md-4" key={room.id}>
+                <div className="square-flip">
+                  <div
+                    className="square bg-img"
+                    style={{ backgroundImage: `url(${room.image})` }}
+                  >
                     {/* <span className="category">
                       <Link to="/">Book</Link>
                     </span> */}
 
-<div className="square-container d-flex align-items-end justify-content-end">
-                        <div
-                          className="box-title w-100 p-2"
-                          style={{ backgroundColor: "#f26522" }}
-                        >
-                          <h6>{room.location}</h6>
-                          <h4>{room.name}</h4>
-                        </div>
-                      </div>
-                      <div className="flip-overlay"></div>
-                    </div>
-                    <div className="square2">
-                      <div className="square-container2">
+                    <div className="square-container d-flex align-items-end justify-content-end">
+                      <div
+                        className="box-title w-100 p-2"
+                        style={{ backgroundColor: "#f26522" }}
+                      >
                         <h6>{room.location}</h6>
-                        <h4>{room.name}</h4>
-                        <p>{room.description}</p>
-                        <div className="row room-facilities">
-                          <ul className="row">
-                            <li className="fs-6 col-6">
-                              <img
-                                src={aptIcon}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Units {room.total_units}
+                        <h4>{room.title}</h4>
+                      </div>
+                    </div>
+                    <div className="flip-overlay"></div>
+                  </div>
+                  <div className="square2">
+                    <div className="square-container2">
+                      <h6>{room.location}</h6>
+                      <h4>{room.title}</h4>
+                      <p>{room.description}</p>
+
+                      {/* <div className="row room-facilities mb-30">
+                        <div className="col-md-6">
+                          <ul>
+                            <li>
+                              <i className="flaticon-group"></i> 1-2 Persons
                             </li>
-                            {/* <li className="fs-6 col-6">
-                              <img
-                                src={bhkIcon}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              BHK {room.bhk}
-                            </li> */}
-                            <li className="fs-6 col-6">
-                              <img
-                                src={sqft}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Sq. ft.{room.sq_ft}
-                            </li>
-                            <li className="fs-6 col-6">
-                              <img
-                                src={stiltFloor}
-                                alt="icons"
-                                style={{
-                                  width: "25px",
-                                  marginRight: "8px",
-                                }}
-                              ></img>
-                              Floors Stilt +{room.no_of_blocks_or_floors}
+                            <li>
+                              <i className="flaticon-wifi"></i> Free Wifi
                             </li>
                           </ul>
                         </div>
+                        <div className="col-md-6">
+                          <ul>
+                            <li>
+                              <i className="flaticon-bed"></i> Twin Bed
+                            </li>
+                            <li>
+                              <i className="flaticon-breakfast"></i> Breakfast
+                            </li>
+                          </ul>
+                        </div>
+                      </div> */}
 
-                        {room.status === "On-going" && (
-                          <button
-                            className="btn-form1-submit text-center"
-                            onClick={() => handleDetailsClick(room.slug)}
-                          >
-                            Details
-                          </button>
-                        )}
+                      {room.features && room.features.length > 0 && (
+                        <div className="row room-facilities mb-30">
+                          {room.features.map((feature, index) => {
+                            const featureItems = getFeatureWithIcons(feature);
 
+                            return featureItems.map((item, subIndex) => (
+                              <div
+                                className="col-6"
+                                key={`${index}-${subIndex}`}
+                              >
+                                <ul>
+                                  <li className="fs-6">
+                                  <img
+                                      src={item.iconClass}
+                                      alt="icons"
+                                      style={{
+                                        width: "25px",
+                                        marginRight: "8px",
+                                      }}
+                                    ></img>
+                                    {item.text}
+                                  </li>
+                                </ul>
+                              </div>
+                            ));
+                          })}
+                        </div>
+                      )}
+
+                      {/* <div className="btn-line">
+                        <Link
+                          to={
+                            room.category === "Plots"
+                              ? `/project-details/${room.slug}`
+                              : `/project/${room.slug}`
+                          }
+                        >
+                          Details
+                        </Link>
+                      </div> */}
+                      <Link
+                        className="btn-form1-submit text-center"
+                        to={
+                          room.category === "Plots-Ongoing"
+                            ? `/plots-chennai/${room.slug}`
+                            : `/apartments-chennai/${room.slug}`
+                        }
+                      >
+                        Details
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -83,9 +83,9 @@ const ImagePopup = ({ pageType = "home" }) => {
 
     let initialDelay = 0;
     if (location.pathname === "/" || location.pathname === "/home") {
-      initialDelay = 7000;
-    } else {
       initialDelay = 15000;
+    } else {
+      initialDelay = 20000;
     }
 
     setPopupTimer(initialDelay);

@@ -358,7 +358,7 @@ blockquote cite:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background: round;
+  /* background: round; */
 }
 .bg-fixed {
   background-attachment: fixed;
@@ -5678,7 +5678,7 @@ select {
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    /* margin-top: 47px; */
+    margin-top: 22px;
   }
 
   .header {

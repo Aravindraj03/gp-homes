@@ -210,7 +210,7 @@ const roomsData = [
     id: 12,
     category: "Apartments-Completed",
     location: "Ayanambakkam",
-    title: "Cherry Blossom II – Lavender",
+    title: "Cherry Blossom II",
     image: apartCompleted6,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",

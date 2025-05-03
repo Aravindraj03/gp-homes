@@ -1561,6 +1561,7 @@ const PlotTable = ({ onSelectPlot }) => {
   return (
     <>
       <div className="w-full flex flex-col items-center p-6 container dataTable">
+        <h2 className="d-md-none d-block pb-3">Check Availability</h2>
         {/* Filters */}
         <div className="booking-wrapper">
           <div className="container">
