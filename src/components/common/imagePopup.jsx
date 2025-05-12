@@ -1,20 +1,18 @@
 import React, { useEffect, useState, useRef } from "react";
 import DesktopPopup from "../../assets/img/popup/web-form.jpg";
 import MobilePopup from "../../assets/img/popup/mobile-form.jpg";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const ImagePopup = ({ pageType = "home" }) => {
   const [showPopup, setShowPopup] = useState(false);
-  const [showSuccessTicker, setShowSuccessTicker] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
   const intervalRef = useRef(null);
   const location = useLocation();
 
-  //   console.log(location.pathname,"location------------")
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
-    // email: "",
   });
 
   const clearPopupTimers = () => {
@@ -46,10 +44,10 @@ const ImagePopup = ({ pageType = "home" }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Start loading
+    setLoading(true);
 
     try {
-      const response = await fetch("https://cms.gphomes.in/api/contact-form", {
+      await fetch("https://cms.gphomes.in/api/contact-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,28 +64,26 @@ const ImagePopup = ({ pageType = "home" }) => {
 
       setFormData({ name: "", mobile: "" });
       localStorage.setItem("popupSubmittedAt", Date.now().toString());
+      setShowConfirmation(true);
 
-      setShowPopup(false);
-      setShowSuccessTicker(true);
-
-      setTimeout(() => setShowSuccessTicker(false), 3000);
+      setTimeout(() => {
+        setShowPopup(false);
+        setShowConfirmation(false);
+      }, 3000);
     } catch (error) {
       console.error("Form submission failed:", error);
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false);
     }
   };
 
   useEffect(() => {
     if (!shouldShowPopup()) return;
 
-    let initialDelay = 0;
-    if (location.pathname === "/" || location.pathname === "/home") {
-      initialDelay = 15000;
-    } else {
-      initialDelay = 20000;
-    }
-
+    let initialDelay =
+      location.pathname === "/" || location.pathname === "/home"
+        ? 15000
+        : 20000;
     setPopupTimer(initialDelay);
     return () => clearPopupTimers();
   }, [location.pathname]);
@@ -123,12 +119,12 @@ const ImagePopup = ({ pageType = "home" }) => {
                   >
                     ✕
                   </button>
-                  {/* Form */}
                   <PopupForm
                     formData={formData}
                     handleChange={handleChange}
                     handleSubmit={handleSubmit}
-                    loading={loading} // <-- Add this line
+                    loading={loading}
+                    showConfirmation={showConfirmation}
                   />
                 </div>
               </div>
@@ -162,33 +158,19 @@ const ImagePopup = ({ pageType = "home" }) => {
                   >
                     ✕
                   </button>
-                  {/* Form */}
                   <PopupForm
                     formData={formData}
                     handleChange={handleChange}
                     handleSubmit={handleSubmit}
                     isMobile
                     loading={loading}
+                    showConfirmation={showConfirmation}
                   />
                 </div>
               </div>
             </div>
           </div>
         </>
-      )}
-      {showSuccessTicker && (
-        <div
-          className="position-fixed mt-3 top-0 left-0 start-50 translate-middle-x bg-success text-white px-4 py-2 rounded shadow"
-          style={{
-            zIndex: 9999,
-            zIndex: "9999",
-            padding: "7px !important",
-            textAlign: "center",
-            minWidth: "285px",
-          }}
-        >
-          ✅ Form submitted successfully!
-        </div>
       )}
     </>
   );
@@ -199,28 +181,21 @@ const PopupForm = ({
   handleChange,
   handleSubmit,
   isMobile = false,
-  loading
+  loading,
+  showConfirmation,
 }) => (
   <form
     onSubmit={handleSubmit}
     className="position-absolute bottom-0 start-50 translate-middle-x p-2 p-md-3 text-center"
     style={{ width: isMobile ? "80%" : "70%" }}
   >
-    {["name", "mobile"].map((field, index) => (
+    {["name", "mobile"].map((field) => (
       <div className="mb-2" key={field}>
         <input
-          type={
-            field === "email" ? "email" : field === "mobile" ? "tel" : "text"
-          }
+          type={field === "mobile" ? "tel" : "text"}
           className="form-control p-2 py-md-2 px-3 m-0"
           name={field}
-          placeholder={
-            field === "name"
-              ? "Name"
-              : // : field === "mobile"
-                "Mobile Number"
-            // : "Email"
-          }
+          placeholder={field === "name" ? "Name" : "Mobile Number"}
           value={formData[field]}
           onChange={handleChange}
           required
@@ -232,14 +207,14 @@ const PopupForm = ({
             fontWeight: "700",
             color: "grey",
             borderRadius: "10px",
-            // height: field === "email" && isMobile ? "30.5px" : undefined,
           }}
         />
       </div>
     ))}
+
     <button
       type="submit"
-      className={`p-2 w-50 text-white fs-5`}
+      className="p-2 w-50 text-white fs-5"
       style={{
         backgroundColor: "#ff671f",
         borderRadius: "10px",
@@ -251,6 +226,12 @@ const PopupForm = ({
     >
       {loading ? "Submitting..." : "SUBMIT"}
     </button>
+
+    {showConfirmation && (
+      <div className="mt-2 text-success fw-bold">
+        ✅ Form submitted successfully!
+      </div>
+    )}
   </form>
 );
 
