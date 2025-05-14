@@ -35,101 +35,110 @@ function ProjectDetailPage() {
 
   return (
     <Fragment>
-      {/* Navbar */}
-      <Navbar expand="lg" className="nav-scroll-1">
-        <Container>
-          <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="Logo" className="logo-img" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar" />
-          <Navbar.Collapse id="navbar">
-            <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/apartments-chennai">Apartments</Nav.Link>
-              <Nav.Link as={Link} to="/plots-chennai">Plots</Nav.Link>
-              <NavDropdown title={<>Pages <i className="ti-angle-down"></i></>} id="pages-dropdown">
-                <NavDropdown.Item as={Link} to="/about-us">About Us</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/joint-ventures">Joint Ventures</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/gallery">Gallery</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/blogs">Blogs</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/testimonials">Testimonials</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/faq">F.A.Qs</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link as={Link} to="/contact-us">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+  {/* Navbar */}
+  <Navbar expand="lg" className="nav-scroll-1">
+    <Container>
+      <Navbar.Brand as={Link} to="/">
+        <img src={logo} alt="Logo" className="logo-img" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbar" />
+      <Navbar.Collapse id="navbar">
+        <Nav className="ms-auto">
+          <Nav.Link as={Link} to="/">Home</Nav.Link>
+          <Nav.Link as={Link} to="/apartments-chennai">Apartments</Nav.Link>
+          <Nav.Link as={Link} to="/plots-chennai">Plots</Nav.Link>
+          <NavDropdown title={<>Pages <i className="ti-angle-down"></i></>} id="pages-dropdown">
+            <NavDropdown.Item as={Link} to="/about-us">About Us</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/joint-ventures">Joint Ventures</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/gallery">Gallery</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/blogs">Blogs</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/testimonials">Testimonials</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/faq">F.A.Qs</NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link as={Link} to="/contact-us">Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
 
-      {/* Banner */}
-      {/* Desktop Banner - shown on md and above */}
-<div className="d-none d-md-block">
-  <ProjectDetailBanner project={project} />
-</div>
-
-{/* Mobile Banner - only for PonBhoomi */}
-{slug === "gp-ponBhoomi" && (
-  <div className="d-block d-md-none">
-    {/* Replace below with your actual mobile banner component or JSX */}
-    <img
-      src={mobileBanner} // Adjust path as needed
-      alt="PonBhoomi Mobile Banner"
-      className="img-fluid w-100"
-    />
+  {/* === BANNER SECTION === */}
+  {/* Desktop Banner - visible for all projects */}
+  <div className="d-none d-md-block">
+    <ProjectDetailBanner project={project} />
   </div>
-)}
 
-      {/* === DESKTOP VIEW === */}
-      <div className="d-none d-md-block">
-        {slug === "gp-ponBhoomi" && (
-          <PlotTable onSelectPlot={handleSelectPlot} />
-        )}
+  {/* Mobile Banner */}
+  <div className="d-block d-md-none">
+    {slug === "gp-ponBhoomi" ? (
+      <img
+        src={mobileBanner} // Replace with your actual path
+        alt="PonBhoomi Mobile Banner"
+        className="img-fluid w-100"
+      />
+    ) : (
+      <ProjectDetailBanner project={project} />
+    )}
+  </div>
 
-        <ProjectDetailSection project={project} />
+  {/* === DESKTOP VIEW === */}
+  <div className="d-none d-md-block">
+    {slug === "gp-ponBhoomi" && (
+      <PlotTable onSelectPlot={handleSelectPlot} />
+    )}
+    <ProjectDetailSection project={project} />
+    <div ref={homeReservationRef}>
+      {slug === "gp-ponBhoomi" ? (
+        <PonBhoomiReservation selectedPlotData={selectedPlot} />
+      ) : (
+        <HomeReservation project={project} selectedPlotData={selectedPlot} />
+      )}
+    </div>
+  </div>
 
-        <div ref={homeReservationRef}>
-          {slug === "gp-ponBhoomi" ? (
-            <PonBhoomiReservation selectedPlotData={selectedPlot} />
-          ) : (
-            <HomeReservation project={project} selectedPlotData={selectedPlot} />
-          )}
-        </div>
+  {/* === MOBILE VIEW (gp-ponBhoomi) === */}
+  {slug === "gp-ponBhoomi" && (
+    <div className="d-block d-md-none">
+      <ProjectDetailSection project={project} />
+      <PlotTable onSelectPlot={handleSelectPlot} />
+      <div ref={homeReservationRef}>
+        <PonBhoomiReservation selectedPlotData={selectedPlot} />
       </div>
 
-      {/* === MOBILE VIEW (gp-ponBhoomi only) === */}
-      {slug === "gp-ponBhoomi" && (
-        <div className="d-block d-md-none">
-          <ProjectDetailSection project={project} />
-          <PlotTable onSelectPlot={handleSelectPlot} />
-          <div ref={homeReservationRef}>
-            <PonBhoomiReservation selectedPlotData={selectedPlot} />
-          </div>
+      {/* Bottom Buttons */}
+      <div
+        className="position-fixed bottom-0 start-0 w-100 d-flex justify-content-around bg-white py-2 border-top"
+        style={{ zIndex: 1050 }}
+      >
+        <button
+          className="btn btn-primary w-50 me-1"
+          onClick={() =>
+            homeReservationRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Enquiry
+        </button>
+        <a
+          href="tel:+918098725026"
+          className="btn btn-success w-50 ms-1 text-white"
+        >
+          Call
+        </a>
+      </div>
+    </div>
+  )}
 
-          {/* Bottom Buttons */}
-          <div
-            className="position-fixed bottom-0 start-0 w-100 d-flex justify-content-around bg-white py-2 border-top"
-            style={{ zIndex: 1050 }}
-          >
-            <button
-              className="btn btn-primary w-50 me-1"
-              onClick={() =>
-                homeReservationRef.current?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Enquiry
-            </button>
-            <a
-              href="tel:+918098725026"
-              className="btn btn-success w-50 ms-1 text-white"
-            >
-              Call
-            </a>
-          </div>
-        </div>
-      )}
+  {/* === MOBILE VIEW (other projects) === */}
+  {slug !== "gp-ponBhoomi" && (
+    <div className="d-block d-md-none">
+      <ProjectDetailSection project={project} />
+      <div ref={homeReservationRef}>
+        <HomeReservation project={project} selectedPlotData={selectedPlot} />
+      </div>
+    </div>
+  )}
 
-      <Footer />
-    </Fragment>
+  <Footer />
+</Fragment>
   );
 }
 

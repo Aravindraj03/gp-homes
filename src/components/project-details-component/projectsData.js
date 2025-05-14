@@ -21,6 +21,7 @@ import GPVijayaLakshmiBanner from "../../assets/img/projects/GPVijayaLakshmiBann
 import GPPonBhoomi from "../../assets/img/projects/Website-Banner-Ponbhoomi-01.jpg";
 import GPValenciaEmerald from "../../assets/img/projects/GPValencia-Emerlad.jpg";
 import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
+import GPFairmont from "../../assets/img/projects/GPFairmont.jpg";
 
 
 import BlazingStarFloorplan1 from "../../assets/img/floorplans/blazing-star-floorplan-1.jpg";
@@ -80,15 +81,18 @@ import hospitals1 from "../../assets/img/locations/hospital-1.jpg";
 import hospitals2 from "../../assets/img/locations/hospital-2.jpg";
 import hospitals3 from "../../assets/img/locations/hospital-3.jpg";
 import hospitals4 from "../../assets/img/locations/hospital-4.jpg";
+import hospitalFairmont from "../../assets/img/locations/Fairmont--Hospital.jpg";
 
 import educationalInstitutions1 from "../../assets/img/locations/education.jpg";
 import educationalInstitutions2 from "../../assets/img/locations/education-1.jpg";
 import educationalInstitutions3 from "../../assets/img/locations/education-2.jpg";
 import educationalInstitutions4 from "../../assets/img/locations/education-3.jpg";
+import educationalFairmont from "../../assets/img/locations/Fairmont--College.jpg";
 
 import itPark1 from "../../assets/img/locations/it-park.jpg";
 import itPark2 from "../../assets/img/locations/it-park-1.jpg";
 import itPark3 from "../../assets/img/locations/it-park-2.jpg";
+import fairmontItpark from "../../assets/img/locations/Fairmont--It-Company.jpg"
 
 import temple from "../../assets/img/locations/temple.jpg";
 
@@ -96,6 +100,7 @@ import temple from "../../assets/img/locations/temple.jpg";
 import entertainmentZone1 from "../../assets/img/locations/entertainment.jpg";
 import entertainmentZone2 from "../../assets/img/locations/entertainment-1.jpg";
 import entertainmentZone3 from "../../assets/img/locations/entertainment-2.jpg";
+import fairmontEntertainment from "../../assets/img/locations/Fairmont--Shopping-mall.jpg";
 
 import RMBlazingStar from "../../assets/img/Highlights/BlazingStar-RouteMap.jpg";
 import RMBreezway from "../../assets/img/Highlights/BreezwWay-RouteMap.jpg";
@@ -107,6 +112,7 @@ import RMPonBhoomi from "../../assets/img/Highlights/Ponmani-RouteMap.jpg";
 import RMValenciaRuby from "../../assets/img/Highlights/Valencia-RouteMap.jpg";
 import RMValenciaEmerald from "../../assets/img/Highlights/ValenciaEmerald-RouteMap.jpg";
 import RMVijayalakshmi from "../../assets/img/Highlights/Vijayalakshmi-RouteMap.jpg";
+import RMFairmont from "../../assets/img/Highlights/Fairmont--Route-Map.jpg";
 
 import parkingIcon from "../../assets/img/icons/Parking.png";
 import paintingIcon from "../../assets/img/icons/Painting.png";
@@ -1525,6 +1531,93 @@ const projectsData = [
     },
     project_status: "Ongoing Project",
     slug: "gp-ponBhoomi",
+  },
+  {
+    id: 17,
+    location: "Plots in Parivakkam Chennai",
+    name: "GP Fairmont",
+    description: [
+      "Discover GP Fairmont at Parivakkam – your gateway to balanced living in the thriving Poonamalle Hub. With premium plots ranging from 812-1356 sq.ft., this thoughtfully designed community offers the perfect blend of connectivity and tranquility.",
+      "While providing swift access to schools, workplaces, and city centers, GP Fairmont creates a peaceful sanctuary away from urban chaos. Whether you're seeking a promising investment opportunity or the perfect canvas for your dream villa, this development exceeds expectations.",
+      "GP Fairmont transcends the conventional real estate mantra of 'location is everything' by delivering exceptional value with strategic positioning and thoughtful planning. Experience the fulfillment of finding not just a property, but a lifestyle that truly complements your aspirations.",
+    ],
+    banner_images: [GPFairmont],
+    image: listimg4,
+    facilities: [
+      // ["Parking", "flaticon-car"],
+      // ["Painting", "flaticon-wifi"],
+      // ["Toilet", "flaticon-bed"],
+      // ["Structure", "flaticon-breakfast"],
+      // ["Joineries", "flaticon-clock-1"],
+      // ["Plastering", "flaticon-swimming"],
+      // ["Electricals", "flaticon-clock-1"],
+      // ["Plumbing", "flaticon-swimming"],
+      // ["Water Supply", "flaticon-clock-1"],
+      // ["Balcony area", "flaticon-swimming"],
+      // ["Kitchen", "flaticon-swimming"],
+    ],
+    specifications_title: "",
+    specifications_desc: "",
+    amenities_title: "Amenities",
+    amenities_desc:
+      "Unveil the contemporary luxuries of Fairmont and select the ideal plot to build your vision of home. With generous plot dimensions and varied layout options, envisioning your perfect living environment becomes effortless. Come experience all that Fairmont has waiting for you!",
+    amenities: [
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Elegant Grand Entrance arch","bi bi-rainbow"],
+      ["Solar Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
+    ],
+    location_map_title: "Location Map",
+    location_map_desc:
+      "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
+    locations: {
+      titles: [
+        "Location Highlights",
+        "Hospitals",
+        "Educational Institutions",
+        "IT Parks",
+        "Entertainment Zone",
+      ],
+      location_highlights: [
+        "Poonamallee Bus Stand",
+        "Parivakkam Bus Stand",
+        "Poonamallee Metro Station",
+        "Avadi Suburban Railway Station",
+      ],
+      hospitals: [
+        "Be Well Hospitals",
+        "Deepa Hospital ",
+        "Mangalam Hospital",
+        "Panimalar Health Care Hospital",
+        "Vee Care Sundar Hospital",
+        "Thillai Nursing Home (Poonamallee)",
+      ],
+      educational_institutions: [
+        
+        "Velammal Vidyalaya",
+        
+        "Chennai Public School",
+        
+        "Panimalar Engineering College",
+        "Rajalakshmi Institute of Technology",
+        "MGR University Maduravoyal",
+        "Saveetha Medical College"
+      ],
+      it_parks: ["Tidel Park", "DLF IT Park", "Ambit IT Park"],
+      entertainment_zone: ["VR Mall", "Escape Cinemas", "SDC Batcha Theatre", "Grand Galada Mall", "Gokulam Cinemas"],
+      location_highlights_image: RMFairmont,
+      hospitals_image: hospitalFairmont,
+      educational_institutions_image: educationalFairmont,
+      it_parks_image: fairmontItpark,
+      entertainment_zone_image: fairmontEntertainment,
+    },
+    project_status: "Ongoing Project",
+    slug: "gp-fairmont",
   },
 ];
 

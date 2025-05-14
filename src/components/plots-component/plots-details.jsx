@@ -13,6 +13,7 @@ import room9 from "../../assets/img/rooms/Namanai.jpg";
 import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/Mid-way.jpg";
 import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg";
+import room13 from "../../assets/img/rooms/fairmont.jpg";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -156,6 +157,22 @@ const roomsData = [
     ],
     slug: "gp-midway-avenue",
   },
+
+  {
+    id: 12,
+    category: "Plots-Ongoing",
+    location: "Parivakkam",
+    title: "GP Fairmont",
+    image: room13,
+    description:
+      "Discover GP Fairmont at Parivakkam – your gateway to balanced living in the thriving Poonamalle Hub",
+    project_status: "Ongoing Project",
+    features: [
+      "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
+    ],
+    slug: "gp-fairmont",
+  },
+
   {
     id: 7,
     category: "Plots-Ongoing",
