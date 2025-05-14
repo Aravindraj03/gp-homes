@@ -5848,7 +5848,7 @@ select {
       width: 100%;
       background-size: contain;
       background-repeat: no-repeat;
-      top: 90px;
+      top: 21px;
     }
     .marquee-item {
       margin: 0 20px;
@@ -5906,7 +5906,7 @@ height: 100vh;
 }
 
 @media screen and (max-width: 767px) {
-  .owl-carousel{
+  .owl-projectDetail{
     display: block !important;
     height: 50vh !important;
   }

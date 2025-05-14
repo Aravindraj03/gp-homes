@@ -88,7 +88,7 @@ const ProjectDetailBanner = ({ project }) => {
 
   return (
     <header className="header slider">
-      <div className="owl-carousel owl-theme">
+      <div className="owl-carousel owl-theme owl-projectDetail">
         {slides.map((slide) => (
           <div
             key={slide.id}
