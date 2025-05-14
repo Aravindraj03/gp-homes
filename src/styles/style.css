@@ -5900,4 +5900,15 @@ select {
   background-color: #f8f5f0;
 }
 
+.owl-carousel{
+display: block !important;
+height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .owl-carousel{
+    display: block !important;
+    height: 50vh !important;
+  }
+}
 
