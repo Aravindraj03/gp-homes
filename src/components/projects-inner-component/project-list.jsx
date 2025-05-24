@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 import listimg1 from "../../assets/img/slider/4.jpg";
@@ -11,12 +12,15 @@ import listimg5 from "../../assets/img/slider/2.jpg";
 
 
 const ProjectsList = ({ project,projectDetails }) => {
+  const location = useLocation();
+  const category = location.pathname.includes("/plots") ? "plots" : "apartments";
   const projects = project.projects_types;
   // const projectDetails = projectDetail;
   console.log(projectDetails, "projects12345----------------------");
+  const project_slug = project.slug;
 
   return (
-    <section className="section-padding">
+    <section className="section-padding section-padding-mobile">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -29,7 +33,7 @@ const ProjectsList = ({ project,projectDetails }) => {
                 data-animate-effect="fadeInUp"
               >
                 <figure className="col-md-6">
-                  <img src={project.image} alt="" className="img-fluid" />{" "}
+                  <img src={project.image} alt="" className="img-fluid img-fluid-mobile" />{" "}
                 </figure>
 
                 <div className="caption">
@@ -56,7 +60,7 @@ const ProjectsList = ({ project,projectDetails }) => {
                   <div className="info-wrapper">
                     <div className="more">
                       <Link
-                        to={`/plots-chennai/${project.slug}`}
+                        to={`/apartments-chennai/${project_slug}/${project.slug}`}
                         className="link-btn"
                         tabIndex="0"
                         style={{fontWeight:"800"}}
@@ -68,14 +72,16 @@ const ProjectsList = ({ project,projectDetails }) => {
                       {/* <Link to="#reservation-sec" data-scroll-nav="1">
                         <span>Book Now</span>
                       </Link> */}
-                      <ScrollLink
-                        to="reservation-sec"
+                      <Link
+                        to={`/${category}/enquiry-form?type=${
+            category === "plots" ? "Plot" : "Apartment"
+          }&project=${encodeURIComponent(project.name)}`}
                         smooth={true}
                         duration={500}
                         offset={-70}
                       >
                         <span>Book Now</span>
-                      </ScrollLink>
+                      </Link>
                     </div>
                   </div>
                 </div>

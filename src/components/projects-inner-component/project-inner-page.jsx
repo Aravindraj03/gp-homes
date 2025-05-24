@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,useLocation } from "react-router-dom";
 import Header from "../common/header";
 import Footer from "../common/footer";
 import ProjectInnerPageBanner from "./project-inner-banner";
@@ -15,6 +15,8 @@ import logo from "../../assets/img/gp-logo.png";
 import { ServiceWrapper } from "../../service/ApiService";
 
 function ProjectInnerPage() {
+  const location = useLocation();
+  const category = location.pathname.includes("/plots") ? "plots" : "apartments";
   const { slug } = useParams(); // ✅ Get slug from URL
   const [projectDetails, setProjectDetails] = useState(null);
   const service = new ServiceWrapper();
@@ -96,17 +98,69 @@ function ProjectInnerPage() {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link as={Link} to="/contact-us"> 
+              <Nav.Link as={Link} to="/contact-us">
                 Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <ProjectInnerPageBanner project={project}/> 
-      <ProjectsList project={project} projectDetails={projectDetails}/>
-      <HomeReservation project={project}/>
+      <ProjectInnerPageBanner project={project} />
+      <ProjectsList project={project} projectDetails={projectDetails} />
+      <HomeReservation project={project} />
       <Footer />
+
+      <div
+        className="position-fixed bottom-0 start-0 w-100 d-flex justify-content-around bg-white py-2 border-top d-block d-md-none"
+        style={{ zIndex: 1050 }}
+      >
+        <Link
+          to={`/${category}/enquiry-form?type=${
+            category === "plots" ? "Plot" : "Apartment"
+          }&project=${encodeURIComponent(project.name)}`}
+          className="btn btn-primary w-50 me-1 text-white"
+          style={{ backgroundColor: "rgb(40 167 69)" }}
+        >
+          Enquiry
+        </Link>
+        <a
+          href="tel:+918098725026"
+          className="btn btn-success w-50 ms-1 text-white"
+        >
+          Call
+        </a>
+      </div>
+
+      {project?.name && (
+        <Link
+          to={`/${category}/enquiry-form?type=${
+            category === "plots" ? "Plot" : "Apartment"
+          }&project=${encodeURIComponent(project.name)}`}
+          className="btn btn-primary side-enquiry-button"
+          style={{
+            position: "fixed",
+            top: "50%",
+            right: 0,
+            transform: "translateY(-50%)",
+            backgroundColor: "rgb(242 101 34)",
+            color: "#fff",
+            padding: "12px 8px",
+            borderTopLeftRadius: "8px",
+            borderBottomLeftRadius: "8px",
+            zIndex: 1000,
+            textDecoration: "none",
+            writingMode: "vertical-rl",
+            textOrientation: "mixed",
+            fontWeight: "600",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
+            transition: "background 0.3s ease",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "rgb(255 82 0)  ")}
+  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "rgb(242 101 34)")}
+        >
+          Enquire Now
+        </Link>
+      )}
     </Fragment>
   );
 }

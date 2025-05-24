@@ -397,9 +397,9 @@ blockquote cite:before {
   -webkit-transform: translate(0%, -5%);
   transform: translate(0%, -5%);
 }
-.js .animate-box {
+/* .js .animate-box {
   opacity: 0;
-}
+} */
 
 :root {
   scroll-behavior: auto;
@@ -836,6 +836,22 @@ blockquote cite:before {
 .section-title span {
   color: #fff;
 }
+
+
+/* about us styles start */
+
+.section-title-about{
+  font-size: 46px;
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  color: #222;
+  position: relative;  
+  margin-bottom: 20px;
+  line-height: 1.25em;
+  color: #f26522;
+}
+
+/* about us styles end */
 
 /* ======= Navbar style ======= */
 .navbar {
@@ -2610,6 +2626,13 @@ hr {
 .rooms2 figure .img-fluid {
   margin-top: 3rem;
 } 
+
+@media (max-width: 500px){
+.rooms2 figure .img-fluid-mobile{
+margin: 0;
+}
+}
+
 .rooms2.left figure {
   margin-left: 0;
   margin-right: auto;
@@ -3059,6 +3082,9 @@ hr.border-2 {
     }
     .section-padding {
         padding: 20px 0;
+    }
+    .section-padding-mobile{
+      padding: 0px 0;
     }
     .rooms3 .square-container2 {
         padding: 20px;
@@ -5911,4 +5937,146 @@ height: 100vh;
     height: 50vh !important;
   }
 }
+
+.owl-carousel-testimonials{
+  height: auto !important;
+}
+
+
+@media (max-width: 768px) {
+  .enquiry-form-wrapper {
+    padding: 1rem !important;
+    align-items: flex-start !important;
+  }
+
+  .enquiry-form-wrapper .container {
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+
+  .enquiry-form-wrapper .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1.2rem !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .enquiry-form-wrapper .form-label {
+    font-size: 1rem;
+  }
+
+  .enquiry-form-wrapper .form-control,
+  .enquiry-form-wrapper .form-select {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .enquiry-form-wrapper button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .side-enquiry-button {
+    display: none !important;
+    background-color: black;
+  }
+}
+
+/* ThankYouPage.css */
+.thankyou-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Default (mobile first) - hidden */
+.thankyou-button {
+  display: none;
+}
+
+/* Tablet: ≥768px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+  .thankyou-button {
+    display: inline-block;
+    position: absolute;
+    bottom: 20%;
+    left: 75%;
+    transform: translateX(-50%);
+    background-color: rgb(242 101 34);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
+
+/* Desktop: ≥1024px */
+@media (min-width: 1024px) {
+  .thankyou-button {
+    display: inline-block;
+    position: absolute;
+    bottom: 20%;
+    left: 73%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    white-space: nowrap;
+  }
+}
+
+
+
+.thankyou-container-mobile {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.thankyou-button-mobile {
+    display: inline-block;
+    position: absolute;
+    bottom: 16%;
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+    white-space: nowrap;
+  }
+
+
+
+
+
+
+
+
 

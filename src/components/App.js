@@ -46,6 +46,8 @@ import PlotsPage from "./plots-component/plots-page";
 import NotFound from "./not-found";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ImagePopup from "./common/imagePopup";
+import EnquiryForm from "./common/EnquiryForm";
+import ThankYouPage from "./common/ThankYouPage";
 
 function App() {
   useEffect(() => {
@@ -61,7 +63,7 @@ function App() {
         <SEOHandler />
         <LoadScripts />
         <ScrollToTop />
-        <ImagePopup/>
+        <ImagePopup />
         <Fragment>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -69,6 +71,10 @@ function App() {
             <Route
               path="/apartments-chennai/:slug"
               element={<ProjectInnerPage />}
+            />
+            <Route
+              path="/apartments-chennai/:slug/:slug"
+              element={<ProjectDetailPage />}
             />
             <Route
               path="/plots-chennai/:slug"
@@ -88,6 +94,8 @@ function App() {
             <Route path="/blogs" element={<BlogsPage />} />
             <Route path="/post/:slug" element={<PostPage />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/:category/enquiry-form" element={<EnquiryForm />} />
+            <Route path="/thank-you" element={<ThankYouPage />} />
           </Routes>
         </Fragment>
       </BrowserRouter>

@@ -373,7 +373,7 @@ const ApartmentDetails = () => {
                         <Link
                           className="btn-form1-submit text-center"
                           to={
-                            room.category === "Plots-chennai"
+                            room.category === "plots-chennai"
                               ? `/plots-chennai/${room.slug}`
                               : `/apartments-chennai/${room.slug}`
                           }

@@ -24,7 +24,7 @@ const AboutTestimonials = () => {
                 <div className="line"></div>
               </div>
               {/* Carousel or Static Testimonials */}
-              <div className="owl-carousel owl-theme">
+              <div className="owl-carousel owl-theme owl-carousel-testimonials">
                 {/* Testimonial 1 */}
                 <div className="item">
                   <span className="quote">
@@ -60,11 +60,13 @@ const AboutTestimonials = () => {
                 <div className="item">
                   <span className="quote">
                     <img src={quot} alt="quote" />
+                  
                   </span>
                   <p>
                     “We take this opportunity to thank GP Homes for making our
                     dream of an own abode true. GP Homes took care in every
                     detail and workmanship of the project right from the time
+                    
                     when we booked our flat till they handed over the keys to
                     us.”
                   </p>

@@ -23,7 +23,7 @@ const HomeTestimonials = () => {
                   <div className="line"></div>
                 </div>
                 {/* Carousel or Static Testimonials */}
-                <div className="owl-carousel owl-theme">
+                <div className="owl-carousel owl-theme owl-carousel-testimonials">
                   {/* Testimonial 1 */}
                   <div className="item">
                     <span className="quote">
