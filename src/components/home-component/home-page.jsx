@@ -7,6 +7,7 @@ import HomeAbout from "./home-about";
 import HomeProjects from "./home-projects";
 import HomePricing from "./home-pricing";
 import HomePromoVideo from "./home-promo-video";
+
 import HomeFacilities from "./home-facilities";
 import HomeTestimonials from "./home-testimonials";
 import HomeServices from "./home-services";
@@ -43,7 +44,7 @@ function HomePage() {
               style={{ zIndex: 1050 }}
             >
               <Link
-                to={`/apartments/enquiry-form`}
+                to={`/enquiry-form`}
                 className="btn w-50 me-1 text-white"
                 style={{ backgroundColor: "rgb(40 167 69)" }}
               >
@@ -58,7 +59,7 @@ function HomePage() {
             </div>
 
       <Link
-        to={`/apartments/enquiry-form`}
+        to={`/enquiry-form`}
         className="side-enquiry-button"
         style={{
           position: "fixed",

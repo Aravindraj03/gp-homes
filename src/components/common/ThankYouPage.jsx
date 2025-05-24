@@ -11,7 +11,13 @@ function ThankYouPage() {
       className="thankyou-container d-md-block d-none"
       style={{ backgroundImage: `url(${thankYouBanner})` }}
     >
-      <a href={brochure} download className="thankyou-button">
+      <a
+          href={brochure}
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          className="thankyou-button"
+        >
         📄 Download Brochure
       </a>
     </div>
@@ -20,7 +26,13 @@ function ThankYouPage() {
       className="thankyou-container-mobile d-block d-md-none"
       style={{ backgroundImage: `url(${thankYouBannerMobile})` }}
     >
-        <a href={brochure} download className="thankyou-button-mobile">
+        <a
+          href={brochure}
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          className="thankyou-button-mobile"
+        >
         📄 Download Brochure
       </a>
       

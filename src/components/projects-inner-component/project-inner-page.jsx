@@ -136,7 +136,7 @@ function ProjectInnerPage() {
           to={`/${category}/enquiry-form?type=${
             category === "plots" ? "Plot" : "Apartment"
           }&project=${encodeURIComponent(project.name)}`}
-          className="btn btn-primary side-enquiry-button"
+          className="btn side-enquiry-button"
           style={{
             position: "fixed",
             top: "50%",

@@ -6043,8 +6043,6 @@ height: 100vh;
   }
 }
 
-
-
 .thankyou-container-mobile {
   position: relative;
   width: 100%;
@@ -6071,6 +6069,102 @@ height: 100vh;
     font-size: clamp(0.7rem, 2.5vw, 1.2rem);
     white-space: nowrap;
   }
+
+  @media (min-width: 375px) and (max-width: 403px){
+    .thankyou-button-mobile {
+    display: inline-block;
+    position: absolute;
+    bottom: 14%;
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+    white-space: nowrap;
+  }
+  }
+
+  @media (min-width: 403px) and (max-width: 441.9px){
+ .thankyou-button-mobile {
+    display: inline-block;
+    position: absolute;
+    bottom: 11%;
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 442px) and (max-width: 490.9px){
+  .thankyou-button-mobile {
+    display: inline-block;
+    position: absolute;
+    bottom: 7%;
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 491px) and (max-width: 553.9px){
+.thankyou-button-mobile {
+    display: inline-block;
+    position: absolute;
+    bottom: 2%;
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 554px) and (max-width: 650px){
+  .thankyou-button-mobile {
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+    white-space: nowrap;
+  }
+}
+  
 
 
 
