@@ -122,7 +122,7 @@ const HomeReservation = ({ project,selectedPlotData }) => {
                 </div>
                 <div className="text">
                   <p className="color-1">Contact Us</p>
-                  <a className="color-1" href="tel:855-100-4444">
+                  <a className="color-1" href="tel:+919344481444">
                     9344481444
                   </a>
                 </div>
