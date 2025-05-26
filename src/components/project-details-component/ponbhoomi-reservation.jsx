@@ -135,7 +135,7 @@ const PonBhoomiReservation = ({ selectedPlotData }) => {
               </div>
             </div>
 
-            <div className="col-md-5 offset-md-2">
+            {/* <div className="col-md-5 offset-md-2">
               <div className="booking-box">
                 <div className="head-box">
                   <h6>Booking Form</h6>
@@ -253,7 +253,7 @@ const PonBhoomiReservation = ({ selectedPlotData }) => {
                   </form>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

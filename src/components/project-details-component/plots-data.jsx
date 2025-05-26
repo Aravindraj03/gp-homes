@@ -1741,12 +1741,12 @@ const PlotTable = ({ onSelectPlot }) => {
                               cursor: "pointer",
                             }}
                           >
-                            <button
-                              onClick={() => onSelectPlot(plot)}
+                            <Link
+                            to={`/plots/enquiry-form?type=Plot&project=GP%20PonBhoomi`}
                               className="book-now"
                             >
                               Book Now
-                            </button>
+                            </Link>
                           </td>
                           {/* <td
                           className="text-center table-data shadow p-3 mb-5 rounded"

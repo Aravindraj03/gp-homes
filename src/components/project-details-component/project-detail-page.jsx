@@ -116,16 +116,20 @@ const category = location.pathname.includes("/plots") ? "plots" : "apartments";
         )}
         <ProjectDetailSection project={project} />
         <div ref={homeReservationRef}>
-          
-            <HomeReservation
-              project={project}
-              selectedPlotData={selectedPlot}
-            />
-          
+          <HomeReservation project={project} selectedPlotData={selectedPlot} />
         </div>
       </div>
 
-<div
+      {/* === MOBILE VIEW (gp-ponBhoomi) === */}
+  {slug === "gp-ponBhoomi" && (
+    <div className="d-block d-md-none">
+      <ProjectDetailSection project={project} />
+      <PlotTable onSelectPlot={handleSelectPlot} />
+      <div ref={homeReservationRef}>
+        <PonBhoomiReservation selectedPlotData={selectedPlot} />
+      </div>
+
+      <div
         className="position-fixed bottom-0 start-0 w-100 d-flex justify-content-around bg-white py-2 border-top d-block d-md-none"
         style={{ zIndex: 1050 }}
       >
@@ -145,17 +149,19 @@ const category = location.pathname.includes("/plots") ? "plots" : "apartments";
           Call
         </a>
       </div>
+    </div>
+  )}
+  
 
       {/* === MOBILE VIEW (other projects) === */}
-        <div className="d-block d-md-none">
-          <ProjectDetailSection project={project} />
-          <div ref={homeReservationRef}>
-            <HomeReservation
-              project={project}
-              selectedPlotData={selectedPlot}
-            />
-          </div>
+      {slug !== "gp-ponBhoomi" && (
+      <div className="d-block d-md-none">
+        <ProjectDetailSection project={project} />
+        <div ref={homeReservationRef}>
+          <HomeReservation project={project} selectedPlotData={selectedPlot} />
         </div>
+      </div>
+      )}
 
       <Footer />
       {project?.name && (
@@ -182,8 +188,12 @@ const category = location.pathname.includes("/plots") ? "plots" : "apartments";
             boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
             transition: "background 0.3s ease",
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "rgb(255 82 0)  ")}
-  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "rgb(242 101 34)")}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.backgroundColor = "rgb(255 82 0)  ")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.backgroundColor = "rgb(242 101 34)")
+          }
         >
           Enquire Now
         </Link>
