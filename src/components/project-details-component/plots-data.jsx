@@ -1456,7 +1456,7 @@ const PlotTable = ({ onSelectPlot }) => {
     },
   ];
 
-  const soldOutPlots = [1, 4, 5, 10, 11, 12, 19, 20, 27, 92, 93, 99, 178, 179, 180, 181, 182, 183, 184, 185, 197, 198, 200,34,89,90,91,130,157,158,160,161,190,207]; // Define sold-out plot numbers
+  const soldOutPlots = [1, 4, 5, 10, 11, 12, 19, 20,25, 27,34,58,59,89,90,91, 92, 93, 99,119,120,126,130,156,157,158,159,160,161, 178, 179, 180, 182, 183, 184, 185,190,194,195,197, 198, 200,]; // Define sold-out plot numbers
   const [filters, setFilters] = useState({
     plotNo: "",
     areaSqFt: "",

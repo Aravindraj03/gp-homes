@@ -117,13 +117,25 @@ const HomeReservation = ({ project,selectedPlotData }) => {
                 details soon.
               </h6>
               <div className="reservations mb-30">
-                <div className="icon color-1">
+                <div className="icon">
                   <span className="flaticon-call"></span>
                 </div>
                 <div className="text">
-                  <p className="color-1">Contact Us</p>
+                  <p color-1>Contact Us</p>
                   <a className="color-1" href="tel:+919344481444">
                     9344481444
+                  </a>
+                </div>
+              </div>
+
+              <div className="reservations mb-30">
+                <div className="icon">
+                  <span className="flaticon-call"></span>
+                </div>
+                <div className="text">
+                  <p color-1>Contact Us</p>
+                  <a className="color-1" href="tel:6384003003">
+                    6384003003
                   </a>
                 </div>
               </div>

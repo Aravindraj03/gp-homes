@@ -6165,7 +6165,89 @@ height: 100vh;
     white-space: nowrap;
   }
 }
+
+.about-button{
+  background-color: rgb(242 101 34);
+    color: #fff;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.about-button:hover {
+  background-color: rgb(242 101 34);
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.about-button-mobile {
+  display: none;
+  background-color: rgb(242 101 34);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 0.6rem;
+    white-space: nowrap;
+}
   
+@media (max-width: 767.9px) {
+  .about-button{
+    display: none;
+  }
+  .about-button-mobile{
+    display: block;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .brouchure{
+    padding: 1.5rem 0;
+  }
+}
+
+/* timeline css */
+
+.timeline-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2rem;
+}
+
+.timeline-track {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 900px;
+  padding: 20px 0;
+  border-bottom: 4px solid #ccc;
+}
+
+.timeline-event {
+  flex: 0 0 160px;
+  text-align: center;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
 
 
 
