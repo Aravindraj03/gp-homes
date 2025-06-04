@@ -10,5 +10,8 @@ Allow: /
 User-agent: *
 Allow: /
 Disallow: /cgi-bin/
+Disallow: /category/enquiry-form
+Disallow: /enquiry-form
+Disallow: /thank-you
 
 Sitemap: https://www.gphomes.in/sitemap.xml
