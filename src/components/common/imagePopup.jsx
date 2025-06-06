@@ -189,29 +189,56 @@ const PopupForm = ({
     className="position-absolute bottom-0 start-50 translate-middle-x p-2 p-md-3 text-center"
     style={{ width: isMobile ? "80%" : "70%" }}
   >
-    {["name", "mobile"].map((field) => (
-      <div className="mb-2" key={field}>
-        <input
-          type={field === "mobile" ? "tel" : "text"}
-          className="form-control p-2 py-md-2 px-3 m-0"
-          name={field}
-          placeholder={field === "name" ? "Name" : "Mobile Number"}
-          value={formData[field]}
-          onChange={handleChange}
-          required
-          style={{
-            backgroundColor: "white",
-            border: "0px",
-            outline: "none",
-            boxShadow: "none",
-            fontWeight: "700",
-            color: "grey",
-            borderRadius: "10px",
-          }}
-        />
-      </div>
-    ))}
+    {/* Name Input */}
+    <div className="mb-2">
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+        pattern="[A-Za-z ]{2,}"
+        autoComplete="name"
+        className="form-control p-2 py-md-2 px-3 m-0"
+        style={{
+          backgroundColor: "white",
+          border: "0px",
+          outline: "none",
+          boxShadow: "none",
+          fontWeight: "700",
+          color: "grey",
+          borderRadius: "10px",
+        }}
+      />
+    </div>
 
+    {/* Mobile Number Input */}
+    <div className="mb-2">
+      <input
+        type="tel"
+        name="mobile"
+        placeholder="Mobile Number"
+        value={formData.mobile}
+        onChange={handleChange}
+        required
+        pattern="[0-9]{10}"
+        maxLength="10"
+        autoComplete="tel"
+        className="form-control p-2 py-md-2 px-3 m-0"
+        style={{
+          backgroundColor: "white",
+          border: "0px",
+          outline: "none",
+          boxShadow: "none",
+          fontWeight: "700",
+          color: "grey",
+          borderRadius: "10px",
+        }}
+      />
+    </div>
+
+    {/* Submit Button */}
     <button
       type="submit"
       className="p-2 w-50 text-white fs-5"
@@ -227,6 +254,7 @@ const PopupForm = ({
       {loading ? "Submitting..." : "SUBMIT"}
     </button>
 
+    {/* Confirmation Message */}
     {showConfirmation && (
       <div className="mt-2 text-success fw-bold">
         ✅ Form submitted successfully!
