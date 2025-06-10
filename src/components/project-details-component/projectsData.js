@@ -1431,11 +1431,11 @@ const projectsData = [
   },
   {
     id: 16,
-    location: "Plots in Thiruvallur, Chennai",
+    location: "Plots in Pattabiram Tidel Park, Chennai",
     name: "GP PonBhoomi",
     description: [
       "PonBhoomi isn’t just a name—it’s a promise of growth and prosperity. Investing in land is a better option than gold, as property values continue to appreciate over time. Now is the perfect time to build your dream home and settle in this serene paradise.",
-      "Strategically located on the Chennai-Tiruvallur Highway (near Avadi), PonBhoomi offers 207 premium villa plots ranging from 450 to 3,758 sq. ft. This well-connected residential community provides seamless access to key locations in Avadi, ensuring convenience and modern living. With shopping malls, movie theatres, schools, and hospitals nearby, PonBhoomi is an ideal choice for homeowners and investors alike.",
+      "Strategically located next to Pattabiram Tidel Park (Sevvapet) on the highways, PonBhoomi offers 207 premium villa plots ranging from 450 to 3,758 sq. ft. This well-connected residential community provides seamless access to key locations in Avadi, ensuring convenience and modern living. With shopping malls, movie theatres, schools, and hospitals nearby, PonBhoomi is an ideal choice for homeowners and investors alike.",
       "Invest in PonBhoomi by GP Homes today—where value meets opportunity!",
     ],
     banner_images: [GPPonBhoomi],

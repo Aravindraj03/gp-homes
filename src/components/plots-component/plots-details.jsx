@@ -133,7 +133,7 @@ const roomsData = [
   {
     id: 11,
     category: "Plots-Ongoing",
-    location: "Thiruvallur",
+    location: "Pattabiram",
     title: "GP Pon Bhoomi",
     image: room10,
     description:

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import slideImg1 from "../../assets/img/slider/hero-banner-2.jpg";
-import slideImg2 from "../../assets/img/slider/banner-03.jpg";
+import slideImg1 from "../../assets/img/slider/hero-banner-2.png";
+import slideImg2 from "../../assets/img/slider/banner-03.png";
 
 import MobileBanner2 from "../../assets/img/slider/Mobile-Banner-4.jpg";
 import MobileBanner1 from "../../assets/img/slider/Mobile-Banner-1.jpg";
@@ -157,7 +157,7 @@ const BannerSlider = () => {
                 <div className="row">
                   <div className="col-md-10 offset-md-1">
                     <button
-                      className="button-77"
+                      className="button-77 mt-4"
                       onClick={(e) => {
                         e.stopPropagation(); // prevents parent div click
                         window.open(
