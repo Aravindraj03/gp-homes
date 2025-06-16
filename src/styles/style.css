@@ -6307,6 +6307,56 @@ height: 100vh;
   transition: transform 0.2s ease;
 }
 
+/* thank you page */
+
+/* thank you page */
+
+.thankyou-topbar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000;
+}
+
+.back-button:hover {
+  color: #ffac02; 
+}
+
+.thankyou-logo {
+  width: 12%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px #000);
+  cursor: pointer;
+}
+
+.thankyou-logo:hover {
+  filter: drop-shadow(0 0 10px #b09764);
+}
+
+@media (max-width: 768px) {
+  .back-button{
+    font-size: 12px;
+  }
+
+  .thankyou-logo {
+    width: 17%;
+  }
+}
+
+
 
 
 

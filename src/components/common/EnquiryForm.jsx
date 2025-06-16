@@ -138,6 +138,8 @@ function EnquiryForm() {
       mobile: "",
       email: "",
     });
+
+    navigate("/thank-you");
   } catch (error) {
     console.error("Fetch error:", error);
     alert("Could not submit the form. Check console for details.");
