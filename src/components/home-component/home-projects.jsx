@@ -14,6 +14,7 @@ import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/lakebreeze.jpg";
 import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg"
 import room13 from "../../assets/img/rooms/valencia-ruby.jpg"
+import room14 from "../../assets/img/rooms/fairmont.jpg";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -185,15 +186,29 @@ const roomsData = [
   {
     id: 10,
     category: "Plots",
-    location: "Thiruvallur",
-    title: "GP Vijayalakshmi",
-    image: room12,
+    location: "Parivakkam",
+    title: "GP Fairmont",
+    image: room14,
     description:
-      "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
+      "Discover GP Fairmont at Parivakkam – your gateway to balanced living in the thriving Poonamalle Hub",
     project_status: "Ongoing Project",
-    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
-    slug: "gp-vijayalakshmi",
+    features: [
+      "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
+    ],
+    slug: "gp-fairmont",
   },
+  // {
+  //   id: 10,
+  //   category: "Plots",
+  //   location: "Thiruvallur",
+  //   title: "GP Vijayalakshmi",
+  //   image: room12,
+  //   description:
+  //     "Nanmanai by GP Homes offers happy and healthy family living, all together in a beautifully planned 1.5 - acre sanctuary. Located in the green lush surroundings of Redhills, our premium villa plots, range from 535 to 3130 sq. Ft., offers a peaceful retreat from the bustle of city life.",
+  //   project_status: "Ongoing Project",
+  //   features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+  //   slug: "gp-vijayalakshmi",
+  // },
   {
     id: 11,
     category: "Apartments",
@@ -287,7 +302,7 @@ const HomeProjects = () => {
             >
               <img
                 src={plotIcon}
-                alt="Apartment"
+                alt="Apartment" 
                 style={{ width: "40px", marginRight: "1rem" }}
               />
               Plots

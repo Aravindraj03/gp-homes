@@ -218,7 +218,7 @@ const roomsData = [
   },
   {
     id: 10,
-    category: "Plots-Ongoing",
+    category: "Plots-Completed",
     location: "Thiruvallur",
     title: "GP Vijayalakshmi",
     image: room12,
@@ -263,7 +263,8 @@ const ApartmentDetails = () => {
             </h1>
             <h2 className="mb-3">Residential Land For Sale in Chennai</h2>
             <p>
-            GP Homes, Residential Plots For Sale, CMDA Approved Plots, Real Estate Developers in Chennai
+              GP Homes, Residential Plots For Sale, CMDA Approved Plots, Real
+              Estate Developers in Chennai
             </p>
           </div>
         </div>
@@ -399,7 +400,7 @@ const ApartmentDetails = () => {
                               >
                                 <ul>
                                   <li className="fs-6">
-                                  <img
+                                    <img
                                       src={item.iconClass}
                                       alt="icons"
                                       style={{
@@ -430,7 +431,7 @@ const ApartmentDetails = () => {
                       <Link
                         className="btn-form1-submit text-center"
                         to={
-                          room.category === "Plots-Ongoing"
+                          room.category?.startsWith("Plots")
                             ? `/plots-chennai/${room.slug}`
                             : `/apartments-chennai/${room.slug}`
                         }

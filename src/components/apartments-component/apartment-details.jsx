@@ -220,6 +220,8 @@ const roomsData = [
   },
 ];
 
+
+
 const ApartmentDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedFilter, setSelectedFilter] = useState("Apartments-Ongoing"); // Default focus
@@ -253,7 +255,12 @@ const ApartmentDetails = () => {
             </h1>
             <h2 className="mb-3">Flat For Sale in Chennai</h2>
             {/* <p>GP Homes, 1BHK, 2BHK, 3BHK, Apartment for Sale, Best Builders in Chennai</p> */}
-            <p>GP Homes offers 2BHK, and 3BHK apartments for sale in Chennai, designed for modern living. As one of the best builders in Chennai, we provide high-quality, affordable homes in prime locations. Find your dream home with GP Homes today!</p>
+            <p>
+              GP Homes offers 2BHK, and 3BHK apartments for sale in Chennai,
+              designed for modern living. As one of the best builders in
+              Chennai, we provide high-quality, affordable homes in prime
+              locations. Find your dream home with GP Homes today!
+            </p>
           </div>
         </div>
       </div>
@@ -328,7 +335,10 @@ const ApartmentDetails = () => {
                     </span> */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
-                      <div className="box-title w-100 p-2" style={{backgroundColor:"#f26522"}}>
+                      <div
+                        className="box-title w-100 p-2"
+                        style={{ backgroundColor: "#f26522" }}
+                      >
                         <h6>{room.location}</h6>
                         <h4>{room.title}</h4>
                       </div>
@@ -353,7 +363,7 @@ const ApartmentDetails = () => {
                               >
                                 <ul>
                                   <li className="fs-6">
-                                  <img
+                                    <img
                                       src={item.iconClass}
                                       alt="icons"
                                       style={{
@@ -369,21 +379,18 @@ const ApartmentDetails = () => {
                           })}
                         </div>
                       )}
-                      {room.id != "6" ? (
+
+                      {room.category == "Apartments-Ongoing" && (
                         <Link
                           className="btn-form1-submit text-center"
-                          to={
+                          to={`/${
                             room.category === "plots-chennai"
-                              ? `/plots-chennai/${room.slug}`
-                              : `/apartments-chennai/${room.slug}`
-                          }
+                              ? "plots-chennai"
+                              : "apartments-chennai"
+                          }/${room.slug}`}
                         >
-                          Details
+                          Details 
                         </Link>
-                      ) : (
-                        <div className="btn-form1-submit text-center">
-                          Details
-                        </div>
                       )}
                     </div>
                   </div>

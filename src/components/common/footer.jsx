@@ -244,6 +244,11 @@ function Footer() {
                           GP CHERRY BLOSSOM VILLA
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/apartments-chennai">
+                          GP VIJAYALAKSHMI
+                        </Link>
+                      </li>
                     </ul>
                   </Col>
                 </Row>

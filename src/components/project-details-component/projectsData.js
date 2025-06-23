@@ -1426,7 +1426,7 @@ const projectsData = [
       it_parks_image: itPark2,
       entertainment_zone_image: entertainmentZone2,
     },
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     slug: "gp-vijayalakshmi",
   },
   {
