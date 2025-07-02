@@ -3,6 +3,7 @@ import roomImage1 from "../../assets/img/rooms/aboutus-gplogo.jpeg";
 import roomImage2 from "../../assets/img/rooms/aboutus-gpexcel.jpeg";
 import roomImage3 from "../../assets/img/rooms/aboutus-gpproject.jpeg";
 import roomImage4 from "../../assets/img/rooms/aboutus-gpcustomer.jpeg";
+import brochure from "../../assets/img/pdf/brochure.pdf"; 
 
 const AboutSection = () => {
   return (
@@ -58,22 +59,27 @@ const AboutSection = () => {
               Whether you're looking for your dream home or the perfect
               investment, GP Homes is where your aspirations take shape.
             </p>
-            {/* Call Reservation */}
-            <div className="reservations">
-              <div className="icon px-4">
-                <span className="flaticon-call"></span>
-              </div>
-              <div className="text">
-                <p>Contact For Apartments Details</p>
-                <a href="tel:934 448 1444">934 448 1444</a>
-              </div>
-              <div className="icon px-4">
-                <span className="flaticon-call"></span>
-              </div>
-              <div className="text">
-                <p>Contact For Plots Details</p>
-                <a href="tel:638 400 3003">638 400 3003</a>
-              </div>
+            <div className="brouchure d-flex justify-content-center">
+              <a
+                href={brochure}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="about-button"
+              >
+                📄 Download Brochure
+              </a>
+            </div>
+            <div className="brouchure d-flex justify-content-center">
+              <a
+                href={brochure}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="about-button-mobile"
+              >
+                📄 Download Brochure
+              </a>
             </div>
           </div>
           <div
@@ -98,42 +104,6 @@ const AboutSection = () => {
         className=" animate-box pt-4 px-4 d-none d-md-block"
         style={{ backgroundColor: "rgb(177 169 169 / 12%)" }}
       >
-        <div className="container">
-          <div className="row">
-            <div
-              className="col col-md-3 animate-box"
-              data-animate-effect="fadeInUp"
-            >
-              <img
-                src={roomImage1}
-                alt="Room 1"
-                className="mt-90 mb-30 img-fluid"
-              />
-            </div>
-            <div
-              className="col col-md-3 animate-box"
-              data-animate-effect="fadeInUp"
-            >
-              <img src={roomImage2} alt="Room 2" className="img-fluid" />
-            </div>
-            <div
-              className="col col-md-3 animate-box"
-              data-animate-effect="fadeInUp"
-            >
-              <img
-                src={roomImage3}
-                alt="Room 1"
-                className="mt-90 mb-30 img-fluid"
-              />
-            </div>
-            <div
-              className="col col-md-3 animate-box"
-              data-animate-effect="fadeInUp"
-            >
-              <img src={roomImage4} alt="Room 2" className="img-fluid" />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

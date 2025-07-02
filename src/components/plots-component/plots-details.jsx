@@ -14,6 +14,7 @@ import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
 import room11 from "../../assets/img/rooms/Mid-way.jpg";
 import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg";
 import room13 from "../../assets/img/rooms/fairmont.jpg";
+import room14 from "../../assets/img/rooms/serenevista.jpg";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -224,9 +225,21 @@ const roomsData = [
     image: room12,
     description:
       "GP Homes presents VL Nagar in Thiruvallur near Ikkadu, offering prime residential plots ideal for building your dream home.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-vijayalakshmi",
+  },
+  {
+    id: 11,
+    category: "Plots-Upcoming",
+    location: "Ambattur",
+    title: "GP Serene Vista",
+    image: room14,
+    description:
+      "GP Homes presents its next landmark development, an exclusive enclave of 8 villa plots in Heart of Ambattur.",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-serenevista",
   },
 ];
 
