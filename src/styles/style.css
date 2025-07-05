@@ -6215,32 +6215,33 @@ height: 100vh;
 }
 
 /* timeline css */
-
-.timeline-scroll-wrapper {
+.timeline-outer-wrapper {
   position: relative;
-  width: 100%;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
 }
 
 .timeline-scroll-container {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  /* padding-top: 3rem; */
   padding-bottom: 4rem;
   position: relative;
+  width: 100%;
 }
 
 .timeline-scroll-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 .timeline-track {
   display: inline-flex;
-  position: relative;
   align-items: center;
   min-width: max-content;
   padding: 60px 20px;
+  position: relative;
 }
 
 .timeline-track::before {
@@ -6283,90 +6284,28 @@ height: 100vh;
   top: -2.5rem;
 }
 
-.timeline-event:not(.top) .timeline-content {
+.timeline-event.bottom .timeline-content {
   bottom: -2.5rem;
 }
 
 /* Custom Scrollbar */
 .custom-scrollbar-container {
   position: absolute;
-  bottom: -150%;
+  bottom: -2rem; /* Adjust this as needed */
   left: 50%;
   transform: translateX(-50%);
-  width: 50%; /* shorten scrollbar here */
+  width: clamp(350px, 70%, 750px);
   height: 6px;
-  background: #eee;
+  background-color: #eee;
   border-radius: 3px;
+  overflow: hidden;
+  z-index: 10;
 }
-
-@media (min-width: 320px) and (max-width: 336.9px) {
-  .custom-scrollbar-container {
-  bottom: -245%;
-}
-  
-}
-
-@media (min-width: 337px) and (max-width: 381.9px) {
-  .custom-scrollbar-container {
-  bottom: -233%;
-}
-  
-}
-@media (min-width: 382px) and (max-width: 434.9px) {
-  .custom-scrollbar-container {
-  bottom: -228%;
-}
-  
-}
-
-@media (min-width: 435px) and (max-width: 447.9px) {
-  .custom-scrollbar-container {
-  bottom: -222%;
-}
-}
-
-@media (min-width: 448px) and (max-width: 488.9px) {
-  .custom-scrollbar-container {
-  bottom: -215%;
-}
-}
-
-@media (min-width: 489px) and (max-width: 766.9px) {
-  .custom-scrollbar-container {
-  bottom: -208%;
-}
-}
-
-
-@media (min-width: 767px) and (max-width: 767.9px) {
-  .custom-scrollbar-container {
-  bottom: -275%;
-}
-}
-
-@media (min-width: 768px) and (max-width: 989.9px) {
-  .custom-scrollbar-container {
-  bottom: -180%;
-}
-}
-
-@media (min-width: 990px) and (max-width: 991.9px) {
-  .custom-scrollbar-container {
-  bottom: -184%;
-}
-}
-
-@media (min-width: 991px) and (max-width: 1024px) {
-  .custom-scrollbar-container {
-  bottom: -180%;
-}
-}
-
 
 .custom-scrollbar-thumb {
   width: 40px;
   height: 100%;
-  background: orange;
+  background-color: orange;
   border-radius: 3px;
   transition: transform 0.2s ease;
 }
