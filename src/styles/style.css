@@ -6299,6 +6299,70 @@ height: 100vh;
   border-radius: 3px;
 }
 
+@media (min-width: 320px) and (max-width: 336.9px) {
+  .custom-scrollbar-container {
+  bottom: -245%;
+}
+  
+}
+
+@media (min-width: 337px) and (max-width: 381.9px) {
+  .custom-scrollbar-container {
+  bottom: -233%;
+}
+  
+}
+@media (min-width: 382px) and (max-width: 434.9px) {
+  .custom-scrollbar-container {
+  bottom: -228%;
+}
+  
+}
+
+@media (min-width: 435px) and (max-width: 447.9px) {
+  .custom-scrollbar-container {
+  bottom: -222%;
+}
+}
+
+@media (min-width: 448px) and (max-width: 488.9px) {
+  .custom-scrollbar-container {
+  bottom: -215%;
+}
+}
+
+@media (min-width: 489px) and (max-width: 766.9px) {
+  .custom-scrollbar-container {
+  bottom: -208%;
+}
+}
+
+
+@media (min-width: 767px) and (max-width: 767.9px) {
+  .custom-scrollbar-container {
+  bottom: -275%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 989.9px) {
+  .custom-scrollbar-container {
+  bottom: -180%;
+}
+}
+
+@media (min-width: 990px) and (max-width: 991.9px) {
+  .custom-scrollbar-container {
+  bottom: -184%;
+}
+}
+
+@media (min-width: 991px) and (max-width: 1024px) {
+  .custom-scrollbar-container {
+  bottom: -180%;
+}
+}
+
+
 .custom-scrollbar-thumb {
   width: 40px;
   height: 100%;
