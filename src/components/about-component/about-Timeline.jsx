@@ -12,25 +12,44 @@ const AbouTimeline = () => {
 }, []);
 
 useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    const thumb = thumbRef.current;
+  const scrollContainer = scrollContainerRef.current;
+  const thumb = thumbRef.current;
+  const scrollbarContainer = thumb.parentElement; // .custom-scrollbar-container
 
-    const handleScroll = () => {
-      const scrollPercent =
-        scrollContainer.scrollLeft /
-        (scrollContainer.scrollWidth - scrollContainer.clientWidth);
-      const maxThumbLeft = scrollContainer.clientWidth * 0.5 - thumb.offsetWidth;
-      const thumbLeft = scrollPercent * maxThumbLeft;
-      thumb.style.transform = `translateX(${thumbLeft}px)`;
-    };
+  const handleScroll = () => {
+    const scrollRatio =
+      scrollContainer.scrollLeft /
+      (scrollContainer.scrollWidth - scrollContainer.clientWidth);
 
-    scrollContainer.addEventListener("scroll", handleScroll);
+    const trackWidth = scrollbarContainer.offsetWidth;
+    const thumbWidth = thumb.offsetWidth;
+    const maxThumbLeft = trackWidth - thumbWidth;
 
-    return () => {
-      scrollContainer.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    const thumbLeft = scrollRatio * maxThumbLeft;
+    thumb.style.transform = `translateX(${thumbLeft}px)`;
+  };
 
+  const handleWheel = (e) => {
+    if (e.deltaY !== 0) {
+      e.preventDefault();
+      scrollContainer.scrollLeft += e.deltaY;
+    }
+  };
+
+  scrollContainer.addEventListener("scroll", handleScroll);
+  scrollContainer.addEventListener("wheel", handleWheel, { passive: false });
+
+  // Call initially
+  handleScroll();
+
+  window.addEventListener("resize", handleScroll); // handle resize for thumb sync
+
+  return () => {
+    scrollContainer.removeEventListener("scroll", handleScroll);
+    scrollContainer.removeEventListener("wheel", handleWheel);
+    window.removeEventListener("resize", handleScroll);
+  };
+}, []);
   return (
     <section className="py-5 bg-light">
       <div className="timeline-outer-wrapper">
