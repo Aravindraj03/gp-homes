@@ -135,45 +135,45 @@ const SEOHandler = () => {
         "GP Homes Valencia Ruby offers luxurious apartments in Ayanambakkam. Find your dream home with modern amenities in a prime location. Enquire now!",
     },
     "/apartments-chennai/gp-blazing-star/gp-blazing-star-2bhk": {
-      title: "GP Blazing Star- Buy 2BHK Apartments, Flats in Porur",
+      title: "GP Blazing Star: 2BHK Flats for Sale in PORUR",
       description:
-        "GP Blazing Star offers premium 2BHK apartments in Porur. Find your dream home with modern amenities in a prime location. Explore now!"
+        "GP Blazing Star by GP Homes offers premium 2BHK flats for sale in Porur. Modern amenities, prime location, and quality living await you. Book your site visit today!"
     },
 
     "/apartments-chennai/gp-blazing-star/gp-blazing-star-3bhk":{
-      title: " GP Blazing Star- Buy 3BHK Apartments, Flats in Porur",
-      description:"GP Blazing Star offers premium 3BHK apartments in Porur. Find your dream home with modern amenities in a prime location. Explore now!"
+      title: " GP Blazing Star: 3BHK Flats for Sale in PORUR",
+      description:"GP Blazing Star by GP Homes offers spacious 3BHK flats for sale in Porur. Enjoy modern living, premium amenities, and excellent connectivity. Book your visit today!"
     },
 
     "/apartments-chennai/gp-breeze-way/gp-breeze-way-2bhk": {
-      title: "GP Breeze Way- Buy 2BHK Apartments, Flats in Menambedu",
-      description:"GP Breeze Way offers premium 2BHK apartments in Menambedu. Find your dream home with top amenities in a prime location. Explore now!"
+      title: "GP Breeze Way: 2BHK Flats for Sale in Menambedu",
+      description:"GP Breeze Way by GP Homes offers spacious 2BHK flats for sale in Menambedu. Enjoy modern design, prime location, and top amenities. Schedule your visit today!"
     },
 
     "/apartments-chennai/gp-breeze-way/gp-breeze-way-3bhk": {
-      title: "GP Breeze Way- Buy 3BHK Apartments, Flats in Menambedu",
-      description:"GP Breeze Way offers premium 3BHK apartments in Menambedu. Find your dream home with top amenities in a prime location. Explore now!"
+      title: "GP Breeze Way: 3BHK Flats for Sale in Menambedu",
+      description:"GP Breeze Way offers premium 3BHK flats for sale in Menambedu. Enjoy modern living, top amenities, and great connectivity with GP Homes. Book your site visit today!"
     },
 
     "/apartments-chennai/gp-homes-elanza/gp-homes-elanza-2bhk": {
-      title: "GP Elanza- Buy 2BHK Apartments, Flats in Madhanadhapuram",
+      title: " 2BHK Flats for Sale in Madhanadhapuram",
       description:
-        "GP Elanza offers premium 2BHK apartments in Madhanadhapuram. Experience luxury living with top amenities in a prime location. Explore now!"
+        "GP Homes offers well-designed 2BHK flats for sale in Madhanandhapuram. Enjoy comfort, connectivity, and quality living in a prime location. Book your site visit now!"
     },
 
     "/apartments-chennai/gp-homes-elanza/gp-homes-elanza-3bhk": {
-      title: "GP Elanza- Buy 3BHK Apartments, Flats in Madhanadhapuram",
-      description: "GP Elanza offers premium 3BHK apartments in Madhanadhapuram. Experience luxury living with top amenities in a prime location. Explore now!"
+      title: "3BHK Flats for Sale in Madhanadhapuram",
+      description: "GP Homes offers spacious 3BHK flats for sale in Madhanadhapuram. Experience modern living, prime location, and superior construction. Book your site visit today!"
     },
 
     "/apartments-chennai/gp-valencia-emarald/gp-valencia-emarald-2bhk": {
-      title : " GP Valencia Emarald- Buy 2BHK Apartments, Flats in Ayanambakkam",
-      description : "GP Valencia Emerald offers premium 2BHK apartments in Ayanambakkam. Experience luxury living with modern amenities in a prime location. Explore now!"
+      title : " GP Valencia Emerald: 2BHK Flats for Sale in Ayanambakkam",
+      description : " GP Valencia Emerald by GP Homes offers elegant 2BHK flats for sale in Ayanambakkam. Modern design, prime location, and premium amenities await. Book your visit now!"
     },
 
     "/apartments-chennai/gp-valencia-emarald/gp-valencia-emarald-3bhk": {
-      title : "GP Valencia Emarald- Buy 3BHK Apartments, Flats in Ayanambakkam",
-      description : "GP Valencia Emerald offers premium 3BHK apartments in Ayanambakkam. Experience luxury living with modern amenities in a prime location. Explore now!"
+      title : "GP Valencia Emerald: 3BHK Flats for Sale in Ayanambakkam",
+      description : "GP Valencia Emerald by GP Homes offers premium 3BHK flats for sale in Ayanambakkam. Enjoy modern living, prime location, and top-class amenities. Book your visit today!"
     },
 
     "/apartments-chennai/gp-valencia-ruby/gp-valencia-ruby-2bhk": {
@@ -182,8 +182,8 @@ const SEOHandler = () => {
     },
 
     "/apartments-chennai/gp-valencia-ruby/gp-valencia-ruby-3bhk": {
-      title : "GP Homes Valencia Ruby- Buy 3BHK Apartments, Flats in Ayanambakkam",
-      description : "GP Homes Valencia Ruby offers luxurious 3BHK apartments in Ayanambakkam. Find your dream home with modern amenities in a prime location. Enquire now!"
+      title : "GP Homes Valencia Ruby: 3BHK Flats for Sale in Ayanambakkam",
+      description : "GP Homes Valencia Ruby offers premium 3BHK flats for sale in Ayanambakkam. Enjoy modern design, top amenities, and a prime location. Book your site visit today!"
     },
 
     "/plots-chennai": {
@@ -224,6 +224,16 @@ const SEOHandler = () => {
       description:
         "GP Vijayalakshmi offers premium residential plots and CMDA-approved land for sale in Thiruvallur. Secure your dream home location today. Enquire now!",
     },
+      "/plots-chennai/gp-fairmont": {
+      title: "GP Fairmont: Plots in Parivakkam Chennai",
+      description: "GP Fairmont by GP Homes offers premium plots for sale in Parivakkam, Chennai. Build your dream home in a prime location with great connectivity. Book your site visit today!"
+    },
+
+    "/plots-chennai/gp-serenevista": {
+      title: "GP Serene Vista: Plots in Ambattur, Residential Land For Sale ",
+      description:
+        " GP Homes presents GP Serene Vista – Premium residential plots for sale in Ambattur. Secure approved land with excellent connectivity for your dream home."
+    },
     "/about-us": {
       title: "About us - GP Homes",
       description:
@@ -245,9 +255,9 @@ const SEOHandler = () => {
         "Explore essential real estate tools at GP Homes to simplify your home-buying journey. Get insights on property trends, pricing, and more for smart investments in Chennai.",
     },
     "/testimonials": {
-      title: "Testimonials - GP Homes",
+      title: "GP Homes - Testimonials",
       description:
-        "Read what our happy homeowners say about GP Homes. Discover real experiences and testimonials from satisfied customers who found their dream homes with us.",
+        "Read what our happy homeowners say about GP Homes! Discover genuine testimonials and experiences from satisfied customers who chose quality living with us.",
     },
     "/Careers": {
       title: "Careers - GP Homes",
@@ -274,6 +284,21 @@ const SEOHandler = () => {
       description:
         "Stay updated with the latest news, trends, and insights on real estate. Read GP Homes' blogs for expert advice, market updates, and home-buying tips.",
     },
+    "/enquiry-form": {
+      title:" GP Homes - Enquiry Form",
+      description:
+        "Fill out the GP Homes Enquiry Form to get details on flats and plots, pricing, and site visits. Our team will contact you shortly to assist with your dream home."
+    },
+    "/thank-you": {
+      title: "GP Homes - Thank You",
+      description:
+        "Thank you for connecting with GP Homes! Our team will get in touch with you shortly to assist with your dream home. We appreciate your interest!",
+  },
+  "/plots/enquiry-form": {
+    title: "GP Homes - Plots Enquiry Form",
+    description:
+      "Enquire now with GP Homes for premium residential plots in prime Chennai locations. Fill out the form to get site details, pricing, and booking assistance today!",
+  }
   };
 
   const { title, description } = seoData[location.pathname] || seoData["/"];
