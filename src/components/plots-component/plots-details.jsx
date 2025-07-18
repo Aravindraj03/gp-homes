@@ -443,10 +443,7 @@ const ApartmentDetails = () => {
                       </div> */}
                       <Link
                         className="btn-form1-submit text-center"
-                        to={
-                          room.category?.startsWith("Plots")
-                            ? `/plots-chennai/${room.slug}`
-                            : `/apartments-chennai/${room.slug}`
+                        to={`/plots-chennai/${room.slug}`
                         }
                       >
                         Details

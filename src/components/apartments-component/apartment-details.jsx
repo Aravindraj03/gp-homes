@@ -380,16 +380,12 @@ const ApartmentDetails = () => {
                         </div>
                       )}
 
-                      {room.category == "Apartments-Ongoing" && (
+                      {room.category === "Apartments-Ongoing" && (
                         <Link
                           className="btn-form1-submit text-center"
-                          to={`/${
-                            room.category === "plots-chennai"
-                              ? "plots-chennai"
-                              : "apartments-chennai"
-                          }/${room.slug}`}
+                          to={`/apartments-chennai/${room.slug}`}
                         >
-                          Details 
+                          Details
                         </Link>
                       )}
                     </div>

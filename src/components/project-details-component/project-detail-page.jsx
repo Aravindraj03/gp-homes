@@ -16,6 +16,14 @@ import logo from "../../assets/img/gp-logo.png";
 import PlotTable from "./plots-data";
 import PonBhoomiReservation from "./ponbhoomi-reservation";
 
+// floorplan for ponbhoomi
+
+import floorPlan1 from "../../assets/img/floorplans/pon floor2 (1).jpeg";
+import floorPlan2 from "../../assets/img/floorplans/pon floor2 (2).jpeg";
+import floorPlan3 from "../../assets/img/floorplans/pon floor2 (3).jpeg";
+import floorPlan4 from "../../assets/img/floorplans/pon floor2 (4).jpeg";
+import floorPlan5 from "../../assets/img/floorplans/pon floor2 (5).jpeg";
+
 function ProjectDetailPage() {
   const location = useLocation();
 const category = location.pathname.includes("/plots") ? "plots" : "apartments";
@@ -114,53 +122,133 @@ const category = location.pathname.includes("/plots") ? "plots" : "apartments";
         {slug === "gp-ponBhoomi" && (
           <PlotTable onSelectPlot={handleSelectPlot} />
         )}
+
         <ProjectDetailSection project={project} />
+        {slug === "gp-ponBhoomi" && (
+        
+        <div className="mt-4 px-5 py-5">
+          <h4 className="mb-3 text-center">Villa Construction Progress</h4>
+
+          <div className="row g-2 px-5">
+            {/* First Row: 3 images */}
+            <div className="col-3">
+              <img
+                src={floorPlan1}
+                alt="Site 1"
+                className="img-fluid rounded"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                src={floorPlan2}
+                alt="Site 2"
+                className="img-fluid rounded"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                src={floorPlan3}
+                alt="Site 3"
+                className="img-fluid rounded"
+              />
+            </div>
+
+            {/* Second Row: 2 images */}
+            <div className="col-3">
+              <img
+                src={floorPlan4}
+                alt="Site 4"
+                className="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+        )}
         <div ref={homeReservationRef}>
           <HomeReservation project={project} selectedPlotData={selectedPlot} />
         </div>
       </div>
 
       {/* === MOBILE VIEW (gp-ponBhoomi) === */}
-  {slug === "gp-ponBhoomi" && (
-    <div className="d-block d-md-none">
-      <ProjectDetailSection project={project} />
-      <PlotTable onSelectPlot={handleSelectPlot} />
-      <div ref={homeReservationRef}>
-        <PonBhoomiReservation selectedPlotData={selectedPlot} />
-      </div>
+      {slug === "gp-ponBhoomi" && (
+        <div className="d-block d-md-none">
+          <ProjectDetailSection project={project} />
+          <PlotTable onSelectPlot={handleSelectPlot} />
+          <div ref={homeReservationRef}>
+            <PonBhoomiReservation selectedPlotData={selectedPlot} />
+          </div>
+        {/* Image Section - visible only on screens below md */}
+<div className="d-block d-md-none">
+  <div className="mt-4 px-3 py-3">
+    <h5 className="mb-3 text-center">Villa Construction Progress</h5>
 
-      <div
-        className="position-fixed bottom-0 start-0 w-100 d-flex justify-content-around bg-white py-2 border-top d-block d-md-none"
-        style={{ zIndex: 1050 }}
-      >
-        <Link
-          to={`/${category}/enquiry-form?type=${
-            category === "plots" ? "Plot" : "Apartment"
-          }&project=${encodeURIComponent(project.name)}`}
-          className="btn btn-primary w-50 me-1 text-white"
-          style={{ backgroundColor: "rgb(40 167 69)" }}
-        >
-          Enquiry
-        </Link>
-        <a
-          href="tel:+918098725026"
-          className="btn btn-success w-50 ms-1 text-white"
-        >
-          Call
-        </a>
+    <div className="row g-3">
+      <div className="col-12">
+        <img
+          src={floorPlan1}
+          alt="Site 1"
+          className="img-fluid rounded"
+        />
+      </div>
+      <div className="col-12">
+        <img
+          src={floorPlan2}
+          alt="Site 2"
+          className="img-fluid rounded"
+        />
+      </div>
+      <div className="col-12">
+        <img
+          src={floorPlan3}
+          alt="Site 3"
+          className="img-fluid rounded"
+        />
+      </div>
+      <div className="col-12">
+        <img
+          src={floorPlan4}
+          alt="Site 4"
+          className="img-fluid rounded"
+        />
       </div>
     </div>
-  )}
-  
+  </div>
+</div>
+
+          <div
+            className="position-fixed bottom-0 start-0 w-100 d-flex justify-content-around bg-white py-2 border-top d-block d-md-none"
+            style={{ zIndex: 1050 }}
+          >
+            <Link
+              to={`/${category}/enquiry-form?type=${
+                category === "plots" ? "Plot" : "Apartment"
+              }&project=${encodeURIComponent(project.name)}`}
+              className="btn btn-primary w-50 me-1 text-white"
+              style={{ backgroundColor: "rgb(40 167 69)" }}
+            >
+              Enquiry
+            </Link>
+            <a
+              href="tel:+918098725026"
+              className="btn btn-success w-50 ms-1 text-white"
+            >
+              Call
+            </a>
+          </div>
+        </div>
+      )}
 
       {/* === MOBILE VIEW (other projects) === */}
       {slug !== "gp-ponBhoomi" && (
-      <div className="d-block d-md-none">
-        <ProjectDetailSection project={project} />
-        <div ref={homeReservationRef}>
-          <HomeReservation project={project} selectedPlotData={selectedPlot} />
+        <div className="d-block d-md-none">
+          <ProjectDetailSection project={project} />
+          <div ref={homeReservationRef}>
+            <HomeReservation
+              project={project}
+              selectedPlotData={selectedPlot}
+            />
+          </div>
         </div>
-      </div>
       )}
 
       <Footer />

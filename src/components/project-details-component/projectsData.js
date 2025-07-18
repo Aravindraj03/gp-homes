@@ -1441,7 +1441,7 @@ const projectsData = [
       "Invest in PonBhoomi by GP Homes today—where value meets opportunity!",
     ],
     banner_images: [GPPonBhoomi],
-    image: listimg4,
+    image: [midwayAvenueFloorplan],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
