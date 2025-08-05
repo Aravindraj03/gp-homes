@@ -13,5 +13,22 @@ Disallow: /cgi-bin/
 Disallow: /category/enquiry-form
 Disallow: /enquiry-form
 Disallow: /thank-you
+Disallow: /plots-chennai/gp-valencia-emarald-3bhk
+Disallow: /plots-chennai/gp-valencia-emarald-2bhk
+Disallow: /plots-chennai/gp-valencia-emarald
+Disallow: /plots-chennai/gp-valencia-ruby-2bhk
+Disallow: /plots-chennai/gp-valencia-ruby-3bhk
+Disallow: /plots-chennai/gp-valencia-ruby
+Disallow: /plots-chennai/gp-blazing-star
+Disallow: /plots-chennai/gp-blazing-star-3bhk
+Disallow: /plots-chennai/gp-blazing-star-2bhk
+Disallow: /plots-chennai/gp-breeze-way
+Disallow: /plots-chennai/gp-breeze-way-2bhk
+Disallow: /plots-chennai/gp-breeze-way-3bhk
+Disallow: /plots-chennai/gp-homes-elanza
+Disallow: /plots-chennai/gp-homes-elanza-2bhk
+Disallow: /plots-chennai/gp-homes-elanza-3bhk
+
+
 
 Sitemap: https://www.gphomes.in/sitemap.xml

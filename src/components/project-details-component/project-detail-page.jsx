@@ -1,5 +1,5 @@
 import React, { Fragment, useRef, useState } from "react";
-import { useParams,useLocation } from "react-router-dom";
+import { useParams,useLocation,Navigate } from "react-router-dom";
 import Header from "../common/header";
 import Footer from "../common/footer";
 import PlotsVideo from "./plots-video";
@@ -25,6 +25,24 @@ import floorPlan4 from "../../assets/img/floorplans/pon floor2 (4).jpeg";
 import floorPlan5 from "../../assets/img/floorplans/pon floor2 (5).jpeg";
 
 function ProjectDetailPage() {
+    const apartmentSlugs = [
+  "gp-blazing-star-3bhk",
+  "gp-blazing-star",
+  "gp-blazing-star-2bhk",
+  "gp-breeze-way",
+  "gp-breeze-way-2bhk",
+  "gp-breeze-way-3bhk",
+  "gp-homes-elanza",
+  "gp-homes-elanza-3bhk",
+  "gp-homes-elanza-2bhk",
+  "gp-valencia-ruby",
+  "gp-valencia-ruby-2bhk",
+  "gp-valencia-ruby-3bhk",
+  "gp-valencia-emarald",
+  "gp-valencia-emarald-3bhk",
+  "gp-valencia-emarald-2bhk",
+];
+
   const location = useLocation();
 const category = location.pathname.includes("/plots") ? "plots" : "apartments";
   const { slug } = useParams(); // Get slug from URL
@@ -42,6 +60,13 @@ const category = location.pathname.includes("/plots") ? "plots" : "apartments";
   if (!project) {
     return <h2>Project not found</h2>;
   }
+
+  const currentPath = location.pathname;
+  const Slugs = currentPath.split("/").pop();
+if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
+    return <Navigate to={`/apartments-chennai/gp-homes/${slug}`} replace />;
+  }
+
 
   return (
     <Fragment>
