@@ -161,7 +161,7 @@ const roomsData = [
 
   {
     id: 12,
-    category: "Plots-Ongoing",
+    category: "Plots-Completed",
     location: "Parivakkam",
     title: "GP Fairmont",
     image: room13,
@@ -191,7 +191,7 @@ const roomsData = [
 
   {
     id: 8,
-    category: "Plots-Ongoing",
+    category: "Plots-Completed",
     location: "Mogappair",
     title: "GP Ethulia",
     image: room8,
@@ -231,7 +231,7 @@ const roomsData = [
   },
   {
     id: 11,
-    category: "Plots-Upcoming",
+    category: "Plots-Ongoing",
     location: "Ambattur",
     title: "GP Serene Vista",
     image: room14,
@@ -241,6 +241,18 @@ const roomsData = [
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-serenevista",
   },
+  // {
+  //   id: 11,
+  //   category: "Plots-Ongoing",
+  //   location: "Aynambakkam ",
+  //   title: "GP Dream Scape",
+  //   image: room14,
+  //   description:
+  //     "GP Homes presents its next landmark development, an exclusive enclave of 8 villa plots in Heart of Ambattur.",
+  //   project_status: "Upcoming Project",
+  //   features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+  //   slug: "gp-dreamscape",
+  // },
 ];
 
 const ApartmentDetails = () => {
@@ -254,6 +266,7 @@ const ApartmentDetails = () => {
   const handleFilter = (category) => {
     setSelectedCategory(category);
     setSelectedFilter(category);
+    setVisibleRooms([]);
     const filteredRooms =
       category === "All"
         ? roomsData
@@ -296,7 +309,10 @@ const ApartmentDetails = () => {
 
           <div className="col-md-4">
             <button
-              onClick={() => handleFilter("Plots-Ongoing")}
+              onClick={() => {
+                setVisibleRooms([]);
+                handleFilter("Plots-Ongoing");
+              }}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
                 selectedFilter === "Plots-Ongoing"
@@ -310,7 +326,10 @@ const ApartmentDetails = () => {
 
           <div className="col-md-4">
             <button
-              onClick={() => handleFilter("Plots-Upcoming")}
+              onClick={() => {
+                setVisibleRooms([]);
+                handleFilter("Plots-Upcoming");
+              }}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
                 selectedFilter === "Plots-Upcoming"
@@ -323,8 +342,12 @@ const ApartmentDetails = () => {
           </div>
 
           <div className="col-md-4">
+             
             <button
-              onClick={() => handleFilter("Plots-Completed")}
+              onClick={() => {
+                setVisibleRooms([]);
+                handleFilter("Plots-Completed");
+              }}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
                 selectedFilter === "Plots-Completed"
@@ -443,8 +466,7 @@ const ApartmentDetails = () => {
                       </div> */}
                       <Link
                         className="btn-form1-submit text-center"
-                        to={`/plots-chennai/${room.slug}`
-                        }
+                        to={`/plots-chennai/${room.slug}`}
                       >
                         Details
                       </Link>

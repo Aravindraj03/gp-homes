@@ -1700,8 +1700,91 @@ const projectsData = [
       it_parks_image: fairmontItpark,
       entertainment_zone_image: fairmontEntertainment,
     },
-    project_status: "Upcoming Project",
+    project_status: "Ongoing Project",
     slug: "gp-serenevista",
+  },
+  {
+    id: 17,
+    location: "Plots in Aynambakkam Chennai",
+    name: "GP Dream Scape",
+    description: [
+      "GP Homes proudly presents its next landmark development - GP Serene Vista, an exclusive enclave of just 8 premium villa plots in the heart of Ambattur.",
+      "GP Serene Vista is thoughtfully planned to offer an intimate, serene lifestyle surrounded by greenery,privacy. and the refined charm of villa living. Everyinch of this gated community reflects GP Home's legacy of quality, trust, and thoughtful design.",
+      "Here, mornings begin with the calming rustle of trees. and your home becomes a sanctuary of peace amidst the pulse of a growing city. With only 8 plots available, this is a rare opportunity to build your dream villa in a tranquil setting - while still enjoying unmatched access to key hubs like Anna Nagar. Ambattur, Padi and Korattur."
+    ],
+    banner_images: [GPSereneVista],
+    image: listimg4,
+    facilities: [
+      // ["Parking", "flaticon-car"],
+      // ["Painting", "flaticon-wifi"],
+      // ["Toilet", "flaticon-bed"],
+      // ["Structure", "flaticon-breakfast"],
+      // ["Joineries", "flaticon-clock-1"],
+      // ["Plastering", "flaticon-swimming"],
+      // ["Electricals", "flaticon-clock-1"],
+      // ["Plumbing", "flaticon-swimming"],
+      // ["Water Supply", "flaticon-clock-1"],
+      // ["Balcony area", "flaticon-swimming"],
+      // ["Kitchen", "flaticon-swimming"],
+    ],
+    specifications_title: "",
+    specifications_desc: "",
+    amenities_title: "Amenities",
+    amenities_desc:
+      "Unveil the contemporary luxuries of Serene Vista and select the ideal plot to build your vision of home. With generous plot dimensions and varied layout options, envisioning your perfect living environment becomes effortless. Come experience all that Serene Vista has waiting for you!",
+    amenities: [
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
+    ],
+    location_map_title: "Location Map",
+    location_map_desc:
+      "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
+    locations: {
+      titles: [
+        "Location Highlights",
+        "Hospitals",
+        "Educational Institutions",
+        "IT Parks",
+        "Entertainment Zone",
+      ],
+      location_highlights: [
+        "Pattaravakam Railway Station",
+        "Pattaravakam Bus Stand",
+        "Karakku Bus Stand",
+        "Gnanamoorthy Bus Stand",
+        "Korattur Railway Station",
+      ],
+      hospitals: [
+        "Sri Raghavendra Hospital",
+        "New Century Hospital",
+        "Apple Plus Hospital",
+        "Psychiatry Life Skills"
+      ],
+      educational_institutions: [
+         
+        "Annai Violet arts and science College",
+        
+        "Aakash Institute",
+        
+        "Soka Ikeda arts and science College for Women",  
+        
+      ],
+      it_parks: [ "Ambit IT Park"],
+      entertainment_zone: ["Murugan Cinemas RGB 4K", "Thangal Park", "Korattur public Park", "Rakki Cinemas"],
+      location_highlights_image: RMSereneVista,
+      hospitals_image: hospitalFairmont,
+      educational_institutions_image: educationalFairmont,
+      it_parks_image: fairmontItpark,
+      entertainment_zone_image: fairmontEntertainment,
+    },
+    project_status: "Ongoing Project",
+    slug: "gp-dreamscape",
   },
 ];
 

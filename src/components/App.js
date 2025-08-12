@@ -112,7 +112,17 @@ const SEOHandler = () => {
       description:
         "GP Blazing Star offers premium apartments in Porur. Find your dream home with modern amenities in a prime location. Explore now!",
     },
+    "/plots-chennai/gp-blazing-star": {
+      title: "GP Blazing Star- Buy Apartments, Flats in Porur",
+      description:
+        "GP Blazing Star offers premium apartments in Porur. Find your dream home with modern amenities in a prime location. Explore now!",
+    },
     "/apartments-chennai/gp-breeze-way": {
+      title: "GP Breeze Way- Buy Apartments, Flats in Menambedu",
+      description:
+        "GP Breeze Way offers premium apartments in Menambedu. Find your dream home with top amenities in a prime location. Explore now!",
+    },
+    "/plots-chennai/gp-breeze-way": {
       title: "GP Breeze Way- Buy Apartments, Flats in Menambedu",
       description:
         "GP Breeze Way offers premium apartments in Menambedu. Find your dream home with top amenities in a prime location. Explore now!",
@@ -122,7 +132,18 @@ const SEOHandler = () => {
       description:
         "GP Elanza offers premium apartments in Madhanadhapuram. Experience luxury living with top amenities in a prime location. Explore now!",
     },
+    "/plots-chennai/gp-homes-elanza": {
+      title: " GP Elanza- Buy Apartments, Flats in Madhanadhapuram",
+      description:
+        "GP Elanza offers premium apartments in Madhanadhapuram. Experience luxury living with top amenities in a prime location. Explore now!",
+    },
     "/apartments-chennai/gp-valencia-emarald": {
+      title:
+        "GP Valencia Emarald- Buy Apartments, Flats in Ayanambakkam",
+      description:
+        "GP Valencia Emerald offers premium apartments in Ayanambakkam. Experience luxury living with modern amenities in a prime location. Explore now!",
+    },
+    "/plots-chennai/gp-valencia-emarald": {
       title:
         "GP Valencia Emarald- Buy Apartments, Flats in Ayanambakkam",
       description:
@@ -134,7 +155,18 @@ const SEOHandler = () => {
       description:
         "GP Homes Valencia Ruby offers luxurious apartments in Ayanambakkam. Find your dream home with modern amenities in a prime location. Enquire now!",
     },
+    "/plots-chennai/gp-valencia-ruby": {
+      title:
+        "GP Homes Valencia Ruby- Buy Apartments, Flats in Ayanambakkam",
+      description:
+        "GP Homes Valencia Ruby offers luxurious apartments in Ayanambakkam. Find your dream home with modern amenities in a prime location. Enquire now!",
+    },
     "/apartments-chennai/gp-blazing-star/gp-blazing-star-2bhk": {
+      title: "GP Blazing Star: 2BHK Flats for Sale in PORUR",
+      description:
+        "GP Blazing Star by GP Homes offers premium 2BHK flats for sale in Porur. Modern amenities, prime location, and quality living await you. Book your site visit today!"
+    },
+    "/plots-chennai/gp-blazing-star/gp-blazing-star-2bhk": {
       title: "GP Blazing Star: 2BHK Flats for Sale in PORUR",
       description:
         "GP Blazing Star by GP Homes offers premium 2BHK flats for sale in Porur. Modern amenities, prime location, and quality living await you. Book your site visit today!"
@@ -144,13 +176,25 @@ const SEOHandler = () => {
       title: " GP Blazing Star: 3BHK Flats for Sale in PORUR",
       description:"GP Blazing Star by GP Homes offers spacious 3BHK flats for sale in Porur. Enjoy modern living, premium amenities, and excellent connectivity. Book your visit today!"
     },
+    "/plots-chennai/gp-blazing-star/gp-blazing-star-3bhk":{
+      title: " GP Blazing Star: 3BHK Flats for Sale in PORUR",
+      description:"GP Blazing Star by GP Homes offers spacious 3BHK flats for sale in Porur. Enjoy modern living, premium amenities, and excellent connectivity. Book your visit today!"
+    },
 
     "/apartments-chennai/gp-breeze-way/gp-breeze-way-2bhk": {
       title: "GP Breeze Way: 2BHK Flats for Sale in Menambedu",
       description:"GP Breeze Way by GP Homes offers spacious 2BHK flats for sale in Menambedu. Enjoy modern design, prime location, and top amenities. Schedule your visit today!"
     },
+    "/plots-chennai/gp-breeze-way/gp-breeze-way-2bhk": {
+      title: "GP Breeze Way: 2BHK Flats for Sale in Menambedu",
+      description:"GP Breeze Way by GP Homes offers spacious 2BHK flats for sale in Menambedu. Enjoy modern design, prime location, and top amenities. Schedule your visit today!"
+    },
 
     "/apartments-chennai/gp-breeze-way/gp-breeze-way-3bhk": {
+      title: "GP Breeze Way: 3BHK Flats for Sale in Menambedu",
+      description:"GP Breeze Way offers premium 3BHK flats for sale in Menambedu. Enjoy modern living, top amenities, and great connectivity with GP Homes. Book your site visit today!"
+    },
+    "/plots-chennai/gp-breeze-way/gp-breeze-way-3bhk": {
       title: "GP Breeze Way: 3BHK Flats for Sale in Menambedu",
       description:"GP Breeze Way offers premium 3BHK flats for sale in Menambedu. Enjoy modern living, top amenities, and great connectivity with GP Homes. Book your site visit today!"
     },
@@ -161,7 +205,18 @@ const SEOHandler = () => {
         "GP Homes offers well-designed 2BHK flats for sale in Madhanandhapuram. Enjoy comfort, connectivity, and quality living in a prime location. Book your site visit now!"
     },
 
+    "/plots-chennai/gp-homes-elanza/gp-homes-elanza-2bhk": {
+      title: " 2BHK Flats for Sale in Madhanadhapuram",
+      description:
+        "GP Homes offers well-designed 2BHK flats for sale in Madhanandhapuram. Enjoy comfort, connectivity, and quality living in a prime location. Book your site visit now!"
+    },
+
     "/apartments-chennai/gp-homes-elanza/gp-homes-elanza-3bhk": {
+      title: "3BHK Flats for Sale in Madhanadhapuram",
+      description: "GP Homes offers spacious 3BHK flats for sale in Madhanadhapuram. Experience modern living, prime location, and superior construction. Book your site visit today!"
+    },
+
+    "/plots-chennai/gp-homes-elanza/gp-homes-elanza-3bhk": {
       title: "3BHK Flats for Sale in Madhanadhapuram",
       description: "GP Homes offers spacious 3BHK flats for sale in Madhanadhapuram. Experience modern living, prime location, and superior construction. Book your site visit today!"
     },
@@ -170,8 +225,16 @@ const SEOHandler = () => {
       title : " GP Valencia Emerald: 2BHK Flats for Sale in Ayanambakkam",
       description : " GP Valencia Emerald by GP Homes offers elegant 2BHK flats for sale in Ayanambakkam. Modern design, prime location, and premium amenities await. Book your visit now!"
     },
+    "/plots-chennai/gp-valencia-emarald/gp-valencia-emarald-2bhk": {
+      title : " GP Valencia Emerald: 2BHK Flats for Sale in Ayanambakkam",
+      description : " GP Valencia Emerald by GP Homes offers elegant 2BHK flats for sale in Ayanambakkam. Modern design, prime location, and premium amenities await. Book your visit now!"
+    },
 
     "/apartments-chennai/gp-valencia-emarald/gp-valencia-emarald-3bhk": {
+      title : "GP Valencia Emerald: 3BHK Flats for Sale in Ayanambakkam",
+      description : "GP Valencia Emerald by GP Homes offers premium 3BHK flats for sale in Ayanambakkam. Enjoy modern living, prime location, and top-class amenities. Book your visit today!"
+    },
+    "/plots-chennai/gp-valencia-emarald/gp-valencia-emarald-3bhk": {
       title : "GP Valencia Emerald: 3BHK Flats for Sale in Ayanambakkam",
       description : "GP Valencia Emerald by GP Homes offers premium 3BHK flats for sale in Ayanambakkam. Enjoy modern living, prime location, and top-class amenities. Book your visit today!"
     },
@@ -180,8 +243,17 @@ const SEOHandler = () => {
       title : "GP Homes Valencia Ruby- Buy 2BHK Apartments, Flats in Ayanambakkam",
       description : "GP Homes Valencia Ruby offers luxurious 2BHK apartments in Ayanambakkam. Find your dream home with modern amenities in a prime location. Enquire now!"
     },
+    "/plots-chennai/gp-valencia-ruby/gp-valencia-ruby-2bhk": {
+      title : "GP Homes Valencia Ruby- Buy 2BHK Apartments, Flats in Ayanambakkam",
+      description : "GP Homes Valencia Ruby offers luxurious 2BHK apartments in Ayanambakkam. Find your dream home with modern amenities in a prime location. Enquire now!"
+    },
 
     "/apartments-chennai/gp-valencia-ruby/gp-valencia-ruby-3bhk": {
+      title : "GP Homes Valencia Ruby: 3BHK Flats for Sale in Ayanambakkam",
+      description : "GP Homes Valencia Ruby offers premium 3BHK flats for sale in Ayanambakkam. Enjoy modern design, top amenities, and a prime location. Book your site visit today!"
+    },
+
+    "/plots-chennai/gp-valencia-ruby/gp-valencia-ruby-3bhk": {
       title : "GP Homes Valencia Ruby: 3BHK Flats for Sale in Ayanambakkam",
       description : "GP Homes Valencia Ruby offers premium 3BHK flats for sale in Ayanambakkam. Enjoy modern design, top amenities, and a prime location. Book your site visit today!"
     },

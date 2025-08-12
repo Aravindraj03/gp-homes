@@ -135,7 +135,7 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
           <img
             src={mobileBanner} // Replace with your actual path
             alt="PonBhoomi Mobile Banner"
-            className="img-fluid w-100"
+            className="img-fluid w-100 mt-2"
           />
         ) : (
           <ProjectDetailBanner project={project} />

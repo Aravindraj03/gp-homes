@@ -25,7 +25,7 @@ const ProjectsList = ({ project,projectDetails }) => {
         <div className="row">
           <div className="col-md-12">
             {projects.map((project, index) => (
-              <div
+                <div
                 key={project.id}
                 className={`rooms2 mb-90 ${
                   index % 2 !== 0 ? "left" : ""
@@ -37,12 +37,13 @@ const ProjectsList = ({ project,projectDetails }) => {
                 </figure>
 
                 <div className="caption">
+                  
                   <h3>{project.type}</h3>
                   <h4>
                     {/* <a href="room-details.html">{project.name}</a> */}
                     <Link to={`/plots-chennai/${project.slug}`}>
                       {project.name}
-                    </Link>
+                    </Link> 
                   </h4>
                   <p>{project.description}</p>
                   <div className="row room-facilities">
