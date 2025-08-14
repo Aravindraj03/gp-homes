@@ -44,6 +44,7 @@ function ProjectDetailPage() {
 ];
 
   const location = useLocation();
+  
 const category = location.pathname.includes("/plots") ? "plots" : "apartments";
   const { slug } = useParams(); // Get slug from URL
   const project = projectsData.find((p) => p.slug === slug); // Find project by slug
