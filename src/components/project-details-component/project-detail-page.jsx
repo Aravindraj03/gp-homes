@@ -22,8 +22,10 @@ import floorPlan1 from "../../assets/img/floorplans/pon floor2 (1).jpeg";
 import floorPlan2 from "../../assets/img/floorplans/pon floor2 (2).jpeg";
 import floorPlan3 from "../../assets/img/floorplans/pon floor2 (3).jpeg";
 import floorPlan4 from "../../assets/img/floorplans/pon floor2 (4).jpeg";
-import floorPlan5 from "../../assets/img/floorplans/pon floor2 (5).jpeg";
-
+import floorPlan5 from "../../assets/img/floorplans/ponbhoomi floorplan1.jpeg"
+import floorPlan6 from "../../assets/img/floorplans/ponbhoomi floorplan2.jpg";
+import floorPlan7 from "../../assets/img/floorplans/ponbhhoom floorplan3.jpg";
+import floorPlan8 from "../../assets/img/floorplans/ponbhoomi floorplan4.jpg";
 function ProjectDetailPage() {
     const apartmentSlugs = [
   "gp-blazing-star-3bhk",
@@ -161,7 +163,7 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
               <img
                 src={floorPlan1}
                 alt="Site 1"
-                className="img-fluid rounded"
+                className="img-fluid rounded" 
               />
             </div>
             <div className="col-3">
@@ -183,6 +185,34 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
             <div className="col-3">
               <img
                 src={floorPlan4}
+                alt="Site 4"
+                className="img-fluid rounded"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                src={floorPlan5}
+                alt="Site 4"
+                className="img-fluid rounded"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                src={floorPlan6}
+                alt="Site 4"
+                className="img-fluid rounded"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                src={floorPlan7}
+                alt="Site 4"
+                className="img-fluid rounded"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                src={floorPlan8}
                 alt="Site 4"
                 className="img-fluid rounded"
               />
@@ -233,6 +263,34 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
       <div className="col-12">
         <img
           src={floorPlan4}
+          alt="Site 4"
+          className="img-fluid rounded"
+        />
+      </div>
+      <div className="col-12">
+        <img
+          src={floorPlan5}
+          alt="Site 4"
+          className="img-fluid rounded"
+        />
+      </div>
+      <div className="col-12">
+        <img
+          src={floorPlan6}
+          alt="Site 4"
+          className="img-fluid rounded"
+        />
+      </div>
+      <div className="col-12">
+        <img
+          src={floorPlan7}
+          alt="Site 4"
+          className="img-fluid rounded"
+        />
+      </div>
+      <div className="col-12">
+        <img
+          src={floorPlan8}
           alt="Site 4"
           className="img-fluid rounded"
         />
