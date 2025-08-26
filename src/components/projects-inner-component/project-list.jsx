@@ -18,6 +18,7 @@ const ProjectsList = ({ project,projectDetails }) => {
   // const projectDetails = projectDetail;
   console.log(projectDetails, "projects12345----------------------");
   const project_slug = project.slug;
+  console.log(projects, "projectsinner");
 
   return (
     <section className="section-padding section-padding-mobile">
@@ -25,7 +26,7 @@ const ProjectsList = ({ project,projectDetails }) => {
         <div className="row">
           <div className="col-md-12">
             {projects.map((project, index) => (
-                <div
+              <div
                 key={project.id}
                 className={`rooms2 mb-90 ${
                   index % 2 !== 0 ? "left" : ""
@@ -33,17 +34,20 @@ const ProjectsList = ({ project,projectDetails }) => {
                 data-animate-effect="fadeInUp"
               >
                 <figure className="col-md-6">
-                  <img src={project.image} alt="" className="img-fluid img-fluid-mobile" />{" "}
+                  <img
+                    src={project.image}
+                    alt=""
+                    className="img-fluid img-fluid-mobile"
+                  />{" "}
                 </figure>
 
                 <div className="caption">
-                  
                   <h3>{project.type}</h3>
                   <h4>
                     {/* <a href="room-details.html">{project.name}</a> */}
                     <Link to={`/plots-chennai/${project.slug}`}>
                       {project.name}
-                    </Link> 
+                    </Link>
                   </h4>
                   <p>{project.description}</p>
                   <div className="row room-facilities">
@@ -51,7 +55,12 @@ const ProjectsList = ({ project,projectDetails }) => {
                       <div className="col-md-4" key={facilityIndex}>
                         <ul>
                           <li>
-                          <img src={facility[1]} alt={facility[0]} style={{width:"35px", marginRight:"5px"}} /> {facility[0]}
+                            <img
+                              src={facility[1]}
+                              alt={facility[0]}
+                              style={{ width: "35px", marginRight: "5px" }}
+                            />{" "}
+                            {facility[0]}
                           </li>
                         </ul>
                       </div>
@@ -59,31 +68,32 @@ const ProjectsList = ({ project,projectDetails }) => {
                   </div>
                   <hr className="border-2" />
                   <div className="info-wrapper">
-                    <div className="more">
-                      <Link
-                        to={`/apartments-chennai/${project_slug}/${project.slug}`}
-                        className="link-btn"
-                        tabIndex="0"
-                        style={{fontWeight:"800"}}
-                      >
-                        Details <i className="ti-arrow-right"></i>
-                      </Link>
-                    </div>
-                    <div className="butn-dark">
-                      {/* <Link to="#reservation-sec" data-scroll-nav="1">
-                        <span>Book Now</span>
-                      </Link> */}
-                      <Link
-                        to={`/${category}/enquiry-form?type=${
-            category === "plots" ? "Plot" : "Apartment"
-          }&project=${encodeURIComponent(project.name)}`}
-                        smooth={true}
-                        duration={500}
-                        offset={-70}
-                      >
-                        <span>Book Now</span>
-                      </Link>
-                    </div>
+                    {project.id !== 3 && (
+                      <>
+                        <div className="more">
+                          <Link
+                            to={`/apartments-chennai/${project_slug}/${project.slug}`}
+                            className="link-btn"
+                            tabIndex="0"
+                            style={{ fontWeight: "800" }}
+                          >
+                            Details <i className="ti-arrow-right"></i>
+                          </Link>
+                        </div>
+                        <div className="butn-dark">
+                          <Link
+                            to={`/${category}/enquiry-form?type=${
+                              category === "plots" ? "Plot" : "Apartment"
+                            }&project=${encodeURIComponent(project.name)}`}
+                            smooth={true}
+                            duration={500}
+                            offset={-70}
+                          >
+                            <span>Book Now</span>
+                          </Link>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>

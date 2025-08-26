@@ -12,6 +12,8 @@ import GPBreezeWayBanner1 from "../../assets/img/projects/GPBreezeWayBanner-1.jp
 import GpHomesElanzaBanner from "../../assets/img/projects/GpHomesElanzaBanner.jpg";
 import GpHomesElanzaBanner1 from "../../assets/img/projects/GpHomesElanzaBanner-1.jpg";
 import GpHomesElanzaBanner2 from "../../assets/img/projects/GpHomesElanzaBanner-2.jpg";
+import commercial from "../../assets/img/projects/commercial.jpg";
+import commercialSale from "../../assets/img/projects/commercialsale.jpg";
 
 import GPValenciaEmerald from "../../assets/img/projects/GPValencia-Emerlad.jpg";
 import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
@@ -155,6 +157,27 @@ const projectsData = [
         description:
           "Blazing star project features 3 BHK flats for sale in a stilt + 5-floor structure, blending contemporary design with functionality. Blazing Star by GP Homes is thoughtfully crafted to offer an array of modern amenities, catering to the needs of today’s lifestyle.",
         image: GpHomesElanza3bhk,
+        facilities: [
+          ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
+        ],
+        project_status: "Ongoing Project",
+        slug: "gp-blazing-star-3bhk",
+      },
+      {
+        id: 3,
+        type: "Commercial for Rent",
+        name: "GP Blazing star",
+        description:
+          "Prime commercial space available for rent at GP Blazing Star offering 470 sq.ft of well-designed area, perfect for retail outlets, offices, or small business establishments in a sought-after location. Competitively priced at just ₹50 per sq.ft, this affordable commercial unit provides excellent value with modern infrastructure and high footfall potential for your business success.",
+        image: commercial,
         facilities: [
           ["Parking", parkingIcon],
           ["Painting", paintingIcon],
@@ -426,6 +449,28 @@ const projectsData = [
         project_status: "Ongoing Project",
         slug: "gp-homes-elanza-3bhk",
       },
+      {
+        id: 3,
+        type: "Commercial for Rent",
+        name: "GP Elanza",
+        description:
+          "Spacious commercial space available for rent at GP Elanza featuring an expansive 1500 sq.ft area, ideal for large retail stores, showrooms, corporate offices, or multi-purpose business establishments. Flexibly priced between ₹60-70 per sq.ft, this premium commercial unit offers excellent business opportunities with modern amenities and strategic location advantages for maximum customer reach.",
+        image: commercial,
+        Alt: "commercial space for rent",
+        facilities: [
+          ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
+        ],
+        project_status: "Ongoing Project",
+        slug: "gp-homes-elanza-3bhk",
+      },
     ],
   },
   {
@@ -677,6 +722,27 @@ const projectsData = [
         description:
           "GP Valencia Ruby offers easy access to top educational institutions and major IT parks, ensuring both convenience and connectivity. This is more than just a home – it’s the perfect space to grow and thrive. Come, experience a new era of living!",
         image: GpHomesElanza3bhk,
+        facilities: [
+          ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
+        ],
+        project_status: "Ongoing Project",
+        slug: "gp-valencia-ruby-3bhk",
+      },
+      {
+        id: 3,
+        type: "Commercial for Sale",
+        name: "GP Homes Valencia Ruby",
+        description:
+          "Prime commercial space available at GP Valencia Ruby with 884 sq.ft of built-up area and 230 sq.ft UDS, strategically located for maximum business visibility and growth potential. Priced competitively at ₹9,500 per sq.ft, this ready-to-occupy commercial unit offers excellent investment opportunity with modern amenities and convenient accessibility for various business ventures.",
+        image: commercialSale,
         facilities: [
           ["Parking", parkingIcon],
           ["Painting", paintingIcon],
