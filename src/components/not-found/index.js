@@ -6,10 +6,13 @@ const NotFound = () => {
   const [showMessage, setShowMessage] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setShowMessage(false);
       navigate("/", { replace: true });
-    }, 1500); // 2-second delay before redirecting
+    }, 2000); // 2 seconds
+
+    // cleanup in case component unmounts early
+    return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
@@ -20,7 +23,7 @@ const NotFound = () => {
           <div className="loader"></div>
         </>
       )}
-      
+
       <style>
         {`
           .not-found-container {
