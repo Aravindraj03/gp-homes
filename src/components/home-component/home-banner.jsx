@@ -67,7 +67,7 @@ const BannerSlider = () => {
               (window.location.href = "/plots-chennai/gp-ponBhoomi")
             }
           >
-            <div className="v-middle caption">
+            {/* <div className="v-middle caption">
               <div className="container">
                 <div className="row">
                   <div className="col-md-10 offset-md-1">
@@ -88,7 +88,7 @@ const BannerSlider = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -152,7 +152,7 @@ const BannerSlider = () => {
               (window.location.href = "/plots-chennai/gp-ponBhoomi")
             }
           >
-            <div className="v-middle caption">
+            {/* <div className="v-middle caption">
               <div className="container">
                 <div className="row">
                   <div className="col-md-10 offset-md-1">
@@ -168,23 +168,23 @@ const BannerSlider = () => {
                     >
                       Know More
                     </button>
-                    {/* <span>
+                    <span>
                    <i className="star-rating"></i>
                    <i className="star-rating"></i>
                    <i className="star-rating"></i>
                    <i className="star-rating"></i>
                    <i className="star-rating"></i>
-                 </span> */}
+                 </span>
 
                     <div className="butn-light mt-30 mb-30">
-                      {/* <Link to={"/#apartments"} data-scroll-nav="1">
+                      <Link to={"/#apartments"} data-scroll-nav="1">
                      <span>View Project</span>
-                   </Link> */}
+                   </Link>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
