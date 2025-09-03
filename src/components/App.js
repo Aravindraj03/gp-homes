@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   useLocation,
+  Navigate
 } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import LoadScripts from "./LoadScripts";
@@ -70,6 +71,33 @@ const AppWrapper = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        {/* 🔹 Redirect old blog URLs to home */}
+  <Route
+    path="/what-are-the-benefits-of-buying-a-flat-in-padur"
+    element={<Navigate to="/" replace />}
+  />
+  <Route
+    path="/find-the-perfect-plot-of-land-for-your-business-in-thirunindravur"
+    element={<Navigate to="/" replace />}
+  />
+
+  {/* 🔹 Redirect specific plots to apartments page */}
+  <Route
+    path="/plots-chennai/gp-valencia-emarald-2bhk"
+    element={<Navigate to="/apartments-chennai" replace />}
+  />
+  <Route
+    path="/plots-chennai/gp-blazing-star-2bhk"
+    element={<Navigate to="/apartments-chennai" replace />}
+  />
+  <Route
+    path="/plots-chennai/gp-valencia-emarald-3bhk"
+    element={<Navigate to="/apartments-chennai" replace />}
+  />
+  <Route
+    path="/plots-chennai/gp-valencia-ruby-2bhk"
+    element={<Navigate to="/apartments-chennai" replace />}
+  />
         <Route path="/apartments-chennai/:slug" element={<ProjectInnerPage />} />
         <Route path="/apartments-chennai/:slug/:slug" element={<ProjectDetailPage />} />
         <Route path="/plots-chennai/:slug" element={<ProjectDetailPage />} />

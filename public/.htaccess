@@ -20,3 +20,14 @@ RewriteRule ^home$ / [L,R=301]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]
+
+# Redirect old blog URLs to home
+Redirect 301 /what-are-the-benefits-of-buying-a-flat-in-padur/ /
+Redirect 301 /find-the-perfect-plot-of-land-for-your-business-in-thirunindravur/ /
+
+# Redirect specific plots to apartments page
+Redirect 301 /plots-chennai/gp-valencia-emarald-2bhk /apartments-chennai
+Redirect 301 /plots-chennai/gp-blazing-star-2bhk /apartments-chennai
+Redirect 301 /plots-chennai/gp-valencia-emarald-3bhk /apartments-chennai
+Redirect 301 /plots-chennai/gp-valencia-ruby-2bhk /apartments-chennai
+
