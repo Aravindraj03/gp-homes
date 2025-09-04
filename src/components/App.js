@@ -293,7 +293,7 @@ const SEOHandler = () => {
     },
     "/plots-chennai/gp-ponBhoomi": {
       title:
-        " PonBhoomi- Buy Residential Plots, Land for Sale in Thiruvallur",
+        "GP PonBhoomi - Residential Plots, Land for Sale In Pattabiram",
       description:
         "GP Homes PonBhoomi offers premium residential plots and CMDA-approved land for sale in Thiruvallur. Invest in your dream property with GP Homes today!",
     },
