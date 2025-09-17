@@ -5,7 +5,10 @@ import Footer from "../common/footer";
 import PlotsVideo from "./plots-video";
 import ProjectDetailBanner from "./project-detail-banner";
 import ProjectDetailSection from "./project-details-section";
-import mobileBanner from "../../assets/img/projects/ponbhoomi-mobile-banner.jpg";
+import mobileBanner from "../../assets/img/projects/ponbhoomi-mobile-banner2.jpg";
+import mobileBanner2 from "../../assets/img/projects/ponbhoomi-mobile-banner.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import HomeReservation from "../home-component/home-reservation";
 
@@ -15,6 +18,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/img/gp-logo.png";
 import PlotTable from "./plots-data";
 import PonBhoomiReservation from "./ponbhoomi-reservation";
+import Slider from "react-slick";
 
 // floorplan for ponbhoomi
 
@@ -69,6 +73,17 @@ const category = location.pathname.includes("/plots") ? "plots" : "apartments";
 if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
     return <Navigate to={`/apartments-chennai/gp-homes/${slug}`} replace />;
   }
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
 
   return (
@@ -133,17 +148,29 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
       </div>
 
       {/* Mobile Banner */}
-      <div className="d-block d-md-none">
-        {slug === "gp-ponBhoomi" ? (
-          <img
-            src={mobileBanner} // Replace with your actual path
-            alt="PonBhoomi Mobile Banner"
-            className="img-fluid w-100 mt-5"
-          />
-        ) : (
-          <ProjectDetailBanner project={project} />
-        )}
-      </div>
+<div className="d-block d-md-none mt-5">
+      {slug === "gp-ponBhoomi" ? (
+        <Slider {...settings}>
+          <div>
+            <img
+              src={mobileBanner}
+              alt="PonBhoomi Mobile Banner 1"
+              className="img-fluid w-100"
+            />
+          </div>
+          <div>
+            <img
+              src={mobileBanner2}
+              alt="PonBhoomi Mobile Banner 2"
+              className="img-fluid w-100"
+            />
+          </div>
+        </Slider>
+      ) : (
+        <ProjectDetailBanner project={project} />
+      )}
+    </div>
+  ); 
 
       {/* === DESKTOP VIEW === */}
       <div className="d-none d-md-block">

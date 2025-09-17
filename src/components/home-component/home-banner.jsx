@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import slideImg1 from "../../assets/img/slider/hero-banner-2.png";
+import slideImg1 from "../../assets/img/slider/EXPO.jpg";
 import slideImg2 from "../../assets/img/slider/banner-2.jpg";
 
 import MobileBanner2 from "../../assets/img/slider/Mobile-Banner-4.jpg";
-import MobileBanner1 from "../../assets/img/slider/Mobile-Banner-1.jpg";
+import MobileBanner1 from "../../assets/img/slider/4.jpg";
 import { ServiceWrapper } from "../../service/ApiService";
 
 const BannerSlider = () => {
@@ -47,7 +47,7 @@ const BannerSlider = () => {
                 (window.location.href = "/plots-chennai/gp-ponBhoomi")
               }
             >
-              <div className="v-middle caption">
+              {/* <div className="v-middle caption">
                 <div className="container">
                   <div className="row">
                     <div className="col-md-10 offset-md-1">
@@ -55,18 +55,18 @@ const BannerSlider = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           {/* ))} */}
 
           {/* Second Slide */}
-          {/* <div
+          <div
             className="text-center item bg-img"
             style={{ backgroundImage: `url(${slideImg1})` }}
             onClick={() =>
               (window.location.href = "/plots-chennai/gp-ponBhoomi")
             }
-          > */}
+          >
             {/* <div className="v-middle caption">
               <div className="container">
                 <div className="row">
@@ -89,7 +89,7 @@ const BannerSlider = () => {
                 </div>
               </div>
             </div> */}
-          {/* </div> */}
+          </div>
         </div>
 
         {/* Slider Reservation */}
@@ -142,7 +142,7 @@ const BannerSlider = () => {
             </div>
           </div>
           {/* Second Slide */}
-          {/* <div
+          <div
             className="text-center item bg-img"
             style={{
               backgroundImage: `url(${MobileBanner1})`,
@@ -151,7 +151,7 @@ const BannerSlider = () => {
             onClick={() =>
               (window.location.href = "/plots-chennai/gp-ponBhoomi")
             }
-          > */}
+          >
             {/* <div className="v-middle caption">
               <div className="container">
                 <div className="row">
@@ -185,7 +185,7 @@ const BannerSlider = () => {
                 </div>
               </div>
             </div> */}
-          {/* </div> */}
+          </div>
         </div>
 
         {/* Slider Reservation */}
