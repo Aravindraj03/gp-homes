@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import slideImg2 from "../../assets/img/projects/videobg.jpg";
+import slideImg2 from "../../assets/img/projects/testimonialbg2.jpg";
 
 const HomeReservation = ({ project,selectedPlotData }) => {
 

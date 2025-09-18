@@ -51,6 +51,10 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+
 import slide1 from "../../assets/img/slider/3.jpg";
 import slide2 from "../../assets/img/slider/2.jpg";
 import slide3 from "../../assets/img/slider/5.jpg";
@@ -75,12 +79,11 @@ const ProjectDetailBanner = ({ project }) => {
   ];
 
   // Check if project.banner_images exists and is a valid non-empty array
-  const slides =
-    project?.banner_images && Array.isArray(project.banner_images) && project.banner_images.some((img) => img) // Check for at least one valid image
+    const slides =
+    project?.banner_images?.length > 0
       ? project.banner_images.map((image, index) => ({
           id: index + 1,
-          image: image || slide1, // Ensure no empty image values
-          overlay: 3,
+          image: image || slide1,
         }))
       : defaultSlides;
 
@@ -88,7 +91,15 @@ const ProjectDetailBanner = ({ project }) => {
 
   return (
     <header className="header slider">
-      <div className="owl-carousel owl-theme owl-projectDetail">
+      
+        <OwlCarousel
+        className="owl-carousel owl-theme owl-projectDetail"
+        items={1}
+        loop
+        autoplay
+        dots
+        nav
+      >
         {slides.map((slide) => (
           <div
             key={slide.id}
@@ -97,7 +108,7 @@ const ProjectDetailBanner = ({ project }) => {
             style={{ backgroundImage: `url(${slide.image})` }}
           ></div>
         ))}
-      </div>
+      </OwlCarousel>
       {/* Arrow Down */}
       {/* <div className="arrow bounce text-center">
         <Link to="#projectDetailsSection" onClick={handleScroll} className="text-white">

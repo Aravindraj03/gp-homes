@@ -19,6 +19,7 @@ import GPEthuliaBanner from "../../assets/img/projects/GPEthuliaBanner.jpg";
 import GPNanmanaiBanner from "../../assets/img/projects/GPNanmanaiBanner.jpg";
 import GPVijayaLakshmiBanner from "../../assets/img/projects/GPVijayaLakshmiBanner.jpg";
 import GPPonBhoomi from "../../assets/img/projects/Website-Banner-Ponbhoomi-01.jpg";
+import GPPonBhoomi2 from "../../assets/img/projects/expo.jpg";
 import GPValenciaEmerald from "../../assets/img/projects/GPValencia-Emerlad.jpg";
 import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
 import GPFairmont from "../../assets/img/projects/GPFairmont.jpg";
@@ -1440,7 +1441,7 @@ const projectsData = [
       "Strategically located next to Pattabiram Tidel Park (Sevvapet) on the highways, PonBhoomi offers 207 premium villa plots ranging from 450 to 3,758 sq. ft. This well-connected residential community provides seamless access to key locations in Avadi, ensuring convenience and modern living. With shopping malls, movie theatres, schools, and hospitals nearby, PonBhoomi is an ideal choice for homeowners and investors alike.",
       "Invest in PonBhoomi by GP Homes today—where value meets opportunity!",
     ],
-    banner_images: [GPPonBhoomi],
+    banner_images: [GPPonBhoomi, GPPonBhoomi2],
     image: [midwayAvenueFloorplan],
     facilities: [
       // ["Parking", "flaticon-car"],

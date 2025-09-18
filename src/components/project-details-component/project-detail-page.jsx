@@ -170,7 +170,7 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
         <ProjectDetailBanner project={project} />
       )}
     </div>
-  ); 
+  
 
       {/* === DESKTOP VIEW === */}
       <div className="d-none d-md-block">
