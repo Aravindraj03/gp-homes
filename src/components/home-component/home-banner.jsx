@@ -60,13 +60,13 @@ const BannerSlider = () => {
           {/* ))} */}
 
           {/* Second Slide */}
-          <div
+          {/* <div
             className="text-center item bg-img"
             style={{ backgroundImage: `url(${slideImg1})` }}
             onClick={() =>
               (window.location.href = "/plots-chennai/gp-ponBhoomi")
             }
-          >
+          > */}
             {/* <div className="v-middle caption">
               <div className="container">
                 <div className="row">
@@ -89,7 +89,7 @@ const BannerSlider = () => {
                 </div>
               </div>
             </div> */}
-          </div>
+          {/* </div> */}
         </div>
 
         {/* Slider Reservation */}
@@ -142,7 +142,7 @@ const BannerSlider = () => {
             </div>
           </div>
           {/* Second Slide */}
-          <div
+          {/* <div
             className="text-center item bg-img"
             style={{
               backgroundImage: `url(${MobileBanner1})`,
@@ -151,7 +151,7 @@ const BannerSlider = () => {
             onClick={() =>
               (window.location.href = "/plots-chennai/gp-ponBhoomi")
             }
-          >
+          > */}
             {/* <div className="v-middle caption">
               <div className="container">
                 <div className="row">
@@ -185,7 +185,7 @@ const BannerSlider = () => {
                 </div>
               </div>
             </div> */}
-          </div>
+          {/* </div> */}
         </div>
 
         {/* Slider Reservation */}
