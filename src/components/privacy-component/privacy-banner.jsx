@@ -1,5 +1,5 @@
 import React from 'react';
-import bgimage from '../../assets/img/slider/4.jpg';
+import bgimage from '../../assets/img/slider/privacyPolicy.jpg';
 
 const PrivacyBanner = () => {
   return (
