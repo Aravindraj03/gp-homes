@@ -76,7 +76,7 @@ const getFeatureWithIcons = (feature) => {
 const roomsData = [
   {
     id: 1,
-    category: "Apartments-Ongoing",
+    category: "Apartments-Completed",
     location: "Porur",
     title: "GP Blazing Star",
     image: room1,
@@ -88,7 +88,7 @@ const roomsData = [
   },
   {
     id: 2,
-    category: "Apartments-Ongoing",
+    category: "Apartments-Completed",
     location: "Menambedu",
     title: "GP Breeze Way",
     image: room2,
@@ -100,7 +100,7 @@ const roomsData = [
   },
   {
     id: 3,
-    category: "Apartments-Ongoing",
+    category: "Apartments-Completed",
     location: "Madhanadhapuram",
     title: "GP Homes Elanza",
     image: room3,
@@ -112,7 +112,7 @@ const roomsData = [
   },
   {
     id: 4,
-    category: "Apartments-Ongoing",
+    category: "Apartments-Completed",
     location: "Ayanambakkam",
     title: "GP Valencia Emarald",
     image: room4,
@@ -124,7 +124,7 @@ const roomsData = [
   },
   {
     id: 5,
-    category: "Apartments-Ongoing",
+    category: "Apartments-Completed",
     location: "Ayanambakkam",
     title: "GP Valencia Ruby",
     image: room5,
@@ -218,16 +218,28 @@ const roomsData = [
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
+  {
+    id: 13,
+    category: "Apartments-Completed",
+    location: "Ayanambakkam",
+    title: "Cherry Blossom II",
+    image: apartCompleted6,
+    description:
+      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+    project_status: "Ongoing Project",
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+    slug: "gp-valencia-ruby",
+  },
 ];
 
 
 
 const ApartmentDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedFilter, setSelectedFilter] = useState("Apartments-Ongoing"); // Default focus
+  const [selectedFilter, setSelectedFilter] = useState("Apartments-Completed"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
   const [visibleRooms, setVisibleRooms] = useState(
-    roomsData.filter((room) => room.category === "Apartments-Ongoing")
+    roomsData.filter((room) => room.category === "Apartments-Completed")
   );
 
   const handleFilter = (category) => {
