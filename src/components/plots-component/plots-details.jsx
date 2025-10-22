@@ -15,6 +15,11 @@ import room11 from "../../assets/img/rooms/Mid-way.jpg";
 import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg";
 import room13 from "../../assets/img/rooms/fairmont.jpg";
 import room14 from "../../assets/img/rooms/serenevista.jpg";
+import room15 from "../../assets/img/rooms/siruvapuri.jpg";
+import room16 from "../../assets/img/rooms/thalakancheri.jpg";
+import room17 from "../../assets/img/rooms/mambakkam.jpg";
+import room18 from "../../assets/img/rooms/keelamani.jpg";
+import room19 from "../../assets/img/rooms/thirumudivakkam.jpg";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -160,7 +165,7 @@ const roomsData = [
   },
 
   {
-    id: 12,
+    id: 18,
     category: "Plots-Completed",
     location: "Parivakkam",
     title: "GP Fairmont",
@@ -253,6 +258,66 @@ const roomsData = [
   //   features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
   //   slug: "gp-dreamscape",
   // },
+  {
+    id: 12,
+    category: "Plots-Completed",
+    location: "Near Amman temple",
+    title: "Siruvapuri",
+    image: room15,
+    description:
+      "GP Homes presents its next landmark development, an exclusive enclave located near Amman Temple, Siruvapuri.",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-siruvapuri",
+  },
+  {
+    id: 13,
+    category: "Plots-Completed",
+    // location: "Near Amman temple",
+    title: "Thirumudivakkam",
+    image: room19 ,
+    description:
+      "GP Homes presents its next landmark development, an exclusive enclave located in Thirumudivakkam.",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-thirumudivakkam",
+  },
+  {
+    id: 14,
+    category: "Plots-Completed",
+    // location: "Near Amman temple",
+    title: "Mambakkam",
+    image: room17,
+    description:
+      "GP Homes presents its next landmark development, an exclusive enclave located in Mambakkam.",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-Mambakkam",
+  },
+  {
+    id: 15,
+    category: "Plots-Completed",
+    location: "ON GNT Road",
+    title: "Keelameni",
+    image: room18,
+    description:
+      "GP Homes presents its next landmark development, an exclusive enclave located on GNT Road, Keelameni.",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-Keelameni",
+  },
+  {
+    id: 16,
+    category: "Plots-Completed",
+    location: "Thiruvallur",
+    title: "Thalakancheri",
+    image: room16,
+    description:
+      "GP Homes presents its next landmark development, an exclusive enclave located in Thiruvallur, Thalakancheri.",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-Thalakancheri",
+  },
 ];
 
 const ApartmentDetails = () => {
@@ -342,7 +407,6 @@ const ApartmentDetails = () => {
           </div>
 
           <div className="col-md-4">
-             
             <button
               onClick={() => {
                 setVisibleRooms([]);
@@ -464,12 +528,14 @@ const ApartmentDetails = () => {
                           Details
                         </Link>
                       </div> */}
-                      <Link
-                        className="btn-form1-submit text-center"
-                        to={`/plots-chennai/${room.slug}`}
-                      >
-                        Details
-                      </Link>
+                      {![12,13,14,15,16,17].includes(room.id) && (
+                        <Link
+                          className="btn-form1-submit text-center"
+                          to={`/plots-chennai/${room.slug}`}
+                        >
+                          Details
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>
