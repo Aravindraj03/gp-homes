@@ -17,6 +17,7 @@ import apartCompleted3 from "../../assets/img/apartments/Blue-Bell-Phase-2.jpg";
 import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";
 import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom-1.jpg";
 import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom-2.jpg";
+import apartCompleted7 from "../../assets/img/rooms/athipetApartment.jpg";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -134,18 +135,18 @@ const roomsData = [
     features: ["Units 35, BHK 2 & 3, Sq. ft. 912 – 1580, Floors Stilt + 5"],
     slug: "gp-valencia-ruby",
   },
-  {
-    id: 6,
-    category: "Apartments-Ongoing",
-    location: "Ayanambakkam",
-    title: "Lake Breeze",
-    image: room11,
-    description:
-      "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
-    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
-    slug: "gp-valencia-ruby",
-  },
+  // {
+  //   id: 6,
+  //   category: "Apartments-Completed",
+  //   location: "Ayanambakkam",
+  //   title: "Lake Breeze",
+  //   image: room11,
+  //   description:
+  //     "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+  //   project_status: "Ongoing Project",
+  //   features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+  //   slug: "gp-valencia-ruby",
+  // },
   {
     id: 7,
     category: "Apartments-Completed",
@@ -226,6 +227,18 @@ const roomsData = [
     image: apartCompleted6,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
+    project_status: "Ongoing Project",
+    features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
+    slug: "gp-valencia-ruby",
+  },
+  {
+    id: 14,
+    category: "Apartments-Upcoming",
+    location: "Athipet",
+    title: "New Launch",
+    image: apartCompleted7,
+    description:
+      "GP Homes proudly launches its newest landmark development — an exclusive enclave in the thriving neighbourhood of Athipet.",
     project_status: "Ongoing Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
@@ -392,7 +405,7 @@ const ApartmentDetails = () => {
                         </div>
                       )}
 
-                      {room.category === "Apartments-Ongoing" && (
+                      {![7,8,9,10,11,12,13,14].includes(room.id) && (
                         <Link
                           className="btn-form1-submit text-center"
                           to={`/apartments-chennai/${room.slug}`}

@@ -136,7 +136,7 @@ const roomsData = [
     slug: "gp-valencia-ruby",
   },
 
-  {
+   {
     id: 11,
     category: "Plots-Ongoing",
     location: "Pattabiram",
@@ -162,21 +162,6 @@ const roomsData = [
       "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
     ],
     slug: "gp-midway-avenue",
-  },
-
-  {
-    id: 18,
-    category: "Plots-Completed",
-    location: "Parivakkam",
-    title: "GP Fairmont",
-    image: room13,
-    description:
-      "Discover GP Fairmont at Parivakkam – your gateway to balanced living in the thriving Poonamalle Hub",
-    project_status: "Ongoing Project",
-    features: [
-      "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
-    ],
-    slug: "gp-fairmont",
   },
 
   {
@@ -235,7 +220,7 @@ const roomsData = [
     slug: "gp-vijayalakshmi",
   },
   {
-    id: 11,
+    id: 12,
     category: "Plots-Ongoing",
     location: "Ambattur",
     title: "GP Serene Vista",
@@ -245,6 +230,21 @@ const roomsData = [
     project_status: "Upcoming Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-serenevista",
+  },
+
+   {
+    id: 13,
+    category: "Plots-Completed",
+    location: "Parivakkam",
+    title: "GP Fairmont",
+    image: room13,
+    description:
+      "Discover GP Fairmont at Parivakkam – your gateway to balanced living in the thriving Poonamalle Hub",
+    project_status: "Ongoing Project",
+    features: [
+      "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
+    ],
+    slug: "gp-fairmont",
   },
   // {
   //   id: 11,
@@ -260,7 +260,7 @@ const roomsData = [
   // },
   {
     id: 12,
-    category: "Plots-Completed",
+    category: "Plots-Upcoming",
     location: "Near Amman temple",
     title: "Siruvapuri",
     image: room15,
@@ -272,7 +272,7 @@ const roomsData = [
   },
   {
     id: 13,
-    category: "Plots-Completed",
+    category: "Plots-Upcoming",
     // location: "Near Amman temple",
     title: "Thirumudivakkam",
     image: room19 ,
@@ -284,7 +284,7 @@ const roomsData = [
   },
   {
     id: 14,
-    category: "Plots-Completed",
+    category: "Plots-Upcoming",
     // location: "Near Amman temple",
     title: "Mambakkam",
     image: room17,
@@ -296,7 +296,7 @@ const roomsData = [
   },
   {
     id: 15,
-    category: "Plots-Completed",
+    category: "Plots-Upcoming",
     location: "ON GNT Road",
     title: "Keelameni",
     image: room18,
@@ -308,7 +308,7 @@ const roomsData = [
   },
   {
     id: 16,
-    category: "Plots-Completed",
+    category: "Plots-Upcoming",
     location: "Thiruvallur",
     title: "Thalakancheri",
     image: room16,
@@ -320,7 +320,7 @@ const roomsData = [
   },
 ];
 
-const ApartmentDetails = () => {
+const PlotDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedFilter, setSelectedFilter] = useState("Plots-Ongoing"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
@@ -331,7 +331,7 @@ const ApartmentDetails = () => {
   const handleFilter = (category) => {
     setSelectedCategory(category);
     setSelectedFilter(category);
-    setVisibleRooms([]);
+    // setVisibleRooms([]);
     const filteredRooms =
       category === "All"
         ? roomsData
@@ -375,7 +375,7 @@ const ApartmentDetails = () => {
           <div className="col-md-4">
             <button
               onClick={() => {
-                setVisibleRooms([]);
+                // setVisibleRooms([]);
                 handleFilter("Plots-Ongoing");
               }}
               // className="btn-form1-submit mb-30"
@@ -392,7 +392,7 @@ const ApartmentDetails = () => {
           <div className="col-md-4">
             <button
               onClick={() => {
-                setVisibleRooms([]);
+                // setVisibleRooms([]);
                 handleFilter("Plots-Upcoming");
               }}
               // className="btn-form1-submit mb-30"
@@ -409,7 +409,7 @@ const ApartmentDetails = () => {
           <div className="col-md-4">
             <button
               onClick={() => {
-                setVisibleRooms([]);
+                // setVisibleRooms([]);
                 handleFilter("Plots-Completed");
               }}
               // className="btn-form1-submit mb-30"
@@ -548,4 +548,4 @@ const ApartmentDetails = () => {
   );
 };
 
-export default ApartmentDetails;
+export default PlotDetails;
