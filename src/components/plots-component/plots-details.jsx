@@ -20,6 +20,7 @@ import room16 from "../../assets/img/rooms/thalakancheri.jpg";
 import room17 from "../../assets/img/rooms/mambakkam.jpg";
 import room18 from "../../assets/img/rooms/keelamani.jpg";
 import room19 from "../../assets/img/rooms/thirumudivakkam.jpg";
+import room20 from "../../assets/img/rooms/cressidaPark.jpg";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -318,6 +319,19 @@ const roomsData = [
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-Thalakancheri",
   },
+  {
+    id: 17,
+    category: "Plots-Upcoming",
+    // location: "Cressida Park",
+    title: "GP Cressida Park",
+    image: room20,
+    description:
+      "GP Homes proudly unveils GP Cressida Park, its newest landmark development — an exclusive residential enclave of elegance and comfort.",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-cressida-park",   
+  },
+
 ];
 
 const PlotDetails = () => {
