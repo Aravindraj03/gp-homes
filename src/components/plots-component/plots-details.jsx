@@ -260,7 +260,7 @@ const roomsData = [
   //   slug: "gp-dreamscape",
   // },
   {
-    id: 12,
+    id: 14,
     category: "Plots-Upcoming",
     location: "Near Amman temple",
     title: "Siruvapuri",
@@ -272,7 +272,7 @@ const roomsData = [
     slug: "gp-siruvapuri",
   },
   {
-    id: 13,
+    id: 15,
     category: "Plots-Upcoming",
     // location: "Near Amman temple",
     title: "Thirumudivakkam",
@@ -284,7 +284,7 @@ const roomsData = [
     slug: "gp-thirumudivakkam",
   },
   {
-    id: 14,
+    id: 16,
     category: "Plots-Upcoming",
     // location: "Near Amman temple",
     title: "Mambakkam",
@@ -296,7 +296,7 @@ const roomsData = [
     slug: "gp-Mambakkam",
   },
   {
-    id: 15,
+    id: 17,
     category: "Plots-Upcoming",
     location: "ON GNT Road",
     title: "Keelameni",
@@ -308,7 +308,7 @@ const roomsData = [
     slug: "gp-Keelameni",
   },
   {
-    id: 16,
+    id: 18,
     category: "Plots-Upcoming",
     location: "Thiruvallur",
     title: "Thalakancheri",
@@ -320,7 +320,7 @@ const roomsData = [
     slug: "gp-Thalakancheri",
   },
   {
-    id: 17,
+    id: 19,
     category: "Plots-Upcoming",
     // location: "Cressida Park",
     title: "GP Cressida Park",
@@ -542,7 +542,7 @@ const PlotDetails = () => {
                           Details
                         </Link>
                       </div> */}
-                      {![13,14,15,16,17].includes(room.id) && (
+                      {![14,15,16,17,18,19].includes(room.id) && (
                         <Link
                           className="btn-form1-submit text-center"
                           to={`/plots-chennai/${room.slug}`}
