@@ -542,7 +542,7 @@ const PlotDetails = () => {
                           Details
                         </Link>
                       </div> */}
-                      {![12,13,14,15,16,17].includes(room.id) && (
+                      {![13,14,15,16,17].includes(room.id) && (
                         <Link
                           className="btn-form1-submit text-center"
                           to={`/plots-chennai/${room.slug}`}
