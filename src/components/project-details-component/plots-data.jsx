@@ -1560,9 +1560,9 @@ const PlotTable = ({ onSelectPlot }) => {
 
   return (
     <>
-      <div className="w-full flex flex-col items-center p-6 container dataTable">
+      {/* <div className="w-full flex flex-col items-center p-6 container dataTable">
         <h2 className="d-md-none d-block pb-3">Check Availability</h2>
-        {/* Filters */}
+        
         <div className="booking-wrapper">
           <div className="container">
             <div className="booking-inner clearfix">
@@ -1574,7 +1574,7 @@ const PlotTable = ({ onSelectPlot }) => {
                   <label>Facing</label>
                   <div className="select1_inner">
                     <select
-                      name="facing" // Fix here (was "direction")
+                      name="facing" 
                       value={filters.facing}
                       onChange={handleFilterChange}
                       className="border w-100 border-orange-500 text-dark p-3 rounded-md bg-white"
@@ -1658,7 +1658,7 @@ const PlotTable = ({ onSelectPlot }) => {
                 </button>
               </span>
             </h3>
-            {/* Table */}
+            
             <div className="w-full max-w-4xl mt-6 table-scroll">
               <table
                 className="w-100 border-collapse text-left"
@@ -1676,8 +1676,7 @@ const PlotTable = ({ onSelectPlot }) => {
                     ].map((header, index) => (
                       <th
                         key={index}
-                        // className={`font-semibold text-center table-heading my-box
-                        //   ${header === "Total Cost" ? "d-none d-md-table-cell" : ""}`}
+                        
                         className="font-semibold text-center table-heading my-box"
                         style={{ border: "1px solid #f26522" }}
                       >
@@ -1689,7 +1688,7 @@ const PlotTable = ({ onSelectPlot }) => {
                 <tbody>
                   {paginatedPlots.length > 0 ? (
                     paginatedPlots.map((plot, index) => {
-                      const isSoldOut = soldOutPlots.includes(plot.plotNo); // Check if the plot is sold out
+                      const isSoldOut = soldOutPlots.includes(plot.plotNo); 
                       return (
                         <tr
                           key={index}
@@ -1697,7 +1696,7 @@ const PlotTable = ({ onSelectPlot }) => {
                             isSoldOut
                               ? "bg-gray-300 text-red-600 font-bold"
                               : ""
-                          }`} // Apply styles if sold out
+                          }`} 
                         >
                           <td
                             className="text-center table-data"
@@ -1737,7 +1736,7 @@ const PlotTable = ({ onSelectPlot }) => {
                             className="text-center table-data p-1 p-md-0"
                             style={{
                               border: "1px solid #f26522",
-                              // backgroundColor: "#ffdab3",
+                              
                               cursor: "pointer",
                             }}
                           >
@@ -1748,11 +1747,7 @@ const PlotTable = ({ onSelectPlot }) => {
                               Book Now
                             </Link>
                           </td>
-                          {/* <td
-                          className="text-center table-data shadow p-3 mb-5 rounded"
-                          style={{ border: "1px solid #f26522",color:"black",cursor:"pointer", backgroundColor:"#ffdab3" }}
-                        >Book Now
-                        </td> */}
+                         
                         </tr>
                       );
                     })
@@ -1770,7 +1765,7 @@ const PlotTable = ({ onSelectPlot }) => {
                 Documentation | Maintenance (1 Yr) | GST*
               </span>
             </div>
-            {/* Pagination Controls */}
+           
             <div className="flex justify-center mt-4">
               <button
                 disabled={currentPage === 1}
@@ -1791,7 +1786,7 @@ const PlotTable = ({ onSelectPlot }) => {
               </button>
             </div>
           </div>
-          {/* Facing data */}
+          
           <div className="col-12 col-lg-4 mt-4 mt-lg-0 d-flex justify-content-center align-items-center hide-mobile">
             <div className="row g-2 w-100 ">
               {[
@@ -1809,7 +1804,7 @@ const PlotTable = ({ onSelectPlot }) => {
                   <button
                     key={index}
                     className="col-4 btn btn-inline-dark p-1 text-center d-flex align-items-center justify-content-center"
-                    style={{ height: "100px" }} // Set uniform height
+                    style={{ height: "100px" }} 
                   >
                     <img
                       key={index}
@@ -1822,8 +1817,8 @@ const PlotTable = ({ onSelectPlot }) => {
                   <button
                     key={index}
                     className="col-4 btn btn-outline-dark text-center d-flex align-items-center justify-content-center"
-                    style={{ height: "100px" }} // Set uniform height
-                    onClick={() => handleFilterFacing(direction)} // ✅ Now it's a function reference
+                    style={{ height: "100px" }} 
+                    onClick={() => handleFilterFacing(direction)} 
                   >
                     {direction}
                   </button>
@@ -1844,7 +1839,7 @@ const PlotTable = ({ onSelectPlot }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div
       className="container-fuild mt-4"
         style={{
