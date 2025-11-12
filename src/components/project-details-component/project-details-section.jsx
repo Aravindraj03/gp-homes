@@ -3,10 +3,20 @@ import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import slideImg2 from "../../assets/img/projects/BG-1.jpg";
 
+import floorPlan1 from "../../assets/img/floorplans/pon floor2 (1).jpeg";
+import floorPlan2 from "../../assets/img/floorplans/floorplan2.jpeg";
+import floorPlan3 from "../../assets/img/floorplans/pon floor2 (3).jpeg";
+import floorPlan4 from "../../assets/img/floorplans/pon floor2 (4).jpeg";
+import floorPlan5 from "../../assets/img/floorplans/ponbhoomi floorplan1.jpeg"
+import floorPlan6 from "../../assets/img/floorplans/ponbhoomi floorplan2.jpg";
+import floorPlan7 from "../../assets/img/floorplans/ponbhhoom floorplan3.jpg";
+import floorPlan8 from "../../assets/img/floorplans/ponbhoomi floorplan4.jpg";
+
 import image1 from "../../assets/img/restaurant/1.jpg";
 import image2 from "../../assets/img/spa/3.jpg";
 import image3 from "../../assets/img/spa/2.jpg";
 import image4 from "../../assets/img/spa/1.jpg";
+
 
 import "react-image-lightbox/style.css";
 import Lightbox from "react-image-lightbox";
@@ -29,7 +39,7 @@ const ProjectDetailSection = ({ project }) => {
             <div className="section-title">{project.name}</div>
             {Array.isArray(project.description) ? (
               project.description.map((desc, index) => (
-                <p key={index} className="mb-30">
+                <p key={index} className="mb-30">         
                   {desc}
                 </p>
               ))

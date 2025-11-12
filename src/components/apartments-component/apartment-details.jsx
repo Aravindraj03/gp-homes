@@ -18,6 +18,7 @@ import apartCompleted4 from "../../assets/img/apartments/Caspia.jpg";
 import apartCompleted5 from "../../assets/img/apartments/Cherry-Blossom-1.jpg";
 import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom-2.jpg";
 import apartCompleted7 from "../../assets/img/rooms/athipetApartment.jpg";
+import ponbhoomiVilla from "../../assets/img/rooms/ponbhoomiVilla.jpg";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -115,13 +116,13 @@ const roomsData = [
     id: 4,
     category: "Apartments-Completed",
     location: "Ayanambakkam",
-    title: "GP Valencia Emarald",
+    title: "GP Valencia Emerald",
     image: room4,
     description:
       "Welcome to GP Valencia Emerald, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes",
     project_status: "Ongoing Project",
     features: ["Units 29, BHK 2 & 3, Sq. ft. 857 to 1305, Blocks Stilt + 4"],
-    slug: "gp-valencia-emarald",
+    slug: "gp-valencia-emerald",
   },
   {
     id: 5,
@@ -243,16 +244,28 @@ const roomsData = [
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
+  {
+    id: 15,
+    category: "Apartments-Ongoing",
+    location: "Pattabiram",
+    title: "Ponbhoomi",
+    image: ponbhoomiVilla,
+    description:
+      "Welcome to Pon Bhoomi by GP Homes – a serene residential villa built with superior quality and thoughtful planning.",
+    project_status: "Ongoing Project",
+    features: ["Black, 24/7, Potable,  CCTV"],
+    slug: "gp-ponBhoomiVilla",
+  },
 ];
 
 
 
 const ApartmentDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedFilter, setSelectedFilter] = useState("Apartments-Completed"); // Default focus
+  const [selectedFilter, setSelectedFilter] = useState("Apartments-Ongoing"); // Default focus
   // const [visibleRooms, setVisibleRooms] = useState(roomsData.slice(0, 12));
   const [visibleRooms, setVisibleRooms] = useState(
-    roomsData.filter((room) => room.category === "Apartments-Completed")
+    roomsData.filter((room) => room.category === "Apartments-Ongoing")
   );
 
   const handleFilter = (category) => {

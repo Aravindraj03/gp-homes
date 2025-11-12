@@ -23,7 +23,7 @@ import Slider from "react-slick";
 // floorplan for ponbhoomi
 
 import floorPlan1 from "../../assets/img/floorplans/pon floor2 (1).jpeg";
-import floorPlan2 from "../../assets/img/floorplans/pon floor2 (2).jpeg";
+import floorPlan2 from "../../assets/img/floorplans/floorplan2.jpeg";
 import floorPlan3 from "../../assets/img/floorplans/pon floor2 (3).jpeg";
 import floorPlan4 from "../../assets/img/floorplans/pon floor2 (4).jpeg";
 import floorPlan5 from "../../assets/img/floorplans/ponbhoomi floorplan1.jpeg"
@@ -31,6 +31,16 @@ import floorPlan6 from "../../assets/img/floorplans/ponbhoomi floorplan2.jpg";
 import floorPlan7 from "../../assets/img/floorplans/ponbhhoom floorplan3.jpg";
 import floorPlan8 from "../../assets/img/floorplans/ponbhoomi floorplan4.jpg";
 function ProjectDetailPage() {
+
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (src) => {
+    setSelectedImage(src);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
     const apartmentSlugs = [
   "gp-blazing-star-3bhk",
   "gp-blazing-star",
@@ -148,29 +158,28 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
       </div>
 
       {/* Mobile Banner */}
-<div className="d-block d-md-none mt-5">
-      {slug === "gp-ponBhoomi" ? (
-        <Slider {...settings}>
-          {/* <div>
+      <div className="d-block d-md-none mt-5">
+        {slug === "gp-ponBhoomi" ? (
+          <Slider {...settings}>
+            {/* <div>
             <img
               src={mobileBanner}
               alt="PonBhoomi Mobile Banner 1"
               className="img-fluid w-100"
             />
           </div> */}
-          <div>
-            <img
-              src={mobileBanner2}
-              alt="PonBhoomi Mobile Banner 2"
-              className="img-fluid w-100"
-            />
-          </div>
-        </Slider>
-      ) : (
-        <ProjectDetailBanner project={project} />
-      )}
-    </div>
-  
+            <div>
+              <img
+                src={mobileBanner2}
+                alt="PonBhoomi Mobile Banner 2"
+                className="img-fluid w-100"
+              />
+            </div>
+          </Slider>
+        ) : (
+          <ProjectDetailBanner project={project} />
+        )}
+      </div>
 
       {/* === DESKTOP VIEW === */}
       <div className="d-none d-md-block">
@@ -180,72 +189,33 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
 
         <ProjectDetailSection project={project} />
         {slug === "gp-ponBhoomi" && (
-        
-        <div className="mt-4 px-5 py-5">
-          <h4 className="mb-3 text-center">Villa Construction Progress</h4>
+          <div className="mt-4 px-5 py-5">
+            <h4 className="mb-3 text-center">Villa Construction Progress</h4>
 
-          <div className="row g-2 px-5">
-            {/* First Row: 3 images */}
-            <div className="col-3">
-              <img
-                src={floorPlan1}
-                alt="Site 1"
-                className="img-fluid rounded" 
-              />
-            </div>
-            <div className="col-3">
-              <img
-                src={floorPlan2}
-                alt="Site 2"
-                className="img-fluid rounded"
-              />
-            </div>
-            <div className="col-3">
-              <img
-                src={floorPlan3}
-                alt="Site 3"
-                className="img-fluid rounded"
-              />
-            </div>
-
-            {/* Second Row: 2 images */}
-            <div className="col-3">
-              <img
-                src={floorPlan4}
-                alt="Site 4"
-                className="img-fluid rounded"
-              />
-            </div>
-            <div className="col-3">
-              <img
-                src={floorPlan5}
-                alt="Site 4"
-                className="img-fluid rounded"
-              />
-            </div>
-            <div className="col-3">
-              <img
-                src={floorPlan6}
-                alt="Site 4"
-                className="img-fluid rounded"
-              />
-            </div>
-            <div className="col-3">
-              <img
-                src={floorPlan7}
-                alt="Site 4"
-                className="img-fluid rounded"
-              />
-            </div>
-            <div className="col-3">
-              <img
-                src={floorPlan8}
-                alt="Site 4"
-                className="img-fluid rounded"
-              />
+            <div className="row g-2 px-5">
+              {[
+                floorPlan1,
+                floorPlan2,
+                floorPlan3,
+                floorPlan4,
+                floorPlan5,
+                floorPlan6,
+                floorPlan7,
+                floorPlan8,
+              ].map((img, index) => (
+                <div key={index} className="col-3">
+                  <img
+                    src={img}
+                    alt={`Site ${index + 1}`}
+                    className="img-fluid rounded cursor-pointer"
+                    onClick={() => openImage(img)}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+              ))}
             </div>
           </div>
-        </div>
+          
         )}
         <div ref={homeReservationRef}>
           <HomeReservation project={project} selectedPlotData={selectedPlot} />
@@ -260,71 +230,71 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
           <div ref={homeReservationRef}>
             <PonBhoomiReservation selectedPlotData={selectedPlot} />
           </div>
-        {/* Image Section - visible only on screens below md */}
-<div className="d-block d-md-none">
-  <div className="mt-4 px-3 py-3">
-    <h5 className="mb-3 text-center">Villa Construction Progress</h5>
+          {/* Image Section - visible only on screens below md */}
+          <div className="d-block d-md-none">
+            <div className="mt-4 px-3 py-3">
+              <h5 className="mb-3 text-center">Villa Construction Progress</h5>
 
-    <div className="row g-3">
-      <div className="col-12">
-        <img
-          src={floorPlan1}
-          alt="Site 1"
-          className="img-fluid rounded"
-        />
-      </div>
-      <div className="col-12">
-        <img
-          src={floorPlan2}
-          alt="Site 2"
-          className="img-fluid rounded"
-        />
-      </div>
-      <div className="col-12">
-        <img
-          src={floorPlan3}
-          alt="Site 3"
-          className="img-fluid rounded"
-        />
-      </div>
-      <div className="col-12">
-        <img
-          src={floorPlan4}
-          alt="Site 4"
-          className="img-fluid rounded"
-        />
-      </div>
-      <div className="col-12">
-        <img
-          src={floorPlan5}
-          alt="Site 4"
-          className="img-fluid rounded"
-        />
-      </div>
-      <div className="col-12">
-        <img
-          src={floorPlan6}
-          alt="Site 4"
-          className="img-fluid rounded"
-        />
-      </div>
-      <div className="col-12">
-        <img
-          src={floorPlan7}
-          alt="Site 4"
-          className="img-fluid rounded"
-        />
-      </div>
-      <div className="col-12">
-        <img
-          src={floorPlan8}
-          alt="Site 4"
-          className="img-fluid rounded"
-        />
-      </div>
-    </div>
-  </div>
-</div>
+              <div className="row g-3">
+                <div className="col-12">
+                  <img
+                    src={floorPlan1}
+                    alt="Site 1"
+                    className="img-fluid rounded"
+                  />
+                </div>
+                <div className="col-12">
+                  <img
+                    src={floorPlan2}
+                    alt="Site 2"
+                    className="img-fluid rounded"
+                  />
+                </div>
+                <div className="col-12">
+                  <img
+                    src={floorPlan3}
+                    alt="Site 3"
+                    className="img-fluid rounded"
+                  />
+                </div>
+                <div className="col-12">
+                  <img
+                    src={floorPlan4}
+                    alt="Site 4"
+                    className="img-fluid rounded"
+                  />
+                </div>
+                <div className="col-12">
+                  <img
+                    src={floorPlan5}
+                    alt="Site 4"
+                    className="img-fluid rounded"
+                  />
+                </div>
+                <div className="col-12">
+                  <img
+                    src={floorPlan6}
+                    alt="Site 4"
+                    className="img-fluid rounded"
+                  />
+                </div>
+                <div className="col-12">
+                  <img
+                    src={floorPlan7}
+                    alt="Site 4"
+                    className="img-fluid rounded"
+                  />
+                </div>
+                <div className="col-12">
+                  <img
+                    src={floorPlan8}
+                    alt="Site 4"
+                    className="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div
             className="position-fixed bottom-0 start-0 w-100 d-flex justify-content-around bg-white py-2 border-top d-block d-md-none"
@@ -396,6 +366,64 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
         >
           Enquire Now
         </Link>
+      )}
+      {/* Modal / Lightbox */}
+      {selectedImage && (
+        <div
+          className="modal-backdrop"
+          onClick={closeImage}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100",
+            height: "100%",
+            background: "rgba(0, 0, 0, 0.8)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 1050,
+          }}
+        >
+          <div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              position: "relative",
+              maxWidth: "50%",
+              maxHeight: "100%",
+            }}
+          >
+            <img
+              src={selectedImage}
+              alt="Zoomed"
+              className="img-fluid rounded"
+              style={{
+                width: "100%",
+                height: "100%",
+                borderRadius: "10px",
+                objectFit: "contain",
+              }}
+            />
+            <button
+              onClick={closeImage}
+              style={{
+                position: "absolute",
+                top: "-10px",
+                right: "-10px",
+                background: "#fff",
+                border: "none",
+                borderRadius: "50%",
+                width: "35px",
+                height: "35px",
+                cursor: "pointer",
+                fontWeight: "bold",
+              }}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
       )}
     </Fragment>
   );

@@ -1560,10 +1560,10 @@ const PlotTable = ({ onSelectPlot }) => {
 
   return (
     <>
-      {/* <div className="w-full flex flex-col items-center p-6 container dataTable">
+      <div className="w-full flex flex-col items-center p-6 container dataTable">
         <h2 className="d-md-none d-block pb-3">Check Availability</h2>
         
-        <div className="booking-wrapper">
+        {/* <div className="booking-wrapper">
           <div className="container">
             <div className="booking-inner clearfix">
               <form
@@ -1643,8 +1643,8 @@ const PlotTable = ({ onSelectPlot }) => {
               </form>
             </div>
           </div>
-        </div>
-        <div className="row mt-5">
+        </div> */}
+        {/* <div className="row mt-5">
           <div className="col-12 col-lg-8 ">
             <h3 className="text-3xl fw-semibold text-dark  mb-4 d-flex flex-column flex-md-row justify-content-between w-100">
               CONFIGURATION
@@ -1838,8 +1838,9 @@ const PlotTable = ({ onSelectPlot }) => {
               </div>
             </div>
           </div>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
+      <h3 className="section-title text-center my-3">Layout</h3>
       <div
       className="container-fuild mt-4"
         style={{

@@ -24,6 +24,7 @@ import GPValenciaEmerald from "../../assets/img/projects/GPValencia-Emerlad.jpg"
 import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
 import GPFairmont from "../../assets/img/projects/GPFairmont.jpg";
 import GPSereneVista from "../../assets/img/projects/gpserene-vista.jpg";
+import GpHomesPonbhoomi from "../../assets/img/projects/ponBanner.jpg";
 
 
 import BlazingStarFloorplan1 from "../../assets/img/floorplans/blazing-star-floorplan-1.jpg";
@@ -136,6 +137,10 @@ import groundWater from "../../assets/img/icons/Ground-water.png";
 import powerBank from "../../assets/img/icons/POwer-bank.png";
 import liftIcon from "../../assets/img/icons/Lift.png";
 import coveredParking from "../../assets/img/icons/covered-car-parking.png";
+
+import floorPlan2 from "../../assets/img/floorplans/floorplan2.jpeg";
+import floorPlan7 from "../../assets/img/floorplans/ponbhoomi floorplan2.jpg";
+import floorPlan8 from "../../assets/img/floorplans/ponbhoomi floorplan4.jpg";
 
 
 const projectsData = [
@@ -728,7 +733,7 @@ const projectsData = [
       entertainment_zone_image: entertainmentZone1,
     },
     project_status: "Ongoing Project",
-    slug: "gp-valencia-emarald-2bhk",
+    slug: "gp-valencia-emerald-2bhk",
   },
   {
     id: 8,
@@ -816,7 +821,7 @@ const projectsData = [
       entertainment_zone_image: entertainmentZone2,
     },
     project_status: "Ongoing Project",
-    slug: "gp-valencia-emarald-3bhk",
+    slug: "gp-valencia-emerald-3bhk",
   },
   {
     id: 9,
@@ -1622,7 +1627,7 @@ const projectsData = [
     slug: "gp-fairmont",
   },
   {
-    id: 17,
+    id: 18,
     location: "Plots in Ambattur Chennai",
     name: "GP Serene Vista",
     description: [
@@ -1705,7 +1710,7 @@ const projectsData = [
     slug: "gp-serenevista",
   },
   {
-    id: 17,
+    id: 19,
     location: "Plots in Aynambakkam Chennai",
     name: "GP Dream Scape",
     description: [
@@ -1786,6 +1791,108 @@ const projectsData = [
     },
     project_status: "Ongoing Project",
     slug: "gp-dreamscape",
+  },
+  {
+    id: 20,
+    location: "Villas in Pattabiram Tidel Park, Chennai",
+    name: "GP PonBhoomi Villa",
+    description: [
+      "PonBhoomi isn’t just a name; it’s a reflection of growth, comfort, and lasting value. Designed for modern families, PonBhoomi Villas offer a perfect blend of style, space, and serenity. With options for 1 & 2 BHK villas, duplex homes, and customizable designs, every residence is tailored to suit your lifestyle and aspirations. Each villa combines elegant architecture with superior construction quality, ensuring both comfort and long-term value.",
+      "Ideally located near Pattabiram TIDEL Park (Sevvapet) along the highway, PonBhoomi provides the advantage of excellent connectivity and urban convenience while retaining the calm of a private residential community. The neighbourhood is surrounded by reputed schools, hospitals, shopping centres, and entertainment hubs, making daily life effortless and fulfilling.",
+      
+    ],
+    banner_images: [GpHomesPonbhoomi],
+    images: [floorPlan2,floorPlan7,floorPlan8],
+    facilities: [
+      // ["Parking", "flaticon-car"],
+      // ["Painting", "flaticon-wifi"],
+      // ["Toilet", "flaticon-bed"],
+      // ["Structure", "flaticon-breakfast"],
+      // ["Joineries", "flaticon-clock-1"],
+      // ["Plastering", "flaticon-swimming"],
+      // ["Electricals", "flaticon-clock-1"],
+      // ["Plumbing", "flaticon-swimming"],
+      // ["Water Supply", "flaticon-clock-1"],
+      // ["Balcony area", "flaticon-swimming"],
+      // ["Kitchen", "flaticon-swimming"],
+    ],
+    specifications_title: "",
+    specifications_desc: "",
+    amenities_title: "Amenities",
+    amenities_desc:
+      "Experience the ultimate comfort and tranquillity of GP Homes Pon Bhoomi, where you can bring your dream home to life on our spacious plots. Explore our world-class amenities and expertly designed layout today, and discover your perfect lifestyle ",
+    amenities: [
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
+      
+     
+      // ["Ready to Construct", "flaticon-car"],
+      // ["Portable Ground water", "flaticon-car"],
+      // ["Street Light", "flaticon-car"],
+    ],
+    location_map_title: "Location Map",
+    location_map_desc:
+      "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    locations: {
+      titles: [
+        "Location highlights",
+        "Hospitals",
+        "Educational Institutions",
+        "Temples",
+        "Entertainment Zone",
+      ],
+      location_highlights: [
+        "Sevvapet railway station",
+        "Avadi Bus depo",
+        "Outer ring road",
+        "veppambattu",
+        "Kakalur industrial estate",
+      ],
+      hospitals: [
+        "Saviour Hospital",
+        "Government Hospital Thiruvallur",
+        "JVP Multispeciality Clinic",
+        "D.R. Sarojani Hospital 24/7",
+        "Dr. Agarwal Eye Hospital",
+        "ESI Hospital",
+      ],
+      educational_institutions: [
+        "Government Medical College",
+        "Bhajarang Engineering College",
+        "Ponnusamy Nadar Arts & Science College Govt.",
+        "Polytechnic College",
+        "Indira Nursing and Engineering College",
+        "John Bosco Arts and Science College ",
+      ],
+      it_parks: [
+        "CSI Goudie Memorial Church",
+        "Veera Ragavar Perumal Temple",
+        "Sai Baba Temple",
+        "Panchamugha Anjaneyar Temple",
+        "Masjid. E.Akbar",
+      ],
+      entertainment_zone: [
+        "Rakki Cinemas",
+        "Fun Land",
+        "Bulbul Park",
+        "Meera Theatre",
+        "Thulasi Theatre",
+        "Venkateshwara Theatre",
+      ],
+      location_highlights_image: RMPonBhoomi,
+      hospitals_image: hospitals3,
+      educational_institutions_image: educationalInstitutions3,
+      it_parks_image: temple,
+      entertainment_zone_image: entertainmentZone3,
+    },
+    project_status: "Ongoing Project",
+    slug: "gp-ponBhoomiVilla",
   },
 ];
 

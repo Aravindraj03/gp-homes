@@ -53,14 +53,21 @@ const ProjectsList = ({ project,projectDetails }) => {
                   <div className="row room-facilities">
                     {project.facilities.map((facility, facilityIndex) => (
                       <div className="col-md-4" key={facilityIndex}>
-                        <ul>
-                          <li>
+                        <ul className="list-unstyled">
+                          <li
+                            className="d-flex align-items-center"
+                            style={{ marginBottom: "10px" }}
+                          >
                             <img
                               src={facility[1]}
                               alt={facility[0]}
-                              style={{ width: "35px", marginRight: "5px" }}
-                            />{" "}
-                            {facility[0]}
+                              style={{
+                                width: "35px",
+                                height: "35px",
+                                marginRight: "10px",
+                              }}
+                            />
+                            <span>{facility[0]}</span>
                           </li>
                         </ul>
                       </div>

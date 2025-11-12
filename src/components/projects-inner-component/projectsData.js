@@ -23,6 +23,8 @@ import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
 
 import GpHomesElanza2bhk from "../../assets/img/projects/GpHomesElanzaBanner-2.jpg";
 import GpHomesElanza3bhk from "../../assets/img/projects/GpHomesElanzaBanner-1.jpg";
+import GpHomesPonbhoomi from "../../assets/img/projects/ponBanner.jpg";
+import ponbhoomiVilla from "../../assets/img/projects/villa.jpg";
 import { Alt } from "react-bootstrap-icons";
 
 import parkingIcon from "../../assets/img/icons/Parking.png";
@@ -34,8 +36,11 @@ import plastering from "../../assets/img/icons/Plastering.png";
 import electrical from "../../assets/img/icons/Electrical.png";
 import plumbing from "../../assets/img/icons/Plumbing.png";
 import waterIcon from "../../assets/img/icons/Water-Supply.png";
-import cctvIcon from "../../assets/img/icons/CCTV.png";
-
+import road from "../../assets/img/icons/Road.png";
+import security from "../../assets/img/icons/24-7-securiry.png";
+import GroundWater from "../../assets/img/icons/Ground-water.png";
+import cctv from "../../assets/img/icons/CCTV.png";
+import compundWall from "../../assets/img/icons/compund-wall.png";
 import powerBank from "../../assets/img/icons/POwer-bank.png";
 import liftIcon from "../../assets/img/icons/Lift.png";
 import coveredParking from "../../assets/img/icons/covered-car-parking.png";
@@ -561,7 +566,7 @@ const projectsData = [
       ],
     },
     project_status: "Ongoing Project",
-    slug: "gp-valencia-emarald",
+    slug: "gp-valencia-emerald",
     projects_types: [
       {
         id: 1,
@@ -582,7 +587,7 @@ const projectsData = [
           ["Water Supply", waterIcon],
         ],
         project_status: "Ongoing Project",
-        slug: "gp-valencia-emarald-2bhk",
+        slug: "gp-valencia-emerald-2bhk",
       },
       {
         id: 2,
@@ -603,7 +608,7 @@ const projectsData = [
           ["Water Supply", waterIcon],
         ],
         project_status: "Ongoing Project",
-        slug: "gp-valencia-emarald-3bhk",
+        slug: "gp-valencia-emerald-3bhk",
       },
     ],
   },
@@ -756,6 +761,113 @@ const projectsData = [
         ],
         project_status: "Ongoing Project",
         slug: "gp-valencia-ruby-3bhk",
+      },
+    ],
+  },
+  {
+    id: 6,
+    location: "Pattabiram",
+    name: "GP Ponbhoomi Villa",
+    description: [
+      "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
+      "Welcome to GP Valencia Ruby, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes. GP Valencia Ruby features homes spacious enough to accommodate your dreams and aspirations. Located in prime Ayanambakkam, there are lots of leading educational institutions and IT parks in the vicinity. A home like no other. Come, Check it out!",
+    ],
+    banner_image: GpHomesPonbhoomi,
+    image: listimg4,
+    facilities: [
+      ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
+    ],
+    specifications_title: "Specifications",
+    specifications_desc:
+      "At GP Homes, we are incredibly passionate about the convergence of modern design, affordability, and the environment. This is why use only the highest-quality, top-of-the-line fittings and fixtures that provide you and your family the comfort that you desire and deserve.",
+    amenities_title: "Amenities",
+    amenities_desc:
+      "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
+    amenities: [
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
+    ],
+    location_map_title: "Location Map",
+    location_map_desc:
+      "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    locations: {
+      titles: [
+        "Location Highlights",
+        "Hospitals",
+        "Educational Institutions",
+        "IT Parks",
+        "Entertainment Zone",
+      ],
+      location_highlights: [
+        "Porur Metro Station – 1.5kms/5mins drive",
+        "Valasaravakkam – 4kms/15mins drive",
+        "Iyyappanthangal – 2.5kms/7mins drive",
+        "Ramapuram – 5.5kms/15mins drive",
+        "Manapakkam – 5.5kms/15mins drive",
+        "Mogappair – 6kms/10mins drive",
+        "Poonamallee – 8kms/20mins drive",
+        "Ambattur – 10kms/20mins drive",
+        "Avadi – 12kms/25mins drive",
+      ],
+      hospitals: [
+        "Apollo Hospital",
+        "Sundaram Medical Foundation",
+        "Lifeline Hospitals",
+        "Aravind Eye Hospital",
+        "Saveetha Dental College & Hospitals",
+        "Ramachandra Hospital",
+      ],
+      educational_institutions: [
+        "Velammal Vidhyalaya School",
+        "Sai Chaitanya Techno School",
+        "Schram Academy School",
+        "Dr. MGR University",
+        "Raja Rajeswari Eng. College",
+        "Spartan Matriculation School",
+        "DAV Matriculation School",
+        "Aachi Global School",
+      ],
+      it_parks: [
+        "RMZ Software Park – 3.5kms//8mins drive",
+        "DLF IT Park – 4.5kms/12mins drive",
+        "AMBIT IT Park – 6.5kms/10mins",
+      ],
+      entertainment_zone: [
+        "VR Mall",
+        "Rakki Cinema",
+        "AGS Cinemas",
+        "Decathlon Sports",
+      ],
+    },
+    project_status: "Ongoing Project",
+    slug: "gp-ponBhoomiVilla",
+    projects_types: [
+      {
+        id: 1,
+        type: "Villas in Pattabiram Tidel Park, Chennai",
+        name: "GP Homes PonBhoomi",
+        description: "Pon Bhoomi is a premium villa community near TIDEL Park, Pattabiram, offering the perfect mix of modern comfort and peaceful living. Each villa is thoughtfully designed with spacious layouts and quality construction, ensuring lasting value in a well-connected neighbourhood. With options for 1 & 2 BHK villas and duplex homes, Pon Bhoomi offers the ideal space to create the lifestyle you’ve always dreamed of.",
+        image: ponbhoomiVilla,
+        facilities: [
+          ["Well Developed Roads", road],
+          ["24 / 7 Security Service", security],
+          ["Portable Ground Water", GroundWater],
+          ["CCTV", cctv],
+          ["Compounded Wall", compundWall],
+          ["Plastering", plastering],
+        ],
+        project_status: "Ongoing Project",
+        slug: "gp-ponBhoomiVilla",
       },
     ],
   },
