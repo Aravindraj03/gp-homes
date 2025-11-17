@@ -142,6 +142,16 @@ import floorPlan2 from "../../assets/img/floorplans/floorplan2.jpeg";
 import floorPlan7 from "../../assets/img/floorplans/ponbhoomi floorplan2.jpg";
 import floorPlan8 from "../../assets/img/floorplans/ponbhoomi floorplan4.jpg";
 
+import gardenBayFloorplan1 from "../../assets/img/floorplans/gardenBayfloor1.jpeg";
+import gardenBayFloorplan2 from "../../assets/img/floorplans/gardenBayfloor2.jpeg";
+import gardenBayFloorplan3 from "../../assets/img/floorplans/gardenBayfloor3.jpeg";
+import sereneVistaFloorplan1 from "../../assets/img/floorplans/sereneVistafloorplan1.jpeg";
+import sereneVistaFloorplan2 from "../../assets/img/floorplans/sereneVistafloorplan2.jpeg";
+import sereneVistaFloorplan3 from "../../assets/img/floorplans/sereneVistafloorplan3.jpeg";
+import midwayFloorPlan from "../../assets/img/floorplans/midwayAvenueFloorPlan.jpeg";
+import nanmanaiFloorplan1 from "../../assets/img/floorplans/nanmanaiFloorPlanm1.jpeg";
+import nanmanaiFloorplan2 from "../../assets/img/floorplans/nanmanaiFloorPlan2.jpeg";
+
 
 const projectsData = [
   {
@@ -1010,7 +1020,7 @@ const projectsData = [
       "At GP Homes, our team of seasoned professionals, backed by decades of experience, is committed to bringing a fresh perspective to villa construction. We focus on delivering innovative designs, superior quality, and ultimate client satisfaction.",
     ],
     banner_images: [GPMidwayAvenueBanner],
-    images: [midwayAvenueFloorplan],
+    images: [midwayAvenueFloorplan, midwayFloorPlan],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
@@ -1104,7 +1114,7 @@ const projectsData = [
       "Nestled near Anna Nagar, these 19 affordable residential plots, ranging from 625 sq. ft. to 1380 sq. ft., provide the perfect foundation for your dream home. The prime location ensures seamless connectivity to major city areas, with a metro station nearby for added convenience. Enjoy a peaceful, comfortable lifestyle with excellent amenities and lush surroundings, just minutes away from Anna Nagar.Nestled near Anna Nagar, these 19 affordable residential plots, ranging from 625 sq. ft. to 1380 sq. ft., provide the perfect foundation for your dream home. The prime location ensures seamless connectivity to major city areas, with a metro station nearby for added convenience. Enjoy a peaceful, comfortable lifestyle with excellent amenities and lush surroundings, just minutes away from Anna Nagar.",
     ],
     banner_images: [GPGardenBayBanner],
-    images: [Ethuliagallery3],
+    images: [gardenBayFloorplan1, gardenBayFloorplan2, gardenBayFloorplan3],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
@@ -1278,7 +1288,7 @@ const projectsData = [
       "With 34 exclusive plots, Nanmanai is a smart investment for a future of faster appreciation along with the luxury lifestyle. Offering the opportunity to build your dream home, Nanmanai is a community that promises serenity, growth and a brighter tomorrow.",
     ],
     banner_images: [GPNanmanaiBanner],
-    image: listimg4,
+    images: [nanmanaiFloorplan1, nanmanaiFloorplan2],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
@@ -1636,7 +1646,7 @@ const projectsData = [
       "Here, mornings begin with the calming rustle of trees. and your home becomes a sanctuary of peace amidst the pulse of a growing city. With only 8 plots available, this is a rare opportunity to build your dream villa in a tranquil setting - while still enjoying unmatched access to key hubs like Anna Nagar. Ambattur, Padi and Korattur."
     ],
     banner_images: [GPSereneVista],
-    image: listimg4,
+    images: [sereneVistaFloorplan1,sereneVistaFloorplan2,sereneVistaFloorplan3],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
