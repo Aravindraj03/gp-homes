@@ -115,6 +115,8 @@ const AppWrapper = () => {
         <Route path="/:category/enquiry-form" element={<EnquiryForm />} />
         <Route path="/enquiry-form" element={<EnquiryForm />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
+        <Route path="/popup-thank-you" element={<ThankYouPage />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>

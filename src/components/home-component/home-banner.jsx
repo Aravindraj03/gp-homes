@@ -10,21 +10,21 @@ import { ServiceWrapper } from "../../service/ApiService";
 
 const BannerSlider = () => {
  const service = new ServiceWrapper();
-  const [images, setImages] = useState([]); // Initialize as empty array
+  const [images, setImages] = useState([]);
   const [imageBaseLink, setImageBaseLink] = useState("");
   const [loading, setLoading] = useState(true); // Add loading state
 
-  useEffect(() => {
-    service
-      .callGet("list-of-banners")
-      .then((response) => {
-        setImages(response); // ✅ fix here
-        setImageBaseLink(response.data.img_base_url);
-      })
-      .catch((error) => {
-        console.error("Banner fetch error", error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   service
+  //     .callGet("list-of-banners")
+  //     .then((response) => {
+  //       setImages(response); // ✅ fix here
+  //       setImageBaseLink(response.data.img_base_url);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Banner fetch error", error);
+  //     });
+  // }, []);
   console.log(images, "images---------------------");
   // console.log(imageBaseLink,"imageBaseLink---------------------")
   // console.log(imageBaseLink+images[0].image,"imageBaseLinkimages[0].image---------------------")

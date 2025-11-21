@@ -1,9 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import DesktopPopup from "../../assets/img/popup/web-form.jpg";
 import MobilePopup from "../../assets/img/popup/mobile-form.jpg";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 const ImagePopup = ({ pageType = "home" }) => {
+  const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -43,8 +45,9 @@ const ImagePopup = ({ pageType = "home" }) => {
   };
 
   const handleSubmit = async (e) => {
+    
     e.preventDefault();
-    setLoading(true);
+      setLoading(true);
 
     try {
       await fetch("https://cms.gphomes.in/api/contact-form", {
@@ -67,9 +70,8 @@ const ImagePopup = ({ pageType = "home" }) => {
       setShowConfirmation(true);
 
       setTimeout(() => {
-        setShowPopup(false);
-        setShowConfirmation(false);
-      }, 3000);
+        navigate("/popup-thank-you");
+      }, 1500);
     } catch (error) {
       console.error("Form submission failed:", error);
     } finally {
