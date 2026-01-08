@@ -6359,6 +6359,14 @@ height: 100vh;
   }
 }
 
+@media (min-width:991px) {
+  .navbar-brand {
+    width: 30%;
+  }
+  .logo-img{
+    width: 20% !important;
+}
+}
 
 
 
