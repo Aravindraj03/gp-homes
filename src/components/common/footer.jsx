@@ -24,7 +24,7 @@ function Footer() {
                   </p>
                 </div>
               </Col>
-              <Col md={3} className="offset-md-1">
+              <Col md={4} className="offset-md-1">
                 <div className="footer-column footer-explore clearfix">
                   <h3 className="footer-title">Explore</h3>
                   <div className="d-flex  gap-5">
@@ -66,11 +66,14 @@ function Footer() {
                       <li>
                         <Link to="/privacy-policy">Privacy Policy</Link>
                       </li>
+                       <li>
+                        <Link to="https://gphomespartnersclub.in/users/sign_in" target="_blank">Channel Partner</Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={3}>
                 <div className="footer-column footer-contact">
                   <h3 className="footer-title">Contact</h3>
                   <p className="footer-contact-text">
