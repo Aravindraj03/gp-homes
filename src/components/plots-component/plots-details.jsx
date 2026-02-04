@@ -22,6 +22,9 @@ import room18 from "../../assets/img/rooms/keelamani.jpg";
 import room19 from "../../assets/img/rooms/thirumudivakkam.jpg";
 import room20 from "../../assets/img/rooms/cressidaPark.jpg";
 
+
+import sold from "../../assets/img/rooms/sold out.png";
+
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
 import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
@@ -137,18 +140,7 @@ const roomsData = [
     slug: "gp-valencia-ruby",
   },
 
-   {
-    id: 11,
-    category: "Plots-Ongoing",
-    location: "Pattabiram",
-    title: "GP Pon Bhoomi",
-    image: room10,
-    description:
-      "PonBhoomi symbolizes growth and prosperity. Investing in land is wiser than gold, as property values appreciate over time. Now is the ideal time to build your dream home in this serene paradise.",
-    project_status: "Ongoing Project",
-    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
-    slug: "gp-ponBhoomi",
-  },
+   
 
   {
     id: 6,
@@ -188,7 +180,7 @@ const roomsData = [
     image: room8,
     description:
       "Ethulia by GP Homes in Mogappair offers 55 ready-to-build villa plots across 2.46 acres, ensuring prime location and value appreciation.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: [
       "Branded Solar Street Lights, Well Laid Blacktop Roads, Grand Entrance Arch, EB Provided",
     ],
@@ -220,6 +212,19 @@ const roomsData = [
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-vijayalakshmi",
   },
+
+  {
+    id: 11,
+    category: "Plots-Ongoing",
+    location: "Pattabiram",
+    title: "GP Pon Bhoomi",
+    image: room10,
+    description:
+      "PonBhoomi symbolizes growth and prosperity. Investing in land is wiser than gold, as property values appreciate over time. Now is the ideal time to build your dream home in this serene paradise.",
+    project_status: "Ongoing Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-ponBhoomi",
+  },
   {
     id: 12,
     category: "Plots-Ongoing",
@@ -241,7 +246,7 @@ const roomsData = [
     image: room13,
     description:
       "Discover GP Fairmont at Parivakkam – your gateway to balanced living in the thriving Poonamalle Hub",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: [
       "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
     ],
@@ -322,11 +327,66 @@ const roomsData = [
   {
     id: 19,
     category: "Plots-Upcoming",
-    // location: "Cressida Park",
+    location: "Pattabiram-ORR",
     title: "GP Cressida Park",
     image: room20,
+    description:"Land extent: 5.7 Acres   Size ranging: 500 - 2900 sq.ft",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-cressida-park",   
+  },
+  {
+    id: 20,
+    category: "Plots-Upcoming",
+    location: "Tiruninravur-Pakkam",
+    title: "AISHWARYA GARDEN ll",
+    image: room20,
     description:
-      "GP Homes proudly unveils GP Cressida Park, its newest landmark development — an exclusive residential enclave of elegance and comfort.",
+      "Land extent: 4.5 Acres  Size ranging: 500 - 3500 sq.ft",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-cressida-park",   
+  },
+  {
+    id: 21,
+    category: "Plots-Upcoming",
+    location: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
+    title: "LOADING...",
+    image: room20,
+    description:"Land extent: 4.5 Acres  Size ranging: 500 - 3000 sq.ft",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-cressida-park",   
+  },
+  {
+    id: 22,
+    category: "Plots-Upcoming",
+    location: "Nr.Siruvapuri",
+    title: "SEYYON GRAND CITY",
+    image: room20,
+    description:"Land extent: 17 Acres  Size ranging: 450 - 3600 sq.ft",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-cressida-park",   
+  },
+  {
+    id: 23,
+    category: "Plots-Upcoming",
+    location: "OMR-Siruthavur",
+    title: "PETAL WING MEADOWS",
+    image: room20,
+    description:"Land extent: 2.4 Acres  Size ranging: 800 - 3000 sq.ft",
+    project_status: "Upcoming Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-cressida-park",   
+  },
+  {
+    id: 24,
+    category: "Plots-Upcoming",
+    location: "Mambakkam",
+    title: "LOADING..",
+    image: room20,
+    description:"Land extent: 18 Acres  Size ranging: 450 - 4200 sq.ft",
     project_status: "Upcoming Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-cressida-park",   
@@ -455,12 +515,17 @@ const PlotDetails = () => {
               <div className="col-md-4" key={room.id}>
                 <div className="square-flip">
                   <div
-                    className="square bg-img"
+                    className="square bg-img position-relative"
                     style={{ backgroundImage: `url(${room.image})` }}
                   >
-                    {/* <span className="category">
-                      <Link to="/">Book</Link>
-                    </span> */}
+                    {/* COMPLETED BADGE */}
+                    {room.project_status === "Completed Project" && (
+                      <img
+                        src={sold} // adjust path
+                        alt="Completed"
+                        className="completed-badge"
+                      />
+                    )}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
                       <div
@@ -471,6 +536,7 @@ const PlotDetails = () => {
                         <h4>{room.title}</h4>
                       </div>
                     </div>
+
                     <div className="flip-overlay"></div>
                   </div>
                   <div className="square2">
@@ -478,30 +544,6 @@ const PlotDetails = () => {
                       <h6>{room.location}</h6>
                       <h4>{room.title}</h4>
                       <p>{room.description}</p>
-
-                      {/* <div className="row room-facilities mb-30">
-                        <div className="col-md-6">
-                          <ul>
-                            <li>
-                              <i className="flaticon-group"></i> 1-2 Persons
-                            </li>
-                            <li>
-                              <i className="flaticon-wifi"></i> Free Wifi
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li>
-                              <i className="flaticon-bed"></i> Twin Bed
-                            </li>
-                            <li>
-                              <i className="flaticon-breakfast"></i> Breakfast
-                            </li>
-                          </ul>
-                        </div>
-                      </div> */}
-
                       {room.features && room.features.length > 0 && (
                         <div className="row room-facilities mb-30">
                           {room.features.map((feature, index) => {
@@ -530,19 +572,7 @@ const PlotDetails = () => {
                           })}
                         </div>
                       )}
-
-                      {/* <div className="btn-line">
-                        <Link
-                          to={
-                            room.category === "Plots"
-                              ? `/project-details/${room.slug}`
-                              : `/project/${room.slug}`
-                          }
-                        >
-                          Details
-                        </Link>
-                      </div> */}
-                      {![14,15,16,17,18,19].includes(room.id) && (
+                      {![14, 15, 16, 17, 18, 19].includes(room.id) && (
                         <Link
                           className="btn-form1-submit text-center"
                           to={`/plots-chennai/${room.slug}`}

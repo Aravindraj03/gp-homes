@@ -20,6 +20,8 @@ import apartCompleted6 from "../../assets/img/apartments/Cherry-Blossom-2.jpg";
 import apartCompleted7 from "../../assets/img/rooms/athipetApartment.jpg";
 import ponbhoomiVilla from "../../assets/img/rooms/ponbhoomiVilla.jpg";
 
+import sold from "../../assets/img/rooms/sold out.png";
+
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
 import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
@@ -84,7 +86,7 @@ const roomsData = [
     image: room1,
     description:
       "Welcome to Blazing Star by GP Homes – a residential project located near Porur, one of the rapidly developing suburbs in Chennai.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 25, BHK 2 & 3, Sq. ft. 845 – 1405, Floors Stilt + 5"],
     slug: "gp-blazing-star",
   },
@@ -96,7 +98,7 @@ const roomsData = [
     image: room2,
     description:
       "Welcome to Breeze Way by GP Homes, a residential project located at Menambedu, one of the rapidly growing neighborhoods in Chennai.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 29, BHK2 & 3, Sq. ft.817 – 1240, Floors Stilt + 5"],
     slug: "gp-breeze-way",
   },
@@ -108,7 +110,7 @@ const roomsData = [
     image: room3,
     description:
       "GP homes is proud to announce yet another project, GP Elanza, which has a range of beautifully designed apartments in Madhanadhapuram.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 35, BHK 2 & 3, Sq. ft. 835 – 1326, Blocks 1"],
     slug: "gp-homes-elanza",
   },
@@ -120,7 +122,7 @@ const roomsData = [
     image: room4,
     description:
       "Welcome to GP Valencia Emerald, a new project that takes things a notch higher. And is a milestone in the journey of GP Homes",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 29, BHK 2 & 3, Sq. ft. 857 to 1305, Blocks Stilt + 4"],
     slug: "gp-valencia-emerald",
   },
@@ -132,7 +134,7 @@ const roomsData = [
     image: room5,
     description:
       "GP homes is proud to announce yet another project, GP Valencia Ruby, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 35, BHK 2 & 3, Sq. ft. 912 – 1580, Floors Stilt + 5"],
     slug: "gp-valencia-ruby",
   },
@@ -156,7 +158,7 @@ const roomsData = [
     image: apartCompleted1,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
@@ -168,7 +170,7 @@ const roomsData = [
     image: apartCompleted2,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
@@ -180,7 +182,7 @@ const roomsData = [
     image: apartCompleted3,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
@@ -192,7 +194,7 @@ const roomsData = [
     image: apartCompleted4,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
@@ -204,7 +206,7 @@ const roomsData = [
     image: apartCompleted5,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
@@ -216,7 +218,7 @@ const roomsData = [
     image: apartCompleted6,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
@@ -228,7 +230,7 @@ const roomsData = [
     image: apartCompleted6,
     description:
       "GP homes is proud to announce yet another project, Lake Breeze, which has a range of beautifully designed apartments in Ayanambakkam.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
@@ -368,6 +370,14 @@ const ApartmentDetails = () => {
                     className="square bg-img"
                     style={{ backgroundImage: `url(${room.image})` }}
                   >
+
+                     {room.project_status === "Completed Project" && (
+                      <img
+                        src={sold} // adjust path
+                        alt="Completed"
+                        className="completed-badge"
+                      />
+                    )}
                     {/* <span className="category">
                       <Link to="/">Book</Link>
                     </span> */}

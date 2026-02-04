@@ -6360,6 +6360,15 @@ height: 100vh;
 }
 
 
+.completed-badge {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  width: 70px;          /* adjust size */
+  z-index: 5;
+}
+
+
 
 
 
