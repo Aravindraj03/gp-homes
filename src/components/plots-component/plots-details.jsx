@@ -21,6 +21,11 @@ import room17 from "../../assets/img/rooms/mambakkam.jpg";
 import room18 from "../../assets/img/rooms/keelamani.jpg";
 import room19 from "../../assets/img/rooms/thirumudivakkam.jpg";
 import room20 from "../../assets/img/rooms/cressidaPark.jpg";
+import room21 from "../../assets/img/rooms/11.jpeg";
+import room22 from "../../assets/img/rooms/12.jpeg";
+import room23 from "../../assets/img/rooms/13.jpeg";
+import room24 from "../../assets/img/rooms/14.jpeg";
+import room25 from "../../assets/img/rooms/15.jpeg";
 
 
 import sold from "../../assets/img/rooms/sold out.png";
@@ -340,7 +345,7 @@ const roomsData = [
     category: "Plots-Upcoming",
     location: "Tiruninravur-Pakkam",
     title: "AISHWARYA GARDEN ll",
-    image: room20,
+    image: room25,
     description:
       "Land extent: 4.5 Acres  Size ranging: 500 - 3500 sq.ft",
     project_status: "Upcoming Project",
@@ -352,7 +357,7 @@ const roomsData = [
     category: "Plots-Upcoming",
     location: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
     title: "LOADING...",
-    image: room20,
+    image: room21,
     description:"Land extent: 4.5 Acres  Size ranging: 500 - 3000 sq.ft",
     project_status: "Upcoming Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
@@ -363,7 +368,7 @@ const roomsData = [
     category: "Plots-Upcoming",
     location: "Nr.Siruvapuri",
     title: "SEYYON GRAND CITY",
-    image: room20,
+    image: room22,
     description:"Land extent: 17 Acres  Size ranging: 450 - 3600 sq.ft",
     project_status: "Upcoming Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
@@ -374,7 +379,7 @@ const roomsData = [
     category: "Plots-Upcoming",
     location: "OMR-Siruthavur",
     title: "PETAL WING MEADOWS",
-    image: room20,
+    image: room23,
     description:"Land extent: 2.4 Acres  Size ranging: 800 - 3000 sq.ft",
     project_status: "Upcoming Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
@@ -385,7 +390,7 @@ const roomsData = [
     category: "Plots-Upcoming",
     location: "Mambakkam",
     title: "LOADING..",
-    image: room20,
+    image: room24,
     description:"Land extent: 18 Acres  Size ranging: 450 - 4200 sq.ft",
     project_status: "Upcoming Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
