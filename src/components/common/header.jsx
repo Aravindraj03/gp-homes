@@ -77,7 +77,7 @@ function Header() {
           <Navbar.Toggle aria-controls="navbar" />
 
           {/* Menu */}
-          <Navbar.Collapse id="navbar" className="custom-collapse justify-content-end">
+          <Navbar.Collapse id="navbar" className="custom-collapse justify-content-start">
             <Nav >
               <Nav.Link as={Link} to="/" >
                 Home
@@ -127,9 +127,12 @@ function Header() {
               <Nav.Link as={Link} to="/contact-us">
                 Contact
               </Nav.Link>
-              <Nav.Link as={Link} to="https://gphomespartnersclub.in/users/sign_in" target="_blank">
+              <Nav.Link as={Link} to="/channelPartner">
                 Channel Partner
               </Nav.Link>
+              {/* <Nav.Link as={Link} to="https://gphomespartnersclub.in/users/sign_in" target="_blank">
+                Channel Partner
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
