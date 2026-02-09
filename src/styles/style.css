@@ -962,6 +962,7 @@ blockquote cite:before {
 .nav-scroll-1 .logo-img {
   width: 15%;
 }
+
 .nav-scroll .logo-img,
 .nav-scroll-1 .logo-img {
   margin-bottom: 0px;
@@ -1035,10 +1036,16 @@ blockquote cite:before {
   padding: 0;
 }
 .logo-img {
-  padding: 20px 0;
+  padding: 10px 10px;
   width: 12%;
   text-align: center;
+  background-color: #fff;
 }
+
+.logo-img img {
+  padding: 2rem;
+}
+
 .dropdown .nav-link i {
   padding-left: 0px;
   font-size: 8px;
@@ -6364,7 +6371,7 @@ height: 100vh;
     width: 30%;
   }
   .logo-img{
-    width: 20% !important;
+    width: 22% !important;
 }
 }
 
@@ -6400,6 +6407,8 @@ height: 100vh;
   font-size: 16px;
   font-weight: bold;
 }
+
+/* channel partner button start */
 
 .shine-btn {
   position: relative;
@@ -6549,6 +6558,55 @@ box-shadow:
   width: 100%;
 }
 }
+
+.pulse-btn {
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+   background: linear-gradient(45deg, #d94e0f, #f16522);
+  box-shadow: 0 0 20px rgba(241, 101, 34, 0.7);
+
+  animation: pulseGlow 1.5s infinite ease-in-out;
+}
+
+/* Scale Animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(241, 101, 34, 0.7);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 40px rgba(241, 101, 34, 1);
+  }
+}
+
+.register-btn-container {
+  overflow: visible;
+}
+
+@media (max-width: 576px) {
+  .pulse-btn {
+    width: 30%;
+    max-width: 320px;
+    font-size: 8px;
+    padding: 4px 15px;
+  }
+}
+
+.positions-intro {
+  font-size: 16px;
+  /* max-width: 700px; */
+  margin: 0 auto;
+  color: #555;
+}
+
 
 
 

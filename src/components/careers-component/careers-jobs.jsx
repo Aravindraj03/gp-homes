@@ -3,32 +3,18 @@ import React from "react";
 const CareersJobs = () => {
   const positions = [
     {
-      title: "Senior Executive Assistant",
-      type: "Manager",
-      location: "New York, NY",
-      employmentType: "Full-time",
-      link: "contact",
-    },
-    {
-      title: "Receptionist",
+      title: "Tele-Caller",
       type: "Employee",
-      location: "San Francisco, CA",
+      experience: "1+ Years of experience;",
       employmentType: "Full-time",
-      link: "contact",
+      // link: "contact",
     },
     {
-      title: "Senior Architecture",
+      title: "Sales Executive",
       type: "Employee",
-      location: "New York, NY",
+      experience: "2+ Years of experience;",
       employmentType: "Full-time",
-      link: "contact",
-    },
-    {
-      title: "Intern",
-      type: "Intern",
-      location: "San Francisco, CA",
-      employmentType: "Part-time",
-      link: "contact",
+      // link: "contact",
     },
   ];
 
@@ -36,15 +22,24 @@ const CareersJobs = () => {
     <section className="positions section-padding">
       <div className="container">
         <div className="row">
+          <div className="col-md-12 mb-40 text-center">
+            <p className="positions-intro">
+              At <b>GP Homes</b>, our team drives our success. We’re looking for
+              passionate and motivated individuals who are eager to grow in the
+              real estate industry. If you have strong communication skills, a
+              customer-focused approach, and a drive to achieve, we welcome you
+              to be part of our journey and build your career with us.
+            </p>
+          </div>
           <div className="col-md-12 mb-60">
             {positions.map((position, index) => (
               <div key={index} className="position">
-                <a className="position-link" href={position.link}></a>
+                <div className="position-link" href={position.link}></div>
                 <div className="position-title">
                   {position.title} <span>{position.type}</span>
                 </div>
                 <div className="position-location">
-                  <span>Location</span> {position.location}
+                  <span>Experience</span> {position.experience}
                 </div>
                 <div className="position-time">
                   Employment Type <span>{position.employmentType}</span>
@@ -59,10 +54,8 @@ const CareersJobs = () => {
         <div className="row">
           <div className="col-md-12">
             <p>
-              <small>
-                Please submit a resume and cover letter with compensation history to{" "}
-                <b>info[at]luxuryhotel.com</b>.
-              </small>
+              Please submit your resume and cover letter to{" "}
+              <b>hr@gphomes.in</b> & <b>+91 80560 90880</b>.
             </p>
           </div>
         </div>

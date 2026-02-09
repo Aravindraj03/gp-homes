@@ -39,6 +39,7 @@ import ImagePopup from "./common/imagePopup";
 import EnquiryForm from "./common/EnquiryForm";
 import ThankYouPage from "./common/ThankYouPage";
 import ChannelPartnerPage from "./channelPartner-Component/channelPartner-Page";
+import CareersPage from "./careers-component/careers-page";
 
 function App() {
   useEffect(() => {
@@ -118,6 +119,7 @@ const AppWrapper = () => {
         <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="/popup-thank-you" element={<ThankYouPage />} />
         <Route path="/channelPartner" element={<ChannelPartnerPage />} />
+        <Route path="/Careers" element={<CareersPage />} />
 
 
         <Route path="*" element={<NotFound />} />

@@ -11,7 +11,7 @@ const ChannelPartnerBanner = () => {
   {/* Register Button */}
   <div className="register-btn-container">
     <button
-      className="shine-btn"
+      className="pulse-btn"
       onClick={() =>
         window.open("https://gphomespartnersclub.in/users/sign_in", "_blank")
       }

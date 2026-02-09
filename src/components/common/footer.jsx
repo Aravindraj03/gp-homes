@@ -67,7 +67,10 @@ function Footer() {
                         <Link to="/privacy-policy">Privacy Policy</Link>
                       </li>
                        <li>
-                        <Link to="https://gphomespartnersclub.in/users/sign_in" target="_blank">Channel Partner</Link>
+                        <Link to="/channelPartner">Channel Partner</Link>
+                      </li>
+                      <li>
+                        <Link to="/Careers">Careers</Link>
                       </li>
                     </ul>
                   </div>
