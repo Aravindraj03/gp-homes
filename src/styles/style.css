@@ -1574,6 +1574,7 @@ hr {
 .slider-fade .owl-dots .owl-dot.active {
   border-color: #aa8453;
   background: #aa8453;
+  display: none;
 }
 
 /* reservation field for slider */

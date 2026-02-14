@@ -101,7 +101,7 @@ function Footer() {
                     <a href="https://www.instagram.com/gphomes_?igsh=andzdTc2dGVibml6">
                       <i className="ti-instagram fs-4"></i>
                     </a>
-                    <a href="https://www.youtube.com/@gphomes_25">
+                    <a href="https://www.youtube.com/@GPHomes-FineLiving/">
                       <i className="ti-youtube fs-4"></i>
                     </a>
                     <a href="https://www.facebook.com/share/1DMpX1Dzj8/">

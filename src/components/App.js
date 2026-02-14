@@ -65,6 +65,7 @@ const AppWrapper = () => {
   const hideImagePopup =
     location.pathname.startsWith("/plots/enquiry-form") ||
     location.pathname.startsWith("/apartments/enquiry-form") ||
+    location.pathname.startsWith("/plots-chennai/gp-ponBhoomi") ||
     location.pathname === "/thank-you";
 
   return (
