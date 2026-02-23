@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import slideImg1 from "../../assets/img/slider/EXPO.jpg";
-import slideImg2 from "../../assets/img/slider/home-Banner.jpeg";
+import slideImg2 from "../../assets/img/slider/banner-2.jpg";
 
-import MobileBanner2 from "../../assets/img/slider/Mobile-Banner.jpeg";
+import MobileBanner2 from "../../assets/img/slider/Mobile-Banner-4.jpg";
 import MobileBanner1 from "../../assets/img/slider/4.jpg";
 import { ServiceWrapper } from "../../service/ApiService";
 
