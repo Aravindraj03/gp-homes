@@ -29,6 +29,7 @@ import room25 from "../../assets/img/rooms/15.jpeg";
 
 
 import sold from "../../assets/img/rooms/sold out.png";
+import sold2 from "../../assets/img/rooms/sold2.png";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -527,6 +528,14 @@ const PlotDetails = () => {
                     {room.project_status === "Completed Project" && (
                       <img
                         src={sold} // adjust path
+                        alt="Completed"
+                        className="completed-badge"
+                      />
+                    )}
+
+                    {room.id === 6 && (
+                      <img
+                        src={sold2}
                         alt="Completed"
                         className="completed-badge"
                       />

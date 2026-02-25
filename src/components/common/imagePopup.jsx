@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import DesktopPopup from "../../assets/img/popup/web-form.jpg";
-import MobilePopup from "../../assets/img/popup/mobile-form.jpg";
+import DesktopPopup from "../../assets/img/popup/popupImg.jpeg";
+import MobilePopup from "../../assets/img/popup/popupImgMobile.jpeg";
 import { useLocation, useNavigate } from "react-router-dom";
 
 
