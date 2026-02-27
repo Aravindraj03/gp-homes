@@ -6517,7 +6517,7 @@ box-shadow:
 /* Center Bottom Placement */
 .register-btn-container {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -6562,7 +6562,7 @@ box-shadow:
 }
 
 .pulse-btn {
-  padding: 16px 40px;
+  padding: 12px 26px;
   font-size: 18px;
   font-weight: 700;
   color: #fff;

@@ -356,8 +356,8 @@ const roomsData = [
   {
     id: 21,
     category: "Plots-Upcoming",
-    location: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
-    title: "LOADING...",
+    // location: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
+    title: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
     image: room21,
     description:"Land extent: 4.5 Acres  Size ranging: 500 - 3000 sq.ft",
     project_status: "Upcoming Project",
@@ -389,8 +389,8 @@ const roomsData = [
   {
     id: 24,
     category: "Plots-Upcoming",
-    location: "Mambakkam",
-    title: "LOADING..",
+    // location: "Mambakkam",
+    title: "Mambakkam",
     image: room24,
     description:"Land extent: 18 Acres  Size ranging: 450 - 4200 sq.ft",
     project_status: "Upcoming Project",
@@ -586,7 +586,7 @@ const PlotDetails = () => {
                           })}
                         </div>
                       )}
-                      {![14, 15, 16, 17, 18, 19].includes(room.id) && (
+                      {![14, 15, 16, 17, 18,19, 20,21,22,23,24].includes(room.id) && (
                         <Link
                           className="btn-form1-submit text-center"
                           to={`/plots-chennai/${room.slug}`}

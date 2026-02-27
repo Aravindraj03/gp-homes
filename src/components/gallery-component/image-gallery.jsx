@@ -20,14 +20,6 @@ import galleryimg17 from "../../assets/img/gallery/gallery-9.jpeg";
 
 const ImageGallery = () => {
   const images = [
-    galleryimg1,
-    galleryimg2,
-    galleryimg3,
-    galleryimg4,
-    galleryimg5,
-    galleryimg6,
-    galleryimg7,
-    galleryimg8,
     galleryimg9,
     galleryimg10,
     galleryimg11,
@@ -37,11 +29,19 @@ const ImageGallery = () => {
     galleryimg15,
     galleryimg16,
     galleryimg17,
+    galleryimg1,
+    galleryimg2,
+    galleryimg3,
+    galleryimg4,
+    galleryimg5,
+    galleryimg6,
+    galleryimg7,
+    galleryimg8,
   ];
 
   // Function to decide column size
   const getColumnClass = (index) => {
-    if (index >= 3 && index < 5) return "col-md-6"; // 2 columns section
+    if (index >= 12 && index < 14) return "col-md-6"; // 2 columns section
     return "col-md-4"; // default 3 columns
   };
 
