@@ -1,4 +1,4 @@
-import bgimage from '../../assets/img/slider/channelBanner.jpeg';
+import bgimage from '../../assets/img/slider/channelBanner2.jpeg';
 
 const ChannelPartnerBanner = () => {
   return (
