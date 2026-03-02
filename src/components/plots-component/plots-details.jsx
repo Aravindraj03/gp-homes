@@ -86,6 +86,18 @@ const getFeatureWithIcons = (feature) => {
 
 const roomsData = [
   {
+    id: 11,
+    category: "Plots-Ongoing",
+    location: "Pattabiram",
+    title: "GP Pon Bhoomi",
+    image: room10,
+    description:
+      "PonBhoomi symbolizes growth and prosperity. Investing in land is wiser than gold, as property values appreciate over time. Now is the ideal time to build your dream home in this serene paradise.",
+    project_status: "Ongoing Project",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-ponBhoomi",
+  },
+  {
     id: 1,
     category: "Apartments-Ongoing",
     location: "Porur",
@@ -219,18 +231,7 @@ const roomsData = [
     slug: "gp-vijayalakshmi",
   },
 
-  {
-    id: 11,
-    category: "Plots-Ongoing",
-    location: "Pattabiram",
-    title: "GP Pon Bhoomi",
-    image: room10,
-    description:
-      "PonBhoomi symbolizes growth and prosperity. Investing in land is wiser than gold, as property values appreciate over time. Now is the ideal time to build your dream home in this serene paradise.",
-    project_status: "Ongoing Project",
-    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
-    slug: "gp-ponBhoomi",
-  },
+  
   {
     id: 12,
     category: "Plots-Ongoing",
@@ -477,7 +478,7 @@ const PlotDetails = () => {
               }}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Plots-Upcoming"
+                selectedFilter === "Plots-Upcoming" 
                   ? "btn-form1-submit-active"
                   : ""
               }`}
