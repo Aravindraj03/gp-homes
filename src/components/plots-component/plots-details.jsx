@@ -30,6 +30,7 @@ import room25 from "../../assets/img/rooms/15.jpeg";
 
 import sold from "../../assets/img/rooms/sold out.png";
 import sold2 from "../../assets/img/rooms/sold2.png";
+import units from "../../assets/img/rooms/unitsleft.png";
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -478,7 +479,7 @@ const PlotDetails = () => {
               }}
               // className="btn-form1-submit mb-30"
               className={`btn-form1-submit mb-30 fs-5 ${
-                selectedFilter === "Plots-Upcoming" 
+                selectedFilter === "Plots-Upcoming"
                   ? "btn-form1-submit-active"
                   : ""
               }`}
@@ -542,6 +543,14 @@ const PlotDetails = () => {
                       />
                     )}
 
+                    {room.id === 7 && (
+                      <img
+                        src={units}
+                        alt="Completed"
+                        className="completed-badge"
+                      />
+                    )}
+
                     <div className="square-container d-flex align-items-end justify-content-end">
                       <div
                         className="box-title w-100 p-2"
@@ -587,7 +596,9 @@ const PlotDetails = () => {
                           })}
                         </div>
                       )}
-                      {![14, 15, 16, 17, 18,19, 20,21,22,23,24].includes(room.id) && (
+                      {![14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24].includes(
+                        room.id,
+                      ) && (
                         <Link
                           className="btn-form1-submit text-center"
                           to={`/plots-chennai/${room.slug}`}

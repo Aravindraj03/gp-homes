@@ -6,7 +6,7 @@ import PlotsVideo from "./plots-video";
 import ProjectDetailBanner from "./project-detail-banner";
 import ProjectDetailSection from "./project-details-section";
 import mobileBanner from "../../assets/img/projects/ponbhoomi-mobile-banner2.jpg";
-import mobileBanner2 from "../../assets/img/projects/ponbhoomi-mobile-banner-4.jpeg";
+import mobileBanner2 from "../../assets/img/projects/ponbhoomi-mobile-banner3.jpeg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

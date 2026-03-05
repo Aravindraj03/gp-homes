@@ -34,6 +34,9 @@ import compoundWall from "../../assets/img/icons/compund-wall.png";
 import solarLight from "../../assets/img/icons/Solar-lights.png";
 import archIcon from "../../assets/img/icons/Arch.png";
 
+import sold2 from "../../assets/img/rooms/sold2.png";
+import units from "../../assets/img/rooms/unitsleft.png";
+
 const featureIcons = {
   Units: aptIcon,
   BHK: bhkIcon,
@@ -157,20 +160,20 @@ const roomsData = [
     slug: "gp-garden-bay",
   },
 
-  {
-    id: 8,
-    category: "Plots",
-    location: "Mogappair",
-    title: "GP Ethulia",
-    image: room8,
-    description:
-      "Ethulia by GP Homes in Mogappair offers 55 ready-to-build villa plots across 2.46 acres, ensuring a prime location with great value appreciation.",
-    project_status: "Ongoing Project",
-    features: [
-      "Solar Lights, Black-top Roads, Grand Entrance Arch, EB Provided",
-    ],
-    slug: "gp-ethulia",
-  },
+  // {
+  //   id: 8,
+  //   category: "Plots",
+  //   location: "Mogappair",
+  //   title: "GP Ethulia",
+  //   image: room8,
+  //   description:
+  //     "Ethulia by GP Homes in Mogappair offers 55 ready-to-build villa plots across 2.46 acres, ensuring a prime location with great value appreciation.",
+  //   project_status: "Ongoing Project",
+  //   features: [
+  //     "Solar Lights, Black-top Roads, Grand Entrance Arch, EB Provided",
+  //   ],
+  //   slug: "gp-ethulia",
+  // },
   {
     id: 9,
     category: "Plots",
@@ -183,20 +186,20 @@ const roomsData = [
     features: ["Black-Top Roads, 24/7 Security, Fully Fenced, EB Provided"],
     slug: "gp-nanmanai",
   },
-  {
-    id: 10,
-    category: "Plots",
-    location: "Parivakkam",
-    title: "GP Fairmont",
-    image: room14,
-    description:
-      "Discover GP Fairmont at Parivakkam – your gateway to balanced living in the thriving Poonamalle Hub",
-    project_status: "Ongoing Project",
-    features: [
-      "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
-    ],
-    slug: "gp-fairmont",
-  },
+  // {
+  //   id: 10,
+  //   category: "Plots",
+  //   location: "Parivakkam",
+  //   title: "GP Fairmont",
+  //   image: room14,
+  //   description:
+  //     "Discover GP Fairmont at Parivakkam – your gateway to balanced living in the thriving Poonamalle Hub",
+  //   project_status: "Ongoing Project",
+  //   features: [
+  //     "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
+  //   ],
+  //   slug: "gp-fairmont",
+  // },
   // {
   //   id: 10,
   //   category: "Plots",
@@ -302,7 +305,7 @@ const HomeProjects = () => {
             >
               <img
                 src={plotIcon}
-                alt="Apartment" 
+                alt="Apartment"
                 style={{ width: "40px", marginRight: "1rem" }}
               />
               Plots
@@ -315,7 +318,9 @@ const HomeProjects = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="section-subtitle">GP Homes</div>
-            <div className="section-title">Real Estate Developers in Chennai</div>
+            <div className="section-title">
+              Real Estate Developers in Chennai
+            </div>
           </div>
         </div>
       </div>
@@ -330,6 +335,21 @@ const HomeProjects = () => {
                     className="square bg-img"
                     style={{ backgroundImage: `url(${room.image})` }}
                   >
+                    {room.id === 6 && (
+                      <img
+                        src={sold2}
+                        alt="Completed"
+                        className="completed-badge"
+                      />
+                    )}
+                    {room.id === 7 && (
+                      <img
+                        src={units}
+                        alt="Completed"
+                        className="completed-badge"
+                      />
+                    )}
+
                     {/* <span className="category">
                       <Link to="/">Book</Link>
                     </span> */}

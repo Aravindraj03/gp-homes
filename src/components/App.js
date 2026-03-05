@@ -40,6 +40,7 @@ import EnquiryForm from "./common/EnquiryForm";
 import ThankYouPage from "./common/ThankYouPage";
 import ChannelPartnerPage from "./channelPartner-Component/channelPartner-Page";
 import CareersPage from "./careers-component/careers-page";
+import CredaiImages from "./gallery-component/credaiImages";
 
 function App() {
   useEffect(() => {
@@ -121,6 +122,7 @@ const AppWrapper = () => {
         <Route path="/popup-thank-you" element={<ThankYouPage />} />
         <Route path="/channelPartner" element={<ChannelPartnerPage />} />
         <Route path="/Careers" element={<CareersPage />} />
+        <Route path="/gallery/credai-images" element={<CredaiImages />} />
 
 
         <Route path="*" element={<NotFound />} />

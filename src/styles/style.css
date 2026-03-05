@@ -859,7 +859,8 @@ blockquote cite:before {
   left: 0;
   top: 0;
   width: 100%;
-  background: transparent;
+  background: rgba(0,0,0,0.25); /* subtle overlay */
+  backdrop-filter: blur(6px); /* modern glass effect */
   z-index: 99;
   padding-right: 0;
   padding-left: 0;
@@ -867,9 +868,9 @@ blockquote cite:before {
   padding-bottom: 0;
   height: 100px;
 }
-.navbar .container {
+/* .navbar .container {
   padding-top: 50px;
-}
+} */
 
 .navbar-toggler-icon {
   background-image: none;
@@ -879,7 +880,7 @@ blockquote cite:before {
   color: #fff;
 }
 .navbar.navbar-light .navbar-nav .nav-link {
-  color: #000000;
+  color: #ffffff;
 }
 .navbar.navbar-light.nav-scroll .navbar-nav .nav-link,
 .navbar.navbar-light.nav-scroll-1 .navbar-nav .nav-link {
@@ -1036,10 +1037,10 @@ blockquote cite:before {
   padding: 0;
 }
 .logo-img {
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   width: 12%;
   text-align: center;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .logo-img img {
@@ -6609,6 +6610,22 @@ box-shadow:
   color: #555;
 }
 
+.credai-btn{
+  background:#f26f23;
+  color:white;
+  padding:10px 25px;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.credai-btn:hover{
+  background:#f26f23;
+  color:white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
 
 
 
