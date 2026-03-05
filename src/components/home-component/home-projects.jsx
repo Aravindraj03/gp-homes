@@ -34,6 +34,9 @@ import compoundWall from "../../assets/img/icons/compund-wall.png";
 import solarLight from "../../assets/img/icons/Solar-lights.png";
 import archIcon from "../../assets/img/icons/Arch.png";
 
+import ponbhoomiVilla from "../../assets/img/rooms/ponbhoomiVilla.jpg";
+
+import sold from "../../assets/img/rooms/sold out.png";
 import sold2 from "../../assets/img/rooms/sold2.png";
 import units from "../../assets/img/rooms/unitsleft.png";
 
@@ -224,6 +227,18 @@ const roomsData = [
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
+  {
+      id: 12,
+      category: "Villa",
+      location: "Pattabiram",
+      title: "Ponbhoomi",
+      image: ponbhoomiVilla,
+      description:
+        "Welcome to Pon Bhoomi by GP Homes – a serene residential villa built with superior quality and thoughtful planning.",
+      project_status: "Ongoing Project",
+      features: ["Black top roads, 24/7 Security, Potable ground water,  CCTV"],
+      slug: "gp-ponBhoomiVilla",
+    },
 ];
 
 const HomeProjects = () => {
@@ -270,16 +285,16 @@ const HomeProjects = () => {
     >
       <div className="container padding-bottom">
         <div className="row">
-          {/* <div className="col-md-4">
+          <div className="col-md-4">
             <button
               onClick={() => handleFilter("Villa")}
               className="btn-form1-submit"
             >
               Villa
             </button>
-          </div> */}
+          </div>
 
-          <div className="col-md-6">
+          <div className="col-md-4">
             <button
               onClick={() => handleFilter("Apartments")}
               // className="btn-form1-submit mb-30"
@@ -295,7 +310,7 @@ const HomeProjects = () => {
               Apartments
             </button>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-4">
             <button
               onClick={() => handleFilter("Plots")}
               // className="btn-form1-submit mb-30"
@@ -335,6 +350,14 @@ const HomeProjects = () => {
                     className="square bg-img"
                     style={{ backgroundImage: `url(${room.image})` }}
                   >
+                    {room.category === "Apartments" && (
+                      <img
+                        src={sold} // adjust path
+                        alt="Completed"
+                        className="completed-badge"
+                      />
+                    )}
+
                     {room.id === 6 && (
                       <img
                         src={sold2}
