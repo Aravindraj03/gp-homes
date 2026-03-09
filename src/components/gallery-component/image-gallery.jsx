@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import credaiThumb from "../../assets/img/gallery/gallery-1.jpeg";
 
 
 
@@ -21,11 +22,23 @@ import { Link } from "react-router-dom";
           </div>
 
         {showCredaiButton && (
-          <div className="col-md-12 text-center mb-4">
-        <Link to="/gallery/credai-images" className="credai-btn">
-          CREDAI Images
-        </Link>
+          <div className="col-md-12 d-flex justify-content-center">
+  <div className="col-md-4 gallery-item">
+    <Link to="/gallery/credai-images" className="gallery-folder">
+      <div className="folder-card">
+        <div className="folder-tab"></div>
+
+        <div className="folder-body">
+          <img src={credaiThumb} alt="Credai Images" />
+          <div className="folder-overlay">
+            <h5>CREDAI Images</h5>
+            <span>See more</span>
+          </div>
+        </div>
       </div>
+    </Link>
+  </div>
+</div>
         )}
 
           {images.map((src, index) => (
