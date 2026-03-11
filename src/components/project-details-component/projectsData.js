@@ -24,7 +24,7 @@ import GPValenciaEmerald from "../../assets/img/projects/GPValencia-Emerlad.jpg"
 import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
 import GPFairmont from "../../assets/img/projects/GPFairmont2.jpeg";
 import GPSereneVista from "../../assets/img/projects/gpserene-vista.jpg";
-import GpHomesPonbhoomi from "../../assets/img/projects/ponBanner.jpg";
+import GpHomesPonbhoomi from "../../assets/img/projects/ponBanner.jpeg";
 
 
 import BlazingStarFloorplan1 from "../../assets/img/floorplans/blazing-star-floorplan-1.jpg";

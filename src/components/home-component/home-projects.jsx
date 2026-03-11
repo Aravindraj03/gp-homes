@@ -124,7 +124,7 @@ const roomsData = [
   {
     id: 12,
     category: "Plots",
-    location: "Thiruvallur",
+    location: "Pattabiram",
     title: "GP Pon Bhoomi",
     image: room10,
     description:
@@ -288,8 +288,15 @@ const HomeProjects = () => {
           <div className="col-md-4">
             <button
               onClick={() => handleFilter("Villa")}
-              className="btn-form1-submit"
+              className={`btn-form1-submit mb-30  ${
+                selectedFilter === "Villa" ? "btn-form1-submit-active" : ""
+              }`}
             >
+              <img
+                src={aptIconWhite}
+                alt="Apartment"
+                style={{ width: "40px", marginRight: "1rem" }}
+              />
               Villa
             </button>
           </div>

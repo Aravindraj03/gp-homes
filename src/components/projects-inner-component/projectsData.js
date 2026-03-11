@@ -23,7 +23,7 @@ import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
 
 import GpHomesElanza2bhk from "../../assets/img/projects/GpHomesElanzaBanner-2.jpg";
 import GpHomesElanza3bhk from "../../assets/img/projects/GpHomesElanzaBanner-1.jpg";
-import GpHomesPonbhoomi from "../../assets/img/projects/ponBanner.jpg";
+import GpHomesPonbhoomi from "../../assets/img/projects/ponBanner.jpeg";
 import ponbhoomiVilla from "../../assets/img/projects/villa.jpg";
 import { Alt } from "react-bootstrap-icons";
 

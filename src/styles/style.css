@@ -5216,13 +5216,13 @@ button.mfp-arrow {
   background: #f4f4f4;
   color: #666;
   border-radius: 7px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #f4f4f4 !important;
   transition: all 300ms ease;
 }
 .error-form .form-group input[type="text"]:focus,
 .error-form .form-group input[type="email"]:focus,
 .error-form .form-group input[type="search"]:focus {
-  border-color: #f4f4f4;
+  border-color: #f4f4f4 !important;
 }
 .error-form .form-group input::-webkit-input-placeholder {
   color: #f4f4f4;

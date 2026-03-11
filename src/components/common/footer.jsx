@@ -98,13 +98,13 @@ function Footer() {
                     {/* <p className="footer-contact-mail">info@luxuryhotel.com</p> */}
                   </div>
                   <div className="footer-about-social-list">
-                    <a href="https://www.instagram.com/gphomes_?igsh=andzdTc2dGVibml6">
+                    <a href="https://www.instagram.com/gphomes_?igsh=andzdTc2dGVibml6" target="_blank" rel="noopener noreferrer">
                       <i className="ti-instagram fs-4"></i>
                     </a>
-                    <a href="https://www.youtube.com/@GPHomes-FineLiving/">
+                    <a href="https://www.youtube.com/@GPHomes-FineLiving/" target="_blank" rel="noopener noreferrer">
                       <i className="ti-youtube fs-4"></i>
                     </a>
-                    <a href="https://www.facebook.com/share/1DMpX1Dzj8/">
+                    <a href="https://www.facebook.com/share/1DMpX1Dzj8/" target="_blank" rel="noopener noreferrer">
                       <i className="ti-facebook fs-4"></i>
                     </a>
                   </div>

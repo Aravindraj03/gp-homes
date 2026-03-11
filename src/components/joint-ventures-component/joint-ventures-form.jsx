@@ -153,7 +153,7 @@ const JointVenturesForm = () => {
           {/* Contact Form */}
           <div className="col-md-5 mb-30 offset-md-1">
             <h3>Get in touch</h3>
-            <form className="contact__form" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="contact__form">
               {/* Form Message */}
               <div className="row">
                 <div className="col-12">
@@ -176,6 +176,7 @@ const JointVenturesForm = () => {
                     onChange={handleChange}
                     placeholder="Your Name *"
                     required
+                    className="form-control"
                   />
                 </div>
                 <div className="col-md-6 form-group">

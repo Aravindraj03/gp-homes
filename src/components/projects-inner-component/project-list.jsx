@@ -74,7 +74,7 @@ const ProjectsList = ({ project,projectDetails }) => {
                     ))}
                   </div>
                   <hr className="border-2" />
-                  <div className="info-wrapper">
+                  <div className="info-wrapper mb-md-5">
                     {project.id !== 3 && (
                       <>
                         <div className="more">
