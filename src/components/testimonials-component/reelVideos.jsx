@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import video1 from "../../assets/videos/testi01.mov"
-import video2 from "../../assets/videos/testi02.mov"
+// import video2 from "../../assets/videos/testi02.mov"
 import video3 from "../../assets/videos/testi03.mov"
 
 const ReelVideos = () => {
@@ -25,7 +25,7 @@ const ReelVideos = () => {
     }
   };
 
-  const videos = [video1, video2, video3];
+  const videos = [video1, video3];
 
   return (
     <section className="section-padding">

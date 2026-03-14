@@ -18,6 +18,12 @@ import PostImg8 from "../../assets/img/restaurant/Image 6.jpg";
 import PostImg9 from "../../assets/img/restaurant/Image 7.jpg";
 import PostImg10 from "../../assets/img/restaurant/Image 8.jpg";
 import PostImg11 from "../../assets/img/restaurant/Image 9.jpg";
+import blogimg12 from "../../assets/img/restaurant/dtcpBlog3.jpeg";
+import blogimg13 from "../../assets/img/restaurant/considerBlog2.jpeg";
+import blogimg14 from "../../assets/img/restaurant/considerBlog1.jpeg";
+import blogimg15 from "../../assets/img/restaurant/considerBlog3.jpeg";
+import blogimg16 from "../../assets/img/restaurant/dtcpBlog1.jpeg";
+import blogimg17 from "../../assets/img/restaurant/dtcpBlog2.jpeg";
 
 
 const postsData = [
@@ -288,6 +294,88 @@ const postsData = [
     ],
     slug: "why-vastu-shastra-matters-in-real-estate-home-buying",
   },
+  {
+  id: 7,
+  date: "08 Dec 2025",
+  name: "DTCP vs CMDA Approval: What Every Property Buyer Should Know",
+  description: [
+    "<p>When purchasing a plot in Tamil Nadu, one of the most important things to verify is whether the layout has proper government approval. Two common approvals that property buyers often hear about are DTCP and CMDA approval. Understanding the difference between these two can help you make a safer and more informed real estate investment.</p>",
+    
+    "<p>At <b>GP Homes</b>, we ensure that all our projects follow the required government approvals so buyers can invest with confidence.</p>",
+
+    "<h6 classname='mt-15'>What is DTCP Approval?</h6>",
+    "<p>DTCP stands for Directorate of Town and Country Planning. It is responsible for approving layouts in areas outside the Chennai Metropolitan Area.</p>",
+    "<ul><li>Applicable for plots in towns and rural areas</li><li>Ensures that the layout follows planning regulations</li><li>Approves road width, drainage systems, and public spaces</li></ul>",
+
+    "<h6 classname='mt-15'>What is CMDA Approval?</h6>",
+    "<p>CMDA stands for Chennai Metropolitan Development Authority. This authority regulates development within the Chennai Metropolitan Area.</p>",
+    "<ul><li>Applicable for properties within Chennai city limits</li><li>Ensures proper urban planning</li><li>Provides approval for residential and commercial developments</li></ul>",
+
+    "<h6 classname='mt-15'>Key Differences Between DTCP and CMDA</h6>",
+    "<ul><li><b>DTCP:</b> Applicable in smaller towns and districts</li><li><b>CMDA:</b> Applicable within Chennai metropolitan region</li><li><b>CMDA approvals</b> are usually stricter due to urban planning regulations</li></ul>",
+
+    "<h6 classname='mt-15'>Why Approval Matters When Buying a Plot</h6>",
+    "<p>Buying a plot without proper approval can lead to legal complications. Approved layouts ensure that the property follows planning regulations and has proper infrastructure.</p>",
+    "<ul><li>Legal ownership and documentation</li><li>Access to bank loans</li><li>Better resale value</li><li>Assurance of infrastructure development</li></ul>",
+
+    "<h6 classname='mt-15'>How GP Homes Helps Buyers</h6>",
+    "<p>GP Homes ensures that every project follows proper legal documentation and approval processes. Our team guides buyers through every step of the property purchase journey.</p>",
+    "<ul><li>Verified layouts</li><li>Transparent documentation</li><li>Professional assistance during registration</li></ul>"
+  ],
+  banner_image: bgimage,
+  blog_image: blogimg12,
+  images:[blogimg16, blogimg17],
+  conclusion_title:"Final Thoughts",
+  conclusion_desc:[
+    "<p>Before investing in land, always verify whether the property has DTCP or CMDA approval. These approvals ensure that the layout follows government regulations and protects your investment.</p>",
+    "<p>With GP Homes, you can invest in well-planned residential plots with complete legal transparency.</p>"
+  ],
+  slug: "dtcp-vs-cmda-approval-what-every-property-buyer-should-know",
+},
+{
+  id: 8,
+  date: "10 Dec 2025",
+  name: "7 Things to Check Before Buying a Plot in Chennai",
+  description: [
+    "<p>Buying a plot is one of the most reliable real estate investments. However, making the right purchase requires careful research and verification. Chennai's real estate market is growing rapidly, and buyers should ensure they make informed decisions before investing.</p>",
+
+    "<p>At <b>GP Homes</b>, we help property buyers make secure investments by providing legally verified plots and transparent documentation.</p>",
+
+    "<h6 classname='mt-15'>1. Verify Legal Documents</h6>",
+    "<p>The first step in purchasing a plot is verifying the legal documents. Ensure the property has a clear title and is free from legal disputes.</p>",
+    "<ul><li>Sale deed</li><li>Encumbrance certificate</li><li>Patta document</li></ul>",
+
+    "<h6 classname='mt-15'>2. Check Government Approvals</h6>",
+    "<p>Ensure that the layout has proper DTCP or CMDA approval. This confirms that the property follows government regulations.</p>",
+
+    "<h6 classname='mt-15'>3. Evaluate the Location</h6>",
+    "<p>The location of the property plays a major role in its future value. Look for areas with good connectivity, upcoming infrastructure projects, and nearby amenities.</p>",
+
+    "<h6 classname='mt-15'>4. Check Infrastructure and Amenities</h6>",
+    "<p>Plots located near essential facilities like schools, hospitals, and transport hubs tend to appreciate faster.</p>",
+    "<ul><li>Road connectivity</li><li>Water supply</li><li>Electricity access</li></ul>",
+
+    "<h6 classname='mt-15'>5. Research the Developer</h6>",
+    "<p>Always check the reputation of the developer before buying a plot. A reliable developer ensures transparency and quality development.</p>",
+
+    "<h6 classname='mt-15'>6. Future Development Potential</h6>",
+    "<p>Invest in areas that show signs of future growth such as metro expansion, IT parks, and industrial corridors.</p>",
+
+    "<h6 classname='mt-15'>7. Loan Eligibility</h6>",
+    "<p>If you plan to finance the purchase through a bank loan, ensure the plot is approved by financial institutions.</p>",
+
+    "<p>Following these steps can help you make a secure and profitable property investment.</p>"
+  ],
+  banner_image: bgimage,
+  blog_image: blogimg13,
+  images:[blogimg14, blogimg15],
+  conclusion_title:"Final Thoughts",
+  conclusion_desc:[
+    "Buying a plot is a major financial decision. By verifying legal documents, approvals, and location advantages, you can ensure a safe investment.",
+    "Explore premium residential plots from GP Homes and take the first step toward building your dream home in Chennai."
+  ],
+  slug: "7-things-to-check-before-buying-a-plot-in-chennai",
+}
 ];
 
 export default postsData;

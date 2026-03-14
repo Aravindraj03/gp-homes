@@ -6,7 +6,8 @@ import blogimg3 from "../../assets/img/restaurant/Home Loan.jpg";
 import blogimg4 from "../../assets/img/restaurant/E-Stamping.jpg";
 import blogimg5 from "../../assets/img/restaurant/Transperent Documentaion.jpg";
 import blogimg6 from "../../assets/img/restaurant/entilation & Natural Light.jpg";
-import blogimg7 from "../../assets/img/restaurant/Quality Assurance.jpg";
+import blogimg7 from "../../assets/img/restaurant/dtcpBlog3.jpeg";
+import blogimg8 from "../../assets/img/restaurant/considerBlog2.jpeg";
 
 
 import { Link } from "react-router-dom";
@@ -65,6 +66,22 @@ const BlogSection = () => {
       desc: "Buying a home is one of the most significant decisions in life. While factors like location, budget, and amenities play a crucial role, many homebuyers in India also consider Vastu Shastra, an ancient architectural science that promotes harmony and well-being. But why does Vastu matter in real estate, and how can it influence your home’s energy, prosperity, and overall happiness? Let’s explore.",
       slug: "why-vastu-shastra-matters-in-real-estate-home-buying",
     },
+    {
+  img: blogimg7,
+  date: "08",
+  month: "Dec",
+  title: "DTCP vs CMDA Approval: What Every Property Buyer Should Know",
+  desc: "When purchasing a plot in Tamil Nadu, one of the most important factors to check is whether the property has DTCP or CMDA approval. These approvals ensure that the layout follows government regulations and that the land is safe for residential development. Understanding the difference between DTCP and CMDA approval can help buyers avoid legal issues and make a secure investment in real estate.",
+  slug: "dtcp-vs-cmda-approval-what-every-property-buyer-should-know",
+},
+{
+  img: blogimg8,
+  date: "10",
+  month: "Dec",
+  title: "7 Things to Check Before Buying a Plot in Chennai",
+  desc: "Buying a plot is one of the safest real estate investments, but it requires careful verification. From legal documents and approvals to location advantages and infrastructure development, several factors influence the value and security of your investment. Here are seven important things every buyer should check before purchasing a plot in Chennai to ensure a safe and profitable investment.",
+  slug: "7-things-to-check-before-buying-a-plot-in-chennai",
+}
   ];
 
   const totalPages = Math.ceil(posts.length / postsPerPage);
