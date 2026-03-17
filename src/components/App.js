@@ -46,6 +46,13 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 1500, once: false });
   }, []);
+  const resizeObserverErr = window.onerror;
+window.onerror = function (message, source, lineno, colno, error) {
+  if (message === "ResizeObserver loop completed with undelivered notifications.") {
+    return true;
+  }
+  return resizeObserverErr?.(message, source, lineno, colno, error);
+};
 
   return (
     <HelmetProvider>
