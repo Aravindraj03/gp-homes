@@ -6,14 +6,14 @@ import ImageGallery from "./image-gallery";
 import VideoGallery from "./video-gallery";
 
 
-import galleryimg1 from "../../assets/img/gallery/gallery-Ethulyia.jpg";
-import galleryimg2 from "../../assets/img/gallery/gallery-Nanmani.jpg";
-import galleryimg3 from "../../assets/img/gallery/gallery-Ponbhoomi 1.jpg";
-import galleryimg4 from "../../assets/img/gallery/gallery-Ponbhoomi.jpg";
-import galleryimg5 from "../../assets/img/gallery/gallery-gardenbay.jpg";
-import galleryimg6 from "../../assets/img/gallery/gallery-blazingstar.jpg";
-import galleryimg7 from "../../assets/img/gallery/gallery-Elanza.jpg";
-import galleryimg8 from "../../assets/img/gallery/gallery-Ruby.jpg";
+import galleryimg1 from "../../assets/img/gallery/gallery10.jpeg";
+import galleryimg2 from "../../assets/img/gallery/gallery11.jpeg";
+import galleryimg3 from "../../assets/img/gallery/gallery12.jpeg";
+import galleryimg4 from "../../assets/img/gallery/gallery13.png";
+import galleryimg5 from "../../assets/img/gallery/gallery14.png";
+// import galleryimg6 from "../../assets/img/gallery/gallery-blazingstar.jpg";
+// import galleryimg7 from "../../assets/img/gallery/gallery-Elanza.jpg";
+// import galleryimg8 from "../../assets/img/gallery/gallery-Ruby.jpg";
 
 
 import HomeReservation from "../home-component/home-reservation";
@@ -24,9 +24,9 @@ function GalleryPage() {
   galleryimg3,
   galleryimg4,
   galleryimg5,
-  galleryimg6,
-  galleryimg7,
-  galleryimg8,
+  // galleryimg6,
+  // galleryimg7,
+  // galleryimg8,
 ];
 
   return (

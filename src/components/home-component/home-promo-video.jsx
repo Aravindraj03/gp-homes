@@ -1,5 +1,5 @@
 import React, { useRef, useState,useEffect } from "react";
-import slideImg2 from "../../assets/img/projects/videobg.jpg";
+import slideImg2 from "../../assets/img/projects/blackTexturedBg.jpeg";
 import d1 from "../../assets/videos/promovid1.mp4"
 import d2 from "../../assets/videos/promovid2.mp4";
 import d3 from "../../assets/videos/promovid3.mp4";
@@ -163,68 +163,73 @@ const HomePromoVideo = () => {
       <div className="container d-flex justify-content-center align-items-center">
 
         <div
-          style={{
-            width: isMobile ? "100%" : "80%",
-            maxWidth: "900px",
-            position: "relative",
-          }}
-        >
+  style={{
+    width: isMobile ? "100%" : "100%",
+    maxWidth: isMobile ? "900px" : "100%",
+    position: "relative",
+  }}
+>
 
           {/* VIDEO */}
           <video
-            ref={videoRef}
-            key={currentVideo}
-            src={videos[currentVideo]}
-            controls
-            // muted
-            playsInline
-            autoPlay
-            onEnded={nextVideo}
-            style={{
-              width: "100%",
-              borderRadius: "10px",
-            }}
-          />
+  ref={videoRef}
+  key={currentVideo}
+  src={videos[currentVideo]}
+  controls
+  playsInline
+  autoPlay
+  onEnded={nextVideo}
+  style={{
+    width: "100%",
+    height: isMobile ? "auto" : "90vh",
+    objectFit: isMobile ? "contain" : "contain",
+    borderRadius: isMobile ? "10px" : "0px",
+  }}
+/>
 
           {/* PREV */}
-          <button
-            onClick={prevVideo}
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "10px",
-              transform: "translateY(-50%)",
-              background: "rgba(0,0,0,0.6)",
-              color: "white",
-              border: "none",
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              fontSize: "18px",
-            }}
-          >
-            ❮
-          </button>
+<button
+  onClick={prevVideo}
+  style={{
+    position: "absolute",
+    top: "50%",
+    left: isMobile ? "10px" : "30px",
+    transform: "translateY(-50%)",
+    background: "rgba(0,0,0,0.5)",
+    color: "white",
+    border: "none",
+    width: isMobile ? "40px" : "70px",
+    height: isMobile ? "40px" : "70px",
+    borderRadius: "50%",
+    fontSize: isMobile ? "18px" : "28px",
+    cursor: "pointer",
+    backdropFilter: "blur(5px)",
+  }}
+>
+  ❮
+</button>
 
-          {/* NEXT */}
-          <button
-            onClick={nextVideo}
-            style={{
-              position: "absolute",
-              top: "50%",
-              right: "10px",
-              transform: "translateY(-50%)",
-              background: "rgba(0,0,0,0.6)",
-              color: "white",
-              border: "none",
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              fontSize: "18px",
-            }}
-          >
-            ❯
-          </button>
+{/* NEXT */}
+<button
+  onClick={nextVideo}
+  style={{
+    position: "absolute",
+    top: "50%",
+    right: isMobile ? "10px" : "30px",
+    transform: "translateY(-50%)",
+    background: "rgba(0,0,0,0.5)",
+    color: "white",
+    border: "none",
+    width: isMobile ? "40px" : "70px",
+    height: isMobile ? "40px" : "70px",
+    borderRadius: "50%",
+    fontSize: isMobile ? "18px" : "28px",
+    cursor: "pointer",
+    backdropFilter: "blur(5px)",
+  }}
+>
+  ❯
+</button>
 
         </div>
       </div>

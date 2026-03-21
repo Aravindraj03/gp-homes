@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import slideImg2 from "../../assets/img/projects/testimonialbg2.jpg";
+import slideImg2 from "../../assets/img/projects/blackTexturedBg.jpeg";
 
 const HomeReservation = ({ project,selectedPlotData }) => {
 
@@ -103,26 +103,26 @@ const HomeReservation = ({ project,selectedPlotData }) => {
     <section className="testimonials" id="reservation-sec">
       <div
         className="background bg-img bg-fixed section-padding pb-0"
-        style={{ backgroundImage: `url(${slideImg2})` }}
-        data-overlay-dark="3"
+        style={{ backgroundColor: "#222" }}
+        // data-overlay-dark="3"
       >
         <div className="container">
           <div className="row">
-            <div className="col-md-5 mb-30 mt-30">
+            <div className="col-md-5 mb-0 mt-0 color-1">
               <h3>ENQUIRE NOW</h3>
               <br />
-              <h6>
+              <h6 className="color-1">
                 Interested in learning more? Our property experts are here to
                 help! Reach out to us, and we’ll get back to you with all the
                 details soon.
               </h6>
               <div className="reservations mb-30">
                 <div className="icon">
-                  <span className="flaticon-call"></span>
+                  <span style={{ color: "#aa8453" }} className="flaticon-call"></span>
                 </div>
                 <div className="text">
-                  <p color-1>Contact Us</p>
-                  <a className="color-1" href="tel:+919344481444">
+                  <p className="color-1">Contact Us</p>
+                  <a className="color-1"  href="tel:+919344481444">
                     9344481444
                   </a>
                 </div>
@@ -130,10 +130,10 @@ const HomeReservation = ({ project,selectedPlotData }) => {
 
               <div className="reservations mb-30">
                 <div className="icon">
-                  <span className="flaticon-call"></span>
+                  <span style={{ color: "#aa8453" }} className="flaticon-call"></span>
                 </div>
                 <div className="text">
-                  <p color-1>Contact Us</p>
+                  <p className="color-1">Contact Us</p>
                   <a className="color-1" href="tel:6384003003">
                     6384003003
                   </a>

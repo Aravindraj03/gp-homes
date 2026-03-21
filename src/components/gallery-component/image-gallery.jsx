@@ -40,23 +40,33 @@ import credaiThumb from "../../assets/img/gallery/gallery-1.jpeg";
   </div>
 </div>
         )}
+<div className="insta-grid-custom">
 
-          {images.map((src, index) => (
-            <div key={index} className={`${getColumnClass(index)} gallery-item`}>
-              <a href={src} className="img-zoom">
-                <div className="gallery-box">
-                  <div className="gallery-img">
-                    <img
-                      src={src}
-                      className="img-fluid mx-auto d-block"
-                      alt={`gallery-${index + 1}`}
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </a>
-            </div>
-          ))}
+  {/* Top Row (3 images) */}
+  <div className="insta-row top-row">
+    {images.slice(0, 3).map((src, index) => (
+      <div key={index} className="insta-card">
+        <img src={src} alt={`insta-${index}`} />
+        <div className="insta-overlay">
+          <i className="ti-instagram"></i>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  {/* Bottom Row (2 centered images) */}
+  <div className="insta-row bottom-row">
+    {images.slice(3, 5).map((src, index) => (
+      <div key={index} className="insta-card">
+        <img src={src} alt={`insta-${index}`} />
+        <div className="insta-overlay">
+          <i className="ti-instagram"></i>
+        </div>
+      </div>
+    ))}
+  </div>
+
+</div>
         </div>
       </div>
     </section>
