@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import brochure from "../../assets/img/pdf/brochure.pdf"; 
-import thankYouBanner from "../../assets/img/projects/thankyouBanner.jpg"; 
-import thankYouBannerMobile from "../../assets/img/projects/thankYouBannerMobile.jpg";
+import thankYouBanner from "../../assets/img/projects/thankyouBanneraparna.jpeg"; 
+import thankYouBannerMobile from "../../assets/img/projects/thankYouBannerMobileaparna.jpeg";
 // import "./ThankYouPage.css";
 
 function ThankYouPage() {

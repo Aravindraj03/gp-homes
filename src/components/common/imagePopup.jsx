@@ -70,6 +70,7 @@ const ImagePopup = ({ pageType = "home" }) => {
       setShowConfirmation(true);
 
       setTimeout(() => {
+        setShowPopup(false);
         navigate("/popup-thank-you");
       }, 1500);
     } catch (error) {
