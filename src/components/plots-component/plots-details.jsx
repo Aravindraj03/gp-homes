@@ -31,6 +31,7 @@ import room25 from "../../assets/img/rooms/15.jpeg";
 import sold from "../../assets/img/rooms/sold out.png";
 import sold2 from "../../assets/img/rooms/sold2.png";
 import units from "../../assets/img/rooms/unitsleft.png";
+import coming from "../../assets/img/rooms/ComingSoon.png"
 
 import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
@@ -334,7 +335,7 @@ const roomsData = [
   },
   {
     id: 19,
-    category: "Plots-Upcoming",
+    category: "Plots-Ongoing",
     location: "Pattabiram-ORR",
     title: "GP Cressida Park",
     image: room20,
@@ -539,6 +540,14 @@ const PlotDetails = () => {
                       <img
                         src={sold2}
                         alt="Completed"
+                        className="completed-badge"
+                      />
+                    )}
+
+                    {room.id === 19 && (
+                      <img
+                        src={coming}
+                        alt="Coming Soon"
                         className="completed-badge"
                       />
                     )}
