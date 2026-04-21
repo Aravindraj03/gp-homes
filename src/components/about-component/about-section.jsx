@@ -23,7 +23,7 @@ const AboutSection = () => {
             </span> */}
             {/* <div className="section-subtitle">GP Homes</div> */}
             {/* <div className="section-title">Enjoy a Luxury Experience</div> */}
-            <h1 className="section-title">Real Estate Developers in Chennai</h1>
+            <h3 className="section-title">Real Estate Developers in Chennai</h3>
             <h2>Top Builders in Chennai </h2>
 
             <p>

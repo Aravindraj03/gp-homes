@@ -359,12 +359,12 @@ const SEOHandler = () => {
     "/joint-ventures": {
       title: "Join Ventures - GP Homes",
       description:
-        "Partner with GP Homes through exciting joint ventures. Collaborate with leading real estate developers in Chennai for innovative and successful projects.",
+        "Partner with GP Homes through exciting joint ventures. Collaborate with GP Homes, Best Builders in Chennai for innovative and successful projects.",
     },
     "/gallery": {
       title: "Gallery -  GP Homes",
       description:
-        "Explore the GP Homes gallery showcasing our beautifully designed apartments, flats, and residential projects in Chennai. Discover your dream home with us today!",
+        "Explore the GP Homes, Real Estate Company in Chennai gallery showcasing our beautifully designed apartments, flats, and residential projects in Chennai. Discover your dream home with us today!",
     },
     "/tools": {
       title: "Tools - GP Homes",
@@ -374,7 +374,7 @@ const SEOHandler = () => {
     "/testimonials": {
       title: "GP Homes - Testimonials",
       description:
-        "Read what our happy homeowners say about GP Homes! Discover genuine testimonials and experiences from satisfied customers who chose quality living with us.",
+        "Read what our happy homeowners say about GP Homes, Top Real Estate Agent in Chennai! Discover genuine testimonials and experiences from satisfied customers who chose quality living with us.",
     },
     "/Careers": {
       title: "Careers - GP Homes",

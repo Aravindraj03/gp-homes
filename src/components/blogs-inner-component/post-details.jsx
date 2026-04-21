@@ -9,6 +9,7 @@ import thumb2 from "../../assets/img/spa/3.jpg";
 import thumb3 from "../../assets/img/slider/7.jpg";
 
 const Post = ({ post }) => {
+  
   return (
     <section className="section-padding">
       <div className="container">
@@ -165,5 +166,8 @@ const Post = ({ post }) => {
     </section>
   );
 };
+
+
+
 
 export default Post;

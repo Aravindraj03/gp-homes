@@ -10,7 +10,7 @@ const PrivacyPolicies = () => {
             data-animate-effect="fadeInUp"
           >
             {/* <h2 className="section-subtitle">Privacy Commitment</h2> */}
-            <h1 className="section-title">Privacy Commitment</h1>
+            <h3 className="section-title">Privacy Commitment</h3>
             <p>
               At GP Homes, we value your privacy and are dedicated to
               safeguarding your personal information. We strictly adhere to the

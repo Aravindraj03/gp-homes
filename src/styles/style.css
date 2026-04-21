@@ -2154,7 +2154,7 @@ hr {
   font-weight: 400;
   letter-spacing: 15px;
 }
-.banner-header h1 {
+.banner-header h3 {
   font-size: 60px;
   color: #fff;
   position: relative;
@@ -2266,7 +2266,7 @@ hr {
   .banner-header {
   }
 
-  .banner-header.full-height h1 {
+  .banner-header.full-height h3 {
     font-size: 30px;
     margin-bottom: 15px;
     letter-spacing: 10px;
@@ -2285,9 +2285,9 @@ hr {
 
   .banner-header h5 {
   }
-  .banner-header h1 {
+  .banner-header h3 {
     /* font-size: 45px; */
-    font-size: 35px;
+    font-size: 1rem;
   }
   .apartments-page .section-title, .plots-page .section-title, .about .section-title{
     font-size: 30px;

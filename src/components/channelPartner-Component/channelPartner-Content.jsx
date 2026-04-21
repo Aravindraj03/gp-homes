@@ -45,7 +45,7 @@ const ChannelPartnerContent = () => {
             </span> */}
             {/* <div className="section-subtitle">GP Homes</div> */}
             {/* <div className="section-title">Enjoy a Luxury Experience</div> */}
-            <h1 className="section-title">Channel Partner</h1>
+            <h3 className="section-title">Channel Partner</h3>
             <h2>Partner with Us </h2>
 
             <p>

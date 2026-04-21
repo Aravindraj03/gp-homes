@@ -15,8 +15,8 @@ const ToolsBanner = () => {
         <div className="row">
           <div className="col-md-12 mt-24">            
             <h5 className="text-lg font-medium text-white">Our Tools</h5>
-            <h1 className="text-4xl font-bold text-white">We develop residential properties with care.
-            Seeing more than just numbers.</h1>
+            <h3 className="text-4xl font-bold text-white">We develop residential properties with care.
+            Seeing more than just numbers.</h3>
           </div>
         </div>
       </div>

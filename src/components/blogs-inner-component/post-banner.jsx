@@ -18,7 +18,7 @@ const PostBanner = ({post}) => {
             <h5>
               <a href="/">News</a> / {post.name}
             </h5>
-            <h1>{post.name}</h1>
+            <h3>{post.name}</h3>
             <div className="post">              
               <div className="date-comment">
                 <i className="ti-calendar"></i> {post.date}

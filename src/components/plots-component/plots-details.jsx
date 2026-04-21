@@ -432,9 +432,9 @@ const PlotDetails = () => {
         <div className="row">
           <div className="col-md-12">
             {/* <div className="section-title">Our Projects</div> */}
-            <h1 className="section-title m-0 p-0 mb-2">
+            <h3 className="section-title m-0 p-0 mb-2">
               Plots For Sale in Chennai
-            </h1>
+            </h3>
             <h2 className="mb-3">Residential Land For Sale in Chennai</h2>
             <p>
               GP Homes, Residential Plots For Sale, CMDA Approved Plots, Real
@@ -605,7 +605,7 @@ const PlotDetails = () => {
                           })}
                         </div>
                       )}
-                      {![14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24].includes(
+                      {![14, 15, 16, 17, 18,19, 20, 21, 22, 23, 24].includes(
                         room.id,
                       ) && (
                         <Link

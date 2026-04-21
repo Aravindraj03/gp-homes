@@ -97,7 +97,7 @@ const FAQs = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h1 className="mt-30 mb-30">F.A.Qs</h1>
+            <h3 className="mt-30 mb-30">F.A.Qs</h3>
             <ul className="accordion-box clearfix">
               <li
                 className={`accordion block ${
@@ -401,7 +401,7 @@ const FAQs = () => {
 
         <div className="row">
           <div className="col-md-12">
-            <h1 className="mt-30 mb-30">Taxation FAQs </h1>
+            <h3 className="mt-30 mb-30">Taxation FAQs </h3>
             <ul className="accordion-box clearfix">
               <li
                 className={`accordion block ${
@@ -698,7 +698,7 @@ const FAQs = () => {
 
         <div className="row">
           <div className="col-md-12">
-            <h1 className="mt-30 mb-30">NRI FAQs</h1>
+            <h3 className="mt-30 mb-30">NRI FAQs</h3>
             <ul className="accordion-box clearfix">
               <li
                 className={`accordion block ${

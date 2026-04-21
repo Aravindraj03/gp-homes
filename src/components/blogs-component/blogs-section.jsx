@@ -8,6 +8,8 @@ import blogimg5 from "../../assets/img/restaurant/Transperent Documentaion.jpg";
 import blogimg6 from "../../assets/img/restaurant/entilation & Natural Light.jpg";
 import blogimg7 from "../../assets/img/restaurant/dtcpBlog3.jpeg";
 import blogimg8 from "../../assets/img/restaurant/considerBlog2.jpeg";
+import blogimg9 from "../../assets/img/restaurant/blog5-3.jpeg";
+import blogimg10 from "../../assets/img/restaurant/blog6-1.jpeg";
 
 
 import { Link } from "react-router-dom";
@@ -67,21 +69,39 @@ const BlogSection = () => {
       slug: "why-vastu-shastra-matters-in-real-estate-home-buying",
     },
     {
-  img: blogimg7,
-  date: "08",
-  month: "Dec",
-  title: "DTCP vs CMDA Approval: What Every Property Buyer Should Know",
-  desc: "When purchasing a plot in Tamil Nadu, one of the most important factors to check is whether the property has DTCP or CMDA approval. These approvals ensure that the layout follows government regulations and that the land is safe for residential development. Understanding the difference between DTCP and CMDA approval can help buyers avoid legal issues and make a secure investment in real estate.",
-  slug: "dtcp-vs-cmda-approval-what-every-property-buyer-should-know",
-},
-{
-  img: blogimg8,
-  date: "10",
-  month: "Dec",
-  title: "7 Things to Check Before Buying a Plot in Chennai",
-  desc: "Buying a plot is one of the safest real estate investments, but it requires careful verification. From legal documents and approvals to location advantages and infrastructure development, several factors influence the value and security of your investment. Here are seven important things every buyer should check before purchasing a plot in Chennai to ensure a safe and profitable investment.",
-  slug: "7-things-to-check-before-buying-a-plot-in-chennai",
-}
+      img: blogimg7,
+      date: "08",
+      month: "Dec",
+      title: "DTCP vs CMDA Approval: What Every Property Buyer Should Know",
+      desc: "When purchasing a plot in Tamil Nadu, one of the most important factors to check is whether the property has DTCP or CMDA approval. These approvals ensure that the layout follows government regulations and that the land is safe for residential development. Understanding the difference between DTCP and CMDA approval can help buyers avoid legal issues and make a secure investment in real estate.",
+      slug: "dtcp-vs-cmda-approval-what-every-property-buyer-should-know",
+    },
+    {
+      img: blogimg8,
+      date: "10",
+      month: "Dec",
+      title: "7 Things to Check Before Buying a Plot in Chennai",
+      desc: "Buying a plot is one of the safest real estate investments, but it requires careful verification. From legal documents and approvals to location advantages and infrastructure development, several factors influence the value and security of your investment. Here are seven important things every buyer should check before purchasing a plot in Chennai to ensure a safe and profitable investment.",
+      slug: "7-things-to-check-before-buying-a-plot-in-chennai",
+    },
+    {
+      img: blogimg9,
+      date: "20",
+      month: "Dec",
+      title:
+        "Plots vs Apartments vs Villas: Which is Best for Buying in Chennai?",
+      desc: "Choosing between plots, apartments, and villas depends on your budget, lifestyle, and investment goals. Plots offer higher long-term appreciation and flexibility, apartments provide convenience and affordability, while villas deliver luxury and privacy. Understanding the advantages of each option can help you make the right real estate decision in Chennai.",
+      slug: "plots-vs-apartments-vs-villas-which-is-best-for-buying-in-chennai",
+    },
+    {
+      img: blogimg10,
+      date: "18",
+      month: "Dec",
+      title:
+        "Top Upcoming Residential Areas in Chennai for Real Estate Investment in 2026",
+      desc: "Chennai’s real estate market is rapidly expanding, with several emerging locations offering great investment potential. Areas like Poonamallee, Thiruninravur, OMR, and Pattabiram are gaining attention due to improved connectivity, infrastructure development, and affordability. These locations are ideal for both residential living and long-term investment, making them some of the top choices for property buyers in 2026.",
+      slug: "top-upcoming-residential-areas-in-chennai-for-real-estate-investment-2026",
+    },
   ];
 
   const totalPages = Math.ceil(posts.length / postsPerPage);

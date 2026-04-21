@@ -340,9 +340,9 @@ const HomeProjects = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="section-subtitle">GP Homes</div>
-            <div className="section-title">
+            <h1 className="section-title">
               Real Estate Developers in Chennai
-            </div>
+            </h1>
           </div>
         </div>
       </div>

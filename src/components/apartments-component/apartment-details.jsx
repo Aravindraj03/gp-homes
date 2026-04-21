@@ -290,9 +290,9 @@ const ApartmentDetails = () => {
         <div className="row">
           <div className="col-md-12">
             {/* <div className="section-title">Our Projects</div> */}
-            <h1 className="section-title m-0 p-0 mb-2">
+            <h3 className="section-title m-0 p-0 mb-2">
               Apartments For Sale in Chennai
-            </h1>
+            </h3>
             <h2 className="mb-3">Flat For Sale in Chennai</h2>
             {/* <p>GP Homes, 1BHK, 2BHK, 3BHK, Apartment for Sale, Best Builders in Chennai</p> */}
             <p>

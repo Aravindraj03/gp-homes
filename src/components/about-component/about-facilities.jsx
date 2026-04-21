@@ -45,9 +45,9 @@ const AboutFacilities = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h1 className="section-title text-uppercase facilities-title">
+            <h3 className="section-title text-uppercase facilities-title">
               25 Years Of experience{""}
-            </h1>
+            </h3>
             <h2 className="section-subtitle mb-30 text-uppercase">
               We continue our legacy of success, shaping the future and
               redefining Chennai’s skyline.

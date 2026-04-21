@@ -1904,6 +1904,90 @@ const projectsData = [
     project_status: "Ongoing Project",
     slug: "gp-ponBhoomiVilla",
   },
+    {
+  id: 21,
+    location: "Plots in Pattabiram-ORR",
+    name: "GP Cressida Park",
+    description: [
+      "Cressida Park is a thoughtfully crafted residential plotted development located at Annambedu, near Pattabiram, offering a perfect blend of serene living and seamless city connectivity. Designed to create a peaceful environment, it brings you closer to nature while keeping you well-connected to key urban hubs.",
+      "Ideal for families, working professionals, and investors, Cressida Park is surrounded by well-established schools, colleges, hospitals, supermarkets, and essential conveniences. Every detail is planned to ensure a secure, comfortable, and well-connected lifestyle for modern living.",
+      "Whether you are looking to build your dream home or make a smart investment, Cressida Park presents a valuable opportunity in a rapidly developing neighborhood—where everyday convenience meets long-term growth potential."
+    ],
+    banner_images: [GPSereneVista],
+    image: listimg4,
+    facilities: [
+      // ["Parking", "flaticon-car"],
+      // ["Painting", "flaticon-wifi"],
+      // ["Toilet", "flaticon-bed"],
+      // ["Structure", "flaticon-breakfast"],
+      // ["Joineries", "flaticon-clock-1"],
+      // ["Plastering", "flaticon-swimming"],
+      // ["Electricals", "flaticon-clock-1"],
+      // ["Plumbing", "flaticon-swimming"],
+      // ["Water Supply", "flaticon-clock-1"],
+      // ["Balcony area", "flaticon-swimming"],
+      // ["Kitchen", "flaticon-swimming"],
+    ],
+    specifications_title: "",
+    specifications_desc: "",
+    amenities_title: "Amenities",
+    amenities_desc:
+      "Explore the opportunities at Cressida Park and choose the ideal plot to build your dream home. With well-planned plot sizes and flexible layout options, creating your perfect living space becomes simple and convenient. Experience a peaceful and well-connected community designed to meet your everyday needs.",
+    amenities: [
+      ["Well-Developed Black Top Roads", "bi bi-signpost-2-fill"],
+      ["24 / 7 Security Service", "bi bi-shield-shaded  "],
+      ["Ready To Construct", "bi bi-building-fill-lock"],
+      ["EB Provided", "bi bi-lightning"],
+      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Portable Ground Water", "bi bi-droplet-fill"],
+      ["Street Lights","bi bi-sun-fill"],
+      ["Avenue Trees","bi bi-tree-fill"],
+    ],
+    location_map_title: "Location Map",
+    location_map_desc:
+      "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
+    locations: {
+      titles: [
+        "Location Highlights",
+        "Hospitals",
+        "Educational Institutions",
+        "IT Parks",
+        "Entertainment Zone",
+      ],
+      location_highlights: [
+        "Pattaravakam Railway Station",
+        "Pattaravakam Bus Stand",
+        "Karakku Bus Stand",
+        "Gnanamoorthy Bus Stand",
+        "Korattur Railway Station",
+      ],
+      hospitals: [
+        "Sri Raghavendra Hospital",
+        "New Century Hospital",
+        "Apple Plus Hospital",
+        "Psychiatry Life Skills"
+      ],
+      educational_institutions: [
+         
+        "Annai Violet arts and science College",
+        
+        "Aakash Institute",
+        
+        "Soka Ikeda arts and science College for Women",  
+        
+      ],
+      it_parks: [ "Ambit IT Park"],
+      entertainment_zone: ["Murugan Cinemas RGB 4K", "Thangal Park", "Korattur public Park", "Rakki Cinemas"],
+      location_highlights_image: RMSereneVista,
+      hospitals_image: hospitalFairmont,
+      educational_institutions_image: educationalFairmont,
+      it_parks_image: fairmontItpark,
+      entertainment_zone_image: fairmontEntertainment,
+    },
+    project_status: "Ongoing Project",
+    slug: "gp-cressida-park",
+  },
 ];
+
 
 export default projectsData;

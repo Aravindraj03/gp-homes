@@ -15,7 +15,7 @@ const AboutBanner = () => {
         <div className="row">
           <div className="col-md-12 mt-24">            
             <h5 className="text-lg font-medium text-white">GP Homes</h5>
-            <h1 className="text-4xl font-bold text-white">About Us</h1>
+            <h3 className="text-4xl font-bold text-white">About Us</h3>
           </div>
         </div>
       </div>

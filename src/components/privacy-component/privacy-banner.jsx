@@ -14,7 +14,7 @@ const PrivacyBanner = () => {
       <div className="container mx-auto px-4">
         <div className="row">
           <div className="col-md-12 mt-24"> 
-            <h1 className="text-4xl font-bold text-white">Privacy Policy</h1>
+            <h3 className="text-4xl font-bold text-white">Privacy Policy</h3>
           </div>
         </div>
       </div>
