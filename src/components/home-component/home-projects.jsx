@@ -340,9 +340,7 @@ const HomeProjects = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="section-subtitle">GP Homes</div>
-            <h1 className="section-title">
-              Real Estate Developers in Chennai
-            </h1>
+            <h1 className="section-title">Real Estate Developers in Chennai</h1>
           </div>
         </div>
       </div>
@@ -479,9 +477,11 @@ const HomeProjects = () => {
                         <Link
                           className="btn-form1-submit text-center"
                           to={
-                            room.category === "Plots"
-                              ? `/plots-chennai/${room.slug}`
-                              : `/apartments-chennai/${room.slug}`
+                            room.category === "Villa"
+                              ? `/villas-chennai/${room.slug}`
+                              : room.category === "Plots"
+                                ? `/plots-chennai/${room.slug}`
+                                : `/apartments-chennai/${room.slug}`
                           }
                         >
                           Details

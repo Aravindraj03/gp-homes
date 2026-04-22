@@ -340,6 +340,13 @@ blockquote cite:before {
 .mb-90 {
   margin-bottom: 90px !important;
 }
+
+@media screen and (min-width: 768px) {
+  .mb-10rem {
+    margin-bottom: 10rem !important;
+  }
+} 
+
 .pb-0 {
   padding-bottom: 0 !important;
 }

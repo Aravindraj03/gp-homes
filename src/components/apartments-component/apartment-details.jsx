@@ -431,7 +431,11 @@ const ApartmentDetails = () => {
                       {![7,8,9,10,11,12,13,14].includes(room.id) && (
                         <Link
                           className="btn-form1-submit text-center"
-                          to={`/apartments-chennai/${room.slug}`}
+                          to={
+                            room.id === 15
+                              ? `/villas-chennai/${room.slug}`
+                              : `/apartments-chennai/${room.slug}`
+                          }
                         >
                           Details
                         </Link>

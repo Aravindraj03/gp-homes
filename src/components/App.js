@@ -110,6 +110,7 @@ const AppWrapper = () => {
     element={<Navigate to="/apartments-chennai" replace />}
   />
         <Route path="/apartments-chennai/:slug" element={<ProjectInnerPage />} />
+        <Route path="/villas-chennai/:slug" element={<ProjectDetailPage />} />
         <Route path="/apartments-chennai/:slug/:slug" element={<ProjectDetailPage />} />
         <Route path="/plots-chennai/:slug" element={<ProjectDetailPage />} />
         <Route path="/about-us" element={<AboutPage />} />

@@ -33,7 +33,7 @@ const ProjectsList = ({ project,projectDetails }) => {
                 } animate-box`}
                 data-animate-effect="fadeInUp"
               >
-                <figure className="col-md-6">
+                <figure className="col-md-6 mb-10rem">
                   <img
                     src={project.image}
                     alt=""
