@@ -1902,7 +1902,7 @@ const projectsData = [
       entertainment_zone_image: entertainmentZone3,
     },
     project_status: "Ongoing Project",
-    slug: "gp-ponBhoomiVilla",
+    slug: "gp-ponbhoomi-villa",
   },
     {
   id: 21,

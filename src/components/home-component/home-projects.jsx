@@ -237,7 +237,7 @@ const roomsData = [
         "Welcome to Pon Bhoomi by GP Homes – a serene residential villa built with superior quality and thoughtful planning.",
       project_status: "Ongoing Project",
       features: ["Black top roads, 24/7 Security, Potable ground water,  CCTV"],
-      slug: "gp-ponBhoomiVilla",
+      slug: "gp-ponbhoomi-villa",
     },
 ];
 
