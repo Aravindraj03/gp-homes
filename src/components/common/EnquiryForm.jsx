@@ -39,6 +39,8 @@ function EnquiryForm() {
     email: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     const type = queryParams.get("type");
     const project = queryParams.get("project");
@@ -92,6 +94,10 @@ function EnquiryForm() {
   const handleSubmit = async (e) => {
   e.preventDefault();
 
+  if (loading) return; // 🚫 prevent multiple clicks
+
+  setLoading(true);
+
   const payload = {
     type: formData.type,
     project: formData.project,
@@ -142,7 +148,9 @@ function EnquiryForm() {
     navigate("/thank-you");
   } catch (error) {
     console.error("Fetch error:", error);
-    alert("Could not submit the form. Check console for details.");
+    alert("Could not submit the form.");
+  } finally {
+    setLoading(false); // 🔓 always unlock
   }
 };
 
@@ -313,9 +321,13 @@ function EnquiryForm() {
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary w-100">
-                Submit Enquiry
-              </button>
+              <button
+  type="submit"
+  className="btn btn-primary w-100"
+  disabled={loading}
+>
+  {loading ? "Submitting..." : "Submit Enquiry"}
+</button>
             </form>
           </div>
         </div>

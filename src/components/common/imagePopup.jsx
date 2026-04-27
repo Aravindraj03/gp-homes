@@ -45,40 +45,42 @@ const ImagePopup = ({ pageType = "home" }) => {
   };
 
   const handleSubmit = async (e) => {
-    
-    e.preventDefault();
-      setLoading(true);
+  e.preventDefault();
 
-    try {
-      await fetch("https://cms.gphomes.in/api/contact-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: "Mail",
-          mobile: formData.mobile,
-          location: "Popup Enquiry",
-          message: "Popup Enquiry",
-        }),
-      });
+  if (loading) return; // 🚫 STOP multiple clicks instantly
 
-      setFormData({ name: "", mobile: "" });
-      localStorage.setItem("popupSubmittedAt", Date.now().toString());
-      setShowConfirmation(true);
+  setLoading(true);
 
-      setTimeout(() => {
-        setShowPopup(false);
-        navigate("/popup-thank-you");
-      }, 1500);
-    } catch (error) {
-      console.error("Form submission failed:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  try {
+    await fetch("https://cms.gphomes.in/api/contact-form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "gp-web-token": "sdswkhsADWRjfh9Thwn8rn6Mybd",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: "Mail",
+        mobile: formData.mobile,
+        location: "Popup Enquiry",
+        message: "Popup Enquiry",
+      }),
+    });
+
+    setFormData({ name: "", mobile: "" });
+    localStorage.setItem("popupSubmittedAt", Date.now().toString());
+    setShowConfirmation(true);
+
+    setTimeout(() => {
+      setShowPopup(false);
+      navigate("/popup-thank-you");
+    }, 1500);
+  } catch (error) {
+    console.error("Form submission failed:", error);
+  } finally {
+    setLoading(false);
+  }
+};
 
   useEffect(() => {
     if (!shouldShowPopup()) return;
