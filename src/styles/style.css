@@ -4363,6 +4363,20 @@ button.mfp-arrow {
   text-transform: none;
   letter-spacing: 0px;
 }
+
+.position-vehicle {
+  font-weight: 400;
+  transition: color 0.3s;
+  color: #222;
+}
+
+.position-vehicle span {
+  font-family: "Barlow", sans-serif;
+  color: #666;
+  display: block;
+  text-transform: none;
+  letter-spacing: 0px;
+}
 .position-icon {
   font-size: 15px;
   line-height: 1;
@@ -4417,6 +4431,11 @@ button.mfp-arrow {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
+  .position-vehicle {
+    margin-top: 15px;
+    flex-basis: 100%;
+  }
+
   .position-icon {
     display: none;
   }

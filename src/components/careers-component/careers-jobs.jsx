@@ -5,15 +5,24 @@ const CareersJobs = () => {
     {
       title: "Tele-Caller",
       type: "Employee",
-      experience: "1+ Years of experience;",
+      experience: "Freshers - 3 Years of experience",
       employmentType: "Full-time",
       // link: "contact",
     },
     {
       title: "Sales Executive",
       type: "Employee",
-      experience: "2+ Years of experience;",
+      experience: "Freshers - 2 Years of experience",
       employmentType: "Full-time",
+      twoWheeler: true,
+      // link: "contact",
+    },
+    {
+      title: "Senior sales Executive",
+      type: "Employee",
+      experience: "3 - 5 Years of experience",
+      employmentType: "Full-time",
+      twoWheeler: true,
       // link: "contact",
     },
   ];
@@ -40,6 +49,9 @@ const CareersJobs = () => {
                 </div>
                 <div className="position-location">
                   <span>Experience</span> {position.experience}
+                  {position.twoWheeler && (
+                    <div className="position-vehicle">Two wheeler Must</div>
+                  )}
                 </div>
                 <div className="position-time">
                   Employment Type <span>{position.employmentType}</span>
@@ -54,8 +66,8 @@ const CareersJobs = () => {
         <div className="row">
           <div className="col-md-12">
             <p>
-              Please submit your resume and cover letter to{" "}
-              <b>hr@gphomes.in</b> & <b>+91 80560 90880</b>.
+              Please submit your resume and cover letter to <b>hr@gphomes.in</b>{" "}
+              & <b>+91 80560 90880</b>.
             </p>
           </div>
         </div>
