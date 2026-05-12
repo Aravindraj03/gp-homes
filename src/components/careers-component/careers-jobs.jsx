@@ -3,7 +3,7 @@ import React from "react";
 const CareersJobs = () => {
   const positions = [
     {
-      title: "Tele-Caller",
+      title: "Pre-Sales (Female Telecallers)",
       type: "Employee",
       experience: "Freshers - 3 Years of experience",
       employmentType: "Full-time",

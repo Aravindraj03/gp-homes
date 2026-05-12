@@ -10,6 +10,8 @@ import blogimg7 from "../../assets/img/restaurant/dtcpBlog3.jpeg";
 import blogimg8 from "../../assets/img/restaurant/considerBlog2.jpeg";
 import blogimg9 from "../../assets/img/restaurant/blog5-3.jpeg";
 import blogimg10 from "../../assets/img/restaurant/blog6-1.jpeg";
+import blogimg11 from "../../assets/img/restaurant/blog8-1.jpeg";
+import blogimg12 from "../../assets/img/restaurant/blog7-3.jpeg";
 
 
 import { Link } from "react-router-dom";
@@ -86,8 +88,8 @@ const BlogSection = () => {
     },
     {
       img: blogimg9,
-      date: "20",
-      month: "Dec",
+      date: "15",
+      month: "apr",
       title:
         "Plots vs Apartments vs Villas: Which is Best for Buying in Chennai?",
       desc: "Choosing between plots, apartments, and villas depends on your budget, lifestyle, and investment goals. Plots offer higher long-term appreciation and flexibility, apartments provide convenience and affordability, while villas deliver luxury and privacy. Understanding the advantages of each option can help you make the right real estate decision in Chennai.",
@@ -95,12 +97,28 @@ const BlogSection = () => {
     },
     {
       img: blogimg10,
-      date: "18",
-      month: "Dec",
+      date: "15",
+      month: "apr",
       title:
         "Top Upcoming Residential Areas in Chennai for Real Estate Investment in 2026",
       desc: "Chennai’s real estate market is rapidly expanding, with several emerging locations offering great investment potential. Areas like Poonamallee, Thiruninravur, OMR, and Pattabiram are gaining attention due to improved connectivity, infrastructure development, and affordability. These locations are ideal for both residential living and long-term investment, making them some of the top choices for property buyers in 2026.",
       slug: "top-upcoming-residential-areas-in-chennai-for-real-estate-investment-2026",
+    },
+    {
+      img: blogimg12,
+      date: "12",
+      month: "may",
+      title: "Plots Near Chennai Metro: Why Connectivity Boosts Property Value",
+      desc: "Connectivity plays a key role in real estate growth, especially in areas close to metro stations. Locations around Poonamallee are gaining strong attention due to the Chennai Metro expansion. Our Project GP Cressida Park benefits from its proximity to the Poonamallee metro, offering easier commuting, better accessibility, and strong future appreciation.. This makes plots in such locations a smart choice for both homebuyers and investors.",
+      slug: "plots-near-chennai-metro-why-connectivity-boosts-property-value",
+    },
+    {
+      img: blogimg11,
+      date: "12",
+      month: "may",
+      title: "Chennai Growth Corridors: Where to Invest in Real Estate in 2026",
+      desc: "Chennai’s growth corridors are driving the city’s real estate boom, with areas like Pattabiram emerging as strong investment destinations due to improved connectivity, railway access, and upcoming infrastructure developments. As these regions continue to grow, residential demand and property values are steadily increasing. Projects like GP Ponbhoomi in Pattabiram are well-positioned within this growth corridor, offering a great opportunity for buyers looking to invest early in a fast-developing location with promising future returns.",
+      slug: "chennai-growth-corridors-where-to-invest-in-real-estate-2026",
     },
   ];
 
