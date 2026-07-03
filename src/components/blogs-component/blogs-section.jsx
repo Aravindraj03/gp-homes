@@ -12,6 +12,8 @@ import blogimg9 from "../../assets/img/restaurant/blog5-3.jpeg";
 import blogimg10 from "../../assets/img/restaurant/blog6-1.jpeg";
 import blogimg11 from "../../assets/img/restaurant/blog8-1.jpeg";
 import blogimg12 from "../../assets/img/restaurant/blog7-3.jpeg";
+import blogimg13 from "../../assets/img/restaurant/blog9-1.jpg";
+import blogimg14 from "../../assets/img/restaurant/blog10-1.jpg";
 
 
 import { Link } from "react-router-dom";
@@ -105,7 +107,7 @@ const BlogSection = () => {
       slug: "top-upcoming-residential-areas-in-chennai-for-real-estate-investment-2026",
     },
     {
-      img: blogimg12,
+      img: blogimg12, 
       date: "12",
       month: "may",
       title: "Plots Near Chennai Metro: Why Connectivity Boosts Property Value",
@@ -119,6 +121,22 @@ const BlogSection = () => {
       title: "Chennai Growth Corridors: Where to Invest in Real Estate in 2026",
       desc: "Chennai’s growth corridors are driving the city’s real estate boom, with areas like Pattabiram emerging as strong investment destinations due to improved connectivity, railway access, and upcoming infrastructure developments. As these regions continue to grow, residential demand and property values are steadily increasing. Projects like GP Ponbhoomi in Pattabiram are well-positioned within this growth corridor, offering a great opportunity for buyers looking to invest early in a fast-developing location with promising future returns.",
       slug: "chennai-growth-corridors-where-to-invest-in-real-estate-2026",
+    },
+    {
+      img: blogimg13,
+      date: "7",
+      month: "July",
+      title: "How Can First-Time Property Buyers Make the Right Decision",
+      desc: "For First-Time Property Buyers, purchasing a property is one of the most important financial decisions in life. Choosing a project with strong growth potential, such as Pon Bhoomi, can help buyers secure both a comfortable lifestyle and a valuable asset for the future. Located in a rapidly developing area near Pattabiram, the project offers excellent connectivity and future appreciation potential.",
+      slug: "how-can-first-time-property-buyers-make-the-right-decision",
+    },
+        {
+      img: blogimg14,
+      date: "7",
+      month: "July",
+      title: "Why Is Now a Good Time to Invest in North Chennai Real Estate?",
+      desc: "The demand for North Chennai has increased significantly in recent years due to rapid infrastructure development, improved connectivity, and growing employment opportunities. Investors looking for a promising Investment Opportunity are increasingly exploring emerging locations that offer affordability and long-term appreciation potential.",
+      slug: "why-is-now-a-good-time-to-invest-in-north-chennai-real-estate",
     },
   ];
 
