@@ -549,7 +549,7 @@ const postsData = [
   },
   {
     id: 13,
-    date: "8 July 2026",
+    date: "3 July 2026",
     name: "How Can First-Time Property Buyers Make the Right Decision?",
     description: [
       "<p>For First-Time Property Buyers, purchasing a property is one of the most important financial decisions in life. Choosing a project with strong growth potential, such as Pon Bhoomi, can help buyers secure both a comfortable lifestyle and a valuable asset for the future. Located in a rapidly developing area near Pattabiram, the project offers excellent connectivity and future appreciation potential.</p> </br>",
@@ -572,7 +572,7 @@ const postsData = [
   },
   {
     id: 14,
-    date: "8 July 2026",
+    date: "3 July 2026",
     name: "Why Is Now a Good Time to Invest in North Chennai Real Estate?",
     description: [
       "<p>The demand for North Chennai has increased significantly in recent years due to rapid infrastructure development, improved connectivity, and growing employment opportunities. Investors looking for a promising Investment Opportunity are increasingly exploring emerging locations that offer affordability and long-term appreciation potential.</p></br>",
