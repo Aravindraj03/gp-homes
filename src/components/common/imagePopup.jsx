@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import DesktopPopup from "../../assets/img/popup/popupImg.jpeg";
-import MobilePopup from "../../assets/img/popup/popupImgMobile.jpeg";
+import DesktopPopup from "../../assets/img/popup/Popup-10-07.jpeg";
+import MobilePopup from "../../assets/img/popup/Popup-10-07.jpeg";
 import { useLocation, useNavigate } from "react-router-dom";
 
 
@@ -144,7 +144,7 @@ const ImagePopup = ({ pageType = "home" }) => {
           >
             <div
               className="modal-dialog modal-dialog-centered w-100 m-0"
-              style={{ maxWidth: "100%", padding: "1rem" }}
+              style={{ maxWidth: "100%", padding: "0.5rem" }}
               onClick={(e) => e.stopPropagation()}
             >
               <div

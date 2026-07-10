@@ -1,16 +1,16 @@
 import React from "react";
-import slideImg1 from "../../assets/img/slider/homePage-desktopBanner-6-25.jpeg";
+import slideImg1 from "../../assets/img/slider/homePage-desktopBanner-7-10.jpeg";
 import slideImg2 from "../../assets/img/slider/newBanner.jpeg";
 
-import MobileBanner1 from "../../assets/img/slider/homePage-mobileBanner-6-25.jpeg";
+import MobileBanner1 from "../../assets/img/slider/homePage-mobileBanner-7-10.jpeg";
 import MobileBanner2 from "../../assets/img/slider/newMobileBanner.jpeg";
 
 const BannerSlider = () => {
   const desktopBanners = [
-    {
-      image: slideImg2,
-      link: "/plots-chennai/gp-ponBhoomi",
-    },
+    // {
+    //   image: slideImg2,
+    //   link: "/plots-chennai/gp-ponBhoomi",
+    // },
     {
       image: slideImg1,
       link: "/plots-chennai/gp-ponBhoomi",
@@ -18,10 +18,10 @@ const BannerSlider = () => {
   ];
 
   const mobileBanners = [
-    {
-      image: MobileBanner2,
-      link: "/plots-chennai/gp-ponBhoomi",
-    },
+    // {
+    //   image: MobileBanner2,
+    //   link: "/plots-chennai/gp-ponBhoomi",
+    // },
     {
       image: MobileBanner1,
       link: "/plots-chennai/gp-ponBhoomi",
