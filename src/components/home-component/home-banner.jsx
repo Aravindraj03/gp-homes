@@ -30,9 +30,11 @@ const BannerSlider = () => {
 
   return (
     <>
-      {/* Desktop Slider */}
+      {/* Desktop Banner */}
       <header className="header slider-fade d-none d-md-block">
-        <div className="owl-carousel owl-theme">
+        {/* Uncomment the line below when you need the carousel */}
+        {/* <div className="owl-carousel owl-theme"> */}
+        <div>
           {desktopBanners.map((banner, index) => (
             <div
               key={index}
@@ -55,11 +57,14 @@ const BannerSlider = () => {
             </div>
           ))}
         </div>
+        {/* </div> */}
       </header>
 
-      {/* Mobile Slider */}
+      {/* Mobile Banner */}
       <header className="header slider-fade d-block d-md-none">
-        <div className="owl-carousel owl-theme">
+        {/* Uncomment the line below when you need the carousel */}
+        {/* <div className="owl-carousel owl-theme"> */}
+        <div>
           {mobileBanners.map((banner, index) => (
             <div
               key={index}
@@ -82,6 +87,7 @@ const BannerSlider = () => {
             </div>
           ))}
         </div>
+        {/* </div> */}
       </header>
     </>
   );
