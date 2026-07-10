@@ -27,7 +27,7 @@ const ProjectDetailSection = ({ project }) => {
 
   return (
     <section
-      className="rooms-page pt-5"
+      className="rooms-page pt-md-5"
       data-scroll-index="1"
       id="projectDetailsSection"
     >

@@ -158,7 +158,7 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
       </div>
 
       {/* Mobile Banner */}
-      <div className="d-block d-md-none mt-5">
+      <div className="d-block d-md-none mt-md-5">
         {slug === "gp-ponBhoomi" ? (
           <Slider {...settings}>
             {/* <div>
