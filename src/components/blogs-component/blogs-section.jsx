@@ -42,7 +42,7 @@ const BlogSection = () => {
     {
       img: blogimg3,
       date: "06",
-      month: "Dec",
+      month: "Jan",
       title: "How to Get a Home Loan with the Best Interest Rates?",
       desc: "Buying a home is a dream for many, and securing a home loan is often the first step in making that dream a reality. However, getting the best interest rate on your home loan can significantly impact your financial planning. A lower interest rate means lower EMIs (Equated Monthly Instalments) and less burden on your finances in the long run.",
       slug: "how-to-get-a-home-loan-with-the-best-interest-rates",
@@ -50,7 +50,7 @@ const BlogSection = () => {
     {
       img: blogimg4,
       date: "06",
-      month: "Dec",
+      month: "Jan",
       title:
         "Stamp Duty & Registration Charges in Chennai: What You Need to Know?",
       desc: "Buying a home or a plot is a significant milestone, but beyond the property price, there are additional costs you need to consider—Stamp Duty and Registration Charges. These charges are mandatory for legally registering your property under your name and ensuring a hassle-free ownership experience.",
@@ -59,7 +59,7 @@ const BlogSection = () => {
     {
       img: blogimg5,
       date: "06",
-      month: "Dec",
+      month: "Feb",
       title: "5 Mistakes to Avoid When Buying Property in Chennai",
       desc: "Buying property is a significant milestone, whether for personal use or investment. Chennai, a rapidly growing metropolitan city, offers a variety of real estate options—from residential plots to luxury apartments. However, a lack of due diligence can lead to costly mistakes. To ensure a smooth and hassle-free property purchase, avoid these five common mistakes when buying property in Chennai.",
       slug: "5-mistakes-to-avoid-when-buying-property-in-chennai",
@@ -67,7 +67,7 @@ const BlogSection = () => {
     {
       img: blogimg6,
       date: "06",
-      month: "Dec",
+      month: "Feb",
       title: "Why Vastu Shastra Matters in Real Estate & Home Buying",
       desc: "Buying a home is one of the most significant decisions in life. While factors like location, budget, and amenities play a crucial role, many homebuyers in India also consider Vastu Shastra, an ancient architectural science that promotes harmony and well-being. But why does Vastu matter in real estate, and how can it influence your home’s energy, prosperity, and overall happiness? Let’s explore.",
       slug: "why-vastu-shastra-matters-in-real-estate-home-buying",
@@ -75,7 +75,7 @@ const BlogSection = () => {
     {
       img: blogimg7,
       date: "08",
-      month: "Dec",
+      month: "Mar",
       title: "DTCP vs CMDA Approval: What Every Property Buyer Should Know",
       desc: "When purchasing a plot in Tamil Nadu, one of the most important factors to check is whether the property has DTCP or CMDA approval. These approvals ensure that the layout follows government regulations and that the land is safe for residential development. Understanding the difference between DTCP and CMDA approval can help buyers avoid legal issues and make a secure investment in real estate.",
       slug: "dtcp-vs-cmda-approval-what-every-property-buyer-should-know",
@@ -83,7 +83,7 @@ const BlogSection = () => {
     {
       img: blogimg8,
       date: "10",
-      month: "Dec",
+      month: "Mar",
       title: "7 Things to Check Before Buying a Plot in Chennai",
       desc: "Buying a plot is one of the safest real estate investments, but it requires careful verification. From legal documents and approvals to location advantages and infrastructure development, several factors influence the value and security of your investment. Here are seven important things every buyer should check before purchasing a plot in Chennai to ensure a safe and profitable investment.",
       slug: "7-things-to-check-before-buying-a-plot-in-chennai",
@@ -91,7 +91,7 @@ const BlogSection = () => {
     {
       img: blogimg9,
       date: "15",
-      month: "apr",
+      month: "Apr",
       title:
         "Plots vs Apartments vs Villas: Which is Best for Buying in Chennai?",
       desc: "Choosing between plots, apartments, and villas depends on your budget, lifestyle, and investment goals. Plots offer higher long-term appreciation and flexibility, apartments provide convenience and affordability, while villas deliver luxury and privacy. Understanding the advantages of each option can help you make the right real estate decision in Chennai.",
@@ -100,7 +100,7 @@ const BlogSection = () => {
     {
       img: blogimg10,
       date: "15",
-      month: "apr",
+      month: "Apr",
       title:
         "Top Upcoming Residential Areas in Chennai for Real Estate Investment in 2026",
       desc: "Chennai’s real estate market is rapidly expanding, with several emerging locations offering great investment potential. Areas like Poonamallee, Thiruninravur, OMR, and Pattabiram are gaining attention due to improved connectivity, infrastructure development, and affordability. These locations are ideal for both residential living and long-term investment, making them some of the top choices for property buyers in 2026.",
@@ -109,7 +109,7 @@ const BlogSection = () => {
     {
       img: blogimg12, 
       date: "12",
-      month: "may",
+      month: "May",
       title: "Plots Near Chennai Metro: Why Connectivity Boosts Property Value",
       desc: "Connectivity plays a key role in real estate growth, especially in areas close to metro stations. Locations around Poonamallee are gaining strong attention due to the Chennai Metro expansion. Our Project GP Cressida Park benefits from its proximity to the Poonamallee metro, offering easier commuting, better accessibility, and strong future appreciation.. This makes plots in such locations a smart choice for both homebuyers and investors.",
       slug: "plots-near-chennai-metro-why-connectivity-boosts-property-value",
@@ -117,7 +117,7 @@ const BlogSection = () => {
     {
       img: blogimg11,
       date: "12",
-      month: "may",
+      month: "May",
       title: "Chennai Growth Corridors: Where to Invest in Real Estate in 2026",
       desc: "Chennai’s growth corridors are driving the city’s real estate boom, with areas like Pattabiram emerging as strong investment destinations due to improved connectivity, railway access, and upcoming infrastructure developments. As these regions continue to grow, residential demand and property values are steadily increasing. Projects like GP Ponbhoomi in Pattabiram are well-positioned within this growth corridor, offering a great opportunity for buyers looking to invest early in a fast-developing location with promising future returns.",
       slug: "chennai-growth-corridors-where-to-invest-in-real-estate-2026",
