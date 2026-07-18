@@ -6564,6 +6564,9 @@ box-shadow:
     padding: 18px 50px;
     min-width: 260px;
   }
+  .owl-carousel.owl-theme.owl-projectDetail{
+    margin-bottom: 90px !important;
+  }
 }
 
 /* Tablet */
