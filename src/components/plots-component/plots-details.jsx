@@ -164,13 +164,13 @@ const roomsData = [
 
   {
     id: 6,
-    category: "Plots-Ongoing",
+    category: "Plots-Completed",
     location: "Athipet",
     title: "GP Midway Avenue",
     image: room11,
     description:
       "Midway Avenue in Athipet 2.0 offers modern living amidst nature's tranquility, with lush green landscapes at your doorstep.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: [
       "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
     ],
@@ -179,13 +179,13 @@ const roomsData = [
 
   {
     id: 7,
-    category: "Plots-Ongoing",
+    category: "Plots-Completed",
     location: "Kolathur",
     title: "GP Garden Bay",
     image: room7,
     description:
       "Garden Bay offers serene living near Anna Nagar, Chennai, with residential plots ideal for your dream home.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: [
       "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
     ],
@@ -208,13 +208,13 @@ const roomsData = [
   },
   {
     id: 9,
-    category: "Plots-Ongoing",
+    category: "Plots-Completed",
     location: "Redhills",
     title: "GP Nanmanai",
     image: room9,
     description:
       "Nanmanai by GP Homes offers premium villa plots in a 1.5-acre sanctuary at Redhills, providing a peaceful retreat amidst lush greenery.",
-    project_status: "Ongoing Project",
+    project_status: "Completed Project",
     features: [
       "Well laid Tar Roads, 24/7 Security, Ready To Construct, EB Provided",
     ],
@@ -236,13 +236,13 @@ const roomsData = [
   
   {
     id: 12,
-    category: "Plots-Ongoing",
+    category: "Plots-Completed",
     location: "Ambattur",
     title: "GP Serene Vista",
     image: room14,
     description:
       "GP Homes presents its next landmark development, an exclusive enclave of 8 villa plots in Heart of Ambattur.",
-    project_status: "Upcoming Project",
+    project_status: "Completed Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-serenevista",
   },
@@ -340,33 +340,33 @@ const roomsData = [
     title: "GP Cressida Park",
     image: room20,
     description:"Land extent: 5.7 Acres   Size ranging: 500 - 2900 sq.ft",
-    project_status: "Upcoming Project",
+    project_status: "Ongoing Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
     slug: "gp-cressida-park",   
   },
   {
     id: 20,
-    category: "Plots-Upcoming",
+    category: "Plots-Ongoing",
     location: "Tiruninravur-Pakkam",
     title: "AISHWARYA GARDEN ll",
     image: room25,
     description:
       "Land extent: 4.5 Acres  Size ranging: 500 - 3500 sq.ft",
-    project_status: "Upcoming Project",
+    project_status: "Ongoing Project",
     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
-    slug: "gp-cressida-park",   
+    slug: "aishwarya-garden-ll",   
   },
-  {
-    id: 21,
-    category: "Plots-Upcoming",
-    // location: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
-    title: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
-    image: room21,
-    description:"Land extent: 4.5 Acres  Size ranging: 500 - 3000 sq.ft",
-    project_status: "Upcoming Project",
-    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
-    slug: "gp-cressida-park",   
-  },
+  // {
+  //   id: 21,
+  //   category: "Plots-Ongoing",
+  //   // location: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
+  //   title: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
+  //   image: room21,
+  //   description:"Land extent: 4.5 Acres  Size ranging: 500 - 3000 sq.ft",
+  //   project_status: "Ongoing Project",
+  //   features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+  //   slug: "gp-cressida-park",   
+  // },
   {
     id: 22,
     category: "Plots-Upcoming",
@@ -536,15 +536,15 @@ const PlotDetails = () => {
                       />
                     )}
 
-                    {room.id === 6 && (
+                    {/* {room.id === 6 && (
                       <img
                         src={sold2}
                         alt="Completed"
                         className="completed-badge"
                       />
-                    )}
+                    )} */}
 
-                    {room.id === 19 && (
+                    {room.id === 20 && (
                       <img
                         src={coming}
                         alt="Coming Soon"
@@ -552,13 +552,13 @@ const PlotDetails = () => {
                       />
                     )}
 
-                    {room.id === 7 && (
+                    {/* {room.id === 7 && (
                       <img
                         src={units}
                         alt="Completed"
                         className="completed-badge"
                       />
-                    )}
+                    )} */}
 
                     <div className="square-container d-flex align-items-end justify-content-end">
                       <div
@@ -605,7 +605,7 @@ const PlotDetails = () => {
                           })}
                         </div>
                       )}
-                      {![14, 15, 16, 17, 18,19, 20, 21, 22, 23, 24].includes(
+                      {![14, 15, 16, 17, 18, 22, 23, 24].includes(
                         room.id,
                       ) && (
                         <Link

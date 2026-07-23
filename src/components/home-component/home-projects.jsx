@@ -35,10 +35,14 @@ import solarLight from "../../assets/img/icons/Solar-lights.png";
 import archIcon from "../../assets/img/icons/Arch.png";
 
 import ponbhoomiVilla from "../../assets/img/rooms/ponbhoomiVilla.jpg";
+import room20 from "../../assets/img/rooms/cressidaPark.jpg";
+import room25 from "../../assets/img/rooms/15.jpeg";
+import room21 from "../../assets/img/rooms/11.jpeg";
 
 import sold from "../../assets/img/rooms/sold out.png";
 import sold2 from "../../assets/img/rooms/sold2.png";
 import units from "../../assets/img/rooms/unitsleft.png";
+import coming from "../../assets/img/rooms/ComingSoon.png"
 
 const featureIcons = {
   Units: aptIcon,
@@ -137,58 +141,37 @@ const roomsData = [
   {
     id: 6,
     category: "Plots",
-    location: "Athipet",
-    title: "GP Midway Avenue",
-    image: room5,
-    description:
-      "Midway Avenue in Athipet 2.0 offers a perfect blend of modern living and natural tranquility, with lush green landscapes enhancing everyday life.",
+    location: "Pattabiram-ORR",
+    title: "GP Cressida Park",
+    image: room20,
+    description:"Land extent: 5.7 Acres   Size ranging: 500 - 2900 sq.ft",
     project_status: "Ongoing Project",
-    features: [
-      "Black-Top Roads, 24/7 Security, Ready To Construct, EB Provided",
-    ],
-    slug: "gp-midway-avenue",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "gp-cressida-park",   
   },
   {
     id: 7,
     category: "Plots",
-    location: "Kolathur",
-    title: "GP Garden Bay",
-    image: room7,
+    location: "Tiruninravur-Pakkam",
+    title: "AISHWARYA GARDEN ll",
+    image: room25,
     description:
-      "Garden Bay offers serene living in Chennai near Anna Nagar, providing ideal residential plots for your dream home.",
+      "Land extent: 4.5 Acres  Size ranging: 500 - 3500 sq.ft",
     project_status: "Ongoing Project",
-    features: [
-      "Ready for Construction, Potable Water, Well laid Tar Roads, Fully Compound",
-    ],
-    slug: "gp-garden-bay",
+    features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+    slug: "aishwarya-garden-ll",   
   },
-
-  // {
-  //   id: 8,
-  //   category: "Plots",
-  //   location: "Mogappair",
-  //   title: "GP Ethulia",
-  //   image: room8,
-  //   description:
-  //     "Ethulia by GP Homes in Mogappair offers 55 ready-to-build villa plots across 2.46 acres, ensuring a prime location with great value appreciation.",
-  //   project_status: "Ongoing Project",
-  //   features: [
-  //     "Solar Lights, Black-top Roads, Grand Entrance Arch, EB Provided",
-  //   ],
-  //   slug: "gp-ethulia",
-  // },
-  {
-    id: 9,
-    category: "Plots",
-    location: "Redhills",
-    title: "GP Nanmanai",
-    image: room9,
-    description:
-      "Nanmanai by GP Homes offers a 1.5-acre sanctuary in Redhills with premium villa plots (535 to 3130 sq. ft.), providing a peaceful retreat for happy and healthy family living.",
-    project_status: "Ongoing Project",
-    features: ["Black-Top Roads, 24/7 Security, Fully Fenced, EB Provided"],
-    slug: "gp-nanmanai",
-  },
+// {
+//     id: 21,
+//     category: "Plots",
+//     // location: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
+//     title: "Tiruninravur-Nr.Hirudayaaleeswarar Temple",
+//     image: room21,
+//     description:"Land extent: 4.5 Acres  Size ranging: 500 - 3000 sq.ft",
+//     project_status: "Ongoing Project",
+//     features: ["Black-Top Roads, CCTV, EB Provided, Fenced Wall"],
+//     slug: "gp-cressida-park",   
+//   },
   // {
   //   id: 10,
   //   category: "Plots",
@@ -363,20 +346,28 @@ const HomeProjects = () => {
                       />
                     )}
 
-                    {room.id === 6 && (
+                    {room.id === 7 && (
+                                          <img
+                                            src={coming}
+                                            alt="Coming Soon"
+                                            className="completed-badge"
+                                          />
+                                        )}
+
+                    {/* {room.id === 6 && (
                       <img
                         src={sold2}
                         alt="Completed"
                         className="completed-badge"
                       />
-                    )}
-                    {room.id === 7 && (
+                    )} */}
+                    {/* {room.id === 7 && (
                       <img
                         src={units}
                         alt="Completed"
                         className="completed-badge"
                       />
-                    )}
+                    )} */}
 
                     {/* <span className="category">
                       <Link to="/">Book</Link>

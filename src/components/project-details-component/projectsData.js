@@ -25,6 +25,8 @@ import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
 import GPFairmont from "../../assets/img/projects/GPFairmont2.jpeg";
 import GPSereneVista from "../../assets/img/projects/gpserene-vista.jpg";
 import GpHomesPonbhoomi from "../../assets/img/projects/ponBanner2.jpeg";
+import GPCressidaPark from "../../assets/img/projects/GP-cressida-park.jpeg";
+import AISHWARYAGARDEN from "../../assets/img/projects/AISHWARYAGARDEN.jpeg";
 
 
 import BlazingStarFloorplan1 from "../../assets/img/floorplans/blazing-star-floorplan-1.jpg";
@@ -117,6 +119,8 @@ import RMValenciaEmerald from "../../assets/img/Highlights/ValenciaEmerald-Route
 import RMVijayalakshmi from "../../assets/img/Highlights/Vijayalakshmi-RouteMap.jpg";
 import RMFairmont from "../../assets/img/Highlights/Fairmont--Route-Map.jpg";
 import RMSereneVista from "../../assets/img/Highlights/Sere-Vista--Route-Map.jpg";
+import CressidaParkmap from "../../assets/img/Highlights/CressidaPark.png";
+import AISHWARYAMap from "../../assets/img/Highlights/AISHWARYAMap.jpg";
 
 import parkingIcon from "../../assets/img/icons/Parking.png";
 import paintingIcon from "../../assets/img/icons/Painting.png";
@@ -1913,7 +1917,7 @@ const projectsData = [
       "Ideal for families, working professionals, and investors, Cressida Park is surrounded by well-established schools, colleges, hospitals, supermarkets, and essential conveniences. Every detail is planned to ensure a secure, comfortable, and well-connected lifestyle for modern living.",
       "Whether you are looking to build your dream home or make a smart investment, Cressida Park presents a valuable opportunity in a rapidly developing neighborhood—where everyday convenience meets long-term growth potential."
     ],
-    banner_images: [GPSereneVista],
+    banner_images: [GPCressidaPark],
     image: listimg4,
     facilities: [
       // ["Parking", "flaticon-car"],
@@ -1978,7 +1982,7 @@ const projectsData = [
       ],
       it_parks: [ "Ambit IT Park"],
       entertainment_zone: ["Murugan Cinemas RGB 4K", "Thangal Park", "Korattur public Park", "Rakki Cinemas"],
-      location_highlights_image: RMSereneVista,
+      location_highlights_image: CressidaParkmap,
       hospitals_image: hospitalFairmont,
       educational_institutions_image: educationalFairmont,
       it_parks_image: fairmontItpark,
@@ -1986,6 +1990,86 @@ const projectsData = [
     },
     project_status: "Ongoing Project",
     slug: "gp-cressida-park",
+  },
+      {
+  id: 21,
+    location: "Plots in Tiruninravur",
+    name: "AISHWARYA GARDEN ll",
+    description: [
+      "Welcome to GP Aishwarya Garden, where peaceful surroundings meet modern living. Thoughtfully planned amidst lush greenery, this premium plotted development offers the perfect setting to build the home you've always dreamed of. Wake up every day to a calm, refreshing environment while staying connected to the city's essentials.",
+      "Designed with comfort and convenience in mind, GP Aishwarya Garden features premium villa plots within a secure gated community. Wide internal roads, landscaped open spaces, and quality infrastructure create an ideal lifestyle for families seeking a perfect balance of nature and urban living. ",
+      "Strategically located in Thirunindravur, one of Chennai's fastest-growing residential corridors, the project enjoys excellent connectivity to major roads, educational institutions, healthcare facilities, railway stations, and daily conveniences. Whether you're planning to build your dream home or make a smart investment, GP Aishwarya Garden offers exceptional value and long-term appreciation potential. "
+    ],
+    banner_images: [AISHWARYAGARDEN],
+    image: listimg4,
+    facilities: [
+      // ["Parking", "flaticon-car"],
+      // ["Painting", "flaticon-wifi"],
+      // ["Toilet", "flaticon-bed"],
+      // ["Structure", "flaticon-breakfast"],
+      // ["Joineries", "flaticon-clock-1"],
+      // ["Plastering", "flaticon-swimming"],
+      // ["Electricals", "flaticon-clock-1"],
+      // ["Plumbing", "flaticon-swimming"],
+      // ["Water Supply", "flaticon-clock-1"],
+      // ["Balcony area", "flaticon-swimming"],
+      // ["Kitchen", "flaticon-swimming"],
+    ],
+    specifications_title: "",
+    specifications_desc: "",
+    amenities_title: "Amenities",
+    amenities_desc:
+      "Experience a lifestyle designed for comfort, security, and convenience at GP Homes – Aishwarya Garden. Every amenity is thoughtfully planned to provide a safe, peaceful, and family-friendly living environment. ",
+      amenities: [
+        ["Well-Laid Internal Black Top Roads", "bi bi-signpost-2-fill"],
+        ["Grand Gated Entrance", "bi bi-door-open-fill"],
+        ["24×7 Security", "bi bi-shield-shaded"],
+        ["CCTV Surveillance", "bi bi-camera-video-fill"],
+        ["Compound Wall", "bi bi-bricks"],
+        ["Solar Street Lights", "bi bi-lightbulb-fill"],
+        ["24×7 Water Supply", "bi bi-droplet-fill"],
+        ["Children's Play Area", "bi bi-emoji-smile-fill"],
+        ["Landscaped Garden & Green Spaces", "bi bi-tree-fill"],
+        ["Senior Citizen Seating Area", "bi bi-person-fill"],
+        ["Storm Water Drainage", "bi bi-water"],
+        ["Ready-to-Construct Villa Plots", "bi bi-house-check-fill"],
+      ],
+    location_map_title: "Location Map",
+    location_map_desc:
+      "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
+    locations: {
+      titles: [
+        "Location Highlights",
+        "Hospitals",
+        "Educational Institutions",
+        "IT Parks",
+        // "Entertainment Zone",
+      ],
+      location_highlights: [
+        "Lakshmi Theatre",
+        "Thiruninravur Bus Stop",
+        "Thiruninravur IOB Bank",
+        "Dharma Raja Kovil"
+      ],
+      hospitals: [
+        "CSI Hospital",
+        "Thirunindravur"
+      ],
+      educational_institutions: [
+         
+        "Saveetha Engineering College",  
+        
+      ],
+      it_parks: [ "Pattabiram TIDEL Park"],
+      // entertainment_zone: ["Murugan Cinemas RGB 4K", "Thangal Park", "Korattur public Park", "Rakki Cinemas"],
+      location_highlights_image: AISHWARYAMap,
+      hospitals_image: hospitalFairmont,
+      educational_institutions_image: educationalFairmont,
+      it_parks_image: fairmontItpark,
+      entertainment_zone_image: fairmontEntertainment,
+    },
+    project_status: "Ongoing Project",
+    slug: "aishwarya-garden-ll",
   },
 ];
 
