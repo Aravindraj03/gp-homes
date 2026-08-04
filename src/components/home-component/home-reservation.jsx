@@ -108,7 +108,7 @@ const HomeReservation = ({ project,selectedPlotData }) => {
       >
         <div className="container">
           <div className="row">
-            <div className="col-md-5 mb-0 mt-0 color-1">
+            {/* <div className="col-md-5 mb-0 mt-0 color-1">
               <h3>ENQUIRE NOW</h3>
               <br />
               <h6 className="color-1">
@@ -139,7 +139,7 @@ const HomeReservation = ({ project,selectedPlotData }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* <div className="col-md-5 offset-md-2">
               <div className="booking-box">

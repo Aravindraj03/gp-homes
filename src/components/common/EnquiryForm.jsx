@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import bgImage from "../../assets/img/slider/enquiryBg.jpg";
+import bgImage from "../../assets/img/slider/enquiryBg.jpeg";
+import logo from "../../assets/img/gp-logo.png";
 
 const projectOptions = {
   Apartment: [
@@ -172,6 +173,11 @@ function EnquiryForm() {
       }}
     >
       <div className="container my-5">
+        <div className="enquiry-logo">
+          <a href="/">
+            <img src={logo} alt="GP Homes Logo" />
+          </a>
+        </div>
         <div
           className="card shadow-sm mx-auto"
           style={{

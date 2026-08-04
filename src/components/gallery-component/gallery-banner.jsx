@@ -1,5 +1,5 @@
 import React from 'react';
-import bgimage from '../../assets/img/slider/galleryBanner.jpg';
+import bgimage from '../../assets/img/slider/galleryBanner.png';
 
 const GalleryBanner = () => {
   return (

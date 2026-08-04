@@ -8,6 +8,9 @@ import elloraCastleLogo from "../../assets/img/projects/ellora-castle.png";
 import ethuliaLogo from "../../assets/img/projects/ethulia-logo.png";
 import gardenBayLogo from "../../assets/img/projects/garden-bay.png";
 import rubyLogo from "../../assets/img/projects/ruby-logo.png";
+import AISHWARYAGARDEN from "../../assets/img/projects/AISHWARYA-GARDEN.png";
+import CresidaPark from "../../assets/img/projects/cresida-park.png";
+import Ponbhoomi from "../../assets/img/projects/pon-boomi.png";
 
 const logos = [
   blazingStarLogo,  
@@ -17,6 +20,9 @@ const logos = [
   ethuliaLogo,
   gardenBayLogo,
   rubyLogo,
+  AISHWARYAGARDEN,
+  CresidaPark,
+  Ponbhoomi
 ];
 
 const HomeLogoMarquee = () => {

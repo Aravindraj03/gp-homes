@@ -188,25 +188,25 @@ function Footer() {
                   <Col md={4} sm={6} xs={12}>
                     <ul className="footer-projects-list">
                       <li>
-                        <Link to="/gp-peace-rhythm">GP PEACE RHYTHM</Link>
+                        <Link to="#">GP PEACE RHYTHM</Link>
                       </li>
                       <li>
-                        <Link to="/gp-aishwarya-garden">
+                        <Link to="#">
                           GP AISHWARYA GARDEN
                         </Link>
                       </li>
                       <li>
-                        <Link to="/gp-fern-breeze-diamond">
+                        <Link to="#">
                           GP FERN BREEZE DIAMOND
                         </Link>
                       </li>
                       <li>
-                        <Link to="/gp-valencia-diamond">
+                        <Link to="#">
                           GP VALENCIA DIAMOND
                         </Link>
                       </li>
                       <li>
-                        <Link to="/gp-elegant-castle">GP ELEGANT CASTLE</Link>
+                        <Link to="#">GP ELEGANT CASTLE</Link>
                       </li>
                     </ul>
                   </Col>
@@ -254,6 +254,57 @@ function Footer() {
                         <Link to="/apartments-chennai">
                           GP VIJAYALAKSHMI
                         </Link>
+                      </li>
+                    </ul>
+                  </Col>
+
+{/* Plots */}
+                  <Col md={4} sm={6} xs={12}>
+                    <ul className="footer-projects-list">
+                      <li>
+                        <Link to="/plots-chennai/gp-midway-avenue">GP Midway Avenue</Link>
+                      </li>
+                      <li>
+                        <Link to="/plots-chennai/gp-garden-bay">GP Garden Bay</Link>
+                      </li>
+                      <li>
+                        <Link to="/plots-chennai/gp-ethulia">GP Ethulia</Link>
+                      </li>
+                      <li>
+                        <Link to="/plots-chennai/gp-nanmanai">GP Nanmanai</Link>
+                      </li>
+                      <li>
+                        <Link to="/plots-chennai/gp-vijayalakshmi">GP Vijayalakshmi</Link>
+                      </li>
+                      <li>
+                        <Link to="/plots-chennai/gp-serenevista">GP Serene Vista</Link>
+                      </li>
+                       <li>
+                        <Link to="/plots-chennai/gp-fairmont">GP Fairmont</Link>
+                      </li>
+                    </ul>
+                  </Col>
+
+                  {/* Apartmens--------- */}
+                  <Col md={4} sm={6} xs={12}>
+                    <ul className="footer-projects-list">
+                      <li>
+                        <Link to="/apartments-chennai/gp-blazing-star">GP Blazing Star</Link>
+                      </li>
+                      <li>
+                        <Link to="/apartments-chennai/gp-breeze-way">GP Breeze Way</Link>
+                      </li>
+                      <li>
+                        <Link to="/apartments-chennai/gp-homes-elanza">GP Homes Elanza</Link>
+                      </li>
+                      <li>
+                        <Link to="/apartments-chennai/gp-valencia-emerald">GP Valencia Emerald</Link>
+                      </li>
+                      <li>
+                        <Link to="/apartments-chennai/gp-valencia-ruby">GP Valencia Ruby</Link>
+                      </li>
+                      <li>
+                        <Link to="#">Blossom icf colony</Link>
                       </li>
                     </ul>
                   </Col>
