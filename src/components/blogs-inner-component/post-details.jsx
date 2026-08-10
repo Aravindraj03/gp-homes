@@ -11,7 +11,7 @@ import thumb3 from "../../assets/img/slider/7.jpg";
 const Post = ({ post }) => {
   
   return (
-    <section className="section-padding">
+    <section className="section-padding blog-content">
       <div className="container">
         <div className="row">
           <div className="col-md-8">

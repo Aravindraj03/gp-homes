@@ -14,13 +14,16 @@ import blogimg11 from "../../assets/img/restaurant/blog8-1.jpeg";
 import blogimg12 from "../../assets/img/restaurant/blog7-3.jpeg";
 import blogimg13 from "../../assets/img/restaurant/blog9-1.jpg";
 import blogimg14 from "../../assets/img/restaurant/blog10-1.jpg";
-
+import blogimg15 from "../../assets/img/restaurant/blog11-1.jpg";
+import blogimg16 from "../../assets/img/restaurant/blog12-1.jpg";
+import blogimg17 from "../../assets/img/restaurant/blog13-1.png";
+import blogimg18 from "../../assets/img/restaurant/blog14-1.jpg";
 
 import { Link } from "react-router-dom";
 
 const BlogSection = () => {
   const postsPerPage = 2; // Number of posts per page
-  const [currentPage, setCurrentPage] = useState(1);  
+  const [currentPage, setCurrentPage] = useState(1);
 
   const posts = [
     {
@@ -107,7 +110,7 @@ const BlogSection = () => {
       slug: "top-upcoming-residential-areas-in-chennai-for-real-estate-investment-2026",
     },
     {
-      img: blogimg12, 
+      img: blogimg12,
       date: "12",
       month: "May",
       title: "Plots Near Chennai Metro: Why Connectivity Boosts Property Value",
@@ -130,7 +133,7 @@ const BlogSection = () => {
       desc: "For First-Time Property Buyers, purchasing a property is one of the most important financial decisions in life. Choosing a project with strong growth potential, such as Pon Bhoomi, can help buyers secure both a comfortable lifestyle and a valuable asset for the future. Located in a rapidly developing area near Pattabiram, the project offers excellent connectivity and future appreciation potential.",
       slug: "how-can-first-time-property-buyers-make-the-right-decision",
     },
-        {
+    {
       img: blogimg14,
       date: "3",
       month: "July",
@@ -138,6 +141,47 @@ const BlogSection = () => {
       desc: "The demand for North Chennai has increased significantly in recent years due to rapid infrastructure development, improved connectivity, and growing employment opportunities. Investors looking for a promising Investment Opportunity are increasingly exploring emerging locations that offer affordability and long-term appreciation potential.",
       slug: "why-is-now-a-good-time-to-invest-in-north-chennai-real-estate",
     },
+    {
+      img: blogimg15,
+      date: "10",
+      month: "August",
+      title: "What Are the Benefits of Choosing a Plot Over an Apartment?",
+      desc: "Buying a property is a big decision. One common question is whether to buy a plot or an apartment. Both have their own benefits, but a plotted development gives you more freedom to plan, build, and use your property in the way you want.",
+      slug: "what-are-the-benefits-of-choosing-a-plot-over-an-apartment",
+    },
+    {
+      img: blogimg16,
+      date: "10",
+      month: "August",
+      title:
+        "How Does Good Road and Transport Connectivity Influence Property Investment?",
+      desc: "Location is one of the most important factors when buying property. But a good location is not only about being close to schools, offices, or shopping areas. Road and transport connectivity also play a major role in deciding the future value of a property.",
+      slug: "how-does-good-road-and-transport-connectivity-influence-property-investment",
+    },
+    {
+      img: blogimg17,
+      date: "10",
+      month: "August",
+      title: "What Makes a Neighbourhood Good for Families?",
+      desc: "Choosing a home is not only about the house or the plot. For families, the neighbourhood also matters a lot. A good residential area should make everyday life easier, safer, and more comfortable.",
+      slug: "what-makes-a-neighbourhood-good-for-families",
+    },
+    {
+      img: blogimg18,
+      date: "10",
+      month: "August",
+      title: "How Do Nearby Schools, Hospitals, and Commercial Hubs Affect Property Value?",
+      desc: "When people buy a home, they do not look at the property alone. They also check what is available around it.",
+      slug: "how-do-nearby-schools-hospitals-and-commercial-hubs-affect-property-value",
+    },
+    // {
+    //   img: blogimg19,
+    //   date: "10",
+    //   month: "August",
+    //   title: "What Makes a Location Good for Living and Investment?",
+    //   desc: "Choosing the right property is not only about the size of the house, design, or price. The location plays a major role in deciding how comfortable your daily life will be and how much the property may grow in value over time.",
+    //   slug: "what-makes-a-location-good-for-living-and-investment",
+    // },
   ];
 
   const totalPages = Math.ceil(posts.length / postsPerPage);
@@ -159,7 +203,7 @@ const BlogSection = () => {
         <div className="row">
           <div className="col-md-8">
             <div className="row">
-            {currentPosts.map((post, index) => (
+              {currentPosts.map((post, index) => (
                 <div className="col-md-12" key={index}>
                   <div className="item">
                     <div className="post-img">
@@ -193,8 +237,7 @@ const BlogSection = () => {
                 </div>
               ))}
               <div className="col-md-12">
-                <ul className="news-pagination-wrap align-center mb-30 mt-30">                 
-
+                <ul className="news-pagination-wrap align-center mb-30 mt-30">
                   <li>
                     <a
                       onClick={() => handlePageChange(currentPage - 1)}
@@ -203,7 +246,10 @@ const BlogSection = () => {
                       <i className="ti-angle-left"></i>
                     </a>
                   </li>
-                  {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
+                  {Array.from(
+                    { length: totalPages },
+                    (_, index) => index + 1,
+                  ).map((page) => (
                     <li key={page}>
                       <a
                         className={currentPage === page ? "active" : ""}
@@ -221,7 +267,6 @@ const BlogSection = () => {
                       <i className="ti-angle-right"></i>
                     </a>
                   </li>
-
                 </ul>
               </div>
             </div>
@@ -248,7 +293,7 @@ const BlogSection = () => {
                     <h6>Recent Posts</h6>
                   </div>
                   <ul className="recent">
-                  {currentPosts.map((post, index) => (
+                    {currentPosts.map((post, index) => (
                       <li key={index}>
                         <div className="thum">
                           {" "}
