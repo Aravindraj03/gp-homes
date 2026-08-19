@@ -191,8 +191,8 @@ const PopupForm = ({
 }) => (
   <form
     onSubmit={handleSubmit}
-    className="position-absolute bottom-0 start-50 translate-middle-x p-2 p-md-3 text-center"
-    style={{ width: isMobile ? "80%" : "70%" }}
+    className="position-absolute start-50 translate-middle-x p-2 p-md-3 text-center"
+    style={{ width: isMobile ? "80%" : "70%",bottom: "10px", }}
   >
     {/* Name Input */}
     <div className="mb-2">

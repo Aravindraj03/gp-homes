@@ -6,7 +6,7 @@ import PlotsVideo from "./plots-video";
 import ProjectDetailBanner from "./project-detail-banner";
 import ProjectDetailSection from "./project-details-section";
 import mobileBanner from "../../assets/img/projects/ponbhoomi-mobile-banner2.jpg";
-import mobileBanner2 from "../../assets/img/projects/ponbhoomi-mobile-banner4.jpeg";
+import mobileBanner2 from "../../assets/img/slider/homePage-mobileBanner-7-10.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -168,7 +168,7 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
               className="img-fluid w-100"
             />
           </div> */}
-            <div>
+            <div className="mb-5">
               <img
                 src={mobileBanner2}
                 alt="PonBhoomi Mobile Banner 2"

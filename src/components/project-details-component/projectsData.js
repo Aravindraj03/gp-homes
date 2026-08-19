@@ -18,7 +18,7 @@ import GPGardenBayBanner from "../../assets/img/projects/GPGardenBayBanner.jpg";
 import GPEthuliaBanner from "../../assets/img/projects/GPEthuliaBanner.jpg";
 import GPNanmanaiBanner from "../../assets/img/projects/GPNanmanaiBanner.jpg";
 import GPVijayaLakshmiBanner from "../../assets/img/projects/GPVijayaLakshmiBanner.jpg";
-import GPPonBhoomi from "../../assets/img/projects/Website-Banner-Ponbhoomi1.jpeg";
+import GPPonBhoomi from "../../assets/img/slider/homePage-desktopBanner-7-10.jpeg";
 import GPPonBhoomi2 from "../../assets/img/projects/expo.jpg";
 import GPValenciaEmerald from "../../assets/img/projects/GPValencia-Emerlad.jpg";
 import GPValenciaRuby from "../../assets/img/projects/GPValencia-Ruby.jpg";
