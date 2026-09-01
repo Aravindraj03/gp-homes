@@ -1561,7 +1561,7 @@ const PlotTable = ({ onSelectPlot }) => {
   return (
     <>
       <div className="w-full flex flex-col items-center p-6 container dataTable">
-        <h2 className="d-md-none d-block pb-3">Check Availability</h2>
+        {/* <h3 className="d-md-none d-block pb-3">Check Availability</h3> */}
         
         {/* <div className="booking-wrapper">
           <div className="container">
@@ -1840,9 +1840,9 @@ const PlotTable = ({ onSelectPlot }) => {
           </div>
         </div> */}
       </div>
-      <h3 className="section-title text-center my-3">Layout</h3>
+      <h2 className="text-center my-3">Layout</h2>
       <div
-      className="container-fuild mt-4"
+      className="container mt-4"
         style={{
           width: "100%",
           // height: "100vh",

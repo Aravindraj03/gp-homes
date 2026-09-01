@@ -7,7 +7,7 @@ import floorPlan1 from "../../assets/img/floorplans/pon floor2 (1).jpeg";
 import floorPlan2 from "../../assets/img/floorplans/floorplan2.jpeg";
 import floorPlan3 from "../../assets/img/floorplans/pon floor2 (3).jpeg";
 import floorPlan4 from "../../assets/img/floorplans/pon floor2 (4).jpeg";
-import floorPlan5 from "../../assets/img/floorplans/ponbhoomi floorplan1.jpeg"
+import floorPlan5 from "../../assets/img/floorplans/ponbhoomi floorplan1.jpeg";
 import floorPlan6 from "../../assets/img/floorplans/ponbhoomi floorplan2.jpg";
 import floorPlan7 from "../../assets/img/floorplans/ponbhhoom floorplan3.jpg";
 import floorPlan8 from "../../assets/img/floorplans/ponbhoomi floorplan4.jpg";
@@ -16,7 +16,6 @@ import image1 from "../../assets/img/restaurant/1.jpg";
 import image2 from "../../assets/img/spa/3.jpg";
 import image3 from "../../assets/img/spa/2.jpg";
 import image4 from "../../assets/img/spa/1.jpg";
-
 
 import "react-image-lightbox/style.css";
 import Lightbox from "react-image-lightbox";
@@ -39,7 +38,7 @@ const ProjectDetailSection = ({ project }) => {
             <div className="section-title">{project.name}</div>
             {Array.isArray(project.description) ? (
               project.description.map((desc, index) => (
-                <p key={index} className="mb-30">         
+                <p key={index} className="mb-30">
                   {desc}
                 </p>
               ))
@@ -63,7 +62,12 @@ const ProjectDetailSection = ({ project }) => {
                         <div className="col-md-4" key={facilityIndex}>
                           <ul>
                             <li>
-                            <img src={facility[1]} alt={facility[0]} style={{width:"35px", marginRight:"5px"}} /> {facility[0]}
+                              <img
+                                src={facility[1]}
+                                alt={facility[0]}
+                                style={{ width: "35px", marginRight: "5px" }}
+                              />{" "}
+                              {facility[0]}
                             </li>
                           </ul>
                         </div>
@@ -82,7 +86,6 @@ const ProjectDetailSection = ({ project }) => {
               {project.amenities.map((amenity, amenityIndex) => (
                 <li key={amenityIndex}>
                   <div className="page-list-icon">
-                    
                     <span className={amenity[1]}></span>
                   </div>
                   <div className="page-list-text">
@@ -98,6 +101,32 @@ const ProjectDetailSection = ({ project }) => {
           <div className="col-md-12 mt-4">
             <h4>{project.location_map_title}</h4>
             <p>{project.location_map_desc}</p>
+
+            {project.location_directions && (
+              <div className="location-btn-wrapper">
+                <button
+                  type="button"
+                  className="view-location-btn"
+                  onClick={() =>
+                    window.open(
+                      project.location_directions,
+                      "_blank",
+                      "noopener,noreferrer",
+                    )
+                  }
+                >
+                  <span className="location-icon">
+                    <i className="bi bi-geo-alt-fill"></i>
+                  </span>
+
+                  <span className="location-text">View Location</span>
+
+                  <span className="arrow-icon">
+                    <i className="bi bi-arrow-up-right"></i>
+                  </span>
+                </button>
+              </div>
+            )}
           </div>
         </div>
 
@@ -137,7 +166,7 @@ const ProjectDetailSection = ({ project }) => {
                                   <p>{item}</p>
                                 </div>
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
                       </div>
@@ -223,7 +252,7 @@ const ProjectDetailSection = ({ project }) => {
                                   <p>{item}</p>
                                 </div>
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
                       </div>
@@ -308,7 +337,7 @@ const ProjectDetailSection = ({ project }) => {
                                   <p>{item}</p>
                                 </div>
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
                       </div>
@@ -477,7 +506,7 @@ const ProjectDetailSection = ({ project }) => {
               onMovePrevRequest={() =>
                 setPhotoIndex(
                   (photoIndex + project.images.length - 1) %
-                    project.images.length
+                    project.images.length,
                 )
               }
               onMoveNextRequest={() =>

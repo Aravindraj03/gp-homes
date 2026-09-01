@@ -42,69 +42,8 @@ function ProjectInnerPage() {
 
   return (
     <Fragment>
-      {/* <Header /> */}
-      <Navbar expand="lg" className="nav-scroll-1">
-        <Container>
-          <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="Logo" className="logo-img" />
-          </Navbar.Brand>
-
-          <Navbar.Toggle aria-controls="navbar" />
-
-          <Navbar.Collapse id="navbar">
-            <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/">
-                Home
-              </Nav.Link>
-
-              <Nav.Link as={Link} to="/apartments-chennai">
-                Apartments
-              </Nav.Link>
-              <Nav.Link as={Link} to="/plots-chennai">
-                Plots
-              </Nav.Link>
-
-              <NavDropdown
-                title={
-                  <>
-                    Pages <i className="ti-angle-down"></i>
-                  </>
-                }
-                id="pages-dropdown"
-              >
-                <NavDropdown.Item as={Link} to="/about-us">
-                  About Us
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/joint-ventures">
-                  Joint Ventures
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/gallery">
-                  Gallery
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/blogs">
-                  Blogs
-                </NavDropdown.Item>
-                {/* <NavDropdown.Item as={Link} to="/tools">
-                  Tools
-                </NavDropdown.Item> */}
-                <NavDropdown.Item as={Link} to="/testimonials">
-                  Testimonials
-                </NavDropdown.Item>
-                {/* <NavDropdown.Item as={Link} to="/careers">
-                  Careers
-                </NavDropdown.Item> */}
-                <NavDropdown.Item as={Link} to="/faq">
-                  F.A.Qs
-                </NavDropdown.Item>
-              </NavDropdown>
-
-              <Nav.Link as={Link} to="/contact-us">
-                Contact
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Header />
+      
       <ProjectInnerPageBanner project={project} />
       <ProjectsList project={project} projectDetails={projectDetails} />
       <HomeReservation project={project} />

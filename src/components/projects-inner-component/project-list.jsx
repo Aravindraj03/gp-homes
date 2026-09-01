@@ -45,9 +45,9 @@ const ProjectsList = ({ project,projectDetails }) => {
                   <h3>{project.type}</h3>
                   <h4>
                     {/* <a href="room-details.html">{project.name}</a> */}
-                    <Link to={`/plots-chennai/${project.slug}`}>
+                    {/* <Link to={`/plots-chennai/${project.slug}`}> */}
                       {project.name}
-                    </Link>
+                    {/* </Link> */}
                   </h4>
                   <p>{project.description}</p>
                   <div className="row room-facilities">

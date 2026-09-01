@@ -1,145 +1,573 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/img/gp-logo.png";
 import logo2 from "../../assets/img/gp-logo-2.png";
-function Header() {
 
+function Header() {
   const location = useLocation();
 
-  console.log(location.pathname,"locationPathname")
+  console.log(location.pathname, "locationPathname");
+
   const [navScroll, setNavScroll] = useState(false);
-  // const [logoSrc, setLogoSrc] = useState(logoLight);
+  const [activeMenu, setActiveMenu] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
 
-      // Apply nav-scroll if scrolled past 100px or if on specific routes
       if (
         scrollTop > 100 ||
         location.pathname.startsWith("/apartments-chennai/") ||
         location.pathname.startsWith("/plots-chennai/")
       ) {
         setNavScroll(true);
-        // setLogoSrc(logoDark);
       } else {
         setNavScroll(false);
-        
-        // setLogoSrc(logoLight);
       }
     };
 
-    // Attach scroll listener
     window.addEventListener("scroll", handleScroll);
-
-    // Trigger on mount (in case user lands on a specific page)
     handleScroll();
 
-    // Cleanup on unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location]);
 
 
+  // Property data
+  const propertyMenus = {
+    ongoing: {
+      title: "ONGOING",
+
+      left: [
+        {
+          name: "GP Pon Bhoomi",
+          location: "Pattabiram",
+        },
+        {
+          name: "GP Cressida Park",
+          location: "Pattabiram-ORR",
+        },
+      ],
+
+      right: [
+        {
+          name: "AISHWARYA GARDEN ll",
+          location: "Tiruninravur-Pakkam",
+        },
+        {
+          name: "Ponbhoomi",
+          location: "Pattabiram",
+        },
+      ],
+    },
+
+
+    upcoming: {
+      title: "UPCOMING",
+
+      left: [
+        {
+          name: "Siruvapuri",
+          location: "Near Amman temple",
+        },
+        {
+          name: "New Project",
+          location: "Thirumudivakkam",
+        },
+        {
+          name: "New Project 2",
+          location: "Mambakkam",
+        },
+        {
+          name: "Keelameni",
+          location: "ON GNT Road",
+        },
+      ],
+
+      right: [
+        {
+          name: "Thalakancheri",
+          location: "Thiruvallur",
+        },
+        {
+          name: "SEYYON GRAND CITY",
+          location: "Nr.Siruvapuri",
+        },
+        {
+          name: "PETAL WING MEADOWS",
+          location: "OMR-Siruthavur",
+        },
+        {
+          name: "New Launch",
+          location: "Athipet",
+        },
+      ],
+    },
+
+
+    completed: {
+      title: "COMPLETED",
+
+      left: [
+        {
+          name: "GP Midway Avenue",
+          location: "Athipet",
+        },
+        {
+          name: "GP Garden Bay",
+          location: "Kolathur",
+        },
+        {
+          name: "GP Ethulia",
+          location: "Mogappair",
+        },
+        {
+          name: "GP Nanmanai",
+          location: "Redhills",
+        },
+        {
+          name: "GP Vijayalakshmi",
+          location: "Thiruvallur",
+        },
+        {
+          name: "GP Serene Vista",
+          location: "Ambattur",
+        },
+        {
+          name: "GP Fairmont",
+          location: "Parivakkam",
+        },
+        {
+          name: "Cherry Blossom I",
+          location: "AYANAMBAKKAM",
+        },
+        {
+          name: "Cherry Blossom II",
+          location: "AYANAMBAKKAM",
+        },
+        {
+          name: "Cherry Blossom II",
+          location: "AYANAMBAKKAM",
+        },
+      ],
+
+      right: [
+        {
+          name: "GP Blazing Star",
+          location: "Porur",
+        },
+        {
+          name: "GP Breeze Way",
+          location: "Menambedu",
+        },
+        {
+          name: "GP Homes Elanza",
+          location: "Madhanadhapuram",
+        },
+        {
+          name: "GP Valencia Emerald",
+          location: "Ayanambakkam",
+        },
+        {
+          name: "GP Valencia Ruby",
+          location: "Ayanambakkam",
+        },
+        {
+          name: "Blossom icf colony",
+          location: "CHENNAI",
+        },
+        {
+          name: "Blue Bell",
+          location: "AYANAMBAKKAM",
+        },
+        {
+          name: "Blue Bell Phase II",
+          location: "AYANAMBAKKAM",
+        },
+        {
+          name: "Caspia (Mohan Gardens)",
+          location: "KORATTUR",
+        },
+      ],
+    },
+  };
+
+
+  // Existing property URL function
+  const getPropertyUrl = (propertyName) => {
+    return `/projects/${propertyName
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, "")}`;
+  };
+
+
+  const handleMenuClick = (menu) => {
+    if (window.innerWidth <= 991) {
+      setActiveMenu(
+        activeMenu === menu ? null : menu
+      );
+    }
+  };
+
+
+  const closeMobileMenu = () => {
+    setActiveMenu(null);
+    setMobileMenuOpen(false);
+  };
+
+
   return (
     <Fragment>
-      {/* Preloader */}
-      {/* <div className="preloader-bg"></div>
-      <div id="preloader">
-        <div id="preloader-status">
-          <div className="preloader-position loader">
-            <span></span>
-          </div>
-        </div>
-      </div> */}
 
-      {/* Progress scroll to top */}
-      {/* <div className="progress-wrap cursor-pointer">
-        <svg
-          className="progress-circle svg-content"
-          width="100%"
-          height="100%"
-          viewBox="-1 -1 102 102"
-        >
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-      </div> */}
+      <Navbar
+        expand="lg"
+        className={`gp-navbar ${
+          navScroll ? "nav-scroll" : ""
+        }`}
+      >
 
-      {/* Navbar */}
-      <Navbar expand="lg" className={navScroll ? "nav-scroll" : ""}>
         <Container>
-          {/* Logo */}
-          <Navbar.Brand as={Link} to="/">
-            <img src={logo2} alt="Logo" className="logo-img" />
+
+          {/* LOGO */}
+          <Navbar.Brand
+            as={Link}
+            to="/"
+            className="gp-logo"
+          >
+            <img
+              src={logo2}
+              alt="GP Homes"
+              className="logo-img"
+            />
           </Navbar.Brand>
 
-          {/* Toggler */}
-          <Navbar.Toggle aria-controls="navbar" />
 
-          {/* Menu */}
-          <Navbar.Collapse id="navbar" className="custom-collapse justify-content-start">
-            <Nav >
-              <Nav.Link as={Link} to="/" >
-                Home
+          {/* MOBILE TOGGLE */}
+          <Navbar.Toggle
+            aria-controls="navbar"
+            onClick={() =>
+              setMobileMenuOpen(!mobileMenuOpen)
+            }
+          />
+
+
+          {/* MENU */}
+          <Navbar.Collapse
+            id="navbar"
+            className={`custom-collapse ${
+              mobileMenuOpen
+                ? "mobile-open"
+                : ""
+            }`}
+          >
+
+            <Nav className="gp-main-nav">
+
+              {/* ABOUT US */}
+              <Nav.Link
+                as={Link}
+                to="/about-us"
+                onClick={closeMobileMenu}
+              >
+                About Us
               </Nav.Link>
 
-              <Nav.Link as={Link} to="/apartments-chennai">
+
+              {/* =================================
+                  MOBILE ONLY - APARTMENTS
+              ================================= */}
+              <Nav.Link
+                as={Link}
+                to="/apartments-chennai"
+                className="mobile-property-link"
+                onClick={closeMobileMenu}
+              >
                 Apartments
               </Nav.Link>
-              <Nav.Link as={Link} to="/plots-chennai">
+
+
+              {/* =================================
+                  MOBILE ONLY - PLOTS
+              ================================= */}
+              <Nav.Link
+                as={Link}
+                to="/plots-chennai"
+                className="mobile-property-link"
+                onClick={closeMobileMenu}
+              >
                 Plots
               </Nav.Link>
 
-              <NavDropdown
-                title={
-                  <>
-                    Pages <i className="ti-angle-down"></i>
-                  </>
-                }
-                id="pages-dropdown"
-              >
-                <NavDropdown.Item as={Link} to="/about-us">
-                  About Us
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/joint-ventures">
-                  Joint Ventures
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/gallery">
-                  Gallery
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/blogs">
-                  Blogs
-                </NavDropdown.Item>
-                {/* <NavDropdown.Item as={Link} to="/tools">
-                  Tools
-                </NavDropdown.Item> */}
-                <NavDropdown.Item as={Link} to="/testimonials">
-                  Testimonials
-                </NavDropdown.Item>
-                {/* <NavDropdown.Item as={Link} to="/careers">
-                  Careers
-                </NavDropdown.Item> */}
-                <NavDropdown.Item as={Link} to="/faq">
-                  F.A.Qs
-                </NavDropdown.Item>
-                 <NavDropdown.Item as={Link} to="/careers">
-                  Careers
-                </NavDropdown.Item>
-              </NavDropdown>
 
-              <Nav.Link as={Link} to="/contact-us">
+              {/* =================================
+                  DESKTOP - ONGOING
+              ================================= */}
+              <div
+                className="property-menu-wrapper desktop-property-menu"
+                onMouseEnter={() => {
+                  if (window.innerWidth > 991) {
+                    setActiveMenu("ongoing");
+                  }
+                }}
+                onMouseLeave={() => {
+                  if (window.innerWidth > 991) {
+                    setActiveMenu(null);
+                  }
+                }}
+              >
+
+                <button
+                  type="button"
+                  className="property-menu-title"
+                  onClick={() =>
+                    handleMenuClick("ongoing")
+                  }
+                >
+                  ONGOING
+
+                  <span className="menu-icon">
+                    ☰
+                  </span>
+                </button>
+
+              </div>
+
+
+              {/* =================================
+                  DESKTOP - UPCOMING
+              ================================= */}
+              <div
+                className="property-menu-wrapper desktop-property-menu"
+                onMouseEnter={() => {
+                  if (window.innerWidth > 991) {
+                    setActiveMenu("upcoming");
+                  }
+                }}
+                onMouseLeave={() => {
+                  if (window.innerWidth > 991) {
+                    setActiveMenu(null);
+                  }
+                }}
+              >
+
+                <button
+                  type="button"
+                  className="property-menu-title"
+                  onClick={() =>
+                    handleMenuClick("upcoming")
+                  }
+                >
+                  UPCOMING
+
+                  <span className="menu-icon">
+                    ☰
+                  </span>
+                </button>
+
+              </div>
+
+
+              {/* =================================
+                  DESKTOP - COMPLETED
+              ================================= */}
+              <div
+                className="property-menu-wrapper desktop-property-menu"
+                onMouseEnter={() => {
+                  if (window.innerWidth > 991) {
+                    setActiveMenu("completed");
+                  }
+                }}
+                onMouseLeave={() => {
+                  if (window.innerWidth > 991) {
+                    setActiveMenu(null);
+                  }
+                }}
+              >
+
+                <button
+                  type="button"
+                  className="property-menu-title"
+                  onClick={() =>
+                    handleMenuClick("completed")
+                  }
+                >
+                  COMPLETED
+
+                  <span className="menu-icon">
+                    ☰
+                  </span>
+                </button>
+
+              </div>
+
+
+              {/* CONTACT */}
+              <Nav.Link
+                as={Link}
+                to="/contact-us"
+                onClick={closeMobileMenu}
+              >
                 Contact
               </Nav.Link>
-              <Nav.Link as={Link} to="/channelPartner">
+
+
+              {/* CHANNEL PARTNER */}
+              <Nav.Link
+                as={Link}
+                to="/channelPartner"
+                onClick={closeMobileMenu}
+              >
                 Channel Partner
               </Nav.Link>
-              {/* <Nav.Link as={Link} to="https://gphomespartnersclub.in/users/sign_in" target="_blank">
-                Channel Partner
-              </Nav.Link> */}
+
             </Nav>
+
           </Navbar.Collapse>
+
         </Container>
+
+
+        {/* =========================================
+            DESKTOP MEGA MENU
+        ========================================= */}
+
+        {activeMenu && (
+          <div
+            className="property-mega-menu"
+            onMouseEnter={() => {
+              if (window.innerWidth > 991) {
+                setActiveMenu(activeMenu);
+              }
+            }}
+            onMouseLeave={() => {
+              if (window.innerWidth > 991) {
+                setActiveMenu(null);
+              }
+            }}
+          >
+
+            <div className="mega-menu-inner">
+
+              {/* PROPERTY LIST */}
+              <div className="property-list">
+
+                {/* LEFT */}
+                <div className="property-column">
+
+                  {propertyMenus[activeMenu].left.map(
+                    (property, index) => (
+
+                      <p
+                        key={index}
+                        className="property-item"
+                        onClick={() => {
+                          setActiveMenu(null);
+                          setMobileMenuOpen(false);
+                        }}
+                      >
+
+                        <strong>
+                          {property.name}
+                        </strong>
+
+                        <span>
+                          {" - "}
+                          {property.location}
+                        </span>
+
+                      </p>
+
+                    )
+                  )}
+
+                </div>
+
+
+                {/* RIGHT */}
+                <div className="property-column">
+
+                  {propertyMenus[activeMenu].right.map(
+                    (property, index) => (
+
+                      <p
+                        key={index}
+                        className="property-item"
+                        onClick={() => {
+                          setActiveMenu(null);
+                          setMobileMenuOpen(false);
+                        }}
+                      >
+
+                        <strong>
+                          {property.name}
+                        </strong>
+
+                        <span>
+                          {" - "}
+                          {property.location}
+                        </span>
+
+                      </p>
+
+                    )
+                  )}
+
+                </div>
+
+              </div>
+
+
+              {/* CATEGORY BUTTONS */}
+              <div className="property-category-buttons">
+
+                {/* PLOTS */}
+                <Link
+                  to={`/plots-${activeMenu}`}
+                  className="category-button"
+                  onClick={() => {
+                    setActiveMenu(null);
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Plots
+                </Link>
+                
+                {/* APARTMENTS */}
+                <Link
+                  to={`/apartments-${activeMenu}`}
+                  className="category-button"
+                  onClick={() => {
+                    setActiveMenu(null);
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Apartments
+                </Link>
+
+
+                {/* VILLAS */}
+                <Link
+                  to={`/villas-${activeMenu}`}
+                  className="category-button"
+                  onClick={() => {
+                    setActiveMenu(null);
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Villas
+                </Link>
+
+              </div>
+
+            </div>
+
+          </div>
+        )}
+
       </Navbar>
+
     </Fragment>
   );
 }

@@ -41,6 +41,13 @@ import ThankYouPage from "./common/ThankYouPage";
 import ChannelPartnerPage from "./channelPartner-Component/channelPartner-Page";
 import CareersPage from "./careers-component/careers-page";
 import CredaiImages from "./gallery-component/credaiImages";
+import PlotsOngoing from "./header-plots/plots-ongoing";
+import PlotsUpcoming from "./header-plots/plots-upcoming";
+import PlotsUpCompleted from "./header-plots/plots-completed";
+import ApartmentOngoing from "./header-apartments/apartments-ongoing";
+import ApartmentUpcoming from "./header-apartments/apartments-upcoming";
+import ApartmentCompleted from "./header-apartments/apartments-completed";
+import VillasOngoing from "./header-villas/villas-ongoing";
 
 function App() {
   useEffect(() => {
@@ -132,6 +139,15 @@ const AppWrapper = () => {
         <Route path="/Careers" element={<CareersPage />} />
         <Route path="/gallery/credai-images" element={<CredaiImages />} />
 
+        <Route path="/plots-ongoing" element={<PlotsOngoing />} />
+        <Route path="/plots-upcoming" element={<PlotsUpcoming />} />
+        <Route path="/plots-completed" element={<PlotsUpCompleted />} />
+        <Route path="/apartments-ongoing" element={<ApartmentOngoing />} />
+        <Route path="/apartments-upcoming" element={<ApartmentUpcoming />} />
+        <Route path="/apartments-completed" element={<ApartmentCompleted />} />
+        <Route path="/villas-ongoing" element={<VillasOngoing />} />
+        <Route path="/villas-upcoming" element={<VillasOngoing />} />
+        <Route path="/villas-completed" element={<VillasOngoing />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

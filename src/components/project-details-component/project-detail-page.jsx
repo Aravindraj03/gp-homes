@@ -6,7 +6,7 @@ import PlotsVideo from "./plots-video";
 import ProjectDetailBanner from "./project-detail-banner";
 import ProjectDetailSection from "./project-details-section";
 import mobileBanner from "../../assets/img/projects/ponbhoomi-mobile-banner2.jpg";
-import mobileBanner2 from "../../assets/img/slider/homePage-mobileBanner-7-10.png";
+import mobileBanner2 from "../../assets/img/slider/homePage-mobileBanner-7-10.jpeg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -99,7 +99,7 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
   return (
     <Fragment>
       {/* Navbar */}
-      <Navbar expand="lg" className="nav-scroll-1">
+      {/* <Navbar expand="lg" className="nav-scroll-1">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img src={logo} alt="Logo" className="logo-img" />
@@ -149,8 +149,8 @@ if (currentPath.includes("/plots-chennai/") && apartmentSlugs.includes(slug)) {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
-
+      </Navbar> */}
+      <Header />
       {/* === BANNER SECTION === */}
       {/* Desktop Banner - visible for all projects */}
       <div className="d-none d-md-block">

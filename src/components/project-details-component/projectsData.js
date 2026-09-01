@@ -194,6 +194,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/5qHnTzmMm9C1xNKx8",
     locations: {
       titles: [
         "Location Highlights",
@@ -278,6 +279,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Experience a life filled with comfort and convenience at The Breeze Way. Immerse yourself in a world where healthcare facilities, banks, restaurants, recreational amenities, shopping centers, and everything else you need are just steps away. Discover it firsthand and embrace a lifestyle of unparalleled ease.",
+    location_directions:"https://maps.app.goo.gl/5qHnTzmMm9C1xNKx8",
     locations: {
       titles: [
         "Location Highlights",
@@ -362,6 +364,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Experience a life filled with comfort and convenience at The Breeze Way. Immerse yourself in a world where healthcare facilities, banks, restaurants, recreational amenities, shopping centers, and everything else you need are just steps away. Discover it firsthand and embrace a lifestyle of unparalleled ease.",
+    location_directions:"https://maps.app.goo.gl/AiXjfrrzDPikH55t8",
     locations: {
       titles: [
         "Location Highlights",
@@ -444,6 +447,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Experience a life filled with comfort and convenience at The Breeze Way. Immerse yourself in a world where healthcare facilities, banks, restaurants, recreational amenities, shopping centers, and everything else you need are just steps away. Discover it firsthand and embrace a lifestyle of unparalleled ease.",
+    location_directions:"https://maps.app.goo.gl/AiXjfrrzDPikH55t8",
     locations: {
       titles: [
         "Location Highlights",
@@ -525,6 +529,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/WRzRAjCjnwtDjYmE9",
     locations: {
       titles: [
         "Location Highlights",
@@ -611,6 +616,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/WRzRAjCjnwtDjYmE9",
     locations: {
       titles: [
         "Location Highlights",
@@ -697,6 +703,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/89YxPxuvUnf6KEJ56",
     locations: {
       titles: [
         "Location Highlights",
@@ -785,6 +792,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/89YxPxuvUnf6KEJ56",
     locations: {
       titles: [
         "Location Highlights",
@@ -873,6 +881,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/ahPyVefMD1kUtiGt7",
     locations: {
       titles: [
         "Location Highlights",
@@ -961,6 +970,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/ahPyVefMD1kUtiGt7",
     locations: {
       titles: [
         "Location Highlights",
@@ -1057,6 +1067,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/5viuUPBbcXRfwQxe6",
     locations: {
       titles: [
         "Location Highlights",
@@ -1151,6 +1162,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/EbwGpm3F8MwBs5BT6",
     locations: {
       titles: [
         "Location Highlights",
@@ -1325,6 +1337,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions:"https://maps.app.goo.gl/wRNqoqDU9MtQJn517",
     locations: {
       titles: [
         "Location Highlights",
@@ -1498,6 +1511,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions: "https://maps.app.goo.gl/SkYRAbjcszKGbRAt8",
     locations: {
       titles: [
         "Location highlights",
@@ -1596,6 +1610,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
+    location_directions: "https://maps.app.goo.gl/eUBbkKGVw4F1RYtK6",
     locations: {
       titles: [
         "Location Highlights",
@@ -1682,6 +1697,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
+      location_directions: "https://maps.app.goo.gl/es7FrX7EsKBnk7L8A",
     locations: {
       titles: [
         "Location Highlights",
@@ -1853,6 +1869,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
+    location_directions: "https://maps.app.goo.gl/w5ekuBaJD9247srXA",
     locations: {
       titles: [
         "Location highlights",
@@ -1950,6 +1967,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
+    location_directions: "https://maps.app.goo.gl/kLiyaseDdSCUaKkQ8",
     locations: {
       titles: [
         "Location Highlights",
@@ -2037,6 +2055,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
+    location_directions: "https://maps.app.goo.gl/q7bfoDZ6g2XgaFkT8",
     locations: {
       titles: [
         "Location Highlights",
