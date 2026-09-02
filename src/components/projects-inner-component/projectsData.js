@@ -9,6 +9,8 @@ import GPBlazingStarBanner1 from "../../assets/img/projects/GPBlazingStarBanner-
 import GPBreezeWayBanner from "../../assets/img/projects/GPBreezeWayBanner.jpg";
 import GPBreezeWayBanner1 from "../../assets/img/projects/GPBreezeWayBanner-1.jpg";
 
+import GpElarisGrandBanner from "../../assets/img/projects/GpElarisGrandBanner.jpeg";
+
 import GpHomesElanzaBanner from "../../assets/img/projects/GpHomesElanzaBanner.jpg";
 import GpHomesElanzaBanner1 from "../../assets/img/projects/GpHomesElanzaBanner-1.jpg";
 import GpHomesElanzaBanner2 from "../../assets/img/projects/GpHomesElanzaBanner-2.jpg";
@@ -871,7 +873,100 @@ const projectsData = [
       },
     ],
   },
-  
+  {
+  id: 10,
+  location: "Mel Ayanambakkam – Athipet",
+  name: "GP Elaris Grand Apartment",
+  description: [
+    "Own your dream home at GP Athipet Apartment starting at just ₹7499/- per sq.ft!",
+    "GP Elaris Grand Apartment is a premium gated community with 300+ apartments, featuring 8 residential blocks with essential amenities. The project is thoughtfully planned with a Stilt + 5 Floors structure and offers spacious 2BHK homes ranging from 852 sq.ft to 955 sq.ft. Located at Mel Ayanambakkam – Athipet, the project comes under Greater Chennai Corporation limits.",
+  ],
+  banner_image: GpElarisGrandBanner,
+  image: listimg2,
+  facilities: [
+    ["Parking", parkingIcon],
+    ["Painting", paintingIcon],
+    ["Toilet", toiletIcon],
+    ["Structure", aptIcon],
+    ["Joineries", joineries],
+    ["Plastering", plastering],
+    ["Electricals", electrical],
+    ["Plumbing", plumbing],
+    ["Water Supply", waterIcon],
+  ],
+  specifications_title: "Specifications",
+  specifications_desc:
+    "At GP Homes, we are incredibly passionate about the convergence of modern design, affordability, and the environment. This is why use only the highest-quality, top-of-the-line fittings and fixtures that provide you and your family the comfort that you desire and deserve.",
+
+  amenities_title: "Amenities",
+  amenities_desc:
+    "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
+
+  amenities: [
+    ["Koel Power bank", "bi bi-lightning-charge"],
+    ["Automatic lift", "bi bi-box-arrow-in-up"],
+    ["Covered car parking", "bi bi-car-front"],
+    ["CCTV", "bi bi-camera-video-fill"],
+  ],
+
+  location_map_title: "Location Map",
+  location_map_desc:
+    "Situated next to Mogappair West Extension, GP Elaris Grand Apartment offers excellent connectivity and future growth potential. Visit our project site and experience the location, connectivity, and peaceful community living firsthand.",
+
+  locations: {
+    titles: [
+      "Location Highlights",
+      "Hospitals",
+      "Educational Institutions",
+      "IT Parks",
+      "Entertainment Zone",
+    ],
+
+    location_highlights: [
+      "Mogappair West Extension – Nearby",
+      "Mel Ayanambakkam – Athipet",
+      "Under Greater Chennai Corporation limits",
+    ],
+
+    hospitals: [],
+
+    educational_institutions: [],
+
+    it_parks: [],
+
+    entertainment_zone: [],
+  },
+
+  project_status: "Early Bird Launch Offer",
+  slug: "gp-elaris-grand",
+
+  projects_types: [
+    {
+      id: 1,
+      type: "2BHK Flats for Sale in Athipet",
+      name: "GP Elaris Grand Apartment",
+      description:
+        "GP Elaris Grand Apartment offers spacious 2BHK homes ranging from 852 sq.ft to 955 sq.ft, thoughtfully planned within a premium gated community with 300+ apartments and 8 residential blocks. The project features a Stilt + 5 Floors structure and is located at Mel Ayanambakkam – Athipet.",
+
+      image: GpHomesElanza2bhk,
+
+      facilities: [
+        ["Parking", parkingIcon],
+        ["Painting", paintingIcon],
+        ["Toilet", toiletIcon],
+        ["Structure", aptIcon],
+        ["Joineries", joineries],
+        ["Plastering", plastering],
+        ["Electricals", electrical],
+        ["Plumbing", plumbing],
+        ["Water Supply", waterIcon],
+      ],
+
+      project_status: "Early Bird Launch Offer",
+      slug: "gp-elaris-grand-2bhk",
+    },
+  ],
+},
 ];
 
 export default projectsData;

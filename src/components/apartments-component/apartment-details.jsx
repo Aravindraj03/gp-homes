@@ -39,6 +39,7 @@ import roadICon from "../../assets/img/icons/Road.png";
 import compoundWall from "../../assets/img/icons/compund-wall.png";
 import solarLight from "../../assets/img/icons/Solar-lights.png";
 import archIcon from "../../assets/img/icons/Arch.png";
+import GpElarisGrand from "../../assets/img/rooms/GpElarisGrand.jpeg";
 
 const featureIcons = {
   Units: aptIcon,
@@ -246,18 +247,30 @@ const roomsData = [
     features: ["Units 14, BHK 2 & 3, Sq. ft. 852 - 1350, Floors Stilt + 3"],
     slug: "gp-valencia-ruby",
   },
-  {
-    id: 15,
-    category: "Apartments-Ongoing",
-    location: "Pattabiram",
-    title: "Ponbhoomi",
-    image: ponbhoomiVilla,
-    description:
-      "Welcome to Pon Bhoomi by GP Homes – a serene residential villa built with superior quality and thoughtful planning.",
-    project_status: "Ongoing Project",
-    features: ["Black top roads, 24/7 Security, Potable ground water,  CCTV"],
-    slug: "gp-ponbhoomi-villa",
-  },
+  // {
+  //   id: 15,
+  //   category: "Apartments-Ongoing",
+  //   location: "Pattabiram",
+  //   title: "Ponbhoomi",
+  //   image: ponbhoomiVilla,
+  //   description:
+  //     "Welcome to Pon Bhoomi by GP Homes – a serene residential villa built with superior quality and thoughtful planning.",
+  //   project_status: "Ongoing Project",
+  //   features: ["Black top roads, 24/7 Security, Potable ground water,  CCTV"],
+  //   slug: "gp-ponbhoomi-villa",
+  // },
+    {
+  id: 15,
+  category: "Apartments-Ongoing",
+  location: "Athipet",
+  title: "GP ELARIS GRAND",
+  image: GpElarisGrand,
+  description:
+    "Own your dream home at GP Athipet Apartment starting at just ₹7499/- per sq.ft!",
+  project_status: "Ongoing Project",
+  features: ["Units 300+, BHK 2, Sq. ft. 852 - 955, Floors Stilt + 5"],
+  slug: "gp-elaris-grand",
+},
 ];
 
 
@@ -433,7 +446,7 @@ const ApartmentDetails = () => {
                           className="btn-form1-submit text-center"
                           to={
                             room.id === 15
-                              ? `/villas-chennai/${room.slug}`
+                              ? `/apartments-chennai/${room.slug}`
                               : `/apartments-chennai/${room.slug}`
                           }
                         >

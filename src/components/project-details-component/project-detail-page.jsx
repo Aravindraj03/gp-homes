@@ -57,6 +57,9 @@ function ProjectDetailPage() {
   "gp-valencia-emarald",
   "gp-valencia-emarald-3bhk",
   "gp-valencia-emarald-2bhk",
+  "gp-elaris-grand", 
+  "gp-elaris-grand-2bhk",
+
 ];
 
   const location = useLocation();

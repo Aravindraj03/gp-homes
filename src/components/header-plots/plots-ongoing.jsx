@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import AparmentBanner from "../plots-component/plots-banner";
 import PlotDetails from "../plots-component/plots-details";
 
-import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
+import room10 from "../../assets/img/rooms/Pon-bhoomi.png";
 import room20 from "../../assets/img/rooms/cressidaPark.jpg";
 import room25 from "../../assets/img/rooms/15.jpeg";
 

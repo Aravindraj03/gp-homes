@@ -9,14 +9,20 @@ import ponbhoomiVilla from "../../assets/img/rooms/ponbhoomiVilla.jpg";
 
 import apartCompleted7 from "../../assets/img/rooms/athipetApartment.jpg";
 
+import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
+import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
+import plotIcon from "../../assets/img/icons/Plot-White.png";
+import sqft from "../../assets/img/icons/Sq.Fi.png";
+import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
 import roadIcon from "../../assets/img/icons/Road.png";
 import cctvIcon from "../../assets/img/icons/CCTV.png";
-import ebIcon from "../../assets/img/icons/EB-Connection.png";
+import ebIcon from "../../assets/img/icons/EB-Connection.png"
 import wallIcon from "../../assets/img/icons/compund-wall.png";
 import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
 import security from "../../assets/img/icons/24-7-securiry.png";
 import groundwater from "../../assets/img/icons/Ground-water.png";
+import roadICon from "../../assets/img/icons/Road.png";
 import compoundWall from "../../assets/img/icons/compund-wall.png";
 import solarLight from "../../assets/img/icons/Solar-lights.png";
 import archIcon from "../../assets/img/icons/Arch.png";
@@ -26,6 +32,10 @@ import bgimage from "../../assets/img/slider/apartment-2.png";
 
 const featureIcons = {
   Units: aptIcon,
+  BHK: bhkIcon,
+  "Sq. ft.": sqft,
+  Floors: stiltFloor,
+  Blocks: stiltFloor,
   Black: roadIcon,
   CCTV: cctvIcon,
   EB: ebIcon,
@@ -199,12 +209,12 @@ function ApartmentUpcoming() {
                         )}
 
                         {/* DETAILS BUTTON */}
-                        <Link
+                        {/* <Link
                           className="btn-form1-submit text-center"
                           to={`/apartments-chennai/${room.slug}`}
                         >
                           Details
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>

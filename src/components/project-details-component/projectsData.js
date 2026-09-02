@@ -9,6 +9,8 @@ import GPBlazingStarBanner1 from "../../assets/img/projects/GPBlazingStarBanner-
 import GPBreezeWayBanner from "../../assets/img/projects/GPBreezeWayBanner.jpg";
 import GPBreezeWayBanner1 from "../../assets/img/projects/GPBreezeWayBanner-1.jpg";
 
+import GpElarisGrandBanner from "../../assets/img/projects/GpElarisGrandBanner.jpeg";
+
 import GpHomesElanzaBanner from "../../assets/img/projects/GpHomesElanzaBanner.jpg";
 import GpHomesElanzaBanner1 from "../../assets/img/projects/GpHomesElanzaBanner-1.jpg";
 import GpHomesElanzaBanner2 from "../../assets/img/projects/GpHomesElanzaBanner-2.jpg";
@@ -27,7 +29,6 @@ import GPSereneVista from "../../assets/img/projects/gpserene-vista.jpg";
 import GpHomesPonbhoomi from "../../assets/img/projects/ponBanner2.jpeg";
 import GPCressidaPark from "../../assets/img/projects/GP-cressida-park.jpeg";
 import AISHWARYAGARDEN from "../../assets/img/projects/AISHWARYAGARDEN.jpeg";
-
 
 import BlazingStarFloorplan1 from "../../assets/img/floorplans/blazing-star-floorplan-1.jpg";
 import BlazingStarFloorplan2 from "../../assets/img/floorplans/blazing-star-floorplan-2.jpg";
@@ -77,7 +78,6 @@ import Ethuliagallery2 from "../../assets/img/projects/ethulia-2.png";
 import Ethuliagallery3 from "../../assets/img/projects/ethulia-3.png";
 import Ethuliagallery4 from "../../assets/img/projects/ethulia-4.png";
 
-
 // Highlights Images
 import locationHighlights1 from "../../assets/img/locations/location-lighlights.jpg";
 import locationHighlights2 from "../../assets/img/locations/location-highlights-1.jpg";
@@ -97,10 +97,9 @@ import educationalFairmont from "../../assets/img/locations/Fairmont--College.jp
 import itPark1 from "../../assets/img/locations/it-park.jpg";
 import itPark2 from "../../assets/img/locations/it-park-1.jpg";
 import itPark3 from "../../assets/img/locations/it-park-2.jpg";
-import fairmontItpark from "../../assets/img/locations/Fairmont--It-Company.jpg"
+import fairmontItpark from "../../assets/img/locations/Fairmont--It-Company.jpg";
 
 import temple from "../../assets/img/locations/temple.jpg";
-
 
 import entertainmentZone1 from "../../assets/img/locations/entertainment.jpg";
 import entertainmentZone2 from "../../assets/img/locations/entertainment-1.jpg";
@@ -135,7 +134,7 @@ import roadIcon from "../../assets/img/icons/Road.png";
 import cctvIcon from "../../assets/img/icons/CCTV.png";
 import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
 import ebIcon from "../../assets/img/icons/EB-Connection.png";
-import compound from "../../assets/img/icons/compund-wall.png"
+import compound from "../../assets/img/icons/compund-wall.png";
 import groundWater from "../../assets/img/icons/Ground-water.png";
 
 import powerBank from "../../assets/img/icons/POwer-bank.png";
@@ -156,7 +155,6 @@ import midwayFloorPlan from "../../assets/img/floorplans/midwayAvenueFloorPlan.j
 import nanmanaiFloorplan1 from "../../assets/img/floorplans/nanmanaiFloorPlanm1.jpeg";
 import nanmanaiFloorplan2 from "../../assets/img/floorplans/nanmanaiFloorPlan2.jpeg";
 
-
 const projectsData = [
   {
     id: 1,
@@ -164,20 +162,23 @@ const projectsData = [
     name: "GP Blazing Star",
     description: [
       "Introducing Blazing Star by GP Homes, a vibrant residential project situated in the fast-growing suburb of Porur, Chennai. This development features 2 BHK flats in a stilt + 5-floor structure, combining sleek, contemporary design with practicality. Blazing Star by GP Homes is meticulously crafted to cater to the needs of modern living, offering a variety of amenities that enhance the lifestyle of its residents.The apartments are spacious, well-ventilated, and flooded with natural light, creating an inviting atmosphere. With cutting-edge infrastructure and facilities, Blazing Star provides ample space for relaxation and unwinding.",
-
     ],
     banner_images: [GPBlazingStarBanner],
-    images: [BlazingStarFloorplan1, BlazingStarFloorplan2, BlazingStarFloorplan3],
+    images: [
+      BlazingStarFloorplan1,
+      BlazingStarFloorplan2,
+      BlazingStarFloorplan3,
+    ],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -194,7 +195,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/5qHnTzmMm9C1xNKx8",
+    location_directions: "https://maps.app.goo.gl/5qHnTzmMm9C1xNKx8",
     locations: {
       titles: [
         "Location Highlights",
@@ -252,17 +253,21 @@ const projectsData = [
       "Blazing Star by GP Homes is meticulously planned to meet the needs of contemporary lifestyles, with spacious, well-ventilated apartments that ensure a flow of natural light and fresh air. The project also offers a range of top-notch amenities, making it the ideal place to relax and unwind in comfort.",
     ],
     banner_images: [GPBlazingStarBanner],
-    images: [BlazingStarFloorplan1, BlazingStarFloorplan2, BlazingStarFloorplan3],
+    images: [
+      BlazingStarFloorplan1,
+      BlazingStarFloorplan2,
+      BlazingStarFloorplan3,
+    ],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -279,7 +284,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Experience a life filled with comfort and convenience at The Breeze Way. Immerse yourself in a world where healthcare facilities, banks, restaurants, recreational amenities, shopping centers, and everything else you need are just steps away. Discover it firsthand and embrace a lifestyle of unparalleled ease.",
-    location_directions:"https://maps.app.goo.gl/5qHnTzmMm9C1xNKx8",
+    location_directions: "https://maps.app.goo.gl/5qHnTzmMm9C1xNKx8",
     locations: {
       titles: [
         "Location Highlights",
@@ -334,20 +339,20 @@ const projectsData = [
     name: "GP Breeze Way",
     description: [
       "Breeze Way offers spacious, well-ventilated apartments equipped with contemporary amenities, ensuring a superior living experience. With its prime location, top-notch facilities, and thoughtfully designed homes, this project is the perfect balance of quality, comfort, and affordability.This stilt + 5 floors project features elegantly designed 2 BHK flats that seamlessly blend style and functionality.",
-      "Crafted for comfort and convenience, Breeze Way offers spacious, well-ventilated apartments equipped with contemporary amenities, ensuring a superior living experience. With its prime location, top-notch facilities, and thoughtfully designed homes, this project is the perfect balance of quality, comfort, and affordability."
+      "Crafted for comfort and convenience, Breeze Way offers spacious, well-ventilated apartments equipped with contemporary amenities, ensuring a superior living experience. With its prime location, top-notch facilities, and thoughtfully designed homes, this project is the perfect balance of quality, comfort, and affordability.",
     ],
     banner_images: [GPBreezeWayBanner],
     images: [BreezwayFloorPlan1, BreezwayFloorPlan2, BreezwayFloorPlan3],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -364,7 +369,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Experience a life filled with comfort and convenience at The Breeze Way. Immerse yourself in a world where healthcare facilities, banks, restaurants, recreational amenities, shopping centers, and everything else you need are just steps away. Discover it firsthand and embrace a lifestyle of unparalleled ease.",
-    location_directions:"https://maps.app.goo.gl/AiXjfrrzDPikH55t8",
+    location_directions: "https://maps.app.goo.gl/AiXjfrrzDPikH55t8",
     locations: {
       titles: [
         "Location Highlights",
@@ -423,14 +428,14 @@ const projectsData = [
     images: [BreezwayFloorPlan1, BreezwayFloorPlan2, BreezwayFloorPlan3],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -447,7 +452,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Experience a life filled with comfort and convenience at The Breeze Way. Immerse yourself in a world where healthcare facilities, banks, restaurants, recreational amenities, shopping centers, and everything else you need are just steps away. Discover it firsthand and embrace a lifestyle of unparalleled ease.",
-    location_directions:"https://maps.app.goo.gl/AiXjfrrzDPikH55t8",
+    location_directions: "https://maps.app.goo.gl/AiXjfrrzDPikH55t8",
     locations: {
       titles: [
         "Location Highlights",
@@ -502,17 +507,25 @@ const projectsData = [
       "Discover the elegance of GP Elanza – a stunning collection of apartments in Madhanadhapuram, where modern design meets luxurious living. These spacious flats boast cutting-edge interiors, exuding sophistication and grandeur. Imagine having everything you need just a short 2-5 minute drive away – from top-tier hospitals and schools to shopping malls and more. GP Elanza offers it all, with premium amenities like reserved parking, power backup, CCTV surveillance, and sleek, automatic lifts. Why settle for less when you can live in style, at an unbeatable price?",
     ],
     banner_images: [GpHomesElanzaBanner],
-    images: [Elanza2bhk1, Elanza2bhk2, Elanza2bhk3, Elanza2bhk4, Elanza2bhk5, ElanzaFloorplan1, ElanzaFloorplan2],
+    images: [
+      Elanza2bhk1,
+      Elanza2bhk2,
+      Elanza2bhk3,
+      Elanza2bhk4,
+      Elanza2bhk5,
+      ElanzaFloorplan1,
+      ElanzaFloorplan2,
+    ],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -529,7 +542,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/WRzRAjCjnwtDjYmE9",
+    location_directions: "https://maps.app.goo.gl/WRzRAjCjnwtDjYmE9",
     locations: {
       titles: [
         "Location Highlights",
@@ -592,14 +605,14 @@ const projectsData = [
     images: [Elanza3bhk1, Elanza3bhk2, ElanzaFloorplan1, ElanzaFloorplan2],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -616,7 +629,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/WRzRAjCjnwtDjYmE9",
+    location_directions: "https://maps.app.goo.gl/WRzRAjCjnwtDjYmE9",
     locations: {
       titles: [
         "Location Highlights",
@@ -673,20 +686,31 @@ const projectsData = [
     name: "GP Valencia Emerald",
     description: [
       "Welcome to GP Valencia Emerald – a landmark project that sets a new standard in modern living. A proud milestone in the journey of GP Homes, this development offers spacious 2 BHK apartments starting from 857 sq. ft., designed to accommodate your dreams and aspirations.",
-      "Nestled in the prime location of Ayanambakkam, GP Valencia Emerald provides easy access to top educational institutions and IT hubs, ensuring a perfect balance of convenience and connectivity. A home like no other awaits you—come, experience it today!"
+      "Nestled in the prime location of Ayanambakkam, GP Valencia Emerald provides easy access to top educational institutions and IT hubs, ensuring a perfect balance of convenience and connectivity. A home like no other awaits you—come, experience it today!",
     ],
     banner_images: [GPValenciaEmerald],
-    images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3, Emerald2bhk1, Emeral2bhk2, Emeral2bhk3, Emeral2bhk4, Emeral2bhk5, Emerald2bhk6, Emerald2bhk7],
+    images: [
+      EmeraldFloorplan1,
+      EmeraldFloorplan2,
+      EmeraldFloorplan3,
+      Emerald2bhk1,
+      Emeral2bhk2,
+      Emeral2bhk3,
+      Emeral2bhk4,
+      Emeral2bhk5,
+      Emerald2bhk6,
+      Emerald2bhk7,
+    ],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -703,7 +727,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/89YxPxuvUnf6KEJ56",
+    location_directions: "https://maps.app.goo.gl/89YxPxuvUnf6KEJ56",
     locations: {
       titles: [
         "Location Highlights",
@@ -739,7 +763,7 @@ const projectsData = [
         "Ambit IT Park",
         "India land IT Park",
         "Kochar info Park",
-        "Prince Info Park"
+        "Prince Info Park",
       ],
       entertainment_zone: [
         "VR Mall",
@@ -765,17 +789,27 @@ const projectsData = [
       "Located in the prime neighborhood of Ayanambakkam, GP Valencia Emerald offers unmatched convenience with top educational institutions and major IT hubs just around the corner. More than just a home, it’s a lifestyle upgrade. Come, experience it for yourself!",
     ],
     banner_images: [GPValenciaEmerald],
-    images: [EmeraldFloorplan1, EmeraldFloorplan2, EmeraldFloorplan3, Emerald2bhk8, Emerald2bhk9, Emerald2bhk10, Emerald2bhk11, Emerald2bhk12,Emerald2bhk13],
+    images: [
+      EmeraldFloorplan1,
+      EmeraldFloorplan2,
+      EmeraldFloorplan3,
+      Emerald2bhk8,
+      Emerald2bhk9,
+      Emerald2bhk10,
+      Emerald2bhk11,
+      Emerald2bhk12,
+      Emerald2bhk13,
+    ],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -792,7 +826,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/89YxPxuvUnf6KEJ56",
+    location_directions: "https://maps.app.goo.gl/89YxPxuvUnf6KEJ56",
     locations: {
       titles: [
         "Location Highlights",
@@ -828,7 +862,7 @@ const projectsData = [
         "Ambit IT Park",
         "India land IT Park",
         "Kochar info Park",
-        "Prince Info Park"
+        "Prince Info Park",
       ],
       entertainment_zone: [
         "VR Mall",
@@ -851,20 +885,24 @@ const projectsData = [
     name: "GP Homes Valencia Ruby",
     description: [
       "Presenting GP Valencia Ruby – a shining milestone in the journey of GP Homes, designed to elevate your lifestyle. Nestled in the prime locality of Ayanambakkam, this exceptional project offers beautifully crafted 2 BHK apartments that blend elegance with functionality.",
-      "With top educational institutions and major IT hubs just a stone’s throw away, GP Valencia Ruby ensures seamless connectivity and convenience. Spacious, thoughtfully designed, and packed with modern comforts, these homes are where dreams take shape. Your perfect home awaits – come, experience it today!"
+      "With top educational institutions and major IT hubs just a stone’s throw away, GP Valencia Ruby ensures seamless connectivity and convenience. Spacious, thoughtfully designed, and packed with modern comforts, these homes are where dreams take shape. Your perfect home awaits – come, experience it today!",
     ],
     banner_images: [GPValenciaRuby],
-    images: [ValenciaRubyFloorplan1, ValenciaRubyFloorplan2, ValenciaRubyFloorplan3],
+    images: [
+      ValenciaRubyFloorplan1,
+      ValenciaRubyFloorplan2,
+      ValenciaRubyFloorplan3,
+    ],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -881,7 +919,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/ahPyVefMD1kUtiGt7",
+    location_directions: "https://maps.app.goo.gl/ahPyVefMD1kUtiGt7",
     locations: {
       titles: [
         "Location Highlights",
@@ -917,7 +955,7 @@ const projectsData = [
         "Ambit IT Park",
         "India land IT Park",
         "Kochar info Park",
-        "Prince Info Park"
+        "Prince Info Park",
       ],
       entertainment_zone: [
         "VR Mall",
@@ -940,20 +978,24 @@ const projectsData = [
     name: "GP Homes Valencia Ruby",
     description: [
       "Step into the future of luxury living with GP Valencia Ruby – the latest masterpiece from GP Homes. This exceptional project offers beautifully designed 3 BHK apartments that are spacious enough to accommodate all your dreams and aspirations.",
-      "Located in the vibrant heart of Ayanambakkam, surrounded by top educational institutions and major IT hubs, GP Valencia Ruby ensures your home is at the center of convenience and opportunity. It’s more than just a home; it’s the perfect place where your future unfolds. Come, discover the exceptional lifestyle waiting for you!"
+      "Located in the vibrant heart of Ayanambakkam, surrounded by top educational institutions and major IT hubs, GP Valencia Ruby ensures your home is at the center of convenience and opportunity. It’s more than just a home; it’s the perfect place where your future unfolds. Come, discover the exceptional lifestyle waiting for you!",
     ],
     banner_images: [GPValenciaRuby],
-    images: [ValenciaRubyFloorplan1, ValenciaRubyFloorplan2, ValenciaRubyFloorplan3],
+    images: [
+      ValenciaRubyFloorplan1,
+      ValenciaRubyFloorplan2,
+      ValenciaRubyFloorplan3,
+    ],
     facilities: [
       ["Parking", parkingIcon],
-          ["Painting", paintingIcon],
-          ["Toilet", toiletIcon],
-          ["Structure", aptIcon],
-          ["Joineries", joineries],
-          ["Plastering", plastering],
-          ["Electricals", electrical],
-          ["Plumbing", plumbing],
-          ["Water Supply", waterIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
     ],
     specifications_title: "Specifications",
     specifications_desc:
@@ -970,7 +1012,7 @@ const projectsData = [
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/ahPyVefMD1kUtiGt7",
+    location_directions: "https://maps.app.goo.gl/ahPyVefMD1kUtiGt7",
     locations: {
       titles: [
         "Location Highlights",
@@ -1006,7 +1048,7 @@ const projectsData = [
         "Ambit IT Park",
         "India land IT Park",
         "Kochar info Park",
-        "Prince Info Park"
+        "Prince Info Park",
       ],
       entertainment_zone: [
         "VR Mall",
@@ -1058,16 +1100,16 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Elegant Grand Entrance arch","bi bi-rainbow"],
-      ["Solar Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Elegant Grand Entrance arch", "bi bi-rainbow"],
+      ["Solar Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/5viuUPBbcXRfwQxe6",
+    location_directions: "https://maps.app.goo.gl/5viuUPBbcXRfwQxe6",
     locations: {
       titles: [
         "Location Highlights",
@@ -1153,16 +1195,16 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Elegant Grand Entrance arch","bi bi-rainbow"],
-      ["Solar Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Elegant Grand Entrance arch", "bi bi-rainbow"],
+      ["Solar Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/EbwGpm3F8MwBs5BT6",
+    location_directions: "https://maps.app.goo.gl/EbwGpm3F8MwBs5BT6",
     locations: {
       titles: [
         "Location Highlights",
@@ -1186,9 +1228,7 @@ const projectsData = [
         "Chinmaya Vidyalaya Senior Secondary School - 15 Minutes",
         "Kendriya Vidyalaya Anna Nagar, Chennai - 16 Minutes",
       ],
-      it_parks: [
-        "ICF",
-      ],
+      it_parks: ["ICF"],
       entertainment_zone: [
         "Ganga Cinemas - 5 Minutes",
         "S2 Cinemas - 10 Minutes",
@@ -1210,7 +1250,7 @@ const projectsData = [
     description: [
       "Ethulia stands as an exemplary plot-based project by GP Homes in the highly sought-after Mogappair area, it presents 55 ready-to-build villa plots spanning 2.46 acres. This premier plotted development promises a prime location for value appreciation.",
       "Why Invest in ETHULIA?",
-      "On road property, very close to Mogappair and next to Velammal Vidhyalaya CBSE School. It offers a high-end lifestyle community, is CMDA and RERA approved, and has excellent connectivity to major parts of the city. The plots are ready to construct with clear titles, and plot loans are available from leading banks.",  
+      "On road property, very close to Mogappair and next to Velammal Vidhyalaya CBSE School. It offers a high-end lifestyle community, is CMDA and RERA approved, and has excellent connectivity to major parts of the city. The plots are ready to construct with clear titles, and plot loans are available from leading banks.",
     ],
     banner_images: [GPEthuliaBanner],
     images: [Ethuliagallery1, Ethuliagallery2, Ethuliagallery4],
@@ -1237,11 +1277,11 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Elegant Grand Entrance arch","bi bi-rainbow"],
-      ["Solar Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Elegant Grand Entrance arch", "bi bi-rainbow"],
+      ["Solar Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1328,16 +1368,16 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Elegant Grand Entrance arch","bi bi-rainbow"],
-      ["Solar Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Elegant Grand Entrance arch", "bi bi-rainbow"],
+      ["Solar Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
       "Get ready to live a life of comfort and convenience. A life where healthcare, banks, restaurants, recreation, shopping, and everything else is right around the corner. Check it out for yourself.",
-    location_directions:"https://maps.app.goo.gl/wRNqoqDU9MtQJn517",
+    location_directions: "https://maps.app.goo.gl/wRNqoqDU9MtQJn517",
     locations: {
       titles: [
         "Location Highlights",
@@ -1366,7 +1406,7 @@ const projectsData = [
         "Velammal Global School",
         "Elite Matriculation Higher Secondary School",
         "The Principal National Lotus Matric Hr Sec School",
-        "RB Gothi Jain College for Women"
+        "RB Gothi Jain College for Women",
       ],
       it_parks: ["Ambattur IT Park"],
       entertainment_zone: ["PVR SKLS Mall", "Galaxy Mall"],
@@ -1412,11 +1452,11 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Elegant Grand Entrance arch","bi bi-rainbow"],
-      ["Solar Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Elegant Grand Entrance arch", "bi bi-rainbow"],
+      ["Solar Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1451,10 +1491,17 @@ const projectsData = [
         "Sri Venkateswara Matriculation School",
         "Sri Venkateswara College of Engineering",
         "Thirumurugan Arts and Science College",
-        "Indira Nursing and Engineering College"
+        "Indira Nursing and Engineering College",
       ],
       it_parks: ["Pattabiram Tidle Park"],
-      entertainment_zone: ["Rakki Cinemas", "Meera Theatre", "Fun Land", "Bulbul Park", "Thulasi Theatre", "Venkateshwara Theatre"],
+      entertainment_zone: [
+        "Rakki Cinemas",
+        "Meera Theatre",
+        "Fun Land",
+        "Bulbul Park",
+        "Thulasi Theatre",
+        "Venkateshwara Theatre",
+      ],
       location_highlights_image: RMVijayalakshmi,
       hospitals_image: hospitals2,
       educational_institutions_image: educationalInstitutions3,
@@ -1473,7 +1520,7 @@ const projectsData = [
       "Strategically located next to Pattabiram Tidel Park (Sevvapet) on the highways, PonBhoomi offers 207 premium villa plots ranging from 450 to 3,758 sq. ft. This well-connected residential community provides seamless access to key locations in Avadi, ensuring convenience and modern living. With shopping malls, movie theatres, schools, and hospitals nearby, PonBhoomi is an ideal choice for homeowners and investors alike.",
       "Invest in PonBhoomi by GP Homes today—where value meets opportunity!",
     ],
-    banner_images: [GPPonBhoomi], 
+    banner_images: [GPPonBhoomi],
     image: [midwayAvenueFloorplan],
     facilities: [
       // ["Parking", "flaticon-car"],
@@ -1498,12 +1545,11 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
-      
-     
+      ["Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
+
       // ["Ready to Construct", "flaticon-car"],
       // ["Portable Ground water", "flaticon-car"],
       // ["Street Light", "flaticon-car"],
@@ -1601,11 +1647,11 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Elegant Grand Entrance arch","bi bi-rainbow"],
-      ["Solar Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Elegant Grand Entrance arch", "bi bi-rainbow"],
+      ["Solar Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1634,18 +1680,23 @@ const projectsData = [
         "Thillai Nursing Home (Poonamallee)",
       ],
       educational_institutions: [
-        
         "Velammal Vidyalaya",
-        
+
         "Chennai Public School",
-        
+
         "Panimalar Engineering College",
         "Rajalakshmi Institute of Technology",
         "MGR University Maduravoyal",
-        "Saveetha Medical College"
+        "Saveetha Medical College",
       ],
       it_parks: ["Tidel Park", "DLF IT Park", "Ambit IT Park"],
-      entertainment_zone: ["VR Mall", "Escape Cinemas", "SDC Batcha Theatre", "Grand Galada Mall", "Gokulam Cinemas"],
+      entertainment_zone: [
+        "VR Mall",
+        "Escape Cinemas",
+        "SDC Batcha Theatre",
+        "Grand Galada Mall",
+        "Gokulam Cinemas",
+      ],
       location_highlights_image: RMFairmont,
       hospitals_image: hospitalFairmont,
       educational_institutions_image: educationalFairmont,
@@ -1662,10 +1713,14 @@ const projectsData = [
     description: [
       "GP Homes proudly presents its next landmark development - GP Serene Vista, an exclusive enclave of just 8 premium villa plots in the heart of Ambattur.",
       "GP Serene Vista is thoughtfully planned to offer an intimate, serene lifestyle surrounded by greenery,privacy. and the refined charm of villa living. Everyinch of this gated community reflects GP Home's legacy of quality, trust, and thoughtful design.",
-      "Here, mornings begin with the calming rustle of trees. and your home becomes a sanctuary of peace amidst the pulse of a growing city. With only 8 plots available, this is a rare opportunity to build your dream villa in a tranquil setting - while still enjoying unmatched access to key hubs like Anna Nagar. Ambattur, Padi and Korattur."
+      "Here, mornings begin with the calming rustle of trees. and your home becomes a sanctuary of peace amidst the pulse of a growing city. With only 8 plots available, this is a rare opportunity to build your dream villa in a tranquil setting - while still enjoying unmatched access to key hubs like Anna Nagar. Ambattur, Padi and Korattur.",
     ],
     banner_images: [GPSereneVista],
-    images: [sereneVistaFloorplan1,sereneVistaFloorplan2,sereneVistaFloorplan3],
+    images: [
+      sereneVistaFloorplan1,
+      sereneVistaFloorplan2,
+      sereneVistaFloorplan3,
+    ],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
@@ -1689,15 +1744,15 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
       "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
-      location_directions: "https://maps.app.goo.gl/es7FrX7EsKBnk7L8A",
+    location_directions: "https://maps.app.goo.gl/es7FrX7EsKBnk7L8A",
     locations: {
       titles: [
         "Location Highlights",
@@ -1717,19 +1772,22 @@ const projectsData = [
         "Sri Raghavendra Hospital",
         "New Century Hospital",
         "Apple Plus Hospital",
-        "Psychiatry Life Skills"
+        "Psychiatry Life Skills",
       ],
       educational_institutions: [
-         
         "Annai Violet arts and science College",
-        
+
         "Aakash Institute",
-        
-        "Soka Ikeda arts and science College for Women",  
-        
+
+        "Soka Ikeda arts and science College for Women",
       ],
-      it_parks: [ "Ambit IT Park"],
-      entertainment_zone: ["Murugan Cinemas RGB 4K", "Thangal Park", "Korattur public Park", "Rakki Cinemas"],
+      it_parks: ["Ambit IT Park"],
+      entertainment_zone: [
+        "Murugan Cinemas RGB 4K",
+        "Thangal Park",
+        "Korattur public Park",
+        "Rakki Cinemas",
+      ],
       location_highlights_image: RMSereneVista,
       hospitals_image: hospitalFairmont,
       educational_institutions_image: educationalFairmont,
@@ -1746,7 +1804,7 @@ const projectsData = [
     description: [
       "GP Homes proudly presents its next landmark development - GP Serene Vista, an exclusive enclave of just 8 premium villa plots in the heart of Ambattur.",
       "GP Serene Vista is thoughtfully planned to offer an intimate, serene lifestyle surrounded by greenery,privacy. and the refined charm of villa living. Everyinch of this gated community reflects GP Home's legacy of quality, trust, and thoughtful design.",
-      "Here, mornings begin with the calming rustle of trees. and your home becomes a sanctuary of peace amidst the pulse of a growing city. With only 8 plots available, this is a rare opportunity to build your dream villa in a tranquil setting - while still enjoying unmatched access to key hubs like Anna Nagar. Ambattur, Padi and Korattur."
+      "Here, mornings begin with the calming rustle of trees. and your home becomes a sanctuary of peace amidst the pulse of a growing city. With only 8 plots available, this is a rare opportunity to build your dream villa in a tranquil setting - while still enjoying unmatched access to key hubs like Anna Nagar. Ambattur, Padi and Korattur.",
     ],
     banner_images: [GPSereneVista],
     image: listimg4,
@@ -1773,10 +1831,10 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1800,19 +1858,22 @@ const projectsData = [
         "Sri Raghavendra Hospital",
         "New Century Hospital",
         "Apple Plus Hospital",
-        "Psychiatry Life Skills"
+        "Psychiatry Life Skills",
       ],
       educational_institutions: [
-         
         "Annai Violet arts and science College",
-        
+
         "Aakash Institute",
-        
-        "Soka Ikeda arts and science College for Women",  
-        
+
+        "Soka Ikeda arts and science College for Women",
       ],
-      it_parks: [ "Ambit IT Park"],
-      entertainment_zone: ["Murugan Cinemas RGB 4K", "Thangal Park", "Korattur public Park", "Rakki Cinemas"],
+      it_parks: ["Ambit IT Park"],
+      entertainment_zone: [
+        "Murugan Cinemas RGB 4K",
+        "Thangal Park",
+        "Korattur public Park",
+        "Rakki Cinemas",
+      ],
       location_highlights_image: RMSereneVista,
       hospitals_image: hospitalFairmont,
       educational_institutions_image: educationalFairmont,
@@ -1829,10 +1890,9 @@ const projectsData = [
     description: [
       "PonBhoomi isn’t just a name; it’s a reflection of growth, comfort, and lasting value. Designed for modern families, PonBhoomi Villas offer a perfect blend of style, space, and serenity. With options for 1 & 2 BHK villas, duplex homes, and customizable designs, every residence is tailored to suit your lifestyle and aspirations. Each villa combines elegant architecture with superior construction quality, ensuring both comfort and long-term value.",
       "Ideally located near Pattabiram TIDEL Park (Sevvapet) along the highway, PonBhoomi provides the advantage of excellent connectivity and urban convenience while retaining the calm of a private residential community. The neighbourhood is surrounded by reputed schools, hospitals, shopping centres, and entertainment hubs, making daily life effortless and fulfilling.",
-      
     ],
     banner_images: [GpHomesPonbhoomi],
-    images: [floorPlan2,floorPlan7,floorPlan8],
+    images: [floorPlan2, floorPlan7, floorPlan8],
     facilities: [
       // ["Parking", "flaticon-car"],
       // ["Painting", "flaticon-wifi"],
@@ -1856,12 +1916,11 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
-      
-     
+      ["Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
+
       // ["Ready to Construct", "flaticon-car"],
       // ["Portable Ground water", "flaticon-car"],
       // ["Street Light", "flaticon-car"],
@@ -1925,14 +1984,14 @@ const projectsData = [
     project_status: "Ongoing Project",
     slug: "gp-ponbhoomi-villa",
   },
-    {
-  id: 21,
+  {
+    id: 21,
     location: "Plots in Pattabiram-ORR",
     name: "GP Cressida Park",
     description: [
       "Cressida Park is a thoughtfully crafted residential plotted development located at Annambedu, near Pattabiram, offering a perfect blend of serene living and seamless city connectivity. Designed to create a peaceful environment, it brings you closer to nature while keeping you well-connected to key urban hubs.",
       "Ideal for families, working professionals, and investors, Cressida Park is surrounded by well-established schools, colleges, hospitals, supermarkets, and essential conveniences. Every detail is planned to ensure a secure, comfortable, and well-connected lifestyle for modern living.",
-      "Whether you are looking to build your dream home or make a smart investment, Cressida Park presents a valuable opportunity in a rapidly developing neighborhood—where everyday convenience meets long-term growth potential."
+      "Whether you are looking to build your dream home or make a smart investment, Cressida Park presents a valuable opportunity in a rapidly developing neighborhood—where everyday convenience meets long-term growth potential.",
     ],
     banner_images: [GPCressidaPark],
     image: listimg4,
@@ -1959,10 +2018,10 @@ const projectsData = [
       ["24 / 7 Security Service", "bi bi-shield-shaded  "],
       ["Ready To Construct", "bi bi-building-fill-lock"],
       ["EB Provided", "bi bi-lightning"],
-      ["Fully Compounded Wall", "bi bi-bricks" ],
+      ["Fully Compounded Wall", "bi bi-bricks"],
       ["Portable Ground Water", "bi bi-droplet-fill"],
-      ["Street Lights","bi bi-sun-fill"],
-      ["Avenue Trees","bi bi-tree-fill"],
+      ["Street Lights", "bi bi-sun-fill"],
+      ["Avenue Trees", "bi bi-tree-fill"],
     ],
     location_map_title: "Location Map",
     location_map_desc:
@@ -1987,19 +2046,22 @@ const projectsData = [
         "Sri Raghavendra Hospital",
         "New Century Hospital",
         "Apple Plus Hospital",
-        "Psychiatry Life Skills"
+        "Psychiatry Life Skills",
       ],
       educational_institutions: [
-         
         "Annai Violet arts and science College",
-        
+
         "Aakash Institute",
-        
-        "Soka Ikeda arts and science College for Women",  
-        
+
+        "Soka Ikeda arts and science College for Women",
       ],
-      it_parks: [ "Ambit IT Park"],
-      entertainment_zone: ["Murugan Cinemas RGB 4K", "Thangal Park", "Korattur public Park", "Rakki Cinemas"],
+      it_parks: ["Ambit IT Park"],
+      entertainment_zone: [
+        "Murugan Cinemas RGB 4K",
+        "Thangal Park",
+        "Korattur public Park",
+        "Rakki Cinemas",
+      ],
       location_highlights_image: CressidaParkmap,
       hospitals_image: hospitalFairmont,
       educational_institutions_image: educationalFairmont,
@@ -2009,14 +2071,14 @@ const projectsData = [
     project_status: "Ongoing Project",
     slug: "gp-cressida-park",
   },
-      {
-  id: 21,
+  {
+    id: 21,
     location: "Plots in Tiruninravur",
     name: "AISHWARYA GARDEN ll",
     description: [
       "Welcome to GP Aishwarya Garden, where peaceful surroundings meet modern living. Thoughtfully planned amidst lush greenery, this premium plotted development offers the perfect setting to build the home you've always dreamed of. Wake up every day to a calm, refreshing environment while staying connected to the city's essentials.",
       "Designed with comfort and convenience in mind, GP Aishwarya Garden features premium villa plots within a secure gated community. Wide internal roads, landscaped open spaces, and quality infrastructure create an ideal lifestyle for families seeking a perfect balance of nature and urban living. ",
-      "Strategically located in Thirunindravur, one of Chennai's fastest-growing residential corridors, the project enjoys excellent connectivity to major roads, educational institutions, healthcare facilities, railway stations, and daily conveniences. Whether you're planning to build your dream home or make a smart investment, GP Aishwarya Garden offers exceptional value and long-term appreciation potential. "
+      "Strategically located in Thirunindravur, one of Chennai's fastest-growing residential corridors, the project enjoys excellent connectivity to major roads, educational institutions, healthcare facilities, railway stations, and daily conveniences. Whether you're planning to build your dream home or make a smart investment, GP Aishwarya Garden offers exceptional value and long-term appreciation potential. ",
     ],
     banner_images: [AISHWARYAGARDEN],
     image: listimg4,
@@ -2038,20 +2100,20 @@ const projectsData = [
     amenities_title: "Amenities",
     amenities_desc:
       "Experience a lifestyle designed for comfort, security, and convenience at GP Homes – Aishwarya Garden. Every amenity is thoughtfully planned to provide a safe, peaceful, and family-friendly living environment. ",
-      amenities: [
-        ["Well-Laid Internal Black Top Roads", "bi bi-signpost-2-fill"],
-        ["Grand Gated Entrance", "bi bi-door-open-fill"],
-        ["24×7 Security", "bi bi-shield-shaded"],
-        ["CCTV Surveillance", "bi bi-camera-video-fill"],
-        ["Compound Wall", "bi bi-bricks"],
-        ["Solar Street Lights", "bi bi-lightbulb-fill"],
-        ["24×7 Water Supply", "bi bi-droplet-fill"],
-        ["Children's Play Area", "bi bi-emoji-smile-fill"],
-        ["Landscaped Garden & Green Spaces", "bi bi-tree-fill"],
-        ["Senior Citizen Seating Area", "bi bi-person-fill"],
-        ["Storm Water Drainage", "bi bi-water"],
-        ["Ready-to-Construct Villa Plots", "bi bi-house-check-fill"],
-      ],
+    amenities: [
+      ["Well-Laid Internal Black Top Roads", "bi bi-signpost-2-fill"],
+      ["Grand Gated Entrance", "bi bi-door-open-fill"],
+      ["24×7 Security", "bi bi-shield-shaded"],
+      ["CCTV Surveillance", "bi bi-camera-video-fill"],
+      ["Compound Wall", "bi bi-bricks"],
+      ["Solar Street Lights", "bi bi-lightbulb-fill"],
+      ["24×7 Water Supply", "bi bi-droplet-fill"],
+      ["Children's Play Area", "bi bi-emoji-smile-fill"],
+      ["Landscaped Garden & Green Spaces", "bi bi-tree-fill"],
+      ["Senior Citizen Seating Area", "bi bi-person-fill"],
+      ["Storm Water Drainage", "bi bi-water"],
+      ["Ready-to-Construct Villa Plots", "bi bi-house-check-fill"],
+    ],
     location_map_title: "Location Map",
     location_map_desc:
       "Embrace a lifestyle where ease meets excellence. Step into a world where healthcare facilities, banking services, dining options, leisure activities, retail therapy, and all daily necessities are just moments away. Experience this remarkable convenience firsthand.",
@@ -2068,18 +2130,11 @@ const projectsData = [
         "Lakshmi Theatre",
         "Thiruninravur Bus Stop",
         "Thiruninravur IOB Bank",
-        "Dharma Raja Kovil"
+        "Dharma Raja Kovil",
       ],
-      hospitals: [
-        "CSI Hospital",
-        "Thirunindravur"
-      ],
-      educational_institutions: [
-         
-        "Saveetha Engineering College",  
-        
-      ],
-      it_parks: [ "Pattabiram TIDEL Park"],
+      hospitals: ["CSI Hospital", "Thirunindravur"],
+      educational_institutions: ["Saveetha Engineering College"],
+      it_parks: ["Pattabiram TIDEL Park"],
       // entertainment_zone: ["Murugan Cinemas RGB 4K", "Thangal Park", "Korattur public Park", "Rakki Cinemas"],
       location_highlights_image: AISHWARYAMap,
       hospitals_image: hospitalFairmont,
@@ -2090,7 +2145,224 @@ const projectsData = [
     project_status: "Ongoing Project",
     slug: "aishwarya-garden-ll",
   },
-];
+  {
+    id: 10,
+    location: "Mel Ayanambakkam – Athipet1",
+    name: "GP Elaris Grand Apartment",
+    description: [
+      "Own your dream home at GP Athipet Apartment starting at just ₹7499/- per sq.ft!",
+      "GP Elaris Grand Apartment is a premium gated community with 300+ apartments, featuring 8 residential blocks with essential amenities. The project is thoughtfully planned with a Stilt + 5 Floors structure and offers spacious 2BHK homes ranging from 852 sq.ft to 955 sq.ft. Located at Mel Ayanambakkam – Athipet, the project comes under Greater Chennai Corporation limits.",
+    ],
+    banner_image: GpElarisGrandBanner,
+    image: listimg2,
+    facilities: [
+      ["Parking", parkingIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
+    ],
+    specifications_title: "Specifications",
+    specifications_desc:
+      "At GP Homes, we are incredibly passionate about the convergence of modern design, affordability, and the environment. This is why use only the highest-quality, top-of-the-line fittings and fixtures that provide you and your family the comfort that you desire and deserve.",
 
+    amenities_title: "Amenities",
+    amenities_desc:
+      "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
+
+    amenities: [
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
+    ],
+
+    location_map_title: "Location Map",
+    location_map_desc:
+      "Situated next to Mogappair West Extension, GP Elaris Grand Apartment offers excellent connectivity and future growth potential. Visit our project site and experience the location, connectivity, and peaceful community living firsthand.",
+
+    locations: {
+      titles: [
+        "Location Highlights",
+        "Hospitals",
+        "Educational Institutions",
+        "IT Parks",
+        "Entertainment Zone",
+      ],
+
+      location_highlights: [
+        "Mogappair West Extension – Nearby",
+        "Mel Ayanambakkam – Athipet",
+        "Under Greater Chennai Corporation limits",
+      ],
+
+      hospitals: [],
+
+      educational_institutions: [],
+
+      it_parks: [],
+
+      entertainment_zone: [],
+    },
+
+    project_status: "Early Bird Launch Offer",
+    slug: "gp-elaris-grand",
+
+    projects_types: [
+      {
+        id: 1,
+        type: "2BHK Flats for Sale in Athipet",
+        name: "GP Elaris Grand Apartment",
+        description:
+          "GP Elaris Grand Apartment offers spacious 2BHK homes ranging from 852 sq.ft to 955 sq.ft, thoughtfully planned within a premium gated community with 300+ apartments and 8 residential blocks. The project features a Stilt + 5 Floors structure and is located at Mel Ayanambakkam – Athipet.",
+
+        image: "",
+
+        facilities: [
+          ["Parking", parkingIcon],
+          ["Painting", paintingIcon],
+          ["Toilet", toiletIcon],
+          ["Structure", aptIcon],
+          ["Joineries", joineries],
+          ["Plastering", plastering],
+          ["Electricals", electrical],
+          ["Plumbing", plumbing],
+          ["Water Supply", waterIcon],
+        ],
+
+        project_status: "Early Bird Launch Offer",
+        slug: "gp-elaris-grand-2bhk",
+      },
+    ],
+  },
+  {
+    id: 10,
+    location: "2BHK Flats for Sale in Ayanambakkam",
+    name: "GP Homes Elaris Grand",
+    description: [
+      "Presenting GP Elaris Grand Apartment – an exceptional residential project in the prime locality of Ayanambakkam, offering spacious and thoughtfully designed 2 BHK homes.",
+      "Own your dream home at GP Athipet Apartment starting at just ₹7499/- per sq.ft. The project features a premium gated community with 300+ apartments, 8 residential blocks, a Stilt + 5 Floors structure, and spacious 2BHK homes ranging from 852 sq.ft to 955 sq.ft with UDS - 38%. Located at Mel Ayanambakkam – Athipet, under Greater Chennai Corporation limits, the project is situated next to Mogappair West Extension with excellent connectivity and future growth potential.",
+    ],
+
+    banner_images: [GpElarisGrandBanner],
+
+    // images: [
+    //   ValenciaRubyFloorplan1,
+    //   ValenciaRubyFloorplan2,
+    //   ValenciaRubyFloorplan3,
+    // ],
+
+    facilities: [
+      ["Parking", parkingIcon],
+      ["Painting", paintingIcon],
+      ["Toilet", toiletIcon],
+      ["Structure", aptIcon],
+      ["Joineries", joineries],
+      ["Plastering", plastering],
+      ["Electricals", electrical],
+      ["Plumbing", plumbing],
+      ["Water Supply", waterIcon],
+    ],
+
+    specifications_title: "Specifications",
+
+    specifications_desc:
+      "At GP Homes, we are incredibly passionate about the convergence of modern design, affordability, and the environment. This is why we use only the highest-quality, top-of-the-line fittings and fixtures that provide you and your family the comfort that you desire and deserve.",
+
+    amenities_title: "Amenities",
+
+    amenities_desc:
+      "Please take a closer look at some of the top-notch amenities offered to all of our residents. They are sure to make your life easier and more comfortable.",
+
+    amenities: [
+      ["Koel Power bank", "bi bi-lightning-charge"],
+      ["Automatic lift", "bi bi-box-arrow-in-up"],
+      ["Covered car parking", "bi bi-car-front"],
+      ["CCTV", "bi bi-camera-video-fill"],
+    ],
+
+    location_map_title: "Location Map",
+
+    location_map_desc:
+      "GP Elaris Grand is located at Mel Ayanambakkam – Athipet, next to Mogappair West Extension. The project offers excellent access to schools, colleges, hospitals, IT parks, shopping destinations, entertainment zones, public transport, and major roads.",
+
+    location_directions: "https://maps.app.goo.gl/1vbw4o6a3tmtb9QPA",
+
+    locations: {
+      titles: [
+        "Location Highlights",
+        "Hospitals",
+        "Educational Institutions",
+        "IT Parks",
+        "Entertainment Zone",
+      ],
+
+      location_highlights: [
+        "Mogappair West Extension – Nearby",
+        "Mel Ayanambakkam – Nearby",
+        "Vanagaram – 10mins drive",
+        "200 Feet Bypass Road – 15mins drive",
+        "Koyambedu Junction – 20mins drive",
+        "Nolambur Bus Stand – 1.8kms",
+        "Koyambedu Metro Station – 5.1kms",
+        "Thirumangalam Metro Station – 6.2kms",
+        "Ambattur Railway Station – 6.5kms",
+        "Chennai International Airport – 20.5kms",
+      ],
+
+      hospitals: [
+        "Apollo Speciality Hospitals, Vanagaram – 2kms",
+        "New Life Hospital – 1.4kms",
+        "Sri Balaji Hospital, Mogappair West – 2.2kms",
+        "Madras Medical Mission Hospital – 3.9kms",
+        "Sundaram Medical Foundation – 6.2kms",
+        "Sri Ramachandra Institute of Higher Education and Research – 8kms",
+        "Frontier Lifeline Hospital – 5kms",
+      ],
+
+      educational_institutions: [
+        "Sri Chaitanya School, Ayanambakkam – 1km",
+        "Velammal Vidyalaya, Ayanambakkam – 1.3kms",
+        "The Schram Academy, Ayanambakkam – 1.3kms",
+        "DAV Boys & Girls School, Mogappair – 3.1kms",
+        "MGR Adarsh Senior Secondary School – 2kms",
+        "Dr. MGR Educational and Research Institute – 4kms",
+        "S.A. Engineering College – 8.1kms",
+      ],
+
+      it_parks: [
+        "Nucleus IT Park – 1.8kms",
+        "Ambit IT Park – 1.8kms",
+        "India Land IT Park – 3.5kms",
+        "Prince Info Park – 3.8kms",
+        "TCS – 4.5kms",
+        "Kosmo One IT Park – Nearby Ambattur Industrial Estate",
+        "DLF IT Park – 10kms",
+      ],
+
+      entertainment_zone: [
+        "AGS Cinemas – 4.2kms",
+        "VR Chennai Mall – 6kms",
+        "Nexus Vijaya Mall – 10.4kms",
+        "Koyambedu Wholesale Market – 6kms",
+        "Decathlon Sports – Nearby",
+      ],
+
+      location_highlights_image: RMValenciaRuby,
+      hospitals_image: hospitals1,
+      educational_institutions_image: educationalInstitutions1,
+      it_parks_image: itPark3,
+      entertainment_zone_image: entertainmentZone3,
+    },
+
+    project_status: "Early Bird Launch Offer",
+
+    slug: "gp-elaris-grand-2bhk",
+  },
+];
 
 export default projectsData;

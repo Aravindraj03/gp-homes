@@ -10,7 +10,7 @@ import room5 from "../../assets/img/rooms/valencia-ruby.jpg";
 import room7 from "../../assets/img/rooms/Garden-Bay-01.jpg";
 import room8 from "../../assets/img/rooms/Ethuliya.jpg";
 import room9 from "../../assets/img/rooms/Namanai.jpg";
-import room10 from "../../assets/img/rooms/Pon-bhoomi.jpg";
+import room10 from "../../assets/img/rooms/Pon-bhoomi.png";
 import room11 from "../../assets/img/rooms/Mid-way.jpg";
 import room12 from "../../assets/img/rooms/VijayaLakshmi-Nagar.jpg";
 import room13 from "../../assets/img/rooms/fairmont.jpg";

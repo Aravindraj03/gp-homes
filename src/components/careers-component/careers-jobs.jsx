@@ -25,6 +25,29 @@ const CareersJobs = () => {
       twoWheeler: true,
       // link: "contact",
     },
+    {
+      title: "Team lead (Per Sales Female only)",
+      type: "Employee",
+      experience: "3+ Years of experience",
+      employmentType: "Full-time",
+      // twoWheeler: true,
+      // link: "contact",
+    },
+    {
+      title: "Sales manager (Male candidate)",
+      type: "Employee",
+      experience: "5+ Years of experience in real estate",
+      employmentType: "Full-time",
+      // link: "contact",
+    },
+    {
+      title: "Channel partner manager",
+      type: "Employee",
+      experience: "3+ years in CP Management\n5+ years in Real estate",
+      employmentType: "Full-time",
+      // link: "contact",
+    },
+
   ];
 
   return (

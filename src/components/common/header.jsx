@@ -34,7 +34,10 @@ function Header() {
   }, [location]);
 
 
-  // Property data
+  /* =========================================
+     PROPERTY DATA
+  ========================================= */
+
   const propertyMenus = {
     ongoing: {
       title: "ONGOING",
@@ -42,22 +45,30 @@ function Header() {
       left: [
         {
           name: "GP Pon Bhoomi",
-          location: "Pattabiram",
+          location: "Sevappet",
+          type: "Plots",
+          link: "/plots-chennai/gp-ponBhoomi",
         },
         {
           name: "GP Cressida Park",
           location: "Pattabiram-ORR",
+          type: "Plots",
+          link: "/plots-chennai/gp-cressida-park",
         },
       ],
 
       right: [
         {
-          name: "AISHWARYA GARDEN ll",
+          name: "AISHWARYA GARDEN II",
           location: "Tiruninravur-Pakkam",
+          type: "Plots",
+          link: "/plots-chennai/aishwarya-garden-ll",
         },
         {
-          name: "Ponbhoomi",
-          location: "Pattabiram",
+          name: "GP ELARIS GRAND",
+          location: "Athipet",
+          type: "Apartments",
+          link: "/apartments-chennai/gp-elaris-grand",
         },
       ],
     },
@@ -69,19 +80,27 @@ function Header() {
       left: [
         {
           name: "Siruvapuri",
-          location: "Near Amman temple",
+          location: "Near Amman Temple",
+          type: "Plots",
+          link: null,
         },
         {
           name: "New Project",
           location: "Thirumudivakkam",
+          type: "Plots",
+          link: null,
         },
         {
           name: "New Project 2",
           location: "Mambakkam",
+          type: "Plots",
+          link: null,
         },
         {
           name: "Keelameni",
           location: "ON GNT Road",
+          type: "Plots",
+          link: null,
         },
       ],
 
@@ -89,18 +108,26 @@ function Header() {
         {
           name: "Thalakancheri",
           location: "Thiruvallur",
+          type: "Plots",
+          link: null,
         },
         {
           name: "SEYYON GRAND CITY",
           location: "Nr.Siruvapuri",
+          type: "Plots",
+          link: null,
         },
         {
           name: "PETAL WING MEADOWS",
           location: "OMR-Siruthavur",
+          type: "Plots",
+          link: null,
         },
         {
           name: "New Launch",
           location: "Athipet",
+          type: "Apartments",
+          link: null,
         },
       ],
     },
@@ -113,42 +140,62 @@ function Header() {
         {
           name: "GP Midway Avenue",
           location: "Athipet",
+          type: "Plots",
+          link: "/plots-chennai/gp-midway-avenue",
         },
         {
           name: "GP Garden Bay",
           location: "Kolathur",
+          type: "Plots",
+          link: "/plots-chennai/gp-garden-bay",
         },
         {
           name: "GP Ethulia",
           location: "Mogappair",
+          type: "Plots",
+          link: "/plots-chennai/gp-ethulia",
         },
         {
           name: "GP Nanmanai",
           location: "Redhills",
+          type: "Plots",
+          link: "/plots-chennai/gp-nanmanai",
         },
         {
           name: "GP Vijayalakshmi",
           location: "Thiruvallur",
+          type: "Plots",
+          link: "/plots-chennai/gp-vijayalakshmi",
         },
         {
           name: "GP Serene Vista",
           location: "Ambattur",
+          type: "Plots",
+          link: "/plots-chennai/gp-serenevista",
         },
         {
           name: "GP Fairmont",
           location: "Parivakkam",
+          type: "Plots",
+          link: "/plots-chennai/gp-fairmont",
         },
         {
           name: "Cherry Blossom I",
           location: "AYANAMBAKKAM",
+          type: "Apartments",
+          link: null,
         },
         {
           name: "Cherry Blossom II",
           location: "AYANAMBAKKAM",
+          type: "Apartments",
+          link: null,
         },
         {
           name: "Cherry Blossom II",
           location: "AYANAMBAKKAM",
+          type: "Apartments",
+          link: null,
         },
       ],
 
@@ -156,52 +203,65 @@ function Header() {
         {
           name: "GP Blazing Star",
           location: "Porur",
+          type: "Apartments",
+          link: "/apartments-chennai/gp-blazing-star",
         },
         {
           name: "GP Breeze Way",
           location: "Menambedu",
+          type: "Apartments",
+          link: "/apartments-chennai/gp-breeze-way",
         },
         {
           name: "GP Homes Elanza",
           location: "Madhanadhapuram",
+          type: "Apartments",
+          link: "/apartments-chennai/gp-homes-elanza",
         },
         {
           name: "GP Valencia Emerald",
           location: "Ayanambakkam",
+          type: "Apartments",
+          link: "/apartments-chennai/gp-valencia-emerald",
         },
         {
           name: "GP Valencia Ruby",
           location: "Ayanambakkam",
+          type: "Apartments",
+          link: "/apartments-chennai/gp-valencia-ruby",
         },
         {
-          name: "Blossom icf colony",
+          name: "Blossom ICF Colony",
           location: "CHENNAI",
+          type: "Apartments",
+          link: null,
         },
         {
           name: "Blue Bell",
           location: "AYANAMBAKKAM",
+          type: "Apartments",
+          link: null,
         },
         {
           name: "Blue Bell Phase II",
           location: "AYANAMBAKKAM",
+          type: "Apartments",
+          link: null,
         },
         {
           name: "Caspia (Mohan Gardens)",
           location: "KORATTUR",
+          type: "Apartments",
+          link: null,
         },
       ],
     },
   };
 
 
-  // Existing property URL function
-  const getPropertyUrl = (propertyName) => {
-    return `/projects/${propertyName
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[^a-z0-9-]/g, "")}`;
-  };
-
+  /* =========================================
+     MENU FUNCTIONS
+  ========================================= */
 
   const handleMenuClick = (menu) => {
     if (window.innerWidth <= 991) {
@@ -218,8 +278,85 @@ function Header() {
   };
 
 
+  /* =========================================
+     PROPERTY ITEM
+  ========================================= */
+
+  const renderPropertyItem = (property, index) => {
+
+    const propertyContent = (
+      <div className="property-item-content">
+
+        <div className="property-name-location">
+
+          <strong>
+            {property.name}
+          </strong>
+
+          <span>
+            {" - "}
+            {property.location}
+          </span>
+
+        </div>
+
+
+        {/* PROPERTY TYPE TAG */}
+
+        <span className="property-type-tag">
+          {property.type}
+        </span>
+
+      </div>
+    );
+
+
+    /* =========================================
+       IF LINK EXISTS
+       MAKE PROJECT CLICKABLE
+    ========================================= */
+
+    if (property.link) {
+
+      return (
+        <Link
+          key={index}
+          to={property.link}
+          className="property-item property-item-link"
+          onClick={() => {
+            setActiveMenu(null);
+            setMobileMenuOpen(false);
+          }}
+        >
+          {propertyContent}
+        </Link>
+      );
+
+    }
+
+
+    /* =========================================
+       IF NO LINK
+       DO NOT REDIRECT
+    ========================================= */
+
+    return (
+      <div
+        key={index}
+        className="property-item property-item-no-link"
+      >
+        {propertyContent}
+      </div>
+    );
+  };
+
+
   return (
     <Fragment>
+
+      {/* =========================================
+          NAVBAR
+      ========================================= */}
 
       <Navbar
         expand="lg"
@@ -230,7 +367,10 @@ function Header() {
 
         <Container>
 
-          {/* LOGO */}
+          {/* =====================================
+              LOGO
+          ===================================== */}
+
           <Navbar.Brand
             as={Link}
             to="/"
@@ -244,7 +384,10 @@ function Header() {
           </Navbar.Brand>
 
 
-          {/* MOBILE TOGGLE */}
+          {/* =====================================
+              MOBILE TOGGLE
+          ===================================== */}
+
           <Navbar.Toggle
             aria-controls="navbar"
             onClick={() =>
@@ -253,7 +396,10 @@ function Header() {
           />
 
 
-          {/* MENU */}
+          {/* =====================================
+              NAVIGATION
+          ===================================== */}
+
           <Navbar.Collapse
             id="navbar"
             className={`custom-collapse ${
@@ -265,7 +411,11 @@ function Header() {
 
             <Nav className="gp-main-nav">
 
-              {/* ABOUT US */}
+
+              {/* =================================
+                  ABOUT US
+              ================================= */}
+
               <Nav.Link
                 as={Link}
                 to="/about-us"
@@ -278,6 +428,7 @@ function Header() {
               {/* =================================
                   MOBILE ONLY - APARTMENTS
               ================================= */}
+
               <Nav.Link
                 as={Link}
                 to="/apartments-chennai"
@@ -291,6 +442,7 @@ function Header() {
               {/* =================================
                   MOBILE ONLY - PLOTS
               ================================= */}
+
               <Nav.Link
                 as={Link}
                 to="/plots-chennai"
@@ -302,108 +454,141 @@ function Header() {
 
 
               {/* =================================
-                  DESKTOP - ONGOING
+                  ONGOING
               ================================= */}
+
               <div
                 className="property-menu-wrapper desktop-property-menu"
+
                 onMouseEnter={() => {
+
                   if (window.innerWidth > 991) {
                     setActiveMenu("ongoing");
                   }
+
                 }}
+
                 onMouseLeave={() => {
+
                   if (window.innerWidth > 991) {
                     setActiveMenu(null);
                   }
+
                 }}
               >
 
                 <button
                   type="button"
                   className="property-menu-title"
+
                   onClick={() =>
                     handleMenuClick("ongoing")
                   }
                 >
+
                   ONGOING
 
                   <span className="menu-icon">
                     ☰
                   </span>
+
                 </button>
 
               </div>
 
 
               {/* =================================
-                  DESKTOP - UPCOMING
+                  UPCOMING
               ================================= */}
+
               <div
                 className="property-menu-wrapper desktop-property-menu"
+
                 onMouseEnter={() => {
+
                   if (window.innerWidth > 991) {
                     setActiveMenu("upcoming");
                   }
+
                 }}
+
                 onMouseLeave={() => {
+
                   if (window.innerWidth > 991) {
                     setActiveMenu(null);
                   }
+
                 }}
               >
 
                 <button
                   type="button"
                   className="property-menu-title"
+
                   onClick={() =>
                     handleMenuClick("upcoming")
                   }
                 >
+
                   UPCOMING
 
                   <span className="menu-icon">
                     ☰
                   </span>
+
                 </button>
 
               </div>
 
 
               {/* =================================
-                  DESKTOP - COMPLETED
+                  COMPLETED
               ================================= */}
+
               <div
                 className="property-menu-wrapper desktop-property-menu"
+
                 onMouseEnter={() => {
+
                   if (window.innerWidth > 991) {
                     setActiveMenu("completed");
                   }
+
                 }}
+
                 onMouseLeave={() => {
+
                   if (window.innerWidth > 991) {
                     setActiveMenu(null);
                   }
+
                 }}
               >
 
                 <button
                   type="button"
                   className="property-menu-title"
+
                   onClick={() =>
                     handleMenuClick("completed")
                   }
                 >
+
                   COMPLETED
 
                   <span className="menu-icon">
                     ☰
                   </span>
+
                 </button>
 
               </div>
 
 
-              {/* CONTACT */}
+              {/* =================================
+                  CONTACT
+              ================================= */}
+
               <Nav.Link
                 as={Link}
                 to="/contact-us"
@@ -413,7 +598,10 @@ function Header() {
               </Nav.Link>
 
 
-              {/* CHANNEL PARTNER */}
+              {/* =================================
+                  CHANNEL PARTNER
+              ================================= */}
+
               <Nav.Link
                 as={Link}
                 to="/channelPartner"
@@ -434,84 +622,62 @@ function Header() {
         ========================================= */}
 
         {activeMenu && (
+
           <div
             className="property-mega-menu"
+
             onMouseEnter={() => {
+
               if (window.innerWidth > 991) {
                 setActiveMenu(activeMenu);
               }
+
             }}
+
             onMouseLeave={() => {
+
               if (window.innerWidth > 991) {
                 setActiveMenu(null);
               }
+
             }}
           >
 
             <div className="mega-menu-inner">
 
-              {/* PROPERTY LIST */}
+
+              {/* =====================================
+                  PROPERTY LIST
+              ===================================== */}
+
               <div className="property-list">
 
-                {/* LEFT */}
+
+                {/* =================================
+                    LEFT COLUMN
+                ================================= */}
+
                 <div className="property-column">
 
-                  {propertyMenus[activeMenu].left.map(
-                    (property, index) => (
-
-                      <p
-                        key={index}
-                        className="property-item"
-                        onClick={() => {
-                          setActiveMenu(null);
-                          setMobileMenuOpen(false);
-                        }}
-                      >
-
-                        <strong>
-                          {property.name}
-                        </strong>
-
-                        <span>
-                          {" - "}
-                          {property.location}
-                        </span>
-
-                      </p>
-
-                    )
+                  {propertyMenus[
+                    activeMenu
+                  ].left.map(
+                    renderPropertyItem
                   )}
 
                 </div>
 
 
-                {/* RIGHT */}
+                {/* =================================
+                    RIGHT COLUMN
+                ================================= */}
+
                 <div className="property-column">
 
-                  {propertyMenus[activeMenu].right.map(
-                    (property, index) => (
-
-                      <p
-                        key={index}
-                        className="property-item"
-                        onClick={() => {
-                          setActiveMenu(null);
-                          setMobileMenuOpen(false);
-                        }}
-                      >
-
-                        <strong>
-                          {property.name}
-                        </strong>
-
-                        <span>
-                          {" - "}
-                          {property.location}
-                        </span>
-
-                      </p>
-
-                    )
+                  {propertyMenus[
+                    activeMenu
+                  ].right.map(
+                    renderPropertyItem
                   )}
 
                 </div>
@@ -519,13 +685,19 @@ function Header() {
               </div>
 
 
-              {/* CATEGORY BUTTONS */}
+              {/* =====================================
+                  CATEGORY BUTTONS
+              ===================================== */}
+
               <div className="property-category-buttons">
 
+
                 {/* PLOTS */}
+
                 <Link
                   to={`/plots-${activeMenu}`}
                   className="category-button"
+
                   onClick={() => {
                     setActiveMenu(null);
                     setMobileMenuOpen(false);
@@ -533,11 +705,14 @@ function Header() {
                 >
                   Plots
                 </Link>
-                
+
+
                 {/* APARTMENTS */}
+
                 <Link
                   to={`/apartments-${activeMenu}`}
                   className="category-button"
+
                   onClick={() => {
                     setActiveMenu(null);
                     setMobileMenuOpen(false);
@@ -548,9 +723,15 @@ function Header() {
 
 
                 {/* VILLAS */}
+
                 <Link
-                  to={`/villas-${activeMenu}`}
+                  to={
+                    activeMenu === "ongoing"
+                      ? "/villas-ongoing"
+                      : `/villas-${activeMenu}`
+                  }
                   className="category-button"
+
                   onClick={() => {
                     setActiveMenu(null);
                     setMobileMenuOpen(false);
@@ -564,6 +745,7 @@ function Header() {
             </div>
 
           </div>
+
         )}
 
       </Navbar>

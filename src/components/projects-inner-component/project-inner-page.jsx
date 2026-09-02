@@ -34,7 +34,6 @@ function ProjectInnerPage() {
       });
   }, [slug]); // ✅ Add `slug` to dependency array just in case route changes
 
-  console.log(project, "project123----------------------");
     
   if (!project) {
     return <h2>Project not found</h2>;

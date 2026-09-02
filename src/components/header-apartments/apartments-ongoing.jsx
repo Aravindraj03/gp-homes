@@ -6,15 +6,21 @@ import { Link } from "react-router-dom"; // Make sure you're using react-router
 import AparmentBanner from "../apartments-component/apartment-banner";
 
 import ponbhoomiVilla from "../../assets/img/rooms/ponbhoomiVilla.jpg";
-
+import GpElarisGrand from "../../assets/img/rooms/GpElarisGrand.jpeg";
+import bhkIcon from "../../assets/img/icons/BHK.png";
 import aptIcon from "../../assets/img/icons/Apartment.png";
+import aptIconWhite from "../../assets/img/icons/Apartments_White.png";
+import plotIcon from "../../assets/img/icons/Plot-White.png";
+import sqft from "../../assets/img/icons/Sq.Fi.png";
+import stiltFloor from "../../assets/img/icons/Stilt+Floor.png";
 import roadIcon from "../../assets/img/icons/Road.png";
 import cctvIcon from "../../assets/img/icons/CCTV.png";
-import ebIcon from "../../assets/img/icons/EB-Connection.png";
+import ebIcon from "../../assets/img/icons/EB-Connection.png"
 import wallIcon from "../../assets/img/icons/compund-wall.png";
 import readyToConstruct from "../../assets/img/icons/Ready-to-cinstruct.png";
 import security from "../../assets/img/icons/24-7-securiry.png";
 import groundwater from "../../assets/img/icons/Ground-water.png";
+import roadICon from "../../assets/img/icons/Road.png";
 import compoundWall from "../../assets/img/icons/compund-wall.png";
 import solarLight from "../../assets/img/icons/Solar-lights.png";
 import archIcon from "../../assets/img/icons/Arch.png";
@@ -22,6 +28,10 @@ import bgimage from "../../assets/img/slider/apartment-1.png";
 
 const featureIcons = {
   Units: aptIcon,
+  BHK: bhkIcon,
+  "Sq. ft.": sqft,
+  Floors: stiltFloor,
+  Blocks: stiltFloor,
   Black: roadIcon,
   CCTV: cctvIcon,
   EB: ebIcon,
@@ -52,18 +62,30 @@ const getFeatureWithIcons = (feature) => {
 
 // ONLY APARTMENTS - ONGOING PROJECTS
 const roomsData = [
+  // {
+  //   id: 15,
+  //   category: "Apartments-Ongoing",
+  //   location: "Pattabiram",
+  //   title: "Ponbhoomi",
+  //   image: ponbhoomiVilla,
+  //   description:
+  //     "Welcome to Pon Bhoomi by GP Homes – a serene residential villa built with superior quality and thoughtful planning.",
+  //   project_status: "Ongoing Project",
+  //   features: ["Black top roads, 24/7 Security, Potable ground water, CCTV"],
+  //   slug: "gp-ponbhoomi-villa",
+  // },
   {
-    id: 15,
-    category: "Apartments-Ongoing",
-    location: "Pattabiram",
-    title: "Ponbhoomi",
-    image: ponbhoomiVilla,
-    description:
-      "Welcome to Pon Bhoomi by GP Homes – a serene residential villa built with superior quality and thoughtful planning.",
-    project_status: "Ongoing Project",
-    features: ["Black top roads, 24/7 Security, Potable ground water, CCTV"],
-    slug: "gp-ponbhoomi-villa",
-  },
+  id: 1,
+  category: "Apartments-Ongoing",
+  location: "Athipet",
+  title: "GP ELARIS GRAND",
+  image: GpElarisGrand,
+  description:
+    "Own your dream home at GP Athipet Apartment starting at just ₹7499/- per sq.ft!",
+  project_status: "Ongoing Project",
+  features: ["Units 300+, BHK 2, Sq. ft. 852 - 955, Floors Stilt + 5"],
+  slug: "gp-elaris-grand",
+},
 ];
 
 function ApartmentOngoing() {
@@ -190,7 +212,7 @@ function ApartmentOngoing() {
                         {/* DETAILS BUTTON */}
                         <Link
                           className="btn-form1-submit text-center"
-                          to={`/villas-chennai/${room.slug}`}
+                          to={`/apartments-chennai/${room.slug}`}
                         >
                           Details
                         </Link>

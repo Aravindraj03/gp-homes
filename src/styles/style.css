@@ -2296,7 +2296,7 @@ hr {
     font-size: 1rem;
   }
   .apartments-page .section-title, .plots-page .section-title, .about .section-title{
-    font-size: 30px;
+    font-size: 25px;
   }
   .apartments-page h2, .plots-page h2, .about h2{
     font-size: 27px;
@@ -8173,6 +8173,8 @@ textarea.form-control {
 /* View Location Button */
 .location-btn-wrapper {
   margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .view-location-btn {
@@ -8184,7 +8186,7 @@ textarea.form-control {
   padding: 13px 20px;
   border: none;
   border-radius: 50px;
-  background: #0d6efd;
+  background: #f44336f0;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -8195,7 +8197,7 @@ textarea.form-control {
 }
 
 .view-location-btn:hover {
-  background: #0056d6;
+  background: #f44336f0;
   box-shadow: 0 8px 20px rgba(13, 110, 253, 0.30);
 }
 
@@ -8274,4 +8276,65 @@ textarea.form-control {
     height: 25px;
     font-size: 11px;
   }
+}
+
+/* =========================================
+   PROJECT NAME + LOCATION + TYPE
+========================================= */
+
+.property-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+}
+
+.property-name-location {
+  flex: 1;
+  min-width: 0;
+}
+
+.property-type-tag {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 82px;
+  padding: 5px 10px;
+
+  background: #f26522e6;
+  color: #111;
+
+  border: 1px dotted #fff;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  border-radius: 50px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .property-item-content {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .property-type-tag {
+    min-width: 75px;
+    padding: 4px 7px;
+    font-size: 10px;
+  }
+
 }
