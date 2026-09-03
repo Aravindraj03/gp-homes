@@ -33,7 +33,6 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location]);
 
-
   /* =========================================
      PROPERTY DATA
   ========================================= */
@@ -72,7 +71,6 @@ function Header() {
         },
       ],
     },
-
 
     upcoming: {
       title: "UPCOMING",
@@ -131,7 +129,6 @@ function Header() {
         },
       ],
     },
-
 
     completed: {
       title: "COMPLETED",
@@ -258,58 +255,42 @@ function Header() {
     },
   };
 
-
   /* =========================================
      MENU FUNCTIONS
   ========================================= */
 
   const handleMenuClick = (menu) => {
     if (window.innerWidth <= 991) {
-      setActiveMenu(
-        activeMenu === menu ? null : menu
-      );
+      setActiveMenu(activeMenu === menu ? null : menu);
     }
   };
-
 
   const closeMobileMenu = () => {
     setActiveMenu(null);
     setMobileMenuOpen(false);
   };
 
-
   /* =========================================
      PROPERTY ITEM
   ========================================= */
 
   const renderPropertyItem = (property, index) => {
-
     const propertyContent = (
       <div className="property-item-content">
-
         <div className="property-name-location">
-
-          <strong>
-            {property.name}
-          </strong>
+          <strong>{property.name}</strong>
 
           <span>
             {" - "}
             {property.location}
           </span>
-
         </div>
-
 
         {/* PROPERTY TYPE TAG */}
 
-        <span className="property-type-tag">
-          {property.type}
-        </span>
-
+        <span className="property-type-tag">{property.type}</span>
       </div>
     );
-
 
     /* =========================================
        IF LINK EXISTS
@@ -317,23 +298,35 @@ function Header() {
     ========================================= */
 
     if (property.link) {
-
       return (
-        <Link
+        // <Link
+        //   key={index}
+        //   to={property.link}
+        //   className="property-item property-item-link"
+        //   onClick={() => {
+        //     setActiveMenu(null);
+        //     setMobileMenuOpen(false);
+        //   }}
+        // >
+        //   {propertyContent}
+        // </Link>
+        <div
           key={index}
-          to={property.link}
           className="property-item property-item-link"
           onClick={() => {
+            if (property.link) {
+              window.location.href = property.link;
+            }
+
             setActiveMenu(null);
             setMobileMenuOpen(false);
           }}
+          style={{ cursor: property.link ? "pointer" : "default" }}
         >
           {propertyContent}
-        </Link>
+        </div>
       );
-
     }
-
 
     /* =========================================
        IF NO LINK
@@ -341,48 +334,30 @@ function Header() {
     ========================================= */
 
     return (
-      <div
-        key={index}
-        className="property-item property-item-no-link"
-      >
+      <div key={index} className="property-item property-item-no-link">
         {propertyContent}
       </div>
     );
   };
 
-
   return (
     <Fragment>
-
       {/* =========================================
           NAVBAR
       ========================================= */}
 
       <Navbar
         expand="lg"
-        className={`gp-navbar ${
-          navScroll ? "nav-scroll" : ""
-        }`}
+        className={`gp-navbar ${navScroll ? "nav-scroll" : ""}`}
       >
-
         <Container>
-
           {/* =====================================
               LOGO
           ===================================== */}
 
-          <Navbar.Brand
-            as={Link}
-            to="/"
-            className="gp-logo"
-          >
-            <img
-              src={logo2}
-              alt="GP Homes"
-              className="logo-img"
-            />
+          <Navbar.Brand as={Link} to="/" className="gp-logo">
+            <img src={logo2} alt="GP Homes" className="logo-img" />
           </Navbar.Brand>
-
 
           {/* =====================================
               MOBILE TOGGLE
@@ -390,11 +365,8 @@ function Header() {
 
           <Navbar.Toggle
             aria-controls="navbar"
-            onClick={() =>
-              setMobileMenuOpen(!mobileMenuOpen)
-            }
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           />
-
 
           {/* =====================================
               NAVIGATION
@@ -402,28 +374,16 @@ function Header() {
 
           <Navbar.Collapse
             id="navbar"
-            className={`custom-collapse ${
-              mobileMenuOpen
-                ? "mobile-open"
-                : ""
-            }`}
+            className={`custom-collapse ${mobileMenuOpen ? "mobile-open" : ""}`}
           >
-
             <Nav className="gp-main-nav">
-
-
               {/* =================================
                   ABOUT US
               ================================= */}
 
-              <Nav.Link
-                as={Link}
-                to="/about-us"
-                onClick={closeMobileMenu}
-              >
+              <Nav.Link as={Link} to="/about-us" onClick={closeMobileMenu}>
                 About Us
               </Nav.Link>
-
 
               {/* =================================
                   MOBILE ONLY - APARTMENTS
@@ -438,7 +398,6 @@ function Header() {
                 Apartments
               </Nav.Link>
 
-
               {/* =================================
                   MOBILE ONLY - PLOTS
               ================================= */}
@@ -452,50 +411,32 @@ function Header() {
                 Plots
               </Nav.Link>
 
-
               {/* =================================
                   ONGOING
               ================================= */}
 
               <div
                 className="property-menu-wrapper desktop-property-menu"
-
                 onMouseEnter={() => {
-
                   if (window.innerWidth > 991) {
                     setActiveMenu("ongoing");
                   }
-
                 }}
-
                 onMouseLeave={() => {
-
                   if (window.innerWidth > 991) {
                     setActiveMenu(null);
                   }
-
                 }}
               >
-
                 <button
                   type="button"
                   className="property-menu-title"
-
-                  onClick={() =>
-                    handleMenuClick("ongoing")
-                  }
+                  onClick={() => handleMenuClick("ongoing")}
                 >
-
                   ONGOING
-
-                  <span className="menu-icon">
-                    ☰
-                  </span>
-
+                  <span className="menu-icon">☰</span>
                 </button>
-
               </div>
-
 
               {/* =================================
                   UPCOMING
@@ -503,43 +444,26 @@ function Header() {
 
               <div
                 className="property-menu-wrapper desktop-property-menu"
-
                 onMouseEnter={() => {
-
                   if (window.innerWidth > 991) {
                     setActiveMenu("upcoming");
                   }
-
                 }}
-
                 onMouseLeave={() => {
-
                   if (window.innerWidth > 991) {
                     setActiveMenu(null);
                   }
-
                 }}
               >
-
                 <button
                   type="button"
                   className="property-menu-title"
-
-                  onClick={() =>
-                    handleMenuClick("upcoming")
-                  }
+                  onClick={() => handleMenuClick("upcoming")}
                 >
-
                   UPCOMING
-
-                  <span className="menu-icon">
-                    ☰
-                  </span>
-
+                  <span className="menu-icon">☰</span>
                 </button>
-
               </div>
-
 
               {/* =================================
                   COMPLETED
@@ -547,56 +471,34 @@ function Header() {
 
               <div
                 className="property-menu-wrapper desktop-property-menu"
-
                 onMouseEnter={() => {
-
                   if (window.innerWidth > 991) {
                     setActiveMenu("completed");
                   }
-
                 }}
-
                 onMouseLeave={() => {
-
                   if (window.innerWidth > 991) {
                     setActiveMenu(null);
                   }
-
                 }}
               >
-
                 <button
                   type="button"
                   className="property-menu-title"
-
-                  onClick={() =>
-                    handleMenuClick("completed")
-                  }
+                  onClick={() => handleMenuClick("completed")}
                 >
-
                   COMPLETED
-
-                  <span className="menu-icon">
-                    ☰
-                  </span>
-
+                  <span className="menu-icon">☰</span>
                 </button>
-
               </div>
-
 
               {/* =================================
                   CONTACT
               ================================= */}
 
-              <Nav.Link
-                as={Link}
-                to="/contact-us"
-                onClick={closeMobileMenu}
-              >
+              <Nav.Link as={Link} to="/contact-us" onClick={closeMobileMenu}>
                 Contact
               </Nav.Link>
-
 
               {/* =================================
                   CHANNEL PARTNER
@@ -609,95 +511,61 @@ function Header() {
               >
                 Channel Partner
               </Nav.Link>
-
             </Nav>
-
           </Navbar.Collapse>
-
         </Container>
-
 
         {/* =========================================
             DESKTOP MEGA MENU
         ========================================= */}
 
         {activeMenu && (
-
           <div
             className="property-mega-menu"
-
             onMouseEnter={() => {
-
               if (window.innerWidth > 991) {
                 setActiveMenu(activeMenu);
               }
-
             }}
-
             onMouseLeave={() => {
-
               if (window.innerWidth > 991) {
                 setActiveMenu(null);
               }
-
             }}
           >
-
             <div className="mega-menu-inner">
-
-
               {/* =====================================
                   PROPERTY LIST
               ===================================== */}
 
               <div className="property-list">
-
-
                 {/* =================================
                     LEFT COLUMN
                 ================================= */}
 
                 <div className="property-column">
-
-                  {propertyMenus[
-                    activeMenu
-                  ].left.map(
-                    renderPropertyItem
-                  )}
-
+                  {propertyMenus[activeMenu].left.map(renderPropertyItem)}
                 </div>
-
 
                 {/* =================================
                     RIGHT COLUMN
                 ================================= */}
 
                 <div className="property-column">
-
-                  {propertyMenus[
-                    activeMenu
-                  ].right.map(
-                    renderPropertyItem
-                  )}
-
+                  {propertyMenus[activeMenu].right.map(renderPropertyItem)}
                 </div>
-
               </div>
-
 
               {/* =====================================
                   CATEGORY BUTTONS
               ===================================== */}
 
               <div className="property-category-buttons">
-
-
                 {/* PLOTS */}
 
                 <Link
                   to={`/plots-${activeMenu}`}
                   className="category-button"
-
                   onClick={() => {
                     setActiveMenu(null);
                     setMobileMenuOpen(false);
@@ -706,13 +574,11 @@ function Header() {
                   Plots
                 </Link>
 
-
                 {/* APARTMENTS */}
 
                 <Link
                   to={`/apartments-${activeMenu}`}
                   className="category-button"
-
                   onClick={() => {
                     setActiveMenu(null);
                     setMobileMenuOpen(false);
@@ -720,7 +586,6 @@ function Header() {
                 >
                   Apartments
                 </Link>
-
 
                 {/* VILLAS */}
 
@@ -731,7 +596,6 @@ function Header() {
                       : `/villas-${activeMenu}`
                   }
                   className="category-button"
-
                   onClick={() => {
                     setActiveMenu(null);
                     setMobileMenuOpen(false);
@@ -739,17 +603,11 @@ function Header() {
                 >
                   Villas
                 </Link>
-
               </div>
-
             </div>
-
           </div>
-
         )}
-
       </Navbar>
-
     </Fragment>
   );
 }
