@@ -943,7 +943,7 @@ const projectsData = [
   projects_types: [
     {
       id: 1,
-      type: "2BHK Flats for Sale in Athipet",
+      type: "2BHK Flats for Sale in Mogappair",
       name: "GP Elaris Grand Apartment",
       description:
         "GP Elaris Grand Apartment offers spacious 2BHK homes ranging from 852 sq.ft to 955 sq.ft, thoughtfully planned within a premium gated community with 300+ apartments and 8 residential blocks. The project features a Stilt + 5 Floors structure and is located at Mel Ayanambakkam – Athipet.",
