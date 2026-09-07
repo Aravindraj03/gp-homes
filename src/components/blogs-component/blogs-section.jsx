@@ -18,6 +18,11 @@ import blogimg15 from "../../assets/img/restaurant/blog11-1.jpg";
 import blogimg16 from "../../assets/img/restaurant/blog12-1.jpg";
 import blogimg17 from "../../assets/img/restaurant/blog13-1.png";
 import blogimg18 from "../../assets/img/restaurant/blog14-1.jpg";
+import blogimg19 from "../../assets/img/restaurant/blog15-1.jpeg";
+import blogimg20 from "../../assets/img/restaurant/blog16-1.jpg";
+import blogimg21 from "../../assets/img/restaurant/blog17-1.jpg";
+import blogimg22 from "../../assets/img/restaurant/blog18-1.png";
+import blogimg23 from "../../assets/img/restaurant/blog19-1.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -174,14 +179,46 @@ const BlogSection = () => {
       desc: "When people buy a home, they do not look at the property alone. They also check what is available around it.",
       slug: "how-do-nearby-schools-hospitals-and-commercial-hubs-affect-property-value",
     },
-    // {
-    //   img: blogimg19,
-    //   date: "10",
-    //   month: "August",
-    //   title: "What Makes a Location Good for Living and Investment?",
-    //   desc: "Choosing the right property is not only about the size of the house, design, or price. The location plays a major role in deciding how comfortable your daily life will be and how much the property may grow in value over time.",
-    //   slug: "what-makes-a-location-good-for-living-and-investment",
-    // },
+    {
+      img: blogimg19,
+      date: "07",
+      month: "September",
+      title: "RERA Chennai: What Every Homebuyer Should Verify Before Booking an Apartment in 2026",
+      desc: "Buying a home is a major financial decision, and checking the property's legal and regulatory details before booking is essential.",
+      slug: "rera-chennai-checklist-before-booking-apartment-2026",
+    },
+    {
+      img: blogimg20,
+      date: "07",
+      month: "September",
+      title: "Gated Community vs Standalone Apartment in Chennai: Which Is Right for You?",
+      desc: "When buying an apartment in Chennai, one of the important decisions is whether to choose a gated community or a standalone apartment building.",
+      slug: "gated-community-vs-standalone-apartment-chennai",
+    },
+    {
+      img: blogimg21,
+      date: "07",
+      month: "September",
+      title: "Villa Plots vs Ready-Built Villas in Chennai: A Complete Buyer's Comparison",
+      desc: "When planning to buy a villa in Chennai, buyers often have to choose between purchasing a villa plot and constructing their own home or buying a ready-built villa.",
+      slug: "villa-plots-vs-ready-built-villas-chennai",
+    },
+        {
+      img: blogimg22,
+      date: "07",
+      month: "September",
+      title: "Home Loan Guide 2026: How to Get the Best Interest Rate for Your Chennai Apartment",
+      desc: "Buying a home is a major financial commitment, and choosing the right home loan can have a significant impact on your monthly EMI and the total amount you pay over the loan period.",
+      slug: "home-loan-guide-best-interest-rate-chennai-2026",
+    },
+    {
+      img: blogimg23,
+      date: "07",
+      month: "September",
+      title: "Top Locations for Real Estate Investment in Chennai in 2026 (and Why)",
+      desc: "Chennai's real estate market continues to expand across established neighbourhoods and emerging growth corridors. For investors, choosing the right location can be just as important as selecting the right property.",
+      slug: "top-locations-real-estate-investment-chennai-2026",
+    },
   ];
 
   const totalPages = Math.ceil(posts.length / postsPerPage);
