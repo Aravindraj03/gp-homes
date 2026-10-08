@@ -48,6 +48,16 @@ import postImg49 from "../../assets/img/restaurant/blog18-2.jpg";
 import postImg50 from "../../assets/img/restaurant/blog18-3.jpg";
 import postImg52 from "../../assets/img/restaurant/blog19-2.jpg";
 import postImg53 from "../../assets/img/restaurant/blog19-3.jpg";
+import postImg54 from "../../assets/img/restaurant/blog20-2.jpeg";
+import postImg55 from "../../assets/img/restaurant/blog20-3.jpeg";
+import postImg56 from "../../assets/img/restaurant/blog21-2.jpeg";
+import postImg57 from "../../assets/img/restaurant/blog21-3.jpeg";
+import postImg58 from "../../assets/img/restaurant/blog22-2.jpeg";
+import postImg59 from "../../assets/img/restaurant/blog22-3.jpeg";
+import postImg60 from "../../assets/img/restaurant/blog23-2.jpeg";
+import postImg61 from "../../assets/img/restaurant/blog23-3.jpeg";
+import postImg62 from "../../assets/img/restaurant/blog24-2.jpeg";
+import postImg63 from "../../assets/img/restaurant/blog24-3.jpeg";
 
 import blogimg12 from "../../assets/img/restaurant/dtcpBlog3.jpeg";
 import blogimg13 from "../../assets/img/restaurant/considerBlog2.jpeg";
@@ -70,6 +80,11 @@ import blogimg42 from "../../assets/img/restaurant/blog16-1.jpg";
 import blogimg45 from "../../assets/img/restaurant/blog17-1.jpg";
 import blogimg48 from "../../assets/img/restaurant/blog18-1.png";
 import blogimg51 from "../../assets/img/restaurant/blog19-1.jpg";
+import blogimg52 from "../../assets/img/restaurant/blog20-1.jpeg";
+import blogimg53 from "../../assets/img/restaurant/blog21-1.jpeg";
+import blogimg54 from "../../assets/img/restaurant/blog22-1.jpeg";
+import blogimg55 from "../../assets/img/restaurant/blog23-1.jpeg";
+import blogimg56 from "../../assets/img/restaurant/blog24-1.jpeg";
 
 const postsData = [
   {
@@ -1776,6 +1791,247 @@ const postsData = [
       "Where should you invest in Chennai in 2026? See the growth drivers behind Sevvapet, Veppampattu and Pakkam, home to GP Homes' Ponbhoomi and Cressida Park.",
     slug: "top-locations-real-estate-investment-chennai-2026",
   },
+  {
+  id: 24,
+  date: "7 October 2026",
+  name: "How to Verify DTCP and CMDA Approval Before Buying a Plot in Chennai",
+  description: [
+    "Buying a plot is a big decision, and your first question should not be about price. It should be whether the layout is legally approved. In Chennai, approval can affect whether you can get a building plan sanctioned, a bank loan and a smooth resale later. Here is how to check it, step by step, before you pay any advance.",
+
+    "<h6>Why layout approval matters</h6>",
+
+    "<p>An approved layout has planned roads, reserved open space and plot boundaries that match the sanctioned plan. An unapproved plot may look cheaper, but you can face problems getting a building permit, electricity and water connections, or a home loan.</p>",
+
+    "<h6>DTCP or CMDA: which one applies?</h6>",
+
+    "<p>Layouts inside the Chennai Metropolitan Area are approved by CMDA, while layouts in other planning areas of Tamil Nadu are approved by DTCP. Ask the seller which authority approved the layout, and note down the approval number and date. This number is what you will verify.</p>",
+
+    "<h6>Step-by-step verification</h6>",
+
+    "<ul><li>Ask for the approved layout plan and match your plot number, dimensions and road width with it.</li><li>Check the approval number with the official CMDA or DTCP website, or at the local office.</li><li>Confirm RERA registration on the TNRERA portal where it applies, and note the RERA number.</li><li>Verify the patta, chitta and Field Measurement Book (FMB) sketch for the survey number.</li><li>Get an Encumbrance Certificate (EC), ideally covering the last 30 years, to confirm there are no pending dues or disputes.</li><li>Study the parent documents to trace ownership back to the original owner.</li></ul>",
+
+    "<h6>Red flags to watch for</h6>",
+
+    "<ul><li>The seller avoids sharing the approval number or layout plan.</li><li>Plot numbers in the brochure do not match the approved plan.</li><li>Roads or park areas are being sold as plots.</li><li>You are pressured to pay a large advance before seeing documents.</li></ul>",
+
+    "<h6>Get a lawyer to review the title</h6>",
+
+    "<p>Even when everything looks fine, have an independent property lawyer review the title documents. The fee is small compared with the value of the plot, and it gives you peace of mind.</p>",
+
+    "<h6>Buy with confidence</h6>",
+
+    "<p>At GP Homes, we believe transparency should come before the sale. You can explore our plot and villa projects and ask our team for the approval details of any layout. Planning your budget next? Read our guide on the hidden costs of buying a plot in Chennai, and find more property guides on our blog page.</p>",
+  ],
+  banner_image: bgimage,
+  blog_image: blogimg52,
+  images: [postImg54, postImg55],
+  conclusion_title: "Buy with Confidence",
+  conclusion_desc: [
+    "<p>Before buying a plot in Chennai, verify the applicable DTCP or CMDA approval, RERA registration where applicable, land records, encumbrance details and ownership documents. Taking these checks seriously can help you avoid legal and financial problems later.</p>",
+
+    "<p>Always compare the approved layout with the plot you are purchasing and consider getting the documents reviewed by an independent property lawyer before paying an advance.</p>",
+  ],
+  meta_title: "Verify DTCP & CMDA Approval Before Buying a Plot in Chennai",
+  meta_description:
+    "Learn how to check DTCP and CMDA approval, RERA status, patta and EC before buying a plot in Chennai. A simple checklist from GP Homes.",
+  slug: "verify-dtcp-cmda-approval-plot-chennai",
+},
+{
+  id: 25,
+  date: "7 October 2026",
+  name: "Hidden Costs of Buying a Plot in Chennai: What to Budget Beyond the Price",
+  description: [
+    "The price quoted for a plot is rarely the full amount you will spend. Many first-time buyers are surprised by the extra costs that come with registration, legal work and getting the land ready for construction. Knowing these early helps you set a realistic budget.",
+
+    "<h6>1. Stamp duty and registration fee</h6>",
+
+    "<p>These are government charges paid when the sale deed is registered. In Tamil Nadu they are calculated on the higher of the sale price and the guideline value of the land, so check the guideline value for the area. Rates can change, so confirm the current figures with the sub-registrar office before you plan your budget.</p>",
+
+    "<h6>2. Legal verification fees</h6>",
+
+    "<p>A property lawyer will check the title, parent documents, patta and encumbrance certificate. This is a small cost that can save you from a very expensive dispute. Our guide on how to verify DTCP and CMDA approval explains what to ask for.</p>",
+
+    "<h6>3. Document and certificate charges</h6>",
+
+    "<p>Budget for the encumbrance certificate, certified copies of documents, and fees for patta transfer or name change after registration. These are usually modest, but they add up when combined.</p>",
+
+    "<h6>4. Land preparation and boundary work</h6>",
+
+    "<ul><li>Fencing or a compound wall around the plot.</li><li>Boundary stones and survey marking.</li><li>Levelling or filling if the plot sits below road level.</li></ul>",
+
+    "<h6>5. Utility connections</h6>",
+
+    "<p>Electricity, water and drainage connections have their own application fees and deposits. In gated layouts some of the infrastructure may already be in place, so ask what is included in the price.</p>",
+
+    "<h6>6. Building plan approval fees</h6>",
+
+    "<p>When you are ready to build, you will pay fees to get your building plan approved by the local authority, plus charges for the architect or engineer.</p>",
+
+    "<h6>7. Maintenance or association charges</h6>",
+
+    "<p>Gated plotted communities may charge monthly or yearly maintenance for roads, lighting, security and common areas. Ask for this amount in writing so there are no surprises later.</p>",
+
+    "<h6>How to plan your budget</h6>",
+
+    "<p>A good approach is to keep a separate buffer beyond the plot price for all of the above, and ask the seller for a written cost sheet. If you plan to finance the purchase, read our guide on plot loans vs construction loans.</p>",
+
+    "<p>Looking for a plot with clear pricing? Talk to the GP Homes team for a transparent breakdown, and explore more buying tips on our blog.</p>",
+  ],
+  banner_image: bgimage,
+  blog_image: blogimg53,
+  images: [postImg56, postImg57],
+  conclusion_title: "Plan Your Budget Carefully",
+  conclusion_desc: [
+    "<p>The cost of buying a plot goes beyond the advertised property price. Stamp duty, registration, legal verification, documentation, land preparation, utility connections and other charges can increase the overall investment.</p>",
+
+    "<p>By understanding these costs in advance and keeping a separate budget buffer, you can plan your plot purchase more confidently and avoid unexpected expenses.</p>",
+  ],
+  meta_title: "Hidden Costs of Buying a Plot in Chennai: Full Breakdown",
+  meta_description:
+    "Planning to buy a plot in Chennai? Know the stamp duty, registration, legal and development costs beyond the base price before you budget.",
+  slug: "hidden-costs-buying-plot-chennai",
+},
+{
+  id: 26,
+  date: "7 October 2026",
+  name: "Plot Loan vs Construction Loan: How to Finance Your Plot and Home in Chennai",
+  description: [
+    "Many families buy a plot first and build later, and that means two separate financing needs: one to buy the land and another to construct the house. Understanding how each loan works helps you choose the right option and avoid cash-flow stress.",
+
+    "<h6>What is a plot loan?</h6>",
+
+    "<p>A plot loan, also called a land purchase loan, funds the purchase of a residential plot. Lenders usually prefer plots in approved layouts, and the loan amount is often a smaller share of the plot value than a regular home loan. Interest rates and terms differ from lender to lender, so compare offers.</p>",
+
+    "<h6>What is a construction loan?</h6>",
+
+    "<p>A construction loan funds the building of a house on land you already own. The money is typically released in stages as construction progresses, and the lender may ask for the approved building plan and cost estimates.</p>",
+
+    "<h6>Plot-cum-construction loan</h6>",
+
+    "<p>Some lenders offer a combined loan that covers both the land and the construction. This can simplify paperwork, but check the conditions around when construction must begin and how disbursement works.</p>",
+
+    "<h6>What to compare before choosing</h6>",
+
+    "<ul><li>Interest rate and whether it is fixed or floating.</li><li>Loan-to-value ratio, which decides how much you can borrow.</li><li>Tenure, EMI and total interest payable.</li><li>Processing fees and prepayment or foreclosure charges.</li><li>Time limits for starting construction, if any.</li></ul>",
+
+    "<h6>Documents lenders usually ask for</h6>",
+
+    "<ul><li>Identity, address and income proof.</li><li>Sale agreement and title documents of the plot.</li><li>Approved layout plan, patta and encumbrance certificate.</li><li>Approved building plan and cost estimate, for construction loans.</li></ul>",
+
+    "<h6>Tips to get a smoother approval</h6>",
+
+    "<p>Choose a plot with clear title and layout approval, as lenders check these closely. Keep your credit record healthy and avoid taking on new debts just before applying. Tax benefits on home loans come with conditions, so speak to a chartered accountant for advice specific to you.</p>",
+
+    "<p>Remember to include registration and other charges while planning your loan. Our article on the hidden costs of buying a plot can help. To see available layouts, visit the GP Homes website or browse our blogs.</p>",
+  ],
+  banner_image: bgimage,
+  blog_image: blogimg54,
+  images: [postImg58, postImg59],
+  conclusion_title: "Choose the Right Financing Option",
+  conclusion_desc: [
+    "<p>Choosing between a plot loan, construction loan or plot-cum-construction loan depends on your financial position, property plans, eligibility and lender requirements. Compare the interest rate, loan-to-value ratio, tenure, fees and repayment conditions before making a decision.</p>",
+
+    "<p>Before applying, make sure the plot has clear title and required approvals, keep the necessary documents ready, and plan for registration and other additional costs. A well-planned financing strategy can help you purchase your plot and build your home without unnecessary financial pressure.</p>",
+  ],
+  meta_title: "Plot Loan vs Construction Loan: Chennai Buyer's Guide",
+  meta_description:
+    "Compare plot loans and construction loans in Chennai: eligibility, documents, interest and repayment tips to finance your plot and home build smartly.",
+  slug: "plot-loan-vs-construction-loan-chennai",
+},
+{
+  id: 27,
+  date: "7 October 2026",
+  name: "Vastu Guidelines for Choosing a Residential Plot in Chennai",
+  description: [
+    "For many families in Tamil Nadu, Vastu is an important part of choosing where to build a home. While Vastu is a traditional belief system and not a guarantee of outcomes, knowing its basic guidelines can help you shortlist plots that feel right for your family.",
+
+    "<h6>Plot shape</h6>",
+
+    "<p>Square and rectangular plots are generally considered the most suitable in Vastu. They are also easier to design on, which makes room planning simpler. Irregular shapes with sharp or cut corners can make it harder to use the space well.</p>",
+
+    "<h6>Road direction and entrance</h6>",
+
+    "<p>East and north facing plots are popular choices because they are linked with morning light and positive energy in Vastu. Practical points matter too, such as road width, traffic and where the main gate can be placed. Many plots also come with a road on more than one side, which affects the entrance options.</p>",
+
+    "<h6>Slope and surroundings</h6>",
+
+    "<ul><li>A gentle slope towards the north or east is traditionally preferred.</li><li>Avoid plots where water collects, as drainage is a practical concern as well.</li><li>Check for large trees, poles or structures directly in front of the proposed entrance.</li></ul>",
+
+    "<h6>Corner plots</h6>",
+
+    "<p>Corner plots have two road sides, giving better light and ventilation and more freedom in design. Under Vastu, the orientation of the two roads matters, so check this along with local building rules for setbacks.</p>",
+
+    "<h6>Vastu-compliant layouts</h6>",
+
+    "<p>Some developers plan layouts with Vastu in mind, so most plots have regular shapes and orientations. Ask the seller how the layout was planned and which plots suit your preferred facing.</p>",
+
+    "<h6>Legal checks still come first</h6>",
+
+    "<p>A plot that follows Vastu but lacks clear title or approval is still a risky purchase. Always complete the legal checks first, as explained in our guide to verifying DTCP and CMDA approval. Then use Vastu to choose between plots that pass those checks.</p>",
+
+    "<p>Want to see layouts and plot options? Explore GP Homes projects, and read more helpful articles on our blog page. If you are considering emerging areas, our article on North Chennai suburbs for plot buyers may help.</p>",
+  ],
+  banner_image: bgimage,
+  blog_image: blogimg55,
+  images: [postImg60, postImg61],
+  conclusion_title: "Choose a Plot That Fits Your Needs",
+  conclusion_desc: [
+    "<p>Vastu can be one factor to consider when choosing a residential plot, particularly for families who value traditional guidelines around plot shape, direction, slope and entrance placement.</p>",
+
+    "<p>However, Vastu should come after essential checks such as title, layout approval, access, drainage, connectivity and other legal requirements. Once a plot meets these practical criteria, you can use Vastu preferences to select the option that best suits your family and future home plans.</p>",
+  ],
+  meta_title: "Vastu Tips for Choosing a Residential Plot in Chennai",
+  meta_description:
+    "Simple Vastu guidelines for choosing a residential plot in Chennai: shape, road direction, slope and corner plots, plus why legal checks still come first.",
+  slug: "vastu-guidelines-residential-plot-chennai",
+},
+{
+  id: 28,
+  date: "7 October 2026",
+  name: "Why Ambattur, Red Hills and Kolathur Are Attracting Plot Buyers in North Chennai",
+  description: [
+    "As central Chennai gets more crowded and expensive, many buyers are looking at the northern and north-western suburbs for plots. Areas such as Ambattur, Red Hills, Kolathur, Ayanambakkam and Sevvapet offer a balance of connectivity, daily conveniences and relatively more space to build.",
+
+    "<h6>Why buyers are looking north</h6>",
+
+    "<ul><li>Better value: plots in suburban areas generally cost less than those in the city core.</li><li>Jobs nearby: Ambattur is home to one of Chennai's large industrial estates, which supports steady housing demand.</li><li>Space to build: a plot lets you design a home that fits your family instead of choosing a fixed apartment layout.</li></ul>",
+
+    "<h6>Ambattur</h6>",
+
+    "<p>Ambattur is a well-established suburb with schools, hospitals, markets and employment close by. It is a natural choice for families who want city amenities with more room to build.</p>",
+
+    "<h6>Red Hills</h6>",
+
+    "<p>Red Hills lies on the northern side of the city, along a key route towards the north. Buyers here often look for larger plots at comparatively moderate prices, with long-term growth in mind.</p>",
+
+    "<h6>Kolathur</h6>",
+
+    "<p>Kolathur is closer to established neighbourhoods and offers day-to-day conveniences within reach. It suits buyers who want to stay near the city without paying premium central prices.</p>",
+
+    "<h6>Ayanambakkam and Sevvapet</h6>",
+
+    "<p>These growing areas attract buyers who want modern layouts and new development at a lower entry cost. Always check current road and transport connectivity during a site visit, as infrastructure keeps changing.</p>",
+
+    "<h6>What to check before you buy</h6>",
+
+    "<ul><li>Layout approval and clear title, as covered in our guide on DTCP and CMDA approval.</li><li>Distance to schools, hospitals, workplaces and public transport.</li><li>Drainage and flooding history of the area.</li><li>Total budget including registration and other charges, explained in our article on hidden plot costs.</li></ul>",
+
+    "<p>GP Homes has projects across several of these locations. Browse our projects to find a plot that fits your plan, and read more local guides on our blog.</p>",
+  ],
+  banner_image: bgimage,
+  blog_image: blogimg56,
+  images: [postImg62, postImg63],
+  conclusion_title: "Finding the Right Location in North Chennai",
+  conclusion_desc: [
+    "<p>North Chennai and its surrounding suburbs offer different options for plot buyers, from established areas such as Ambattur and Kolathur to developing locations such as Ayanambakkam and Sevvapet. Each location has its own advantages in terms of connectivity, employment, amenities and pricing.</p>",
+
+    "<p>Before buying, compare the location carefully, verify the layout approval and title, check drainage and connectivity, and include registration and other costs in your overall budget. Choosing a plot based on both present needs and future development can help you make a more informed decision.</p>",
+  ],
+  meta_title: "Why Ambattur, Red Hills & Kolathur Suit Plot Buyers",
+  meta_description:
+    "Explore why Ambattur, Red Hills, Kolathur and nearby North Chennai areas attract plot buyers, with connectivity and buying tips from GP Homes.",
+  slug: "north-chennai-suburbs-plot-buyers",
+},
 ];
 
 export default postsData;

@@ -23,6 +23,11 @@ import blogimg20 from "../../assets/img/restaurant/blog16-1.jpg";
 import blogimg21 from "../../assets/img/restaurant/blog17-1.jpg";
 import blogimg22 from "../../assets/img/restaurant/blog18-1.png";
 import blogimg23 from "../../assets/img/restaurant/blog19-1.jpg";
+import blogimg24 from "../../assets/img/restaurant/blog20-1.jpeg";
+import blogimg25 from "../../assets/img/restaurant/blog21-1.jpeg";
+import blogimg26 from "../../assets/img/restaurant/blog22-1.jpeg";
+import blogimg27 from "../../assets/img/restaurant/blog23-1.jpeg";
+import blogimg28 from "../../assets/img/restaurant/blog24-1.jpeg";
 
 import { Link } from "react-router-dom";
 
@@ -175,7 +180,8 @@ const BlogSection = () => {
       img: blogimg18,
       date: "10",
       month: "August",
-      title: "How Do Nearby Schools, Hospitals, and Commercial Hubs Affect Property Value?",
+      title:
+        "How Do Nearby Schools, Hospitals, and Commercial Hubs Affect Property Value?",
       desc: "When people buy a home, they do not look at the property alone. They also check what is available around it.",
       slug: "how-do-nearby-schools-hospitals-and-commercial-hubs-affect-property-value",
     },
@@ -183,7 +189,8 @@ const BlogSection = () => {
       img: blogimg19,
       date: "07",
       month: "September",
-      title: "RERA Chennai: What Every Homebuyer Should Verify Before Booking an Apartment in 2026",
+      title:
+        "RERA Chennai: What Every Homebuyer Should Verify Before Booking an Apartment in 2026",
       desc: "Buying a home is a major financial decision, and checking the property's legal and regulatory details before booking is essential.",
       slug: "rera-chennai-checklist-before-booking-apartment-2026",
     },
@@ -191,7 +198,8 @@ const BlogSection = () => {
       img: blogimg20,
       date: "07",
       month: "September",
-      title: "Gated Community vs Standalone Apartment in Chennai: Which Is Right for You?",
+      title:
+        "Gated Community vs Standalone Apartment in Chennai: Which Is Right for You?",
       desc: "When buying an apartment in Chennai, one of the important decisions is whether to choose a gated community or a standalone apartment building.",
       slug: "gated-community-vs-standalone-apartment-chennai",
     },
@@ -199,15 +207,17 @@ const BlogSection = () => {
       img: blogimg21,
       date: "07",
       month: "September",
-      title: "Villa Plots vs Ready-Built Villas in Chennai: A Complete Buyer's Comparison",
+      title:
+        "Villa Plots vs Ready-Built Villas in Chennai: A Complete Buyer's Comparison",
       desc: "When planning to buy a villa in Chennai, buyers often have to choose between purchasing a villa plot and constructing their own home or buying a ready-built villa.",
       slug: "villa-plots-vs-ready-built-villas-chennai",
     },
-        {
+    {
       img: blogimg22,
       date: "07",
       month: "September",
-      title: "Home Loan Guide 2026: How to Get the Best Interest Rate for Your Chennai Apartment",
+      title:
+        "Home Loan Guide 2026: How to Get the Best Interest Rate for Your Chennai Apartment",
       desc: "Buying a home is a major financial commitment, and choosing the right home loan can have a significant impact on your monthly EMI and the total amount you pay over the loan period.",
       slug: "home-loan-guide-best-interest-rate-chennai-2026",
     },
@@ -215,9 +225,55 @@ const BlogSection = () => {
       img: blogimg23,
       date: "07",
       month: "September",
-      title: "Top Locations for Real Estate Investment in Chennai in 2026 (and Why)",
+      title:
+        "Top Locations for Real Estate Investment in Chennai in 2026 (and Why)",
       desc: "Chennai's real estate market continues to expand across established neighbourhoods and emerging growth corridors. For investors, choosing the right location can be just as important as selecting the right property.",
       slug: "top-locations-real-estate-investment-chennai-2026",
+    },
+    {
+      img: blogimg24,
+      date: "07",
+      month: "October",
+      title:
+        "How to Verify DTCP and CMDA Approval Before Buying a Plot in Chennai",
+      desc: "Buying a plot is a big decision, and your first question should not be about price. It should be whether the layout is legally approved. In Chennai, approval can affect whether you can get a building plan sanctioned, a bank loan and a smooth resale later. Here is how to check it, step by step, before you pay any advance.",
+      slug: "verify-dtcp-cmda-approval-plot-chennai",
+    },
+    {
+      img: blogimg25,
+      date: "07",
+      month: "October",
+      title:
+        "Hidden Costs of Buying a Plot in Chennai: What to Budget Beyond the Price",
+      desc: "The price quoted for a plot is rarely the full amount you will spend. Many first-time buyers are surprised by the extra costs that come with registration, legal work and getting the land ready for construction. Knowing these early helps you set a realistic budget.",
+      slug: "hidden-costs-buying-plot-chennai",
+    },
+    {
+      img: blogimg26,
+      date: "07",
+      month: "October",
+      title:
+        "Plot Loan vs Construction Loan: How to Finance Your Plot and Home in Chennai",
+      desc: "Many families buy a plot first and build later, and that means two separate financing needs: one to buy the land and another to construct the house. Understanding how each loan works helps you choose the right option and avoid cash-flow stress.",
+      slug: "plot-loan-vs-construction-loan-chennai",
+    },
+    {
+      img: blogimg27,
+      date: "07",
+      month: "October",
+      title:
+        "Vastu Guidelines for Choosing a Residential Plot in Chennai",
+      desc: "For many families in Tamil Nadu, Vastu is an important part of choosing where to build a home. While Vastu is a traditional belief system and not a guarantee of outcomes, knowing its basic guidelines can help you shortlist plots that feel right for your family.", 
+      slug: "vastu-guidelines-residential-plot-chennai",
+    },
+    {
+      img: blogimg28,
+      date: "07",
+      month: "October",
+      title:
+        "Why Ambattur, Red Hills and Kolathur Are Attracting Plot Buyers in North Chennai",
+      desc: "As central Chennai gets more crowded and expensive, many buyers are looking at the northern and north-western suburbs for plots. Areas such as Ambattur, Red Hills, Kolathur, Ayanambakkam and Sevvapet offer a balance of connectivity, daily conveniences and relatively more space to build.",
+      slug: "north-chennai-suburbs-plot-buyers",
     },
   ];
 
